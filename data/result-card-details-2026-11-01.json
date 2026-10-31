@@ -16,9 +16,20 @@
       "selected_beaten_lengths": null,
       "results_url": null,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-01/carlisle/racecard/946328/pricedup-now-with-best-odds-guaranteed-novices-hurdle-gbb-race",
-      "lay_odds": null,
-      "available_stake_gbp": null,
-      "lay_price_provenance": null,
+      "lay_odds": 1.96,
+      "available_stake_gbp": 16,
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "USER_SCREENSHOT",
+        "source_library_file_id": "libfile_dd76841a0ec0819192194eeabbaaf463",
+        "observed_at": "2026-10-31T22:51:00+00:00",
+        "observation_time_basis": "Visible clock 22:51; 1 November race card; observation date 31 October from upload context, Europe/London GMT",
+        "retrieved_at": "2026-10-31T22:53:17.134Z",
+        "verification_status": "VERIFIED_SCREENSHOT_LAY",
+        "original_price_side": "LAY",
+        "liquidity_gbp": 16,
+        "back_odds": 1.77
+      },
       "market_observation": {
         "provider": "Bet365",
         "source_type": "BOOKMAKER_ODDS",
@@ -55,7 +66,7 @@
         "checked_at": "2026-10-31T21:28:42.113Z",
         "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE"
       },
-      "source": "Betfair Exchange lay price pending user screenshot; no fictional profit booked"
+      "source": "Betfair Exchange user screenshot, 31 October 22:51 GMT; explicit pink LAY column"
     },
     {
       "date": "2026-11-01",
@@ -71,9 +82,20 @@
       "selected_beaten_lengths": null,
       "results_url": null,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-01/huntingdon/racecard/946334/copybet-support-safer-gambling-claiming-hurdle",
-      "lay_odds": null,
-      "available_stake_gbp": null,
-      "lay_price_provenance": null,
+      "lay_odds": 17,
+      "available_stake_gbp": 21,
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "USER_SCREENSHOT",
+        "source_library_file_id": "libfile_e87f8a5c8b2c81918a46aad21b06fe9f",
+        "observed_at": "2026-10-31T22:52:00+00:00",
+        "observation_time_basis": "Visible clock 22:52; 1 November race card; observation date 31 October from upload context, Europe/London GMT",
+        "retrieved_at": "2026-10-31T22:53:17.134Z",
+        "verification_status": "VERIFIED_SCREENSHOT_LAY",
+        "original_price_side": "LAY",
+        "liquidity_gbp": 21,
+        "back_odds": 1.76
+      },
       "market_observation": {
         "provider": "Bet365",
         "source_type": "BOOKMAKER_ODDS",
@@ -109,7 +131,7 @@
         "checked_at": "2026-10-31T21:28:42.113Z",
         "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE"
       },
-      "source": "Betfair Exchange lay price pending user screenshot; no fictional profit booked"
+      "source": "Betfair Exchange user screenshot, 31 October 22:52 GMT; explicit pink LAY column"
     }
   ]
 }

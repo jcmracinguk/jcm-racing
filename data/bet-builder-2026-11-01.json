@@ -52,10 +52,21 @@
       "verification_status": "PENDING",
       "result_source": null,
       "official_accuracy_eligible": false,
-      "lay_odds": null,
-      "available_stake_gbp": null,
-      "source": "Betfair Exchange lay price pending user screenshot; no fictional profit booked",
-      "lay_price_provenance": null,
+      "lay_odds": 1.96,
+      "available_stake_gbp": 16,
+      "source": "Betfair Exchange user screenshot, 31 October 22:51 GMT; explicit pink LAY column",
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "USER_SCREENSHOT",
+        "source_library_file_id": "libfile_dd76841a0ec0819192194eeabbaaf463",
+        "observed_at": "2026-10-31T22:51:00+00:00",
+        "observation_time_basis": "Visible clock 22:51; 1 November race card; observation date 31 October from upload context, Europe/London GMT",
+        "retrieved_at": "2026-10-31T22:53:17.134Z",
+        "verification_status": "VERIFIED_SCREENSHOT_LAY",
+        "original_price_side": "LAY",
+        "liquidity_gbp": 16,
+        "back_odds": 1.77
+      },
       "market_observation": {
         "provider": "Bet365",
         "source_type": "BOOKMAKER_ODDS",
@@ -115,10 +126,21 @@
       "verification_status": "PENDING",
       "result_source": null,
       "official_accuracy_eligible": false,
-      "lay_odds": null,
-      "available_stake_gbp": null,
-      "source": "Betfair Exchange lay price pending user screenshot; no fictional profit booked",
-      "lay_price_provenance": null,
+      "lay_odds": 17,
+      "available_stake_gbp": 21,
+      "source": "Betfair Exchange user screenshot, 31 October 22:52 GMT; explicit pink LAY column",
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "USER_SCREENSHOT",
+        "source_library_file_id": "libfile_e87f8a5c8b2c81918a46aad21b06fe9f",
+        "observed_at": "2026-10-31T22:52:00+00:00",
+        "observation_time_basis": "Visible clock 22:52; 1 November race card; observation date 31 October from upload context, Europe/London GMT",
+        "retrieved_at": "2026-10-31T22:53:17.134Z",
+        "verification_status": "VERIFIED_SCREENSHOT_LAY",
+        "original_price_side": "LAY",
+        "liquidity_gbp": 21,
+        "back_odds": 1.76
+      },
       "market_observation": {
         "provider": "Bet365",
         "source_type": "BOOKMAKER_ODDS",
@@ -148,5 +170,25 @@
     "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
   },
   "preserve_device_choices": true,
-  "simulation_note": "Betfair Exchange lay prices are pending user screenshots. The single £500-per-race fictional format and 5% commission are configured, but no simulation or profit has been booked."
+  "simulation_note": "User supplied explicit pink Betfair Exchange LAY screenshots on 31 October: Keops Des Bordes 1.96 (£16 available), Pigeon House 17 (£21 available). Each £500 liability is fictional and exceeds displayed liquidity; no real execution. Results remain pending.",
+  "published_simulations": {
+    "recorded_at": "2026-10-31T22:53:17.134Z",
+    "authorization": "User supplied explicit Betfair Exchange lay screenshots; £500-per-race fictional booking authorized.",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32303038508",
+          "horse_id": "hrs_40095811",
+          "odds": 1.96,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32303050130",
+          "horse_id": "hrs_30124724",
+          "odds": 17,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  }
 }
