@@ -239,9 +239,10 @@ function weekCommencing(d){
  const date=new Date(d+'T12:00:00Z');date.setUTCDate(date.getUTCDate()-((date.getUTCDay()+6)%7));return date.toISOString().slice(0,10);
 }
 async function raceProfitSummary(days){
- let total=0,wins=0,losses=0,pending=0,estimated=0;const weeks=new Map();
+ let total=0,wins=0,losses=0,pending=0,estimated=0,activeDays=0;const weeks=new Map();
  for(const d of [...days.days].sort()){
   const c=await card(d),plan=c.published_simulations?.race;
+  if(Array.isArray(c.rows)&&c.rows.length)activeDays++;
   if(plan&&!Array.isArray(plan.entries))throw Error('Invalid recorded £500 plan');
   for(const row of c.rows){
    const entries=(plan?.entries||[]).filter(entry=>row.race_id===entry.race_id&&row.horse_id===entry.horse_id);
@@ -258,7 +259,7 @@ async function raceProfitSummary(days){
    current.profit+=movement;if(estimate)current.estimated++;current.entries.push({date:d,off_time_uk:row.off_time_uk,course:row.course,horse:row.horse,status:st,odds:entry?.odds??null,profit:movement,estimated:estimate});weeks.set(week,current);
   }
  }
- return {total,wins,losses,pending,estimated,weeks:[...weeks].sort(([a],[b])=>b.localeCompare(a)).map(([week,value])=>({week,profit:value.profit,estimated:value.estimated,entries:value.entries.sort((a,b)=>a.date.localeCompare(b.date)||a.off_time_uk.localeCompare(b.off_time_uk))}))};
+ return {total,wins,losses,pending,estimated,activeDays,weeks:[...weeks].sort(([a],[b])=>b.localeCompare(a)).map(([week,value])=>({week,profit:value.profit,estimated:value.estimated,entries:value.entries.sort((a,b)=>a.date.localeCompare(b.date)||a.off_time_uk.localeCompare(b.off_time_uk))}))};
 }
 const shortDate=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit',year:'2-digit'});
 const signedMoney=v=>v<0?'-'+money(-v):v>0?'+'+money(v):money(0);
@@ -266,7 +267,8 @@ async function updateHubProfit(){
  const node=document.getElementById('jcm-profit-summary');if(!node)return;
  try{
   const summary=await raceProfitSummary(await read('data/bet-builder-days.json'));
-  node.innerHTML='<div class="jcm-profit-total"><span>Profit / Loss</span><strong class="'+(summary.total>0?'positive':summary.total<0?'negative':'')+'">'+signedMoney(summary.total)+'</strong></div><p class="jcm-profit-record">'+summary.wins+' '+(summary.wins===1?'win':'wins')+' / '+summary.losses+' '+(summary.losses===1?'loss':'losses')+' · £500 liability per race</p><div class="jcm-profit-weeks">'+(summary.weeks.length?summary.weeks.map((w,i)=>'<section class="jcm-profit-week"><button type="button" class="jcm-profit-week-head" data-profit-week="'+i+'" aria-expanded="false" aria-controls="jcm-profit-week-'+i+'"><span>WC '+shortDate(w.week)+'</span><strong class="'+(w.profit>0?'positive':w.profit<0?'negative':'')+'">'+signedMoney(w.profit)+(w.estimated?'*':'')+'</strong><span class="jcm-week-chevron" aria-hidden="true">⌄</span></button><div id="jcm-profit-week-'+i+'" class="jcm-profit-week-detail" hidden>'+w.entries.map(e=>'<div class="jcm-profit-entry"><strong>'+safe(e.horse)+'</strong><small>'+shortDate(e.date)+' · '+safe(e.off_time_uk)+' · '+safe(e.course)+' · '+(e.status==='WIN'?'Horse lost · Lay win':'Horse won · Lay loss')+(e.odds!==null?' · Lay '+e.odds:' · No recorded lay odds')+'</small><span class="'+(e.profit>0?'positive':'negative')+'">'+signedMoney(e.profit)+(e.estimated?'*':'')+'</span></div>').join('')+(w.estimated?'<small class="builder-note">* Estimate: +£100 for a lay win or −£500 for a lay loss where no odds were recorded.</small>':'')+'</div></section>').join(''):'<p>No settled £500 bets yet.</p>')+'</div><small>Settled recorded bets · 5% commission</small>';
+  const perActiveDay=summary.activeDays?Math.round(summary.total/summary.activeDays):0;
+  node.innerHTML='<div class="jcm-profit-total"><span>Profit / Loss</span><strong class="'+(summary.total>0?'positive':summary.total<0?'negative':'')+'">'+signedMoney(summary.total)+'</strong></div><p class="jcm-profit-record">'+summary.wins+' '+(summary.wins===1?'win':'wins')+' / '+summary.losses+' '+(summary.losses===1?'loss':'losses')+' · £500 liability per race<br><span class="jcm-profit-daily">Active days: '+summary.activeDays+' · '+signedMoney(summary.total)+' ÷ '+summary.activeDays+' = '+signedMoney(perActiveDay)+' per active day</span></p><div class="jcm-profit-weeks">'+(summary.weeks.length?summary.weeks.map((w,i)=>'<section class="jcm-profit-week"><button type="button" class="jcm-profit-week-head" data-profit-week="'+i+'" aria-expanded="false" aria-controls="jcm-profit-week-'+i+'"><span>WC '+shortDate(w.week)+'</span><strong class="'+(w.profit>0?'positive':w.profit<0?'negative':'')+'">'+signedMoney(w.profit)+(w.estimated?'*':'')+'</strong><span class="jcm-week-chevron" aria-hidden="true">⌄</span></button><div id="jcm-profit-week-'+i+'" class="jcm-profit-week-detail" hidden>'+w.entries.map(e=>'<div class="jcm-profit-entry"><strong>'+safe(e.horse)+'</strong><small>'+shortDate(e.date)+' · '+safe(e.off_time_uk)+' · '+safe(e.course)+' · '+(e.status==='WIN'?'Horse lost · Lay win':'Horse won · Lay loss')+(e.odds!==null?' · Lay '+e.odds:' · No recorded lay odds')+'</small><span class="'+(e.profit>0?'positive':'negative')+'">'+signedMoney(e.profit)+(e.estimated?'*':'')+'</span></div>').join('')+(w.estimated?'<small class="builder-note">* Estimate: +£100 for a lay win or −£500 for a lay loss where no odds were recorded.</small>':'')+'</div></section>').join(''):'<p>No settled £500 bets yet.</p>')+'</div><small>Settled recorded bets · 5% commission</small>';
   node.querySelectorAll('[data-profit-week]').forEach(button=>button.addEventListener('click',()=>{const detail=node.querySelector('#'+button.getAttribute('aria-controls')),open=button.getAttribute('aria-expanded')==='true';button.setAttribute('aria-expanded',String(!open));detail.hidden=open;}));
  }catch(_){node.innerHTML='<p>Profit / loss unavailable.</p>';}
 }
