@@ -120,9 +120,9 @@
       "field_size": 5,
       "going": "Good (good to firm in places on hurdle course)",
       "surface": "Turf",
-      "result_status": null,
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "WIN",
+      "verification_status": "API_CONFIRMED",
+      "result_source": "THE_RACING_API",
       "official_accuracy_eligible": false,
       "lay_odds": 17,
       "available_stake_gbp": 21,
@@ -166,6 +166,78 @@
           "odds": 3.15,
           "liquidity_gbp": 34,
           "back_odds": 2.86
+        }
+      ],
+      "position": "4",
+      "placing": "4th",
+      "result_date": "2026-11-01",
+      "result_off_time_uk": "12:22",
+      "result_course": "Huntingdon",
+      "result_horse": "Pigeon House",
+      "result_off_dt": "2026-11-01T12:22:00+00:00",
+      "result_retrieved_at": "2026-11-01T12:40:58.568828Z",
+      "result_race_id": "rac_32303050130",
+      "result_horse_id": "hrs_30124724",
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32303050130",
+      "result_non_runners": [],
+      "result_stage": "FULL_RESULT",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Shallow River",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Mc'flo",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Blackwater Lilly",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "2"
+        },
+        {
+          "position": "4",
+          "horse": "Pigeon House",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "8"
+        },
+        {
+          "position": "5",
+          "horse": "Stopherandgo",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "9.5"
+        }
+      ],
+      "margin_source": "THE_RACING_API",
+      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32303050130",
+      "margin_retrieved_at": "2026-11-01T12:40:58.568828Z",
+      "margin_stage": "FULL_RESULT",
+      "margin_verification_status": "API_CONFIRMED",
+      "result_history": [
+        {
+          "result_status": "WIN",
+          "verification_status": "API_CONFIRMED",
+          "result_source": "THE_RACING_API",
+          "position": "4",
+          "placing": "4th",
+          "result_date": "2026-11-01",
+          "result_off_time_uk": "12:22",
+          "result_course": "Huntingdon",
+          "result_horse": "Pigeon House",
+          "result_off_dt": "2026-11-01T12:22:00+00:00",
+          "result_retrieved_at": "2026-11-01T12:40:58.568828Z",
+          "result_race_id": "rac_32303050130",
+          "result_horse_id": "hrs_30124724",
+          "result_source_url": "https://api.theracingapi.com/v1/results/rac_32303050130",
+          "result_non_runners": [],
+          "result_stage": "FULL_RESULT"
         }
       ]
     }
