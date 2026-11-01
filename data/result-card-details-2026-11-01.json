@@ -131,7 +131,22 @@
         "checked_at": "2026-10-31T21:28:42.113Z",
         "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE"
       },
-      "source": "Betfair Exchange user screenshot, 31 October 22:52 GMT; explicit pink LAY column"
+      "source": "Betfair Exchange user screenshot, 31 October 22:52 GMT; explicit pink LAY column",
+      "lay_price_observations": [
+        {
+          "provider": "Betfair Exchange",
+          "source_type": "USER_SCREENSHOT",
+          "source_library_file_id": "libfile_79c72a37cc6081919db161d49473b193",
+          "observed_at": "2026-11-01T10:06:00+00:00",
+          "observation_time_basis": "Visible clock 10:06; 1 November race card; Europe/London GMT",
+          "retrieved_at": "2026-11-01T10:08:01.082Z",
+          "verification_status": "VERIFIED_SCREENSHOT_LAY",
+          "original_price_side": "LAY",
+          "odds": 3.15,
+          "liquidity_gbp": 34,
+          "back_odds": 2.86
+        }
+      ]
     }
   ]
 }
