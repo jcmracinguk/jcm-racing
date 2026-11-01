@@ -48,9 +48,9 @@
       "field_size": 8,
       "going": "Good to soft",
       "surface": "Turf",
-      "result_status": null,
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 1.96,
       "available_stake_gbp": 16,
@@ -80,7 +80,79 @@
         "source_timezone": "UTC",
         "source_url": "https://api.theracingapi.com/v1/odds/rac_32303038508/hrs_40095811"
       },
-      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-01/carlisle/racecard/946328/pricedup-now-with-best-odds-guaranteed-novices-hurdle-gbb-race"
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-01/carlisle/racecard/946328/pricedup-now-with-best-odds-guaranteed-novices-hurdle-gbb-race",
+      "position": "1",
+      "result_date": "2026-11-01",
+      "result_off_time_uk": "13:13",
+      "result_course": "Carlisle",
+      "result_horse": "Keops Des Bordes",
+      "result_off_dt": "2026-11-01T13:13:00+00:00",
+      "result_retrieved_at": "2026-11-01T13:32:42.917249Z",
+      "result_race_id": "rac_32303038508",
+      "result_horse_id": "hrs_40095811",
+      "result_website_race_id": "946328",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-01/carlisle/946328/pricedup-now-with-best-odds-guaranteed-novices-hurdle-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1170617",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Keops Des Bordes",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Lauvergnat",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Wonder Flying",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "7.75"
+        },
+        {
+          "position": "4",
+          "horse": "Cushendun",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "8.75"
+        },
+        {
+          "position": "5",
+          "horse": "Don't Tell Dougie",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "18.25"
+        },
+        {
+          "position": "6",
+          "horse": "Ballyteige",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "23.75"
+        },
+        {
+          "position": "7",
+          "horse": "Ocean Master",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "31.75"
+        },
+        {
+          "position": "8",
+          "horse": "Ronnie Russet",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "32.25"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-01/carlisle/946328/pricedup-now-with-best-odds-guaranteed-novices-hurdle-gbb-race",
+      "margin_retrieved_at": "2026-11-01T13:32:42.917249Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "race_date": "2026-11-01",
