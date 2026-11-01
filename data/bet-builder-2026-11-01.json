@@ -123,7 +123,7 @@
       "going": "Good (good to firm in places on hurdle course)",
       "surface": "Turf",
       "result_status": "WIN",
-      "verification_status": "API_CONFIRMED",
+      "verification_status": "PROVIDER_ACCEPTED",
       "result_source": "THE_RACING_API",
       "official_accuracy_eligible": false,
       "lay_odds": 17,
@@ -221,11 +221,11 @@
       "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32303050130",
       "margin_retrieved_at": "2026-11-01T12:40:58.568828Z",
       "margin_stage": "FULL_RESULT",
-      "margin_verification_status": "API_CONFIRMED",
+      "margin_verification_status": "PROVIDER_ACCEPTED",
       "result_history": [
         {
           "result_status": "WIN",
-          "verification_status": "API_CONFIRMED",
+          "verification_status": "PROVIDER_ACCEPTED",
           "result_source": "THE_RACING_API",
           "position": "4",
           "placing": "4th",
