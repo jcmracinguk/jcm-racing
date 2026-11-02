@@ -199,9 +199,9 @@
       "field_size": 12,
       "going": "Standard",
       "surface": "AW",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 5.4,
       "available_stake_gbp": 13,
@@ -222,7 +222,105 @@
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-02/wolverhampton/racecard/946582/midnite-built-different-handicap",
       "market_position_note": "Shortest back and lay prices among runners visible in screenshot.",
       "race_name": "Midnite Built Different Handicap Stakes",
-      "user_approved_at": "2026-11-02T07:35:00Z"
+      "user_approved_at": "2026-11-02T07:35:00Z",
+      "position": "5",
+      "result_date": "2026-11-02",
+      "result_off_time_uk": "20:00",
+      "result_course": "Wolverhampton",
+      "result_horse": "Stipulation",
+      "result_off_dt": "2026-11-02T20:00:00+00:00",
+      "result_retrieved_at": "2026-11-02T20:18:31.169415Z",
+      "result_race_id": "rac_32303208964",
+      "result_horse_id": "hrs_45598518",
+      "result_website_race_id": "946582",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-02/wolverhampton/946582/midnite-built-different-handicap",
+      "result_non_runners": [
+        "Merapi"
+      ],
+      "result_website_horse_id": "1161032",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "2.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Deep Sleep",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Token Love",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "New Objective",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.8"
+        },
+        {
+          "position": "4",
+          "horse": "Clarissa Eclipse",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.55"
+        },
+        {
+          "position": "5",
+          "horse": "Stipulation",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "2.8"
+        },
+        {
+          "position": "6",
+          "horse": "Imola",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.55"
+        },
+        {
+          "position": "7",
+          "horse": "Tiger Beetle",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "5.3"
+        },
+        {
+          "position": "8",
+          "horse": "Mohaab",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "5.8"
+        },
+        {
+          "position": "9",
+          "horse": "Amazing Anita",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "9.05"
+        },
+        {
+          "position": "10",
+          "horse": "Snaafy",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "9.55"
+        },
+        {
+          "position": "11",
+          "horse": "It's Life",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "9.85"
+        },
+        {
+          "position": "12",
+          "horse": "Kindly Queen",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "13.35"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-02/wolverhampton/946582/midnite-built-different-handicap",
+      "margin_retrieved_at": "2026-11-02T20:18:31.169415Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "5th"
     }
   ],
   "competition_watchlist": []
