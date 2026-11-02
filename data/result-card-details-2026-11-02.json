@@ -47,9 +47,9 @@
       "field_size": 9,
       "going": "Standard",
       "surface": "AW",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 6.4,
       "available_stake_gbp": 10,
@@ -69,15 +69,89 @@
       },
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-02/wolverhampton/racecard/946577/all-weather-championship-is-back-handicap-div-2",
       "market_position_note": "Third in displayed screenshot market; not current favourite.",
-      "race_name": "All Weather Championship Is Back Handicap Stakes (Div II)",
+      "race_name": "All Weather Championship Is Back Handicap (Div 2)",
       "user_approved_at": "2026-11-02T07:35:00Z",
       "date": "2026-11-02",
-      "position": null,
-      "placing": null,
-      "winner": null,
-      "winning_margin_lengths": null,
+      "position": "1",
+      "placing": "1st",
+      "winner": "Alaminos",
+      "winning_margin_lengths": "nk",
       "selected_beaten_lengths": null,
-      "results_url": null
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-02/wolverhampton/946577/all-weather-championship-is-back-handicap-div-2",
+      "result_date": "2026-11-02",
+      "result_off_time_uk": "17:30",
+      "result_course": "Wolverhampton",
+      "result_horse": "Alaminos",
+      "result_off_dt": "2026-11-02T17:30:00+00:00",
+      "result_retrieved_at": "2026-11-02T17:45:55.160855Z",
+      "result_race_id": "rac_32303199279",
+      "result_horse_id": "hrs_55851397",
+      "result_website_race_id": "946577",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-02/wolverhampton/946577/all-weather-championship-is-back-handicap-div-2",
+      "result_non_runners": [],
+      "result_website_horse_id": "1196017",
+      "result_stage": "WEIGHEDIN",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Alaminos",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Tonal",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Sergeant Pep",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "4",
+          "horse": "Peter The Wolf",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "2.75"
+        },
+        {
+          "position": "5",
+          "horse": "Follow Your Heart",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "3.25"
+        },
+        {
+          "position": "6",
+          "horse": "Chalk Mountain",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "3.75"
+        },
+        {
+          "position": "7",
+          "horse": "King Of Chaos",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "5.25"
+        },
+        {
+          "position": "8",
+          "horse": "He's A Gentleman",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "5.45"
+        },
+        {
+          "position": "9",
+          "horse": "Trust Amy",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "8.45"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-02/wolverhampton/946577/all-weather-championship-is-back-handicap-div-2",
+      "margin_retrieved_at": "2026-11-02T17:45:55.160855Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     },
     {
       "race_date": "2026-11-02",
