@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "mode": "research_only_not_official_picks",
+  "date": "2026-11-03",
+  "imported_at": "2026-11-03T08:44:12Z",
+  "high_competition": [
+    {
+      "race_date": "2026-11-03",
+      "horse": "Sam's Xpress",
+      "course": "Wolverhampton",
+      "off_time_uk": "18:30",
+      "race_id": "rac_32303336806",
+      "horse_id": "hrs_30725989",
+      "scheduled_off_dt": "2026-11-03T18:30:00+00:00",
+      "interest_rank": 1,
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Selection",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Moderate evidence; credible rather than overwhelming",
+      "selected_at": "2026-11-03T08:44:12Z",
+      "added_at": "2026-11-03T08:44:12Z",
+      "methodology_version": "screenshot_review_2026-11-03",
+      "identified_challengers": [
+        "Fancy Dancer",
+        "Honour Your Dreams",
+        "Beach Partee",
+        "Stash The Cash"
+      ],
+      "selection_reason": {
+        "summary": "Recent form 589986 includes sixth at Yarmouth on 12 October, eighth at Southwell on 26 September and ninth at Yarmouth on 30 August. Repeated weakening after leading is a concern, alongside declining recent finishing positions. Fancy Dancer's recent Southwell third, Honour Your Dreams' course-and-distance second and Beach Partee's consistent placed form provide credible opposition. Moderate evidence to oppose; not an overwhelming case.",
+        "counterargument": "He is a proven course-and-distance winner running from a much reduced handicap mark. A return to his best all-weather form could be enough, and rivals have weaknesses too. The 08:26 screenshot supports favourite status among visible runners but is an early, thin market; it does not guarantee the full modeled stake could be matched.",
+        "challengers": [
+          "Fancy Dancer",
+          "Honour Your Dreams",
+          "Beach Partee",
+          "Stash The Cash"
+        ],
+        "source": "The Racing API Pro full race analysis and horse results; Sporting Life racecard; user Betfair screenshot",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-03/wolverhampton/racecard/946747/midnite-it-s-actually-pretty-good-handicap",
+          "https://api.theracingapi.com/v1/racecards/rac_32303336806",
+          "https://api.theracingapi.com/v1/horses/hrs_30725989/results"
+        ],
+        "checked_at": "2026-11-03T08:44:12Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "retrieval_time_note": "Evidence retrieved in this conversation's earlier 3 November pre-race review; final screenshot and publication review recorded at checked_at.",
+        "original_pre_screenshot_assessment": "Strongest interest today; credible rather than overwhelming."
+      },
+      "field_size": 10,
+      "going": "Standard",
+      "surface": "AW",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "result_source": null,
+      "official_accuracy_eligible": false,
+      "lay_odds": 3.9,
+      "available_stake_gbp": 13,
+      "source": "Betfair Exchange user screenshot, 3 November 08:26 visible clock; explicit pink LAY column",
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "USER_SCREENSHOT",
+        "source_library_file_id": "libfile_ae733d96fcec8191a15e74e058fc99f9",
+        "observed_at": "2026-11-03T08:26:00+00:00",
+        "source_timezone": null,
+        "observation_time_basis": "Visible clock 08:26 and 3 Nov racecard; year from current context; Europe/London GMT assumed, timezone not explicitly labeled.",
+        "retrieved_at": "2026-11-03T08:44:12Z",
+        "verification_status": "VERIFIED_SCREENSHOT_LAY",
+        "original_price_side": "LAY",
+        "liquidity_gbp": 13,
+        "back_odds": 3.35
+      },
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-03/wolverhampton/racecard/946747/midnite-it-s-actually-pretty-good-handicap",
+      "market_position_note": "Shortest back and lay prices among visible screenshot runners; earlier Sporting Life Sky Bet 9/4 favourite.",
+      "race_name": "Midnite It's Actually Pretty Good Handicap",
+      "user_approved_at": "2026-11-03T08:44:12Z",
+      "position": null,
+      "placing": null,
+      "bookmaker_price_snapshot": {
+        "provider": "Sky Bet via Sporting Life",
+        "fractional": "9/4",
+        "decimal": 3.25,
+        "source_url": "https://www.sportinglife.com/racing/racecards/2026-11-03/wolverhampton/racecard/946747/midnite-it-s-actually-pretty-good-handicap",
+        "observed_date": "2026-11-03",
+        "observed_at": null,
+        "time_note": "Observed during earlier pre-race review in this conversation; exact clock timestamp not retained. Not a lay quote."
+      }
+    }
+  ],
+  "competition_watchlist": []
+}
