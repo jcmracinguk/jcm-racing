@@ -47,12 +47,12 @@
         "retrieval_time_note": "Evidence retrieved in this conversation's earlier 3 November pre-race review; final screenshot and publication review recorded at checked_at.",
         "original_pre_screenshot_assessment": "Strongest interest today; credible rather than overwhelming."
       },
-      "field_size": 10,
+      "field_size": 9,
       "going": "Standard",
       "surface": "AW",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 3.9,
       "available_stake_gbp": 13,
@@ -74,8 +74,8 @@
       "market_position_note": "Shortest back and lay prices among visible screenshot runners; earlier Sporting Life Sky Bet 9/4 favourite.",
       "race_name": "Midnite It's Actually Pretty Good Handicap",
       "user_approved_at": "2026-11-03T08:44:12Z",
-      "position": null,
-      "placing": null,
+      "position": "8",
+      "placing": "8th",
       "bookmaker_price_snapshot": {
         "provider": "Sky Bet via Sporting Life",
         "fractional": "9/4",
@@ -86,10 +86,87 @@
         "time_note": "Observed during earlier pre-race review in this conversation; exact clock timestamp not retained. Not a lay quote."
       },
       "date": "2026-11-03",
-      "winner": null,
-      "winning_margin_lengths": null,
-      "selected_beaten_lengths": null,
-      "results_url": null
+      "winner": "Honour Your Dreams",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "6.5",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-03/wolverhampton/946747/midnite-its-actually-pretty-good-handicap",
+      "result_date": "2026-11-03",
+      "result_off_time_uk": "18:30",
+      "result_course": "Wolverhampton",
+      "result_horse": "Sam's Xpress",
+      "result_off_dt": "2026-11-03T18:30:00+00:00",
+      "result_retrieved_at": "2026-11-03T18:47:43.123718Z",
+      "result_race_id": "rac_32303336806",
+      "result_horse_id": "hrs_30725989",
+      "result_website_race_id": "946747",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-03/wolverhampton/946747/midnite-its-actually-pretty-good-handicap",
+      "result_non_runners": [
+        "Basholo",
+        "Outer Edge"
+      ],
+      "result_website_horse_id": "1066085",
+      "result_stage": "WEIGHEDIN",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Honour Your Dreams",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Fancy Dancer",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Stash The Cash",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.05"
+        },
+        {
+          "position": "4",
+          "horse": "Beach Partee",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "1.55"
+        },
+        {
+          "position": "5",
+          "horse": "Kipp Kelly",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "2.3"
+        },
+        {
+          "position": "6",
+          "horse": "Bessie Wallis",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "7",
+          "horse": "Mister Moet",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "4.75"
+        },
+        {
+          "position": "8",
+          "horse": "Sam's Xpress",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "9",
+          "horse": "Jungle Dance",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "8"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-03/wolverhampton/946747/midnite-its-actually-pretty-good-handicap",
+      "margin_retrieved_at": "2026-11-03T18:47:43.123718Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     }
   ]
 }
