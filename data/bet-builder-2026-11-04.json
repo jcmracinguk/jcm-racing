@@ -56,9 +56,9 @@
       "field_size": 8,
       "going": "Yielding (Yielding to Soft in places)",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 2.8,
       "available_stake_gbp": 78,
@@ -103,8 +103,78 @@
         "price_band": "2.00-2.99",
         "accounting_basis": "ACTUAL_SCREENSHOT_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
-      }
+        "booked_profit_gbp": 263.8888888888889
+      },
+      "position": "PU",
+      "placing": "PU",
+      "result_date": "2026-11-04",
+      "result_off_time_uk": "13:33",
+      "result_course": "Wexford",
+      "result_horse": "The Besty Woman",
+      "result_off_dt": "2026-11-04T13:33:00+00:00",
+      "result_retrieved_at": "2026-11-04T16:31:28.617786Z",
+      "result_race_id": "rac_32303414286",
+      "result_horse_id": "hrs_50667302",
+      "result_website_race_id": "946898",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/wexford/946898/botanica-international-rated-novice-hurdle",
+      "result_non_runners": [
+        "Royal Belief"
+      ],
+      "result_website_horse_id": "1208597",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": null,
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/wexford/946898/botanica-international-rated-novice-hurdle",
+      "margin_retrieved_at": "2026-11-04T16:31:28.617786Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "An Peann Dearg",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Mystic Rose",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Euro Agent",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "2.25"
+        },
+        {
+          "position": "4",
+          "horse": "Hey Now",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "8.25"
+        },
+        {
+          "position": "5",
+          "horse": "Le Roi Du Livet",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "10"
+        },
+        {
+          "position": "6",
+          "horse": "Kentucky Beach",
+          "margin_from_previous": "13",
+          "cumulative_beaten_lengths": "23"
+        },
+        {
+          "position": "7",
+          "horse": "Old Saxony",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "27.5"
+        }
+      ],
+      "result_recovery_note": "User-requested recovery: explicit PU in weighed-in Sporting Life full result, corroborated by The Racing API. No numbered placing or beaten distance assigned.",
+      "result_corroborating_url": "https://api.theracingapi.com/v1/results/rac_32303414286"
     },
     {
       "race_date": "2026-11-04",
