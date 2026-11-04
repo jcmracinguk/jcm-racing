@@ -412,9 +412,9 @@
       "field_size": 7,
       "going": "Standard / Slow",
       "surface": "AW",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 3.35,
       "available_stake_gbp": 11,
@@ -461,7 +461,75 @@
         "value_status": "UNPROVEN",
         "booked_profit_gbp": 0
       },
-      "date": "2026-11-04"
+      "date": "2026-11-04",
+      "position": "1",
+      "result_date": "2026-11-04",
+      "result_off_time_uk": "17:30",
+      "result_course": "Kempton",
+      "result_horse": "Persian Spirit",
+      "result_off_dt": "2026-11-04T17:30:00+00:00",
+      "result_retrieved_at": "2026-11-04T17:47:23.333030Z",
+      "result_race_id": "rac_32303449152",
+      "result_horse_id": "hrs_44786686",
+      "result_website_race_id": "946946",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/kempton/946946/try-unibets-new-racing-bet-builder-fillies-handicap",
+      "result_non_runners": [],
+      "result_website_horse_id": "1158181",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Persian Spirit",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Phoenix Moon",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Miracleoftheandes",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "4"
+        },
+        {
+          "position": "4",
+          "horse": "Amelia's Joy",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "4.1"
+        },
+        {
+          "position": "5",
+          "horse": "Queue Dos",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "7.35"
+        },
+        {
+          "position": "6",
+          "horse": "Dawn Romance",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "10.6"
+        },
+        {
+          "position": "7",
+          "horse": "Independent Expert",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "12.1"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/kempton/946946/try-unibets-new-racing-bet-builder-fillies-handicap",
+      "margin_retrieved_at": "2026-11-04T17:47:23.333030Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st",
+      "winner": "Persian Spirit",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-04/kempton/946946/try-unibets-new-racing-bet-builder-fillies-handicap"
     }
   ]
 }
