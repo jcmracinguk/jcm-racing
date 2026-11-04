@@ -156,9 +156,9 @@
       "field_size": 10,
       "going": "Soft (Heavy in places)",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 3.2,
       "available_stake_gbp": 27,
@@ -204,7 +204,91 @@
         "accounting_basis": "ACTUAL_SCREENSHOT_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
         "booked_profit_gbp": 0
-      }
+      },
+      "position": "1",
+      "result_date": "2026-11-04",
+      "result_off_time_uk": "13:50",
+      "result_course": "Nottingham",
+      "result_horse": "Indhaar",
+      "result_off_dt": "2026-11-04T13:50:00+00:00",
+      "result_retrieved_at": "2026-11-04T14:08:14.121867Z",
+      "result_race_id": "rac_32303460774",
+      "result_horse_id": "hrs_63809403",
+      "result_website_race_id": "946936",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/nottingham/946936/experience-hospitality-at-nottingham-racecourse-novice-stakes-gbbgbbplus-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1221273",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¾",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Indhaar",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "The Resdev Tyke",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "3",
+          "horse": "Secret Squirrel",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "1.95"
+        },
+        {
+          "position": "4",
+          "horse": "Corallience",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.2"
+        },
+        {
+          "position": "5",
+          "horse": "Velardo",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "5.7"
+        },
+        {
+          "position": "6",
+          "horse": "Marquetry",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "6.95"
+        },
+        {
+          "position": "7",
+          "horse": "Temple",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "10.2"
+        },
+        {
+          "position": "8",
+          "horse": "Salver",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "20.2"
+        },
+        {
+          "position": "9",
+          "horse": "Train In Vain",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "25.7"
+        },
+        {
+          "position": "10",
+          "horse": "Ace Artist",
+          "margin_from_previous": "22",
+          "cumulative_beaten_lengths": "47.7"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/nottingham/946936/experience-hospitality-at-nottingham-racecourse-novice-stakes-gbbgbbplus-race",
+      "margin_retrieved_at": "2026-11-04T14:08:14.121867Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "race_date": "2026-11-04",
