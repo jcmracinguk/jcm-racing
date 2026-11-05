@@ -2,7 +2,7 @@ name: Football weekend paper screen
 on:
   workflow_dispatch:
   pull_request:
-    types: [opened]
+    types: [opened, synchronize]
     paths:
       - 'scripts/football/football_forward.py'
       - 'tests/football/test_football_forward.py'
@@ -39,5 +39,6 @@ jobs:
           python3 - <<'PY'
           import runpy, sys
           sys.path.insert(0, 'frozen-model/scripts/football')
+          sys.path.insert(1, 'scripts/football')
           runpy.run_path('scripts/football/football_forward.py', run_name='__main__')
           PY
