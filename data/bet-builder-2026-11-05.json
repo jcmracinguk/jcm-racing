@@ -54,9 +54,9 @@
       "field_size": 4,
       "going": "Good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 2.96,
       "available_stake_gbp": 15.26,
@@ -103,8 +103,54 @@
         "value_status": "UNPROVEN",
         "booked_profit_gbp": 0
       },
-      "position": null,
-      "placing": null
+      "position": "1",
+      "placing": "1st",
+      "result_date": "2026-11-05",
+      "result_off_time_uk": "13:08",
+      "result_course": "Plumpton",
+      "result_horse": "Marlacoo",
+      "result_off_dt": "2026-11-05T13:08:00+00:00",
+      "result_retrieved_at": "2026-11-05T13:23:44.017557Z",
+      "result_race_id": "rac_32303576994",
+      "result_horse_id": "hrs_39996565",
+      "result_website_race_id": "947080",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/plumpton/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1138224",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "4 ½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Marlacoo",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Klic Boum",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "4.5"
+        },
+        {
+          "position": "3",
+          "horse": "Sweet Caryline",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "16.5"
+        },
+        {
+          "position": "4",
+          "horse": "Breezethroughlife",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "21.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/plumpton/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-05T13:23:44.017557Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     },
     {
       "race_date": "2026-11-05",
