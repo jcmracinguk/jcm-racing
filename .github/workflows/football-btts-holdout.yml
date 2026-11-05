@@ -1,0 +1,39 @@
+name: Football BTTS final holdout
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: football-btts-final-holdout
+  cancel-in-progress: false
+jobs:
+  holdout:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/football
+            tests/football
+      - name: Check out immutable evaluated v1 implementation
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: e3698abfd81366b277d36b6d5efc6146d56cc96d
+          path: frozen-model
+          persist-credentials: false
+          sparse-checkout: scripts/football
+      - name: Test first-run and frozen-model safeguards
+        run: PYTHONPATH=frozen-model/scripts/football:scripts/football python3 -m unittest discover -s tests/football -p 'test_*.py' -v
+      - name: Final holdout for both leagues without rule changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import runpy, sys
+          sys.path.insert(0, 'frozen-model/scripts/football')
+          runpy.run_path('scripts/football/football_holdout.py', run_name='__main__')
+          PY
