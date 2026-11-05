@@ -199,9 +199,9 @@
       "field_size": 10,
       "going": "Standard",
       "surface": "Tapeta",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 4.5,
       "available_stake_gbp": 38.63,
@@ -248,8 +248,90 @@
         "value_status": "UNPROVEN",
         "booked_profit_gbp": 0
       },
-      "position": null,
-      "placing": null
+      "position": "1",
+      "placing": "1st",
+      "result_date": "2026-11-05",
+      "result_off_time_uk": "16:30",
+      "result_course": "Southwell",
+      "result_horse": "Lady Mariko",
+      "result_off_dt": "2026-11-05T16:30:00+00:00",
+      "result_retrieved_at": "2026-11-05T16:49:11.054012Z",
+      "result_race_id": "rac_32303596364",
+      "result_horse_id": "hrs_47098863",
+      "result_website_race_id": "947101",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/southwell/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
+      "result_non_runners": [],
+      "result_website_horse_id": "1166077",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Lady Mariko",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Ribenska",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Forbidden Colours",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "4.5"
+        },
+        {
+          "position": "4",
+          "horse": "Enola Grey",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "5.25"
+        },
+        {
+          "position": "5",
+          "horse": "Lope El Fuego",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "6.75"
+        },
+        {
+          "position": "6",
+          "horse": "Spirit Of Jenny",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "10"
+        },
+        {
+          "position": "7",
+          "horse": "Mountain Of Light",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "8",
+          "horse": "Mayo County",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "12.75"
+        },
+        {
+          "position": "9",
+          "horse": "Diamondinthedark",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "14.25"
+        },
+        {
+          "position": "10",
+          "horse": "Fistral Beach",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "18"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/southwell/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
+      "margin_retrieved_at": "2026-11-05T16:49:11.054012Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     },
     {
       "race_date": "2026-11-05",
