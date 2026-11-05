@@ -1,0 +1,133 @@
+name: Football data access check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: football-data-access-check
+  cancel-in-progress: false
+jobs:
+  check:
+    # Standard runner in this public repository: no paid runner or storage.
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # No checkout, installs, uploads, repository writes, deployment or schedule.
+      - name: Check free football data access
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import time
+          import urllib.error
+          import urllib.request
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          
+          token = os.environ.get("FOOTBALL_DATA_TOKEN", "").strip()
+          if not token:
+              sys.exit("FOOTBALL_DATA_TOKEN is missing; add the repository Actions secret.")
+          now = datetime.now(ZoneInfo("Europe/London"))
+          year = now.year if now.month >= 7 else now.year - 1
+          rows = []
+          current_ok = {}
+          stop = False
+          calls = 0
+          
+          # Only this official HTTPS host receives the secret. Never follow redirects.
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self, req, fp, code, msg, headers, newurl):
+                  return None
+          
+          opener = urllib.request.build_opener(NoRedirect)
+          for league in ("PL", "ELC"):
+              for season in range(year, year - 4, -1):
+                  if calls:
+                      time.sleep(7)  # Below the free tier's 10 calls/minute; eight calls max.
+                  endpoint = f"https://api.football-data.org/v4/competitions/{league}/matches?season={season}"
+                  request = urllib.request.Request(endpoint, headers={
+                      "X-Auth-Token": token, "Accept": "application/json",
+                      "User-Agent": "JCM-Football-Access-Check/1.0",
+                  })
+                  calls += 1
+                  status, total, finished, usable, first, last = "unknown", "-", "-", "-", "-", "-"
+                  try:
+                      with opener.open(request, timeout=20) as response:
+                          if response.status != 200:
+                              raise ValueError("Unexpected HTTP success status")
+                          payload = json.load(response)
+                      matches = payload.get("matches")
+                      if not isinstance(matches, list) or not matches:
+                          status = "Empty or invalid response; access unconfirmed"
+                      elif any(
+                          not isinstance(m, dict)
+                          or m.get("competition", {}).get("code") != league
+                          or not str(m.get("season", {}).get("startDate", "")).startswith(str(season) + "-")
+                          for m in matches
+                      ):
+                          status = "Competition/season mismatch; unusable"
+                      else:
+                          dates = [datetime.fromisoformat(m["utcDate"].replace("Z", "+00:00"))
+                                   for m in matches]
+                          if any(d.tzinfo is None for d in dates):
+                              raise ValueError("Missing timezone")
+                          done = [m for m, d in zip(matches, dates)
+                                  if m.get("status") == "FINISHED" and d < now]
+                          scored = [m for m in done if
+                                    all(type(m.get("score", {}).get("fullTime", {}).get(side)) is int
+                                        and m["score"]["fullTime"][side] >= 0
+                                        for side in ("home", "away"))]
+                          total, finished, usable = len(matches), len(done), len(scored)
+                          first, last = min(dates).date().isoformat(), max(dates).date().isoformat()
+                          status = "Accessible; completeness not yet audited"
+                          if season == year:
+                              current_ok[league] = bool(scored)
+                  except urllib.error.HTTPError as error:
+                      # No response body or exception text: either could contain sensitive data.
+                      status = f"HTTP {error.code}; access not established"
+                      if error.code in (401, 429) or error.code >= 500:
+                          stop = True
+                  except (urllib.error.URLError, TimeoutError):
+                      status = "Network/timeout failure; access unconfirmed"
+                      stop = True
+                  except Exception:
+                      status = "Response validation failed; access unconfirmed"
+                  rows.append(f"| {league} | {season}/{str(season + 1)[-2:]} | {status} | "
+                              f"{total} | {finished} | {usable} | {first} | {last} |")
+                  if stop:
+                      break
+              if stop:
+                  break
+          
+          report = [
+              "# Football data access check",
+              "",
+              f"Observed: {now.isoformat(timespec='seconds')} (Europe/London)",
+              f"Requests made: {calls}; maximum eight. GET only. No retries or upgrades.",
+              "Football data provided by the Football-Data.org API.",
+              "",
+              "| League | Season | Access | Returned matches | Finished before check | With valid FT scores | First date | Last date |",
+              "|---|---|---|---:|---:|---:|---|---|",
+              *rows,
+              "",
+              "PL = Premier League; ELC = Championship. Only the four displayed seasons are probed.",
+              "An accessible response does not establish complete historical coverage or data quality.",
+              "No selections, BTTS odds, xG, injury/line-up coverage or profitability are tested.",
+              "No API bodies, fixture identities, credentials, artifacts or repository files are published.",
+              "Current-season data is usable for further auditing only if both leagues pass below.",
+          ]
+          passed = all(current_ok.get(code, False) for code in ("PL", "ELC"))
+          report.append("Current-season scored-match check: " + ("PASS" if passed else "NOT PASSED"))
+          output = "\n".join(report) + "\n"
+          print(output)
+          summary = os.environ.get("GITHUB_STEP_SUMMARY")
+          if summary:
+              with open(summary, "a", encoding="utf-8") as handle:
+                  handle.write(output)
+          if not passed:
+              sys.exit(1)
+          PY
