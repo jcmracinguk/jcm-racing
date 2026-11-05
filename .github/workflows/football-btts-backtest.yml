@@ -1,0 +1,25 @@
+name: Football BTTS historical test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: football-btts-historical-test
+  cancel-in-progress: false
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/football
+            tests/football
+      - name: Verify chronological and data safeguards
+        run: PYTHONPATH=scripts/football python3 -m unittest discover -s tests/football -p 'test_*.py' -v
+      - name: Evaluate development and validation only
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python3 scripts/football/football_backtest.py
