@@ -1,0 +1,25 @@
+name: Football data quality audit
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: football-data-quality-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/football
+            tests/football
+      - name: Test safeguards with synthetic data
+        run: PYTHONPATH=scripts/football python3 -m unittest discover -s tests/football -p 'test_*.py' -v
+      - name: Audit eight league-seasons without storing match records
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python3 scripts/football/football_audit.py
