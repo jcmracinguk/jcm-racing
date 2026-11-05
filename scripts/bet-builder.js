@@ -84,9 +84,9 @@ function opening(c,m){return c.date>=bankTrial.start?bankTrial.initial:m==='fixe
 function settings(c,m){
  if(c.preserve_device_choices&&localStorage.getItem(storage(c.date,m))){
   const saved=loadSettings(c,m);
-  if(c.sync_published_default_entries)for(const r of c.rows){
+  if(c.sync_published_default_entries||Array.isArray(c.sync_published_default_entry_keys))for(const r of c.rows){
    const v=saved.entries[key(r)],e=c.published_simulations?.[m]?.entries.find(e=>e.race_id===r.race_id&&e.horse_id===r.horse_id);
-   if(v?.default_entry===true&&v.confirmed_at===null&&e){saved.entries[key(r)]={...v,included:true,liability_cents:e.liability_cents,odds:v.odds??e.odds};saved.choices={...saved.choices,[key(r)]:true};}
+   if(v?.default_entry===true&&v.confirmed_at===null&&e&&(c.sync_published_default_entries||c.sync_published_default_entry_keys.includes(key(r)))){saved.entries[key(r)]={...v,included:true,liability_cents:e.liability_cents,odds:v.odds??e.odds};saved.choices={...saved.choices,[key(r)]:true};}
   }
   return saved;
  }
