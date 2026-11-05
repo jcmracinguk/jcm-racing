@@ -1,0 +1,44 @@
+name: Football weekend paper screen
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize]
+    paths:
+      - 'scripts/football/football_forward.py'
+      - 'tests/football/test_football_forward.py'
+      - '.github/workflows/football-paper-screen.yml'
+permissions:
+  contents: read
+concurrency:
+  group: football-weekend-paper-screen
+  cancel-in-progress: false
+jobs:
+  screen:
+    if: github.event_name == 'workflow_dispatch' || (github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'research/football-weekend-paper-screen')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+          sparse-checkout: |
+            scripts/football
+            tests/football
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: e3698abfd81366b277d36b6d5efc6146d56cc96d
+          path: frozen-model
+          persist-credentials: false
+          sparse-checkout: scripts/football
+      - name: Verify rules and prospective timing safeguards
+        run: PYTHONPATH=frozen-model/scripts/football:scripts/football python3 -m unittest discover -s tests/football -p 'test_*.py' -v
+      - name: Screen upcoming weekend without publishing app selections
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import runpy, sys
+          sys.path.insert(0, 'frozen-model/scripts/football')
+          sys.path.insert(1, 'scripts/football')
+          runpy.run_path('scripts/football/football_forward.py', run_name='__main__')
+          PY
