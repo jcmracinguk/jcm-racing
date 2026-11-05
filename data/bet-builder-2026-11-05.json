@@ -382,9 +382,9 @@
       "field_size": 11,
       "going": "Standard",
       "surface": "Polytrack",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "result_source": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
       "official_accuracy_eligible": false,
       "lay_odds": 3.05,
       "available_stake_gbp": 16.4,
@@ -425,8 +425,98 @@
         "value_status": "UNPROVEN",
         "booked_profit_gbp": 0
       },
-      "position": null,
-      "placing": null
+      "position": "1",
+      "placing": "1st",
+      "result_date": "2026-11-05",
+      "result_off_time_uk": "17:15",
+      "result_course": "Chelmsford City",
+      "result_horse": "National Pride",
+      "result_off_dt": "2026-11-05T17:15:00+00:00",
+      "result_retrieved_at": "2026-11-05T17:31:43.646290Z",
+      "result_race_id": "rac_32303546002",
+      "result_horse_id": "hrs_65254826",
+      "result_website_race_id": "947111",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/chelmsford-city/947111/awc-finals-day-at-newcastle-26th-march-nursery",
+      "result_non_runners": [
+        "Artemis Star"
+      ],
+      "result_website_horse_id": "1226193",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "National Pride",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Roosike",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Ten Of Clubs",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Kigali",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "3.05"
+        },
+        {
+          "position": "5",
+          "horse": "Potters Margot",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.8"
+        },
+        {
+          "position": "6",
+          "horse": "Royal Titan",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "4.55"
+        },
+        {
+          "position": "7",
+          "horse": "Star Bayside Boy",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "8.55"
+        },
+        {
+          "position": "8",
+          "horse": "Californian Angel",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "11.8"
+        },
+        {
+          "position": "9",
+          "horse": "Maliqui",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "12.1"
+        },
+        {
+          "position": "10",
+          "horse": "Marhaba Ya Tayib",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "22.1"
+        },
+        {
+          "position": "11",
+          "horse": "Absolute Diamond",
+          "margin_from_previous": "7",
+          "cumulative_beaten_lengths": "29.1"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/chelmsford-city/947111/awc-finals-day-at-newcastle-26th-march-nursery",
+      "margin_retrieved_at": "2026-11-05T17:31:43.646290Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     }
   ],
   "bank_trial": {
