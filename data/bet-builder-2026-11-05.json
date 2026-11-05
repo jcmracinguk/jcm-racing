@@ -1,0 +1,244 @@
+{
+  "schema_version": 2,
+  "fictional_only": true,
+  "date": "2026-11-05",
+  "introduced_at": "2026-11-05T11:43:38.859Z",
+  "opening_balance_gbp": 0,
+  "commission_rate": 0.05,
+  "rows": [
+    {
+      "race_date": "2026-11-05",
+      "horse": "Marlacoo",
+      "course": "Plumpton",
+      "off_time_uk": "13:08",
+      "race_id": "rac_32303576994",
+      "horse_id": "hrs_39996565",
+      "scheduled_off_dt": "2026-11-05T13:08:00+00:00",
+      "interest_rank": 1,
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Strong racing candidate; value unproven",
+      "selected_at": "2026-11-05T11:25:00Z",
+      "selection_timestamp_precision": "minute",
+      "selection_timestamp_note": "Stage-two chat review concluded around 11:25 GMT; minute precision. Original pre-race assessment retained.",
+      "added_at": "2026-11-05T11:43:38.859Z",
+      "user_approved_at": "2026-11-05T11:43:38.859Z",
+      "user_approval_time_note": "Approval recorded during publication turn; exact user-message arrival timestamp unavailable.",
+      "methodology_version": "decisive_daily_lay_v2_2026-11-05",
+      "identified_challengers": [
+        "Klic Boum",
+        "Sweet Caryline",
+        "Breezethroughlife"
+      ],
+      "selection_reason": {
+        "summary": "Repeated unconvincing hurdle finishes leave him vulnerable to strong competition. Klic Boum's strong-running second on chase debut makes him the principal rival with this longer trip a plausible help. Sweet Caryline won three hurdles and can improve from her first chase run; Breezethroughlife has a breathing operation and drop in trip as plausible revival routes. Their limitations are that the latter two still need improvement or revival. Marlacoo's chase debut is an unknown, not evidence of poor jumping.",
+        "counterargument": "He has underlying ability and could improve for fences; only four runners means relatively few rivals must disappoint for him to win. Chase inexperience is not itself a demonstrated defect.",
+        "challengers": [
+          "Klic Boum",
+          "Sweet Caryline",
+          "Breezethroughlife"
+        ],
+        "source": "The Racing API Pro and Sporting Life; delayed Betfair Exchange API availableToLay",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-05/plumpton/racecard/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
+          "https://api.theracingapi.com/v1/racecards/rac_32303576994"
+        ],
+        "checked_at": "2026-11-05T11:25:00Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Value unproven; no calibrated probability or firm pace advantage claimed. Delayed indicative quote; exact quote timestamp and delay unavailable. Displayed liquidity does not cover modeled stake; full matching unverified."
+      },
+      "field_size": 4,
+      "going": "Good",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "result_source": null,
+      "official_accuracy_eligible": false,
+      "lay_odds": 2.96,
+      "available_stake_gbp": 15.26,
+      "source": "Betfair Exchange API delayed availableToLay snapshot retrieved 5 November 2026 at 11:20 GMT",
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "original_price_side": "LAY",
+        "api_field": "ex.availableToLay",
+        "market_id": "1.265004808",
+        "selection_id": 69005769,
+        "retrieved_at": "2026-11-05T11:20:05.149984+00:00",
+        "quote_timestamp": null,
+        "observed_at": null,
+        "is_market_data_delayed": true,
+        "delay_seconds": null,
+        "exact_delay_seconds": null,
+        "liquidity_gbp": 15.26,
+        "full_stake_match_verified": false,
+        "verification_status": "VERIFIED_API_LAY",
+        "snapshot_commit": "3dcd243db3df3aa128b4e55eeb4c7f461246b425",
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json"
+      },
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-05/plumpton/racecard/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
+      "race_name": "Bet On Course With Star Sports Novices' Handicap Chase (GBB Race)",
+      "market_position_note": "Favourite in Bet365 bookmaker snapshot via Racing API; bookmaker price is separate from the actual exchange Lay quote.",
+      "bookmaker_price_snapshot": {
+        "provider": "Bet365 via The Racing API",
+        "decimal": 2.75,
+        "updated_at_raw": "2026-11-05 11:24:07",
+        "time_note": "Feed timestamp timezone not supplied. Bookmaker price, not exchange Lay."
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 255.10204081632654,
+        "potential_net_profit_gbp": 242.3469387755102,
+        "break_even_beaten_rate": 0.6735395189003436,
+        "displayed_liquidity_covers_required_stake": false,
+        "full_stake_match_verified": false,
+        "price_band": "2.00-2.99",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
+        "value_status": "UNPROVEN",
+        "booked_profit_gbp": 0
+      },
+      "position": null,
+      "placing": null
+    },
+    {
+      "race_date": "2026-11-05",
+      "horse": "Lady Mariko",
+      "course": "Southwell",
+      "off_time_uk": "16:30",
+      "race_id": "rac_32303596364",
+      "horse_id": "hrs_47098863",
+      "scheduled_off_dt": "2026-11-05T16:30:00+00:00",
+      "interest_rank": 2,
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Strong racing candidate; value unproven",
+      "selected_at": "2026-11-05T11:25:00Z",
+      "selection_timestamp_precision": "minute",
+      "selection_timestamp_note": "Stage-two chat review concluded around 11:25 GMT; minute precision. Original pre-race assessment retained.",
+      "added_at": "2026-11-05T11:43:38.859Z",
+      "user_approved_at": "2026-11-05T11:43:38.859Z",
+      "user_approval_time_note": "Approval recorded during publication turn; exact user-message arrival timestamp unavailable.",
+      "methodology_version": "decisive_daily_lay_v2_2026-11-05",
+      "identified_challengers": [
+        "Enola Grey",
+        "Ribenska",
+        "Spirit Of Jenny"
+      ],
+      "selection_reason": {
+        "summary": "She has no commanding ability advantage after running below her April winning form. Enola Grey was third after trouble finishing last time and has course-winning form; Ribenska returns to all-weather seven furlongs on a slipping mark; Spirit Of Jenny is a course winner back on her winning mark. The main case is several credible rivals rather than a manufactured weight or pace negative. Enola Grey has prior poor runs, Ribenska needs a revival and Spirit Of Jenny has not progressed.",
+        "counterargument": "Her latest sixth had excuses: she started poorly and closed late over six furlongs. Returning to seven furlongs, removal of the visor and a reduced mark of 69 offer a credible winning route.",
+        "challengers": [
+          "Enola Grey",
+          "Ribenska",
+          "Spirit Of Jenny"
+        ],
+        "source": "The Racing API Pro and Sporting Life; delayed Betfair Exchange API availableToLay",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-05/southwell/racecard/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
+          "https://api.theracingapi.com/v1/racecards/rac_32303596364"
+        ],
+        "checked_at": "2026-11-05T11:25:00Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Value unproven; no calibrated probability or firm pace advantage claimed. Delayed indicative quote; exact quote timestamp and delay unavailable. Displayed liquidity does not cover modeled stake; full matching unverified."
+      },
+      "field_size": 10,
+      "going": "Standard",
+      "surface": "Tapeta",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "result_source": null,
+      "official_accuracy_eligible": false,
+      "lay_odds": 4.5,
+      "available_stake_gbp": 38.63,
+      "source": "Betfair Exchange API delayed availableToLay snapshot retrieved 5 November 2026 at 11:20 GMT",
+      "lay_price_provenance": {
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "original_price_side": "LAY",
+        "api_field": "ex.availableToLay",
+        "market_id": "1.265005212",
+        "selection_id": 76502647,
+        "retrieved_at": "2026-11-05T11:20:05.261897+00:00",
+        "quote_timestamp": null,
+        "observed_at": null,
+        "is_market_data_delayed": true,
+        "delay_seconds": null,
+        "exact_delay_seconds": null,
+        "liquidity_gbp": 38.63,
+        "full_stake_match_verified": false,
+        "verification_status": "VERIFIED_API_LAY",
+        "snapshot_commit": "3dcd243db3df3aa128b4e55eeb4c7f461246b425",
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json"
+      },
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-05/southwell/racecard/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
+      "race_name": "AW Trials Day Lingfield 2nd Jan 2027 Fillies' Handicap",
+      "market_position_note": "Favourite in Bet365 bookmaker snapshot via Racing API; bookmaker price is separate from the actual exchange Lay quote.",
+      "bookmaker_price_snapshot": {
+        "provider": "Bet365 via The Racing API",
+        "decimal": 3.75,
+        "updated_at_raw": "2026-11-05 11:24:07",
+        "time_note": "Feed timestamp timezone not supplied. Bookmaker price, not exchange Lay."
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 142.85714285714286,
+        "potential_net_profit_gbp": 135.71428571428572,
+        "break_even_beaten_rate": 0.7865168539325842,
+        "displayed_liquidity_covers_required_stake": false,
+        "full_stake_match_verified": false,
+        "price_band": "4.00-4.99",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
+        "value_status": "UNPROVEN",
+        "booked_profit_gbp": 0
+      },
+      "position": null,
+      "placing": null
+    }
+  ],
+  "bank_trial": {
+    "start_date": "2026-10-23",
+    "accounting_model": "ZERO_START_UNLIMITED_SIMULATED_OVERDRAFT",
+    "initial_balance_gbp": 0,
+    "percentage_benchmark_gbp": 10000,
+    "automatic_deposits": false,
+    "deposits": [],
+    "withdrawals": [],
+    "results_publish_when": "ALL_DAILY_RACES_FINISHED_AND_RESULTS_VERIFIED",
+    "performance_formula": "cumulative net profit or loss / 10000 * 100",
+    "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
+  },
+  "preserve_device_choices": true,
+  "simulation_note": "User approved only Marlacoo at 2.96 and Lady Mariko at 4.50. £500 simulated liability each, 5% commission. Delayed indicative quotes; full-stake matching unverified and value unproven. Both pending, zero booked profit. Watchlist excluded.",
+  "published_simulations": {
+    "recorded_at": "2026-11-05T11:43:38.859Z",
+    "authorization": "User approved the two suggested picks for live publication in the simulated app, leaving the watchlist out.",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32303576994",
+          "horse_id": "hrs_39996565",
+          "odds": 2.96,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32303596364",
+          "horse_id": "hrs_47098863",
+          "odds": 4.5,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  }
+}
