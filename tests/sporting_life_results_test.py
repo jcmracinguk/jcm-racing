@@ -36,6 +36,28 @@ class Results(unittest.TestCase):
         self.page['race']['rides'][3]['finish_position']=0
         with self.assertRaises(ValueError):self.parse()
 
+    def test_bst_source_utc_matches_exact_scheduled_instant(self):
+        self.row.update(race_date='2026-10-24', off_time_uk='16:05',
+                        scheduled_off_dt='2026-10-24T16:05:00+01:00')
+        self.url = self.url.replace('2026-10-27', '2026-10-24')
+        self.page['race']['race_summary'].update(date='2026-10-24', time='15:05')
+        self.assertEqual(self.parse()['result_status'], 'WIN')
+
+    def test_bst_local_clock_is_not_accepted_as_source_utc(self):
+        self.row.update(race_date='2026-10-24', off_time_uk='16:05',
+                        scheduled_off_dt='2026-10-24T16:05:00+01:00')
+        self.url = self.url.replace('2026-10-27', '2026-10-24')
+        self.page['race']['race_summary'].update(date='2026-10-24', time='16:05')
+        with self.assertRaises(ValueError): self.parse()
+
+    def test_stored_local_clock_must_agree_with_schedule(self):
+        self.row['scheduled_off_dt'] = '2026-10-27T14:32:00+00:00'
+        with self.assertRaises(ValueError): self.parse()
+
+    def test_naive_schedule_is_rejected(self):
+        self.row['scheduled_off_dt'] = '2026-10-27T14:31:00'
+        with self.assertRaises(ValueError): self.parse()
+
     def test_verified_winning_and_cumulative_margins(self):
         update, detail = m.result(self.row,self.page,self.url,datetime.now(timezone.utc))
         self.assertEqual(update['winning_margin_lengths'], 'sh')
@@ -55,4 +77,5 @@ class Results(unittest.TestCase):
         self.assertEqual(update['winning_margin_lengths'], 'dh')
 
 if __name__=='__main__':unittest.main()
+
 
