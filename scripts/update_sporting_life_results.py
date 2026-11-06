@@ -122,7 +122,18 @@ def result(row, page, url, now):
     path = urlsplit(url).path
     if not re.fullmatch(r'/racing/results/' + re.escape(row['race_date']) + r'/[a-z0-9-]+/' + ref + r'/[a-z0-9-]+', path):
         raise ValueError('Result URL identity mismatch')
-    if summary['date'] != row['race_date'] or summary['time'] != row['off_time_uk'] or normal(summary['course_name']) != normal(row['course']):
+    # Sporting Life's embedded race_summary clock is UTC; stored off_time_uk
+    # is Europe/London. Compare exact instants, never accept either clock or
+    # apply a fixed one-hour tolerance (which could match the wrong race).
+    scheduled = datetime.fromisoformat(row['scheduled_off_dt'])
+    if scheduled.tzinfo is None or scheduled.utcoffset() is None:
+        raise ValueError('Scheduled off must include a timezone')
+    local = scheduled.astimezone(ZoneInfo('Europe/London'))
+    source_off = datetime.strptime(summary['date'] + ' ' + summary['time'], '%Y-%m-%d %H:%M').replace(tzinfo=timezone.utc)
+    if (local.date().isoformat() != row['race_date']
+            or local.strftime('%H:%M') != row['off_time_uk']
+            or source_off != scheduled.astimezone(timezone.utc)
+            or normal(summary['course_name']) != normal(row['course'])):
         raise ValueError('Result race identity mismatch')
     if summary['race_stage'] != 'WEIGHEDIN':
         raise ValueError('Awaiting weighed-in full result')
@@ -286,4 +297,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 
