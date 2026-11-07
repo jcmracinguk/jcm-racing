@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "mode": "research_only_not_official_picks",
+  "date": "2026-11-07",
+  "imported_at": "2026-11-07T11:04:08.221156+00:00",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "high_competition": [
+    {
+      "race_date": "2026-11-07",
+      "horse": "Tam Lin",
+      "course": "Southwell",
+      "off_time_uk": "16:25",
+      "race_id": "rac_32303832678",
+      "horse_id": "hrs_44786490",
+      "scheduled_off_dt": "2026-11-07T16:25:00+00:00",
+      "interest_rank": 1,
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Moderate candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Moderate racing candidate; value unproven",
+      "selected_at": "2026-11-07T10:56:02.187Z",
+      "selection_timestamp_precision": "millisecond",
+      "added_at": "2026-11-07T11:04:08.221156+00:00",
+      "user_approved_at": "2026-11-07T11:04:08.221156+00:00",
+      "user_approval_time_note": "Approval recorded during publication turn; exact user-message arrival timestamp unavailable.",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "identified_challengers": [
+        "Blackjack",
+        "Masai Angel",
+        "Drish Samphire",
+        "Up The Anti"
+      ],
+      "selection_reason": {
+        "summary": "Strong-competition route, moderate evidence. Blackjack has a course second and multiple C&D wins, Masai Angel recent6f AW third, Drish Samphire two recent turf wins and Up The Anti recent seconds. Tam Lin lacks a current demonstrated superiority over these at today's terms. Recommendation at actual Lay4.60 supplies131.944444 net for500liability.",
+        "counterargument": "Michael Appleby stable debut, reduced OR53, cheekpieces removed and return6f could revive him. Prior7f/1m defeats do not establish sprint vulnerability;201-day absence not proven unfitness. Material improvement risk prevents strong label.",
+        "why_still_oppose": "Several rivals have demonstrated relevant current winning or placed form. Tam Lin has a credible revival case but no established superiority on these terms. Combined evidence and recorded Lay4.60 justify a moderate paper selection; no calibrated edge claimed.",
+        "rival_limitations": "Blackjack inconsistent and concedes2lb; Masai Angel sameOR53/current6f form but still maiden; Drish up3lb and turf-to-AW transfer needed; Up The Anti needs clean passage. OttawaNR. Remaining runners reviewed; revival needed for several.",
+        "challengers": [
+          "Blackjack",
+          "Masai Angel",
+          "Drish Samphire",
+          "Up The Anti"
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-07/southwell/racecard/947519/midnight-a-next-generation-betting-app-handicap",
+          "https://api.theracingapi.com/v1/racecards/rac_32303832678"
+        ],
+        "checked_at": "2026-11-07T10:56:02.187Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "New-yard improvement and sprint switch are material unknowns; absence is not proven unfitness. Delayed morning quote; exact delay/quote time unknown, full matching unverified."
+      },
+      "field_size": 11,
+      "going": "Standard",
+      "surface": "AW",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "result_source": null,
+      "official_accuracy_eligible": false,
+      "lay_odds": 4.6,
+      "available_stake_gbp": 34.66,
+      "source": "Betfair Exchange delayed morning Lay snapshot retrieved 7 November2026 at10:26:41 GMT.",
+      "lay_price_provenance": {
+        "snapshot_blob_sha": "ecc77d7a31d6319d5a956d62561c622899df616e",
+        "retrieved_at": "2026-11-07T10:26:41.573298+00:00",
+        "market_id": "1.265127582",
+        "selection_id": 1462845,
+        "price_side": "LAY",
+        "displayed_liquidity_gbp": 34.66,
+        "is_market_data_delayed": true,
+        "exact_delay_seconds": null,
+        "quote_timestamp": null,
+        "full_stake_match_verified": false,
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "original_price_side": "LAY",
+        "api_field": "ex.availableToLay",
+        "liquidity_gbp": 34.66,
+        "verification_status": "VERIFIED_API_LAY"
+      },
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-07/southwell/racecard/947519/midnight-a-next-generation-betting-app-handicap",
+      "race_name": "Midnite A Next Generation Betting App Handicap",
+      "market_position_note": "Second shortest actual Lay offer in morning snapshot; Blackjack3.70, Tam Lin4.60.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 138.88888888888889,
+        "potential_net_profit_gbp": 131.94444444444443,
+        "failure_gbp": -500,
+        "booked_profit_gbp": 0,
+        "value_status": "UNPROVEN",
+        "full_stake_match_verified": false,
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      }
+    }
+  ],
+  "competition_watchlist": []
+}
