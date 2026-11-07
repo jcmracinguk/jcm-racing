@@ -100,7 +100,94 @@
       "result_retrieved_at": "2026-10-26T19:07:49Z",
       "result_race_id": "rac_32302372180",
       "result_horse_id": "hrs_50434265",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302372180"
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302372180",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "1.75",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Fight Your Corner",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Crossbar",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Loblolly",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.55"
+        },
+        {
+          "position": "4",
+          "horse": "Breathe Easy",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "5",
+          "horse": "Gilet",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "2.25"
+        },
+        {
+          "position": "6",
+          "horse": "Drifts Away",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.55"
+        },
+        {
+          "position": "7",
+          "horse": "Studious",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.85"
+        },
+        {
+          "position": "8",
+          "horse": "Fallacious Promise",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "3.85"
+        },
+        {
+          "position": "9",
+          "horse": "Bold Suitor",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "7.85"
+        },
+        {
+          "position": "10",
+          "horse": "Get Outta Here",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "11.85"
+        },
+        {
+          "position": "11",
+          "horse": "Bubbles Wonky",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "11.95"
+        },
+        {
+          "position": "12",
+          "horse": "Uniting",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "13",
+          "horse": "Warning Sign",
+          "margin_from_previous": "20",
+          "cumulative_beaten_lengths": "32"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-26/kempton/945407/try-unibets-new-racing-bet-builder-handicap",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "race_date": "2026-10-26",
@@ -175,7 +262,88 @@
       "result_retrieved_at": "2026-10-26T18:20:17Z",
       "result_race_id": "rac_32302368306",
       "result_horse_id": "hrs_56559188",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302368306"
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302368306",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "1.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Siwa Oasis",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Pinatubo's Legacy",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Lunario",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "4",
+          "horse": "Weffaag",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "1.8"
+        },
+        {
+          "position": "5",
+          "horse": "Blue Prince",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.05"
+        },
+        {
+          "position": "6",
+          "horse": "Caviar Cowboy",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.8"
+        },
+        {
+          "position": "7",
+          "horse": "Rogue Messiah",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "5.3"
+        },
+        {
+          "position": "8",
+          "horse": "Port Road",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "6.05"
+        },
+        {
+          "position": "9",
+          "horse": "I'm Workin On It",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "7.8"
+        },
+        {
+          "position": "10",
+          "horse": "Aigeas",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "10.3"
+        },
+        {
+          "position": "11",
+          "horse": "Wild Nature",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "13.3"
+        },
+        {
+          "position": "12",
+          "horse": "City Cyclone",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "24.3"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-26/kempton/945405/unibet-40000-live-streamed-events-handicap",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ],
   "simulation_note": "Breathe Easy: screenshot-verified lay 6.6 at 11:16 GMT; £14 available (£78.40 liability). Default simulations assume full amounts despite insufficient displayed liquidity; no real orders. Wexford abandoned and excluded. Weffaag: screenshot-verified lay 4.9 at 11:22 GMT, £19 available (£74.10 liability). £500/race and £250 manual fictional defaults booked assuming full liquidity. User requested Weffaag included: £1000 daily fictional liability now split £500 each across Breathe Easy and Weffaag. Explicit device edits retained.",

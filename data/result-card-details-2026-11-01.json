@@ -258,11 +258,11 @@
           "cumulative_beaten_lengths": "9.5"
         }
       ],
-      "margin_source": "THE_RACING_API",
-      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32303050130",
-      "margin_retrieved_at": "2026-11-01T12:40:58.568828Z",
-      "margin_stage": "FULL_RESULT",
-      "margin_verification_status": "PROVIDER_ACCEPTED",
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-01/huntingdon/946334/copybet-support-safer-gambling-claiming-hurdle",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
       "lay_price_corrections": [
         {
           "invalidated_price": 17,

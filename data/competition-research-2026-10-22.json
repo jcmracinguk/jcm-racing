@@ -49,7 +49,76 @@
       "result_horse_id": "hrs_41190079",
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32301839505",
       "going": "Good To Yielding",
-      "lay_odds": null
+      "lay_odds": null,
+      "winning_margin_lengths": "3 ½",
+      "selected_beaten_lengths": "3.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Wicked Pleasure",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Red Acres Georgie",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "3.5"
+        },
+        {
+          "position": "3",
+          "horse": "Katie Can't Count",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "22.5"
+        },
+        {
+          "position": "4",
+          "horse": "Shadonagh",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "34.5"
+        },
+        {
+          "position": "5",
+          "horse": "Weaponized",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "42"
+        },
+        {
+          "position": "6",
+          "horse": "Cala Gracioneta",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "45.75"
+        },
+        {
+          "position": "7",
+          "horse": "Cloudy Rosie",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "50.75"
+        },
+        {
+          "position": "8",
+          "horse": "Ballito Beauty",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "53.5"
+        },
+        {
+          "position": "9",
+          "horse": "Bayswater Bloom",
+          "margin_from_previous": "14",
+          "cumulative_beaten_lengths": "67.5"
+        },
+        {
+          "position": "10",
+          "horse": "Senorita Diana",
+          "margin_from_previous": "17",
+          "cumulative_beaten_lengths": "84.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-22/clonmel/944591/irish-stallion-farms-ebf-mares-maiden-hurdle",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ],
   "competition_watchlist": [
@@ -92,7 +161,46 @@
       "result_horse_id": "hrs_29409821",
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32301916985",
       "going": "Good To Firm",
-      "lay_odds": null
+      "lay_odds": null,
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "31.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Breizh River",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Sean Og",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Walk On Quest",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "5.8"
+        },
+        {
+          "position": "4",
+          "horse": "Sir Carnegie",
+          "margin_from_previous": "14",
+          "cumulative_beaten_lengths": "19.8"
+        },
+        {
+          "position": "5",
+          "horse": "Dare To Shout",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "31.8"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-22/carlisle/944802/magnet-better-by-design-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "race_date": "2026-10-22",
@@ -137,7 +245,52 @@
       "result_horse_id": "hrs_47837363",
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32301911174",
       "going": "Soft",
-      "lay_odds": null
+      "lay_odds": null,
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "6.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Excelero",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Minella Missile",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Escapeandevade",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "4.8"
+        },
+        {
+          "position": "4",
+          "horse": "Doctors Hill",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "6.8"
+        },
+        {
+          "position": "5",
+          "horse": "Joker De Mai",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "10.55"
+        },
+        {
+          "position": "6",
+          "horse": "Jaipaletemps",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "15.55"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-22/ffos-las/944785/bettingsitescouk-fast-withdrawal-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "race_date": "2026-10-22",
@@ -182,7 +335,88 @@
       "result_horse_id": "hrs_64877428",
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32301885993",
       "going": "Standard",
-      "lay_odds": null
+      "lay_odds": null,
+      "winning_margin_lengths": "1 ¾",
+      "selected_beaten_lengths": "3",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Sycamore Gap",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Time Turner",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "3",
+          "horse": "Blue Tulip",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Fram Castle",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "3.1"
+        },
+        {
+          "position": "5",
+          "horse": "Chilli King",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "4.1"
+        },
+        {
+          "position": "6",
+          "horse": "Five Moons",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "4.4"
+        },
+        {
+          "position": "7",
+          "horse": "Queen Roslyn",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "6.9"
+        },
+        {
+          "position": "8",
+          "horse": "Beggarman",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "7"
+        },
+        {
+          "position": "9",
+          "horse": "Rubellite",
+          "margin_from_previous": "9",
+          "cumulative_beaten_lengths": "16"
+        },
+        {
+          "position": "10",
+          "horse": "Dollar's Dream",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "16.3"
+        },
+        {
+          "position": "11",
+          "horse": "Vinny's Dream",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "27.3"
+        },
+        {
+          "position": "12",
+          "horse": "O'driscoll",
+          "margin_from_previous": "50",
+          "cumulative_beaten_lengths": "77.3"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-22/southwell/944786/midnite-built-for-2027-not-2007-handicap",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "race_date": "2026-10-22",
@@ -227,7 +461,82 @@
       "result_horse_id": "hrs_47620930",
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32301835631",
       "going": "Good To Yielding",
-      "lay_odds": null
+      "lay_odds": null,
+      "winning_margin_lengths": "4",
+      "selected_beaten_lengths": "15",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "City Of Cork",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "World As One",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "4"
+        },
+        {
+          "position": "3",
+          "horse": "Detroit Maverick",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "15"
+        },
+        {
+          "position": "4",
+          "horse": "Rond Point",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "22.5"
+        },
+        {
+          "position": "5",
+          "horse": "Ddakji",
+          "margin_from_previous": "18",
+          "cumulative_beaten_lengths": "40.5"
+        },
+        {
+          "position": "6",
+          "horse": "Ballyteigue Bay",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "40.7"
+        },
+        {
+          "position": "7",
+          "horse": "Minella Maverick",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "51.7"
+        },
+        {
+          "position": "8",
+          "horse": "The Yellow Capri",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "61.2"
+        },
+        {
+          "position": "9",
+          "horse": "Ozark Daze",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "65.95"
+        },
+        {
+          "position": "10",
+          "horse": "George Dundee",
+          "margin_from_previous": "17",
+          "cumulative_beaten_lengths": "82.95"
+        },
+        {
+          "position": "11",
+          "horse": "Little An Often",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "85.7"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-22/clonmel/944589/crottys-lake-maiden-hurdle",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ]
 }

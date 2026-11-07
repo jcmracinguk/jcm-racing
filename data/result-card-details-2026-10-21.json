@@ -13,10 +13,83 @@
       "field_size": 11,
       "winner": "Amelia's Joy (GB)",
       "race_name": "Try Unibet's Improved Acca Boosts Fillies' Handicap Stakes",
-      "winning_margin_lengths": ".5",
-      "selected_beaten_lengths": "1.75",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "1.85",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/kempton/racecard/944587/try-unibets-improved-acca-boosts-fillies-handicap",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944587/try-unibets-improved-acca-boosts-fillies-handicap"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944587/try-unibets-improved-acca-boosts-fillies-handicap",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Amelia's Joy",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Duskaura",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Magna",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "0.55"
+        },
+        {
+          "position": "4",
+          "horse": "Happier",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.85"
+        },
+        {
+          "position": "5",
+          "horse": "Diamondinthedark",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "1.35"
+        },
+        {
+          "position": "6",
+          "horse": "Lady Mariko",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "1.85"
+        },
+        {
+          "position": "7",
+          "horse": "Lahan Kingman",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.15"
+        },
+        {
+          "position": "8",
+          "horse": "Leonie",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "2.9"
+        },
+        {
+          "position": "9",
+          "horse": "Vishaka",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "2.95"
+        },
+        {
+          "position": "10",
+          "horse": "Jenny Jerome",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "3.15"
+        },
+        {
+          "position": "11",
+          "horse": "Nzuri",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "14.15"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944587/try-unibets-improved-acca-boosts-fillies-handicap",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "date": "2026-10-21",
@@ -29,10 +102,41 @@
       "field_size": 6,
       "winner": "Diamond White (IRE)",
       "race_name": "BETTING.BET Play Champion Tipster Mares' Handicap Hurdle Race",
-      "winning_margin_lengths": ".5",
-      "selected_beaten_lengths": "0",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": null,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/fontwell/racecard/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/fontwell/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/fontwell/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Diamond White",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "It's Easy",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Inion Tiogair",
+          "margin_from_previous": "14",
+          "cumulative_beaten_lengths": "14.5"
+        },
+        {
+          "position": "4",
+          "horse": "Border Gem",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "16"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-21/fontwell/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "date": "2026-10-21",
@@ -45,10 +149,101 @@
       "field_size": 14,
       "winner": "Horndean (FR)",
       "race_name": "Try Unibet's Improved Acca Boosts Nursery Handicap Stakes",
-      "winning_margin_lengths": ".75",
-      "selected_beaten_lengths": "4.5",
+      "winning_margin_lengths": "¾",
+      "selected_beaten_lengths": "4.6",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/kempton/racecard/944584/try-unibets-improved-acca-boosts-nursery",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944584/try-unibets-improved-acca-boosts-nursery"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944584/try-unibets-improved-acca-boosts-nursery",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Horndean",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Arthur Carrot",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "0.75"
+        },
+        {
+          "position": "3",
+          "horse": "Sakowin",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "2"
+        },
+        {
+          "position": "4",
+          "horse": "Fast Performer",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "2.2"
+        },
+        {
+          "position": "5",
+          "horse": "Gold Reef City",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "6",
+          "horse": "Sovereigns High",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.25"
+        },
+        {
+          "position": "7",
+          "horse": "Somers Isles",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "3.55"
+        },
+        {
+          "position": "8",
+          "horse": "Tansy Lane",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "3.85"
+        },
+        {
+          "position": "9",
+          "horse": "Farasan",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "4.6"
+        },
+        {
+          "position": "10",
+          "horse": "Great Oak",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "4.65"
+        },
+        {
+          "position": "11",
+          "horse": "Babzini",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "5.9"
+        },
+        {
+          "position": "12",
+          "horse": "King of Montenegro",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "6.65"
+        },
+        {
+          "position": "13",
+          "horse": "Aljoon",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "7.4"
+        },
+        {
+          "position": "14",
+          "horse": "Boysofwallstreet",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "8.4"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-21/kempton/944584/try-unibets-improved-acca-boosts-nursery",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ]
 }

@@ -84,7 +84,76 @@
       "result_retrieved_at": "2026-10-27T16:51:00Z",
       "result_race_id": "rac_32302531014",
       "result_horse_id": "hrs_25825541",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302531014"
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302531014",
+      "winning_margin_lengths": "2 ¼",
+      "selected_beaten_lengths": "2.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Bajan Bandit",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Eighty Eight",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "2.25"
+        },
+        {
+          "position": "3",
+          "horse": "Boy Named Sioux",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "2.75"
+        },
+        {
+          "position": "4",
+          "horse": "Sant Alessio",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "2.85"
+        },
+        {
+          "position": "5",
+          "horse": "Harry The Rogue",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.6"
+        },
+        {
+          "position": "6",
+          "horse": "Bennyworth",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "5.85"
+        },
+        {
+          "position": "7",
+          "horse": "Dappled Light",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "8.85"
+        },
+        {
+          "position": "8",
+          "horse": "Symphony Of Joy",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "10.1"
+        },
+        {
+          "position": "9",
+          "horse": "Thomas Tallis",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "10.6"
+        },
+        {
+          "position": "10",
+          "horse": "Venturing",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "14.6"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-27/wolverhampton/946221/all-weather-championship-is-back-hands-and-heels-apprentice-handicap",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "race_date": "2026-10-27",
@@ -162,7 +231,40 @@
       "result_retrieved_at": "2026-10-27T16:12:35.598Z",
       "result_race_id": "rac_32302523266",
       "result_horse_id": "hrs_44975042",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302523266"
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302523266",
+      "winning_margin_lengths": "sh",
+      "selected_beaten_lengths": "1.65",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Sleedagh",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Kent De Thaix",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "0.1"
+        },
+        {
+          "position": "3",
+          "horse": "Rocheval",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.35"
+        },
+        {
+          "position": "4",
+          "horse": "Silver Hill",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.65"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-27/newcastle/945555/sunday-lunch-at-the-border-minstrel-novices-limited-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ],
   "bank_trial": {

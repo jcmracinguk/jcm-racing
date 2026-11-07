@@ -16,7 +16,44 @@
       "winning_margin_lengths": "14",
       "selected_beaten_lengths": "15.25",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-24/cheltenham/racecard/945158/william-hill-price-boosts-chasing-excellence-novices-chase-gbb-race",
-      "results_url": null
+      "results_url": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Butch Cassidy",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Follow Your Luck",
+          "margin_from_previous": "14",
+          "cumulative_beaten_lengths": "14"
+        },
+        {
+          "position": "3",
+          "horse": "Derryhassen Paddy",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "15.25"
+        },
+        {
+          "position": "4",
+          "horse": "Catchintsavo",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "15.55"
+        },
+        {
+          "position": "5",
+          "horse": "Kasino Des Mottes",
+          "margin_from_previous": "41",
+          "cumulative_beaten_lengths": "56.55"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-24/cheltenham/945158/william-hill-price-boosts-chasing-excellence-novices-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "date": "2026-10-24",
@@ -29,10 +66,95 @@
       "field_size": 13,
       "winner": "Quest For Fun",
       "race_name": "Rfj And Bee Jays Electrical Handicap Stakes (Div I)",
-      "winning_margin_lengths": ".5",
-      "selected_beaten_lengths": "24.25",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "24.15",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-24/doncaster/racecard/945165/rfj-and-bee-jays-electrical-handicap-div-1",
-      "results_url": null
+      "results_url": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Quest For Fun",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Salam Dubawi",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Trust Amy",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.7"
+        },
+        {
+          "position": "4",
+          "horse": "Golden Pharaoh",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "2.2"
+        },
+        {
+          "position": "5",
+          "horse": "Cargin Bhui",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "2.95"
+        },
+        {
+          "position": "6",
+          "horse": "Zarvali",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "7.45"
+        },
+        {
+          "position": "7",
+          "horse": "Beale Street",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "7.65"
+        },
+        {
+          "position": "8",
+          "horse": "It Just Takes Time",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "9.4"
+        },
+        {
+          "position": "9",
+          "horse": "Territorial Knight",
+          "margin_from_previous": "8 ½",
+          "cumulative_beaten_lengths": "17.9"
+        },
+        {
+          "position": "10",
+          "horse": "Cotai Belle",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "18.9"
+        },
+        {
+          "position": "11",
+          "horse": "Ceo Stealth Mode",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "22.9"
+        },
+        {
+          "position": "12",
+          "horse": "Crown Office",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "24.15"
+        },
+        {
+          "position": "13",
+          "horse": "Spy Kingdom",
+          "margin_from_previous": "29",
+          "cumulative_beaten_lengths": "53.15"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-24/doncaster/945165/rfj-and-bee-jays-electrical-handicap-div-1",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     },
     {
       "date": "2026-10-24",
@@ -48,7 +170,74 @@
       "winning_margin_lengths": "1",
       "selected_beaten_lengths": "1",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-24/southwell/racecard/945175/awc-season-14-has-begun-ebf-maiden-stakes-gbbgbbplus-race-div-1",
-      "results_url": null
+      "results_url": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Night Mile",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "National Anthem",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Ring Of Music",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "1.2"
+        },
+        {
+          "position": "4",
+          "horse": "Political Resident",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "2.45"
+        },
+        {
+          "position": "5",
+          "horse": "Quite Simple",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.7"
+        },
+        {
+          "position": "6",
+          "horse": "Jeepers Fortune",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "9.2"
+        },
+        {
+          "position": "7",
+          "horse": "Splintered",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "14.7"
+        },
+        {
+          "position": "8",
+          "horse": "Steel Nation",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "14.8"
+        },
+        {
+          "position": "9",
+          "horse": "Naval Empire",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "16.55"
+        },
+        {
+          "position": "10",
+          "horse": "Chertsey",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "18.8"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-24/southwell/945175/awc-season-14-has-begun-ebf-maiden-stakes-gbbgbbplus-race-div-1",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-07T07:14:21.321571Z"
     }
   ]
 }
