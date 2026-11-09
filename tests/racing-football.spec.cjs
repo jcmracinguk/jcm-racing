@@ -8,7 +8,7 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await expect(page.locator('.metrics .metric strong')).toHaveText(['100%','3','0','0']);
  await expect(page.locator('#jcm-official-panel .jcm-row')).toHaveCount(3);
  await expect(page.locator('#date')).toHaveValue('2026-11-09');
- await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).check();
+ await page.locator('header .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#picks$/);
  await expect(page.locator('.metrics .metric strong')).toHaveText(['80%','4','1','0']);
  await expect(page.locator('.football-row')).toHaveCount(5);
@@ -20,7 +20,7 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await expect(page.locator('#jcm-detail-content')).toContainText('Part of one £100 five-fold accumulator');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).uncheck();
+ await page.locator('header .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html#picks$/);
  await expect(page.locator('.metrics .metric strong')).toHaveText(['100%','3','0','0']);
  expect(errors).toEqual([]);
@@ -28,7 +28,7 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
 test('both hubs switch sports and football accumulator stays separate',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary')).toContainText('+£559.44');
- await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).check();
+ await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#hub$/);
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
  await expect(page.locator('#jcm-profit-summary')).toContainText('4/5');
@@ -39,7 +39,7 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
  await expect(page.locator('#jcm-detail-content')).toContainText('£100 historical paper simulation');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).uncheck();
+ await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'Your racing hub'})).toBeVisible();
 });
 
