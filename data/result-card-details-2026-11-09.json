@@ -112,7 +112,34 @@
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32303960520",
       "result_starting_price": "2/5F",
       "result_non_runners": [],
-      "result_stage": "FULL_RESULT"
+      "result_stage": "FULL_RESULT",
+      "winning_margin_lengths": "12",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Cristal D'estruval",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Be Aware",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "3",
+          "horse": "All The Glory",
+          "margin_from_previous": "28",
+          "cumulative_beaten_lengths": "40"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-09/carlisle/947678/weatherbys-nhstallionscouk-graduation-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-09T16:24:19.030003Z"
     },
     {
       "race_date": "2026-11-09",
@@ -230,7 +257,46 @@
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32303976016",
       "result_starting_price": "15/8F",
       "result_non_runners": [],
-      "result_stage": "FULL_RESULT"
+      "result_stage": "FULL_RESULT",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": "1.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Bobbi's Beauty",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Dream Shadow",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Kalista Love",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.8"
+        },
+        {
+          "position": "4",
+          "horse": "She Is For Me Boys",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "7.8"
+        },
+        {
+          "position": "5",
+          "horse": "Best Women",
+          "margin_from_previous": "31",
+          "cumulative_beaten_lengths": "38.8"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-09/stratford/947672/get-a-free-trial-of-racing-tv-now-mares-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-09T16:24:19.030003Z"
     },
     {
       "race_date": "2026-11-09",
@@ -346,7 +412,58 @@
       "result_source_url": "https://api.theracingapi.com/v1/results/rac_32303964394",
       "result_starting_price": "7/2",
       "result_non_runners": [],
-      "result_stage": "FULL_RESULT"
+      "result_stage": "FULL_RESULT",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "9.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Kientzheim",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Harmony Heights",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Oh Clare",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "4",
+          "horse": "Just An Artist",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "5",
+          "horse": "Oh Janey",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "4.25"
+        },
+        {
+          "position": "6",
+          "horse": "Redeeming Love",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "6.25"
+        },
+        {
+          "position": "7",
+          "horse": "Disco Annie",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "9.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-09/carlisle/947680/great-gable-mares-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-09T16:24:19.030003Z"
     }
   ]
 }
