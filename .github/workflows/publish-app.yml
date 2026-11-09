@@ -12,6 +12,8 @@ on:
       - scripts/sport-switch.css
       - scripts/sport-switch.js
       - scripts/football-ui.js
+      - scripts/football-acca.js
+      - data/football-bet-builder*.json
       - data/football-results*.json
       - scripts/bet-builder.js
       - scripts/bet-builder.css

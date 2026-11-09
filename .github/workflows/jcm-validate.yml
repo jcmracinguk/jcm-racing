@@ -33,3 +33,5 @@ jobs:
         run: node tests/bankroll.cjs
       - name: Check active racing run and isolated football results
         run: node tests/current-run.cjs
+      - name: Check football accumulator settlement
+        run: node tests/football-acca.cjs

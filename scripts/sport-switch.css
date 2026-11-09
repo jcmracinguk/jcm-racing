@@ -32,3 +32,5 @@ body[data-sport="football"] .jcm-profit-entry,body[data-sport="football"] .jcm-p
 .football-summary-score{font-size:clamp(24px,7vw,34px);font-weight:850;color:#ffd400}
 .football-team{display:block;line-height:1.35}.football-v{font-size:11px;opacity:.7;font-weight:400}
 @media(max-width:360px){.jcm-sport-switch{gap:5px}.jcm-sport-label{font-size:10px!important}.football-row{grid-template-columns:47px minmax(0,1fr) 35px 55px!important;gap:4px}.football-row .jcm-status{font-size:10px}.football-row .jcm-horse{font-size:13px}}
+
+.football-acca-leg{display:flex;align-items:center;gap:8px}.football-acca-leg input{accent-color:#43bd84;min-width:18px;min-height:18px}.football-acca-leg small{display:block;color:#b1cfc0;margin-top:4px}.football-positive{color:#6ef0b1}.football-negative{color:#ff8da3}

@@ -17,7 +17,7 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await page.locator('.football-row').filter({hasText:'Cardiff City'}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Counterargument');
  await expect(page.locator('#jcm-detail-content')).toContainText('5–4');
- await expect(page.locator('#jcm-detail-content')).toContainText('Unpriced selection');
+ await expect(page.locator('#jcm-detail-content')).toContainText('Part of one £100 five-fold accumulator');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).uncheck();
@@ -25,18 +25,18 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await expect(page.locator('.metrics .metric strong')).toHaveText(['100%','3','0','0']);
  expect(errors).toEqual([]);
 });
-test('both hubs switch sports and football stays unpriced',async({page})=>{
+test('both hubs switch sports and football accumulator stays separate',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary')).toContainText('+£559.44');
  await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).check();
  await expect(page).toHaveURL(/football\.html#hub$/);
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
- await expect(page.locator('#jcm-profit-summary')).toContainText('4 / 5');
- await expect(page.locator('#jcm-profit-summary')).toContainText('Unpriced');
+ await expect(page.locator('#jcm-profit-summary')).toContainText('4/5');
+ await expect(page.locator('#jcm-profit-summary')).toContainText('−£100.00');
  await page.locator('[data-page="dummy-account"]').click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Football Bet Builder');
- await expect(page.locator('.football-table tbody tr')).toHaveCount(5);
- await expect(page.locator('#jcm-detail-content')).toContainText('Prices cannot be added after kick-off');
+ await expect(page.locator('.football-acca-leg')).toHaveCount(5);
+ await expect(page.locator('#jcm-detail-content')).toContainText('£100 historical paper simulation');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.getByRole('switch',{name:'Football view'}).filter({visible:true}).uncheck();
