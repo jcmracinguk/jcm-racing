@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><title>JCM | Football BTTS</title><meta name="jcm-app-version" content="2026-11-09-approved-three-lay-trial"><meta name="description" content="JCM Football — BTTS paper trial"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png"><link rel="manifest" href="./football.webmanifest"><meta name="theme-color" content="#10271f"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Football"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261109"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261109">
+<style>#jcm-official-panel .jcm-research-row.jcm-competition-watchlist{border-color:#edbd57}.jcm-competition-watchlist .jcm-confidence.low{background:#70521b;border-color:#edbd57}</style>
+<style>
+#jcm-field-test{max-width:900px;margin:18px auto;padding:0 16px}#jcm-field-test[hidden]{display:none!important}.jcm-ft-wrap{border:1px solid #77623a;background:#202b3e;border-radius:14px;padding:16px}.jcm-ft-wrap h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-ft-note{font-size:12px;line-height:1.6;color:#d4dce9}.jcm-ft-card{background:#182336;border:1px solid #42516b;border-radius:10px;margin:9px 0;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.jcm-ft-name{font-weight:800}.jcm-ft-where{color:#d0d9e6;font-size:12px;margin-top:4px}.jcm-ft-rating{white-space:nowrap;color:#fff;background:#42506a;padding:7px;border-radius:7px;font-size:12px;font-weight:800}.jcm-ft-hub{border:1px solid #77623a!important}
+</style>
+<style>
+.jcm-research-row{grid-template-columns:minmax(75px,23%) minmax(0,1fr) 73px;column-gap:9px}
+.jcm-detail-rating{display:flex;margin:12px 0}.jcm-detail-rating .jcm-confidence{flex-basis:130px;min-height:66px;padding:8px}.jcm-detail-rating .jcm-confidence small{font-size:11px}.jcm-research-row.jcm-rating-high{border:2px solid #43bd84}.jcm-research-row.jcm-rating-medium{border:2px solid #edbd57}.jcm-research-row.jcm-rating-low{border:2px solid #ed7185}
+@media(max-width:380px){.jcm-research-row{grid-template-columns:65px minmax(0,1fr) 61px;column-gap:5px}}
+.jcm-horse-with-confidence{display:flex;align-items:center;justify-content:space-between;gap:7px;min-width:0}
+.jcm-horse-with-confidence>.jcm-horse{min-width:0;flex:1 1 auto}
+.jcm-confidence{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:0 0 52px;min-height:46px;padding:5px 3px;border-radius:8px;border:1px solid transparent;line-height:1.2;text-align:center}
+.jcm-confidence strong{font-size:15px}.jcm-confidence small{font-size:9px;font-weight:800;margin-top:3px}
+.jcm-confidence.high{background:#135b43;border-color:#43bd84;color:#fff}
+.jcm-confidence.medium{background:#70521b;border-color:#edbd57;color:#fff}
+.jcm-confidence.low{background:#7b2633;border-color:#ed7185;color:#fff}
+.jcm-confidence.unrated{background:#364156;border-color:#728099;color:#fff}
+@media(max-width:380px){.jcm-horse-with-confidence{gap:4px}.jcm-confidence{flex-basis:44px}.jcm-confidence strong{font-size:13px}.jcm-confidence small{font-size:8px}}
+</style>
+<style>
+#jcm-detail-overlay{z-index:100}
+#jcm-rated-ratios{display:grid;gap:8px;width:100%}
+.jcm-rated-line{display:grid;grid-template-columns:72px 1fr auto;gap:10px;align-items:center;width:100%;padding:9px;border-radius:9px;background:#121b2c}
+.jcm-rated-line .high{color:#80e4b2}.jcm-rated-line .medium{color:#f5ce79}.jcm-rated-line .low{color:#ff9bad}
+.jcm-rated-table{width:100%;border-collapse:collapse;font-size:14px}
+.jcm-rated-table th,.jcm-rated-table td{padding:12px 5px;border-bottom:1px solid #52647b;text-align:left}
+.jcm-rated-table th{font-size:12px}
+</style>
+<style>
+.jcm-account-switch{display:flex;position:relative;background:#121626;border:1px solid #65748a;border-radius:24px;padding:4px;margin:16px 0;gap:4px}
+.jcm-account-switch button{flex:1;position:relative;z-index:1;border:0;background:transparent;color:#fff;border-radius:20px;padding:12px 8px;font:inherit;font-weight:750;cursor:pointer;min-height:44px}
+.jcm-account-switch::before{content:'';position:absolute;left:4px;top:4px;bottom:4px;width:calc(50% - 6px);background:#365774;border-radius:20px;transition:transform .18s}
+.jcm-account-switch.manual::before{transform:translateX(calc(100% + 4px))}
+.jcm-manual-row{border:1px solid #52647b;background:#182336;border-radius:12px;padding:14px;margin:12px 0}
+.jcm-manual-row input[type=number]{width:100%;min-width:0;padding:10px;font-size:16px;margin:8px 0;color:#fff;background:#26324b;border:1px solid #65748a;border-radius:8px}
+.jcm-manual-row input[type=checkbox]{width:22px;height:22px;vertical-align:middle;accent-color:#43bd84}
+.jcm-manual-row button{padding:10px 14px;min-height:44px;border-radius:8px;background:#365774;color:#fff;border:1px solid #65748a;font:inherit}
+.jcm-manual-row :disabled{opacity:.65}
+</style>
+<style>
+.jcm-modal:has(.jcm-result-card){width:min(calc(100vw - 24px),680px)}
+.jcm-result-card{border:1px solid #52647b;border-radius:16px;background:#1c293c;padding:22px 18px;clear:both}
+.jcm-result-top{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.jcm-result-course{flex:1;min-width:90px}.jcm-result-top .jcm-confidence{margin-left:auto;min-width:78px;padding:8px}.jcm-result-top .jcm-confidence small{font-size:11px;margin:2px 0}.jcm-result-top .jcm-confidence strong{font-size:21px}.jcm-result-time{border:1px solid #52647b;border-radius:12px;background:#26364b;padding:14px;font-size:23px;font-weight:850;color:#ffd700}
+.jcm-result-top strong{font-size:20px}.jcm-result-card small{display:block;color:#d4dfef;font-size:13px;margin:6px 0}
+.jcm-result-summary{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:16px 0}.jcm-result-finish{font-size:18px}.jcm-result-outcome{display:inline-block;font-size:18px;font-weight:850;padding:12px 18px;border-radius:24px;margin:0}
+.jcm-result-outcome.win{background:#14543b;color:#85efb8}.jcm-result-outcome.loss{background:#70263a;color:#ffb3c1}.jcm-result-outcome.pending{background:#364156;color:#fff}
+.jcm-result-body{display:grid;gap:12px}.jcm-result-tile{border:1px solid #52647b;border-radius:12px;background:#142237;padding:16px}.jcm-result-tile h3{margin:0 0 12px;font-size:17px;color:#ffd700}.jcm-result-tile p{margin:8px 0;overflow-wrap:anywhere}.jcm-result-stat + .jcm-result-stat{margin-top:12px}.jcm-result-stat strong{display:block;font-size:19px;overflow-wrap:anywhere}.jcm-result-body h2{font-size:clamp(25px,7vw,34px);line-height:1.2;margin:12px 0}
+.jcm-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px;border-top:1px solid #52647b;padding:18px 0;margin:20px 0}.jcm-result-grid strong{display:block;font-size:19px;overflow-wrap:anywhere}
+.jcm-race-action{display:block;padding:14px;border:1px solid #65748a;border-radius:10px;font-weight:800}
+.jcm-link-unavailable{font-size:13px;color:#c6d0de}
+#jcm-official-panel .jcm-status.win{color:#85efb8}#jcm-official-panel .jcm-status.loss{color:#ff849d}
+@media(max-width:380px){.jcm-result-card{padding:18px 12px}.jcm-result-grid strong{font-size:17px}}
+</style></head><body data-sport="football"><header><div class="head"><div class="brand"><div class="identity"><img alt="JCM logo" src="./jcm-logo.svg"><div class="jcm-tagline">Better, informed</div></div><select id="date" aria-label="Football date"><option value="2026-11-07">7 Nov 2026</option></select></div><div class="metrics"><div class="metric"><strong>—</strong><small>BTTS RESULTS</small></div><div class="metric"><strong>—</strong><small>SUCCESSES</small></div><div class="metric"><strong>—</strong><small>FAILURES</small></div><div class="metric"><strong>—</strong><small>PENDING</small></div></div></div></header><main></main><script src="scripts/football-ui.js?v=20261109"></script><script src="scripts/sport-switch.js?v=20261109"></script></body></html>

@@ -31,3 +31,5 @@ jobs:
         run: python scripts/validate_race_analysis.py
       - name: Check simulation bankroll accounting
         run: node tests/bankroll.cjs
+      - name: Check active racing run and isolated football results
+        run: node tests/current-run.cjs

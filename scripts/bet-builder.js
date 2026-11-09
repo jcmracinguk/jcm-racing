@@ -3,7 +3,7 @@
 'use strict';
 const names={fixed:'£1000 a day',race:'£500 a race',manual:'Manual betting',results:'Results'};
 const policy='daily-defaults-20261014';
-const bankTrial={start:'2026-10-23',initial:0,benchmark:1000000};
+const bankTrial={start:'2026-11-06',initial:0,benchmark:1000000};
 const colours={fixed:'#edbd57',race:'#00bfc1',manual:'#ae90ff'};
 const money=v=>'£'+(v/100).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});
 const percent=v=>v===null?'N/A':(v>0?'+':'')+v.toFixed(2)+'%';

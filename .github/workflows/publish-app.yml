@@ -4,6 +4,15 @@ on:
   push:
     paths:
       - index.html
+      - jcm-logo.svg
+      - football.html
+      - football.webmanifest
+      - manifest.webmanifest
+      - scripts/jcm-shell.css
+      - scripts/sport-switch.css
+      - scripts/sport-switch.js
+      - scripts/football-ui.js
+      - data/football-results*.json
       - scripts/bet-builder.js
       - scripts/bet-builder.css
       - .github/workflows/publish-app.yml

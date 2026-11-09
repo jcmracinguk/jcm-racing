@@ -1,0 +1,201 @@
+
+:root{--bg:#121626;--panel:#1c2435;--gold:#ffd700;--teal:#00c2b9;--red:#dc143c;--muted:#a7b1c3}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#fff;font-family:system-ui,-apple-system,Segoe UI,sans-serif}header{position:sticky;top:0;z-index:3;background:#121626f5;backdrop-filter:blur(14px);border-bottom:1px solid #344057;box-shadow:0 8px 24px #0005}.head{max-width:900px;margin:auto;padding:calc(20px + env(safe-area-inset-top, 0px)) 16px 12px}@media(display-mode:standalone){header{padding-top:max(58px, env(safe-area-inset-top, 0px))}.head{padding-top:12px}}.brand{display:flex;align-items:center;gap:12px;justify-content:space-between}.identity{display:flex;align-items:center;gap:10px}.identity img{height:46px;width:46px;border-radius:10px;object-fit:cover;mix-blend-mode:screen;background:transparent}.brandname{font-weight:850;letter-spacing:1.5px;color:var(--gold)}.subtitle{font-size:10px;color:var(--muted);letter-spacing:1px}select{background:#253149;color:white;border:1px solid #516077;border-radius:9px;padding:10px 8px;font-weight:700;max-width:145px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}.metric{background:#202a3d;border:1px solid #364157;border-radius:12px;padding:10px 5px;text-align:center}.metric strong{display:block;font-size:clamp(17px,4vw,26px);color:var(--gold)}.metric small{font-size:9px;color:var(--muted);letter-spacing:.5px}.metric:nth-child(2) strong{color:var(--teal)}.metric:nth-child(3) strong{color:#ff5978}.metric:nth-child(4) strong{color:white}main{max-width:900px;margin:auto;padding:20px 16px 60px}.day{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(120deg,#22323c,#20273b);border:1px solid #43536a;border-radius:15px;padding:16px;margin-bottom:16px}.day .eyebrow{font-size:11px;color:var(--muted);letter-spacing:1px}.day strong{font-size:32px;color:var(--gold)}.day .detail{font-size:12px;color:var(--muted);text-align:right}.section{display:flex;justify-content:space-between;align-items:center;margin:18px 0 10px}.section h2{font-size:17px;margin:0}.section small{color:var(--muted)}.pick{display:grid;grid-template-columns:80px minmax(0,1fr) 76px 75px;gap:10px;align-items:center;background:var(--panel);border:1px solid #344158;border-radius:13px;padding:15px 13px;margin-bottom:9px}.when{font-weight:800;color:var(--gold);font-size:15px}.course{font-size:12px;color:var(--muted)}.horse{font-size:16px;font-weight:750;overflow-wrap:anywhere}.note{font-size:11px;color:var(--muted);margin-top:5px}.place{text-align:center;font-weight:800;font-size:15px}.place small{display:block;color:var(--muted);font-size:10px;font-weight:400}.tag{display:inline-block;text-align:center;border-radius:8px;font-size:12px;font-weight:900;padding:9px 6px}.win{color:#72f4dc;background:#075d52}.loss{color:#ffafbe;background:#6d1930}.nr{color:#ddd;background:#45495b}.foot{margin-top:22px;font-size:12px;color:var(--muted);line-height:1.55}.foot summary{cursor:pointer;color:#d4dfef}.foot a{color:#65e8df}.empty{background:var(--panel);border-radius:12px;padding:26px;text-align:center;color:var(--muted)}@media(max-width:530px){.pick{grid-template-columns:58px minmax(0,1fr) 53px 58px;gap:6px;padding:13px 8px}.horse{font-size:13px}.when{font-size:13px}.course,.note{font-size:10px}.place{font-size:12px}.tag{font-size:10px;padding:8px 3px}.identity img{width:40px;height:40px}.brandname{font-size:13px}.subtitle{font-size:8px}select{font-size:11px;max-width:125px}.metric small{font-size:8px}}
+
+.market-summary{margin-top:8px;font-size:10px;color:#9baec5;display:flex;align-items:center;gap:5px}.market-dot{height:7px;width:7px;border-radius:50%;background:#78859b;display:inline-block}.odds-panel{margin-top:15px;background:#1c2435;border:1px solid #344158;border-radius:14px;padding:15px}.odds-panel summary{cursor:pointer;font-size:13px;font-weight:700;color:#f3d96a}.odds-panel p{color:#a7b1c3;font-size:12px;line-height:1.6}.odds-table{width:100%;border-collapse:collapse;font-size:12px}.odds-table th,.odds-table td{text-align:left;border-bottom:1px solid #344158;padding:9px 5px}.odds-table th{color:#a7b1c3}.data-note{font-size:11px;color:#a7b1c3;line-height:1.6}.pill{display:inline-block;background:#303e52;color:#d1d9e5;border-radius:7px;padding:4px 7px;font-size:10px;font-weight:800}.live-disclaimer{font-size:11px;color:#a7b1c3;margin:10px 0 0}
+
+/* iPhone/mobile: keep date selector fully visible and easy to tap. */
+@media(max-width:600px){
+ html,body{max-width:100%;overflow-x:hidden}
+ .head{padding:10px 12px}
+ .brand{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+ .identity{min-width:0;max-width:100%;justify-content:flex-start}
+ .identity>div{min-width:0}
+ .brandname{overflow-wrap:anywhere}
+ #date{display:block;width:100%;max-width:none;min-width:0;min-height:48px;font-size:16px;padding:12px 14px;touch-action:manipulation}
+ .metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
+ .metric{min-width:0}
+ main{padding:14px 12px 55px}
+ .day{gap:10px;padding:12px;min-width:0}
+ .day strong{font-size:26px}
+ .pick{min-width:0}
+}
+
+/* Brand refresh: original JCM emblem and white Better, informed slogan. */
+.identity{gap:16px}
+.identity img{width:72px;height:72px;border-radius:17px;flex-shrink:0}
+.jcm-tagline{font-size:clamp(19px,3.5vw,30px);font-weight:800;color:#fff;letter-spacing:-.025em;line-height:1.1}
+@media(max-width:600px){.identity{gap:12px}.identity img{width:58px;height:58px;border-radius:13px}.jcm-tagline{font-size:clamp(19px,5.5vw,26px)}}
+
+.watchlist{margin:16px 0;padding:15px;background:#192738;border:1px solid #52647b;border-radius:14px}.watchlist h2{margin:0 0 5px;font-size:17px;color:#ffd700}.watch-intro{font-size:12px;color:#c0cad8;line-height:1.55;margin:0 0 12px}.watch-card{background:#202e42;border:1px solid #43556e;border-radius:11px;padding:12px;margin:10px 0}.watch-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}.watch-horse{font-size:16px;font-weight:800}.watch-risk{font-size:11px;font-weight:800;color:#ffe2a3;background:#665027;padding:6px 9px;border-radius:7px}.watch-detail{font-size:12px;color:#d0d8e3;line-height:1.55;margin-top:7px}.watch-source{font-size:11px;color:#65e8df}.watch-hidden{display:none}
+
+.jcm-unified{max-width:900px;margin:0 auto 18px;padding:0 16px}.jcm-unified-card{background:#1c2435;border:1px solid #43536a;border-radius:14px;padding:15px}.jcm-unified h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-unified p{font-size:12px;color:#c3cede;line-height:1.6}.jcm-unified-status{font-size:11px;color:#76ddd7;font-weight:800}.jcm-unified-table{overflow-x:auto;max-width:100%}.jcm-unified table{border-collapse:collapse;width:100%;min-width:580px;font-size:12px}.jcm-unified th,.jcm-unified td{padding:9px;border-bottom:1px solid #344158;text-align:left}.jcm-unified th{color:#ffd700}.jcm-unified .missing{color:#c3cede}
+/* Compact mobile header: logo and date on one line, safely below iPhone status bar. */
+@media(max-width:600px){
+ .brand{flex-direction:row;align-items:center;justify-content:space-between;gap:8px}
+ .identity{flex:1 1 auto;min-width:0;gap:8px}
+ .identity img{width:44px;height:44px;border-radius:10px;flex-shrink:0}
+ .jcm-tagline{font-size:clamp(14px,3.7vw,20px);white-space:nowrap}
+ #date{display:block;flex:0 0 auto;width:120px;max-width:120px;min-width:0;min-height:40px;font-size:12px;padding:8px 5px}
+ .head{padding:8px 12px}
+}
+@media(max-width:380px){.identity img{width:38px;height:38px}.jcm-tagline{font-size:13px}#date{width:110px;max-width:110px}}
+@media(display-mode:standalone){header{padding-top:max(48px, env(safe-area-inset-top, 0px))}}
+/* Feather the JPEG tile into the exact header background; preserve neon emblem. */
+.identity img{background-color:#121626;mix-blend-mode:normal;-webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%);border-radius:0}
+/* High-contrast accuracy headings on both official and watchlist panels. */
+.day .eyebrow,.watch-accuracy .eyebrow{color:#fff;font-weight:800;opacity:1}
+/* Improve legibility of labels beneath the top performance figures. */
+.metrics .metric small{color:#fff;opacity:1;font-weight:800;letter-spacing:.055em;text-shadow:0 1px 2px #0005}
+/* Focused two-panel mobile dashboard. Legacy data stays available in side drawer. */
+main>.day,main>.section,main>#picks,main>#jcm-watchlist,main>#market-monitor,main>.foot{display:none!important}
+.jcm-panel{background:#1b2537;border:1px solid #3c4b64;border-radius:17px;padding:14px 12px;margin:0 0 15px}
+.jcm-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:12px}
+.jcm-panel-heading h2{margin:0;font-size:19px;color:#fff}
+.jcm-panel-heading .jcm-accuracy{font-weight:800;color:#ffd400;font-size:20px}
+.jcm-row{width:100%;display:grid;grid-template-columns:70px minmax(0,1fr) 53px 60px;align-items:center;gap:7px;text-align:left;color:#fff;background:#222f45;border:1px solid #465672;border-radius:12px;padding:12px 8px;margin:8px 0;cursor:pointer;font:inherit}
+.jcm-row:focus-visible,.jcm-logo-button:focus-visible{outline:2px solid #ffd400;outline-offset:2px}
+.jcm-row .jcm-time{font-weight:800;color:#ffd400;font-size:15px}
+.jcm-row .jcm-ground{font-size:11px;color:#c2ccdd;margin-top:3px}
+.jcm-row .jcm-horse{font-weight:800;overflow-wrap:anywhere;font-size:14px}
+.jcm-row .jcm-place{text-align:center;font-weight:800;font-size:14px}
+.jcm-row .jcm-status{font-weight:800;text-align:center;font-size:11px;border-radius:8px;padding:8px 2px;background:#364156}
+.jcm-row .jcm-status.win{color:#13d2c7}.jcm-row .jcm-status.loss{color:#ff668c}.jcm-row .jcm-status.nr{color:#fff}.jcm-row .jcm-status.pending{color:#fff}
+.jcm-overlay{position:fixed;inset:0;z-index:50;background:#000a;display:none}
+.jcm-overlay.open{display:block}
+.jcm-modal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:min(90vw,460px);max-height:80vh;overflow:auto;background:#202b40;border:1px solid #61728c;border-radius:18px;padding:22px;color:#fff;box-shadow:0 20px 60px #0009}
+.jcm-modal h2{margin:0 0 12px}.jcm-modal p{line-height:1.55}.jcm-modal a{color:#72e4ed}
+.jcm-drawer{position:absolute;top:0;bottom:0;left:0;width:min(85vw,360px);overflow:auto;background:#1b2537;padding:calc(22px + env(safe-area-inset-top,0px)) 20px 30px;box-shadow:10px 0 40px #0008}
+.jcm-close{float:right;background:#34445c;color:white;border:1px solid #65748a;border-radius:9px;font-size:22px;padding:5px 12px;cursor:pointer}
+.jcm-logo-button{background:none;border:0;padding:0;cursor:pointer;display:flex;align-items:center}
+.jcm-drawer details{margin:16px 0}.jcm-drawer summary{cursor:pointer}
+@media(max-width:380px){.jcm-row{grid-template-columns:58px minmax(0,1fr) 42px 52px;gap:4px}.jcm-row .jcm-horse{font-size:12px}}
+/* Portrait race rows: time and white course on separate lines, no collisions. */
+.jcm-row>span:first-child{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:5px}
+.jcm-row .jcm-time{display:block;line-height:1.1}
+.jcm-row .jcm-ground{display:block;color:#fff;font-size:11px;font-weight:700;line-height:1.2;margin:0;overflow-wrap:anywhere}
+.jcm-row{grid-template-columns:minmax(75px,21%) minmax(0,1fr) 43px 70px;column-gap:7px}
+.jcm-row .jcm-horse{min-width:0}
+@media(max-width:380px){.jcm-row{grid-template-columns:minmax(65px,22%) minmax(0,1fr) 37px 61px;column-gap:4px}.jcm-row .jcm-ground{font-size:10px}}
+/* Keep technical data in the drawer rather than the main racing dashboard. */
+.jcm-drawer #jcm-unified{display:block;max-width:100%;margin:16px 0}
+.jcm-drawer .jcm-unified-card{padding:12px;max-width:100%;overflow-x:auto}
+.jcm-drawer #jcm-feed-status{margin:12px 0!important;padding:0!important}
+/* Accessibility polish: higher contrast and comfortably readable selection rows. */
+.jcm-panel-heading h2{color:#ffd400;font-size:clamp(20px,4.5vw,25px);font-weight:850}
+.jcm-panel-heading .jcm-accuracy{font-size:clamp(22px,5vw,28px)}
+.jcm-row{grid-template-columns:minmax(80px,23%) minmax(0,1fr) 43px 73px;column-gap:7px;padding:14px 9px;min-height:76px}
+.jcm-row .jcm-time{font-size:clamp(17px,4.2vw,21px)}
+.jcm-row .jcm-ground{font-size:clamp(12px,3.1vw,14px);color:#fff;font-weight:750}
+.jcm-row .jcm-horse{font-size:clamp(15px,3.8vw,19px);line-height:1.25;color:#fff}
+.jcm-row .jcm-place{font-size:clamp(15px,3.8vw,18px);color:#fff}
+.jcm-row .jcm-status{font-size:12px;line-height:1.2;padding:10px 2px}
+.metrics .metric small{color:#fff;font-size:clamp(9px,2.3vw,12px);line-height:1.3}
+#date{color:#fff;font-weight:800}
+@media(max-width:380px){.jcm-row{grid-template-columns:66px minmax(0,1fr) 36px 59px;column-gap:4px;padding:12px 6px}.jcm-row .jcm-horse{font-size:14px}.jcm-row .jcm-status{font-size:10px}.jcm-row .jcm-ground{font-size:11px}}
+/* Slightly larger tappable JCM emblem without disturbing date selector. */
+@media(max-width:600px){.identity img{width:54px;height:54px;flex-shrink:0}.identity{gap:9px}.jcm-logo-button{flex-shrink:0}}
+@media(max-width:380px){.identity img{width:46px;height:46px}.identity{gap:6px}}
+/* Tappable official totals and compact category result list. */
+.metrics .metric[data-jcm-category]{cursor:pointer;touch-action:manipulation}
+.metrics .metric[data-jcm-category]:focus-visible{outline:3px solid #ffd400;outline-offset:3px}
+.jcm-category-list{display:flex;flex-direction:column;gap:9px;margin-top:16px}
+.jcm-category-row{display:grid;grid-template-columns:82px minmax(0,1fr);gap:12px;align-items:center;background:#28364d;border:1px solid #4d5f7a;border-radius:12px;padding:12px;color:#fff}
+.jcm-category-row .jcm-time{color:#ffd400;font-weight:800;font-size:18px}
+.jcm-category-row .jcm-ground{color:#fff;font-weight:700;font-size:13px;margin-top:4px}
+.jcm-category-row .jcm-horse{font-weight:800;font-size:17px;overflow-wrap:anywhere}
+/* Centred compact date label while retaining native iPhone picker affordance. */
+#date{text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none;padding:9px 22px 9px 8px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;background-size:15px}
+#date option{text-align:center}
+
+/* JCM Hub: landing screen; existing racing dashboard remains intact underneath. */
+#jcm-hub{position:fixed;inset:0;z-index:90;overflow-y:auto;background:#121626;color:#fff;padding:max(48px,env(safe-area-inset-top,0px)) 18px max(30px,env(safe-area-inset-bottom,0px));display:none}
+#jcm-hub.active{display:block}
+.jcm-hub-inner{max-width:760px;margin:auto}
+.jcm-hub-top{display:flex;align-items:center;gap:15px;margin:8px 0 26px}
+.jcm-hub-mark{width:76px;height:76px;object-fit:cover;-webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%)}
+.jcm-hub-eyebrow{color:#ffd400;font-size:12px;font-weight:900;letter-spacing:2px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}.jcm-hub-tagline{color:#ffd400;font-size:12px;font-weight:800;letter-spacing:0}
+.jcm-hub-title{color:#fff;font-size:clamp(26px,6vw,36px);line-height:1.12;margin:6px 0}
+.jcm-hub-sub{color:#e1e7f2;font-size:15px;line-height:1.5;margin:0 0 24px}
+.jcm-hub-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:13px}
+.jcm-hub-tile{display:flex;flex-direction:column;align-items:flex-start;gap:11px;text-align:left;min-height:182px;border-radius:18px;border:1px solid #455572;background:#202c41;color:#fff;padding:19px 15px;cursor:pointer;font:inherit}
+.jcm-hub-tile:focus-visible,.jcm-home-link:focus-visible{outline:3px solid #ffd400;outline-offset:3px}
+.jcm-hub-tile strong{font-size:clamp(17px,4.5vw,23px);line-height:1.2;color:#ffd400}
+.jcm-hub-tile span{font-size:13px;line-height:1.4;color:#fff}
+.jcm-hub-tile .jcm-hub-icon{font-size:30px;line-height:1}
+.jcm-hub-tile .jcm-hub-state{font-size:11px;font-weight:850;letter-spacing:.5px;color:#fff;margin-top:auto}
+.jcm-hub-foot{color:#cbd6e7;font-size:12px;margin-top:23px;text-align:center}
+.jcm-profit-card{margin-top:18px;border:1px solid #455572;background:#182336;border-radius:18px;padding:18px 16px;color:#fff}
+.jcm-profit-total,.jcm-profit-week-head{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.jcm-profit-total span{font-size:18px;font-weight:850;color:#fff}.jcm-profit-total strong{font-size:clamp(23px,6vw,31px);color:#fff}
+.jcm-profit-record{margin:7px 0 10px;color:#cbd6e7;font-size:12px}
+.jcm-profit-daily-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0 0 15px}
+.jcm-profit-daily-stat{min-width:0;border:1px solid #35445d;background:#111b2b;border-radius:10px;padding:10px}
+.jcm-profit-daily-stat span{display:block;color:#aebbd0;font-size:11px;line-height:1.25;margin-bottom:4px}
+.jcm-profit-daily-stat strong{display:block;color:#fff;font-size:18px;line-height:1.2}
+.jcm-profit-equation{grid-column:1/-1;color:#aebbd0;font-size:11px;padding:0 2px}
+.jcm-profit-weeks{border-top:1px solid #455572}.jcm-profit-week{border-bottom:1px solid #35445d}
+.jcm-profit-week-head{width:100%;padding:13px 0;border:0;background:transparent;color:#fff;font:inherit;text-align:left;cursor:pointer}
+.jcm-profit-week-head span:first-child{font-size:15px}.jcm-profit-week-head strong{font-size:17px}.jcm-profit-week-head .jcm-week-chevron{font-size:16px;color:#aebbd0;transition:transform .18s ease}
+.jcm-profit-week-head[aria-expanded="true"] .jcm-week-chevron{transform:rotate(180deg)}
+.jcm-profit-week-detail{padding:0 0 10px}.jcm-profit-week-detail[hidden]{display:none}
+.jcm-profit-entry{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:3px 12px;padding:10px 9px;margin:0 0 7px;border-radius:10px;background:#111b2b}
+.jcm-profit-entry strong{font-size:14px;color:#fff}.jcm-profit-entry>span{grid-column:2;grid-row:1/3;align-self:center;font-size:14px;font-weight:850}
+.jcm-profit-entry small{color:#aebbd0;font-size:11px}.jcm-profit-card .positive{color:#43bd84}.jcm-profit-card .negative{color:#ff849d}
+.jcm-profit-card>small{display:block;margin-top:12px;color:#aebbd0;font-size:11px}
+.jcm-home-link{border:1px solid #ffd400;background:#26324b;color:#ffd400;border-radius:10px;padding:8px 11px;font-size:13px;font-weight:850;cursor:pointer;margin-left:auto}
+@media(max-width:360px){.jcm-hub-grid{gap:9px}.jcm-hub-tile{min-height:174px;padding:14px 11px}}
+
+/* Small outlined home icon alongside the date selector. */
+header .head{position:relative}
+.jcm-home-link{position:absolute;top:0;right:0;margin:0!important;width:38px;height:38px;padding:0!important;display:inline-flex!important;align-items:center;justify-content:center;border:1px solid #ffd400;border-radius:10px;background:transparent;color:#ffd400;z-index:2}
+header .head:has(.jcm-home-link) #date{margin-right:44px}
+@media(max-width:420px){.jcm-home-link{width:34px;height:34px}header .head:has(.jcm-home-link) #date{margin-right:39px}}
+
+/* Keep home square exactly level with the date selector, regardless of header height. */
+header .head .jcm-home-link{top:auto;bottom:auto;right:auto;position:relative;flex:0 0 auto;width:40px;height:40px;min-width:40px;aspect-ratio:1;align-self:center;margin:0!important}
+header .head:has(.jcm-home-link) #date{margin-right:0!important}
+header .head{display:flex;align-items:center}
+header .head #date{margin-left:auto}
+@media(max-width:420px){header .head .jcm-home-link{width:36px;height:36px;min-width:36px}}
+
+/* 2026-10-09: keep the entire accuracy strip below the brand/date/home row. */
+header .head{display:block!important}
+header .head>.brand{display:flex;align-items:center;min-width:0;width:100%;gap:8px}
+header .head>.metrics{display:grid!important;position:static!important;width:100%;max-width:100%;clear:both;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin-top:12px}
+header .head>.metrics>.metric{position:static!important;min-width:0;width:auto;overflow:hidden;padding:10px 4px}
+header .head>.metrics>.metric strong{font-size:clamp(16px,4vw,25px);line-height:1.2}
+header .head>.metrics>.metric small{display:block;white-space:normal;overflow-wrap:break-word;word-break:normal;font-size:clamp(8px,2vw,11px);line-height:1.25;margin-top:4px}
+header .head>.jcm-home-link{position:absolute;right:12px;top:10px}
+header .head:has(.jcm-home-link) .brand{padding-right:45px}
+@media(max-width:600px){header .head>.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}header .head>.metrics>.metric{min-height:68px}header .head>.jcm-home-link{right:12px;top:10px}header .head:has(.jcm-home-link) .brand{padding-right:44px}header .head #date{margin-left:auto;flex:0 0 120px;max-width:120px}}
+@media(max-width:380px){header .head #date{flex-basis:104px;max-width:104px}.jcm-tagline{font-size:13px}}
+
+/* Dashboard-only mobile usability: no settlement or accuracy logic changes. */
+@media(max-width:600px){
+  .jcm-modal{width:calc(100vw - 24px);max-height:calc(100dvh - 32px);padding:18px;overscroll-behavior:contain}
+  .jcm-drawer{max-width:calc(100vw - 24px);overscroll-behavior:contain}
+  #date{min-height:44px;font-size:16px}
+  .jcm-row{overflow-wrap:anywhere}
+  .jcm-row .jcm-status{font-weight:800}
+  .watchlist,.day{overflow-wrap:anywhere}
+}
+@media(max-width:380px){.jcm-modal{padding:14px}.watchlist{padding:12px}}
+@media(prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+:where(button,select,a,[role="button"]):focus-visible{outline:3px solid #ffd700;outline-offset:3px}
+/* Reachable mobile header and scrollable dialogs. */
+header{backdrop-filter:none}
+header .head{padding-top:calc(44px + env(safe-area-inset-top,0px))}
+#jcm-hub{padding-top:calc(72px + env(safe-area-inset-top,0px))}
+.jcm-modal{position:absolute;top:calc(24px + env(safe-area-inset-top,0px));transform:translateX(-50%);max-height:calc(100dvh - 48px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));scroll-padding-top:64px}
+.jcm-modal>.jcm-close{position:sticky;top:0;z-index:5;min-width:44px;min-height:44px;background:#34445c;box-shadow:0 2px 8px #0006}
+.jcm-daily-rate{font-size:22px!important;font-weight:850;color:#fff!important}
+/* One safe-area allowance and one aligned navigation row. */
+header{padding-top:0!important}
+header .head{padding-top:calc(16px + env(safe-area-inset-top,0px))}
+#jcm-hub{padding-top:calc(24px + env(safe-area-inset-top,0px))}
+header .head>.brand{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px;padding-right:0!important}
+header .head .jcm-home-link{position:relative;top:auto;right:auto;bottom:auto;align-self:center;margin:0!important}
+header .head #date{margin:0;flex:none}
+@media(max-width:600px){header .head #date{width:108px;max-width:108px;font-size:14px}.identity img{width:44px;height:44px}.jcm-tagline{font-size:14px;white-space:normal}.identity{gap:7px}}
+@media(max-width:380px){header .head #date{width:104px;max-width:104px}.jcm-tagline{font-size:13px}.identity img{width:40px;height:40px}}
+

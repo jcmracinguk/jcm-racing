@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "sport": "football",
+  "sources": [
+    "data/football-results-2026-11-07.json"
+  ]
+}

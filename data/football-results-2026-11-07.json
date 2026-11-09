@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "sport": "football",
+  "date": "2026-11-07",
+  "mode": "UNPRICED_PAPER_TRIAL",
+  "source_note": "Five previously frozen and approved BTTS YES entries imported; normal-time scores verified separately on 9 November. No retrospective prices, stakes or P/L.",
+  "selections": [
+    {
+      "fixture_id": 561930,
+      "fixture_id_source": "football-data.org frozen handover",
+      "rank": 1,
+      "rank_is_probability": false,
+      "home": "Cardiff City FC",
+      "away": "Burnley FC",
+      "home_display": "Cardiff City",
+      "away_display": "Burnley",
+      "match_date": "2026-11-07",
+      "kickoff": "2026-11-07T15:00:00+00:00",
+      "kickoff_uk": "15:00",
+      "competition": "Championship",
+      "competition_code": "ELC",
+      "season": "2026/27",
+      "market": "BTTS_YES",
+      "market_label": "BTTS YES (90 minutes plus stoppage time)",
+      "selected_at": "2026-11-05T17:51:09.040Z",
+      "input_cutoff": "2026-11-05T17:48:48+00:00",
+      "methodology_version": "btts-v1",
+      "reason": "Both teams scored in 6/7 relevant venue games on each side; Cardiff scored in 7/7 at home and Burnley in 7/7 away. Venue goals: Cardiff 16 for/9 against; Burnley 10 for/16 against.",
+      "counterargument": "Only seven venue games per side. Both teams' last-six overall BTTS records are 4/6, weaker than the venue rates. Team news is incomplete.",
+      "odds": null,
+      "priced": false,
+      "simulated_stake_gbp": null,
+      "profit_loss_gbp": null,
+      "original_result_status": "PENDING",
+      "match_status": "FINISHED",
+      "score_basis": "REGULAR_TIME",
+      "score": {
+        "home": 5,
+        "away": 4
+      },
+      "result_status": "WIN",
+      "result_source": "Sky Sports",
+      "result_source_url": "https://www.skysports.com/football/cardiff-vs-burnley/report/560669",
+      "result_verified_at": "2026-11-09T10:19:50.247759+00:00",
+      "imported_at": "2026-11-09T10:19:50.247759+00:00",
+      "result_history": [
+        {
+          "recorded_at": "2026-11-09T10:19:50.247759+00:00",
+          "action": "IMPORT_VERIFIED_RESULT",
+          "previous_result_status": "PENDING",
+          "score": {
+            "home": 5,
+            "away": 4
+          },
+          "source_url": "https://www.skysports.com/football/cardiff-vs-burnley/report/560669"
+        }
+      ],
+      "selection_source": {
+        "title": "JCM_Football_Paper_2026-11-07.md",
+        "library_file_id": "libfile_83576e781fbc81919a317cda35fe6b3a",
+        "screen_run": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104"
+      }
+    },
+    {
+      "fixture_id": 561933,
+      "fixture_id_source": "football-data.org frozen handover",
+      "rank": 2,
+      "rank_is_probability": false,
+      "home": "Wrexham AFC",
+      "away": "Wolverhampton Wanderers FC",
+      "home_display": "Wrexham",
+      "away_display": "Wolves",
+      "match_date": "2026-11-07",
+      "kickoff": "2026-11-07T12:30:00+00:00",
+      "kickoff_uk": "12:30",
+      "competition": "Championship",
+      "competition_code": "ELC",
+      "season": "2026/27",
+      "market": "BTTS_YES",
+      "market_label": "BTTS YES (90 minutes plus stoppage time)",
+      "selected_at": "2026-11-05T17:51:09.040Z",
+      "input_cutoff": "2026-11-05T17:48:48+00:00",
+      "methodology_version": "btts-v1",
+      "reason": "Wrexham home BTTS 6/7; Wolves away BTTS 5/7. Wrexham scored in 7/7 at home, Wolves in 6/7 away; each conceded in 6/7 of its relevant venue games.",
+      "counterargument": "Wrexham overall BTTS is 3/6 recently and 8/14 for the season. Wolves' official 14 October update says Raul Jimenez is absent until January; comprehensive current team news remains unverified.",
+      "odds": null,
+      "priced": false,
+      "simulated_stake_gbp": null,
+      "profit_loss_gbp": null,
+      "original_result_status": "PENDING",
+      "match_status": "FINISHED",
+      "score_basis": "REGULAR_TIME",
+      "score": {
+        "home": 1,
+        "away": 1
+      },
+      "result_status": "WIN",
+      "result_source": "Sky Sports",
+      "result_source_url": "https://www.skysports.com/football/wrexham-vs-wolverhampton-wanderers/560677",
+      "result_verified_at": "2026-11-09T10:19:50.247759+00:00",
+      "imported_at": "2026-11-09T10:19:50.247759+00:00",
+      "result_history": [
+        {
+          "recorded_at": "2026-11-09T10:19:50.247759+00:00",
+          "action": "IMPORT_VERIFIED_RESULT",
+          "previous_result_status": "PENDING",
+          "score": {
+            "home": 1,
+            "away": 1
+          },
+          "source_url": "https://www.skysports.com/football/wrexham-vs-wolverhampton-wanderers/560677"
+        }
+      ],
+      "selection_source": {
+        "title": "JCM_Football_Paper_2026-11-07.md",
+        "library_file_id": "libfile_83576e781fbc81919a317cda35fe6b3a",
+        "screen_run": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104"
+      }
+    },
+    {
+      "fixture_id": 561935,
+      "fixture_id_source": "football-data.org frozen handover",
+      "rank": 3,
+      "rank_is_probability": false,
+      "home": "Blackburn Rovers FC",
+      "away": "West Ham United FC",
+      "home_display": "Blackburn Rovers",
+      "away_display": "West Ham",
+      "match_date": "2026-11-07",
+      "kickoff": "2026-11-07T15:00:00+00:00",
+      "kickoff_uk": "15:00",
+      "competition": "Championship",
+      "competition_code": "ELC",
+      "season": "2026/27",
+      "market": "BTTS_YES",
+      "market_label": "BTTS YES (90 minutes plus stoppage time)",
+      "selected_at": "2026-11-05T17:51:09.040Z",
+      "input_cutoff": "2026-11-05T17:48:48+00:00",
+      "methodology_version": "btts-v1",
+      "reason": "Blackburn home BTTS 6/7 and West Ham away BTTS 5/7; both scored in all seven relevant venue games. West Ham away goals: 18 for/10 against.",
+      "counterargument": "Blackburn's last-six overall BTTS is 3/6. West Ham kept two clean sheets in seven away games; that is the direct failure route for YES.",
+      "odds": null,
+      "priced": false,
+      "simulated_stake_gbp": null,
+      "profit_loss_gbp": null,
+      "original_result_status": "PENDING",
+      "match_status": "FINISHED",
+      "score_basis": "REGULAR_TIME",
+      "score": {
+        "home": 2,
+        "away": 1
+      },
+      "result_status": "WIN",
+      "result_source": "Sky Sports",
+      "result_source_url": "https://www.skysports.com/football/blackburn-rovers-vs-west-ham-united/8067885432187075232",
+      "result_verified_at": "2026-11-09T10:19:50.247759+00:00",
+      "imported_at": "2026-11-09T10:19:50.247759+00:00",
+      "result_history": [
+        {
+          "recorded_at": "2026-11-09T10:19:50.247759+00:00",
+          "action": "IMPORT_VERIFIED_RESULT",
+          "previous_result_status": "PENDING",
+          "score": {
+            "home": 2,
+            "away": 1
+          },
+          "source_url": "https://www.skysports.com/football/blackburn-rovers-vs-west-ham-united/8067885432187075232"
+        }
+      ],
+      "selection_source": {
+        "title": "JCM_Football_Paper_2026-11-07.md",
+        "library_file_id": "libfile_83576e781fbc81919a317cda35fe6b3a",
+        "screen_run": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104"
+      }
+    },
+    {
+      "fixture_id": 561937,
+      "fixture_id_source": "football-data.org frozen handover",
+      "rank": 4,
+      "rank_is_probability": false,
+      "home": "Preston North End FC",
+      "away": "Southampton FC",
+      "home_display": "Preston North End",
+      "away_display": "Southampton",
+      "match_date": "2026-11-07",
+      "kickoff": "2026-11-07T15:00:00+00:00",
+      "kickoff_uk": "15:00",
+      "competition": "Championship",
+      "competition_code": "ELC",
+      "season": "2026/27",
+      "market": "BTTS_YES",
+      "market_label": "BTTS YES (90 minutes plus stoppage time)",
+      "selected_at": "2026-11-05T17:51:09.040Z",
+      "input_cutoff": "2026-11-05T17:48:48+00:00",
+      "methodology_version": "btts-v1",
+      "reason": "Preston home BTTS 5/7; Southampton away BTTS 6/7. Preston conceded in 7/7 home games, Southampton scored in 7/7 away.",
+      "counterargument": "Preston failed to score in 2/7 home games and average only one home goal per game. Both teams' last-six overall BTTS is 3/6. This is a weaker attacking case despite passing the unchanged screen.",
+      "odds": null,
+      "priced": false,
+      "simulated_stake_gbp": null,
+      "profit_loss_gbp": null,
+      "original_result_status": "PENDING",
+      "match_status": "FINISHED",
+      "score_basis": "REGULAR_TIME",
+      "score": {
+        "home": 1,
+        "away": 0
+      },
+      "result_status": "LOSS",
+      "result_source": "Sky Sports",
+      "result_source_url": "https://www.skysports.com/football/preston-north-end-vs-southampton/9185991910994115232",
+      "result_verified_at": "2026-11-09T10:19:50.247759+00:00",
+      "imported_at": "2026-11-09T10:19:50.247759+00:00",
+      "result_history": [
+        {
+          "recorded_at": "2026-11-09T10:19:50.247759+00:00",
+          "action": "IMPORT_VERIFIED_RESULT",
+          "previous_result_status": "PENDING",
+          "score": {
+            "home": 1,
+            "away": 0
+          },
+          "source_url": "https://www.skysports.com/football/preston-north-end-vs-southampton/9185991910994115232"
+        }
+      ],
+      "selection_source": {
+        "title": "JCM_Football_Paper_2026-11-07.md",
+        "library_file_id": "libfile_83576e781fbc81919a317cda35fe6b3a",
+        "screen_run": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104"
+      }
+    },
+    {
+      "fixture_id": 561938,
+      "fixture_id_source": "football-data.org frozen handover",
+      "rank": 5,
+      "rank_is_probability": false,
+      "home": "Portsmouth FC",
+      "away": "Stoke City FC",
+      "home_display": "Portsmouth",
+      "away_display": "Stoke City",
+      "match_date": "2026-11-07",
+      "kickoff": "2026-11-07T12:30:00+00:00",
+      "kickoff_uk": "12:30",
+      "competition": "Championship",
+      "competition_code": "ELC",
+      "season": "2026/27",
+      "market": "BTTS_YES",
+      "market_label": "BTTS YES (90 minutes plus stoppage time)",
+      "selected_at": "2026-11-05T17:51:09.040Z",
+      "input_cutoff": "2026-11-05T17:48:48+00:00",
+      "methodology_version": "btts-v1",
+      "reason": "Portsmouth home BTTS 5/7; Stoke away BTTS 6/7. Portsmouth scored in 6/7 at home, Stoke in 7/7 away; each conceded in 6/7 relevant venue games.",
+      "counterargument": "Stoke's season overall BTTS is 9/14 and last-six overall BTTS 3/6, below its strong away split. Seven away games remain a small sample.",
+      "odds": null,
+      "priced": false,
+      "simulated_stake_gbp": null,
+      "profit_loss_gbp": null,
+      "original_result_status": "PENDING",
+      "match_status": "FINISHED",
+      "score_basis": "REGULAR_TIME",
+      "score": {
+        "home": 1,
+        "away": 2
+      },
+      "result_status": "WIN",
+      "result_source": "Sky Sports",
+      "result_source_url": "https://www.skysports.com/football/portsmouth-vs-stoke-city/560672",
+      "result_verified_at": "2026-11-09T10:19:50.247759+00:00",
+      "imported_at": "2026-11-09T10:19:50.247759+00:00",
+      "result_history": [
+        {
+          "recorded_at": "2026-11-09T10:19:50.247759+00:00",
+          "action": "IMPORT_VERIFIED_RESULT",
+          "previous_result_status": "PENDING",
+          "score": {
+            "home": 1,
+            "away": 2
+          },
+          "source_url": "https://www.skysports.com/football/portsmouth-vs-stoke-city/560672"
+        }
+      ],
+      "selection_source": {
+        "title": "JCM_Football_Paper_2026-11-07.md",
+        "library_file_id": "libfile_83576e781fbc81919a317cda35fe6b3a",
+        "screen_run": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104"
+      }
+    }
+  ]
+}

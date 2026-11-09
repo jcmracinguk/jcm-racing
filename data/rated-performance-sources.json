@@ -3,22 +3,8 @@
   "sources": [
     "data/competition-research-2026-11-09.json",
     "data/competition-research-2026-11-07.json",
-    "data/competition-research-2026-11-06.json",
-    "data/competition-research-2026-11-05.json",
-    "data/competition-research-2026-11-04.json",
-    "data/competition-research-2026-11-03.json",
-    "data/competition-research-2026-11-01.json",
-    "data/competition-research-2026-10-31.json",
-    "data/competition-research-2026-10-30.json",
-    "data/competition-research-2026-10-29.json",
-    "data/competition-research-2026-10-28.json",
-    "data/competition-research-2026-10-27.json",
-    "data/competition-research-2026-10-26.json",
-    "data/competition-research-2026-10-24.json",
-    "data/competition-research-2026-10-23.json",
-    "data/competition-research-2026-10-21.json",
-    "data/competition-research-2026-10-22.json",
-    "data/competition-research-2026-11-02.json"
+    "data/competition-research-2026-11-06.json"
   ],
-  "manual_sources": []
+  "manual_sources": [],
+  "run_start_date": "2026-11-06"
 }
