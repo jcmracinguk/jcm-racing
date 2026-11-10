@@ -31,7 +31,7 @@
         "Bread And Butter"
       ],
       "selection_reason": {
-        "summary": "Repeated disappointing hurdle performances, including sixth in a Class 5 on good ground on his stable debut. Ocean Heights won over 2m5\u00bdf on good in September; Bread And Butter was second over 2m4\u00bdf at Plumpton last month.",
+        "summary": "Repeated disappointing hurdle performances, including sixth in a Class 5 on good ground on his stable debut. Ocean Heights won over 2m5½f on good in September; Bread And Butter was second over 2m4½f at Plumpton last month.",
         "counterargument": "Down another 2lb to OR94; second start for James Owen after reappearance. Revival remains a genuine winning possibility.",
         "why_still_oppose": "Relevant repeated disappointments and two rivals with demonstrated recent trip-range form justify a moderate paper lay; improvement is possible and value unproven.",
         "rival_limitations": "Ocean Heights now OR92 versus85 at win,3lb claim; Bread And Butter veteran OR81. U Asking Me out of sorts but new yard; Watchoutitscookie recent chase struggles, hurdle return possible help; Bargain Hunter no solid Rules form. No raw ratings advantage asserted.",
@@ -50,7 +50,7 @@
       "field_size": 6,
       "going": "Good",
       "surface": "Turf",
-      "verification_status": "PENDING",
+      "verification_status": "WEBSITE_CONFIRMED",
       "official_accuracy_eligible": false,
       "lay_odds": 2.56,
       "available_stake_gbp": 14.37,
@@ -81,7 +81,7 @@
         "verification_status": "VERIFIED_API_LAY"
       },
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-10/huntingdon/racecard/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
-      "race_name": "PricedUp Bet Conditional Jockeys\u2019 Handicap Hurdle",
+      "race_name": "PricedUp Bet Conditional Jockeys’ Handicap Hurdle",
       "market_position_note": "Shortest actual Lay offer in the named morning snapshot.",
       "simulation": {
         "liability_gbp": 500,
@@ -95,8 +95,65 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "booked_profit_gbp": 0,
-      "result_status": "PENDING",
-      "result_source": null
+      "result_status": "LOSS",
+      "result_source": "SPORTING_LIFE",
+      "position": "1",
+      "placing": "1st",
+      "result_date": "2026-11-10",
+      "result_off_time_uk": "13:40",
+      "result_course": "Huntingdon",
+      "result_horse": "Teorie",
+      "result_off_dt": "2026-11-10T13:40:00+00:00",
+      "result_retrieved_at": "2026-11-10T14:27:07.462Z",
+      "result_race_id": "rac_32304047685",
+      "result_horse_id": "hrs_31660727",
+      "result_website_race_id": "947819",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/huntingdon/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
+      "result_starting_price": "13/8f",
+      "result_non_runners": [
+        "Bargain Hunter"
+      ],
+      "result_website_horse_id": "1073946",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "9 ½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Teorie",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Ocean Heights",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "9.5"
+        },
+        {
+          "position": "3",
+          "horse": "Watchoutitscookie",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "24.5"
+        },
+        {
+          "position": "4",
+          "horse": "Bread And Butter",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "26"
+        },
+        {
+          "position": "5",
+          "horse": "U Asking Me",
+          "margin_from_previous": "30",
+          "cumulative_beaten_lengths": "56"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/huntingdon/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
+      "margin_retrieved_at": "2026-11-10T14:27:07.462Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED"
     }
   ],
   "competition_watchlist": []
