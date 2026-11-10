@@ -296,6 +296,12 @@
           "horse": "Sailing By",
           "margin_from_previous": "20",
           "cumulative_beaten_lengths": "22.05"
+        },
+        {
+          "position": "PU",
+          "horse": "One Cool Dreamer",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
         }
       ],
       "margin_source": "SPORTING_LIFE",
