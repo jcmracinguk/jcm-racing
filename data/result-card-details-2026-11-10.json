@@ -258,7 +258,7 @@
       "result_course": "Lingfield",
       "result_horse": "Sailing By",
       "result_off_dt": "2026-11-10T15:20:00+00:00",
-      "result_retrieved_at": "2026-11-10T16:16:35.316Z",
+      "result_retrieved_at": "2026-11-10T17:40:10.604128Z",
       "result_race_id": "rac_32304067055",
       "result_horse_id": "hrs_56559342",
       "result_website_race_id": "947829",
@@ -295,17 +295,11 @@
           "horse": "Sailing By",
           "margin_from_previous": "20",
           "cumulative_beaten_lengths": "22.05"
-        },
-        {
-          "position": "PU",
-          "horse": "One Cool Dreamer",
-          "margin_from_previous": null,
-          "cumulative_beaten_lengths": null
         }
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/lingfield/947829/tips-for-every-race-at-raceday-readycom-handicap-hurdle",
-      "margin_retrieved_at": "2026-11-10T16:16:35.316Z",
+      "margin_retrieved_at": "2026-11-10T17:40:10.604128Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "date": "2026-11-10",
