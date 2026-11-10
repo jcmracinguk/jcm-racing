@@ -115,6 +115,22 @@ def margins(rides, selected, winners):
     return winning, selected_beaten, all_margins
 
 
+def preserve_noncompletion_margins(existing, fresh):
+    """Keep explicit stored non-completion codes when refreshing numeric margins."""
+    merged = copy.deepcopy(fresh)
+    seen = {(str(item.get('position', '')).upper(), normal(item.get('horse', ''))) for item in merged}
+    for item in existing or []:
+        position = str(item.get('position', '')).upper()
+        horse = item.get('horse')
+        if not position or position.isdigit() or position == 'NR' or not horse:
+            continue
+        key = (position, normal(horse))
+        if key not in seen:
+            merged.append(copy.deepcopy(item))
+            seen.add(key)
+    return merged
+
+
 def result(row, page, url, now):
     race = page['race']
     summary = race['race_summary']
@@ -241,6 +257,9 @@ def main():
                 url = HOST + candidates[0]
                 page, _ = fetch(url)
                 update, detail = result(row, page, url, now)
+                preserved_margins = preserve_noncompletion_margins(row.get('finish_margins'), update['finish_margins'])
+                update['finish_margins'] = preserved_margins
+                detail['finish_margins'] = copy.deepcopy(preserved_margins)
                 margin_keys = ('winning_margin_lengths', 'selected_beaten_lengths', 'finish_margins', 'margin_source', 'margin_source_url', 'margin_stage', 'margin_verification_status')
                 if fallback_settled:
                     if row.get('position') != update['position'] or row.get('result_status') != update['result_status']:

@@ -32,6 +32,17 @@ class Results(unittest.TestCase):
         self.page['race']['race_summary']['race_stage']='WEIGHEDIN'
         self.page['race']['rides'].pop()
         with self.assertRaises(ValueError):self.parse()
+    def test_stored_noncompletion_code_is_preserved_on_refresh(self):
+        existing = [
+            {'position':'1','horse':'Winner','margin_from_previous':None,'cumulative_beaten_lengths':'0'},
+            {'position':'PU','horse':'Pulled Up','margin_from_previous':None,'cumulative_beaten_lengths':None},
+        ]
+        fresh = [{'position':'1','horse':'Winner','margin_from_previous':None,'cumulative_beaten_lengths':'0'}]
+        merged = m.preserve_noncompletion_margins(existing, fresh)
+        self.assertEqual(merged[-1]['position'], 'PU')
+        self.assertEqual(merged[-1]['horse'], 'Pulled Up')
+        self.assertEqual(len(merged), 2)
+
     def test_noncompletion_not_invented(self):
         self.page['race']['rides'][3]['finish_position']=0
         with self.assertRaises(ValueError):self.parse()
