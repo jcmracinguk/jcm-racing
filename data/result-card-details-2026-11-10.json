@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-10",
+  "details": [
+    {
+      "race_date": "2026-11-10",
+      "horse": "Teorie",
+      "course": "Huntingdon",
+      "off_time_uk": "13:40",
+      "race_id": "rac_32304047685",
+      "horse_id": "hrs_31660727",
+      "scheduled_off_dt": "2026-11-10T13:40:00+00:00",
+      "interest_rank": 1,
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Moderate candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Moderate racing candidate; value unproven",
+      "selected_at": "2026-11-10T06:46:53.081Z",
+      "selection_timestamp_precision": "millisecond",
+      "added_at": "2026-11-10T09:55:23.308035+00:00",
+      "user_approved_at": "2026-11-10T09:55:23.308035+00:00",
+      "user_approval_time_note": "Approval recorded during publication turn; exact message arrival timestamp unavailable.",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "identified_challengers": [
+        "Ocean Heights",
+        "Bread And Butter"
+      ],
+      "selection_reason": {
+        "summary": "Repeated disappointing hurdle performances, including sixth in a Class 5 on good ground on his stable debut. Ocean Heights won over 2m5\u00bdf on good in September; Bread And Butter was second over 2m4\u00bdf at Plumpton last month.",
+        "counterargument": "Down another 2lb to OR94; second start for James Owen after reappearance. Revival remains a genuine winning possibility.",
+        "why_still_oppose": "Relevant repeated disappointments and two rivals with demonstrated recent trip-range form justify a moderate paper lay; improvement is possible and value unproven.",
+        "rival_limitations": "Ocean Heights now OR92 versus85 at win,3lb claim; Bread And Butter veteran OR81. U Asking Me out of sorts but new yard; Watchoutitscookie recent chase struggles, hurdle return possible help; Bargain Hunter no solid Rules form. No raw ratings advantage asserted.",
+        "challengers": [
+          "Ocean Heights",
+          "Bread And Butter"
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-10/huntingdon/racecard/947819/pricedup-bet-conditional-jockeys-handicap-hurdle"
+        ],
+        "checked_at": "2026-11-10T06:46:53.081Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Moderate; revival possible. Delayed quote, exact delay unknown; full matching unverified."
+      },
+      "field_size": 6,
+      "going": "Good",
+      "surface": "Turf",
+      "verification_status": "PENDING",
+      "official_accuracy_eligible": false,
+      "lay_odds": 2.56,
+      "available_stake_gbp": 14.37,
+      "source": "Betfair Exchange delayed morning Lay snapshot collected10 November06:25 GMT",
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_blob_sha": "5f8aa26f18edf73c11334d5869620cd2dfc6b495",
+        "started_at_utc": "2026-11-10T06:25:52.787040+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-10T06:25:53.638739+00:00",
+        "retrieved_at_utc": "2026-11-10T06:25:53.334862+00:00",
+        "market_id": "1.265256818",
+        "selection_id": 55581585,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 14.37,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "original_price_side": "LAY",
+        "retrieved_at": "2026-11-10T06:25:53.334862+00:00",
+        "displayed_liquidity_gbp": 14.37,
+        "liquidity_gbp": 14.53,
+        "verification_status": "VERIFIED_API_LAY"
+      },
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-10/huntingdon/racecard/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
+      "race_name": "PricedUp Bet Conditional Jockeys\u2019 Handicap Hurdle",
+      "market_position_note": "Shortest actual Lay offer in the named morning snapshot.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 320.5128205128205,
+        "potential_net_profit_gbp": 304.4871794871795,
+        "failure_gbp": -500,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "booked_profit_gbp": 0,
+      "result_status": "PENDING",
+      "result_source": null
+    }
+  ]
+}

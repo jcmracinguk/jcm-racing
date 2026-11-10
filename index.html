@@ -50,7 +50,7 @@
 .jcm-link-unavailable{font-size:13px;color:#c6d0de}
 #jcm-official-panel .jcm-status.win{color:#85efb8}#jcm-official-panel .jcm-status.loss{color:#ff849d}
 @media(max-width:380px){.jcm-result-card{padding:18px 12px}.jcm-result-grid strong{font-size:17px}}
-</style></head><body data-sport="racing"><header><div class="head"><div class="brand"><div class="identity"><img alt="JCM logo" src="./jcm-logo.svg"><div class="jcm-tagline">Better, informed</div></div><select id="date" aria-label="Racing date"><option value="2026-11-09">9th Nov-26</option><option value="2026-11-07">7th Nov-26</option><option value="2026-11-06">6th Nov-26</option></select></div><div class="metrics"><div class="metric"><strong>—</strong><small>OVERALL RESEARCH RESULTS</small></div><div class="metric"><strong>—</strong><small>WINS</small></div><div class="metric"><strong>—</strong><small>LOSSES</small></div><div class="metric"><strong>—</strong><small>NR</small></div></div></div></header><main></main><script>
+</style></head><body data-sport="racing"><header><div class="head"><div class="brand"><div class="identity"><img alt="JCM logo" src="./jcm-logo.svg"><div class="jcm-tagline">Better, informed</div></div><select id="date" aria-label="Racing date"><option value="2026-11-10">10th Nov-26</option><option value="2026-11-09">9th Nov-26</option><option value="2026-11-07">7th Nov-26</option><option value="2026-11-06">6th Nov-26</option></select></div><div class="metrics"><div class="metric"><strong>—</strong><small>OVERALL RESEARCH RESULTS</small></div><div class="metric"><strong>—</strong><small>WINS</small></div><div class="metric"><strong>—</strong><small>LOSSES</small></div><div class="metric"><strong>—</strong><small>NR</small></div></div></div></header><main></main><script>
 /* Presentation-only redesign; original results and audit data are preserved. */
 (function(){
  const main=document.querySelector('main'),date=document.getElementById('date');
@@ -170,7 +170,7 @@ window.jcmAcceptedResult = function(r) {
 const date=document.getElementById('date'),panel=document.getElementById('jcm-official-panel');
 if(!date||!panel)return;
 let day=date.value,detailRows=[],state='loading',cardDetails=[],loadVersion=0;
-const researchDays={'2026-11-09':3,'2026-11-07':1,'2026-11-06':2};
+const researchDays={'2026-11-10':1,'2026-11-09':3,'2026-11-07':1,'2026-11-06':2};
 function raceResultsLink(m,r){try{const u=new URL(m?.results_url);const course=r.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');return u.protocol==='https:'&&u.hostname==='www.sportinglife.com'&&new RegExp('^/racing/results/'+r.race_date+'/'+course+'/[0-9]+/[a-z0-9-]+/?$').test(u.pathname)&&!u.search&&!u.hash?u.href:null;}catch(_){return null;}}
 function detailFor(r){const matches=cardDetails.filter(m=>m.date===r.race_date&&m.horse===r.horse&&m.course===r.course&&m.off_time_uk===r.off_time_uk);return matches.length===1?matches[0]:null;}
 function ordinal(v){const n=Number(v);if(!Number.isInteger(n)||n<1)return String(v||'Not supplied');const a=n%100;return n+(a>=11&&a<=13?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th'));}
