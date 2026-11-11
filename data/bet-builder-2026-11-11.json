@@ -43,8 +43,8 @@
       "field_size": 8,
       "going": "Good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "UNVERIFIED",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Yorton Mares’ Novices’ Chase (Listed) (GBB Race)",
       "selection_reason": {
@@ -108,7 +108,80 @@
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "7",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-11",
+      "result_off_time_uk": "13:00",
+      "result_course": "Bangor-on-Dee",
+      "result_horse": "Jubilee Alpha",
+      "result_off_dt": "2026-11-11T13:00:00+00:00",
+      "result_retrieved_at": "2026-11-11T14:16:27.128221Z",
+      "result_race_id": "rac_32304150346",
+      "result_horse_id": "hrs_39109567",
+      "result_website_race_id": "948021",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-11/bangor-on-dee/948021/yorton-mares-novices-chase-listed-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1132905",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "18.1",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Getawhisky",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Onefournine",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Mighty Fleur",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "2.75"
+        },
+        {
+          "position": "4",
+          "horse": "Piper Park",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "13.75"
+        },
+        {
+          "position": "5",
+          "horse": "Siog Geal",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "15.25"
+        },
+        {
+          "position": "6",
+          "horse": "Sunset Marquesa",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "15.35"
+        },
+        {
+          "position": "7",
+          "horse": "Jubilee Alpha",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "18.1"
+        },
+        {
+          "position": "8",
+          "horse": "Merely A Detail",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "21.35"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-11/bangor-on-dee/948021/yorton-mares-novices-chase-listed-gbb-race",
+      "margin_retrieved_at": "2026-11-11T14:16:27.128221Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "7th"
     }
   ],
   "bank_trial": {
