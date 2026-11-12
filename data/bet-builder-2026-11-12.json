@@ -223,8 +223,8 @@
       "field_size": 9,
       "going": "Good to soft, good in places",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "UNVERIFIED",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "PricedUp Now With Best Odds National Hunt Maiden Hurdle",
       "selection_reason": {
@@ -285,7 +285,74 @@
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-12",
+      "result_off_time_uk": "12:41",
+      "result_course": "Market Rasen",
+      "result_horse": "Ivor Bear",
+      "result_off_dt": "2026-11-12T12:41:00+00:00",
+      "result_retrieved_at": "2026-11-12T12:57:01.304774Z",
+      "result_race_id": "rac_32304237511",
+      "result_horse_id": "hrs_60250071",
+      "result_website_race_id": "948188",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/market-rasen/948188/pricedup-now-with-best-odds-national-hunt-maiden-hurdle-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1210756",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "6",
+      "selected_beaten_lengths": "14.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Eastern Rock",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Supreme Force",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "6"
+        },
+        {
+          "position": "3",
+          "horse": "Jack The Master",
+          "margin_from_previous": "8 ½",
+          "cumulative_beaten_lengths": "14.5"
+        },
+        {
+          "position": "4",
+          "horse": "Ivor Bear",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "14.8"
+        },
+        {
+          "position": "5",
+          "horse": "Striking Midnight",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "18.8"
+        },
+        {
+          "position": "6",
+          "horse": "Zains Hope",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "23.55"
+        },
+        {
+          "position": "7",
+          "horse": "Jax Belle",
+          "margin_from_previous": "24",
+          "cumulative_beaten_lengths": "47.55"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/market-rasen/948188/pricedup-now-with-best-odds-national-hunt-maiden-hurdle-gbb-race",
+      "margin_retrieved_at": "2026-11-12T12:57:01.304774Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "4th"
     }
   ],
   "bank_trial": {

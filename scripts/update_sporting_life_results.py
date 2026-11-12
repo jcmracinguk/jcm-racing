@@ -207,12 +207,14 @@ def result(row, page, url, now):
                   result_off_dt=row['scheduled_off_dt'], result_retrieved_at=stamp, result_race_id=row['race_id'], result_horse_id=row['horse_id'],
                   result_website_race_id=ref, result_source_url=url, result_non_runners=non_runners,
                   result_website_horse_id=str(ride['horse']['horse_reference']['id']), result_stage='WEIGHEDIN')
-    update['result_amended'] = any(
+    amended_result = any(
         str(r.get('amended_position') or '').isdigit()
         and int(r['amended_position']) >= 1
         and int(r['amended_position']) != int(r.get('finish_position') or 0)
         for r in rides
     )
+    if amended_result:
+        update['result_amended'] = True
     update.update(margin_data)
     n = int(position) if position.isdigit() else 0
     suffix = 'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')
@@ -302,10 +304,12 @@ def main():
                     changes += 1
                     print(day, row['horse'], 'verified margins reconciled')
                     continue
-                comparison_keys = ('position', 'result_status', 'result_source_url', 'result_stage', 'result_amended') + margin_keys
+                comparison_keys = ('position', 'result_status', 'result_source_url', 'result_stage') + margin_keys
+                if update.get('result_amended'):
+                    comparison_keys += ('result_amended',)
                 if all(row.get(k) == update[k] for k in comparison_keys) and all(companions[0].get(k) == detail[k] for k in margin_keys):
                     continue
-                old = {k: v for k, v in row.items() if k.startswith('result_') or k in ('position', 'placing', 'verification_status')}
+                old = {k: v for k, v in row.items() if (k.startswith('result_') and k != 'result_history') or k in ('position', 'placing', 'verification_status')}
                 if row.get('result_source') == 'SPORTING_LIFE':
                     row.setdefault('result_history', []).append(old)
                     booked[0].setdefault('result_history', []).append(copy.deepcopy(old))
