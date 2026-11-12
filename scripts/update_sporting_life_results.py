@@ -79,19 +79,38 @@ def display_number(value):
     return text.rstrip('0').rstrip('.') if '.' in text else text
 
 
+def official_position(ride):
+    """Use an explicit amended placing when Sporting Life publishes one."""
+    amended = ride.get('amended_position')
+    if str(amended or '').isdigit() and int(amended) >= 1:
+        return int(amended)
+    original = ride.get('finish_position')
+    return int(original) if str(original or '').isdigit() else original
+
+
 def margins(rides, selected, winners):
     """Return verified adjacent margins plus the selected horse's cumulative deficit."""
+    amended = any(
+        str(r.get('amended_position') or '').isdigit()
+        and int(r['amended_position']) >= 1
+        and int(r['amended_position']) != int(r.get('finish_position') or 0)
+        for r in rides
+    )
     finishers = sorted(
-        (r for r in rides if str(r.get('finish_position', '')).isdigit() and int(r['finish_position']) >= 1),
-        key=lambda r: int(r['finish_position']),
+        (r for r in rides if str(official_position(r) or '').isdigit() and int(official_position(r)) >= 1),
+        key=lambda r: int(official_position(r)),
     )
     cumulative = Decimal('0')
     cumulative_known = True
     all_margins = []
     selected_beaten = None
     for runner in finishers:
-        position = int(runner['finish_position'])
-        raw = None if position == 1 else clean_distance(runner.get('finish_distance'))
+        position = int(official_position(runner))
+        # Sporting Life keeps finish_distance on the original runner after a
+        # stewards' amendment. Do not move that distance to a different horse
+        # or manufacture a cumulative margin in the amended order.
+        unchanged = position == int(runner.get('finish_position') or 0)
+        raw = None if position == 1 or (amended and not unchanged) else clean_distance(runner.get('finish_distance'))
         if position > 1:
             amount = distance_number(raw)
             if amount is None:
@@ -107,7 +126,9 @@ def margins(rides, selected, winners):
         })
         if runner is selected and position > 1:
             selected_beaten = beaten
-    if len(winners) > 1:
+    if amended:
+        winning = None
+    elif len(winners) > 1:
         winning = 'dh'
     else:
         runner_up = next((item for item in all_margins if item['position'] == '2'), None)
@@ -162,11 +183,11 @@ def result(row, page, url, now):
     if ride.get('ride_status') in ('NONRUNNER', 'NON_RUNNER'):
         position, status = 'NR', 'NR'
     else:
-        position = str(ride.get('finish_position', ''))
+        position = str(official_position(ride) or '')
         if not position.isdigit() or int(position) < 1:
             raise ValueError('Non-numeric finish needs manual review; left pending')
         status = 'LOSS' if position == '1' else 'WIN'
-    winners = [r['horse']['name'] for r in rides if r.get('finish_position') == 1 and r.get('ride_status') == 'RUNNER']
+    winners = [r['horse']['name'] for r in rides if official_position(r) == 1 and r.get('ride_status') == 'RUNNER']
     if not winners:
         raise ValueError('Winner not explicit')
     stamp = now.isoformat().replace('+00:00', 'Z')
@@ -186,6 +207,12 @@ def result(row, page, url, now):
                   result_off_dt=row['scheduled_off_dt'], result_retrieved_at=stamp, result_race_id=row['race_id'], result_horse_id=row['horse_id'],
                   result_website_race_id=ref, result_source_url=url, result_non_runners=non_runners,
                   result_website_horse_id=str(ride['horse']['horse_reference']['id']), result_stage='WEIGHEDIN')
+    update['result_amended'] = any(
+        str(r.get('amended_position') or '').isdigit()
+        and int(r['amended_position']) >= 1
+        and int(r['amended_position']) != int(r.get('finish_position') or 0)
+        for r in rides
+    )
     update.update(margin_data)
     n = int(position) if position.isdigit() else 0
     suffix = 'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')
@@ -275,7 +302,7 @@ def main():
                     changes += 1
                     print(day, row['horse'], 'verified margins reconciled')
                     continue
-                comparison_keys = ('position', 'result_status', 'result_source_url', 'result_stage') + margin_keys
+                comparison_keys = ('position', 'result_status', 'result_source_url', 'result_stage', 'result_amended') + margin_keys
                 if all(row.get(k) == update[k] for k in comparison_keys) and all(companions[0].get(k) == detail[k] for k in margin_keys):
                     continue
                 old = {k: v for k, v in row.items() if k.startswith('result_') or k in ('position', 'placing', 'verification_status')}

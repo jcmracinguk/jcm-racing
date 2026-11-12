@@ -87,6 +87,17 @@ class Results(unittest.TestCase):
         update, _ = m.result(self.row,self.page,self.url,datetime.now(timezone.utc))
         self.assertEqual(update['winning_margin_lengths'], 'dh')
 
+    def test_amended_result_uses_official_placings_without_invented_margins(self):
+        self.page['race']['rides'][0].update(finish_position=1, amended_position=2)
+        self.page['race']['rides'][1].update(finish_position=2, amended_position=1, finish_distance='nse')
+        update, detail = m.result(self.row,self.page,self.url,datetime.now(timezone.utc))
+        self.assertEqual(detail['winner'], 'Second')
+        self.assertTrue(update['result_amended'])
+        self.assertIsNone(update['winning_margin_lengths'])
+        self.assertIsNone(update['selected_beaten_lengths'])
+        self.assertEqual(detail['finish_margins'][0]['horse'], 'Second')
+        self.assertEqual(detail['finish_margins'][1]['horse'], 'Winner')
+
 if __name__=='__main__':unittest.main()
 
 
