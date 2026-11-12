@@ -15,6 +15,9 @@ on:
       - scripts/football-acca.js
       - data/football-bet-builder*.json
       - data/football-results*.json
+      - data/competition-research-*.json
+      - data/result-card-details-*.json
+      - data/bet-builder-*.json
       - scripts/bet-builder.js
       - scripts/bet-builder.css
       - .github/workflows/publish-app.yml
