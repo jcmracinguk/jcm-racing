@@ -192,9 +192,9 @@
       "field_size": 19,
       "going": "Good, good to soft in places",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "UNVERIFIED",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 202.13,
       "race_name": "AIS Conditional Jockeys' Handicap Hurdle",
       "selection_reason": {
         "summary": "Returns after 237 days and steps up from 19f to 2m5f. High Fibre won the Summer Hurdle and was fourth in the Cesarewitch. Keno Black won 11 days ago. Outmaster won twice over 2¾m on good and receives 4 lb after matching claims.",
@@ -250,11 +250,148 @@
         "required_stake_gbp": 212.7659574468085,
         "potential_net_profit_gbp": 202.12765957446808,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 202.13,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-13",
+      "result_off_time_uk": "13:10",
+      "result_course": "Cheltenham",
+      "result_horse": "Glancing Jack",
+      "result_off_dt": "2026-11-13T13:10:00+00:00",
+      "result_retrieved_at": "2026-11-13T13:28:00.276690Z",
+      "result_race_id": "rac_32304291747",
+      "result_horse_id": "hrs_48240094",
+      "result_website_race_id": "948323",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-13/cheltenham/948323/ais-conditional-jockeys-handicap-hurdle",
+      "result_non_runners": [
+        "Diamatiste",
+        "That's It Paddy"
+      ],
+      "result_website_horse_id": "1169817",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "3",
+      "selected_beaten_lengths": "3.2",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Norman Fletcher",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Keno Black",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "3",
+          "horse": "Glancing Jack",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "3.2"
+        },
+        {
+          "position": "4",
+          "horse": "High Fibre",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "3.5"
+        },
+        {
+          "position": "5",
+          "horse": "Moon Mission",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "6.75"
+        },
+        {
+          "position": "6",
+          "horse": "Step Ahead",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "6.95"
+        },
+        {
+          "position": "7",
+          "horse": "Kalium",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "7.15"
+        },
+        {
+          "position": "8",
+          "horse": "Double Oban",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "11.15"
+        },
+        {
+          "position": "9",
+          "horse": "Lovely Gino",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "14.65"
+        },
+        {
+          "position": "10",
+          "horse": "Snatch A Glance",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "16.9"
+        },
+        {
+          "position": "11",
+          "horse": "Khafre",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "17.65"
+        },
+        {
+          "position": "12",
+          "horse": "Razzle Dazzle Boy",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "19.15"
+        },
+        {
+          "position": "13",
+          "horse": "Boston Rajj",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "19.9"
+        },
+        {
+          "position": "14",
+          "horse": "No Ordinary Joe",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "20.4"
+        },
+        {
+          "position": "15",
+          "horse": "Chutzpal",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "20.45"
+        },
+        {
+          "position": "16",
+          "horse": "Eton Mes",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "21.95"
+        },
+        {
+          "position": "17",
+          "horse": "Heart Over Head",
+          "margin_from_previous": "17",
+          "cumulative_beaten_lengths": "38.95"
+        },
+        {
+          "position": "18",
+          "horse": "Outmaster",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "48.45"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-13/cheltenham/948323/ais-conditional-jockeys-handicap-hurdle",
+      "margin_retrieved_at": "2026-11-13T13:28:00.276690Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd",
+      "winner": "Norman Fletcher"
     }
   ],
   "bank_trial": {
