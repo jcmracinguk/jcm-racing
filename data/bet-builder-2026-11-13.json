@@ -39,9 +39,9 @@
       "field_size": 5,
       "going": "Good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "UNVERIFIED",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 247.4,
       "race_name": "JDA Grand Design Mares' Handicap Chase",
       "selection_reason": {
         "summary": "Free-going and has weakened before. She fell at the last over 2m5f when heading for third. The longer 3m60y tests her stamina. Gata Ban has two chase wins this season and was third over 3¼m on good.",
@@ -97,11 +97,67 @@
         "required_stake_gbp": 260.4166666666667,
         "potential_net_profit_gbp": 247.39583333333334,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 247.4,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-13",
+      "result_off_time_uk": "12:55",
+      "result_course": "Southwell",
+      "result_horse": "Out On Her Own",
+      "result_off_dt": "2026-11-13T12:55:00+00:00",
+      "result_retrieved_at": "2026-11-13T13:27:01.285738Z",
+      "result_race_id": "rac_32304316928",
+      "result_horse_id": "hrs_51618630",
+      "result_website_race_id": "948317",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-13/southwell/948317/jda-grand-design-mares-handicap-chase",
+      "result_non_runners": [],
+      "result_website_horse_id": "1185044",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": "1.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Gata Ban",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Out On Her Own",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Princess Keri",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "10.75"
+        },
+        {
+          "position": "4",
+          "horse": "Kit's Coty",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "14.75"
+        },
+        {
+          "position": "5",
+          "horse": "Walkingtheline",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "17.25"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-13/southwell/948317/jda-grand-design-mares-handicap-chase",
+      "margin_retrieved_at": "2026-11-13T13:27:01.285738Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd",
+      "winner": "Gata Ban"
     },
     {
       "tier": "selection",
