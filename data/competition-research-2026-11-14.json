@@ -38,9 +38,9 @@
       "field_size": 10,
       "going": "Good, good to soft in places",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "UNVERIFIED",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 128.38,
       "race_name": "Cutler And Gross Handicap Hurdle",
       "selection_reason": {
         "summary": "Zarakerjack won a Newbury handicap nine days ago and receives 27 lb after the claim. Misterdoc was second on handicap debut and runs off the same mark. Anniversary gets 12 lb and was second under a novice penalty. Watamu won at Stratford.",
@@ -97,11 +97,99 @@
         "required_stake_gbp": 135.13513513513513,
         "potential_net_profit_gbp": 128.3783783783784,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 128.38,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "8",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-14",
+      "result_off_time_uk": "15:10",
+      "result_course": "Windsor",
+      "result_horse": "Secret Squirrel",
+      "result_off_dt": "2026-11-14T15:10:00+00:00",
+      "result_retrieved_at": "2026-11-14T15:40:16.494154Z",
+      "result_race_id": "rac_32304469951",
+      "result_horse_id": "hrs_34401871",
+      "result_website_race_id": "948547",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-14/windsor/948547/cutler-and-gross-handicap-hurdle",
+      "result_non_runners": [
+        "Into The Park"
+      ],
+      "result_website_horse_id": "1093361",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "sh",
+      "selected_beaten_lengths": "12.85",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Fasol",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Watamu",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "0.1"
+        },
+        {
+          "position": "3",
+          "horse": "Zarakerjack",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "3.6"
+        },
+        {
+          "position": "4",
+          "horse": "Kapitein Kool",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "4.1"
+        },
+        {
+          "position": "5",
+          "horse": "Misterdoc",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "7.1"
+        },
+        {
+          "position": "6",
+          "horse": "Demoiselle Kap",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "9.6"
+        },
+        {
+          "position": "7",
+          "horse": "Moves Like Mason",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "12.1"
+        },
+        {
+          "position": "8",
+          "horse": "Secret Squirrel",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "12.85"
+        },
+        {
+          "position": "9",
+          "horse": "Anniversary",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "13.6"
+        },
+        {
+          "position": "10",
+          "horse": "Tunisya",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "21.6"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-14/windsor/948547/cutler-and-gross-handicap-hurdle",
+      "margin_retrieved_at": "2026-11-14T15:40:16.494154Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "8th",
+      "winner": "Fasol"
     }
   ],
   "competition_watchlist": []
