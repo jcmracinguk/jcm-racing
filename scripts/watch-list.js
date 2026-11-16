@@ -1,7 +1,4 @@
 (() => {
-  const tile = document.getElementById('jcm-watch-summary');
-  if (!tile) return;
-
   const currency = new Intl.NumberFormat('en-GB', {
     style: 'currency', currency: 'GBP', signDisplay: 'exceptZero'
   });
@@ -25,27 +22,32 @@
       if (!response.ok) throw new Error('Watch List unavailable');
       const ledger = await response.json();
       if (ledger.schema_version !== 1 || !Array.isArray(ledger.entries)) throw new Error('Invalid Watch List');
-      tile.textContent = money(net(ledger, ledger.entries)) + ' paper P/L';
       return ledger;
     })().finally(() => { request = null; });
     return request;
   }
 
+  const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   window.jcmWatchList = {
     read,
+    dateLabel(value) {
+      const [year, month, day] = value.split('-');
+      const number = Number(day);
+      const suffix = number >= 11 && number <= 13 ? 'th' : ({1:'st',2:'nd',3:'rd'}[number % 10] || 'th');
+      return number + suffix + ' ' + months[Number(month) - 1] + '-' + year.slice(-2);
+    },
+    counts(ledger) {
+      const counts = { WIN: 0, LOSS: 0, NR: 0, PENDING: 0 };
+      for (const row of ledger.entries) counts[row.result_status]++;
+      return counts;
+    },
     rowNet(ledger, row) {
       const cents = netCents(ledger, row);
       return cents === null ? 'No recorded price' : money(cents);
     },
     summary(ledger, rows) {
-      const counts = { WIN: 0, LOSS: 0, NR: 0, PENDING: 0 };
-      for (const row of ledger.entries) counts[row.result_status]++;
-      return 'Day P/L ' + money(net(ledger, rows)) + ' · Total P/L ' + money(net(ledger, ledger.entries)) +
-        ' · ' + counts.WIN + ' wins · ' + counts.LOSS + ' losses · ' + counts.NR +
-        ' void · ' + counts.PENDING + ' pending. £' + ledger.liability_gbp +
-        ' liability and ' + ledger.commission_rate * 100 + '% commission. Unpriced results count toward the record only.';
+      return 'Day paper P/L ' + money(net(ledger, rows)) +
+        ' · Total paper P/L ' + money(net(ledger, ledger.entries));
     }
   };
-
-  read().catch(() => { tile.textContent = 'Watch List unavailable'; });
 })();

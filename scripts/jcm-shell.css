@@ -11,7 +11,7 @@
  .identity{min-width:0;max-width:100%;justify-content:flex-start}
  .identity>div{min-width:0}
  .brandname{overflow-wrap:anywhere}
- #date{display:block;width:100%;max-width:none;min-width:0;min-height:48px;font-size:16px;padding:12px 14px;touch-action:manipulation}
+ :is(#date,#jcm-watch-date){display:block;width:100%;max-width:none;min-width:0;min-height:48px;font-size:16px;padding:12px 14px;touch-action:manipulation}
  .metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}
  .metric{min-width:0}
  main{padding:14px 12px 55px}
@@ -35,10 +35,10 @@
  .identity{flex:1 1 auto;min-width:0;gap:8px}
  .identity img{width:44px;height:44px;border-radius:10px;flex-shrink:0}
  .jcm-tagline{font-size:clamp(14px,3.7vw,20px);white-space:nowrap}
- #date{display:block;flex:0 0 auto;width:120px;max-width:120px;min-width:0;min-height:40px;font-size:12px;padding:8px 5px}
+ :is(#date,#jcm-watch-date){display:block;flex:0 0 auto;width:120px;max-width:120px;min-width:0;min-height:40px;font-size:12px;padding:8px 5px}
  .head{padding:8px 12px}
 }
-@media(max-width:380px){.identity img{width:38px;height:38px}.jcm-tagline{font-size:13px}#date{width:110px;max-width:110px}}
+@media(max-width:380px){.identity img{width:38px;height:38px}.jcm-tagline{font-size:13px}:is(#date,#jcm-watch-date){width:110px;max-width:110px}}
 @media(display-mode:standalone){header{padding-top:max(48px, env(safe-area-inset-top, 0px))}}
 /* Feather the JPEG tile into the exact header background; preserve neon emblem. */
 .identity img{background-color:#121626;mix-blend-mode:normal;-webkit-mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%);mask-image:radial-gradient(ellipse closest-side at center,#000 65%,transparent 100%);border-radius:0}
@@ -90,7 +90,7 @@ main>.day,main>.section,main>#picks,main>#jcm-watchlist,main>#market-monitor,mai
 .jcm-row .jcm-place{font-size:clamp(15px,3.8vw,18px);color:#fff}
 .jcm-row .jcm-status{font-size:12px;line-height:1.2;padding:10px 2px}
 .metrics .metric small{color:#fff;font-size:clamp(9px,2.3vw,12px);line-height:1.3}
-#date{color:#fff;font-weight:800}
+:is(#date,#jcm-watch-date){color:#fff;font-weight:800}
 @media(max-width:380px){.jcm-row{grid-template-columns:66px minmax(0,1fr) 36px 59px;column-gap:4px;padding:12px 6px}.jcm-row .jcm-horse{font-size:14px}.jcm-row .jcm-status{font-size:10px}.jcm-row .jcm-ground{font-size:11px}}
 /* Slightly larger tappable JCM emblem without disturbing date selector. */
 @media(max-width:600px){.identity img{width:54px;height:54px;flex-shrink:0}.identity{gap:9px}.jcm-logo-button{flex-shrink:0}}
@@ -104,8 +104,8 @@ main>.day,main>.section,main>#picks,main>#jcm-watchlist,main>#market-monitor,mai
 .jcm-category-row .jcm-ground{color:#fff;font-weight:700;font-size:13px;margin-top:4px}
 .jcm-category-row .jcm-horse{font-weight:800;font-size:17px;overflow-wrap:anywhere}
 /* Centred compact date label while retaining native iPhone picker affordance. */
-#date{text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none;padding:9px 22px 9px 8px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;background-size:15px}
-#date option{text-align:center}
+:is(#date,#jcm-watch-date){text-align:center;text-align-last:center;appearance:none;-webkit-appearance:none;padding:9px 22px 9px 8px!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m7 10 5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;background-size:15px}
+:is(#date,#jcm-watch-date) option{text-align:center}
 
 /* JCM Hub: landing screen; existing racing dashboard remains intact underneath. */
 #jcm-hub{position:fixed;inset:0;z-index:90;overflow-y:auto;background:#121626;color:#fff;padding:max(48px,env(safe-area-inset-top,0px)) 18px max(30px,env(safe-area-inset-bottom,0px));display:none}
@@ -148,14 +148,14 @@ main>.day,main>.section,main>#picks,main>#jcm-watchlist,main>#market-monitor,mai
 /* Small outlined home icon alongside the date selector. */
 header .head{position:relative}
 .jcm-home-link{position:absolute;top:0;right:0;margin:0!important;width:38px;height:38px;padding:0!important;display:inline-flex!important;align-items:center;justify-content:center;border:1px solid #ffd400;border-radius:10px;background:transparent;color:#ffd400;z-index:2}
-header .head:has(.jcm-home-link) #date{margin-right:44px}
-@media(max-width:420px){.jcm-home-link{width:34px;height:34px}header .head:has(.jcm-home-link) #date{margin-right:39px}}
+header .head:has(.jcm-home-link) :is(#date,#jcm-watch-date){margin-right:44px}
+@media(max-width:420px){.jcm-home-link{width:34px;height:34px}header .head:has(.jcm-home-link) :is(#date,#jcm-watch-date){margin-right:39px}}
 
 /* Keep home square exactly level with the date selector, regardless of header height. */
 header .head .jcm-home-link{top:auto;bottom:auto;right:auto;position:relative;flex:0 0 auto;width:40px;height:40px;min-width:40px;aspect-ratio:1;align-self:center;margin:0!important}
-header .head:has(.jcm-home-link) #date{margin-right:0!important}
+header .head:has(.jcm-home-link) :is(#date,#jcm-watch-date){margin-right:0!important}
 header .head{display:flex;align-items:center}
-header .head #date{margin-left:auto}
+header .head :is(#date,#jcm-watch-date){margin-left:auto}
 @media(max-width:420px){header .head .jcm-home-link{width:36px;height:36px;min-width:36px}}
 
 /* 2026-10-09: keep the entire accuracy strip below the brand/date/home row. */
@@ -167,14 +167,14 @@ header .head>.metrics>.metric strong{font-size:clamp(16px,4vw,25px);line-height:
 header .head>.metrics>.metric small{display:block;white-space:normal;overflow-wrap:break-word;word-break:normal;font-size:clamp(8px,2vw,11px);line-height:1.25;margin-top:4px}
 header .head>.jcm-home-link{position:absolute;right:12px;top:10px}
 header .head:has(.jcm-home-link) .brand{padding-right:45px}
-@media(max-width:600px){header .head>.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}header .head>.metrics>.metric{min-height:68px}header .head>.jcm-home-link{right:12px;top:10px}header .head:has(.jcm-home-link) .brand{padding-right:44px}header .head #date{margin-left:auto;flex:0 0 120px;max-width:120px}}
-@media(max-width:380px){header .head #date{flex-basis:104px;max-width:104px}.jcm-tagline{font-size:13px}}
+@media(max-width:600px){header .head>.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}header .head>.metrics>.metric{min-height:68px}header .head>.jcm-home-link{right:12px;top:10px}header .head:has(.jcm-home-link) .brand{padding-right:44px}header .head :is(#date,#jcm-watch-date){margin-left:auto;flex:0 0 120px;max-width:120px}}
+@media(max-width:380px){header .head :is(#date,#jcm-watch-date){flex-basis:104px;max-width:104px}.jcm-tagline{font-size:13px}}
 
 /* Dashboard-only mobile usability: no settlement or accuracy logic changes. */
 @media(max-width:600px){
   .jcm-modal{width:calc(100vw - 24px);max-height:calc(100dvh - 32px);padding:18px;overscroll-behavior:contain}
   .jcm-drawer{max-width:calc(100vw - 24px);overscroll-behavior:contain}
-  #date{min-height:44px;font-size:16px}
+  :is(#date,#jcm-watch-date){min-height:44px;font-size:16px}
   .jcm-row{overflow-wrap:anywhere}
   .jcm-row .jcm-status{font-weight:800}
   .watchlist,.day{overflow-wrap:anywhere}
@@ -195,16 +195,15 @@ header .head{padding-top:calc(16px + env(safe-area-inset-top,0px))}
 #jcm-hub{padding-top:calc(24px + env(safe-area-inset-top,0px))}
 header .head>.brand{display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:center;gap:8px;padding-right:0!important}
 header .head .jcm-home-link{position:relative;top:auto;right:auto;bottom:auto;align-self:center;margin:0!important}
-header .head #date{margin:0;flex:none}
-@media(max-width:600px){header .head #date{width:108px;max-width:108px;font-size:14px}.identity img{width:44px;height:44px}.jcm-tagline{font-size:14px;white-space:normal}.identity{gap:7px}}
-@media(max-width:380px){header .head #date{width:104px;max-width:104px}.jcm-tagline{font-size:13px}.identity img{width:40px;height:40px}}
+header .head :is(#date,#jcm-watch-date){margin:0;flex:none}
+@media(max-width:600px){header .head :is(#date,#jcm-watch-date){width:108px;max-width:108px;font-size:14px}.identity img{width:44px;height:44px}.jcm-tagline{font-size:14px;white-space:normal}.identity{gap:7px}}
+@media(max-width:380px){header .head :is(#date,#jcm-watch-date){width:104px;max-width:104px}.jcm-tagline{font-size:13px}.identity img{width:40px;height:40px}}
 
 
-#jcm-watch-date{display:none}
+
+#jcm-watch-date,#jcm-watch-metrics{display:none}
 body[data-racing-view="watch-list"] #jcm-watch-date{display:block}
+body[data-racing-view="watch-list"] #jcm-watch-metrics{display:grid}
 body[data-racing-view="watch-list"] #date,
-body[data-racing-view="watch-list"] .metrics,
+body[data-racing-view="watch-list"] .metrics:not(#jcm-watch-metrics),
 body[data-racing-view="watch-list"] main>*:not(#jcm-official-panel){display:none!important}
-@media(max-width:600px){
- #jcm-watch-date{width:100%;max-width:none;min-height:48px;font-size:16px;padding:12px 14px}
-}
