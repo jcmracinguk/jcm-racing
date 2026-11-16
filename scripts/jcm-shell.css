@@ -212,3 +212,5 @@ body[data-racing-view="watch-list"] main>*:not(#jcm-official-panel){display:none
 .jcm-profit-card summary.jcm-profit-total::-webkit-details-marker{display:none}
 .jcm-profit-card summary.jcm-profit-total strong::after{content:' ⌄';color:#fff;font-size:.65em}
 .jcm-profit-card details[open]>summary.jcm-profit-total strong::after{content:' ⌃'}
+
+.jcm-profit-card summary.jcm-profit-total strong{flex-shrink:0;white-space:nowrap}
