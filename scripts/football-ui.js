@@ -28,11 +28,13 @@
  function matchCard(r){const v=result(r);show('<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+esc(r.kickoff_uk)+'</span><div class="jcm-result-course"><strong>Championship</strong><small>'+labelDate(r.match_date)+' · UK time</small></div></div><div class="jcm-result-summary"><span class="jcm-result-outcome '+v.css+'">'+v.label+'</span><strong class="jcm-result-finish">FT '+v.score+'</strong></div><div class="jcm-result-body"><section class="jcm-result-tile"><h3>Selected match</h3><h2>'+esc(r.home_display)+' v '+esc(r.away_display)+'</h2><p>BTTS YES · 90 minutes plus stoppage time</p></section><section class="jcm-result-tile"><h3>Reason for selection</h3><p>'+esc(r.reason)+'</p><p><strong>Counterargument</strong><br>'+esc(r.counterargument)+'</p><small>Selection frozen '+esc(labelDate(r.selected_at.slice(0,10)))+' at 17:51 GMT.</small></section><section class="jcm-result-tile"><h3>Paper record</h3><p>BTTS YES odds: <strong>'+esc(r.odds??'Not recorded')+'</strong></p><p>Part of one £100 five-fold accumulator. No separate stake or return is assigned to this leg.</p><small>Receipt odds supplied after settlement; original unpriced selection retained.</small></section><section class="jcm-result-tile"><h3>Match result and highlights</h3><a class="jcm-race-action" href="'+esc(r.result_source_url)+'" target="_blank" rel="noopener">View match result and highlights ↗</a></section></div></article>');}
  const weekendAcca = {
   stake: 100,
+  quotedOdds: 7.22,
+  priceSource: 'Betslip supplied on 16 November 2026',
   legs: [
-   {date:'2026-11-21', kickoff:'12:30', fixture:'Southampton v Derby'},
-   {date:'2026-11-21', kickoff:'17:30', fixture:'Newcastle v Arsenal'},
-   {date:'2026-11-22', kickoff:'12:00', fixture:'Burnley v Blackburn'},
-   {date:'2026-11-22', kickoff:'16:30', fixture:'Liverpool v Man United'}
+   {date:'2026-11-21', kickoff:'12:30', fixture:'Southampton v Derby', odds:1.75},
+   {date:'2026-11-21', kickoff:'17:30', fixture:'Newcastle v Arsenal', odds:1.67},
+   {date:'2026-11-22', kickoff:'12:00', fixture:'Burnley v Blackburn', odds:1.65},
+   {date:'2026-11-22', kickoff:'16:30', fixture:'Liverpool v Man United', odds:1.50}
   ]
  };
  const upcomingFixtures = new Map([[weekendAcca.legs[0].date, weekendAcca.legs]]);
@@ -112,10 +114,10 @@ const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML=
   if (upcoming && !accaConfigs.has(d)) {
    show('<h2>Football Bet Builder</h2><p>' + labelDate(d) + ' · ' + upcoming.length +
     '-fold BTTS YES acca</p><p><strong>Paper stake ' + money(weekendAcca.stake) +
-    '</strong> · Provisional</p><table class="football-table"><thead><tr><th>Match</th><th>UK kick-off</th><th>Result</th></tr></thead><tbody>' +
+    '</strong> · Provisional</p><table class="football-table"><thead><tr><th>Match</th><th>UK kick-off</th><th>Odds</th><th>Result</th></tr></thead><tbody>' +
     upcoming.map(leg => '<tr><td>' + esc(leg.fixture) + '</td><td>' +
-     labelDate(leg.date) + ' · ' + esc(leg.kickoff) + '</td><td>Pending</td></tr>').join('') +
-    '</tbody></table><p class="football-trial-note">Odds pending. Potential return will appear once prices are recorded.</p>');
+     labelDate(leg.date) + ' · ' + esc(leg.kickoff) + '</td><td>' + leg.odds.toFixed(2) + '</td><td>Pending</td></tr>').join('') +
+    '</tbody></table><p class="football-trial-note">Quoted acca odds: ' + weekendAcca.quotedOdds.toFixed(2) + ' · Return if all win: ' + money(weekendAcca.stake * weekendAcca.quotedOdds) + ' · Potential profit: ' + money(weekendAcca.stake * (weekendAcca.quotedOdds - 1)) + '. ' + esc(weekendAcca.priceSource) + '.</p>');
    return;
   }
   const cfg=accaConfigs.get(d),b=account(d);if(!cfg||!b){show('<h2>Football Bet Builder</h2><p>'+esc(accaError||'No priced accumulator recorded for this day.')+'</p>');return;}
