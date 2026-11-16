@@ -307,7 +307,7 @@
       "off_time_uk": "13:45",
       "race_date": "2026-11-16",
       "scheduled_off_dt": "2026-11-16T13:45:00+00:00",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "reason": "Icare Grandchamp and Reteti offer chase experience. Crest Of Stars can improve on his promising course-and-distance chase debut and 5.80 reduced the return.",
       "lay_odds": 5.8,
       "race_id": "rac_32304559053",
@@ -315,7 +315,13 @@
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-16/plumpton/racecard/948698/john-weight-gone-but-not-forgotten-handicap-chase-gbb-race",
       "price_observed_at": "2026-11-16T07:39:09.649573+00:00",
       "price_record": "Delayed Betfair Exchange morning lay quote",
-      "historical": false
+      "historical": false,
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-16/plumpton/948698/john-weight-gone-but-not-forgotten-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-16T14:02:35.209098Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Clap Of Thunder"
     },
     {
       "horse": "Grand Conqueror",
