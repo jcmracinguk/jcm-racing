@@ -1,0 +1,135 @@
+{
+  "schema_version": 2,
+  "fictional_only": true,
+  "date": "2026-11-16",
+  "introduced_at": "2026-11-16T08:04:55Z",
+  "opening_balance_gbp": 0,
+  "commission_rate": 0.05,
+  "rows": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Moderate candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Moderate racing evidence",
+      "selection_timestamp_precision": "minute",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Golly Gosh",
+      "course": "Plumpton",
+      "off_time_uk": "14:45",
+      "race_id": "rac_32304562927",
+      "horse_id": "hrs_51988888",
+      "race_date": "2026-11-16",
+      "scheduled_off_dt": "2026-11-16T14:45:00+00:00",
+      "lay_odds": 3.05,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-16/plumpton/racecard/948700/more-radio-novices-limited-handicap-hurdle",
+      "interest_rank": 1,
+      "selected_at": "2026-11-16T07:41:00Z",
+      "added_at": "2026-11-16T08:04:55Z",
+      "user_approved_at": "2026-11-16T08:04:55Z",
+      "user_approval_time_note": "Approval recorded in publication turn. Exact message arrival time unavailable.",
+      "identified_challengers": [
+        "Anothermanicmonday",
+        "Alan Bresil",
+        "Ephyra"
+      ],
+      "field_size": 8,
+      "going": "Good, good to soft in places",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "More Radio Novices' Limited Handicap Hurdle",
+      "selection_reason": {
+        "summary": "Both recent chase wins came around 2½m. This handicap hurdle is around 3m1f. Anothermanicmonday finished second on the track before being awarded a 2¾m Fontwell handicap hurdle and receives 8 lb. Alan Bresil had two staying placings before unseating and gives 2 lb after his 10 lb claim. Ephyra was second over hurdles here and receives 5 lb.",
+        "counterargument": "Golly Gosh is race-fit, has won here and carries no penalty for his latest chase win. He has a strong winning case if he stays.",
+        "why_still_oppose": "The combined rise in trip and switch back to hurdles leave his two recent chase wins less directly comparable than the staying hurdle form of the opposition.",
+        "rival_limitations": "Anothermanicmonday was awarded the Fontwell race and is up 3 lb. Alan Bresil unseated last time. Ephyra still has to prove this hurdle trip.",
+        "challengers": [
+          "Anothermanicmonday",
+          "Alan Bresil",
+          "Ephyra"
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-16/plumpton/racecard/948700/more-radio-novices-limited-handicap-hurdle"
+        ],
+        "checked_at": "2026-11-16T07:41:00Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Moderate evidence. Value and full-stake matching unverified."
+      },
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "c64969fbad45ea4dd047efe565808e101a0203a3",
+        "snapshot_blob_sha": "73f4566a47b5e5cb0d35887c48231da89eeed118",
+        "started_at_utc": "2026-11-16T07:39:09.229061+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-16T07:39:09.896927+00:00",
+        "retrieved_at_utc": "2026-11-16T07:39:09.649573+00:00",
+        "retrieved_at": "2026-11-16T07:39:09.649573+00:00",
+        "market_id": "1.265536735",
+        "selection_id": 58591,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 12.74,
+        "displayed_liquidity_gbp": 12.74,
+        "liquidity_gbp": 12.74,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "MORNING"
+      },
+      "source": "Betfair Exchange delayed morning lay snapshot",
+      "available_stake_gbp": 12.74,
+      "market_position_note": "Shortest available lay in the Monday morning capture. All eight runners active at capture.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 243.90243902439028,
+        "potential_net_profit_gbp": 231.70731707317074,
+        "failure_gbp": -500,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      }
+    }
+  ],
+  "bank_trial": {
+    "start_date": "2026-10-23",
+    "accounting_model": "ZERO_START_UNLIMITED_SIMULATED_OVERDRAFT",
+    "initial_balance_gbp": 0,
+    "percentage_benchmark_gbp": 10000,
+    "automatic_deposits": false,
+    "deposits": [],
+    "withdrawals": [],
+    "results_publish_when": "ALL_DAILY_RACES_FINISHED_AND_RESULTS_VERIFIED",
+    "performance_formula": "cumulative net profit or loss / 10000 * 100",
+    "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
+  },
+  "preserve_device_choices": true,
+  "simulation_note": "Approved morning snapshot paper lays. £500 liability and 5% commission per race.",
+  "published_simulations": {
+    "recorded_at": "2026-11-16T08:04:55Z",
+    "authorization": "User approved Golly Gosh at 3.05.",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32304562927",
+          "horse_id": "hrs_51988888",
+          "odds": 3.05,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  }
+}
