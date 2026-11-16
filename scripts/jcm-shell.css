@@ -200,10 +200,11 @@ header .head #date{margin:0;flex:none}
 @media(max-width:380px){header .head #date{width:104px;max-width:104px}.jcm-tagline{font-size:13px}.identity img{width:40px;height:40px}}
 
 
-.jcm-watch-dialog{width:min(660px,calc(100% - 24px));max-height:86dvh;overflow:auto;padding:18px;border:1px solid #455572;border-radius:18px;background:#192738;color:#fff}
-.jcm-watch-dialog::backdrop{background:#070b15bb}
-.jcm-watch-dialog form{float:right;margin-left:12px}
-.jcm-watch-dialog form button{font:inherit;color:#fff;background:#253149;border:1px solid #516077;border-radius:9px;padding:8px 12px;cursor:pointer}
-.jcm-watch-dialog h2{color:#ffd400;margin:0}
-.jcm-watch-dialog summary{cursor:pointer}
-.jcm-watch-dialog .watch-source+.watch-source{margin-left:14px}
+#jcm-watch-date{display:none}
+body[data-racing-view="watch-list"] #jcm-watch-date{display:block}
+body[data-racing-view="watch-list"] #date,
+body[data-racing-view="watch-list"] .metrics,
+body[data-racing-view="watch-list"] main>*:not(#jcm-official-panel){display:none!important}
+@media(max-width:600px){
+ #jcm-watch-date{width:100%;max-width:none;min-height:48px;font-size:16px;padding:12px 14px}
+}

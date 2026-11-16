@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><title>JCM | Favourite Vulnerability</title><meta name="jcm-app-version" content="2026-11-16-watch-list"><meta name="description" content="JCM Favourite Vulnerability — UK & Ireland racing research dashboard"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#121626"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261109"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261109-switch-fix">
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"><title>JCM | Favourite Vulnerability</title><meta name="jcm-app-version" content="2026-11-16-shared-race-cards"><meta name="description" content="JCM Favourite Vulnerability — UK & Ireland racing research dashboard"><link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><meta name="theme-color" content="#121626"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261116-shared"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261109-switch-fix">
 <style>#jcm-official-panel .jcm-research-row.jcm-competition-watchlist{border-color:#edbd57}.jcm-competition-watchlist .jcm-confidence.low{background:#70521b;border-color:#edbd57}</style>
 <style>
 #jcm-field-test{max-width:900px;margin:18px auto;padding:0 16px}#jcm-field-test[hidden]{display:none!important}.jcm-ft-wrap{border:1px solid #77623a;background:#202b3e;border-radius:14px;padding:16px}.jcm-ft-wrap h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-ft-note{font-size:12px;line-height:1.6;color:#d4dce9}.jcm-ft-card{background:#182336;border:1px solid #42516b;border-radius:10px;margin:9px 0;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.jcm-ft-name{font-weight:800}.jcm-ft-where{color:#d0d9e6;font-size:12px;margin-top:4px}.jcm-ft-rating{white-space:nowrap;color:#fff;background:#42506a;padding:7px;border-radius:7px;font-size:12px;font-weight:800}.jcm-ft-hub{border:1px solid #77623a!important}
@@ -100,23 +100,26 @@
  const home=document.createElement('button');home.type='button';home.className='jcm-home-link';home.innerHTML='<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-8h6v8"/></svg>';home.setAttribute('aria-label','Return to JCM Hub');
  if(head)head.querySelector('.brand').append(home);
  function navigate(page,writeHistory){
-  if(page==='picks'){hub.classList.remove('active');home.style.display='inline-block';document.body.style.overflow='';}
+  document.body.dataset.racingView=page;
+  if(page==='picks'||page==='watch-list'){hub.classList.remove('active');home.style.display='inline-block';document.body.style.overflow='';}
   else{hub.classList.add('active');home.style.display='none';document.body.style.overflow='hidden';}
-  if(writeHistory)history.pushState({jcmPage:page},'',page==='picks'?'#picks':'#hub');
+  if(writeHistory)history.pushState({jcmPage:page},'','#'+page);
+  window.dispatchEvent(new Event('jcm-racing-view'));
  }
  hub.addEventListener('click',e=>{
   const tile=e.target.closest('[data-page]');if(!tile)return;
   const page=tile.dataset.page;
   if(page==='picks')navigate('picks',true);
-  else if(page==='watch-list')window.jcmOpenWatchList?.();
+  else if(page==='watch-list')navigate('watch-list',true);
   else if(page==='dummy-account')window.jcmOpenDummyAccount?.();
   else if(page==='odds')alert('Live Odds Tracker is in development. Market-data access and alert criteria must be validated before launch.');
   else if(page==='performance')alert('Performance analytics is planned. Official picks and Watchlist will remain separately measured.');
   else alert('More JCM tools are planned. This section is not live yet.');
  });
  home.addEventListener('click',()=>navigate('hub',true));
- window.addEventListener('popstate',e=>navigate(e.state&&e.state.jcmPage==='picks'?'picks':'hub',false));
- navigate(location.hash==='#picks'?'picks':'hub',false);
+ const currentPage=()=>['#picks','#watch-list'].includes(location.hash)?location.hash.slice(1):'hub';
+ window.addEventListener('popstate',()=>navigate(currentPage(),false));
+ navigate(currentPage(),false);
 })();
 </script><script>
 /* Accepted display sources; provider acceptance does not confer official accuracy. */
@@ -166,10 +169,14 @@ window.jcmAcceptedResult = function(r) {
  }catch(_){window.jcmOverallRows=[];cards.forEach(c=>c.querySelector('strong').textContent='—');cards[0].querySelector('small').textContent='RESULTS UNAVAILABLE';root.dataset.overallState='error';}}
  load();
 })();
-</script><script>
+</script><script src="scripts/watch-list.js?v=20261116-shared"></script><script>
 (function(){
 const date=document.getElementById('date'),panel=document.getElementById('jcm-official-panel');
 if(!date||!panel)return;
+const watchDate=document.createElement('select');
+watchDate.id='jcm-watch-date';watchDate.setAttribute('aria-label','Watch List date');date.after(watchDate);
+const isWatch=()=>document.body.dataset.racingView==='watch-list';
+let watchTotals='';
 let day=date.value,detailRows=[],state='loading',cardDetails=[],loadVersion=0;
 const researchDays={'2026-11-16':1,'2026-11-14':1,'2026-11-13':2,'2026-11-12':2,'2026-11-11':1,'2026-11-10':2,'2026-11-09':3,'2026-11-07':1,'2026-11-06':2};
 function raceResultsLink(m,r){try{const u=new URL(m?.results_url);const course=r.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');return u.protocol==='https:'&&u.hostname==='www.sportinglife.com'&&new RegExp('^/racing/results/'+r.race_date+'/'+course+'/[0-9]+/[a-z0-9-]+/?$').test(u.pathname)&&!u.search&&!u.hash?u.href:null;}catch(_){return null;}}
@@ -184,20 +191,20 @@ function confidenceTier(r){
 }
 function confidenceBox(){return '';}
 function resultView(r){
- let url;try{url=new URL(r.result_source_url)}catch(_){return {label:'Pending',css:'pending'};}
- if(!window.jcmAcceptedResult(r))return {label:'Pending',css:'pending'};
+ if(!r.watchList&&!window.jcmAcceptedResult(r))return {label:'Pending',css:'pending'};
  const labels={WIN:['Horse lost','win'],LOSS:['Horse won','loss'],NR:['NR','nr']};
  const value=labels[r.result_status];return value?{label:value[0],css:value[1]}:{label:'Pending',css:'pending'};
 }
 function paint(){
- if(date.value!==day)return;
+ const watch=isWatch();
+ if((watch?watchDate:date).value!==day)return;
  const settled=detailRows.filter(r=>['win','loss'].includes(resultView(r).css));
  const wins=settled.filter(r=>resultView(r).css==='win').length;
- const rate=state==='ready'&&detailRows.length===0?'No picks today':state==='ready'?(settled.length?Math.round(wins/settled.length*1000)/10+'% success · '+wins+'/'+settled.length+' settled':'No settled results'):state==='error'?'Results unavailable':'Loading results…';
- const tile=document.getElementById('jcm-daily-rate');if(tile)tile.textContent=(day===new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London'}).format(new Date())?'Today':day)+' · '+rate;
- const heading='<div class="jcm-panel-heading"><h2>Daily picks</h2><span class="jcm-accuracy">'+safe(rate)+'</span></div>';
+ const rate=state==='ready'&&detailRows.length===0?(watch?'No Watch List entries':'No picks today'):state==='ready'?(settled.length?Math.round(wins/settled.length*1000)/10+'% success · '+wins+'/'+settled.length+' settled':'No settled results'):state==='error'?'Results unavailable':'Loading results…';
+ const tile=document.getElementById('jcm-daily-rate');if(tile&&!watch)tile.textContent=(day===new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London'}).format(new Date())?'Today':day)+' · '+rate;
+ const heading='<div class="jcm-panel-heading"><h2>'+ (watch?'Watch List':'Daily picks') +'</h2><span class="jcm-accuracy">'+safe(rate)+'</span></div>';
  const note='<p class="jcm-ft-note">Tap a horse for the original reasoning and race links.</p>';
- panel.innerHTML=heading+(state==='ready'&&detailRows.length===0?'':note)+(state==='loading'?'<p role="status">Loading today’s horses…</p>':state==='error'?'<p role="status">INSUFFICIENT VERIFIED DATA — today’s list could not be loaded.</p>':detailRows.length===0?'<p role="status">No picks today — Sunday 25 October 2026.</p>':detailRows.map((r,i)=>'<button type="button" class="jcm-row jcm-research-row jcm-rating-'+confidenceTier(r)+(day==='2026-10-13'&&r.tier==='watchlist'?' jcm-competition-watchlist':'')+'" data-research-index="'+i+'"><span><span class="jcm-time">'+safe(r.off_time_uk)+'</span><span class="jcm-ground">'+safe(r.course)+'</span></span><span class="jcm-horse">'+safe(r.horse)+'</span><span class="jcm-status '+resultView(r).css+'">'+safe(resultView(r).label)+'</span></button>').join(''));
+ panel.innerHTML=heading+(watch&&state==='ready'?'<p class="jcm-ft-note">'+safe(watchTotals)+'</p>':'')+(state==='ready'&&detailRows.length===0?'':note)+(state==='loading'?'<p role="status">Loading today’s horses…</p>':state==='error'?'<p role="status">INSUFFICIENT VERIFIED DATA — today’s list could not be loaded.</p>':detailRows.length===0?'<p role="status">'+(watch?'No Watch List entries for this date.':'No picks today — Sunday 25 October 2026.')+'</p>':detailRows.map((r,i)=>'<button type="button" class="jcm-row jcm-research-row jcm-rating-'+confidenceTier(r)+(day==='2026-10-13'&&r.tier==='watchlist'?' jcm-competition-watchlist':'')+'" data-research-index="'+i+'"><span><span class="jcm-time">'+safe(r.off_time_uk)+'</span><span class="jcm-ground">'+safe(r.course)+'</span></span><span class="jcm-horse">'+safe(r.horse)+'</span><span class="jcm-status '+resultView(r).css+'">'+safe(resultView(r).label)+'</span></button>').join(''));
 }
 window.jcmResearchResultView=resultView;
 window.jcmShowResearchCard=(r,m=null)=>{
@@ -205,19 +212,19 @@ window.jcmShowResearchCard=(r,m=null)=>{
  if(!r||!overlay)return;
  const day=r.race_date;
  const reason=r.selection_reason,hasReason=reason&&typeof reason.summary==='string'&&reason.summary.trim()&&['RECOVERED_PRIOR_ANALYSIS_NOT_REVERIFIED','ORIGINAL_SCREENSHOT_ANALYSIS','RACING_API_AND_USER_ASSESSMENT','RACING_API_PRO_AND_SPORTING_LIFE'].includes(reason.evidence_status);
- const roundup=hasReason?reason.summary:r.identified_challengers.length?'Chosen for review because '+r.identified_challengers.join(', ')+' were identified as competing threats.':'Selection reason not supplied.';
+ const roundup=r.watchList?r.reason:hasReason?reason.summary:r.identified_challengers.length?'Chosen for review because '+r.identified_challengers.join(', ')+' were identified as competing threats.':'Selection reason not supplied.';
  const reasonContent='<p>'+safe(roundup)+'</p>'+(hasReason?'<p><strong>Counterargument</strong><br>'+safe(reason.counterargument||'Not supplied.')+'</p>'+(Array.isArray(reason.challengers)&&reason.challengers.length?'<p><strong>Main challengers</strong><br>'+safe(reason.challengers.join(', '))+'</p>':'')+'<small>'+safe(reason.evidence_status==='RACING_API_PRO_AND_SPORTING_LIFE'?'The Racing API Pro + Sporting Life pre-race assessment':reason.evidence_status==='RACING_API_AND_USER_ASSESSMENT'?'User-confirmed pre-race assessment':reason.evidence_status==='ORIGINAL_SCREENSHOT_ANALYSIS'?'Original pre-race assessment':'Recovered morning research · underlying source data not reverified.')+'</small>':'');
  const view=resultView(r),accepted=view.css!=='pending'&&m&&m.race_id===r.result_race_id&&m.horse_id===r.result_horse_id&&m.position===r.position&&((r.result_status==='LOSS'&&m.position==='1')||(r.result_status==='WIN'&&(Number(m.position)>1||(m.position==='PU'&&r.result_stage==='WEIGHEDIN'))))&&(!r.placing||r.placing===ordinal(m.position));
  const card=racecardLink(m,r),results=raceResultsLink(m,r);
  const finish=view.css==='pending'?'Pending':accepted?(m.position==='PU'?'Pulled up':'Finished '+ordinal(m.position)+(m.dead_heat_place?' (joint)':'')+' of '+m.field_size):String(r.placing??r.position??'Not supplied');
  const stat=(label,value)=>'<div class="jcm-result-stat"><small>'+safe(label)+'</small><strong>'+safe(value)+'</strong></div>';
  const tile=(title,content)=>'<section class="jcm-result-tile"><h3>'+safe(title)+'</h3>'+content+'</section>';
- const winner=stat('Winner',accepted?m.winner:'Not yet available')+stat('Winning margin',accepted?margin(m.winning_margin_lengths):'Not yet available')+(view.css==='loss'?'':stat('Selected horse beaten by',accepted?(m.position==='PU'?'Not applicable — pulled up':margin(m.selected_beaten_lengths)):'Not yet available'));
- const priceTile=Number.isFinite(r.lay_odds)&&r.lay_odds>1?tile('Recorded lay price',stat(r.lay_price_provenance?.source_type==='BETFAIR_EXCHANGE_API_DELAYED'?'Delayed API lay odds':'Screenshot lay odds',r.lay_odds)+stat('Liability for £10 lay stake','£'+(10*(r.lay_odds-1)).toFixed(2))+'<small>Source: '+safe(r.source||'Not supplied')+(r.lay_price_provenance?.source_type==='BETFAIR_EXCHANGE_API_DELAYED'?' · Delayed indicative price; exact quote time/delay unavailable. £500 paper trial assumes full stake; displayed liquidity insufficient, matching unverified and value unproven.':' · Screenshot price, not live odds')+'</small>'):'';
+ const winner=stat('Winner',accepted||r.watchList&&m?.winner?m.winner:'Not yet available')+stat('Winning margin',accepted?margin(m.winning_margin_lengths):'Not yet available')+(view.css==='loss'?'':stat('Selected horse beaten by',accepted?(m.position==='PU'?'Not applicable — pulled up':margin(m.selected_beaten_lengths)):'Not yet available'));
+ const priceTile=r.watchList?tile('Paper lay',stat('Lay odds',r.lay_odds?.toFixed(2)||'Unpriced')+stat('Liability','£500.00')+stat('Paper P/L',r.paperNet)+ '<small>'+safe([r.price_record,r.historical?'Historical entry':''].filter(Boolean).join(' · '))+'</small>'):Number.isFinite(r.lay_odds)&&r.lay_odds>1?tile('Recorded lay price',stat(r.lay_price_provenance?.source_type==='BETFAIR_EXCHANGE_API_DELAYED'?'Delayed API lay odds':'Screenshot lay odds',r.lay_odds)+stat('Liability for £10 lay stake','£'+(10*(r.lay_odds-1)).toFixed(2))+'<small>Source: '+safe(r.source||'Not supplied')+(r.lay_price_provenance?.source_type==='BETFAIR_EXCHANGE_API_DELAYED'?' · Delayed indicative price; exact quote time/delay unavailable. £500 paper trial assumes full stake; displayed liquidity insufficient, matching unverified and value unproven.':' · Screenshot price, not live odds')+'</small>'):'';
  const cardTile=tile('Racecard',card?'<a class="jcm-race-action" href="'+safe(card)+'" target="_blank" rel="noopener">View this racecard ↗</a>':'<p class="jcm-link-unavailable">Exact racecard link not verified.</p><a class="jcm-race-action" href="https://www.sportinglife.com/racing/racecards/'+safe(day)+'" target="_blank" rel="noopener">Browse racecards for this day ↗</a>');
  const resultsTile=tile('Race results',results?'<a class="jcm-race-action" href="'+safe(results)+'" target="_blank" rel="noopener">View this race result ↗</a>':'<p class="jcm-link-unavailable">Exact race result link not yet verified.</p><a class="jcm-race-action" href="https://www.sportinglife.com/racing/results/'+safe(day)+'" target="_blank" rel="noopener">Browse results for this day ↗</a>');
  const videoTile=tile('Race video','<a class="jcm-race-action" href="https://www.sportinglife.com/racing/results" target="_blank" rel="noopener">View race videos here</a><small>Sporting Life login may be required.</small>');
- overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong>'+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile('Reason for selection',reasonContent)+priceTile+cardTile+resultsTile+videoTile+'</div></article>';
+ overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong>'+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile(r.watchList?'Reason for watching':'Reason for selection',reasonContent)+priceTile+cardTile+resultsTile+videoTile+'</div></article>';
  overlay.classList.add('open');overlay.querySelector('.jcm-close').focus();
 };
 panel.addEventListener('click',e=>{
@@ -225,7 +232,26 @@ panel.addEventListener('click',e=>{
  const r=detailRows[Number(button.dataset.researchIndex)];if(r)window.jcmShowResearchCard(r,detailFor(r));
 });
 async function loadDay(){
- const selected=date.value,version=++loadVersion;
+ const version=++loadVersion;
+ if(isWatch()){
+  day=watchDate.value;detailRows=[];cardDetails=[];state='loading';paint();
+  try{
+   const ledger=await window.jcmWatchList.read();
+   if(version!==loadVersion||!isWatch())return;
+   const dates=[...new Set(ledger.entries.map(row=>row.race_date))].sort().reverse();
+   const selected=watchDate.value;
+   watchDate.replaceChildren(...dates.map(value=>new Option(value,value)));
+   if(dates.includes(selected))watchDate.value=selected;
+   day=watchDate.value;
+   const rows=ledger.entries.filter(row=>row.race_date===day);
+   detailRows=rows.map(row=>({...row,watchList:true,paperNet:window.jcmWatchList.rowNet(ledger,row)}));
+   cardDetails=rows.map(row=>({...row,date:row.race_date,results_url:row.result_source_url}));
+   watchTotals=window.jcmWatchList.summary(ledger,rows);
+   state='ready';paint();
+  }catch(_){if(version===loadVersion){state='error';paint();}}
+  return;
+ }
+ const selected=date.value;
  if(!Object.prototype.hasOwnProperty.call(researchDays,selected))return;
  day=selected;detailRows=[];cardDetails=[];state='loading';paint();
  try{
@@ -238,7 +264,7 @@ async function loadDay(){
   try{const response=await fetch('data/result-card-details-'+selected+'.json',{cache:'no-store'});if(!response.ok)throw Error('Unavailable');const d=await response.json();if(version===loadVersion&&date.value===selected&&d.schema_version===1&&d.date===selected&&Array.isArray(d.details))cardDetails=d.details;}catch(_){}
  }catch(_){if(version===loadVersion&&date.value===selected){state='error';paint();}}
 }
-date.addEventListener('change',loadDay);window.addEventListener('pageshow',loadDay);document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadDay();});setInterval(()=>{if(!document.hidden)loadDay();},30000);loadDay();
+date.addEventListener('change',loadDay);watchDate.addEventListener('change',loadDay);window.addEventListener('jcm-racing-view',loadDay);window.addEventListener('pageshow',loadDay);document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadDay();});setInterval(()=>{if(!document.hidden)loadDay();},30000);loadDay();
 })();
-</script><script src="scripts/watch-list.js" defer></script><script src="scripts/fresh-tracker.js?v=20261109"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261109-fresh-run"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261109"></script></body></html>
+</script><script src="scripts/fresh-tracker.js?v=20261109"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261109-fresh-run"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261109"></script></body></html>
 
