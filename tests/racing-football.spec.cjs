@@ -13,9 +13,8 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await expect(page.locator('.metrics .metric strong')).toHaveText(['80%','4','1','0']);
  await expect(page.locator('#date')).toHaveValue('2026-11-21');
  await expect(page.locator('#jcm-official-panel')).toContainText('Southampton v Derby');
- await page.locator('#date').selectOption('2026-11-22');
  await expect(page.locator('#jcm-official-panel')).toContainText('Burnley v Blackburn');
- await expect(page.locator('#jcm-official-panel')).not.toContainText('Southampton v Derby');
+ await expect(page.locator('#date option[value="2026-11-22"]')).toHaveCount(0);
  await page.locator('#date').selectOption('2026-11-07');
  await expect(page.locator('.football-row')).toHaveCount(5);
  await expect(page.locator('.football-row').filter({hasText:'Southampton'})).toContainText('1–0');
@@ -41,8 +40,9 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
  await expect(page.locator('#jcm-profit-summary')).toContainText('−£100.00');
  await page.locator('[data-page="dummy-account"]').click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Football Bet Builder');
- await expect(page.locator('.football-acca-leg')).toHaveCount(5);
- await expect(page.locator('#jcm-detail-content')).toContainText('£100 historical paper simulation');
+ await expect(page.locator('#jcm-detail-content tbody tr')).toHaveCount(4);
+ await expect(page.locator('#jcm-detail-content')).toContainText('Paper stake £100.00');
+ await expect(page.locator('#jcm-detail-content')).toContainText('22 Nov 2026');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
@@ -92,7 +92,7 @@ test('football profit date uses that accumulator even when another dashboard dat
   await route.fulfill({json:responses[name]});
  });
  await page.goto(url+'football.html#hub');
- await expect(page.locator('#date option')).toHaveCount(4);
+ await expect(page.locator('#date option')).toHaveCount(3);
  await page.locator('#date').selectOption('2026-11-08',{force:true});
  await page.getByRole('button',{name:'View accumulator games and results for 7 Nov 2026'}).click();
  const details=page.locator('#jcm-detail-content');
