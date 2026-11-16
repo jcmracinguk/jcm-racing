@@ -11,6 +11,12 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await page.locator('header .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#picks$/);
  await expect(page.locator('.metrics .metric strong')).toHaveText(['80%','4','1','0']);
+ await expect(page.locator('#date')).toHaveValue('2026-11-21');
+ await expect(page.locator('#jcm-official-panel')).toContainText('Southampton v Derby');
+ await page.locator('#date').selectOption('2026-11-22');
+ await expect(page.locator('#jcm-official-panel')).toContainText('Burnley v Blackburn');
+ await expect(page.locator('#jcm-official-panel')).not.toContainText('Southampton v Derby');
+ await page.locator('#date').selectOption('2026-11-07');
  await expect(page.locator('.football-row')).toHaveCount(5);
  await expect(page.locator('.football-row').filter({hasText:'Southampton'})).toContainText('1–0');
  await expect(page.locator('.football-row').filter({hasText:'Southampton'})).toContainText('Failure');
@@ -86,8 +92,8 @@ test('football profit date uses that accumulator even when another dashboard dat
   await route.fulfill({json:responses[name]});
  });
  await page.goto(url+'football.html#hub');
- await expect(page.locator('#date option')).toHaveCount(2);
- await page.locator('#date').selectOption('2026-11-08');
+ await expect(page.locator('#date option')).toHaveCount(4);
+ await page.locator('#date').selectOption('2026-11-08',{force:true});
  await page.getByRole('button',{name:'View accumulator games and results for 7 Nov 2026'}).click();
  const details=page.locator('#jcm-detail-content');
  await expect(details).toContainText('7 Nov 2026 · 5-fold');
