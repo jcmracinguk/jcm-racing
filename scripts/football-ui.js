@@ -49,8 +49,63 @@ const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML=
  const money=v=>'£'+Math.abs(v).toLocaleString('en-GB',{minimumFractionDigits:2,maximumFractionDigits:2});
  const signed=v=>(v<0?'−':v>0?'+':'')+money(v);
  function account(d){const cfg=accaConfigs.get(d);if(!cfg)return null;return window.JCMFootballAcca.calculate(cfg,(files.get(d)?.selections||[]).map(r=>({...r,result_status:accepted(r)?r.result_status:'PENDING'})));}
- function renderSummary(){const c=counts(all),bets=[...accaConfigs.keys()].sort().map(d=>({date:d,...account(d)})),settled=bets.filter(b=>b.status!=='PENDING'),net=settled.reduce((s,b)=>s+b.net,0),node=document.getElementById('jcm-profit-summary');
-  node.innerHTML='<div class="jcm-profit-total"><span>Profit / Loss</span><strong class="'+(net<0?'negative':net>0?'positive':'')+'">'+(accaError?'Unavailable':signed(net))+'</strong></div><p class="jcm-profit-record">'+settled.filter(b=>b.status==='WIN').length+' accas won / '+settled.filter(b=>b.status==='LOSS').length+' lost · £100 stake per acca</p><div class="jcm-profit-daily-stats"><div class="jcm-profit-daily-stat"><span>Match results</span><strong>'+c.wins+'/'+c.total+' · '+c.rate+'</strong></div><div class="jcm-profit-daily-stat"><span>Starting tally</span><strong>£0.00</strong></div><div class="jcm-profit-daily-stat"><span>Current tally</span><strong>'+signed(net)+'</strong></div><div class="jcm-profit-daily-stat"><span>Variance vs £10k</span><strong>'+(net/10000*100).toFixed(2)+'%</strong></div></div>'+bets.map(b=>'<button type="button" class="jcm-profit-entry football-acca-entry" data-acca-date="'+esc(b.date)+'" aria-haspopup="dialog" aria-label="View accumulator games and results for '+esc(labelDate(b.date))+'"><strong>'+labelDate(b.date)+' · '+b.legs.length+'-fold acca</strong><small>Stake '+money(b.stake)+' · Returns '+money(b.returns)+' · '+b.status+'<br>View games &amp; results ↗</small><span class="'+(b.net<0?'negative':b.net>0?'positive':'')+'">'+signed(b.net)+'</span></button>').join('')+'<small>Historical paper simulation · screenshot receipt prices added 9 November 2026 · zero starting tally</small>';
+ function renderSummary(){
+  const node = document.getElementById('jcm-profit-summary');
+  const wholePounds = new Intl.NumberFormat('en-GB', {style:'currency', currency:'GBP', maximumFractionDigits:0, signDisplay:'exceptZero'});
+  const tone = amount => amount > 0 ? 'positive' : amount < 0 ? 'negative' : '';
+  const bets = [...accaConfigs].map(([date]) => ({date,...account(date)}));
+  for (const [date, legs] of upcomingFixtures) {
+   if (!accaConfigs.has(date) && !files.has(date)) bets.push({date,legs,status:'PENDING',stake:weekendAcca.stake,net:0});
+  }
+  const weeks = new Map();
+  for (const bet of bets.sort((a,b)=>b.date.localeCompare(a.date))) {
+   const monday = new Date(bet.date + 'T00:00:00Z');
+   monday.setUTCDate(monday.getUTCDate() - (monday.getUTCDay() + 6) % 7);
+   const key = monday.toISOString().slice(0,10);
+   if (!weeks.has(key)) weeks.set(key,[]);
+   weeks.get(key).push(bet);
+  }
+  const settled = bets.filter(bet=>bet.status!=='PENDING');
+  const total = settled.reduce((sum,bet)=>sum+bet.net,0);
+  function renderBet(bet){
+   const heading = '<button type="button" class="jcm-profit-entry football-acca-entry" data-acca-date="' +
+    esc(bet.date) + '" aria-haspopup="dialog" aria-label="View accumulator games and results for ' +
+    esc(labelDate(bet.date)) + '"><strong>' + labelDate(bet.date) + ' · ' + bet.legs.length +
+    '-fold acca</strong><small>Stake ' + money(bet.stake) + ' · ' +
+    (bet.status==='PENDING' ? 'Pending' : 'Returns '+money(bet.returns)+' · '+bet.status) +
+    '</small><span class="' + tone(bet.net) + '">' + (bet.status==='PENDING' ? '—' : signed(bet.net)) + '</span></button>';
+   const games = bet.legs.map(leg=>{
+    const fixture = leg.fixture || leg.home_display + ' v ' + leg.away_display;
+    const matchDate = leg.date || leg.match_date;
+    const kickoff = leg.fixture ? leg.kickoff : leg.kickoff_uk;
+    const outcome = leg.fixture ? {label:'Pending',score:'—',css:'pending'} : result(leg);
+    return '<div class="jcm-profit-entry"><strong>' + esc(fixture) + '</strong><small>' +
+     labelDate(matchDate) + ' · ' + esc(kickoff) + ' · ' + outcome.label +
+     '</small><span class="' + (outcome.css==='win'?'positive':outcome.css==='loss'?'negative':'') +
+     '">' + outcome.score + '</span></div>';
+   }).join('');
+   return heading + games;
+  }
+  const weekly = [...weeks].map(([week, entries])=>{
+   const completed = entries.filter(bet=>bet.status!=='PENDING');
+   const net = completed.reduce((sum,bet)=>sum+bet.net,0);
+   const detailId = 'football-profit-week-' + week;
+   return '<section class="jcm-profit-week"><button type="button" class="jcm-profit-week-head" ' +
+    'aria-expanded="false" aria-controls="' + detailId + '"><span>WC ' + labelDate(week) +
+    '</span><strong class="' + tone(net) + '">' + (completed.length ? signed(net) : 'Pending') +
+    '</strong><span class="jcm-week-chevron" aria-hidden="true">⌄</span></button><div id="' +
+    detailId + '" class="jcm-profit-week-detail" hidden>' + entries.map(renderBet).join('') + '</div></section>';
+  }).join('');
+  node.innerHTML = '<details><summary class="jcm-profit-total"><span>Profit / Loss</span><strong class="' +
+   tone(total) + '">' + (accaError ? 'Unavailable' : wholePounds.format(total)) +
+   '</strong></summary><p class="jcm-profit-record">' + settled.filter(bet=>bet.status==='WIN').length +
+   ' accas won / ' + settled.filter(bet=>bet.status==='LOSS').length + ' lost</p><div class="jcm-profit-weeks">' +
+   (weekly || '<p>No accumulators recorded.</p>') + '</div></details>';
+  node.querySelectorAll('.jcm-profit-week-head').forEach(button=>button.addEventListener('click',()=>{
+   const open = button.getAttribute('aria-expanded')==='true';
+   button.setAttribute('aria-expanded',String(!open));
+   document.getElementById(button.getAttribute('aria-controls')).hidden = open;
+  }));
  }
  function builder(d=date.value){
   const upcoming = upcomingFixtures.get(d);

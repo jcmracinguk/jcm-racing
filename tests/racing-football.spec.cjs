@@ -36,8 +36,8 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#hub$/);
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
- await expect(page.locator('#jcm-profit-summary')).toContainText('4/5');
- await expect(page.locator('#jcm-profit-summary')).toContainText('−£100.00');
+ await expect(page.locator('#jcm-profit-summary summary')).toContainText(/[-−]£100/);
+ await expect(page.locator('#jcm-profit-summary .jcm-profit-week-head').first()).not.toBeVisible();
  await page.locator('[data-page="dummy-account"]').click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Football Bet Builder');
  await expect(page.locator('#jcm-detail-content tbody tr')).toHaveCount(4);
@@ -52,6 +52,9 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
 test('football profit date opens all accumulator games and supports keyboard close',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(url+'football.html#hub');
+ await page.locator('#jcm-profit-summary summary').click();
+ await page.locator('[aria-controls="football-profit-week-2026-11-02"]').click();
+ await expect(page.locator('#football-profit-week-2026-11-02')).toContainText('BTTS No');
  const entry=page.getByRole('button',{name:'View accumulator games and results for 7 Nov 2026'});
  await expect(entry).toBeVisible();
  await entry.click();
@@ -94,6 +97,8 @@ test('football profit date uses that accumulator even when another dashboard dat
  await page.goto(url+'football.html#hub');
  await expect(page.locator('#date option')).toHaveCount(3);
  await page.locator('#date').selectOption('2026-11-08',{force:true});
+ await page.locator('#jcm-profit-summary summary').click();
+ await page.locator('[aria-controls="football-profit-week-2026-11-02"]').click();
  await page.getByRole('button',{name:'View accumulator games and results for 7 Nov 2026'}).click();
  const details=page.locator('#jcm-detail-content');
  await expect(details).toContainText('7 Nov 2026 · 5-fold');
