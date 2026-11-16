@@ -366,6 +366,36 @@
       "result_retrieved_at": "2026-11-16T15:30:00.083793Z",
       "result_stage": "WEIGHEDIN",
       "winner": "Daring Plan"
+    },
+    {
+      "horse": "Bossman Jack",
+      "course": "Carlisle",
+      "off_time_uk": "12:20",
+      "race_date": "2026-11-17",
+      "scheduled_off_dt": "2026-11-17T12:20:00+00:00",
+      "race_id": "rac_32304642344",
+      "horse_id": "hrs_44975007",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/carlisle/racecard/948847/vesta-wealth-galloping-gains-chasing-excellence-novices-chase-gbb-race",
+      "result_status": "PENDING",
+      "reason": "Moderate opposition on hurdle form. Tormund Giantsbane has won over course and distance over hurdles and A Pai de Nom ended last season with a win and a second. All six carry 11 st 4 lb. Bossman Jack has a Grade 1 hurdle win and a 12 lb hurdle-rating advantage over the nearest rival, so his chase debut alone is insufficient for a Pick. Going and final field need a race-day check.",
+      "lay_odds": null,
+      "price_record": "Unpriced Watch List fallback: +£150 beaten, −£500 wins, £0 pending or void. Awaiting eligible same-day Betfair lay capture.",
+      "historical": false
+    },
+    {
+      "horse": "Undercover Affair",
+      "course": "Southwell",
+      "off_time_uk": "17:00",
+      "race_date": "2026-11-17",
+      "scheduled_off_dt": "2026-11-17T17:00:00+00:00",
+      "race_id": "rac_32304655903",
+      "horse_id": "hrs_64073086",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/southwell/racecard/948854/aw-trials-day-lingfield-2nd-jan-2027-nursery",
+      "result_status": "PENDING",
+      "reason": "Moderate opposition in a five-runner nursery. Urumita won last time and receives 5 lb. Roxa Love has two sprint wins and receives 3 lb, while Dowman has a sprint win and receives 8 lb. Undercover Affair can repeat his latest course-and-distance win on Standard Tapeta and has the strongest direct course evidence.",
+      "lay_odds": null,
+      "price_record": "Unpriced Watch List fallback: +£150 beaten, −£500 wins, £0 pending or void. Awaiting eligible same-day Betfair lay capture.",
+      "historical": false
     }
   ]
 }
