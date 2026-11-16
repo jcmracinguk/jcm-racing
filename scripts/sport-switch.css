@@ -9,12 +9,12 @@
 .jcm-hub-top{flex-wrap:wrap}.jcm-hub-top>.jcm-sport-switch{margin-left:-8px}.jcm-hub-top>div{min-width:0;flex:1 1 220px}
 header .head>.brand{flex-wrap:wrap!important;padding-right:0!important;gap:9px}
 header .identity{flex:1 1 auto;gap:9px}header .identity .jcm-tagline{font-size:14px}
-header .head #date{margin-left:auto;flex:0 0 120px}
+header .head :is(#date,#jcm-watch-date){margin-left:auto;flex:0 0 120px}
 @media(max-width:600px){
  header .head>.brand{display:grid!important;grid-template-columns:minmax(0,1fr) 40px}
  header .identity{grid-column:1;min-width:0}header .identity .jcm-tagline{display:none}
  header .head .jcm-home-link{grid-row:1;grid-column:2;position:static!important}
- header .head #date{grid-column:1/-1;grid-row:2;width:100%;max-width:100%;min-width:0;min-height:44px;margin:0!important}
+ header .head :is(#date,#jcm-watch-date){grid-column:1/-1;grid-row:2;width:100%;max-width:100%;min-width:0;min-height:44px;margin:0!important}
  .jcm-hub-top>.jcm-sport-switch{margin-left:0}.jcm-hub-top>div{flex-basis:100%}
 }
 body[data-sport="football"]{--bg:#10271f;--panel:#19382c;--muted:#b1cfc0;background:#10271f}

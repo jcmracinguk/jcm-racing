@@ -4,6 +4,18 @@
   });
   const money = cents => currency.format(cents / 100);
   let request;
+  const dailyRate = document.getElementById('jcm-watch-daily-rate');
+
+  function updateDailyRate(entries) {
+    if (!dailyRate) return;
+    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London' }).format(new Date());
+    const rows = entries.filter(row => row.race_date === today);
+    const wins = rows.filter(row => row.result_status === 'WIN').length;
+    const settled = wins + rows.filter(row => row.result_status === 'LOSS').length;
+    const rate = settled ? Math.round(1000 * wins / settled) / 10 + '% success · ' + wins + '/' + settled + ' settled'
+      : rows.length ? 'No settled results' : 'No candidates today';
+    dailyRate.textContent = 'Today · ' + rate;
+  }
 
   function netCents(ledger, row) {
     if (row.result_status === 'NR') return 0;
@@ -22,6 +34,7 @@
       if (!response.ok) throw new Error('Watch List unavailable');
       const ledger = await response.json();
       if (ledger.schema_version !== 1 || !Array.isArray(ledger.entries)) throw new Error('Invalid Watch List');
+      updateDailyRate(ledger.entries);
       return ledger;
     })().finally(() => { request = null; });
     return request;
@@ -50,4 +63,8 @@
         ' · Total paper P/L ' + money(net(ledger, ledger.entries));
     }
   };
+
+  read().catch(() => {
+    if (dailyRate) dailyRate.textContent = 'Today · Results unavailable';
+  });
 })();

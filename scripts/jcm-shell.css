@@ -201,7 +201,7 @@ header .head :is(#date,#jcm-watch-date){margin:0;flex:none}
 
 
 
-#jcm-watch-date,#jcm-watch-metrics{display:none}
+body:not([data-racing-view="watch-list"]) :is(#jcm-watch-date,#jcm-watch-metrics){display:none!important}
 body[data-racing-view="watch-list"] #jcm-watch-date{display:block}
 body[data-racing-view="watch-list"] #jcm-watch-metrics{display:grid}
 body[data-racing-view="watch-list"] #date,
