@@ -26,16 +26,22 @@
  const teams=r=>'<span class="football-team">'+esc(r.home_display)+'</span><span class="football-v">v </span><span class="football-team">'+esc(r.away_display)+'</span>';
  const result=r=>accepted(r)?{label:r.result_status==='WIN'?'BTTS Yes':'BTTS No',css:r.result_status==='WIN'?'win':'loss',score:r.score.home+'–'+r.score.away}:{label:'Pending',css:'pending',score:'—'};
  function matchCard(r){const v=result(r);show('<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+esc(r.kickoff_uk)+'</span><div class="jcm-result-course"><strong>Championship</strong><small>'+labelDate(r.match_date)+' · UK time</small></div></div><div class="jcm-result-summary"><span class="jcm-result-outcome '+v.css+'">'+v.label+'</span><strong class="jcm-result-finish">FT '+v.score+'</strong></div><div class="jcm-result-body"><section class="jcm-result-tile"><h3>Selected match</h3><h2>'+esc(r.home_display)+' v '+esc(r.away_display)+'</h2><p>BTTS YES · 90 minutes plus stoppage time</p></section><section class="jcm-result-tile"><h3>Reason for selection</h3><p>'+esc(r.reason)+'</p><p><strong>Counterargument</strong><br>'+esc(r.counterargument)+'</p><small>Selection frozen '+esc(labelDate(r.selected_at.slice(0,10)))+' at 17:51 GMT.</small></section><section class="jcm-result-tile"><h3>Paper record</h3><p>BTTS YES odds: <strong>'+esc(r.odds??'Not recorded')+'</strong></p><p>Part of one £100 five-fold accumulator. No separate stake or return is assigned to this leg.</p><small>Receipt odds supplied after settlement; original unpriced selection retained.</small></section><section class="jcm-result-tile"><h3>Match result and highlights</h3><a class="jcm-race-action" href="'+esc(r.result_source_url)+'" target="_blank" rel="noopener">View match result and highlights ↗</a></section></div></article>');}
- const upcomingFixtures = new Map([
-  ['2026-11-21', [['12:30', 'Southampton v Derby'], ['17:30', 'Newcastle v Arsenal']]],
-  ['2026-11-22', [['12:00', 'Burnley v Blackburn'], ['16:30', 'Liverpool v Man United']]]
- ]);
+ const weekendAcca = {
+  stake: 100,
+  legs: [
+   {date:'2026-11-21', kickoff:'12:30', fixture:'Southampton v Derby'},
+   {date:'2026-11-21', kickoff:'17:30', fixture:'Newcastle v Arsenal'},
+   {date:'2026-11-22', kickoff:'12:00', fixture:'Burnley v Blackburn'},
+   {date:'2026-11-22', kickoff:'16:30', fixture:'Liverpool v Man United'}
+  ]
+ };
+ const upcomingFixtures = new Map([[weekendAcca.legs[0].date, weekendAcca.legs]]);
  function paint(){
   const upcoming = upcomingFixtures.get(date.value);
   if (upcoming && !files.has(date.value)) {
    panel.innerHTML = '<div class="jcm-panel-heading"><h2>Upcoming fixtures</h2></div>' +
     '<p class="football-trial-note">' + labelDate(date.value) + ' · UK time · Provisional</p>' +
-    upcoming.map(([kickoff, fixture]) => '<div class="jcm-category-row"><strong class="jcm-time">' + esc(kickoff) + '</strong><span>' + esc(fixture) + '</span></div>').join('');
+    upcoming.map(({date: matchDate, kickoff, fixture}) => '<div class="jcm-category-row"><strong class="jcm-time">' + labelDate(matchDate) + ' · ' + esc(kickoff) + '</strong><span>' + esc(fixture) + '</span></div>').join('');
    document.getElementById('jcm-daily-rate').textContent = labelDate(date.value) + ' · ' + upcoming.length + ' provisional fixtures';
    return;
   }
@@ -46,12 +52,22 @@ const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML=
  function renderSummary(){const c=counts(all),bets=[...accaConfigs.keys()].sort().map(d=>({date:d,...account(d)})),settled=bets.filter(b=>b.status!=='PENDING'),net=settled.reduce((s,b)=>s+b.net,0),node=document.getElementById('jcm-profit-summary');
   node.innerHTML='<div class="jcm-profit-total"><span>Profit / Loss</span><strong class="'+(net<0?'negative':net>0?'positive':'')+'">'+(accaError?'Unavailable':signed(net))+'</strong></div><p class="jcm-profit-record">'+settled.filter(b=>b.status==='WIN').length+' accas won / '+settled.filter(b=>b.status==='LOSS').length+' lost · £100 stake per acca</p><div class="jcm-profit-daily-stats"><div class="jcm-profit-daily-stat"><span>Match results</span><strong>'+c.wins+'/'+c.total+' · '+c.rate+'</strong></div><div class="jcm-profit-daily-stat"><span>Starting tally</span><strong>£0.00</strong></div><div class="jcm-profit-daily-stat"><span>Current tally</span><strong>'+signed(net)+'</strong></div><div class="jcm-profit-daily-stat"><span>Variance vs £10k</span><strong>'+(net/10000*100).toFixed(2)+'%</strong></div></div>'+bets.map(b=>'<button type="button" class="jcm-profit-entry football-acca-entry" data-acca-date="'+esc(b.date)+'" aria-haspopup="dialog" aria-label="View accumulator games and results for '+esc(labelDate(b.date))+'"><strong>'+labelDate(b.date)+' · '+b.legs.length+'-fold acca</strong><small>Stake '+money(b.stake)+' · Returns '+money(b.returns)+' · '+b.status+'<br>View games &amp; results ↗</small><span class="'+(b.net<0?'negative':b.net>0?'positive':'')+'">'+signed(b.net)+'</span></button>').join('')+'<small>Historical paper simulation · screenshot receipt prices added 9 November 2026 · zero starting tally</small>';
  }
- function footballBuilderDate(){return upcomingFixtures.has(date.value)&&!files.has(date.value)?[...accaConfigs.keys()].sort().at(-1)||date.value:date.value;}
- function builder(d=date.value){const cfg=accaConfigs.get(d),b=account(d);if(!cfg||!b){show('<h2>Football Bet Builder</h2><p>'+esc(accaError||'No priced accumulator recorded for this day.')+'</p>');return;}
+ function builder(d=date.value){
+  const upcoming = upcomingFixtures.get(d);
+  if (upcoming && !accaConfigs.has(d)) {
+   show('<h2>Football Bet Builder</h2><p>' + labelDate(d) + ' · ' + upcoming.length +
+    '-fold BTTS YES acca</p><p><strong>Paper stake ' + money(weekendAcca.stake) +
+    '</strong> · Provisional</p><table class="football-table"><thead><tr><th>Match</th><th>UK kick-off</th><th>Result</th></tr></thead><tbody>' +
+    upcoming.map(leg => '<tr><td>' + esc(leg.fixture) + '</td><td>' +
+     labelDate(leg.date) + ' · ' + esc(leg.kickoff) + '</td><td>Pending</td></tr>').join('') +
+    '</tbody></table><p class="football-trial-note">Odds pending. Potential return will appear once prices are recorded.</p>');
+   return;
+  }
+  const cfg=accaConfigs.get(d),b=account(d);if(!cfg||!b){show('<h2>Football Bet Builder</h2><p>'+esc(accaError||'No priced accumulator recorded for this day.')+'</p>');return;}
   const previous=[...accaConfigs.keys()].filter(day=>day<d).reduce((sum,day)=>sum+account(day).net,0),balance=previous+b.net;
   show('<h2>Football Bet Builder</h2><p>'+labelDate(d)+' · '+b.legs.length+'-fold BTTS YES acca</p><div class="jcm-result-summary"><span class="jcm-result-outcome '+(b.status==='LOSS'?'loss':b.status==='WIN'?'win':'pending')+'">'+(b.status==='LOSS'?'Acca lost':b.status==='WIN'?'Acca won':'Pending')+'</span><strong class="jcm-result-finish">@ '+cfg.combined_odds.toFixed(2)+'</strong></div><div class="jcm-profit-daily-stats"><div class="jcm-profit-daily-stat"><span>Stake</span><strong>'+money(b.stake)+'</strong></div><div class="jcm-profit-daily-stat"><span>Returns</span><strong>'+money(b.returns)+'</strong></div><div class="jcm-profit-daily-stat"><span>Net profit / loss</span><strong>'+signed(b.net)+'</strong></div><div class="jcm-profit-daily-stat"><span>Return if all win</span><strong>'+money(b.potentialReturn)+'</strong></div></div><table class="football-table"><thead><tr><th>Selection</th><th>Odds</th><th>Result</th></tr></thead><tbody>'+b.legs.map(r=>'<tr><td><label class="football-acca-leg"><input type="checkbox" checked disabled aria-label="Included '+esc(r.home_display)+' v '+esc(r.away_display)+'"><span>'+esc(r.home_display)+' v '+esc(r.away_display)+'<small>BTTS YES</small></span></label></td><td>'+r.odds.toFixed(2)+'</td><td class="'+(r.result_status==='WIN'?'football-positive':'football-negative')+'">'+result(r).score+'<br>'+(r.result_status==='WIN'?'Won':'Lost')+'</td></tr>').join('')+'</tbody></table><section class="jcm-result-tile"><h3>Results</h3><table class="football-table"><thead><tr><th>Starting tally</th><th>Current tally</th><th>Variance vs £10k</th></tr></thead><tbody><tr><td>£0.00</td><td>'+signed(balance)+'</td><td>'+(balance/10000*100).toFixed(2)+'%</td></tr></tbody></table></section><p class="football-trial-note">'+(b.status==='PENDING'?'All included selections must win.':'Settled selections are locked.')+' One failed leg loses the whole acca.</p><p class="football-trial-note">£100 historical paper simulation. The supplied receipt shows a £10 stake; that original stake is kept separately. Receipt prices were added on 9 November. The receipt’s 12.05 total is used; the displayed leg odds multiply to '+b.legOddsProduct.toFixed(4)+'. No exchange commission applies to this Sportsbook simulation.</p>');
  }
- hub.addEventListener('click',e=>{const acca=e.target.closest('[data-acca-date]');if(acca){builder(acca.dataset.accaDate);return;}const b=e.target.closest('[data-page]');if(b?.dataset.page==='picks')navigate('picks');if(b?.dataset.page==='dummy-account')builder(footballBuilderDate());});
+ hub.addEventListener('click',e=>{const acca=e.target.closest('[data-acca-date]');if(acca){builder(acca.dataset.accaDate);return;}const b=e.target.closest('[data-page]');if(b?.dataset.page==='picks')navigate('picks');if(b?.dataset.page==='dummy-account')builder();});
  panel.onclick=e=>{const id=e.target.closest('[data-fixture-id]')?.dataset.fixtureId,r=all.find(r=>String(r.fixture_id)===id);if(r)matchCard(r);};date.onchange=paint;
  const metricCards=document.querySelectorAll('.metrics .metric');
  ['all','WIN','LOSS','PENDING'].forEach((status,i)=>{metricCards[i].setAttribute('role','button');metricCards[i].tabIndex=0;metricCards[i].setAttribute('aria-label','Show football '+['results','successes','failures','pending'][i]);const open=()=>{const rows=all.filter(r=>status==='all'||status==='PENDING'&&!accepted(r)||accepted(r)&&r.result_status===status);show('<h2>Football '+['results','successes','failures','pending'][i]+'</h2>'+(rows.length?rows.map(r=>'<div class="jcm-category-row"><div><div class="jcm-time">'+result(r).score+'</div><div class="jcm-ground">'+labelDate(r.match_date)+'</div></div><div class="jcm-horse">'+teams(r)+'</div></div>').join(''):'<p>No matches in this group.</p>'));};metricCards[i].onclick=open;metricCards[i].onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}};});
