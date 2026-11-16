@@ -225,6 +225,53 @@ def result(row, page, url, now):
     return update, detail
 
 
+
+def find_full_result(day, card_url, links_by_day):
+    if day not in links_by_day:
+        _, html = fetch(HOST + '/racing/results/' + day)
+        links_by_day[day] = sorted(set(re.findall(
+            r'href="(/racing/results/' + day + r'/[a-z0-9-]+/\d+/[a-z0-9-]+)"', html)))
+    card = urlsplit(card_url or '')
+    match = re.fullmatch(r'/racing/racecards/' + day + r'/([a-z0-9-]+)/racecard/(\d+)/[a-z0-9-]+', card.path)
+    if card.scheme != 'https' or card.hostname != 'www.sportinglife.com' or not match:
+        raise ValueError('Exact Sporting Life racecard not recorded')
+    candidates = [link for link in links_by_day[day] if link.split('/')[4:6] == list(match.groups())]
+    if len(candidates) != 1:
+        raise ValueError('Full result link not available or ambiguous')
+    return HOST + candidates[0]
+
+
+def settle_watch_list(now, write, links_by_day):
+    path = ROOT / 'data' / 'watch-list.json'
+    if not path.exists():
+        return 0, []
+    ledger = json.loads(path.read_text())
+    changes = 0
+    pending = []
+    for row in ledger['entries']:
+        if row['result_status'] != 'PENDING':
+            continue
+        off = datetime.fromisoformat(row['scheduled_off_dt'])
+        if now < off + timedelta(minutes=15):
+            continue
+        try:
+            url = find_full_result(row['race_date'], row.get('racecard_url'), links_by_day)
+            page, _ = fetch(url)
+            update, detail = result(row, page, url, now)
+        except (ValueError, KeyError, OSError) as error:
+            pending.append(row['race_date'] + ' ' + row['horse'] + ': ' + str(error))
+            continue
+        row.update({key: update[key] for key in (
+            'position', 'result_status', 'result_source', 'result_source_url',
+            'result_retrieved_at', 'result_stage')})
+        row['winner'] = detail['winner']
+        changes += 1
+        print(row['race_date'], row['horse'], 'Watch List', row['result_status'])
+    if write and changes:
+        path.write_text(json.dumps(ledger, indent=2, ensure_ascii=False) + '\n')
+    return changes, pending
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--write', action='store_true')
@@ -243,6 +290,7 @@ def main():
     changes = 0
     pending = []
     issues = []
+    links_by_day = {}
     for path in sorted((ROOT / 'data').glob('competition-research-*.json')):
         day = path.stem.removeprefix('competition-research-')
         earliest = '2026-10-21' if args.reconcile else str(today - timedelta(days=3))
@@ -259,7 +307,6 @@ def main():
         details = json.loads(details_path.read_text())
         builder = json.loads(builder_path.read_text())
         dirty = False
-        links = None
         for row in research['high_competition'] + research['competition_watchlist']:
             off = datetime.fromisoformat(row['scheduled_off_dt'])
             if now < off + timedelta(minutes=15):
@@ -273,17 +320,7 @@ def main():
                 booked = [x for x in builder['rows'] if all(x.get(k) == row.get(k) for k in ('horse', 'race_id', 'horse_id', 'race_date', 'course', 'off_time_uk', 'scheduled_off_dt'))]
                 if len(companions) != 1 or len(booked) != 1:
                     raise ValueError('Companion identity mismatch')
-                if links is None:
-                    _, html = fetch(HOST + '/racing/results/' + day)
-                    links = sorted(set(re.findall(r'href="(/racing/results/' + day + r'/[a-z0-9-]+/\d+/[a-z0-9-]+)"', html)))
-                card = urlsplit(companions[0].get('racecard_url') or '')
-                match = re.fullmatch(r'/racing/racecards/' + day + r'/([a-z0-9-]+)/racecard/(\d+)/[a-z0-9-]+', card.path)
-                if card.hostname != 'www.sportinglife.com' or not match:
-                    raise ValueError('Exact Sporting Life racecard not recorded')
-                candidates = [link for link in links if link.split('/')[4:6] == list(match.groups())]
-                if len(candidates) != 1:
-                    raise ValueError('Full result link not available or ambiguous')
-                url = HOST + candidates[0]
+                url = find_full_result(day, companions[0].get('racecard_url'), links_by_day)
                 page, _ = fetch(url)
                 update, detail = result(row, page, url, now)
                 preserved_margins = preserve_noncompletion_margins(row.get('finish_margins'), update['finish_margins'])
@@ -336,6 +373,9 @@ def main():
         if dirty and args.write:
             for target, data in ((path, research), (details_path, details), (builder_path, builder)):
                 target.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
+    watch_changes, watch_pending = settle_watch_list(now, args.write, links_by_day)
+    changes += watch_changes
+    pending.extend(watch_pending)
     print(f'{changes} supported changes; write={args.write}')
     for item in pending:
         print('PENDING:', item)

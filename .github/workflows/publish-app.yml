@@ -9,6 +9,8 @@ on:
       - football.webmanifest
       - manifest.webmanifest
       - scripts/jcm-shell.css
+      - scripts/watch-list.js
+      - data/watch-list.json
       - scripts/sport-switch.css
       - scripts/sport-switch.js
       - scripts/football-ui.js

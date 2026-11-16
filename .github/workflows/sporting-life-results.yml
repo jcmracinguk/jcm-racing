@@ -51,7 +51,7 @@ jobs:
             python scripts/update_sporting_life_results.py $mode
             node tests/bankroll.cjs
             if ! git diff --quiet -- data; then
-              git add data/competition-research-*.json data/result-card-details-*.json data/bet-builder-*.json
+              git add data/competition-research-*.json data/result-card-details-*.json data/bet-builder-*.json data/watch-list.json
               git commit -m 'Update verified Sporting Life race results'
               if git push origin HEAD:main; then
                 gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
