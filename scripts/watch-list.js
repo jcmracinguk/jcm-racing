@@ -19,9 +19,9 @@
 
   function netCents(ledger, row) {
     if (row.result_status === 'NR') return 0;
-    if (!Number.isFinite(row.lay_odds) || row.lay_odds <= 1) return null;
     if (row.result_status === 'LOSS') return -ledger.liability_gbp * 100;
     if (row.result_status !== 'WIN') return 0;
+    if (!Number.isFinite(row.lay_odds) || row.lay_odds <= 1) return 15000;
     return Math.round(ledger.liability_gbp * (1 - ledger.commission_rate) * 100 / (row.lay_odds - 1));
   }
 
@@ -43,6 +43,7 @@
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   window.jcmWatchList = {
     read,
+    netCents,
     dateLabel(value) {
       const [year, month, day] = value.split('-');
       const number = Number(day);
@@ -56,7 +57,7 @@
     },
     rowNet(ledger, row) {
       const cents = netCents(ledger, row);
-      return cents === null ? 'No recorded price' : money(cents);
+      return money(cents) + (!row.lay_odds && ['WIN','LOSS'].includes(row.result_status) ? ' (simulated)' : '');
     },
     summary(ledger, rows) {
       return 'Day paper P/L ' + money(net(ledger, rows)) +

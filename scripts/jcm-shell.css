@@ -207,3 +207,8 @@ body[data-racing-view="watch-list"] #jcm-watch-metrics{display:grid}
 body[data-racing-view="watch-list"] #date,
 body[data-racing-view="watch-list"] .metrics:not(#jcm-watch-metrics),
 body[data-racing-view="watch-list"] main>*:not(#jcm-official-panel){display:none!important}
+
+.jcm-profit-card summary.jcm-profit-total{cursor:pointer;list-style:none}
+.jcm-profit-card summary.jcm-profit-total::-webkit-details-marker{display:none}
+.jcm-profit-card summary.jcm-profit-total strong::after{content:' ⌄';color:#fff;font-size:.65em}
+.jcm-profit-card details[open]>summary.jcm-profit-total strong::after{content:' ⌃'}
