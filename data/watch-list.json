@@ -472,7 +472,7 @@
       "race_id": "rac_32304655903",
       "horse_id": "hrs_64073086",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/southwell/racecard/948854/aw-trials-day-lingfield-2nd-jan-2027-nursery",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "reason": "Moderate opposition in a five-runner nursery. Urumita won last time and receives 5 lb. Roxa Love has two sprint wins and receives 3 lb, while Dowman has a sprint win and receives 8 lb. Undercover Affair can repeat his latest course-and-distance win on Standard Tapeta and has the strongest direct course evidence.",
       "lay_odds": 11,
       "price_record": "Frozen Tuesday delayed Betfair Exchange morning lay quote",
@@ -495,7 +495,62 @@
         "is_market_data_delayed": true,
         "full_stake_match_verified": false,
         "capture_type": "MORNING"
-      }
+      },
+      "position": "2",
+      "placing": "2nd",
+      "winner": "Dowman",
+      "result_source": "THE_RACING_API",
+      "verification_status": "PROVIDER_ACCEPTED",
+      "official_accuracy_eligible": false,
+      "result_date": "2026-11-17",
+      "result_off_time_uk": "17:00",
+      "result_course": "Southwell",
+      "result_horse": "Undercover Affair",
+      "result_off_dt": "2026-11-17T17:00:00+00:00",
+      "result_retrieved_at": "2026-11-17T18:02:50.544Z",
+      "result_race_id": "rac_32304655903",
+      "result_horse_id": "hrs_64073086",
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32304655903",
+      "result_non_runners": [],
+      "winning_margin_lengths": "2.5",
+      "selected_beaten_lengths": "2.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Dowman",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Undercover Affair",
+          "margin_from_previous": "2.5",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "3",
+          "horse": "Urumita",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "4.5"
+        },
+        {
+          "position": "4",
+          "horse": "Roxa Love",
+          "margin_from_previous": ".5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "5",
+          "horse": "Bladey Lady",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "11"
+        }
+      ],
+      "margin_source": "THE_RACING_API",
+      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32304655903",
+      "margin_retrieved_at": "2026-11-17T18:02:50.544Z",
+      "margin_verification_status": "PROVIDER_ACCEPTED",
+      "booked_profit_gbp": 47.5
     }
   ]
 }
