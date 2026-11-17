@@ -34,9 +34,9 @@
       "field_size": 10,
       "going": "Good to soft, good in places; 08:00 inspection pending",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "PROVIDER_ACCEPTED",
+      "booked_profit_gbp": 389.34,
       "race_name": "Crown & Thistle Novices' Hurdle (GBB Race) (Div 1)",
       "selection_reason": {
         "summary": "On hurdle debut over 2m 1f 33y. Throatlash placed twice over this course and distance over hurdles and won his first three handicap chases last season. Hurlyburly was third of 11 on hurdle debut at Hexham, 5½ lengths behind the winner. Both meet Doubly Blessed at 11 st without claims or penalties. Get Out Of My Way was withdrawn, leaving ten declared runners.",
@@ -92,14 +92,98 @@
         "required_stake_gbp": 409.83606557377044,
         "potential_net_profit_gbp": 389.3442622950819,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 389.34,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "date": "2026-11-17",
       "results_url": "https://www.sportinglife.com/racing/results/2026-11-17",
-      "results_link_label": "Sporting Life date results"
+      "results_link_label": "Sporting Life date results",
+      "position": "2",
+      "placing": "2nd",
+      "winner": "Handball Maradona",
+      "result_source": "THE_RACING_API",
+      "result_date": "2026-11-17",
+      "result_off_time_uk": "12:50",
+      "result_course": "Carlisle",
+      "result_horse": "Doubly Blessed",
+      "result_off_dt": "2026-11-17T12:50:00+00:00",
+      "result_retrieved_at": "2026-11-17T13:26:07Z",
+      "result_race_id": "rac_32304987130",
+      "result_horse_id": "hrs_52495310",
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32304987130",
+      "result_non_runners": [
+        "Get Out Of My Way"
+      ],
+      "winning_margin_lengths": "1.5",
+      "selected_beaten_lengths": "1.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Handball Maradona",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Doubly Blessed",
+          "margin_from_previous": "1.5",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Hurlyburly",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "20.5"
+        },
+        {
+          "position": "4",
+          "horse": "Linalene",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "26.5"
+        },
+        {
+          "position": "5",
+          "horse": "Lecanvey Lady",
+          "margin_from_previous": "7.5",
+          "cumulative_beaten_lengths": "34"
+        },
+        {
+          "position": "6",
+          "horse": "Aye Over Tee",
+          "margin_from_previous": "4.75",
+          "cumulative_beaten_lengths": "38.75"
+        },
+        {
+          "position": "7",
+          "horse": "Throatlash",
+          "margin_from_previous": "2.25",
+          "cumulative_beaten_lengths": "41"
+        },
+        {
+          "position": "8",
+          "horse": "Abbey Farmer",
+          "margin_from_previous": "0.2",
+          "cumulative_beaten_lengths": "41.25"
+        },
+        {
+          "position": "9",
+          "horse": "The Foreman",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "49.25"
+        },
+        {
+          "position": "PU",
+          "horse": "Kapoutchino",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "THE_RACING_API",
+      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32304987130",
+      "margin_retrieved_at": "2026-11-17T13:26:07Z",
+      "margin_verification_status": "PROVIDER_ACCEPTED"
     }
   ]
 }

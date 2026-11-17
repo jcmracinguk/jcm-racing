@@ -376,7 +376,7 @@
       "race_id": "rac_32304642344",
       "horse_id": "hrs_44975007",
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/carlisle/racecard/948847/vesta-wealth-galloping-gains-chasing-excellence-novices-chase-gbb-race",
-      "result_status": "PENDING",
+      "result_status": "LOSS",
       "reason": "Moderate opposition on hurdle form. Tormund Giantsbane has won over course and distance over hurdles and A Pai de Nom ended last season with a win and a second. All six carry 11 st 4 lb. Bossman Jack has a Grade 1 hurdle win and a 12 lb hurdle-rating advantage over the nearest rival, so his chase debut alone is insufficient for a Pick. Going and final field need a race-day check.",
       "lay_odds": 1.62,
       "price_record": "Frozen Tuesday delayed Betfair Exchange morning lay quote",
@@ -399,7 +399,68 @@
         "is_market_data_delayed": true,
         "full_stake_match_verified": false,
         "capture_type": "MORNING"
-      }
+      },
+      "position": "1",
+      "placing": "1st",
+      "winner": "Bossman Jack",
+      "result_source": "THE_RACING_API",
+      "verification_status": "PROVIDER_ACCEPTED",
+      "official_accuracy_eligible": false,
+      "result_date": "2026-11-17",
+      "result_off_time_uk": "12:20",
+      "result_course": "Carlisle",
+      "result_horse": "Bossman Jack",
+      "result_off_dt": "2026-11-17T12:20:00+00:00",
+      "result_retrieved_at": "2026-11-17T13:26:07Z",
+      "result_race_id": "rac_32304642344",
+      "result_horse_id": "hrs_44975007",
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32304642344",
+      "result_non_runners": [],
+      "winning_margin_lengths": "4.5",
+      "selected_beaten_lengths": "0",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Bossman Jack",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Kalkbrenner",
+          "margin_from_previous": "4.5",
+          "cumulative_beaten_lengths": "4.5"
+        },
+        {
+          "position": "3",
+          "horse": "Tormund Giantsbane",
+          "margin_from_previous": "7",
+          "cumulative_beaten_lengths": "11.5"
+        },
+        {
+          "position": "4",
+          "horse": "Swindon Village",
+          "margin_from_previous": "5.5",
+          "cumulative_beaten_lengths": "17"
+        },
+        {
+          "position": "5",
+          "horse": "Kaka's Cousin",
+          "margin_from_previous": "2.75",
+          "cumulative_beaten_lengths": "19.75"
+        },
+        {
+          "position": "6",
+          "horse": "A Pai De Nom",
+          "margin_from_previous": "28",
+          "cumulative_beaten_lengths": "47.75"
+        }
+      ],
+      "margin_source": "THE_RACING_API",
+      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32304642344",
+      "margin_retrieved_at": "2026-11-17T13:26:07Z",
+      "margin_verification_status": "PROVIDER_ACCEPTED",
+      "booked_profit_gbp": -500
     },
     {
       "horse": "Undercover Affair",
