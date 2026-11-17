@@ -39,7 +39,7 @@
       "going": "Good to soft, good in places; 08:00 inspection pending",
       "surface": "Turf",
       "result_status": "WIN",
-      "verification_status": "PROVIDER_ACCEPTED",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 389.34,
       "race_name": "Crown & Thistle Novices' Hurdle (GBB Race) (Div 1)",
       "selection_reason": {
@@ -104,20 +104,20 @@
       "position": "2",
       "placing": "2nd",
       "winner": "Handball Maradona",
-      "result_source": "THE_RACING_API",
+      "result_source": "SPORTING_LIFE",
       "result_date": "2026-11-17",
       "result_off_time_uk": "12:50",
       "result_course": "Carlisle",
       "result_horse": "Doubly Blessed",
       "result_off_dt": "2026-11-17T12:50:00+00:00",
-      "result_retrieved_at": "2026-11-17T13:26:07Z",
+      "result_retrieved_at": "2026-11-17T13:25:11.895124Z",
       "result_race_id": "rac_32304987130",
       "result_horse_id": "hrs_52495310",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32304987130",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-17/carlisle/948848/crown-and-thistle-novices-hurdle-gbb-race-div-1",
       "result_non_runners": [
         "Get Out Of My Way"
       ],
-      "winning_margin_lengths": "1.5",
+      "winning_margin_lengths": "1 ½",
       "selected_beaten_lengths": "1.5",
       "finish_margins": [
         {
@@ -129,7 +129,7 @@
         {
           "position": "2",
           "horse": "Doubly Blessed",
-          "margin_from_previous": "1.5",
+          "margin_from_previous": "1 ½",
           "cumulative_beaten_lengths": "1.5"
         },
         {
@@ -147,44 +147,42 @@
         {
           "position": "5",
           "horse": "Lecanvey Lady",
-          "margin_from_previous": "7.5",
+          "margin_from_previous": "7 ½",
           "cumulative_beaten_lengths": "34"
         },
         {
           "position": "6",
           "horse": "Aye Over Tee",
-          "margin_from_previous": "4.75",
+          "margin_from_previous": "4 ¾",
           "cumulative_beaten_lengths": "38.75"
         },
         {
           "position": "7",
           "horse": "Throatlash",
-          "margin_from_previous": "2.25",
+          "margin_from_previous": "2 ¼",
           "cumulative_beaten_lengths": "41"
         },
         {
           "position": "8",
           "horse": "Abbey Farmer",
-          "margin_from_previous": "0.2",
-          "cumulative_beaten_lengths": "41.25"
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "41.2"
         },
         {
           "position": "9",
           "horse": "The Foreman",
           "margin_from_previous": "8",
-          "cumulative_beaten_lengths": "49.25"
-        },
-        {
-          "position": "PU",
-          "horse": "Kapoutchino",
-          "margin_from_previous": null,
-          "cumulative_beaten_lengths": null
+          "cumulative_beaten_lengths": "49.2"
         }
       ],
-      "margin_source": "THE_RACING_API",
-      "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32304987130",
-      "margin_retrieved_at": "2026-11-17T13:26:07Z",
-      "margin_verification_status": "PROVIDER_ACCEPTED"
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-17/carlisle/948848/crown-and-thistle-novices-hurdle-gbb-race-div-1",
+      "margin_retrieved_at": "2026-11-17T13:25:11.895124Z",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "result_website_race_id": "948848",
+      "result_website_horse_id": "1219498",
+      "result_stage": "WEIGHEDIN",
+      "margin_stage": "WEIGHEDIN"
     }
   ],
   "bank_trial": {

@@ -403,7 +403,7 @@
       "position": "1",
       "placing": "1st",
       "winner": "Bossman Jack",
-      "result_source": "THE_RACING_API",
+      "result_source": "SPORTING_LIFE",
       "verification_status": "PROVIDER_ACCEPTED",
       "official_accuracy_eligible": false,
       "result_date": "2026-11-17",
@@ -411,10 +411,10 @@
       "result_course": "Carlisle",
       "result_horse": "Bossman Jack",
       "result_off_dt": "2026-11-17T12:20:00+00:00",
-      "result_retrieved_at": "2026-11-17T13:26:07Z",
+      "result_retrieved_at": "2026-11-17T13:25:11.895124Z",
       "result_race_id": "rac_32304642344",
       "result_horse_id": "hrs_44975007",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32304642344",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-17/carlisle/948847/vesta-wealth-galloping-gains-chasing-excellence-novices-chase-gbb-race",
       "result_non_runners": [],
       "winning_margin_lengths": "4.5",
       "selected_beaten_lengths": "0",
@@ -460,7 +460,8 @@
       "margin_source_url": "https://api.theracingapi.com/v1/results/rac_32304642344",
       "margin_retrieved_at": "2026-11-17T13:26:07Z",
       "margin_verification_status": "PROVIDER_ACCEPTED",
-      "booked_profit_gbp": -500
+      "booked_profit_gbp": -500,
+      "result_stage": "WEIGHEDIN"
     },
     {
       "horse": "Undercover Affair",
