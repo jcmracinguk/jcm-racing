@@ -378,9 +378,28 @@
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/carlisle/racecard/948847/vesta-wealth-galloping-gains-chasing-excellence-novices-chase-gbb-race",
       "result_status": "PENDING",
       "reason": "Moderate opposition on hurdle form. Tormund Giantsbane has won over course and distance over hurdles and A Pai de Nom ended last season with a win and a second. All six carry 11 st 4 lb. Bossman Jack has a Grade 1 hurdle win and a 12 lb hurdle-rating advantage over the nearest rival, so his chase debut alone is insufficient for a Pick. Going and final field need a race-day check.",
-      "lay_odds": null,
-      "price_record": "Unpriced Watch List fallback: +£150 beaten, −£500 wins, £0 pending or void. Awaiting eligible same-day Betfair lay capture.",
-      "historical": false
+      "lay_odds": 1.62,
+      "price_record": "Frozen Tuesday delayed Betfair Exchange morning lay quote",
+      "historical": false,
+      "price_observed_at": "2026-11-17T06:10:43.444564+00:00",
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "2d502502221c72c04f68cd1c56d0b6d9187deabe",
+        "snapshot_blob_sha": "910a460d3c4782b97e603846661352f4f1ccda7f",
+        "started_at_utc": "2026-11-17T06:10:43.130908+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-17T06:10:43.765716+00:00",
+        "retrieved_at_utc": "2026-11-17T06:10:43.444564+00:00",
+        "market_id": "1.265597286",
+        "selection_id": 78450357,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 68.03,
+        "is_market_data_delayed": true,
+        "full_stake_match_verified": false,
+        "capture_type": "MORNING"
+      }
     },
     {
       "horse": "Undercover Affair",
@@ -393,9 +412,28 @@
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-17/southwell/racecard/948854/aw-trials-day-lingfield-2nd-jan-2027-nursery",
       "result_status": "PENDING",
       "reason": "Moderate opposition in a five-runner nursery. Urumita won last time and receives 5 lb. Roxa Love has two sprint wins and receives 3 lb, while Dowman has a sprint win and receives 8 lb. Undercover Affair can repeat his latest course-and-distance win on Standard Tapeta and has the strongest direct course evidence.",
-      "lay_odds": null,
-      "price_record": "Unpriced Watch List fallback: +£150 beaten, −£500 wins, £0 pending or void. Awaiting eligible same-day Betfair lay capture.",
-      "historical": false
+      "lay_odds": 11,
+      "price_record": "Frozen Tuesday delayed Betfair Exchange morning lay quote",
+      "historical": false,
+      "price_observed_at": "2026-11-17T06:10:43.444564+00:00",
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "2d502502221c72c04f68cd1c56d0b6d9187deabe",
+        "snapshot_blob_sha": "910a460d3c4782b97e603846661352f4f1ccda7f",
+        "started_at_utc": "2026-11-17T06:10:43.130908+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-17T06:10:43.765716+00:00",
+        "retrieved_at_utc": "2026-11-17T06:10:43.444564+00:00",
+        "market_id": "1.265597366",
+        "selection_id": 97816535,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 10.11,
+        "is_market_data_delayed": true,
+        "full_stake_match_verified": false,
+        "capture_type": "MORNING"
+      }
     }
   ]
 }
