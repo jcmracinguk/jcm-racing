@@ -908,7 +908,7 @@
       "field_size": 14,
       "going": "POLYTRACK: STANDARD TO SLOW",
       "surface": "Polytrack",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "Try Unibet's New VAR Goal Guarantee Handicap Stakes (London Mile Series Qualifier) (Rider Restricted Race)",
@@ -974,7 +974,13 @@
       "reason": "Princling receives 5 lb and was an encouraging third at Ascot after being gelded, having to wait for room. Hard Endeavor has a Kempton course-and-distance win and receives 2 lb after his 7 lb claim. Ebt's Guard brings recent placed form and carries 6 lb more than Palladas after his 5 lb claim. Watchlist retained at 3.50. Princling is a credible challenger, but Palladas's proven all-weather ability and improvement potential keep him out of Picks.",
       "price_record": "Frozen Wednesday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-18T06:15:00.737373+00:00"
+      "price_observed_at": "2026-11-18T06:15:00.737373+00:00",
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949069/try-unibets-new-var-goal-guarantee-handicap",
+      "result_retrieved_at": "2026-11-18T19:18:08.254086Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Princling"
     }
   ]
 }
