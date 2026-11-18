@@ -585,7 +585,7 @@
       "field_size": 5,
       "going": "GOOD, Good to soft in places (GoingStick: 5.8)",
       "surface": "Turf",
-      "result_status": "PENDING",
+      "result_status": "LOSS",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "Golwg Gwendraeth Beginners' Steeple Chase (GBB Race)",
@@ -650,7 +650,13 @@
       "reason": "Old Park Star beat Sober Glory in the Supreme and carries the same 11 st 4 lb. His hurdle rating is 155 against Sober Glory's 153. Baron Noir also has Grade 1 hurdle form and finished ahead of Sober Glory at Aintree. Both provide credible competition on chase debut. Watchlist retained at 2.90. The narrow hurdle-rating gap and improvement potential for both principals leave insufficient evidence for promotion.",
       "price_record": "Frozen Wednesday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-18T06:15:00.563473+00:00"
+      "price_observed_at": "2026-11-18T06:15:00.563473+00:00",
+      "position": "1",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/ffos-las/949060/golwg-gwendraeth-beginners-chase-gbb-race",
+      "result_retrieved_at": "2026-11-18T15:43:03.532698Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Sober Glory"
     },
     {
       "tier": "watchlist",
@@ -686,7 +692,7 @@
       "field_size": 11,
       "going": "GOOD, Good to soft in places (GoingStick: 5.8)",
       "surface": "Turf",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "3A's Leisure Novices' Handicap Hurdle Race",
@@ -752,7 +758,13 @@
       "reason": "No Boundaries can build on his promising return, while Yorgunnabeplucky comes off a second and receives 3 lb. For Old Times Sake is shortest in the refreshed exchange snapshot and could improve for his return. Wispit Twob's earlier form was inconsistent before her latest win. Watchlist retained at 8.00, the lowest-priority entry. The genuine morning quote replaces the provisional unpriced simulation. Opposition involves improvement and the recent win deserves proper weight.",
       "price_record": "Frozen Wednesday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-18T06:15:00.563473+00:00"
+      "price_observed_at": "2026-11-18T06:15:00.563473+00:00",
+      "position": "6",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/ffos-las/949063/3as-leisure-novices-handicap-hurdle",
+      "result_retrieved_at": "2026-11-18T15:43:03.532698Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Neeps And Tatties"
     },
     {
       "tier": "watchlist",
