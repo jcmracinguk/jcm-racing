@@ -36,9 +36,9 @@
       "field_size": 5,
       "going": "POLYTRACK: STANDARD TO SLOW",
       "surface": "Polytrack",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 226.19,
       "race_name": "Unibet 40,000+ Live Streamed Events Nursery Handicap Stakes (Rider Restricted Race)",
       "selection_reason": {
         "summary": "Nightbloom improved to win over 6f at Wolverhampton after a breathing operation, and the second and third have won since. She receives 3 lb after Toby Moore's 7 lb claim on Divine Whisper. Lady Blanche won convincingly over 6f at Bath, beating two subsequent winners, and carries 1 lb more than Divine Whisper after the claim. Conciliate has a Yarmouth handicap second and can compete if breaking cleanly after missing the start on his latest run.",
@@ -94,12 +94,69 @@
         "required_stake_gbp": 238.09523809523807,
         "potential_net_profit_gbp": 226.19047619047618,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 226.19,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
-      "date": "2026-11-18"
+      "date": "2026-11-18",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949066/unibet-40000-live-streamed-events-nursery",
+      "position": "2",
+      "placing": "2nd",
+      "winner": "Nightbloom",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-18",
+      "result_off_time_uk": "17:30",
+      "result_course": "Kempton",
+      "result_horse": "Divine Whisper",
+      "result_off_dt": "2026-11-18T17:30:00+00:00",
+      "result_retrieved_at": "2026-11-18T18:19:33.007Z",
+      "result_race_id": "rac_32304714013",
+      "result_horse_id": "hrs_64847062",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949066/unibet-40000-live-streamed-events-nursery",
+      "result_non_runners": [],
+      "winning_margin_lengths": "¾",
+      "selected_beaten_lengths": "0.75",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Nightbloom",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Divine Whisper",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "0.75"
+        },
+        {
+          "position": "3",
+          "horse": "Lady Blanche",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Conciliate",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "3.2"
+        },
+        {
+          "position": "5",
+          "horse": "Paper View",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "4.7"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949066/unibet-40000-live-streamed-events-nursery",
+      "margin_retrieved_at": "2026-11-18T18:19:33.007Z",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "result_website_race_id": "949066",
+      "result_website_horse_id": "1224759",
+      "result_stage": "WEIGHEDIN",
+      "margin_stage": "WEIGHEDIN"
     }
   ]
 }
