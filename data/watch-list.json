@@ -800,7 +800,7 @@
       "field_size": 12,
       "going": "POLYTRACK: STANDARD TO SLOW",
       "surface": "Polytrack",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "Unibet/British Stallion Studs EBF Restricted Novice Stakes (For Horses In Bands B, C And D) (Rider Restricted Race) (Div I) (GBB Race)",
@@ -866,7 +866,13 @@
       "reason": "Tredegar Square has won at Kempton over 7f and concedes only 1 lb, giving him a specific route through proven Polytrack ability. Gliding Martha showed debut promise and receives 5 lb. Livorno could improve from his debut fifth. Watchlist retained at 2.90. Tredegar Square offers proven opposition, while the other rival routes depend on improvement or recovery after a break.",
       "price_record": "Frozen Wednesday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-18T06:15:00.563473+00:00"
+      "price_observed_at": "2026-11-18T06:15:00.563473+00:00",
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949596/unibetbritish-stallion-studs-ebf-restricted-novice-stakes-gbb-race-div-1",
+      "result_retrieved_at": "2026-11-18T18:47:37.879515Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Gliding Martha"
     },
     {
       "tier": "watchlist",
