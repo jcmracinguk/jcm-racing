@@ -47,7 +47,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 371.09375000000006,
       "race_name": "Irish Stallion Farms EBF Mares Maiden Hurdle",
       "selection_reason": {
         "summary": "I Dont Really Care has established hurdle form, an official hurdle rating of 116, and receives 8 lb: 10 st 13 lb against 11 st 7 lb. Her recent Cork third came over a test Sporting Life considered inadequate; this longer trip gives a specific route to beating the favourite.",
@@ -104,7 +104,7 @@
         "required_stake_gbp": 390.62500000000006,
         "potential_net_profit_gbp": 371.09375000000006,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 371.09375000000006,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -297,9 +297,9 @@
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 20.0,
-        "displayed_liquidity_gbp": 20.0,
-        "liquidity_gbp": 20.0,
+        "displayed_amount_gbp": 20,
+        "displayed_liquidity_gbp": 20,
+        "liquidity_gbp": 20,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -310,7 +310,7 @@
         "capture_type": "MORNING"
       },
       "source": "Betfair Exchange delayed morning lay snapshot",
-      "available_stake_gbp": 20.0,
+      "available_stake_gbp": 20,
       "market_position_note": "1 by shortest available Lay in Thursday morning capture; equal quotes share rank.",
       "simulation": {
         "liability_gbp": 500,
