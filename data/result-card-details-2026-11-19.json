@@ -487,10 +487,10 @@
       "field_size": 12,
       "going": "POLYTRACK: STANDARD",
       "surface": "Polytrack",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
-      "race_name": "All-Weather Championships Season XIV Fleur De Lys Fillies' Stakes (Listed Race)",
+      "race_name": "All-Weather Championships Season XIV Fleur De Lys Fillies' Stakes (Listed)",
       "selection_reason": {
         "summary": "Sky Safari won this race last year and the Winter Derby here. At 9 st 2 lb she gives Enchanted Queen only 2 lb despite a 12 lb higher official rating. Kon Tiki is a Group 3 mile winner, unbeaten in two AW starts, and gives 7 lb for a 13 lb rating advantage.",
         "counterargument": "Enchanted Queen has won both starts for George Boughey readily on AW and improved sharply at Wolverhampton. She is lightly raced and may bridge the class gap; her 94 rating is not a ceiling.",
@@ -571,7 +571,105 @@
         "Aviatrice",
         "American Gal",
         "Song N Dance"
-      ]
+      ],
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-19",
+      "result_off_time_uk": "14:38",
+      "result_course": "Lingfield",
+      "result_horse": "Enchanted Queen",
+      "result_off_dt": "2026-11-19T14:38:00+00:00",
+      "result_retrieved_at": "2026-11-19T14:50:41.234135Z",
+      "result_race_id": "rac_32304830233",
+      "result_horse_id": "hrs_55947682",
+      "result_website_race_id": "949238",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949238/all-weather-championships-season-xiv-fleur-de-lys-fillies-stakes-listed",
+      "result_non_runners": [],
+      "result_website_horse_id": "1196293",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": "1.8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Kon Tiki",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Sky Safari",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Enchanted Queen",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.8"
+        },
+        {
+          "position": "4",
+          "horse": "American Gal",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.1"
+        },
+        {
+          "position": "5",
+          "horse": "All Moonshine",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "2.3"
+        },
+        {
+          "position": "6",
+          "horse": "Aviatrice",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.55"
+        },
+        {
+          "position": "7",
+          "horse": "Song N Dance",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "4.8"
+        },
+        {
+          "position": "8",
+          "horse": "Arisaig",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "5.1"
+        },
+        {
+          "position": "9",
+          "horse": "Domina Ignis",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "5.3"
+        },
+        {
+          "position": "10",
+          "horse": "Queen's Reign",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "7.05"
+        },
+        {
+          "position": "11",
+          "horse": "Pacific Mission",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "14.55"
+        },
+        {
+          "position": "12",
+          "horse": "Nandita",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "22.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949238/all-weather-championships-season-xiv-fleur-de-lys-fillies-stakes-listed",
+      "margin_retrieved_at": "2026-11-19T14:50:41.234135Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd",
+      "winner": "Kon Tiki"
     },
     {
       "tier": "selection",
