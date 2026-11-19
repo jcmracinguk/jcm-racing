@@ -262,7 +262,7 @@
       "surface": "Polytrack",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 186.27450980392157,
       "race_name": "All-Weather Championships Season XIV River Eden EBF Fillies' Stakes (Listed Race) (GBBPlus Race)",
       "selection_reason": {
         "summary": "Likealot's decisive York handicap win and previous Lingfield 1m4f win provide a specific alternative at the same 9 st 5 lb. Little Dorrit brings recent staying Listed/Group form, also at 9 st 5 lb. Morrophore's best course win was over 1m2f; the move to 1m5f is an unknown, not proven inability.",
@@ -320,7 +320,7 @@
         "required_stake_gbp": 196.07843137254903,
         "potential_net_profit_gbp": 186.27450980392157,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 186.27450980392157,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -487,7 +487,7 @@
       "surface": "Polytrack",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 101.06382978723404,
       "race_name": "All-Weather Championships Season XIV Fleur De Lys Fillies' Stakes (Listed Race)",
       "selection_reason": {
         "summary": "Sky Safari won this race last year and the Winter Derby here. At 9 st 2 lb she gives Enchanted Queen only 2 lb despite a 12 lb higher official rating. Kon Tiki is a Group 3 mile winner, unbeaten in two AW starts, and gives 7 lb for a 13 lb rating advantage.",
@@ -546,7 +546,7 @@
         "required_stake_gbp": 106.38297872340425,
         "potential_net_profit_gbp": 101.06382978723403,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 101.06382978723404,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -708,7 +708,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 163.79310344827587,
       "race_name": "Racing Again On The 26th November Handicap Hurdle",
       "selection_reason": {
         "summary": "Liceo finished ahead of Max Meridius over this course and distance last week and meets him on unchanged handicap terms: 12 st against 11 st 6 lb. Max travelled strongly, went on, then failed to finish the race out. Liceo's repeatable recent hurdle form is the principal opposition.",
@@ -764,7 +764,7 @@
         "required_stake_gbp": 172.41379310344828,
         "potential_net_profit_gbp": 163.79310344827587,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 163.79310344827587,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -928,7 +928,7 @@
       "surface": "Tapeta",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 276.1627906976744,
       "race_name": "Midnite It's Actually Pretty Good Handicap Stakes (GBBPlus Race)",
       "selection_reason": {
         "summary": "Stoneacre Donny has a recent second over this course and distance and receives 11 lb, matching the 11 lb official-rating gap rather than creating an automatic handicap advantage. Paddy The Squire brings stronger recent handicap evidence, including finishing ahead of Water To Wine at York, and gives 5 lb. This is established competition after two unconvincing runs from the favourite.",
@@ -985,7 +985,7 @@
         "required_stake_gbp": 290.6976744186046,
         "potential_net_profit_gbp": 276.1627906976744,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 276.1627906976744,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
