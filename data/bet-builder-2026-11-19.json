@@ -706,8 +706,8 @@
       "field_size": 17,
       "going": "GOOD, Good to yielding in places",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Racing Again On The 26th November Handicap Hurdle",
       "selection_reason": {
@@ -774,7 +774,116 @@
         "Liceo",
         "Deed Pole",
         "Phoenix Arizona"
-      ]
+      ],
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-19",
+      "result_off_time_uk": "15:00",
+      "result_course": "Thurles",
+      "result_horse": "Max Meridius",
+      "result_off_dt": "2026-11-19T15:00:00+00:00",
+      "result_retrieved_at": "2026-11-19T15:16:06.349074Z",
+      "result_race_id": "rac_32304762438",
+      "result_horse_id": "hrs_40260661",
+      "result_website_race_id": "949085",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949085/racing-again-on-the-26th-november-handicap-hurdle-0-100",
+      "result_non_runners": [],
+      "result_website_horse_id": "1144484",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nse",
+      "selected_beaten_lengths": "2.05",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Figero",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Deed Pole",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "0.05"
+        },
+        {
+          "position": "3",
+          "horse": "Max Meridius",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "2.05"
+        },
+        {
+          "position": "4",
+          "horse": "Atlantic Wonder",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.35"
+        },
+        {
+          "position": "5",
+          "horse": "Liceo",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "2.45"
+        },
+        {
+          "position": "6",
+          "horse": "Beat The Devil",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "3.2"
+        },
+        {
+          "position": "7",
+          "horse": "Phoenix Arizona",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "5.7"
+        },
+        {
+          "position": "8",
+          "horse": "Nugentstown Sue",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "13.2"
+        },
+        {
+          "position": "9",
+          "horse": "Banphrionsa Alainn",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "15.2"
+        },
+        {
+          "position": "10",
+          "horse": "Avandra",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "26.2"
+        },
+        {
+          "position": "11",
+          "horse": "Getaway Henry",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "45.2"
+        },
+        {
+          "position": "12",
+          "horse": "Amron Diamond",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "49.7"
+        },
+        {
+          "position": "13",
+          "horse": "Glengarriff",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "54.45"
+        },
+        {
+          "position": "14",
+          "horse": "Final Decision",
+          "margin_from_previous": "45",
+          "cumulative_beaten_lengths": "99.45"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949085/racing-again-on-the-26th-november-handicap-hurdle-0-100",
+      "margin_retrieved_at": "2026-11-19T15:16:06.349074Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     },
     {
       "tier": "selection",
