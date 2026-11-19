@@ -926,8 +926,8 @@
       "field_size": 8,
       "going": "TAPETA: STANDARD",
       "surface": "Tapeta",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Midnite It's Actually Pretty Good Handicap Stakes (GBBPlus Race)",
       "selection_reason": {
@@ -996,7 +996,80 @@
         "Paddy The Squire",
         "Savvy Disko",
         "Pearl Eye"
-      ]
+      ],
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-19",
+      "result_off_time_uk": "15:35",
+      "result_course": "Newcastle",
+      "result_horse": "Water To Wine",
+      "result_off_dt": "2026-11-19T15:35:00+00:00",
+      "result_retrieved_at": "2026-11-19T15:46:42.729490Z",
+      "result_race_id": "rac_32304836044",
+      "result_horse_id": "hrs_63551250",
+      "result_website_race_id": "949241",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/newcastle/949241/midnite-its-actually-pretty-good-handicap-gbbplus-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1220531",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": "1.75",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Ozat",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Savvy Disko",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Water To Wine",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "4",
+          "horse": "Paddy The Squire",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "3.25"
+        },
+        {
+          "position": "5",
+          "horse": "Deira Mile",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "7"
+        },
+        {
+          "position": "6",
+          "horse": "Eddaari",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "9"
+        },
+        {
+          "position": "7",
+          "horse": "Stoneacre Donny",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "10.25"
+        },
+        {
+          "position": "8",
+          "horse": "Pearl Eye",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "11.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/newcastle/949241/midnite-its-actually-pretty-good-handicap-gbbplus-race",
+      "margin_retrieved_at": "2026-11-19T15:46:42.729490Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     }
   ],
   "bank_trial": {
