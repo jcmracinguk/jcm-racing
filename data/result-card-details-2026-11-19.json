@@ -256,13 +256,13 @@
         ],
         "rival_limitations": "Likealot returns after 117 days and must reproduce her handicap peak at Listed level. Little Dorrit and Littlecote may prefer a stronger stamina test; Littlecote receives 5 lb but remains 8 lb lower on ratings. Pierian needs improvement; first-time headgear may help. Yamnah's maiden win leaves a substantial class gap. Proven competition from Likealot and Little Dorrit sustains the Pick despite the favourite's class and track record."
       },
-      "field_size": 13,
+      "field_size": 12,
       "going": "POLYTRACK: STANDARD",
       "surface": "Polytrack",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
-      "race_name": "All-Weather Championships Season XIV River Eden EBF Fillies' Stakes (Listed Race) (GBBPlus Race)",
+      "race_name": "All-Weather Championships Season XIV River Eden EBF Fillies' Stakes (Listed) (GBBPlus Race)",
       "selection_reason": {
         "summary": "Likealot's decisive York handicap win and previous Lingfield 1m4f win provide a specific alternative at the same 9 st 5 lb. Little Dorrit brings recent staying Listed/Group form, also at 9 st 5 lb. Morrophore's best course win was over 1m2f; the move to 1m5f is an unknown, not proven inability.",
         "counterargument": "Morrophore has the highest official rating, 104, is a smart course winner, returned to form when third in a Yarmouth Listed race, and has Ryan Moore.",
@@ -341,7 +341,108 @@
         "Littlecote",
         "Pierian",
         "Yamnah"
-      ]
+      ],
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-19",
+      "result_off_time_uk": "14:03",
+      "result_course": "Lingfield",
+      "result_horse": "Morrophore",
+      "result_off_dt": "2026-11-19T14:03:00+00:00",
+      "result_retrieved_at": "2026-11-19T14:15:09.810190Z",
+      "result_race_id": "rac_32304828296",
+      "result_horse_id": "hrs_42616385",
+      "result_website_race_id": "949237",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949237/all-weather-championships-season-xiv-river-eden-ebf-fillies-stakes-listed-gbbplus-race",
+      "result_non_runners": [
+        "Charmaine",
+        "Pinatique"
+      ],
+      "result_website_horse_id": "1149986",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "0.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Little Dorrit",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Morrophore",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Yamnah",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "4",
+          "horse": "Likealot",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.3"
+        },
+        {
+          "position": "5",
+          "horse": "Golden Muse",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "3.3"
+        },
+        {
+          "position": "6",
+          "horse": "Dojin",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "4.55"
+        },
+        {
+          "position": "7",
+          "horse": "Pierian",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "5.55"
+        },
+        {
+          "position": "8",
+          "horse": "Cabrera",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "5.85"
+        },
+        {
+          "position": "9",
+          "horse": "Light Of Paris",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "6.15"
+        },
+        {
+          "position": "9",
+          "horse": "Littlecote",
+          "margin_from_previous": "dh",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "11",
+          "horse": "Miss Wong",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "12",
+          "horse": "Gone By",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949237/all-weather-championships-season-xiv-river-eden-ebf-fillies-stakes-listed-gbbplus-race",
+      "margin_retrieved_at": "2026-11-19T14:15:09.810190Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd",
+      "winner": "Little Dorrit"
     },
     {
       "tier": "selection",
