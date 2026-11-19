@@ -1022,9 +1022,9 @@
       "field_size": 8,
       "going": "POLYTRACK: STANDARD",
       "surface": "Polytrack",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "VERIFIED",
+      "booked_profit_gbp": 172.72727272727272,
       "race_name": "AWC Finals Day At Newcastle 26th March Nursery Handicap Stakes",
       "selection_reason": {
         "summary": "Show Me Glory has a recent 7f AW win and receives 2 lb. Boy Basilica won on AW and receives 6 lb; Rosevannion has a Kempton win and gives 1 lb. Several rivals have also raced prominently, so an uncontested lead is not assured.",
@@ -1080,7 +1080,7 @@
         "required_stake_gbp": 181.8181818181818,
         "potential_net_profit_gbp": 172.72727272727272,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 172.72727272727272,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1094,7 +1094,13 @@
         "Show Me Glory",
         "Boy Basilica",
         "Rosevannion"
-      ]
+      ],
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949233/awc-finals-day-at-newcastle-26th-march-nursery",
+      "result_retrieved_at": "2026-11-19T13:33:29.377326Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Arthur Carrot"
     },
     {
       "tier": "watchlist",
@@ -1137,9 +1143,9 @@
       "field_size": 15,
       "going": "GOOD TO SOFT, Soft in places (GoingStick: 5.3)",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "VERIFIED",
+      "booked_profit_gbp": 190,
       "race_name": "Olly Murphy Proudly Sponsored By Betano 'National Hunt' Maiden Hurdle Race (Div I) (GBB Race)",
       "selection_reason": {
         "summary": "St Gabriel won a Haydock bumper; L'Unique Allen was second to an unbeaten rival at Wetherby. Power of Silence's Huntingdon fourth was compromised by interference. Prince Vinny brings actual hurdle experience. Main male rivals carry 11 st 4 lb without claims.",
@@ -1193,10 +1199,10 @@
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 200.0,
-        "potential_net_profit_gbp": 190.0,
+        "required_stake_gbp": 200,
+        "potential_net_profit_gbp": 190,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 190,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1211,7 +1217,13 @@
         "L'Unique Allen",
         "Power of Silence",
         "Prince Vinny"
-      ]
+      ],
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/warwick/949226/olly-murphy-proudly-sponsored-by-betano-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "result_retrieved_at": "2026-11-19T13:33:29.377326Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "L'unique Allen"
     },
     {
       "tier": "watchlist",
@@ -1253,9 +1265,9 @@
       "field_size": 10,
       "going": "GOOD TO SOFT, Soft in places (GoingStick: 5.3)",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "WIN",
+      "verification_status": "VERIFIED",
+      "booked_profit_gbp": 220.93023255813955,
       "race_name": "Great British Bonus Supporting Breeders' Day Mares' Novices' Hurdle Race (GBB Race)",
       "selection_reason": {
         "summary": "Largy Force won three of her last five chases and returns to hurdles without a chase-win penalty at the same 11 st as Capricciose. Vrheligonne has a recent hurdle second, clear of the remainder. Emiko has a point win and bumper second.",
@@ -1311,7 +1323,7 @@
         "required_stake_gbp": 232.55813953488374,
         "potential_net_profit_gbp": 220.93023255813955,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 220.93023255813955,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1325,7 +1337,13 @@
         "Largy Force",
         "Vrheligonne",
         "Emiko"
-      ]
+      ],
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-19/warwick/949230/great-british-bonus-supporting-breeders-day-mares-novices-hurdle-gbb-race",
+      "result_retrieved_at": "2026-11-19T13:33:29.377326Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Vrheligonne"
     },
     {
       "tier": "watchlist",
