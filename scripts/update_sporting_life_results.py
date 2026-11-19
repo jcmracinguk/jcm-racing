@@ -252,7 +252,7 @@ def settle_watch_list(now, write, links_by_day):
         if row['result_status'] != 'PENDING':
             continue
         off = datetime.fromisoformat(row['scheduled_off_dt'])
-        if now < off + timedelta(minutes=15):
+        if now < off + timedelta(minutes=10):
             continue
         try:
             url = find_full_result(row['race_date'], row.get('racecard_url'), links_by_day)
@@ -309,7 +309,7 @@ def main():
         dirty = False
         for row in research['high_competition'] + research['competition_watchlist']:
             off = datetime.fromisoformat(row['scheduled_off_dt'])
-            if now < off + timedelta(minutes=15):
+            if now < off + timedelta(minutes=10):
                 continue
             # The daily sweep may enrich a settled fallback result, but never rewrites its outcome.
             fallback_settled = row.get('result_status') in ('WIN', 'LOSS', 'NR') and row.get('result_source') != 'SPORTING_LIFE'
