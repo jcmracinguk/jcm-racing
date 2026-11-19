@@ -1533,6 +1533,1725 @@
       "placing": "4th",
       "winner": "Nogo's Dream",
       "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949240/midnite-built-different-handicap"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Moments Away",
+      "course": "Catterick",
+      "off_time_uk": "12:33",
+      "race_id": "rac_32304913524",
+      "horse_id": "hrs_53148585",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T12:33:00+00:00",
+      "lay_odds": 12.5,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/catterick/racecard/949386/jumps-look-better-on-racing-tv-novices-hurdle-gbb-race",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary.",
+        "counterargument": "His Grade 2 bumper fifth and potentially more suitable trip support improvement; the penalty borne by Nightflyer matters.",
+        "ranked_challengers": [
+          "I've Got A Friend",
+          "Nightflyer",
+          "Little John"
+        ],
+        "rival_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 9,
+      "going": "Good",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Jumps Look Better On Racing TV Novices' Hurdle (GBB Race)",
+      "selection_reason": {
+        "summary": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary.",
+        "counterargument": "His Grade 2 bumper fifth and potentially more suitable trip support improvement; the penalty borne by Nightflyer matters.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary.",
+        "challengers": [
+          "I've Got A Friend",
+          "Nightflyer",
+          "Little John"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "I've Got A Friend",
+            "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+          },
+          {
+            "rank": 2,
+            "horse": "Nightflyer",
+            "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+          },
+          {
+            "rank": 3,
+            "horse": "Little John",
+            "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/catterick/racecard/949386/jumps-look-better-on-racing-tv-novices-hurdle-gbb-race"
+        ],
+        "checked_at": "2026-11-19T17:20:35.165393+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Delayed advance Lay offer; full-stake matching unverified. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "I've Got A Friend",
+        "Nightflyer",
+        "Little John"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "I've Got A Friend",
+          "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+        },
+        {
+          "rank": 2,
+          "horse": "Nightflyer",
+          "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+        },
+        {
+          "rank": 3,
+          "horse": "Little John",
+          "evidence_and_limitations": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.215890+00:00",
+        "market_id": "1.265760204",
+        "selection_id": 84038877,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 28.51,
+        "displayed_liquidity_gbp": 28.51,
+        "liquidity_gbp": 28.51,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
+      "available_stake_gbp": 28.51,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 43.47826086956522,
+        "required_stake_decimal": "43.478260869565217391304347826086957",
+        "potential_net_profit_gbp": 41.30434782608695,
+        "potential_net_profit_decimal": "41.304347826086956521739130434782609",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.893489+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.61,
+          "market_id": "1.265760204",
+          "selection_id": 84038877,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+          "price": 12.5,
+          "displayed_amount_gbp": 28.51,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 12.5 (-987.5); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:35.165393+00:00"
+        }
+      ],
+      "reason": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Wilstar",
+      "course": "Chepstow",
+      "off_time_uk": "12:57",
+      "race_id": "rac_32304944516",
+      "horse_id": "hrs_50401764",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T12:57:00+00:00",
+      "lay_odds": 250,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter.",
+        "counterargument": "Progressive hurdle form and physical scope to improve over fences; the longer trip could suit.",
+        "ranked_challengers": [
+          "Minella Missile",
+          "Ben Solo",
+          "Largy Go"
+        ],
+        "rival_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 11,
+      "going": "Hurdle: soft; chase: good",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Treble Odds L15s At David Lucas Handicap Chase (GBB Race)",
+      "selection_reason": {
+        "summary": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter.",
+        "counterargument": "Progressive hurdle form and physical scope to improve over fences; the longer trip could suit.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter.",
+        "challengers": [
+          "Minella Missile",
+          "Ben Solo",
+          "Largy Go"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Minella Missile",
+            "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+          },
+          {
+            "rank": 2,
+            "horse": "Ben Solo",
+            "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+          },
+          {
+            "rank": 3,
+            "horse": "Largy Go",
+            "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race"
+        ],
+        "checked_at": "2026-11-19T17:20:41.253557+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Minella Missile",
+        "Ben Solo",
+        "Largy Go"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Minella Missile",
+          "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+        },
+        {
+          "rank": 2,
+          "horse": "Ben Solo",
+          "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+        },
+        {
+          "rank": 3,
+          "horse": "Largy Go",
+          "evidence_and_limitations": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.215890+00:00",
+        "market_id": "1.265761106",
+        "selection_id": 80952149,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 13.49,
+        "displayed_liquidity_gbp": 13.49,
+        "liquidity_gbp": 13.49,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "available_stake_gbp": 13.49,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 2.0080321285140563,
+        "required_stake_decimal": "2.0080321285140562248995983935742972",
+        "potential_net_profit_gbp": 1.9076305220883534,
+        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.985136+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 3.93,
+          "market_id": "1.265761106",
+          "selection_id": 80952149,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+          "price": 250,
+          "displayed_amount_gbp": 13.49,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:41.253557+00:00"
+        }
+      ],
+      "reason": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Push The Limit",
+      "course": "Ascot",
+      "off_time_uk": "13:20",
+      "race_id": "rac_32304901902",
+      "horse_id": "hrs_45982384",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T13:20:00+00:00",
+      "lay_odds": 2.58,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
+        "counterargument": "Smart Flat ability, a promising enough hurdle third and a 5 lb receipt leave substantial scope to improve.",
+        "ranked_challengers": [
+          "Spanish Stroll",
+          "Without Burlington",
+          "Premiere Ligne"
+        ],
+        "rival_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 6,
+      "going": "Good-good to firm in places",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Bet With Ascot Donation Box Winners 'Introductory' Hurdle (GBB Race)",
+      "selection_reason": {
+        "summary": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
+        "counterargument": "Smart Flat ability, a promising enough hurdle third and a 5 lb receipt leave substantial scope to improve.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
+        "challengers": [
+          "Spanish Stroll",
+          "Without Burlington",
+          "Premiere Ligne"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Spanish Stroll",
+            "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+          },
+          {
+            "rank": 2,
+            "horse": "Without Burlington",
+            "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+          },
+          {
+            "rank": 3,
+            "horse": "Premiere Ligne",
+            "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race"
+        ],
+        "checked_at": "2026-11-19T17:20:35.242997+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Delayed advance Lay offer; full-stake matching unverified. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Spanish Stroll",
+        "Without Burlington",
+        "Premiere Ligne"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Spanish Stroll",
+          "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+        },
+        {
+          "rank": 2,
+          "horse": "Without Burlington",
+          "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+        },
+        {
+          "rank": 3,
+          "horse": "Premiere Ligne",
+          "evidence_and_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.215890+00:00",
+        "market_id": "1.265760159",
+        "selection_id": 74948403,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 13.35,
+        "displayed_liquidity_gbp": 13.35,
+        "liquidity_gbp": 13.35,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
+      "available_stake_gbp": 13.35,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 316.45569620253167,
+        "required_stake_decimal": "316.45569620253164556962025316455696",
+        "potential_net_profit_gbp": 300.63291139240505,
+        "potential_net_profit_decimal": "300.63291139240506329113924050632911",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.985136+00:00",
+          "price": 3.9,
+          "displayed_amount_gbp": 33.54,
+          "market_id": "1.265760159",
+          "selection_id": 74948403,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
+          "price": 2.58,
+          "displayed_amount_gbp": 13.35,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Lay shortened from 3.9 to 2.58 (-1.32); paper successful return increases from £163.79 to £300.63. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:35.242997+00:00"
+        }
+      ],
+      "reason": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Jollie Dame",
+      "course": "Chepstow",
+      "off_time_uk": "14:42",
+      "race_id": "rac_32304950327",
+      "horse_id": "hrs_51273306",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T14:42:00+00:00",
+      "lay_odds": 4.3,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949404/david-lucas-best-prices-welsh-sport-handicap-hurdle",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status.",
+        "counterargument": "Already improved to win on handicap debut; the 5 lb rise need not stop further progress.",
+        "ranked_challengers": [
+          "Northwest Passage",
+          "Best Trump",
+          "Bouquet De Paris"
+        ],
+        "rival_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 12,
+      "going": "Hurdle: soft; chase: good",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "David Lucas Best Prices Welsh Sport Handicap Hurdle",
+      "selection_reason": {
+        "summary": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status.",
+        "counterargument": "Already improved to win on handicap debut; the 5 lb rise need not stop further progress.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status.",
+        "challengers": [
+          "Northwest Passage",
+          "Best Trump",
+          "Bouquet De Paris"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Northwest Passage",
+            "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+          },
+          {
+            "rank": 2,
+            "horse": "Best Trump",
+            "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+          },
+          {
+            "rank": 3,
+            "horse": "Bouquet De Paris",
+            "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949404/david-lucas-best-prices-welsh-sport-handicap-hurdle"
+        ],
+        "checked_at": "2026-11-19T17:20:41.237273+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Delayed advance Lay offer; full-stake matching unverified. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Northwest Passage",
+        "Best Trump",
+        "Bouquet De Paris"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Northwest Passage",
+          "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+        },
+        {
+          "rank": 2,
+          "horse": "Best Trump",
+          "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+        },
+        {
+          "rank": 3,
+          "horse": "Bouquet De Paris",
+          "evidence_and_limitations": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265761163",
+        "selection_id": 82831854,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 11,
+        "displayed_liquidity_gbp": 11,
+        "liquidity_gbp": 11,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
+      "available_stake_gbp": 11,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 151.5151515151515,
+        "required_stake_decimal": "151.51515151515151515151515151515152",
+        "potential_net_profit_gbp": 143.93939393939394,
+        "potential_net_profit_decimal": "143.93939393939393939393939393939394",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.985136+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.54,
+          "market_id": "1.265761163",
+          "selection_id": 82831854,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 4.3,
+          "displayed_amount_gbp": 11,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 4.3 (-995.7); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:41.237273+00:00"
+        }
+      ],
+      "reason": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Power Steering",
+      "course": "Ascot",
+      "off_time_uk": "15:40",
+      "race_id": "rac_32304909650",
+      "horse_id": "hrs_65069039",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T15:40:00+00:00",
+      "lay_odds": 2.5,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949398/bet-responsibly-with-ladbrokes-open-nh-flat-race-gbb-race",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win.",
+        "counterargument": "His narrow Ballinrobe bumper-debut second and pedigree support substantial improvement for new connections.",
+        "ranked_challengers": [
+          "Dennis's Honor",
+          "Persian Art",
+          "Parisian Fair"
+        ],
+        "rival_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 7,
+      "going": "Good-good to firm in places",
+      "surface": "Turf",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Bet Responsibly With Ladbrokes Open NH Flat Race (GBB Race)",
+      "selection_reason": {
+        "summary": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win.",
+        "counterargument": "His narrow Ballinrobe bumper-debut second and pedigree support substantial improvement for new connections.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win.",
+        "challengers": [
+          "Dennis's Honor",
+          "Persian Art",
+          "Parisian Fair"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Dennis's Honor",
+            "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+          },
+          {
+            "rank": 2,
+            "horse": "Persian Art",
+            "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+          },
+          {
+            "rank": 3,
+            "horse": "Parisian Fair",
+            "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949398/bet-responsibly-with-ladbrokes-open-nh-flat-race-gbb-race"
+        ],
+        "checked_at": "2026-11-19T17:20:35.276715+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Delayed advance Lay offer; full-stake matching unverified. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Dennis's Honor",
+        "Persian Art",
+        "Parisian Fair"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Dennis's Honor",
+          "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+        },
+        {
+          "rank": 2,
+          "horse": "Persian Art",
+          "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+        },
+        {
+          "rank": 3,
+          "horse": "Parisian Fair",
+          "evidence_and_limitations": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265760179",
+        "selection_id": 98858244,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 57.54,
+        "displayed_liquidity_gbp": 57.54,
+        "liquidity_gbp": 57.54,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
+      "available_stake_gbp": 57.54,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 333.3333333333333,
+        "required_stake_decimal": "333.33333333333333333333333333333333",
+        "potential_net_profit_gbp": 316.6666666666667,
+        "potential_net_profit_decimal": "316.66666666666666666666666666666666",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.985136+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.54,
+          "market_id": "1.265760179",
+          "selection_id": 98858244,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 2.5,
+          "displayed_amount_gbp": 57.54,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 2.5 (-997.5); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:35.276715+00:00"
+        }
+      ],
+      "reason": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Oliaku",
+      "course": "Wolverhampton",
+      "off_time_uk": "17:00",
+      "race_id": "rac_32304927083",
+      "horse_id": "hrs_52995215",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T17:00:00+00:00",
+      "lay_odds": 250,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949406/midnite-built-for-2026-not-2006-novice-stakes-gbb-race",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
+        "counterargument": "Recent defeat followed 17 months off on soft turf. Fitter now on AW with Loughnane is a coherent revival case.",
+        "ranked_challengers": [
+          "Butterfly Beach",
+          "Frantic",
+          "Navona Grey"
+        ],
+        "rival_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 6,
+      "going": "Standard",
+      "surface": "Tapeta",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Midnite: Built For 2026 Not 2006 Novice Stakes (GBB Race)",
+      "selection_reason": {
+        "summary": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
+        "counterargument": "Recent defeat followed 17 months off on soft turf. Fitter now on AW with Loughnane is a coherent revival case.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
+        "challengers": [
+          "Butterfly Beach",
+          "Frantic",
+          "Navona Grey"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Butterfly Beach",
+            "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+          },
+          {
+            "rank": 2,
+            "horse": "Frantic",
+            "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+          },
+          {
+            "rank": 3,
+            "horse": "Navona Grey",
+            "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949406/midnite-built-for-2026-not-2006-novice-stakes-gbb-race"
+        ],
+        "checked_at": "2026-11-19T17:20:46.459457+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Butterfly Beach",
+        "Frantic",
+        "Navona Grey"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Butterfly Beach",
+          "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+        },
+        {
+          "rank": 2,
+          "horse": "Frantic",
+          "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+        },
+        {
+          "rank": 3,
+          "horse": "Navona Grey",
+          "evidence_and_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265760955",
+        "selection_id": 83880833,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 16.57,
+        "displayed_liquidity_gbp": 16.57,
+        "liquidity_gbp": 16.57,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "available_stake_gbp": 16.57,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 2.0080321285140563,
+        "required_stake_decimal": "2.0080321285140562248995983935742972",
+        "potential_net_profit_gbp": 1.9076305220883534,
+        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:21.985136+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.59,
+          "market_id": "1.265760955",
+          "selection_id": 83880833,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 250,
+          "displayed_amount_gbp": 16.57,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:46.459457+00:00"
+        }
+      ],
+      "reason": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Gunfighter",
+      "course": "Wolverhampton",
+      "off_time_uk": "18:30",
+      "race_id": "rac_32304930957",
+      "horse_id": "hrs_36386903",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T18:30:00+00:00",
+      "lay_odds": 250,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949409/awc-season-14-selling-handicap",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary.",
+        "counterargument": "Thriving on AW and potentially still well treated on older form despite a 6 lb rise.",
+        "ranked_challengers": [
+          "Tonal",
+          "Kalamunda",
+          "Great Blasket"
+        ],
+        "rival_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 11,
+      "going": "Standard",
+      "surface": "Tapeta",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "AWC Season 14 Selling Handicap",
+      "selection_reason": {
+        "summary": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary.",
+        "counterargument": "Thriving on AW and potentially still well treated on older form despite a 6 lb rise.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary.",
+        "challengers": [
+          "Tonal",
+          "Kalamunda",
+          "Great Blasket"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Tonal",
+            "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+          },
+          {
+            "rank": 2,
+            "horse": "Kalamunda",
+            "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+          },
+          {
+            "rank": 3,
+            "horse": "Great Blasket",
+            "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949409/awc-season-14-selling-handicap"
+        ],
+        "checked_at": "2026-11-19T17:20:46.447941+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Tonal",
+        "Kalamunda",
+        "Great Blasket"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Tonal",
+          "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+        },
+        {
+          "rank": 2,
+          "horse": "Kalamunda",
+          "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+        },
+        {
+          "rank": 3,
+          "horse": "Great Blasket",
+          "evidence_and_limitations": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265760982",
+        "selection_id": 2351407,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 17.72,
+        "displayed_liquidity_gbp": 17.72,
+        "liquidity_gbp": 17.72,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "available_stake_gbp": 17.72,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 2.0080321285140563,
+        "required_stake_decimal": "2.0080321285140562248995983935742972",
+        "potential_net_profit_gbp": 1.9076305220883534,
+        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:22.086013+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.74,
+          "market_id": "1.265760982",
+          "selection_id": 2351407,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 250,
+          "displayed_amount_gbp": 17.72,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:46.447941+00:00"
+        }
+      ],
+      "reason": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Epic Arch",
+      "course": "Dundalk",
+      "off_time_uk": "18:45",
+      "race_id": "rac_32305052988",
+      "horse_id": "hrs_17390851317",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T18:45:00+00:00",
+      "lay_odds": 250,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/dundalk/racecard/949601/irish-stallion-farms-ebf-c-g-maiden",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist.",
+        "counterargument": "Steadily improving maiden with a recent second; his own further improvement remains credible.",
+        "ranked_challengers": [
+          "Golden Idol",
+          "Bridgetown Boy",
+          "Selosse"
+        ],
+        "rival_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 13,
+      "going": "Standard",
+      "surface": "Polytrack",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "Irish Stallion Farms EBF (C & G) Maiden",
+      "selection_reason": {
+        "summary": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist.",
+        "counterargument": "Steadily improving maiden with a recent second; his own further improvement remains credible.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist.",
+        "challengers": [
+          "Golden Idol",
+          "Bridgetown Boy",
+          "Selosse"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Golden Idol",
+            "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+          },
+          {
+            "rank": 2,
+            "horse": "Bridgetown Boy",
+            "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+          },
+          {
+            "rank": 3,
+            "horse": "Selosse",
+            "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/dundalk/racecard/949601/irish-stallion-farms-ebf-c-g-maiden"
+        ],
+        "checked_at": "2026-11-19T17:20:46.655294+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Golden Idol",
+        "Bridgetown Boy",
+        "Selosse"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Golden Idol",
+          "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+        },
+        {
+          "rank": 2,
+          "horse": "Bridgetown Boy",
+          "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+        },
+        {
+          "rank": 3,
+          "horse": "Selosse",
+          "evidence_and_limitations": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265760617",
+        "selection_id": 101649630,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 12.69,
+        "displayed_liquidity_gbp": 12.69,
+        "liquidity_gbp": 12.69,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "available_stake_gbp": 12.69,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 2.0080321285140563,
+        "required_stake_decimal": "2.0080321285140562248995983935742972",
+        "potential_net_profit_gbp": 1.9076305220883534,
+        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:22.086013+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.71,
+          "market_id": "1.265760617",
+          "selection_id": 101649630,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 250,
+          "displayed_amount_gbp": 12.69,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:46.655294+00:00"
+        }
+      ],
+      "reason": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "second",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Asuka",
+      "course": "Wolverhampton",
+      "off_time_uk": "19:30",
+      "race_id": "rac_32304934831",
+      "horse_id": "hrs_42912506",
+      "race_date": "2026-11-20",
+      "scheduled_off_dt": "2026-11-20T19:30:00+00:00",
+      "lay_odds": 250,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949411/all-weather-championship-handicap",
+      "interest_rank": null,
+      "selected_at": "2026-11-19T16:41:31Z",
+      "selection_time_note": "Formal advance roster timestamp from the original saved review; earlier tentative discussion is not represented as a frozen price approval.",
+      "added_at": "2026-11-19T17:23:37.245654Z",
+      "user_approved_at": "2026-11-19T17:23:37.245654Z",
+      "user_approval_time_note": "Approval recorded in this publication turn following user: Updated prices are in. Can you check those and add to the app please. Exact message arrival time unavailable. User subsequently stated lay prices will be updated again in the morning.",
+      "original_pre_race_review_at": "2026-11-19T16:41:31Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "summary": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns.",
+        "counterargument": "Recent AW success is a strong positive, and the 4 lb rise need not prevent further progress.",
+        "ranked_challengers": [
+          "Secret Santa",
+          "Sword",
+          "Dapper Guest"
+        ],
+        "rival_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns.",
+        "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
+      },
+      "field_size": 10,
+      "going": "Standard",
+      "surface": "Tapeta",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "race_name": "All Weather Championship Handicap",
+      "selection_reason": {
+        "summary": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns.",
+        "counterargument": "Recent AW success is a strong positive, and the 4 lb rise need not prevent further progress.",
+        "why_still_oppose": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+        "rival_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns.",
+        "challengers": [
+          "Secret Santa",
+          "Sword",
+          "Dapper Guest"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Secret Santa",
+            "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+          },
+          {
+            "rank": 2,
+            "horse": "Sword",
+            "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+          },
+          {
+            "rank": 3,
+            "horse": "Dapper Guest",
+            "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949411/all-weather-championship-handicap"
+        ],
+        "checked_at": "2026-11-19T17:20:46.570991+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative racing evidence; value unproven. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate. Exact quote time/delay unknown."
+      },
+      "identified_challengers": [
+        "Secret Santa",
+        "Sword",
+        "Dapper Guest"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Secret Santa",
+          "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+        },
+        {
+          "rank": 2,
+          "horse": "Sword",
+          "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+        },
+        {
+          "rank": 3,
+          "horse": "Dapper Guest",
+          "evidence_and_limitations": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
+        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
+        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "market_id": "1.265761001",
+        "selection_id": 27961303,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 12.66,
+        "displayed_liquidity_gbp": 12.66,
+        "liquidity_gbp": 12.66,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "ADVANCE_REVIEW",
+        "race_day_capture": false,
+        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+      },
+      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "available_stake_gbp": 12.66,
+      "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 2.0080321285140563,
+        "required_stake_decimal": "2.0080321285140562248995983935742972",
+        "potential_net_profit_gbp": 1.9076305220883534,
+        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
+          "snapshot_retrieved_at_utc": "2026-11-19T05:53:22.086871+00:00",
+          "retrieved_at_utc": "2026-11-19T05:53:22.086013+00:00",
+          "price": 1000,
+          "displayed_amount_gbp": 2.68,
+          "market_id": "1.265761001",
+          "selection_id": 27961303,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "INITIAL_UNAPPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
+          "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
+          "price": 250,
+          "displayed_amount_gbp": 12.66,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
+          "approved": true,
+          "stage": "APPROVED_ADVANCE_OBSERVATION"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-19T17:23:37.245654Z",
+          "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
+          "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
+          "racing_evidence_retrieved_at": "2026-11-19T17:20:46.570991+00:00"
+        }
+      ],
+      "reason": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
+      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "historical": false,
+      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
     }
   ]
 }
