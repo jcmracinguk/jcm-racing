@@ -1089,7 +1089,12 @@
       "reason": "Show Me Glory has a recent 7f AW win and receives 2 lb. Boy Basilica won on AW and receives 6 lb; Rosevannion has a Kempton win and gives 1 lb. Several rivals have also raced prominently, so an uncontested lead is not assured. Watchlist retained after Thursday morning review at approved Lay 3.75. Show Me Glory and Boy Basilica also need to progress from novice wins; Boy Basilica drops in trip. Rosevannion returns after 162 days. Those reservations keep this on Watchlist.",
       "price_record": "Frozen Thursday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-19T05:53:21.761018+00:00"
+      "price_observed_at": "2026-11-19T05:53:21.761018+00:00",
+      "identified_challengers": [
+        "Show Me Glory",
+        "Boy Basilica",
+        "Rosevannion"
+      ]
     },
     {
       "tier": "watchlist",
@@ -1200,7 +1205,13 @@
       "reason": "St Gabriel won a Haydock bumper; L'Unique Allen was second to an unbeaten rival at Wetherby. Power of Silence's Huntingdon fourth was compromised by interference. Prince Vinny brings actual hurdle experience. Main male rivals carry 11 st 4 lb without claims. Watchlist retained after Thursday morning review at approved Lay 3.50. St Gabriel, L'Unique Allen and Power of Silence also have to demonstrate their ability over hurdles; Prince Vinny's recent second does not establish superiority. The case relies too heavily on successful transitions for Pick.",
       "price_record": "Frozen Thursday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-19T05:53:21.761018+00:00"
+      "price_observed_at": "2026-11-19T05:53:21.761018+00:00",
+      "identified_challengers": [
+        "St Gabriel",
+        "L'Unique Allen",
+        "Power of Silence",
+        "Prince Vinny"
+      ]
     },
     {
       "tier": "watchlist",
@@ -1309,7 +1320,12 @@
       "reason": "Largy Force won three of her last five chases and returns to hurdles without a chase-win penalty at the same 11 st as Capricciose. Vrheligonne has a recent hurdle second, clear of the remainder. Emiko has a point win and bumper second. Watchlist retained after Thursday morning review at approved Lay 3.15. Largy Force's 127 is chase evidence, not a proven current hurdle rating; she returns after 189 days and wind surgery. Vrheligonne was no match for the Ffos Las winner. Emiko makes her hurdle debut. Too much transfer/improvement uncertainty for Pick.",
       "price_record": "Frozen Thursday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-19T05:53:21.761018+00:00"
+      "price_observed_at": "2026-11-19T05:53:21.761018+00:00",
+      "identified_challengers": [
+        "Largy Force",
+        "Vrheligonne",
+        "Emiko"
+      ]
     },
     {
       "tier": "watchlist",
@@ -1420,7 +1436,13 @@
       "reason": "Nogo's Dream's close Wolverhampton second gives him a chance at the same 9 st 9 lb. Magna is a course-and-distance winner with a recent Kempton third, stall 1 and 3 lb less. Cayman Tai carries 9 st 1 lb after the 7 lb claim, 8 lb below the favourite; Solar Invincible receives 3 lb. Watchlist retained after Thursday morning review at approved Lay 3.85. Nogo's Dream is quirky and winless this year. Magna's latest form is over 6f. Cayman Tai must rebound from a defeat over 6f and starts wide; Solar Invincible must transfer recent turf form. The favourite has a legitimate progressive case, keeping this on Watchlist.",
       "price_record": "Frozen Thursday delayed Betfair Exchange morning lay quote",
       "historical": false,
-      "price_observed_at": "2026-11-19T05:53:21.893489+00:00"
+      "price_observed_at": "2026-11-19T05:53:21.893489+00:00",
+      "identified_challengers": [
+        "Nogo's Dream",
+        "Magna",
+        "Cayman Tai",
+        "Solar Invincible"
+      ]
     }
   ]
 }

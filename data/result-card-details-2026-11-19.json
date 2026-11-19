@@ -109,7 +109,13 @@
       },
       "group_membership_frozen": true,
       "date": "2026-11-19",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949083/irish-stallion-farms-ebf-mares-maiden-hurdle"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949083/irish-stallion-farms-ebf-mares-maiden-hurdle",
+      "identified_challengers": [
+        "I Dont Really Care",
+        "Dinner Dance",
+        "Jury Time",
+        "Filly Butler"
+      ]
     },
     {
       "tier": "selection",
@@ -228,7 +234,14 @@
         }
       ],
       "date": "2026-11-19",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949237/all-weather-championships-season-xiv-river-eden-ebf-fillies-stakes-listed-gbbplus-race"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949237/all-weather-championships-season-xiv-river-eden-ebf-fillies-stakes-listed-gbbplus-race",
+      "identified_challengers": [
+        "Likealot",
+        "Little Dorrit",
+        "Littlecote",
+        "Pierian",
+        "Yamnah"
+      ]
     },
     {
       "tier": "selection",
@@ -349,7 +362,15 @@
         }
       ],
       "date": "2026-11-19",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949238/all-weather-championships-season-xiv-fleur-de-lys-fillies-stakes-listed"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/lingfield/949238/all-weather-championships-season-xiv-fleur-de-lys-fillies-stakes-listed",
+      "identified_challengers": [
+        "Sky Safari",
+        "Kon Tiki",
+        "Pacific Mission",
+        "Aviatrice",
+        "American Gal",
+        "Song N Dance"
+      ]
     },
     {
       "tier": "selection",
@@ -456,7 +477,12 @@
       },
       "group_membership_frozen": true,
       "date": "2026-11-19",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949085/racing-again-on-the-26th-november-handicap-hurdle-0-100"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/thurles/949085/racing-again-on-the-26th-november-handicap-hurdle-0-100",
+      "identified_challengers": [
+        "Liceo",
+        "Deed Pole",
+        "Phoenix Arizona"
+      ]
     },
     {
       "tier": "selection",
@@ -565,7 +591,13 @@
       },
       "group_membership_frozen": true,
       "date": "2026-11-19",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/newcastle/949241/midnite-it-s-actually-pretty-good-handicap-gbbplus-race"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-19/newcastle/949241/midnite-it-s-actually-pretty-good-handicap-gbbplus-race",
+      "identified_challengers": [
+        "Stoneacre Donny",
+        "Paddy The Squire",
+        "Savvy Disko",
+        "Pearl Eye"
+      ]
     }
   ]
 }

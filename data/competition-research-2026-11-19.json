@@ -109,7 +109,13 @@
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
-      "group_membership_frozen": true
+      "group_membership_frozen": true,
+      "identified_challengers": [
+        "I Dont Really Care",
+        "Dinner Dance",
+        "Jury Time",
+        "Filly Butler"
+      ]
     },
     {
       "tier": "selection",
@@ -226,6 +232,13 @@
           "change": "Charmaine withdrawn. Not a principal challenger; case based on Likealot and Little Dorrit retained.",
           "source_url": "https://www.sportinglife.com/racing/racecards/2026-11-19/lingfield/racecard/949237/all-weather-championships-season-xiv-river-eden-ebf-fillies-stakes-listed-gbbplus-race"
         }
+      ],
+      "identified_challengers": [
+        "Likealot",
+        "Little Dorrit",
+        "Littlecote",
+        "Pierian",
+        "Yamnah"
       ]
     },
     {
@@ -345,6 +358,14 @@
           "change": "Third by captured Lay quote: Sky Safari 5.10, Kon Tiki 5.60, Enchanted Queen 5.70. Still close to favouritism; Pick retained with lower net return.",
           "source": "Approved morning Exchange capture"
         }
+      ],
+      "identified_challengers": [
+        "Sky Safari",
+        "Kon Tiki",
+        "Pacific Mission",
+        "Aviatrice",
+        "American Gal",
+        "Song N Dance"
       ]
     },
     {
@@ -450,7 +471,12 @@
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
-      "group_membership_frozen": true
+      "group_membership_frozen": true,
+      "identified_challengers": [
+        "Liceo",
+        "Deed Pole",
+        "Phoenix Arizona"
+      ]
     },
     {
       "tier": "selection",
@@ -557,7 +583,13 @@
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
-      "group_membership_frozen": true
+      "group_membership_frozen": true,
+      "identified_challengers": [
+        "Stoneacre Donny",
+        "Paddy The Squire",
+        "Savvy Disko",
+        "Pearl Eye"
+      ]
     }
   ],
   "competition_watchlist": []
