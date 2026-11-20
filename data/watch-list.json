@@ -3366,9 +3366,9 @@
       "field_size": 11,
       "going": "Standard",
       "surface": "Tapeta",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
       "race_name": "AWC Season 14 Selling Handicap",
       "selection_reason": {
         "summary": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary.",
@@ -3468,7 +3468,7 @@
         "potential_net_profit_decimal": "239.8989898989898989898989898989898989899",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -3552,7 +3552,100 @@
       "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "1",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "18:30",
+      "result_course": "Wolverhampton",
+      "result_horse": "Gunfighter",
+      "result_off_dt": "2026-11-20T18:30:00+00:00",
+      "result_retrieved_at": "2026-11-20T18:46:30.833895Z",
+      "result_race_id": "rac_32304930957",
+      "result_horse_id": "hrs_36386903",
+      "result_website_race_id": "949409",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949409/awc-season-14-selling-handicap",
+      "result_non_runners": [],
+      "result_website_horse_id": "1111283",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "2 ¾",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Gunfighter",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Great Blasket",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "2.75"
+        },
+        {
+          "position": "3",
+          "horse": "Tonal",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "4.25"
+        },
+        {
+          "position": "4",
+          "horse": "Hitched",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "4.45"
+        },
+        {
+          "position": "5",
+          "horse": "King Casper",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "4.95"
+        },
+        {
+          "position": "6",
+          "horse": "Epictetus",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "7.2"
+        },
+        {
+          "position": "7",
+          "horse": "Kalamunda",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "7.95"
+        },
+        {
+          "position": "8",
+          "horse": "Dovey Moon",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "8.7"
+        },
+        {
+          "position": "9",
+          "horse": "Prince Rasam",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "9.7"
+        },
+        {
+          "position": "10",
+          "horse": "Banner Beauty",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "12.7"
+        },
+        {
+          "position": "11",
+          "horse": "Youarenotforgiven",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "13.95"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949409/awc-season-14-selling-handicap",
+      "margin_retrieved_at": "2026-11-20T18:46:30.833895Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "-500",
+      "placing": "1st",
+      "winner": "Gunfighter"
     },
     {
       "tier": "watchlist",
