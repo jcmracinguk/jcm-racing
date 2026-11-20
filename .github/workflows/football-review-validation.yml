@@ -1,0 +1,37 @@
+name: Football review validation
+on:
+  pull_request:
+    paths:
+      - 'football.html'
+      - 'scripts/football-ui.js'
+      - 'data/football-review-*.json'
+      - 'tests/racing-football.spec.cjs'
+      - '.github/workflows/football-review-validation.yml'
+permissions:
+  contents: read
+jobs:
+  football-review:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate data and football accounting
+        run: |
+          python3 scripts/validate_data.py
+          node --check scripts/football-ui.js
+          node tests/football-acca.cjs
+          node tests/bankroll.cjs
+          node tests/current-run.cjs
+      - name: Install browser test dependencies
+        run: |
+          npm install --no-save @playwright/test@1.58.2
+          npx playwright install --with-deps chromium
+      - name: Verify mobile review, history and sport separation
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/football-review-http.log 2>&1 &
+          npx playwright test tests/racing-football.spec.cjs --browser=chromium --workers=1 --reporter=line

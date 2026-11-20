@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "sport": "football",
+  "purpose": "append_only_pre_match_review",
+  "weekend_first_match_date": "2026-11-21",
+  "weekend_end": "2026-11-22",
+  "reviewed_at": "2026-11-20T19:56:08+00:00",
+  "timezone": "Europe/London",
+  "status": "PENDING_REVIEW",
+  "approved_selections": [],
+  "committed_stake_gbp": 0,
+  "new_financial_entries": [],
+  "model_version": "btts-v1",
+  "model_screen": {
+    "cutoff": "2026-11-20T16:26:54+00:00",
+    "source": "Football data provided by the Football-Data.org API.",
+    "job_url": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104/job/136416920807",
+    "screened": 21,
+    "qualifiers": [
+      "Middlesbrough v Bristol City",
+      "Aston Villa v Sunderland"
+    ],
+    "note": "This is the last verified successful screen, not a new evening API collection. Neither rank score nor qualification is a calibrated probability. No individual failed-gate explanation was output for the other fixtures."
+  },
+  "original_proposal": {
+    "date": "2026-11-21",
+    "stake_gbp": 100,
+    "combined_odds": 7.22,
+    "source": "User-supplied betslip on 16 November 2026",
+    "provider": null,
+    "status": "WITHDRAWN_BEFORE_KICKOFF",
+    "withdrawn_at": "2026-11-20T19:56:08+00:00",
+    "was_frozen": false,
+    "legs": [
+      {
+        "match_date": "2026-11-21",
+        "kickoff_uk": "12:30",
+        "fixture": "Southampton v Derby",
+        "odds": 1.75
+      },
+      {
+        "match_date": "2026-11-21",
+        "kickoff_uk": "17:30",
+        "fixture": "Newcastle v Arsenal",
+        "odds": 1.67
+      },
+      {
+        "match_date": "2026-11-22",
+        "kickoff_uk": "12:00",
+        "fixture": "Burnley v Blackburn",
+        "odds": 1.65
+      },
+      {
+        "match_date": "2026-11-22",
+        "kickoff_uk": "16:30",
+        "fixture": "Liverpool v Man United",
+        "odds": 1.5
+      }
+    ]
+  },
+  "decisions": [
+    {
+      "fixture": "Middlesbrough v Bristol City",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "decision": "HOLD",
+      "is_selection": false,
+      "reason": "Qualifies under unchanged v1, but a final post-Friday-training decision on Will Lankshear and Bristol City's attacking availability could not be verified.",
+      "counterargument": "Bristol City's overall recent BTTS is 2/6; their stronger away BTTS is 6/7, a small venue sample. Boro's recent BTTS is 3/6. Qualification alone does not justify a discretionary selection.",
+      "features": {
+        "home_home": {
+          "n": 7,
+          "btts": 5,
+          "scoring": 7,
+          "conceding": 5,
+          "goals_for": 17,
+          "goals_against": 9
+        },
+        "away_away": {
+          "n": 7,
+          "btts": 6,
+          "scoring": 6,
+          "conceding": 6,
+          "goals_for": 12,
+          "goals_against": 11
+        }
+      },
+      "odds": null,
+      "price_note": "8/11 from Betfair Sportsbook was observed at08:34GMT20Nov only. Evening page returned no readable market; not a current frozen price."
+    },
+    {
+      "fixture": "Aston Villa v Sunderland",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "decision": "LEAVE_OUT",
+      "is_selection": false,
+      "reason": "Mechanical qualifier remains excluded from discretionary selections: both relevant venue attacks average only1.2goals; Sunderland recent overallBTTS2/6. Prior club-confirmed Brobbey/Xhaka absences remain a concern; no new readable club update was obtained."
+    },
+    {
+      "fixture": "Southampton v Derby",
+      "decision": "WITHDRAW_PROVISIONAL_LEG",
+      "is_selection": false,
+      "reason": "Absent from both verified Friday v1 qualifier lists. Do not infer which individual threshold failed. Previous unconfirmed proposal retained; no stake or outcome assigned."
+    },
+    {
+      "fixture": "Newcastle v Arsenal",
+      "decision": "WITHDRAW_PROVISIONAL_LEG",
+      "is_selection": false,
+      "reason": "Absent from both verified Friday v1 qualifier lists. Do not infer which individual threshold failed. Previous unconfirmed proposal retained; no stake or outcome assigned."
+    },
+    {
+      "fixture": "Burnley v Blackburn",
+      "decision": "WITHDRAW_PROVISIONAL_LEG",
+      "is_selection": false,
+      "reason": "Absent from both verified Friday v1 qualifier lists. Do not infer which individual threshold failed. Previous unconfirmed proposal retained; no stake or outcome assigned."
+    },
+    {
+      "fixture": "Liverpool v Man United",
+      "decision": "WITHDRAW_PROVISIONAL_LEG",
+      "is_selection": false,
+      "reason": "Absent from both verified Friday v1 qualifier lists. Do not infer which individual threshold failed. Previous unconfirmed proposal retained; no stake or outcome assigned."
+    }
+  ],
+  "evidence": [
+    {
+      "topic": "Lankshear",
+      "url": "https://uk.sports.yahoo.com/news/lankshear-middlesbrough-injury-status-hellberg-152000058.html",
+      "publisher": "Northern Echo reporting syndicated by Yahoo",
+      "published_date": "2026-11-19",
+      "observed_at": "2026-11-20T19:56:08+00:00",
+      "finding": "Thursday return to training verified; report says final decision intended after Friday training. No published final Friday clearance verified."
+    },
+    {
+      "topic": "Lankshear",
+      "url": "https://www.hartlepoolmail.co.uk/sport/football/middlesbrough-fc/middlesbrough-boss-will-lankshear-fitness-bristol-city-9362896",
+      "published_date": "2026-11-20",
+      "observed_at": "2026-11-20T19:56:08+00:00",
+      "finding": "Friday report still quotes Thursday's cautious assessment, not final clearance or a confirmed starting role."
+    },
+    {
+      "topic": "Bristol City",
+      "url": "https://www.bcfc.co.uk/",
+      "observed_at": "2026-11-20T19:56:08+00:00",
+      "finding": "No readable official current squad bulletin verified. Contradictory secondary lists are not treated as confirmed fitness, absences, suspensions or starting attackers."
+    },
+    {
+      "topic": "Manchester United",
+      "url": "https://www.manutd.com/en/news/team-news-for-liverpool-v-manchester-united-22-november",
+      "observed_at": "2026-11-20T19:56:08+00:00",
+      "finding": "Official page retrieved only navigation/related links; detailed post-Friday-press-conference injury text could not be verified. No tactical or selection assumption made."
+    },
+    {
+      "topic": "Sunderland",
+      "url": "https://www.safc.com/news/2026/november/19/brobbey-and-xhaka-update-from-le-bris/",
+      "observed_at": "2026-11-20T19:56:08+00:00",
+      "finding": "Earlier review verified the club ruling Brobbey and Xhaka out. Evening page had no readable text; not presented as fresh reconfirmation."
+    }
+  ],
+  "next_decision": "Verify official team news and matchday line-ups before any selection. No forced accumulator. Append a new dated review rather than overwriting this record.",
+  "settlement_basis": "Any future selections use90minutes plus stoppage time only; no extra time or penalties. No outcome or P/L recorded in this review."
+}
