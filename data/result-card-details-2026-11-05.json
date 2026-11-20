@@ -97,7 +97,7 @@
         "price_band": "2.00-2.99",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
+        "booked_profit_gbp": -500.0
       },
       "date": "2026-11-05",
       "position": "1",
@@ -107,7 +107,7 @@
       "result_course": "Plumpton",
       "result_horse": "Marlacoo",
       "result_off_dt": "2026-11-05T13:08:00+00:00",
-      "result_retrieved_at": "2026-11-05T13:23:44.017557Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303576994",
       "result_horse_id": "hrs_39996565",
       "result_website_race_id": "947080",
@@ -145,11 +145,13 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/plumpton/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
-      "margin_retrieved_at": "2026-11-05T13:23:44.017557Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "winner": "Marlacoo",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/plumpton/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/plumpton/947080/bet-on-course-with-star-sports-novices-handicap-chase-gbb-race",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500"
     },
     {
       "race_date": "2026-11-05",
@@ -246,7 +248,7 @@
         "price_band": "4.00-4.99",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
+        "booked_profit_gbp": -500.0
       },
       "date": "2026-11-05",
       "position": "1",
@@ -256,7 +258,7 @@
       "result_course": "Southwell",
       "result_horse": "Lady Mariko",
       "result_off_dt": "2026-11-05T16:30:00+00:00",
-      "result_retrieved_at": "2026-11-05T16:49:11.054012Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303596364",
       "result_horse_id": "hrs_47098863",
       "result_website_race_id": "947101",
@@ -330,11 +332,13 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/southwell/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
-      "margin_retrieved_at": "2026-11-05T16:49:11.054012Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "winner": "Lady Mariko",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/southwell/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/southwell/947101/aw-trials-day-lingfield-2nd-jan-2027-fillies-handicap",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500"
     },
     {
       "race_date": "2026-11-05",
@@ -425,7 +429,7 @@
         "price_band": "3.00-3.99",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
+        "booked_profit_gbp": -500.0
       },
       "position": "1",
       "placing": "1st",
@@ -435,7 +439,7 @@
       "result_course": "Chelmsford City",
       "result_horse": "National Pride",
       "result_off_dt": "2026-11-05T17:15:00+00:00",
-      "result_retrieved_at": "2026-11-05T17:31:43.646290Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303546002",
       "result_horse_id": "hrs_65254826",
       "result_website_race_id": "947111",
@@ -517,11 +521,13 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-05/chelmsford-city/947111/awc-finals-day-at-newcastle-26th-march-nursery",
-      "margin_retrieved_at": "2026-11-05T17:31:43.646290Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "winner": "National Pride",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/chelmsford-city/947111/awc-finals-day-at-newcastle-26th-march-nursery"
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-05/chelmsford-city/947111/awc-finals-day-at-newcastle-26th-march-nursery",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500"
     }
   ]
 }

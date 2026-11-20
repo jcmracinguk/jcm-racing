@@ -89,12 +89,12 @@
         "required_stake_gbp": 320.5128205128205,
         "potential_net_profit_gbp": 304.4871794871795,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": -500.0,
       "result_status": "LOSS",
       "result_source": "SPORTING_LIFE",
       "position": "1",
@@ -104,7 +104,7 @@
       "result_course": "Huntingdon",
       "result_horse": "Teorie",
       "result_off_dt": "2026-11-10T13:40:00+00:00",
-      "result_retrieved_at": "2026-11-10T14:27:07.462Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32304047685",
       "result_horse_id": "hrs_31660727",
       "result_website_race_id": "947819",
@@ -151,9 +151,35 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/huntingdon/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
-      "margin_retrieved_at": "2026-11-10T14:27:07.462Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
-      "margin_verification_status": "WEBSITE_CONFIRMED"
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "result_history": [
+        {
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_status": "LOSS",
+          "result_source": "SPORTING_LIFE",
+          "position": "1",
+          "placing": "1st",
+          "result_date": "2026-11-10",
+          "result_off_time_uk": "13:40",
+          "result_course": "Huntingdon",
+          "result_horse": "Teorie",
+          "result_off_dt": "2026-11-10T13:40:00+00:00",
+          "result_retrieved_at": "2026-11-10T14:27:07.462Z",
+          "result_race_id": "rac_32304047685",
+          "result_horse_id": "hrs_31660727",
+          "result_website_race_id": "947819",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/huntingdon/947819/pricedup-bet-conditional-jockeys-handicap-hurdle",
+          "result_starting_price": "13/8f",
+          "result_non_runners": [
+            "Bargain Hunter"
+          ],
+          "result_website_horse_id": "1073946",
+          "result_stage": "WEIGHEDIN"
+        }
+      ],
+      "booked_profit_decimal": "-500"
     },
     {
       "race_date": "2026-11-10",
@@ -190,7 +216,7 @@
       "available_stake_gbp": 14.36,
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 293.2098765432099,
       "selection_reason": {
         "summary": "Strong competition route: Cinnodin won a staying hurdle on good ground at Huntingdon in October. Betty’s Tiara won over 2m7f at Worcester and has recent Class 4 second and third places. They bring demonstrated staying form against Sailing By’s potential improvement.",
         "counterargument": "Lightly raced, down another 2lb to OR87; the longer trip may unlock improvement, with the Tizzard yard in form. Untried stamina is not demonstrated inability.",
@@ -244,7 +270,7 @@
         "required_stake_gbp": 308.641975308642,
         "potential_net_profit_gbp": 293.2098765432099,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 293.2098765432099,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -257,7 +283,7 @@
       "result_course": "Lingfield",
       "result_horse": "Sailing By",
       "result_off_dt": "2026-11-10T15:20:00+00:00",
-      "result_retrieved_at": "2026-11-10T17:40:10.604128Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32304067055",
       "result_horse_id": "hrs_56559342",
       "result_website_race_id": "947829",
@@ -304,7 +330,7 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/lingfield/947829/tips-for-every-race-at-raceday-readycom-handicap-hurdle",
-      "margin_retrieved_at": "2026-11-10T17:40:10.604128Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "result_history": [
@@ -330,8 +356,32 @@
           ],
           "result_website_horse_id": "1205090",
           "result_stage": "WEIGHEDIN"
+        },
+        {
+          "result_status": "WIN",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_source": "SPORTING_LIFE",
+          "position": "4",
+          "placing": "4th",
+          "result_date": "2026-11-10",
+          "result_off_time_uk": "15:20",
+          "result_course": "Lingfield",
+          "result_horse": "Sailing By",
+          "result_off_dt": "2026-11-10T15:20:00+00:00",
+          "result_retrieved_at": "2026-11-10T17:40:10.604128Z",
+          "result_race_id": "rac_32304067055",
+          "result_horse_id": "hrs_56559342",
+          "result_website_race_id": "947829",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-10/lingfield/947829/tips-for-every-race-at-raceday-readycom-handicap-hurdle",
+          "result_starting_price": "5/4f",
+          "result_non_runners": [
+            "Lord Of All Saints"
+          ],
+          "result_website_horse_id": "1205090",
+          "result_stage": "WEIGHEDIN"
         }
-      ]
+      ],
+      "booked_profit_decimal": "293.2098765432098765432098765"
     }
   ],
   "competition_watchlist": []

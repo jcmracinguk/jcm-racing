@@ -272,7 +272,7 @@
         "price_band": "3.00-3.99",
         "accounting_basis": "ACTUAL_SCREENSHOT_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
+        "booked_profit_gbp": -500.0
       },
       "position": "1",
       "result_date": "2026-11-04",
@@ -280,7 +280,7 @@
       "result_course": "Nottingham",
       "result_horse": "Indhaar",
       "result_off_dt": "2026-11-04T13:50:00+00:00",
-      "result_retrieved_at": "2026-11-04T14:08:14.121867Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303460774",
       "result_horse_id": "hrs_63809403",
       "result_website_race_id": "946936",
@@ -354,10 +354,34 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/nottingham/946936/experience-hospitality-at-nottingham-racecourse-novice-stakes-gbbgbbplus-race",
-      "margin_retrieved_at": "2026-11-04T14:08:14.121867Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "1st"
+      "placing": "1st",
+      "result_history": [
+        {
+          "result_status": "LOSS",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_source": "SPORTING_LIFE",
+          "position": "1",
+          "result_date": "2026-11-04",
+          "result_off_time_uk": "13:50",
+          "result_course": "Nottingham",
+          "result_horse": "Indhaar",
+          "result_off_dt": "2026-11-04T13:50:00+00:00",
+          "result_retrieved_at": "2026-11-04T14:08:14.121867Z",
+          "result_race_id": "rac_32303460774",
+          "result_horse_id": "hrs_63809403",
+          "result_website_race_id": "946936",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/nottingham/946936/experience-hospitality-at-nottingham-racecourse-novice-stakes-gbbgbbplus-race",
+          "result_non_runners": [],
+          "result_website_horse_id": "1221273",
+          "result_stage": "WEIGHEDIN",
+          "placing": "1st"
+        }
+      ],
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500"
     },
     {
       "race_date": "2026-11-04",
@@ -456,7 +480,7 @@
         "price_band": "3.00-3.99",
         "accounting_basis": "ACTUAL_SCREENSHOT_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL",
         "value_status": "UNPROVEN",
-        "booked_profit_gbp": 0
+        "booked_profit_gbp": -500.0
       },
       "position": "1",
       "result_date": "2026-11-04",
@@ -464,7 +488,7 @@
       "result_course": "Kempton",
       "result_horse": "Persian Spirit",
       "result_off_dt": "2026-11-04T17:30:00+00:00",
-      "result_retrieved_at": "2026-11-04T17:47:23.333030Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303449152",
       "result_horse_id": "hrs_44786686",
       "result_website_race_id": "946946",
@@ -520,10 +544,34 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/kempton/946946/try-unibets-new-racing-bet-builder-fillies-handicap",
-      "margin_retrieved_at": "2026-11-04T17:47:23.333030Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "1st"
+      "placing": "1st",
+      "result_history": [
+        {
+          "result_status": "LOSS",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_source": "SPORTING_LIFE",
+          "position": "1",
+          "result_date": "2026-11-04",
+          "result_off_time_uk": "17:30",
+          "result_course": "Kempton",
+          "result_horse": "Persian Spirit",
+          "result_off_dt": "2026-11-04T17:30:00+00:00",
+          "result_retrieved_at": "2026-11-04T17:47:23.333030Z",
+          "result_race_id": "rac_32303449152",
+          "result_horse_id": "hrs_44786686",
+          "result_website_race_id": "946946",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/kempton/946946/try-unibets-new-racing-bet-builder-fillies-handicap",
+          "result_non_runners": [],
+          "result_website_horse_id": "1158181",
+          "result_stage": "WEIGHEDIN",
+          "placing": "1st"
+        }
+      ],
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500"
     }
   ],
   "competition_watchlist": []

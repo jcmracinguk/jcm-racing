@@ -89,7 +89,7 @@
         "required_stake_gbp": 138.88888888888889,
         "potential_net_profit_gbp": 131.94444444444443,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 131.94444444444446,
         "value_status": "UNPROVEN",
         "full_stake_match_verified": false,
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -103,7 +103,7 @@
       "result_course": "Southwell",
       "result_horse": "Tam Lin",
       "result_off_dt": "2026-11-07T16:25:00+00:00",
-      "result_retrieved_at": "2026-11-07T16:43:44.090019Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303832678",
       "result_horse_id": "hrs_44786490",
       "result_website_race_id": "947519",
@@ -185,10 +185,12 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-07/southwell/947519/midnight-a-next-generation-betting-app-handicap",
-      "margin_retrieved_at": "2026-11-07T16:43:44.090019Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "4th"
+      "placing": "4th",
+      "booked_profit_gbp": 131.94444444444446,
+      "booked_profit_decimal": "131.9444444444444444444444445"
     }
   ]
 }

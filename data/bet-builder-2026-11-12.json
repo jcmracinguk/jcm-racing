@@ -40,7 +40,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 115.85365853658537,
       "race_name": "Racing Again November 19th Beginners Chase",
       "selection_reason": {
         "summary": "Whispering Willow has three chase placings and first-time cheekpieces. Might Be The One won over hurdles by eight lengths and has point experience. Both meet Kimy at 11 st 5 lb without claims.",
@@ -96,7 +96,7 @@
         "required_stake_gbp": 121.95121951219514,
         "potential_net_profit_gbp": 115.85365853658537,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 115.85365853658537,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -108,7 +108,7 @@
       "result_course": "Thurles",
       "result_horse": "Kimy",
       "result_off_dt": "2026-11-12T11:43:00+00:00",
-      "result_retrieved_at": "2026-11-12T12:53:33.650096Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32304173590",
       "result_horse_id": "hrs_37789969",
       "result_website_race_id": "948687",
@@ -186,10 +186,37 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/thurles/948687/racing-again-november-19th-beginners-chase",
-      "margin_retrieved_at": "2026-11-12T12:53:33.650096Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "3rd"
+      "placing": "3rd",
+      "result_history": [
+        {
+          "result_status": "WIN",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "position": "3",
+          "result_source": "SPORTING_LIFE",
+          "result_date": "2026-11-12",
+          "result_off_time_uk": "11:43",
+          "result_course": "Thurles",
+          "result_horse": "Kimy",
+          "result_off_dt": "2026-11-12T11:43:00+00:00",
+          "result_retrieved_at": "2026-11-12T12:53:33.650096Z",
+          "result_race_id": "rac_32304173590",
+          "result_horse_id": "hrs_37789969",
+          "result_website_race_id": "948687",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/thurles/948687/racing-again-november-19th-beginners-chase",
+          "result_non_runners": [
+            "Tea In The Park",
+            "Jonny Carrol"
+          ],
+          "result_website_horse_id": "1109082",
+          "result_stage": "WEIGHEDIN",
+          "result_amended": true,
+          "placing": "3rd"
+        }
+      ],
+      "booked_profit_decimal": "115.8536585365853658536585366"
     },
     {
       "tier": "selection",
@@ -225,7 +252,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 286.144578313253,
       "race_name": "PricedUp Now With Best Odds National Hunt Maiden Hurdle",
       "selection_reason": {
         "summary": "Eastern Rock made a big move on hurdle debut and can finish closer with better timing. Multiple point winner Supreme Force is credible over this trip. Each concedes just 1 lb.",
@@ -281,7 +308,7 @@
         "required_stake_gbp": 301.2048192771084,
         "potential_net_profit_gbp": 286.14457831325296,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 286.144578313253,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -293,7 +320,7 @@
       "result_course": "Market Rasen",
       "result_horse": "Ivor Bear",
       "result_off_dt": "2026-11-12T12:41:00+00:00",
-      "result_retrieved_at": "2026-11-12T12:57:01.304774Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32304237511",
       "result_horse_id": "hrs_60250071",
       "result_website_race_id": "948188",
@@ -349,10 +376,33 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/market-rasen/948188/pricedup-now-with-best-odds-national-hunt-maiden-hurdle-gbb-race",
-      "margin_retrieved_at": "2026-11-12T12:57:01.304774Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "4th"
+      "placing": "4th",
+      "result_history": [
+        {
+          "result_status": "WIN",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "position": "4",
+          "result_source": "SPORTING_LIFE",
+          "result_date": "2026-11-12",
+          "result_off_time_uk": "12:41",
+          "result_course": "Market Rasen",
+          "result_horse": "Ivor Bear",
+          "result_off_dt": "2026-11-12T12:41:00+00:00",
+          "result_retrieved_at": "2026-11-12T12:57:01.304774Z",
+          "result_race_id": "rac_32304237511",
+          "result_horse_id": "hrs_60250071",
+          "result_website_race_id": "948188",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-12/market-rasen/948188/pricedup-now-with-best-odds-national-hunt-maiden-hurdle-gbb-race",
+          "result_non_runners": [],
+          "result_website_horse_id": "1210756",
+          "result_stage": "WEIGHEDIN",
+          "placing": "4th"
+        }
+      ],
+      "booked_profit_decimal": "286.1445783132530120481927710"
     }
   ],
   "bank_trial": {

@@ -91,7 +91,7 @@
         "potential_net_profit_gbp": 190,
         "failure_gbp": -500,
         "break_even_beaten_rate": 0.7246376811594203,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 190.0,
         "value_status": "UNPROVEN",
         "full_stake_match_verified": false,
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -105,7 +105,7 @@
       "result_course": "Aintree",
       "result_horse": "Here Comes Georgie",
       "result_off_dt": "2026-11-06T15:35:00+00:00",
-      "result_retrieved_at": "2026-11-06T15:52:00.780559Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303662222",
       "result_horse_id": "hrs_34888679",
       "result_website_race_id": "947293",
@@ -185,10 +185,12 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-06/aintree/947293/betmgm-handicap-chase-premier-handicap-gbb-race",
-      "margin_retrieved_at": "2026-11-06T15:52:00.780559Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "7th"
+      "placing": "7th",
+      "booked_profit_gbp": 190.0,
+      "booked_profit_decimal": "190.0"
     },
     {
       "race_date": "2026-11-06",
@@ -279,7 +281,7 @@
         "potential_net_profit_gbp": 237.5,
         "failure_gbp": -500,
         "break_even_beaten_rate": 0.6779661016949152,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 237.5,
         "value_status": "UNPROVEN",
         "full_stake_match_verified": false,
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -293,7 +295,7 @@
       "result_course": "Aintree",
       "result_horse": "Quaviste",
       "result_off_dt": "2026-11-06T16:05:00+00:00",
-      "result_retrieved_at": "2026-11-06T16:22:44.536758Z",
+      "result_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "result_race_id": "rac_32303664159",
       "result_horse_id": "hrs_46108153",
       "result_website_race_id": "947294",
@@ -367,10 +369,12 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-06/aintree/947294/gamble-responsibly-at-betmgm-handicap-hurdle",
-      "margin_retrieved_at": "2026-11-06T16:22:44.536758Z",
+      "margin_retrieved_at": "2026-11-20T15:29:22.997794Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "6th"
+      "placing": "6th",
+      "booked_profit_gbp": 237.5,
+      "booked_profit_decimal": "237.50"
     }
   ]
 }
