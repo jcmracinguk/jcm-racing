@@ -1145,7 +1145,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "VERIFIED",
-      "booked_profit_gbp": 190.0,
+      "booked_profit_gbp": 190,
       "race_name": "Olly Murphy Proudly Sponsored By Betano 'National Hunt' Maiden Hurdle Race (Div I) (GBB Race)",
       "selection_reason": {
         "summary": "St Gabriel won a Haydock bumper; L'Unique Allen was second to an unbeaten rival at Wetherby. Power of Silence's Huntingdon fourth was compromised by interference. Prince Vinny brings actual hurdle experience. Main male rivals carry 11 st 4 lb without claims.",
@@ -1202,7 +1202,7 @@
         "required_stake_gbp": 200,
         "potential_net_profit_gbp": 190,
         "failure_gbp": -500,
-        "booked_profit_gbp": 190.0,
+        "booked_profit_gbp": 190,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1576,8 +1576,8 @@
       "field_size": 9,
       "going": "Good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "NR",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Jumps Look Better On Racing TV Novices' Hurdle (GBB Race)",
       "selection_reason": {
@@ -1684,7 +1684,7 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
+      "price_review_stage": "NON_RUNNER_FROZEN_QUOTE_PRESERVED",
       "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
       "price_observation_history": [
         {
@@ -1710,6 +1710,28 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.055669+00:00",
+          "price": 2.66,
+          "displayed_amount_gbp": 13.5,
+          "market_id": "1.265760204",
+          "selection_id": 84038877,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+          "runner_status": "REMOVED",
+          "price": null,
+          "approved": false,
+          "stage": "NON_RUNNER_NO_QUOTE"
         }
       ],
       "material_developments": [
@@ -1718,12 +1740,37 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 12.5 (-987.5); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:35.165393+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:23:59.003466+00:00",
+          "type": "VERIFIED_NON_RUNNER",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Moments Away is explicitly NONRUNNER on Sporting Life, NR on Racing API and REMOVED on Betfair. Void £0; original group and frozen Lay 12.50 retained. Exact withdrawal time unknown."
         }
       ],
       "reason": "I've Got A Friend's hurdle second at level weights and Nightflyer's hurdle win create opposition. Nightflyer concedes 6 lb and has jumped inconsistently. Moments Away's Grade 2 bumper fifth and more suitable trip give him a substantial improvement route; this stays secondary. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
       "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+      "price_observed_at": "2026-11-19T17:15:50.215890+00:00",
+      "position": "NR",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/catterick/racecard/949386/jumps-look-better-on-racing-tv-novices-hurdle-gbb-race",
+      "result_retrieved_at": "2026-11-20T08:23:59.003466+00:00",
+      "result_stage": "DECLARED_NON_RUNNER",
+      "withdrawal_time": null,
+      "withdrawal_time_note": "Exact withdrawal time unknown. Non-runner observed in the morning quote refresh; not backdated.",
+      "result_history": [
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "previous_status": "PENDING",
+          "new_status": "NR",
+          "evidence": "Sporting Life NONRUNNER; Racing API NR; Betfair REMOVED",
+          "source_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/catterick/racecard/949386/jumps-look-better-on-racing-tv-novices-hurdle-gbb-race",
+          "booked_profit_gbp": 0
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -1743,7 +1790,7 @@
       "horse_id": "hrs_50401764",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T12:57:00+00:00",
-      "lay_odds": 250,
+      "lay_odds": 5.4,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -1831,21 +1878,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.215890+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.289978+00:00",
         "market_id": "1.265761106",
         "selection_id": 80952149,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 13.49,
-        "displayed_liquidity_gbp": 13.49,
-        "liquidity_gbp": 13.49,
+        "displayed_amount_gbp": 24.86,
+        "displayed_liquidity_gbp": 24.86,
+        "liquidity_gbp": 24.86,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -1853,20 +1900,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
-      "available_stake_gbp": 13.49,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 24.86,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 2.0080321285140563,
-        "required_stake_decimal": "2.0080321285140562248995983935742972",
-        "potential_net_profit_gbp": 1.9076305220883534,
-        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "required_stake_gbp": 113.63636363636364,
+        "required_stake_decimal": "113.6363636363636363636363636363636363636",
+        "potential_net_profit_gbp": 107.95454545454545,
+        "potential_net_profit_decimal": "107.9545454545454545454545454545454545454",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -1875,8 +1922,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -1901,6 +1948,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.055669+00:00",
+          "price": 5.1,
+          "displayed_amount_gbp": 30.55,
+          "market_id": "1.265761106",
+          "selection_id": 80952149,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+          "price": 5.4,
+          "displayed_amount_gbp": 24.86,
+          "market_id": "1.265761106",
+          "selection_id": 80952149,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -1909,12 +1984,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:41.253557+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:23:58.858832+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 250 to 5.4 (-244.6); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Thursday 250 was a sparse offer; this is not ordinary market shortening. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.289978+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -1934,7 +2020,7 @@
       "horse_id": "hrs_45982384",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T13:20:00+00:00",
-      "lay_odds": 2.58,
+      "lay_odds": 2.94,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2022,21 +2108,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.215890+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.215890+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.289978+00:00",
         "market_id": "1.265760159",
         "selection_id": 74948403,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 13.35,
-        "displayed_liquidity_gbp": 13.35,
-        "liquidity_gbp": 13.35,
+        "displayed_amount_gbp": 17.51,
+        "displayed_liquidity_gbp": 17.51,
+        "liquidity_gbp": 17.51,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2044,20 +2130,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
-      "available_stake_gbp": 13.35,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 17.51,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 316.45569620253167,
-        "required_stake_decimal": "316.45569620253164556962025316455696",
-        "potential_net_profit_gbp": 300.63291139240505,
-        "potential_net_profit_decimal": "300.63291139240506329113924050632911",
+        "required_stake_gbp": 257.7319587628866,
+        "required_stake_decimal": "257.7319587628865979381443298969072164948",
+        "potential_net_profit_gbp": 244.84536082474227,
+        "potential_net_profit_decimal": "244.8453608247422680412371134020618556701",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -2066,8 +2152,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -2092,6 +2178,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.055669+00:00",
+          "price": 3.2,
+          "displayed_amount_gbp": 10.78,
+          "market_id": "1.265760159",
+          "selection_id": 74948403,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+          "price": 2.94,
+          "displayed_amount_gbp": 17.51,
+          "market_id": "1.265760159",
+          "selection_id": 74948403,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -2100,12 +2214,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Lay shortened from 3.9 to 2.58 (-1.32); paper successful return increases from £163.79 to £300.63. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:35.242997+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:23:58.993408+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 2.58 to 2.94 (+0.36); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.215890+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.289978+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -2125,7 +2250,7 @@
       "horse_id": "hrs_51273306",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T14:42:00+00:00",
-      "lay_odds": 4.3,
+      "lay_odds": 6.8,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/chepstow/racecard/949404/david-lucas-best-prices-welsh-sport-handicap-hurdle",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2213,21 +2338,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.289978+00:00",
         "market_id": "1.265761163",
         "selection_id": 82831854,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 11,
-        "displayed_liquidity_gbp": 11,
-        "liquidity_gbp": 11,
+        "displayed_amount_gbp": 11.1,
+        "displayed_liquidity_gbp": 11.1,
+        "liquidity_gbp": 11.1,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2235,20 +2360,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
-      "available_stake_gbp": 11,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 11.1,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 151.5151515151515,
-        "required_stake_decimal": "151.51515151515151515151515151515152",
-        "potential_net_profit_gbp": 143.93939393939394,
-        "potential_net_profit_decimal": "143.93939393939393939393939393939394",
+        "required_stake_gbp": 86.20689655172414,
+        "required_stake_decimal": "86.20689655172413793103448275862068965517",
+        "potential_net_profit_gbp": 81.89655172413794,
+        "potential_net_profit_decimal": "81.89655172413793103448275862068965517241",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -2257,8 +2382,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -2283,6 +2408,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.055669+00:00",
+          "price": 5.9,
+          "displayed_amount_gbp": 15.49,
+          "market_id": "1.265761163",
+          "selection_id": 82831854,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.289978+00:00",
+          "price": 6.8,
+          "displayed_amount_gbp": 11.1,
+          "market_id": "1.265761163",
+          "selection_id": 82831854,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -2291,12 +2444,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 4.3 (-995.7); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:41.237273+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:23:58.976251+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 4.3 to 6.8 (+2.5); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Northwest Passage is principal opposition after a convincing Southwell handicap win, receiving 5 lb through the claim at the same declared 166 lb; the penalty is already included. Best Trump is a more speculative handicap improver. Northwest must transfer to softer ground; Jollie's own successful handicap debut and manageable 5 lb rise prevent Pick status. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.289978+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -2316,7 +2480,7 @@
       "horse_id": "hrs_65069039",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T15:40:00+00:00",
-      "lay_odds": 2.5,
+      "lay_odds": 2.46,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/ascot/racecard/949398/bet-responsibly-with-ladbrokes-open-nh-flat-race-gbb-race",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2404,21 +2568,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.410063+00:00",
         "market_id": "1.265760179",
         "selection_id": 98858244,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 57.54,
-        "displayed_liquidity_gbp": 57.54,
-        "liquidity_gbp": 57.54,
+        "displayed_amount_gbp": 14.53,
+        "displayed_liquidity_gbp": 14.53,
+        "liquidity_gbp": 14.53,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2426,20 +2590,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Delayed advance Lay offer; full-stake matching unverified."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Delayed advance Lay offer; full-stake matching unverified.",
-      "available_stake_gbp": 57.54,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 14.53,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 333.3333333333333,
-        "required_stake_decimal": "333.33333333333333333333333333333333",
-        "potential_net_profit_gbp": 316.6666666666667,
-        "potential_net_profit_decimal": "316.66666666666666666666666666666666",
+        "required_stake_gbp": 342.4657534246575,
+        "required_stake_decimal": "342.4657534246575342465753424657534246575",
+        "potential_net_profit_gbp": 325.3424657534247,
+        "potential_net_profit_decimal": "325.3424657534246575342465753424657534246",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -2448,8 +2612,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Delayed advance Lay offer; full-stake matching unverified.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -2474,6 +2638,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.429391+00:00",
+          "price": 2.48,
+          "displayed_amount_gbp": 41.19,
+          "market_id": "1.265760179",
+          "selection_id": 98858244,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+          "price": 2.46,
+          "displayed_amount_gbp": 14.53,
+          "market_id": "1.265760179",
+          "selection_id": 98858244,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -2482,12 +2674,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 2.5 (-997.5); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:35.276715+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:24:04.237550+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 2.5 to 2.46 (-0.04); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Delayed advance Lay offer; full-stake matching unverified.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -2507,7 +2710,7 @@
       "horse_id": "hrs_52995215",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T17:00:00+00:00",
-      "lay_odds": 250,
+      "lay_odds": 3.6,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949406/midnite-built-for-2026-not-2006-novice-stakes-gbb-race",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2528,7 +2731,7 @@
         "rival_limitations": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
         "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
       },
-      "field_size": 6,
+      "field_size": 5,
       "going": "Standard",
       "surface": "Tapeta",
       "result_status": "PENDING",
@@ -2595,21 +2798,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.410063+00:00",
         "market_id": "1.265760955",
         "selection_id": 83880833,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 16.57,
-        "displayed_liquidity_gbp": 16.57,
-        "liquidity_gbp": 16.57,
+        "displayed_amount_gbp": 16.92,
+        "displayed_liquidity_gbp": 16.92,
+        "liquidity_gbp": 16.92,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2617,20 +2820,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
-      "available_stake_gbp": 16.57,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 16.92,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 2.0080321285140563,
-        "required_stake_decimal": "2.0080321285140562248995983935742972",
-        "potential_net_profit_gbp": 1.9076305220883534,
-        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "required_stake_gbp": 192.30769230769232,
+        "required_stake_decimal": "192.3076923076923076923076923076923076923",
+        "potential_net_profit_gbp": 182.69230769230768,
+        "potential_net_profit_decimal": "182.6923076923076923076923076923076923077",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -2639,8 +2842,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -2665,6 +2868,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.429391+00:00",
+          "price": 6.4,
+          "displayed_amount_gbp": 11.16,
+          "market_id": "1.265760955",
+          "selection_id": 83880833,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+          "price": 3.6,
+          "displayed_amount_gbp": 16.92,
+          "market_id": "1.265760955",
+          "selection_id": 83880833,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -2673,12 +2904,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:46.459457+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:24:04.211287+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 250 to 3.6 (-246.4); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Thursday 250 was a sparse offer; this is not ordinary market shortening. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed. Valor’s Call is now a verified non-runner. He was not a named principal rival; Butterfly Beach and Frantic remain. Field now five; this alone does not alter the Watchlist verdict. Exact withdrawal time unknown."
         }
       ],
       "reason": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -2698,7 +2940,7 @@
       "horse_id": "hrs_36386903",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T18:30:00+00:00",
-      "lay_odds": 250,
+      "lay_odds": 2.98,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949409/awc-season-14-selling-handicap",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2786,21 +3028,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.410063+00:00",
         "market_id": "1.265760982",
         "selection_id": 2351407,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 17.72,
-        "displayed_liquidity_gbp": 17.72,
-        "liquidity_gbp": 17.72,
+        "displayed_amount_gbp": 22.17,
+        "displayed_liquidity_gbp": 22.17,
+        "liquidity_gbp": 22.17,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2808,20 +3050,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
-      "available_stake_gbp": 17.72,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 22.17,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 2.0080321285140563,
-        "required_stake_decimal": "2.0080321285140562248995983935742972",
-        "potential_net_profit_gbp": 1.9076305220883534,
-        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "required_stake_gbp": 252.5252525252525,
+        "required_stake_decimal": "252.5252525252525252525252525252525252525",
+        "potential_net_profit_gbp": 239.8989898989899,
+        "potential_net_profit_decimal": "239.8989898989898989898989898989898989899",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -2830,8 +3072,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -2856,6 +3098,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.429391+00:00",
+          "price": 2.98,
+          "displayed_amount_gbp": 16.73,
+          "market_id": "1.265760982",
+          "selection_id": 2351407,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+          "price": 2.98,
+          "displayed_amount_gbp": 22.17,
+          "market_id": "1.265760982",
+          "selection_id": 2351407,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -2864,12 +3134,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:46.447941+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:24:04.312172+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 250 to 2.98 (-247.02); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Thursday 250 was a sparse offer; this is not ordinary market shortening. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Rank Tonal first (recent course second; 135 lb after claim against 137), Kalamunda second (troubled recent fifth; 136), Great Blasket third (consistent and a course winner; 135). Tonal has stall 11, Kalamunda needs the revival to produce a win. Gunfighter is thriving and potentially well treated despite his 6 lb rise, so opposition remains secondary. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -2889,7 +3170,7 @@
       "horse_id": "hrs_17390851317",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T18:45:00+00:00",
-      "lay_odds": 250,
+      "lay_odds": 16,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/dundalk/racecard/949601/irish-stallion-farms-ebf-c-g-maiden",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -2977,21 +3258,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.410063+00:00",
         "market_id": "1.265760617",
         "selection_id": 101649630,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 12.69,
-        "displayed_liquidity_gbp": 12.69,
-        "liquidity_gbp": 12.69,
+        "displayed_amount_gbp": 10.01,
+        "displayed_liquidity_gbp": 10.01,
+        "liquidity_gbp": 10.01,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -2999,20 +3280,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
-      "available_stake_gbp": 12.69,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 10.01,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 2.0080321285140563,
-        "required_stake_decimal": "2.0080321285140562248995983935742972",
-        "potential_net_profit_gbp": 1.9076305220883534,
-        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "required_stake_gbp": 33.333333333333336,
+        "required_stake_decimal": "33.33333333333333333333333333333333333333",
+        "potential_net_profit_gbp": 31.666666666666668,
+        "potential_net_profit_decimal": "31.66666666666666666666666666666666666666",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -3021,8 +3302,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -3047,6 +3328,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.429391+00:00",
+          "price": 10,
+          "displayed_amount_gbp": 18,
+          "market_id": "1.265760617",
+          "selection_id": 101649630,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+          "price": 16,
+          "displayed_amount_gbp": 10.01,
+          "market_id": "1.265760617",
+          "selection_id": 101649630,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -3055,12 +3364,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:46.655294+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:24:04.170587+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 250 to 16 (-234); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Thursday 250 was a sparse offer; this is not ordinary market shortening. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Rank Golden Idol first and Bridgetown Boy second: second and third in the same course maiden, both carrying the same 131 lb as Epic. Golden has already improved; Bridgetown must settle. Selosse is a lesser revival possibility after an unsuitable soft-ground run. Epic's own recent second and steady progress keep this on the Watchlist. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     },
     {
       "tier": "watchlist",
@@ -3080,7 +3400,7 @@
       "horse_id": "hrs_42912506",
       "race_date": "2026-11-20",
       "scheduled_off_dt": "2026-11-20T19:30:00+00:00",
-      "lay_odds": 250,
+      "lay_odds": 2.8,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-20/wolverhampton/racecard/949411/all-weather-championship-handicap",
       "interest_rank": null,
       "selected_at": "2026-11-19T16:41:31Z",
@@ -3168,21 +3488,21 @@
       "lay_price_provenance": {
         "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
         "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "7758f7a38656ccc3cea9f028e42cd6b036c379b8",
-        "snapshot_blob_sha": "a3cb452442468bb63e925170d7eb1f93a1988f8b",
-        "started_at_utc": "2026-11-19T17:15:49.928773+00:00",
-        "snapshot_retrieved_at_utc": "2026-11-19T17:15:50.425050+00:00",
-        "retrieved_at_utc": "2026-11-19T17:15:50.331449+00:00",
-        "retrieved_at": "2026-11-19T17:15:50.331449+00:00",
+        "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+        "snapshot_blob_sha": "ecf52a2bc7a4cd2cc88ae2c3d11018ffe9fc7060",
+        "started_at_utc": "2026-11-20T08:19:46.918575+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+        "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+        "retrieved_at": "2026-11-20T08:19:47.410063+00:00",
         "market_id": "1.265761001",
         "selection_id": 27961303,
         "api_field": "ex.availableToLay",
         "price_side": "LAY",
         "original_price_side": "LAY",
         "currency": "GBP",
-        "displayed_amount_gbp": 12.66,
-        "displayed_liquidity_gbp": 12.66,
-        "liquidity_gbp": 12.66,
+        "displayed_amount_gbp": 19.3,
+        "displayed_liquidity_gbp": 19.3,
+        "liquidity_gbp": 19.3,
         "is_market_data_delayed": true,
         "quote_timestamp": null,
         "exact_delay_seconds": null,
@@ -3190,20 +3510,20 @@
         "provider": "Betfair Exchange",
         "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
         "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "ADVANCE_REVIEW",
-        "race_day_capture": false,
-        "quote_quality_note": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate."
+        "capture_type": "RACE_DAY_PRICE_REFRESH",
+        "race_day_capture": true,
+        "quote_quality_note": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven."
       },
-      "source": "Betfair Exchange delayed Thursday 19 November advance capture at 17:15:50 GMT. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
-      "available_stake_gbp": 12.66,
+      "source": "Betfair Exchange delayed Friday 20 November 08:19 GMT capture. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
+      "available_stake_gbp": 19.3,
       "market_position_note": "Original timestamped bookmaker screening / explicitly labelled SL forecast retained in advance review; sparse Exchange offers are not used to infer favourite rank.",
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 2.0080321285140563,
-        "required_stake_decimal": "2.0080321285140562248995983935742972",
-        "potential_net_profit_gbp": 1.9076305220883534,
-        "potential_net_profit_decimal": "1.9076305220883534136546184738955823",
+        "required_stake_gbp": 277.77777777777777,
+        "required_stake_decimal": "277.7777777777777777777777777777777777778",
+        "potential_net_profit_gbp": 263.8888888888889,
+        "potential_net_profit_decimal": "263.8888888888888888888888888888888888889",
         "failure_gbp": -500,
         "nr_gbp": 0,
         "booked_profit_gbp": 0,
@@ -3212,8 +3532,8 @@
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
       },
       "group_membership_frozen": true,
-      "price_review_stage": "APPROVED_ADVANCE_CAPTURE_MORNING_REFRESH_EXPECTED",
-      "price_quality_warning": "Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_review_stage": "APPROVED_RACE_DAY_PRICE_REFRESH",
+      "price_quality_warning": "Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "price_observation_history": [
         {
           "snapshot_commit": "39d8fe77ec47e208f45480652fb84ec2e686bd9e",
@@ -3238,6 +3558,34 @@
           "approval_recorded_at": "2026-11-19T17:23:37.245654Z",
           "approved": true,
           "stage": "APPROVED_ADVANCE_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "982faa554858095634e207914b3363a0eef18bdc",
+          "snapshot_retrieved_at_utc": "2026-11-20T06:05:11.941635+00:00",
+          "retrieved_at_utc": "2026-11-20T06:05:11.429391+00:00",
+          "price": 2.6,
+          "displayed_amount_gbp": 15.4,
+          "market_id": "1.265761001",
+          "selection_id": 27961303,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "MORNING_REVIEW_NOT_PUBLISHED",
+          "reviewed_at": "2026-11-20T06:25:33.266078+00:00"
+        },
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.410063+00:00",
+          "price": 2.8,
+          "displayed_amount_gbp": 19.3,
+          "market_id": "1.265761001",
+          "selection_id": 27961303,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-20T08:25:47.932974Z",
+          "stage": "APPROVED_RACE_DAY_OBSERVATION"
         }
       ],
       "material_developments": [
@@ -3246,12 +3594,23 @@
           "type": "ADVANCE_PRICE_AND_RACING_REVIEW",
           "note": "Numeric Lay offer 1000 to 250 (-750); the earlier 1000 offer and/or current 250 offer is sparse-market evidence, not normal market shortening. No change to shortlisted declarations, jockeys, weights or principal-rival status found in the refreshed cards. Original Pick/Watchlist group retained.",
           "racing_evidence_retrieved_at": "2026-11-19T17:20:46.570991+00:00"
+        },
+        {
+          "observed_at": "2026-11-20T08:25:47.932974Z",
+          "racing_evidence_retrieved_at": "2026-11-20T08:24:04.260423+00:00",
+          "type": "APPROVED_RACE_DAY_PRICE_REFRESH",
+          "authorization": "Updated prices are in if you can refresh the lay odds please",
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "note": "Lay 250 to 2.8 (-247.2); comparison with Thursday frozen capture, not the unapproved 06:05 quote. Thursday 250 was a sparse offer; this is not ordinary market shortening. Racing verdict and original group retained. No principal rival withdrawn; declarations, riders and effective weights remain as reviewed."
         }
       ],
       "reason": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns. Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential.",
-      "price_record": "Frozen Thursday 19 November 17:15 GMT advance Lay quote. Only 250.0 Lay offered in sparse advance market; successful £500-liability paper lay returns £1.91. This is not a representative fair-price estimate.",
+      "price_record": "Frozen Friday 20 November 08:19 GMT race-day delayed Lay quote. Verified delayed race-day Lay offer; full-stake matching unverified. Exact quote timestamp and delay unknown; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-19T17:15:50.331449+00:00"
+      "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
+      "price_approved_at": "2026-11-20T08:25:47.932974Z",
+      "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
     }
   ]
 }
