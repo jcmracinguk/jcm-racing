@@ -38,13 +38,27 @@
   ]
  };
  const upcomingFixtures = new Map([[weekendAcca.legs[0].date, weekendAcca.legs]]);
+ // This is a review, not a frozen selection or an unsettled wager.
+ // Original proposal and quote are retained above and in the dated review record.
+ const weekendReview = {
+  status: 'PENDING_REVIEW',
+  reviewedAt: '20 Nov 2026 · 19:56 GMT',
+  historyPath: 'data/football-review-2026-11-20-evening.json',
+  note: 'No confirmed paper selections. Middlesbrough v Bristol City remains on hold until fitness and attacking availability can be verified.'
+ };
+ function reviewNotice(){
+  return '<p class="football-trial-note"><strong>' + esc(weekendReview.note) + '</strong></p>' +
+   '<p class="football-trial-note">Reviewed ' + esc(weekendReview.reviewedAt) +
+   ' · <a href="' + weekendReview.historyPath + '" target="_blank" rel="noopener">View dated review and original proposal ↗</a></p>';
+ }
  function paint(){
   const upcoming = upcomingFixtures.get(date.value);
   if (upcoming && !files.has(date.value)) {
-   panel.innerHTML = '<div class="jcm-panel-heading"><h2>Upcoming fixtures</h2></div>' +
-    '<p class="football-trial-note">' + labelDate(date.value) + ' · UK time · Provisional</p>' +
-    upcoming.map(({date: matchDate, kickoff, fixture}) => '<div class="jcm-category-row"><strong class="jcm-time">' + labelDate(matchDate) + ' · ' + esc(kickoff) + '</strong><span>' + esc(fixture) + '</span></div>').join('');
-   document.getElementById('jcm-daily-rate').textContent = labelDate(date.value) + ' · ' + upcoming.length + ' provisional fixtures';
+   panel.innerHTML = '<div class="jcm-panel-heading"><h2>Weekend BTTS review</h2></div>' +
+    reviewNotice() + '<details><summary>Previous provisional fourfold — withdrawn before kick-off</summary>' +
+    '<p class="football-trial-note">These games are retained as proposal history. None is a confirmed selection from this review.</p>' +
+    upcoming.map(({date: matchDate, kickoff, fixture}) => '<div class="jcm-category-row"><strong class="jcm-time">' + labelDate(matchDate) + ' · ' + esc(kickoff) + '</strong><span>' + esc(fixture) + '</span></div>').join('') + '</details>';
+   document.getElementById('jcm-daily-rate').textContent = labelDate(date.value) + ' · No confirmed selections';
    return;
   }
 const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML='<div class="jcm-panel-heading"><h2>Daily picks</h2><span class="jcm-accuracy">'+c.rate+'</span></div><p class="jcm-ft-note">'+c.wins+'/'+c.total+' settled · BTTS YES · tap a match for the original reasoning.</p>'+rows.slice().sort((a,b)=>a.kickoff.localeCompare(b.kickoff)||a.rank-b.rank).map(r=>{const v=result(r);return '<button type="button" class="jcm-row football-row" data-fixture-id="'+esc(r.fixture_id)+'"><span><span class="jcm-time">'+esc(r.kickoff_uk)+'</span><span class="jcm-ground">BTTS YES</span></span><span class="jcm-horse">'+teams(r)+'</span><span class="jcm-place">'+v.score+'</span><span class="jcm-status '+v.css+'">'+(v.css==='win'?'Success':v.css==='loss'?'Failure':'Pending')+'</span></button>';}).join('')+'<p class="football-trial-note">Match accuracy above. The £100 accumulator is settled separately in Bet Builder.</p>';document.getElementById('jcm-daily-rate').textContent=labelDate(date.value)+' · '+c.wins+'/'+c.total+' · '+c.rate;}
@@ -56,9 +70,7 @@ const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML=
   const wholePounds = new Intl.NumberFormat('en-GB', {style:'currency', currency:'GBP', maximumFractionDigits:0, signDisplay:'exceptZero'});
   const tone = amount => amount > 0 ? 'positive' : amount < 0 ? 'negative' : '';
   const bets = [...accaConfigs].map(([date]) => ({date,...account(date)}));
-  for (const [date, legs] of upcomingFixtures) {
-   if (!accaConfigs.has(date) && !files.has(date)) bets.push({date,legs,status:'PENDING',stake:weekendAcca.stake,net:0});
-  }
+  // Unapproved/withdrawn proposals never enter the financial ledger.
   const weeks = new Map();
   for (const bet of bets.sort((a,b)=>b.date.localeCompare(a.date))) {
    const monday = new Date(bet.date + 'T00:00:00Z');
@@ -112,12 +124,14 @@ const rows=files.get(date.value)?.selections||[],c=counts(rows);panel.innerHTML=
  function builder(d=date.value){
   const upcoming = upcomingFixtures.get(d);
   if (upcoming && !accaConfigs.has(d)) {
-   show('<h2>Football Bet Builder</h2><p>' + labelDate(d) + ' · ' + upcoming.length +
-    '-fold BTTS YES acca</p><p><strong>Paper stake ' + money(weekendAcca.stake) +
-    '</strong> · Provisional</p><table class="football-table"><thead><tr><th>Match</th><th>UK kick-off</th><th>Odds</th><th>Result</th></tr></thead><tbody>' +
+   show('<h2>Football Bet Builder</h2><p><strong>No confirmed accumulator for ' + labelDate(d) +
+    '.</strong></p>' + reviewNotice() + '<details><summary>Previous provisional fourfold — withdrawn before kick-off</summary>' +
+    '<p class="football-trial-note">Original proposed stake ' + money(weekendAcca.stake) +
+    ' · Not committed to the paper trial.</p><table class="football-table"><thead><tr><th>Match</th><th>UK kick-off</th><th>Original odds</th><th>Status</th></tr></thead><tbody>' +
     upcoming.map(leg => '<tr><td>' + esc(leg.fixture) + '</td><td>' +
-     labelDate(leg.date) + ' · ' + esc(leg.kickoff) + '</td><td>' + leg.odds.toFixed(2) + '</td><td>Pending</td></tr>').join('') +
-    '</tbody></table><p class="football-trial-note">Quoted acca odds: ' + weekendAcca.quotedOdds.toFixed(2) + ' · Return if all win: ' + money(weekendAcca.stake * weekendAcca.quotedOdds) + ' · Potential profit: ' + money(weekendAcca.stake * (weekendAcca.quotedOdds - 1)) + '. ' + esc(weekendAcca.priceSource) + '.</p>');
+     labelDate(leg.date) + ' · ' + esc(leg.kickoff) + '</td><td>' + leg.odds.toFixed(2) + '</td><td>Not selected</td></tr>').join('') +
+    '</tbody></table><p class="football-trial-note">Original quoted acca odds: ' + weekendAcca.quotedOdds.toFixed(2) +
+    '. ' + esc(weekendAcca.priceSource) + '. Historical quote only; no new stake, return or profit/loss recorded.</p></details>');
    return;
   }
   const cfg=accaConfigs.get(d),b=account(d);if(!cfg||!b){show('<h2>Football Bet Builder</h2><p>'+esc(accaError||'No priced accumulator recorded for this day.')+'</p>');return;}
