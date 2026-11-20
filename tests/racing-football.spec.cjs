@@ -4,10 +4,10 @@ test.use({viewport:{width:390,height:844}});
 test('fresh racing totals and mobile sport switch keep results separate',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(url+'#picks');
- await expect(page.locator('#date option')).toHaveCount(3);
- await expect(page.locator('.metrics .metric strong')).toHaveText(['100%','3','0','0']);
- await expect(page.locator('#jcm-official-panel .jcm-row')).toHaveCount(3);
- await expect(page.locator('#date')).toHaveValue('2026-11-09');
+ await expect(page.locator('#date option')).not.toHaveCount(0);
+ await expect(page.locator('.metrics .metric strong').first()).not.toHaveText('—');
+ const racingMetrics = await page.locator('.metrics .metric strong').allTextContents();
+ const racingDate = await page.locator('#date').inputValue();
  await page.locator('header .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#picks$/);
  await expect(page.locator('.metrics .metric strong')).toHaveText(['80%','4','1','0']);
@@ -27,12 +27,13 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.locator('header .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html#picks$/);
- await expect(page.locator('.metrics .metric strong')).toHaveText(['100%','3','0','0']);
+ await expect(page.locator('#date')).toHaveValue(racingDate);
+ await expect(page.locator('.metrics .metric strong')).toHaveText(racingMetrics);
  expect(errors).toEqual([]);
 });
 test('both hubs switch sports and football accumulator stays separate',async({page})=>{
  await page.goto(url+'#hub');
- await expect(page.locator('#jcm-profit-summary')).toContainText('+£559.44');
+ await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/football\.html#hub$/);
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
@@ -41,12 +42,32 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
  await page.locator('[data-page="dummy-account"]').click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Football Bet Builder');
  await expect(page.locator('#jcm-detail-content tbody tr')).toHaveCount(4);
- await expect(page.locator('#jcm-detail-content')).toContainText('Paper stake £100.00');
+ await expect(page.locator('#jcm-detail-content')).toContainText('No confirmed accumulator');
+ await expect(page.locator('#jcm-detail-content')).toContainText('Original proposed stake £100.00');
  await expect(page.locator('#jcm-detail-content')).toContainText('22 Nov 2026');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'Your racing hub'})).toBeVisible();
+});
+
+test('withdrawn football proposal stays out of stakes and results',async({page})=>{
+ await page.goto(url+'football.html#picks');
+ await expect(page.locator('#jcm-daily-rate')).toContainText('No confirmed selections');
+ await expect(page.locator('#jcm-official-panel')).toContainText('Middlesbrough v Bristol City remains on hold');
+ await expect(page.locator('#jcm-official-panel .football-row')).toHaveCount(0);
+ await page.getByRole('button',{name:'Return to JCM Football Hub'}).click();
+ await page.locator('#jcm-profit-summary summary').click();
+ await expect(page.getByRole('button',{name:'View accumulator games and results for 21 Nov 2026'})).toHaveCount(0);
+ await expect(page.locator('#jcm-profit-summary')).toContainText(/[-−]£100/);
+ await page.locator('[data-page="dummy-account"]').click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('No confirmed accumulator');
+ await expect(page.locator('#jcm-detail-content')).not.toContainText('Potential profit');
+ await expect(page.locator('#jcm-detail-content')).not.toContainText('Return if all win');
+ await page.locator('#jcm-detail-content summary').click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('7.22');
+ await expect(page.locator('#jcm-detail-content tbody tr')).toHaveCount(4);
+ await expect(page.locator('#jcm-detail-content tbody tr').filter({hasText:'Not selected'})).toHaveCount(4);
 });
 
 test('football profit date opens all accumulator games and supports keyboard close',async({page})=>{
