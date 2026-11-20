@@ -1815,8 +1815,8 @@
       "going": "Hurdle: soft; chase: good",
       "surface": "Turf",
       "result_status": "WIN",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 107.95454545454545,
       "race_name": "Treble Odds L15s At David Lucas Handicap Chase (GBB Race)",
       "selection_reason": {
         "summary": "Rank Minella Missile first (recent chase second; 8 lb receipt), Ben Solo second (course chase success; effective 164 lb after claim versus 168), Largy Go third (point/hurdle ability, 10 lb receipt). Minella needs to sustain his revival, Ben must improve on reappearance, and Largy is a chase debutant. Wilstar's own progressive hurdles and chasing potential matter.",
@@ -1916,7 +1916,7 @@
         "potential_net_profit_decimal": "107.9545454545454545454545454545454545454",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 107.95454545454545,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -2004,9 +2004,104 @@
       "position": "10",
       "result_source": "SPORTING_LIFE",
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race",
-      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Sogna In Grande"
+      "winner": "Sogna In Grande",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:21:09.721628+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified settlement using unchanged approved frozen Lay odds"
+        }
+      ],
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "12:57",
+      "result_course": "Chepstow",
+      "result_horse": "Wilstar",
+      "result_off_dt": "2026-11-20T12:57:00+00:00",
+      "result_race_id": "rac_32304944516",
+      "result_horse_id": "hrs_50401764",
+      "result_website_race_id": "949401",
+      "result_non_runners": [],
+      "result_website_horse_id": "1176241",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": "69.05",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Sogna In Grande",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Ben Solo",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "3",
+          "horse": "Quay Item",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "14.5"
+        },
+        {
+          "position": "4",
+          "horse": "Minella Missile",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "16.5"
+        },
+        {
+          "position": "5",
+          "horse": "Authentic Legacy",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "17.25"
+        },
+        {
+          "position": "6",
+          "horse": "Hardy Du Seuil",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "19"
+        },
+        {
+          "position": "7",
+          "horse": "Pepe Le Moko",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "26.5"
+        },
+        {
+          "position": "8",
+          "horse": "Plains Drifter",
+          "margin_from_previous": "41",
+          "cumulative_beaten_lengths": "67.5"
+        },
+        {
+          "position": "9",
+          "horse": "Largy Go",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "68.75"
+        },
+        {
+          "position": "10",
+          "horse": "Wilstar",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "69.05"
+        },
+        {
+          "position": "11",
+          "horse": "Opening Bid",
+          "margin_from_previous": "23",
+          "cumulative_beaten_lengths": "92.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-20T14:21:09.721628Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "107.9545454545454545454545454",
+      "placing": "10th",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race"
     },
     {
       "tier": "watchlist",
@@ -2047,12 +2142,12 @@
         "rival_limitations": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
         "why_verdict_survives": "Retain Watchlist after the advance quote/racing review; the original improvement and rival limitations remain consequential."
       },
-      "field_size": 6,
+      "field_size": 5,
       "going": "Good-good to firm in places",
       "surface": "Turf",
       "result_status": "WIN",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 244.84536082474227,
       "race_name": "Bet With Ascot Donation Box Winners 'Introductory' Hurdle (GBB Race)",
       "selection_reason": {
         "summary": "Rank Spanish Stroll and Without Burlington first and second: actual hurdle wins, both carrying 161 lb against 156. Premiere Ligne is a transferable Flat/stamina possibility with jumping limitations. Push's smart Flat form, debut hurdle third and 5 lb receipt could be enough after ordinary improvement. Second racing review completed; no automatic promotion from one odds-on defeat.",
@@ -2152,7 +2247,7 @@
         "potential_net_profit_decimal": "244.8453608247422680412371134020618556701",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 244.84536082474227,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -2240,9 +2335,70 @@
       "position": "3",
       "result_source": "SPORTING_LIFE",
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race",
-      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Spanish Stroll"
+      "winner": "Spanish Stroll",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:21:09.721628+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified settlement using unchanged approved frozen Lay odds"
+        }
+      ],
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "13:20",
+      "result_course": "Ascot",
+      "result_horse": "Push The Limit",
+      "result_off_dt": "2026-11-20T13:20:00+00:00",
+      "result_race_id": "rac_32304901902",
+      "result_horse_id": "hrs_45982384",
+      "result_website_race_id": "949394",
+      "result_non_runners": [
+        "Prometeo"
+      ],
+      "result_website_horse_id": "1162357",
+      "winning_margin_lengths": "6 ½",
+      "selected_beaten_lengths": "19.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Spanish Stroll",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Without Burlington",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "3",
+          "horse": "Push The Limit",
+          "margin_from_previous": "13",
+          "cumulative_beaten_lengths": "19.5"
+        },
+        {
+          "position": "4",
+          "horse": "Premiere Ligne",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "31.5"
+        },
+        {
+          "position": "5",
+          "horse": "Expressionless",
+          "margin_from_previous": "58",
+          "cumulative_beaten_lengths": "89.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race",
+      "margin_retrieved_at": "2026-11-20T14:21:09.721628Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "244.8453608247422680412371134",
+      "placing": "3rd",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race"
     },
     {
       "tier": "watchlist",

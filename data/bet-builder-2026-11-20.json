@@ -63,7 +63,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 260.989010989011,
       "race_name": "Guaranteed Odds At David Lucas Bookmakers Novices' Hurdle (GBB Race) (Div 1)",
       "selection_reason": {
         "summary": "Faces demonstrated hurdle form rather than merely promising pedigrees. His Chepstow win and Ascot seventh were bumpers, not hurdle starts.",
@@ -163,7 +163,7 @@
         "potential_net_profit_decimal": "260.9890109890109890109890109890109890110",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 260.989010989011,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -251,7 +251,7 @@
       "result_course": "Chepstow",
       "result_horse": "Sea The Day",
       "result_off_dt": "2026-11-20T11:50:00+00:00",
-      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "result_race_id": "rac_32304940642",
       "result_horse_id": "hrs_57653547",
       "result_website_race_id": "949399",
@@ -337,10 +337,20 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949399/guaranteed-odds-at-david-lucas-bookmakers-novices-hurdle-gbb-race-div-1",
-      "margin_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "margin_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "3rd"
+      "placing": "3rd",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:21:09.721628+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified settlement using unchanged approved frozen Lay odds"
+        }
+      ],
+      "booked_profit_decimal": "260.9890109890109890109890110",
+      "winner": "Herbies Sock",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949399/guaranteed-odds-at-david-lucas-bookmakers-novices-hurdle-gbb-race-div-1"
     },
     {
       "tier": "selection",
@@ -381,12 +391,12 @@
         "rival_limitations": "Lejo Du Seuil: Recent Newbury handicap fourth; same 158 lb effective weight and a class drop. Longer trip still requires transfer. Lully Du Houx: Recent heavy-ground handicap winner; 157 lb. Up 6 lb and has yet to demonstrate this longer trip. Crystal Orchard: Recent hurdle second and Exeter third; 156 lb. Has jumping flaws and still needs handicap improvement.",
         "why_verdict_survives": "The first two supply concrete competitive evidence. The 1 lb rating difference between Majeur and Lejo is effectively accommodated by the age/weight terms, not a free advantage. Do not count Crystal's speculative improvement equally."
       },
-      "field_size": 12,
+      "field_size": 11,
       "going": "Hurdle: soft; chase: good",
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 101.06382978723404,
       "race_name": "Albert Bartlett Triple Crown Series Handicap Hurdle (Qualifier)",
       "selection_reason": {
         "summary": "Lejo Du Seuil brings a recent fourth in a stronger handicap; Lully Du Houx has already won on testing ground. The favourite's case rests more on further progress.",
@@ -486,7 +496,7 @@
         "potential_net_profit_decimal": "101.0638297872340425531914893617021276595",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 101.06382978723404,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -574,7 +584,7 @@
       "result_course": "Chepstow",
       "result_horse": "Majeur Allen",
       "result_off_dt": "2026-11-20T13:32:00+00:00",
-      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "result_race_id": "rac_32304946453",
       "result_horse_id": "hrs_59335836",
       "result_website_race_id": "949402",
@@ -638,10 +648,20 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949402/albert-bartlett-triple-crown-series-handicap-hurdle-qualifier",
-      "margin_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "margin_retrieved_at": "2026-11-20T14:21:09.721628Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "5th"
+      "placing": "5th",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:21:09.721628+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified settlement using unchanged approved frozen Lay odds"
+        }
+      ],
+      "booked_profit_decimal": "101.0638297872340425531914894",
+      "winner": "Lully Du Houx",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949402/albert-bartlett-triple-crown-series-handicap-hurdle-qualifier"
     },
     {
       "tier": "selection",

@@ -55,6 +55,31 @@ def clean_distance(value):
     return text or None
 
 
+def booked_accounting(row, status):
+    """Book verified modern paper rows at their frozen price, never reprice history."""
+    if not isinstance(row.get('simulation'), dict):
+        return {}
+    simulation = copy.deepcopy(row['simulation'])
+    if row.get('result_status') == status and row.get('booked_profit_gbp') not in (None, 0):
+        # Existing nonzero historical accounting may use per-race penny rounding.
+        # Preserve that basis; only synchronise a stale companion simulation field.
+        profit = Decimal(str(row['booked_profit_gbp']))
+    elif status in ('PENDING', 'NR'):
+        profit = Decimal('0')
+    elif status == 'LOSS':
+        profit = -Decimal(str(simulation['liability_gbp']))
+    elif status == 'WIN':
+        odds = Decimal(str(row['lay_odds']))
+        if not odds.is_finite() or odds <= 1:
+            raise ValueError('Invalid frozen Lay odds for accounting')
+        profit = (Decimal(str(simulation['liability_gbp'])) /
+                  (odds - 1) * (1 - Decimal(str(simulation['commission_rate']))))
+    else:
+        raise ValueError('Unknown paper outcome')
+    simulation['booked_profit_gbp'] = float(profit)
+    return dict(booked_profit_gbp=float(profit), booked_profit_decimal=str(profit), simulation=simulation)
+
+
 def distance_number(value):
     """Convert standard racing margins to lengths solely for cumulative display."""
     text = clean_distance(value)
@@ -216,6 +241,7 @@ def result(row, page, url, now):
     if amended_result:
         update['result_amended'] = True
     update.update(margin_data)
+    update.update(booked_accounting(row, status))
     n = int(position) if position.isdigit() else 0
     suffix = 'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')
     update['placing'] = str(n) + suffix if n else position
@@ -250,6 +276,17 @@ def settle_watch_list(now, write, links_by_day):
     pending = []
     for row in ledger['entries']:
         if row['result_status'] != 'PENDING':
+            # Repair stale monetary fields only for recent explicitly verified rows.
+            if (row.get('result_source') == 'SPORTING_LIFE'
+                    and str(now.date() - timedelta(days=3)) <= row.get('race_date', '') <= str(now.date())):
+                accounting = booked_accounting(row, row['result_status'])
+                if accounting and (row.get('booked_profit_gbp') != accounting['booked_profit_gbp']
+                                   or row['simulation'].get('booked_profit_gbp') != accounting['booked_profit_gbp']):
+                    row.setdefault('accounting_history', []).append(dict(
+                        corrected_at=now.isoformat(), previous_booked_profit_gbp=row.get('booked_profit_gbp'),
+                        reason='Reconcile verified result at unchanged frozen Lay price'))
+                    row.update(accounting)
+                    changes += 1
             continue
         off = datetime.fromisoformat(row['scheduled_off_dt'])
         if now < off + timedelta(minutes=10):
@@ -261,9 +298,7 @@ def settle_watch_list(now, write, links_by_day):
         except (ValueError, KeyError, OSError) as error:
             pending.append(row['race_date'] + ' ' + row['horse'] + ': ' + str(error))
             continue
-        row.update({key: update[key] for key in (
-            'position', 'result_status', 'result_source', 'result_source_url',
-            'result_retrieved_at', 'result_stage')})
+        row.update(update)
         row['winner'] = detail['winner']
         changes += 1
         print(row['race_date'], row['horse'], 'Watch List', row['result_status'])
@@ -342,6 +377,8 @@ def main():
                     print(day, row['horse'], 'verified margins reconciled')
                     continue
                 comparison_keys = ('position', 'result_status', 'result_source_url', 'result_stage') + margin_keys
+                if 'booked_profit_gbp' in update:
+                    comparison_keys += ('booked_profit_gbp', 'simulation')
                 if update.get('result_amended'):
                     comparison_keys += ('result_amended',)
                 if all(row.get(k) == update[k] for k in comparison_keys) and all(companions[0].get(k) == detail[k] for k in margin_keys):

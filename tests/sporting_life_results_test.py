@@ -8,6 +8,28 @@ m = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(m)
 
 class Results(unittest.TestCase):
+    def test_frozen_paper_accounting_outcomes_and_pending(self):
+        row = dict(lay_odds=2.82, simulation=dict(liability_gbp=500, commission_rate=.05, booked_profit_gbp=0))
+        original = copy.deepcopy(row)
+        self.assertAlmostEqual(m.booked_accounting(row, 'WIN')['booked_profit_gbp'], 260.989010989011)
+        self.assertEqual(m.booked_accounting(row, 'LOSS')['booked_profit_gbp'], -500)
+        self.assertEqual(m.booked_accounting(row, 'NR')['booked_profit_gbp'], 0)
+        self.assertEqual(m.booked_accounting(row, 'PENDING')['booked_profit_gbp'], 0)
+        self.assertEqual(row, original)
+
+    def test_verified_result_books_nested_and_top_level_profit(self):
+        self.row.update(lay_odds=5.7, simulation=dict(liability_gbp=500, commission_rate=.05, booked_profit_gbp=0))
+        update = self.parse()
+        self.assertAlmostEqual(update['booked_profit_gbp'], 101.063829787234)
+        self.assertEqual(update['simulation']['booked_profit_gbp'], update['booked_profit_gbp'])
+
+    def test_historical_penny_accounting_is_preserved(self):
+        row = dict(result_status='WIN', booked_profit_gbp=226.19, lay_odds=3.1,
+                   simulation=dict(liability_gbp=500, commission_rate=.05, booked_profit_gbp=0))
+        update = m.booked_accounting(row, 'WIN')
+        self.assertEqual(update['booked_profit_gbp'], 226.19)
+        self.assertEqual(update['simulation']['booked_profit_gbp'], 226.19)
+
     def setUp(self):
         self.row = dict(race_date='2026-10-27', off_time_uk='14:31', course='Newcastle', horse='Silver Hill', scheduled_off_dt='2026-10-27T14:31:00+00:00', race_id='rac_1', horse_id='hrs_1')
         self.url = 'https://www.sportinglife.com/racing/results/2026-10-27/newcastle/945555/test-race'
