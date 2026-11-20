@@ -69,6 +69,21 @@ class Results(unittest.TestCase):
         self.page['race']['rides'][3]['finish_position']=0
         with self.assertRaises(ValueError):self.parse()
 
+    def test_explicit_noncompletion_settles_without_invented_margin(self):
+        self.row.update(lay_odds=13, simulation=dict(liability_gbp=500, commission_rate=.05, booked_profit_gbp=0))
+        ride = self.page['race']['rides'][3]
+        ride.update(finish_position=0, finish_distance=None)
+        for reason, code in [('PulledUp','PU'), ('Fell','F'), ('UnseatedRider','UR')]:
+            ride['casualty'] = {'reason': reason}
+            update = self.parse()
+            self.assertEqual(update['position'], code)
+            self.assertEqual(update['result_status'], 'WIN')
+            self.assertIsNone(update['selected_beaten_lengths'])
+            self.assertAlmostEqual(update['booked_profit_gbp'], 39.5833333333333)
+            self.assertEqual(update['finish_margins'][-1]['position'], code)
+        ride['casualty'] = {'reason': 'Unknown'}
+        with self.assertRaises(ValueError): self.parse()
+
     def test_bst_source_utc_matches_exact_scheduled_instant(self):
         self.row.update(race_date='2026-10-24', off_time_uk='16:05',
                         scheduled_off_dt='2026-10-24T16:05:00+01:00')

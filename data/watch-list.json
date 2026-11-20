@@ -2782,9 +2782,9 @@
       "field_size": 7,
       "going": "Good-good to firm in places",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
       "race_name": "Bet Responsibly With Ladbrokes Open NH Flat Race (GBB Race)",
       "selection_reason": {
         "summary": "Rank Dennis's Honor first (Cheltenham bumper second; 153 lb after claim versus 156), Persian Art second (recent win; 160), Parisian Fair third (bumper winner; 160). Dennis benefited from a true pace; the winners carry penalties. Power's narrow Ballinrobe debut second and plausible improvement remain substantial. Bielle Biarrey's point fall is not a bumper win.",
@@ -2884,7 +2884,7 @@
         "potential_net_profit_decimal": "325.3424657534246575342465753424657534246",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -2968,7 +2968,72 @@
       "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "1",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "15:40",
+      "result_course": "Ascot",
+      "result_horse": "Power Steering",
+      "result_off_dt": "2026-11-20T15:40:00+00:00",
+      "result_retrieved_at": "2026-11-20T17:31:59.452522Z",
+      "result_race_id": "rac_32304909650",
+      "result_horse_id": "hrs_65069039",
+      "result_website_race_id": "949398",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949398/bet-responsibly-with-ladbrokes-open-nh-flat-race-gbb-race",
+      "result_non_runners": [
+        "Bielle Biarrey"
+      ],
+      "result_website_horse_id": "1225450",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Power Steering",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Persian Art",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Dennis's Honor",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Knowonelikesus",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "4.75"
+        },
+        {
+          "position": "5",
+          "horse": "Parisian Fair",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "5.25"
+        },
+        {
+          "position": "6",
+          "horse": "Irish Ocean",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "6.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949398/bet-responsibly-with-ladbrokes-open-nh-flat-race-gbb-race",
+      "margin_retrieved_at": "2026-11-20T17:31:59.452522Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "-500",
+      "placing": "1st",
+      "winner": "Power Steering"
     },
     {
       "tier": "watchlist",
@@ -3012,9 +3077,9 @@
       "field_size": 5,
       "going": "Standard",
       "surface": "Tapeta",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
       "race_name": "Midnite: Built For 2026 Not 2006 Novice Stakes (GBB Race)",
       "selection_reason": {
         "summary": "Butterfly Beach's recent AW second and Frantic's handicap experience provide the principal opposition at the same 128 lb. Butterfly also returns from an absence and Frantic may lack 5f speed. Oliaku's recent poor run followed 17 months off on soft turf; fitter on AW with Loughnane is a coherent counterargument, not disproven ability.",
@@ -3114,7 +3179,7 @@
         "potential_net_profit_decimal": "182.6923076923076923076923076923076923077",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -3198,7 +3263,66 @@
       "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "1",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "17:00",
+      "result_course": "Wolverhampton",
+      "result_horse": "Oliaku",
+      "result_off_dt": "2026-11-20T17:00:00+00:00",
+      "result_retrieved_at": "2026-11-20T17:31:59.452522Z",
+      "result_race_id": "rac_32304927083",
+      "result_horse_id": "hrs_52995215",
+      "result_website_race_id": "949406",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949406/midnite-built-for-2026-not-2006-novice-stakes-gbb-race",
+      "result_non_runners": [
+        "Valor's Call"
+      ],
+      "result_website_horse_id": "1185674",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Oliaku",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Frantic",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Butterfly Beach",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "2"
+        },
+        {
+          "position": "4",
+          "horse": "Beatrice Briannie",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "7"
+        },
+        {
+          "position": "5",
+          "horse": "Navona Grey",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "7.3"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949406/midnite-built-for-2026-not-2006-novice-stakes-gbb-race",
+      "margin_retrieved_at": "2026-11-20T17:31:59.452522Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "-500",
+      "placing": "1st",
+      "winner": "Oliaku"
     },
     {
       "tier": "watchlist",

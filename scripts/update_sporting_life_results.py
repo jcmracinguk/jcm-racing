@@ -210,13 +210,20 @@ def result(row, page, url, now):
     else:
         position = str(official_position(ride) or '')
         if not position.isdigit() or int(position) < 1:
-            raise ValueError('Non-numeric finish needs manual review; left pending')
+            # Only explicit provider casualty evidence supports a non-completion.
+            position = {'PulledUp': 'PU', 'Fell': 'F', 'UnseatedRider': 'UR'}.get(
+                (ride.get('casualty') or {}).get('reason'))
+            if not position:
+                raise ValueError('Non-numeric finish needs manual review; left pending')
         status = 'LOSS' if position == '1' else 'WIN'
     winners = [r['horse']['name'] for r in rides if official_position(r) == 1 and r.get('ride_status') == 'RUNNER']
     if not winners:
         raise ValueError('Winner not explicit')
     stamp = now.isoformat().replace('+00:00', 'Z')
     winning_margin, selected_beaten, finish_margins = margins(rides, ride, winners)
+    if position in ('PU', 'F', 'UR'):
+        finish_margins.append(dict(position=position, horse=ride['horse']['name'],
+                                   margin_from_previous=None, cumulative_beaten_lengths=None))
     margin_data = dict(
         winning_margin_lengths=winning_margin,
         selected_beaten_lengths=selected_beaten,

@@ -17,7 +17,8 @@ permissions:
   contents: write
   pages: write
 concurrency:
-  group: sporting-life-results
+  # A heavily delayed morning sweep must not cancel a daytime watcher.
+  group: ${{ github.event.schedule == '15 6 * * *' && 'sporting-life-results-reconcile' || 'sporting-life-results-watch' }}
   cancel-in-progress: true
 jobs:
   results:
