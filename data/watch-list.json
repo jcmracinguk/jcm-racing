@@ -4024,9 +4024,9 @@
       "field_size": 10,
       "going": "Standard",
       "surface": "Tapeta",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
       "race_name": "All Weather Championship Handicap",
       "selection_reason": {
         "summary": "Secret Santa is first opposition: strong large-field Ascot handicap win and 123 lb against 134, but untried at 7f/AW after an absence. Sword is second: recent win, effective 119 lb after claim, but unreliable. Dapper Guest is third: behind Asuka last time and must reverse form. Asuka's recent AW win is a strong positive; stall 10 and 4 lb rise are supporting concerns.",
@@ -4126,7 +4126,7 @@
         "potential_net_profit_decimal": "263.8888888888888888888888888888888888889",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -4210,7 +4210,90 @@
       "price_observed_at": "2026-11-20T08:19:47.410063+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "1",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "19:30",
+      "result_course": "Wolverhampton",
+      "result_horse": "Asuka",
+      "result_off_dt": "2026-11-20T19:30:00+00:00",
+      "result_retrieved_at": "2026-11-20T19:43:40.317163Z",
+      "result_race_id": "rac_32304934831",
+      "result_horse_id": "hrs_42912506",
+      "result_website_race_id": "949411",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949411/all-weather-championship-handicap",
+      "result_non_runners": [
+        "Dapper Guest"
+      ],
+      "result_website_horse_id": "1151015",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Asuka",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Secret Santa",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Rogue Messiah",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "4",
+          "horse": "Dandy Style",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "5.75"
+        },
+        {
+          "position": "5",
+          "horse": "Sword",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "6",
+          "horse": "Tremolo",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "6.8"
+        },
+        {
+          "position": "7",
+          "horse": "Carnival Of Light",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "7.3"
+        },
+        {
+          "position": "8",
+          "horse": "Mubasimah",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "8.55"
+        },
+        {
+          "position": "9",
+          "horse": "Sea Baaeed",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "10.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/wolverhampton/949411/all-weather-championship-handicap",
+      "margin_retrieved_at": "2026-11-20T19:43:40.317163Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_decimal": "-500",
+      "placing": "1st",
+      "winner": "Asuka"
     }
   ]
 }
