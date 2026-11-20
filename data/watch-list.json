@@ -587,7 +587,7 @@
       "surface": "Turf",
       "result_status": "LOSS",
       "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": -500.0,
       "race_name": "Golwg Gwendraeth Beginners' Steeple Chase (GBB Race)",
       "selection_reason": {
         "summary": "Old Park Star beat Sober Glory in the Supreme and carries the same 11 st 4 lb. His hurdle rating is 155 against Sober Glory's 153. Baron Noir also has Grade 1 hurdle form and finished ahead of Sober Glory at Aintree. Both provide credible competition on chase debut.",
@@ -642,7 +642,7 @@
         "required_stake_gbp": 263.15789473684214,
         "potential_net_profit_gbp": 250,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -656,7 +656,15 @@
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/ffos-las/949060/golwg-gwendraeth-beginners-chase-gbb-race",
       "result_retrieved_at": "2026-11-18T15:43:03.532698Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Sober Glory"
+      "winner": "Sober Glory",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:23:18.368824+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified result at unchanged frozen Lay price"
+        }
+      ],
+      "booked_profit_decimal": "-500"
     },
     {
       "tier": "watchlist",
@@ -694,7 +702,7 @@
       "surface": "Turf",
       "result_status": "WIN",
       "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 67.85714285714286,
       "race_name": "3A's Leisure Novices' Handicap Hurdle Race",
       "selection_reason": {
         "summary": "No Boundaries can build on his promising return, while Yorgunnabeplucky comes off a second and receives 3 lb. For Old Times Sake is shortest in the refreshed exchange snapshot and could improve for his return. Wispit Twob's earlier form was inconsistent before her latest win.",
@@ -750,7 +758,7 @@
         "required_stake_gbp": 71.42857142857143,
         "potential_net_profit_gbp": 67.85714285714286,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 67.85714285714286,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -764,7 +772,15 @@
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/ffos-las/949063/3as-leisure-novices-handicap-hurdle",
       "result_retrieved_at": "2026-11-18T15:43:03.532698Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Neeps And Tatties"
+      "winner": "Neeps And Tatties",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:23:18.368824+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified result at unchanged frozen Lay price"
+        }
+      ],
+      "booked_profit_decimal": "67.85714285714285714285714286"
     },
     {
       "tier": "watchlist",
@@ -802,7 +818,7 @@
       "surface": "Polytrack",
       "result_status": "WIN",
       "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 250.0,
       "race_name": "Unibet/British Stallion Studs EBF Restricted Novice Stakes (For Horses In Bands B, C And D) (Rider Restricted Race) (Div I) (GBB Race)",
       "selection_reason": {
         "summary": "Tredegar Square has won at Kempton over 7f and concedes only 1 lb, giving him a specific route through proven Polytrack ability. Gliding Martha showed debut promise and receives 5 lb. Livorno could improve from his debut fifth.",
@@ -858,7 +874,7 @@
         "required_stake_gbp": 263.15789473684214,
         "potential_net_profit_gbp": 250,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 250.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -872,7 +888,15 @@
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949596/unibetbritish-stallion-studs-ebf-restricted-novice-stakes-gbb-race-div-1",
       "result_retrieved_at": "2026-11-18T18:47:37.879515Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Gliding Martha"
+      "winner": "Gliding Martha",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:23:18.368824+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified result at unchanged frozen Lay price"
+        }
+      ],
+      "booked_profit_decimal": "250.0000000000000000000000000"
     },
     {
       "tier": "watchlist",
@@ -910,7 +934,7 @@
       "surface": "Polytrack",
       "result_status": "WIN",
       "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "booked_profit_gbp": 190.0,
       "race_name": "Try Unibet's New VAR Goal Guarantee Handicap Stakes (London Mile Series Qualifier) (Rider Restricted Race)",
       "selection_reason": {
         "summary": "Princling receives 5 lb and was an encouraging third at Ascot after being gelded, having to wait for room. Hard Endeavor has a Kempton course-and-distance win and receives 2 lb after his 7 lb claim. Ebt's Guard brings recent placed form and carries 6 lb more than Palladas after his 5 lb claim.",
@@ -966,7 +990,7 @@
         "required_stake_gbp": 200,
         "potential_net_profit_gbp": 190,
         "failure_gbp": -500,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 190.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -980,7 +1004,15 @@
       "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-18/kempton/949069/try-unibets-new-var-goal-guarantee-handicap",
       "result_retrieved_at": "2026-11-18T19:18:08.254086Z",
       "result_stage": "WEIGHEDIN",
-      "winner": "Princling"
+      "winner": "Princling",
+      "accounting_history": [
+        {
+          "corrected_at": "2026-11-20T14:23:18.368824+00:00",
+          "previous_booked_profit_gbp": 0,
+          "reason": "Reconcile verified result at unchanged frozen Lay price"
+        }
+      ],
+      "booked_profit_decimal": "190.0"
     },
     {
       "tier": "watchlist",
