@@ -61,8 +61,8 @@
       "field_size": 14,
       "going": "Hurdle: soft; chase: good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Guaranteed Odds At David Lucas Bookmakers Novices' Hurdle (GBB Race) (Div 1)",
       "selection_reason": {
@@ -243,7 +243,104 @@
       ],
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "11:50",
+      "result_course": "Chepstow",
+      "result_horse": "Sea The Day",
+      "result_off_dt": "2026-11-20T11:50:00+00:00",
+      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_race_id": "rac_32304940642",
+      "result_horse_id": "hrs_57653547",
+      "result_website_race_id": "949399",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949399/guaranteed-odds-at-david-lucas-bookmakers-novices-hurdle-gbb-race-div-1",
+      "result_non_runners": [],
+      "result_website_horse_id": "1202408",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": "2.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Herbies Sock",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Common Sense",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Sea The Day",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "2.25"
+        },
+        {
+          "position": "4",
+          "horse": "Passage Guenot",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "17.25"
+        },
+        {
+          "position": "5",
+          "horse": "Littlebobbydazzler",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "19.75"
+        },
+        {
+          "position": "6",
+          "horse": "Lingering Glance",
+          "margin_from_previous": "30",
+          "cumulative_beaten_lengths": "49.75"
+        },
+        {
+          "position": "7",
+          "horse": "Beau Merle",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "51"
+        },
+        {
+          "position": "8",
+          "horse": "Commander King",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "66"
+        },
+        {
+          "position": "9",
+          "horse": "Debrave Soldier",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "66.75"
+        },
+        {
+          "position": "10",
+          "horse": "Sears Crossing",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "71.25"
+        },
+        {
+          "position": "11",
+          "horse": "Clonagoose",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "90.25"
+        },
+        {
+          "position": "12",
+          "horse": "Barrow Hill Lad",
+          "margin_from_previous": "39",
+          "cumulative_beaten_lengths": "129.25"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949399/guaranteed-odds-at-david-lucas-bookmakers-novices-hurdle-gbb-race-div-1",
+      "margin_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     },
     {
       "tier": "selection",
@@ -287,8 +384,8 @@
       "field_size": 12,
       "going": "Hurdle: soft; chase: good",
       "surface": "Turf",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 0,
       "race_name": "Albert Bartlett Triple Crown Series Handicap Hurdle (Qualifier)",
       "selection_reason": {
@@ -469,7 +566,82 @@
       ],
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "5",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-20",
+      "result_off_time_uk": "13:32",
+      "result_course": "Chepstow",
+      "result_horse": "Majeur Allen",
+      "result_off_dt": "2026-11-20T13:32:00+00:00",
+      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_race_id": "rac_32304946453",
+      "result_horse_id": "hrs_59335836",
+      "result_website_race_id": "949402",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949402/albert-bartlett-triple-crown-series-handicap-hurdle-qualifier",
+      "result_non_runners": [
+        "Can You Hear Me"
+      ],
+      "result_website_horse_id": "1208459",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "4 ¼",
+      "selected_beaten_lengths": "18",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Lully Du Houx",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "King Of The Road",
+          "margin_from_previous": "4 ¼",
+          "cumulative_beaten_lengths": "4.25"
+        },
+        {
+          "position": "3",
+          "horse": "Lejo Du Seuil",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "4",
+          "horse": "Mulinas",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "8.5"
+        },
+        {
+          "position": "5",
+          "horse": "Majeur Allen",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "18"
+        },
+        {
+          "position": "6",
+          "horse": "Lets Go To Vegas",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "23.5"
+        },
+        {
+          "position": "7",
+          "horse": "Crystal Orchard",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "31.5"
+        },
+        {
+          "position": "8",
+          "horse": "Laurier Des Obeaux",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "32.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949402/albert-bartlett-triple-crown-series-handicap-hurdle-qualifier",
+      "margin_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "5th"
     },
     {
       "tier": "selection",

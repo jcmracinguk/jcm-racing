@@ -1814,7 +1814,7 @@
       "field_size": 11,
       "going": "Hurdle: soft; chase: good",
       "surface": "Turf",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "Treble Odds L15s At David Lucas Handicap Chase (GBB Race)",
@@ -2000,7 +2000,13 @@
       "price_observed_at": "2026-11-20T08:19:47.289978+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "10",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/chepstow/949401/treble-odds-l15s-at-david-lucas-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Sogna In Grande"
     },
     {
       "tier": "watchlist",
@@ -2044,7 +2050,7 @@
       "field_size": 6,
       "going": "Good-good to firm in places",
       "surface": "Turf",
-      "result_status": "PENDING",
+      "result_status": "WIN",
       "verification_status": "PENDING",
       "booked_profit_gbp": 0,
       "race_name": "Bet With Ascot Donation Box Winners 'Introductory' Hurdle (GBB Race)",
@@ -2230,7 +2236,13 @@
       "price_observed_at": "2026-11-20T08:19:47.289978+00:00",
       "price_approved_at": "2026-11-20T08:25:47.932974Z",
       "price_approval_text": "Updated prices are in if you can refresh the lay odds please",
-      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable."
+      "price_approval_time_note": "Approval recorded in this refresh turn; exact user message arrival time unavailable.",
+      "position": "3",
+      "result_source": "SPORTING_LIFE",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-20/ascot/949394/bet-with-ascot-donation-box-winners-introductory-hurdle-gbb-race",
+      "result_retrieved_at": "2026-11-20T14:19:23.565602Z",
+      "result_stage": "WEIGHEDIN",
+      "winner": "Spanish Stroll"
     },
     {
       "tier": "watchlist",
