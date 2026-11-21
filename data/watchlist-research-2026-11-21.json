@@ -47,7 +47,7 @@
             "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
             "snapshot_path": "data/delayed-quotes-latest.json",
             "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
-            "snapshot_blob_sha": null,
+            "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
             "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
             "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
             "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
@@ -81,7 +81,7 @@
             "potential_net_profit_decimal": "215.9090909090909090909090909",
             "failure_gbp": -500,
             "nr_gbp": 0,
-            "booked_profit_gbp": 0,
+            "booked_profit_gbp": 215.9090909090909,
             "full_stake_match_verified": false,
             "value_status": "UNPROVEN",
             "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -103,15 +103,23 @@
               "evidence_and_limitations": "another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge."
             }
           ],
-          "result_status": "PENDING",
-          "booked_profit_gbp": 0,
-          "result_history": [],
+          "result_status": "WIN",
+          "booked_profit_gbp": 215.9090909090909,
+          "result_history": [
+            {
+              "observed_at": "2026-11-21T15:55:27.830604+00:00",
+              "previous_status": "PENDING",
+              "previous_booked_profit_gbp": 0
+            }
+          ],
           "group": "Watchlist",
-          "actual_winner": null,
-          "winner_named": null,
-          "winner_original_challenger_rank": null,
-          "mechanism_evaluation": "PENDING",
-          "material_withdrawals": []
+          "actual_winner": "We're Red And Blue",
+          "winner_named": true,
+          "winner_original_challenger_rank": 2,
+          "mechanism_evaluation": "Successful Watchlist lay, second and beaten 2.5 lengths. Second-ranked We’re Red And Blue won, supporting that specific chase-improvement route. First-ranked Milan Tino fell at the first; third-ranked Tigers Moon was hampered there and fell three out. Kykorock made early jumping errors but kept on into second. This does not establish that his 8 lb rise stopped him or that progressive chase winners should routinely be opposed. The failed-rival casualties limit comparison. Keep its Watchlist group and frozen 3.20 quote.",
+          "material_withdrawals": [],
+          "result_observed_at": "2026-11-21T15:52:26.036039+00:00",
+          "position": "2"
         },
         {
           "horse": "Vanderpoel",
@@ -127,7 +135,7 @@
             "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
             "snapshot_path": "data/delayed-quotes-latest.json",
             "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
-            "snapshot_blob_sha": null,
+            "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
             "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
             "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
             "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
@@ -161,7 +169,7 @@
             "potential_net_profit_decimal": "258.1521739130434782608695652",
             "failure_gbp": -500,
             "nr_gbp": 0,
-            "booked_profit_gbp": 0,
+            "booked_profit_gbp": -500.0,
             "full_stake_match_verified": false,
             "value_status": "UNPROVEN",
             "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -183,15 +191,23 @@
               "evidence_and_limitations": "Red Rum winner, 159 lb. His 9 lb receipt offsets a 9 lb rating gap; fresh form is a route, not certain fitness."
             }
           ],
-          "result_status": "PENDING",
-          "booked_profit_gbp": 0,
-          "result_history": [],
+          "result_status": "LOSS",
+          "booked_profit_gbp": -500.0,
+          "result_history": [
+            {
+              "observed_at": "2026-11-21T15:55:27.830604+00:00",
+              "previous_status": "PENDING",
+              "previous_booked_profit_gbp": 0
+            }
+          ],
           "group": "Pick",
-          "actual_winner": null,
-          "winner_named": null,
+          "actual_winner": "Vanderpoel",
+          "winner_named": false,
           "winner_original_challenger_rank": null,
-          "mechanism_evaluation": "PENDING",
-          "material_withdrawals": []
+          "mechanism_evaluation": "Failed Pick. Won by a short head from Sans Bruit; first-ranked Martator was third, 2.6 lengths behind the winner using Sporting Life cumulative margins. The proposed 4 lb swing did not reverse their previous order. Calico fell and Ryan’s Rocket was explicitly BroughtDown on Sporting Life; Racing API uses F for Ryan’s Rocket. Retain that provider distinction and prefer the explicit Sporting Life casualty evidence. These casualties limit evaluation of the full three-rival case, not settlement of Vanderpoel’s win. Sans Bruit, outside the principal three, came closest. Running comments were blank, so do not invent how Vanderpoel won or the timing/cause of the casualties. Recognised post-wind-operation progress remained consequential; neither a 7 lb rise nor a claim guaranteed vulnerability.",
+          "material_withdrawals": [],
+          "result_observed_at": "2026-11-21T15:52:26.457515+00:00",
+          "position": "1"
         }
       ],
       "definition_preserved": true,
@@ -219,7 +235,16 @@
         3.2,
         2.84
       ],
-      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold."
+      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold.",
+      "post_race_evaluations": [
+        {
+          "observed_at": "2026-11-21T15:55:27.830604+00:00",
+          "audit_record": "data/post-race-review-2026-11-21.json",
+          "observations": 2,
+          "promotion": "NOT_PROPOSED",
+          "reason": "First small prospective batch only; repeat conditions, prices and counterexamples need subsequent evidence."
+        }
+      ]
     },
     {
       "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -255,7 +280,7 @@
             "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
             "snapshot_path": "data/delayed-quotes-latest.json",
             "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
-            "snapshot_blob_sha": null,
+            "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
             "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
             "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
             "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
@@ -289,7 +314,7 @@
             "potential_net_profit_decimal": "289.6341463414634146341463415",
             "failure_gbp": -500,
             "nr_gbp": 0,
-            "booked_profit_gbp": 0,
+            "booked_profit_gbp": -500.0,
             "full_stake_match_verified": false,
             "value_status": "UNPROVEN",
             "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -311,15 +336,27 @@
               "evidence_and_limitations": "useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential."
             }
           ],
-          "result_status": "PENDING",
-          "booked_profit_gbp": 0,
-          "result_history": [],
+          "result_status": "LOSS",
+          "booked_profit_gbp": -500.0,
+          "result_history": [
+            {
+              "observed_at": "2026-11-21T15:55:27.830604+00:00",
+              "previous_status": "PENDING",
+              "previous_booked_profit_gbp": 0
+            }
+          ],
           "group": "Watchlist",
-          "actual_winner": null,
-          "winner_named": null,
+          "actual_winner": "Mighty Park",
+          "winner_named": false,
           "winner_original_challenger_rank": null,
-          "mechanism_evaluation": "PENDING",
-          "material_withdrawals": []
+          "mechanism_evaluation": "Failed Watchlist lay. Won by 3.25 lengths despite a mistake three out and an imperfect jump when leading two out. First-ranked Saint Baco was second after being hampered at the tenth; Heads Up fourth after jumping mistakes. Third-ranked Powerful was a non-runner, weakening the original opposition; actual withdrawal time is unknown. Laurets D’Estruval, covered outside the principal list, was third after a bad mistake two out. Mighty Park’s hurdle ability, chasing physique and improvement route transferred successfully. Rivals with similarly unproven chase transfers were not several independent established threats. Preserve the experiment and its failure.",
+          "material_withdrawals": [
+            "Powerful",
+            "He Can't Dance",
+            "Rock On Richie"
+          ],
+          "result_observed_at": "2026-11-21T15:52:22.627729+00:00",
+          "position": "1"
         }
       ],
       "definition_preserved": true,
@@ -346,7 +383,16 @@
       "price_distribution": [
         2.64
       ],
-      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold."
+      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold.",
+      "post_race_evaluations": [
+        {
+          "observed_at": "2026-11-21T15:55:27.830604+00:00",
+          "audit_record": "data/post-race-review-2026-11-21.json",
+          "observations": 1,
+          "promotion": "NOT_PROPOSED",
+          "reason": "First small prospective batch only; repeat conditions, prices and counterexamples need subsequent evidence."
+        }
+      ]
     },
     {
       "theory_id": "JCM_HURDLE_FORM_V_BUMPER_POTENTIAL",
@@ -393,7 +439,7 @@
             "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
             "snapshot_path": "data/delayed-quotes-latest.json",
             "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
-            "snapshot_blob_sha": null,
+            "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
             "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
             "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
             "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
@@ -427,7 +473,7 @@
             "potential_net_profit_decimal": "558.8235294117647058823529412",
             "failure_gbp": -500,
             "nr_gbp": 0,
-            "booked_profit_gbp": 0,
+            "booked_profit_gbp": 558.8235294117648,
             "full_stake_match_verified": false,
             "value_status": "UNPROVEN",
             "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -449,15 +495,27 @@
               "evidence_and_limitations": "actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims."
             }
           ],
-          "result_status": "PENDING",
-          "booked_profit_gbp": 0,
-          "result_history": [],
+          "result_status": "WIN",
+          "booked_profit_gbp": 558.8235294117648,
+          "result_history": [
+            {
+              "observed_at": "2026-11-21T15:55:27.830604+00:00",
+              "previous_status": "PENDING",
+              "previous_booked_profit_gbp": 0
+            }
+          ],
           "group": "Watchlist",
-          "actual_winner": null,
-          "winner_named": null,
-          "winner_original_challenger_rank": null,
-          "mechanism_evaluation": "PENDING",
-          "material_withdrawals": []
+          "actual_winner": "Kingstonian",
+          "winner_named": true,
+          "winner_original_challenger_rank": 1,
+          "mechanism_evaluation": "Strongest mechanism support today. Seventh, beaten 29.05 lengths on Sporting Life cumulative margins, with jumping errors and no impression after two out. First-ranked Kingstonian won and third-ranked Brady Hartsfield was second; second-ranked Bacharach fifth. Demonstrated hurdle opposition supplied the predicted winning route against the bumper winner’s hurdle potential, at equal 161 lb weights. This does not prove bumper winners are generally poor hurdlers, nor does one result validate a profitable theory. Way With Words was ninth: his pre-race form remained bumper form, not established hurdles form. Keep this as Watchlist history, with no retrospective promotion.",
+          "material_withdrawals": [
+            "Clean As A Whistle",
+            "Hetty Parker",
+            "Robber Barron"
+          ],
+          "result_observed_at": "2026-11-21T15:52:22.571311+00:00",
+          "position": "7"
         }
       ],
       "current_counts": {
@@ -482,7 +540,16 @@
       "price_distribution": [
         1.85
       ],
-      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold."
+      "evaluation_plan": "Retain all eligible observations and revisions; track losing streaks, commission-adjusted P/L, profit concentration, actual winner/name/rank, conditions and observed withdrawals. Count each race once across overlapping tags. Require relevant repetition and a genuinely subsequent prospective batch before presenting complete evidence for possible future use. No universal sample size, confidence or automatic promotion threshold.",
+      "post_race_evaluations": [
+        {
+          "observed_at": "2026-11-21T15:55:27.830604+00:00",
+          "audit_record": "data/post-race-review-2026-11-21.json",
+          "observations": 1,
+          "promotion": "NOT_PROPOSED",
+          "reason": "First small prospective batch only; repeat conditions, prices and counterexamples need subsequent evidence."
+        }
+      ]
     }
   ],
   "corrections": [
