@@ -54,7 +54,7 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
 test('withdrawn football proposal stays out of stakes and results',async({page})=>{
  await page.goto(url+'football.html#picks');
  await expect(page.locator('#jcm-daily-rate')).toContainText('No confirmed selections');
- await expect(page.locator('#jcm-official-panel')).toContainText('Middlesbrough v Bristol City remains on hold');
+ await expect(page.locator('#jcm-official-panel')).toContainText('Middlesbrough v Bristol City not selected');
  await expect(page.locator('#jcm-official-panel .football-row')).toHaveCount(0);
  await page.getByRole('button',{name:'Return to JCM Football Hub'}).click();
  await page.locator('#jcm-profit-summary summary').click();

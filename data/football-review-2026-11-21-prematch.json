@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "sport": "football",
+  "purpose": "append_only_pre_match_review",
+  "weekend_first_match_date": "2026-11-21",
+  "weekend_end": "2026-11-22",
+  "reviewed_at": "2026-11-21T14:56:29+00:00",
+  "timezone": "Europe/London",
+  "status": "SATURDAY_PASSED_SUNDAY_PENDING",
+  "previous_review": "data/football-review-2026-11-20-evening.json",
+  "model_version": "btts-v1",
+  "model_unchanged": true,
+  "model_screen": {
+    "cutoff": "2026-11-21T11:13:24+00:00",
+    "screened": 21,
+    "qualifiers": [
+      "Middlesbrough v Bristol City",
+      "Aston Villa v Sunderland"
+    ],
+    "job_url": "https://github.com/jcmracinguk/jcm-racing/actions/runs/42078238104/job/136827844543"
+  },
+  "approved_selections": [],
+  "committed_stake_gbp": 0,
+  "new_financial_entries": [],
+  "decisions": [
+    {
+      "fixture": "Middlesbrough v Bristol City",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "decision": "DISCRETIONARY_PASS_BEFORE_KICKOFF",
+      "is_selection": false,
+      "reason": "The confirmed line-up reports place Will Lankshear and Scott Twine among the substitutes. Boro start David Strelec; City start Lorent Tolaj, with Sam Greenwood and Rio Cardines also starting. Their participation resolves squad availability but does not establish how many minutes either substitute will receive. Given the reduced starting attacking strength and recent overall BTTS counts of Boro3/6 and City2/6, do not approve a discretionary paper selection.",
+      "counterargument": "Both teams still field attacking options, the venue BTTS counts are Boro5/7 and City6/7, and the substitutes could contribute. This remains a mechanical v1 qualifier. The discretionary pass is not a claim that BTTS will fail, a change to v1 thresholds or a negative outcome for the fixed screen.",
+      "confirmed_lineup_report": {
+        "boro_starting_striker": "David Strelec",
+        "boro_substitute": "Will Lankshear",
+        "city_starting_striker": "Lorent Tolaj",
+        "city_other_starters": [
+          "Sam Greenwood",
+          "Rio Cardines"
+        ],
+        "city_substitutes": [
+          "Scott Twine",
+          "Dom Ballard",
+          "Elijah Adebayo",
+          "Gibson Yah"
+        ]
+      },
+      "news_limitations": [
+        "No guaranteed playing minutes for substitutes",
+        "Formation labels differ between providers; no tactical certainty inferred",
+        "Official club posts were not readable; confirmed line-up reporting was cross-checked between TNT Sports and named reporter James Chettle"
+      ],
+      "price_snapshot": {
+        "market": "BTTS YES (90 minutes plus stoppage time)",
+        "provider": "Betfair Sportsbook",
+        "decimal_odds": 1.6666666666666665,
+        "fractional_odds": "4/6",
+        "observed_at": "2026-11-21T14:56:29+00:00",
+        "source_url": "https://www.betfair.com/betting/football/english-sky-bet-championship/middlesbrough-v-bristol-city/e-36298801",
+        "frozen_for_selection": false,
+        "stake_gbp": 0,
+        "note": "Public pre-match snapshot only; not a live feed or betting-value claim."
+      }
+    },
+    {
+      "fixture": "Aston Villa v Sunderland",
+      "kickoff": "2026-11-21T15:00:00+00:00",
+      "decision": "LEAVE_OUT",
+      "is_selection": false,
+      "reason": "No change to prior discretionary exclusion for modest venue attacks and Sunderland absence concerns. Do not create a second leg to force an accumulator."
+    },
+    {
+      "fixture": "Southampton v Derby",
+      "decision": "PREVIOUS_PROPOSAL_REMAINS_WITHDRAWN",
+      "is_selection": false,
+      "note": "Scheduled12:30kickoff has passed. No new selection, price freeze or retrospective addition allowed."
+    },
+    {
+      "fixture": "Newcastle v Arsenal",
+      "decision": "PREVIOUS_PROPOSAL_REMAINS_WITHDRAWN",
+      "is_selection": false,
+      "note": "Absent from unchanged v1 qualifiers."
+    },
+    {
+      "fixture": "Burnley v Blackburn",
+      "decision": "PREVIOUS_PROPOSAL_REMAINS_WITHDRAWN",
+      "is_selection": false,
+      "note": "Sunday review pending; absent from unchanged v1 qualifiers."
+    },
+    {
+      "fixture": "Liverpool v Man United",
+      "decision": "PREVIOUS_PROPOSAL_REMAINS_WITHDRAWN",
+      "is_selection": false,
+      "note": "Sunday review pending; absent from unchanged v1 qualifiers."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.tntsports.co.uk/football/championship/2026-2027/middlesbrough-bristol-city_mtc21887249/live-lineup.shtml",
+      "observed_at": "2026-11-21T14:56:29+00:00",
+      "basis": "Starting XI and substitute list; match marked not started."
+    },
+    {
+      "url": "https://dave.sport/news/middlesbrough-vs-bristol-city-confirmed-line-ups/",
+      "publisher": "Dave Sport",
+      "author": "James Chettle",
+      "published_at": "2026-11-21T14:42:00+00:00",
+      "observed_at": "2026-11-21T14:56:29+00:00",
+      "basis": "Named reporter lists both starting XIs and benches; corroborates Lankshear and Twine as substitutes."
+    }
+  ],
+  "selection_outcomes_recorded": false,
+  "note": "No Saturday paper selections approved. No stake or P/L recorded. Retain the original withdrawn proposal, previous reviews and all settled histories."
+}
