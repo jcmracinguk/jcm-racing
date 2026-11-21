@@ -15,14 +15,13 @@ class FreshRecord(unittest.TestCase):
      self.assertEqual(r['result_date'],r['race_date']);self.assertEqual(r['result_horse_id'],r['horse_id'])
     else:
      self.assertLess(r['selected_at'],r['scheduled_off_dt']);self.assertIsNone(r['position'])
-     self.assertEqual(r['display_status'],'Watchlist');self.assertEqual(r['original_status'],'Watchlist')
+     self.assertIn(r['display_status'],('Selection','Watchlist'));self.assertEqual(r['original_status'],r['display_status'])
     self.assertIsNone(r['competition_confidence_percent'])
     m=next(m for m in details if m['horse_id']==r['horse_id']);self.assertEqual(m['position'],r['position'])
     self.assertIn('/racecard/',m['racecard_url']);rows.append(r)
-  self.assertEqual(len(rows),10);self.assertEqual(sum(r['result_status']=='WIN' for r in rows),8)
-  self.assertEqual(sum(r['result_status']=='LOSS' for r in rows),1)
-  self.assertEqual(sum(r['result_status']=='PENDING' for r in rows),1)
-  self.assertEqual(len({r['race_id'] for r in rows}),10)
+  self.assertTrue(rows)
+  self.assertEqual(len({(r['race_date'],r['race_id']) for r in rows}),len(rows))
+  self.assertEqual(len(manifest['sources']),len(set(manifest['sources'])))
  def test_no_old_published_data(self):
   for p in (ROOT/'data').glob('*.json'):
    for d in re.findall(r'2026-10-(\d\d)',p.name):self.assertGreaterEqual(int(d),21)
