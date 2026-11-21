@@ -4294,6 +4294,717 @@
       "booked_profit_decimal": "-500",
       "placing": "1st",
       "winner": "Asuka"
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Delamotte",
+      "course": "Punchestown",
+      "off_time_uk": "11:53",
+      "race_id": "rac_32305289302",
+      "horse_id": "hrs_64135204",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T11:53:00+00:00",
+      "lay_odds": 1.85,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949792/sebden-steel-maiden-hurdle",
+      "racecard_verified_at": "2026-11-21T08:40:07.402649+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 1,
+      "selected_at": "2026-11-21T08:34:00.836245+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-21T08:34:00.836245+00:00",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "recorded_at": "2026-11-21T08:34:00.836245+00:00",
+        "raw_reasoning": {
+          "decision": "New Watchlist proposal at 1.85 after second early racing review.",
+          "opposition": "1 Kingstonian: demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip. 2 Bacharach: actual Cork hurdle-debut second; beaten by the winner and still has to improve over further. 3 Brady Hartsfield: actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims.",
+          "counter": "Delamotte impressed in an 18-runner festival bumper here and can be a substantially better hurdler. Townend and Mullins reinforce a credible winning route. Hurdle debut and 207-day absence are unknowns, not established defects.",
+          "resolution": "Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry.",
+          "whole_field": "Way With Words has two bumper seconds, not demonstrated hurdle placings. Menethil has point potential; neither is upgraded into proven hurdle opposition. Newcomers with pedigrees/claims were considered without treating them as multiple established threats. The three reserves are excluded from continuing opposition."
+        },
+        "source_report": "https://chatgpt.com/library?file_id=libfile_eba02f2ab96481918b2e2151aa1eb5d6&account_id=personal",
+        "earlier_exploratory_review": {
+          "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+          "raw_reasoning": "| 11:53 Punchestown | Delamotte | Secondary racing candidate; quote rejected | Kingstonian has demonstrated hurdle placings and useful Flat ability, with Way With Words another established jumping opponent. Delamotte’s festival bumper win gives a substantial improvement/transfer case, not a negative. Friday 1000 offer rejected; no forced theory entry. |",
+          "price_rejected": {
+            "lay_odds": 1000.0,
+            "displayed_amount_gbp": 2.61,
+            "per_market_retrieved_at": "2026-11-20T08:19:47.510636+00:00",
+            "capture_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+            "status": "UNAPPROVED_ADVANCE_OBSERVATION"
+          }
+        }
+      },
+      "field_size": 22,
+      "going": "GOOD TO YIELDING, Yielding in places",
+      "surface": "Turf",
+      "race_name": "Sebden Steel Maiden Hurdle",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Kingstonian: demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip. 2 Bacharach: actual Cork hurdle-debut second; beaten by the winner and still has to improve over further. 3 Brady Hartsfield: actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims. Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry.",
+        "counterargument": "Delamotte impressed in an 18-runner festival bumper here and can be a substantially better hurdler. Townend and Mullins reinforce a credible winning route. Hurdle debut and 207-day absence are unknowns, not established defects.",
+        "why_still_oppose": "Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry.",
+        "rival_limitations": "1 Kingstonian: demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip. 2 Bacharach: actual Cork hurdle-debut second; beaten by the winner and still has to improve over further. 3 Brady Hartsfield: actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims.",
+        "challengers": [
+          "Kingstonian",
+          "Bacharach",
+          "Brady Hartsfield"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Kingstonian",
+            "evidence_and_limitations": "demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip."
+          },
+          {
+            "rank": 2,
+            "horse": "Bacharach",
+            "evidence_and_limitations": "actual Cork hurdle-debut second; beaten by the winner and still has to improve over further."
+          },
+          {
+            "rank": 3,
+            "horse": "Brady Hartsfield",
+            "evidence_and_limitations": "actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims."
+          }
+        ],
+        "whole_field_review": "Way With Words has two bumper seconds, not demonstrated hurdle placings. Menethil has point potential; neither is upgraded into proven hurdle opposition. Newcomers with pedigrees/claims were considered without treating them as multiple established threats. The three reserves are excluded from continuing opposition.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949792/sebden-steel-maiden-hurdle",
+          "https://api.theracingapi.com/v1/racecards/rac_32305289302"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:30.750212+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Kingstonian",
+        "Bacharach",
+        "Brady Hartsfield"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Kingstonian",
+          "evidence_and_limitations": "demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip."
+        },
+        {
+          "rank": 2,
+          "horse": "Bacharach",
+          "evidence_and_limitations": "actual Cork hurdle-debut second; beaten by the winner and still has to improve over further."
+        },
+        {
+          "rank": 3,
+          "horse": "Brady Hartsfield",
+          "evidence_and_limitations": "actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.583693+00:00",
+        "market_id": "1.265791426",
+        "selection_id": 97858764,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 80.14,
+        "displayed_liquidity_gbp": 80.14,
+        "liquidity_gbp": 80.14,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 80.14,
+      "market_position_note": "Bet365 screening 1.57 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "4/7",
+        "decimal": "1.57",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 588.2352941176471,
+        "required_stake_decimal": "588.2352941176470588235294118",
+        "potential_net_profit_gbp": 558.8235294117648,
+        "potential_net_profit_decimal": "558.8235294117647058823529412",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.510636+00:00",
+          "price": 1000.0,
+          "displayed_amount_gbp": 2.61,
+          "market_id": "1.265791426",
+          "selection_id": 97858764,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+          "price": 1.85,
+          "displayed_amount_gbp": 80.14,
+          "market_id": "1.265791426",
+          "selection_id": 97858764,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "New Watchlist proposal at 1.85 after second early racing review. Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry.",
+          "conditions": "GOOD TO YIELDING, Yielding in places",
+          "whole_field_review": "Way With Words has two bumper seconds, not demonstrated hurdle placings. Menethil has point potential; neither is upgraded into proven hurdle opposition. Newcomers with pedigrees/claims were considered without treating them as multiple established threats. The three reserves are excluded from continuing opposition.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Watchlist",
+          "frozen_lay_odds": 1.85
+        },
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "original_record": "JCM_Advance_Review_2026-11-21.md",
+          "issue": "Way With Words was incorrectly described as an established jumping opponent in the Delamotte coverage row.",
+          "correction": "His two placed runs were bumpers. He remains a speculative hurdle-transfer rival; Kingstonian, Bacharach and Brady Hartsfield are the principal demonstrated hurdle opponents.",
+          "historical_text_rewritten": false
+        }
+      ],
+      "result_history": [],
+      "reason": "1 Kingstonian: demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip. 2 Bacharach: actual Cork hurdle-debut second; beaten by the winner and still has to improve over further. 3 Brady Hartsfield: actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims. Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry. Winning case: Delamotte impressed in an 18-runner festival bumper here and can be a substantially better hurdler. Townend and Mullins reinforce a credible winning route. Hurdle debut and 207-day absence are unknowns, not established defects.",
+      "price_record": "Verified delayed race-day Betfair Exchange Lay; assumed full stake, matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-21T08:24:21.583693+00:00",
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_HURDLE_FORM_V_BUMPER_POTENTIAL",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "independent_pick_case": false
+        }
+      ]
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Mighty Park",
+      "course": "Punchestown",
+      "off_time_uk": "12:28",
+      "race_id": "rac_32305291239",
+      "horse_id": "hrs_52055465",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T12:28:00+00:00",
+      "lay_odds": 2.64,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949793/conway-piling-beginners-chase",
+      "racecard_verified_at": "2026-11-21T08:40:07.444129+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 2,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "Ranked rivals: (1) Saint Baco, whose graded hurdle form can transfer; (2) Heads Up, a recent listed hurdle winner with race fitness, but inconsistent; (3) Powerful, an established course handicap hurdler, whose ability must also transfer. The principal three each carry 166 lb, as does Mighty Park; there is no artificial weight advantage. Laurets D’Estruval and Road Exile add useful hurdle/point-based chase routes. Fierce Handay and Eternal Reward have actual chase experience but need improvement. Reserves are not assumed active opposition. Mighty Park’s wide-margin hurdle win, physique, pedigree and powerful connections give a substantial chance of excelling over fences. Those positives prevent a Pick: several rivals’ cases also rely on transfer. At 2.94 the paper experiment is acceptable, with value unproven. A second early racing review retains Watchlist, not automatic opposition to a chase debut.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 18,
+      "going": "GOOD TO YIELDING, Yielding in places",
+      "surface": "Turf",
+      "race_name": "Conway Piling Beginners Steeplechase",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Saint Baco: graded hurdle form with a clear chase-transfer route. 2 Heads Up: recent listed hurdle winner, fit but inconsistent. 3 Powerful: useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential. The opposition is credible but several rivals also have unproven transfers, so this stays exploratory. Shortening 2.94 to 2.64 improves conditional net from £244.85 to £289.63; it does not justify promotion.",
+        "counterargument": "Mighty Park’s wide-margin hurdle win, chasing physique, pedigree and connections give a substantial route to improvement over fences.",
+        "why_still_oppose": "The opposition is credible but several rivals also have unproven transfers, so this stays exploratory. Shortening 2.94 to 2.64 improves conditional net from £244.85 to £289.63; it does not justify promotion.",
+        "rival_limitations": "1 Saint Baco: graded hurdle form with a clear chase-transfer route. 2 Heads Up: recent listed hurdle winner, fit but inconsistent. 3 Powerful: useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential.",
+        "challengers": [
+          "Saint Baco",
+          "Heads Up",
+          "Powerful"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Saint Baco",
+            "evidence_and_limitations": "graded hurdle form with a clear chase-transfer route."
+          },
+          {
+            "rank": 2,
+            "horse": "Heads Up",
+            "evidence_and_limitations": "recent listed hurdle winner, fit but inconsistent."
+          },
+          {
+            "rank": 3,
+            "horse": "Powerful",
+            "evidence_and_limitations": "useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential."
+          }
+        ],
+        "whole_field_review": "Fierce Handay and Eternal Reward have actual chase experience but need progress; all other declared runners were checked. Raise You Up, He Can’t Dance and Rock On Richie remain reserves and are not assumed active opposition.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949793/conway-piling-beginners-chase",
+          "https://api.theracingapi.com/v1/racecards/rac_32305291239"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:30.750212+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Saint Baco",
+        "Heads Up",
+        "Powerful"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Saint Baco",
+          "evidence_and_limitations": "graded hurdle form with a clear chase-transfer route."
+        },
+        {
+          "rank": 2,
+          "horse": "Heads Up",
+          "evidence_and_limitations": "recent listed hurdle winner, fit but inconsistent."
+        },
+        {
+          "rank": 3,
+          "horse": "Powerful",
+          "evidence_and_limitations": "useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.583693+00:00",
+        "market_id": "1.265791412",
+        "selection_id": 91317375,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 13.53,
+        "displayed_liquidity_gbp": 13.53,
+        "liquidity_gbp": 13.53,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 13.53,
+      "market_position_note": "Bet365 screening 2.1 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "11/10",
+        "decimal": "2.1",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 304.8780487804878,
+        "required_stake_decimal": "304.8780487804878048780487805",
+        "potential_net_profit_gbp": 289.6341463414634,
+        "potential_net_profit_decimal": "289.6341463414634146341463415",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.510636+00:00",
+          "price": 2.94,
+          "displayed_amount_gbp": 12.56,
+          "market_id": "1.265791412",
+          "selection_id": 91317375,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+          "price": 2.64,
+          "displayed_amount_gbp": 13.53,
+          "market_id": "1.265791412",
+          "selection_id": 91317375,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Watchlist at 2.64 after second early racing review. The opposition is credible but several rivals also have unproven transfers, so this stays exploratory. Shortening 2.94 to 2.64 improves conditional net from £244.85 to £289.63; it does not justify promotion.",
+          "conditions": "GOOD TO YIELDING, Yielding in places",
+          "whole_field_review": "Fierce Handay and Eternal Reward have actual chase experience but need progress; all other declared runners were checked. Raise You Up, He Can’t Dance and Rock On Richie remain reserves and are not assumed active opposition.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Watchlist",
+          "frozen_lay_odds": 2.64
+        }
+      ],
+      "result_history": [],
+      "reason": "1 Saint Baco: graded hurdle form with a clear chase-transfer route. 2 Heads Up: recent listed hurdle winner, fit but inconsistent. 3 Powerful: useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential. The opposition is credible but several rivals also have unproven transfers, so this stays exploratory. Shortening 2.94 to 2.64 improves conditional net from £244.85 to £289.63; it does not justify promotion. Winning case: Mighty Park’s wide-margin hurdle win, chasing physique, pedigree and connections give a substantial route to improvement over fences.",
+      "price_record": "Verified delayed race-day Betfair Exchange Lay; assumed full stake, matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-21T08:24:21.583693+00:00",
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "independent_pick_case": false
+        }
+      ]
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Kykorock",
+      "course": "Haydock",
+      "off_time_uk": "12:40",
+      "race_id": "rac_32305072358",
+      "horse_id": "hrs_39940964",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T12:40:00+00:00",
+      "lay_odds": 3.2,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/haydock/racecard/949631/bet-at-your-best-with-betfair-handicap-chase-gbb-race",
+      "racecard_verified_at": "2026-11-21T08:40:07.385271+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 3,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "Ranked rivals: (1) Milan Tino, a recent chase winner, 164 lb versus Kykorock 166, ratings 123 versus 125—an essentially level handicap comparison; (2) We’re Red And Blue, 168 lb / 127, a promising chase-debut second whose progress remains uncertain; (3) Tigers Moon, 152 lb / 111, another promising chase-debut second, not a proven class edge. Bleu D’Enfer has an Uttoxeter win and 164 minus 7 = 157 lb but a weaker subsequent effort; Sir Tivo’s best case is smaller fields and Calgary Tiger is out of the handicap. Kykorock’s four wins in five chase starts, comfortable return and subsequent winners from that race give a strong winning case. The 8 lb rise does not prove he is caught. That counterargument keeps this a Watchlist experiment at 2.76. The second early review explicitly retains his improvement as the main failure risk.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 7,
+      "going": "GOOD, Good to soft in places",
+      "surface": "Turf",
+      "race_name": "Bet At Your Best With Betfair Handicap Steeple Chase (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Milan Tino: recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms. 2 We’re Red And Blue: promising chase-debut second, 168 lb/OR127; improvement is still needed. 3 Tigers Moon: another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge. That counterargument keeps the selection in Watchlist. The drift 2.76 to 3.20 reduces net from £269.89 to £215.91; this remains an acceptable prospectively recorded paper experiment, with value unproven.",
+        "counterargument": "Kykorock’s four chase wins from five starts, comfortable return and subsequent winners behind him provide a strong progressive winning case despite the 8 lb rise.",
+        "why_still_oppose": "That counterargument keeps the selection in Watchlist. The drift 2.76 to 3.20 reduces net from £269.89 to £215.91; this remains an acceptable prospectively recorded paper experiment, with value unproven.",
+        "rival_limitations": "1 Milan Tino: recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms. 2 We’re Red And Blue: promising chase-debut second, 168 lb/OR127; improvement is still needed. 3 Tigers Moon: another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge.",
+        "challengers": [
+          "Milan Tino",
+          "We’re Red And Blue",
+          "Tigers Moon"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Milan Tino",
+            "evidence_and_limitations": "recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms."
+          },
+          {
+            "rank": 2,
+            "horse": "We’re Red And Blue",
+            "evidence_and_limitations": "promising chase-debut second, 168 lb/OR127; improvement is still needed."
+          },
+          {
+            "rank": 3,
+            "horse": "Tigers Moon",
+            "evidence_and_limitations": "another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge."
+          }
+        ],
+        "whole_field_review": "Bleu D’Enfer’s claim gives 157 lb effective, with an Uttoxeter win but weaker latest form. Sir Tivo’s best evidence is in smaller fields; Calgary Tiger is out of the weights. All seven remain active.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/haydock/racecard/949631/bet-at-your-best-with-betfair-handicap-chase-gbb-race",
+          "https://api.theracingapi.com/v1/racecards/rac_32305072358"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:26.769153+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Milan Tino",
+        "We’re Red And Blue",
+        "Tigers Moon"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Milan Tino",
+          "evidence_and_limitations": "recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms."
+        },
+        {
+          "rank": 2,
+          "horse": "We’re Red And Blue",
+          "evidence_and_limitations": "promising chase-debut second, 168 lb/OR127; improvement is still needed."
+        },
+        {
+          "rank": 3,
+          "horse": "Tigers Moon",
+          "evidence_and_limitations": "another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.583693+00:00",
+        "market_id": "1.265791020",
+        "selection_id": 77352428,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 50,
+        "displayed_liquidity_gbp": 50,
+        "liquidity_gbp": 50,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 50,
+      "market_position_note": "Bet365 screening 2.75 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "7/4",
+        "decimal": "2.75",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 227.27272727272728,
+        "required_stake_decimal": "227.2727272727272727272727273",
+        "potential_net_profit_gbp": 215.9090909090909,
+        "potential_net_profit_decimal": "215.9090909090909090909090909",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.510636+00:00",
+          "price": 2.76,
+          "displayed_amount_gbp": 14.5,
+          "market_id": "1.265791020",
+          "selection_id": 77352428,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+          "price": 3.2,
+          "displayed_amount_gbp": 50,
+          "market_id": "1.265791020",
+          "selection_id": 77352428,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Watchlist at 3.20 after second early racing review. That counterargument keeps the selection in Watchlist. The drift 2.76 to 3.20 reduces net from £269.89 to £215.91; this remains an acceptable prospectively recorded paper experiment, with value unproven.",
+          "conditions": "GOOD, Good to soft in places",
+          "whole_field_review": "Bleu D’Enfer’s claim gives 157 lb effective, with an Uttoxeter win but weaker latest form. Sir Tivo’s best evidence is in smaller fields; Calgary Tiger is out of the weights. All seven remain active.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Watchlist",
+          "frozen_lay_odds": 3.2
+        }
+      ],
+      "result_history": [],
+      "reason": "1 Milan Tino: recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms. 2 We’re Red And Blue: promising chase-debut second, 168 lb/OR127; improvement is still needed. 3 Tigers Moon: another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge. That counterargument keeps the selection in Watchlist. The drift 2.76 to 3.20 reduces net from £269.89 to £215.91; this remains an acceptable prospectively recorded paper experiment, with value unproven. Winning case: Kykorock’s four chase wins from five starts, comfortable return and subsequent winners behind him provide a strong progressive winning case despite the 8 lb rise.",
+      "price_record": "Verified delayed race-day Betfair Exchange Lay; assumed full stake, matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-21T08:24:21.583693+00:00",
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "independent_pick_case": false
+        }
+      ]
     }
   ]
 }

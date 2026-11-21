@@ -1,0 +1,1173 @@
+{
+  "schema_version": 2,
+  "fictional_only": true,
+  "opening_balance_gbp": 0,
+  "commission_rate": 0.05,
+  "bank_trial": {
+    "start_date": "2026-10-23",
+    "accounting_model": "ZERO_START_UNLIMITED_SIMULATED_OVERDRAFT",
+    "initial_balance_gbp": 0,
+    "percentage_benchmark_gbp": 10000,
+    "automatic_deposits": false,
+    "deposits": [],
+    "withdrawals": [],
+    "results_publish_when": "ALL_DAILY_RACES_FINISHED_AND_RESULTS_VERIFIED",
+    "performance_formula": "cumulative net profit or loss / 10000 * 100",
+    "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
+  },
+  "preserve_device_choices": true,
+  "date": "2026-11-21",
+  "introduced_at": "2026-11-21T08:35:30+00:00",
+  "rows": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Kiss Will",
+      "course": "Punchestown",
+      "off_time_uk": "13:03",
+      "race_id": "rac_32305293176",
+      "horse_id": "hrs_39678835",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T13:03:00+00:00",
+      "lay_odds": 3.7,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949794/boodles-florida-pearl-novice-chase-grade-2",
+      "racecard_verified_at": "2026-11-21T08:40:07.319378+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 4,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "— Pick, price approval outstanding\n\nMain case: **Ballygunner Castle** has already won a major 3m chase handicap, the Kerry National, and is rated 146 against Kiss Will’s 138. Both carry 157 lb with no claim: the 8 lb rating difference is not offset by a weight concession. Second-ranked **The Big Clubman** won his chase debut at Wexford and previously finished second over 23½f in a large-field hurdle; going back up in distance is a specific route. He still needs improvement in this grade. Third-ranked **Chanceawetmorning** has two chase wins but carries 160 lb, a 3 lb penalty, and steps into stronger opposition. **King’s Bucks** has a chase second and scope; **Largy Star** has point/bumper ability but a speculative chase transition; **Lady Bluebird** needs more class and stamina.\n\nStrongest winning case: Kiss Will’s 1½-length chase second over nearly 3m and his Irish National performance before falling show real staying potential; his later eighth had contextual excuses. Townend rides and the longer trip can suit. Neither the 204-day absence nor maiden chase status proves a flaw. The verdict survives because the principal opponent supplies demonstrated current chase achievement on level weights, with a second race-fit chase winner behind him. This is a competition judgement, not a claim that Kiss Will cannot improve. Bookmaker screening at the API retrieval had Bet365 3.25 against Ballygunner Castle 3.50; the later Sporting Life meeting payload showed 2/1 and 5/2. These are screening prices, not Lay quotes.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 7,
+      "going": "GOOD TO YIELDING, Yielding in places",
+      "surface": "Turf",
+      "race_name": "Boodles Florida Pearl Novice Steeplechase (Grade 2)",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Ballygunner Castle: Kerry National winner, rated 146 versus 138, both 157 lb with no claim. The 8 lb rating gap is not offset by weight. 2 The Big Clubman: recent chase winner, with staying hurdle form supplying a specific step-up-in-trip route; still needs to improve in this grade. 3 Chanceawetmorning: two chase wins, but 160 lb includes a 3 lb penalty and today is stronger. A demonstrated major 3m chase winner at level weights and a second recent chase winner give sufficient opposition despite his potential. The shorter 3.70 quote raises conditional net return from £118.75 to £175.93; racing strength is unchanged.",
+        "counterargument": "Kiss Will has a close staying chase second and a credible Irish National effort before falling. Townend, trip and further progress are real positives; absence and chase-maiden status are not proven faults.",
+        "why_still_oppose": "A demonstrated major 3m chase winner at level weights and a second recent chase winner give sufficient opposition despite his potential. The shorter 3.70 quote raises conditional net return from £118.75 to £175.93; racing strength is unchanged.",
+        "rival_limitations": "1 Ballygunner Castle: Kerry National winner, rated 146 versus 138, both 157 lb with no claim. The 8 lb rating gap is not offset by weight. 2 The Big Clubman: recent chase winner, with staying hurdle form supplying a specific step-up-in-trip route; still needs to improve in this grade. 3 Chanceawetmorning: two chase wins, but 160 lb includes a 3 lb penalty and today is stronger.",
+        "challengers": [
+          "Ballygunner Castle",
+          "The Big Clubman",
+          "Chanceawetmorning"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Ballygunner Castle",
+            "evidence_and_limitations": "Kerry National winner, rated 146 versus 138, both 157 lb with no claim. The 8 lb rating gap is not offset by weight."
+          },
+          {
+            "rank": 2,
+            "horse": "The Big Clubman",
+            "evidence_and_limitations": "recent chase winner, with staying hurdle form supplying a specific step-up-in-trip route; still needs to improve in this grade."
+          },
+          {
+            "rank": 3,
+            "horse": "Chanceawetmorning",
+            "evidence_and_limitations": "two chase wins, but 160 lb includes a 3 lb penalty and today is stronger."
+          }
+        ],
+        "whole_field_review": "King’s Bucks has chase-debut promise; Largy Star has transferable point/bumper ability; Lady Bluebird needs greater class and stamina. No principal rival is NR.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/punchestown/racecard/949794/boodles-florida-pearl-novice-chase-grade-2",
+          "https://api.theracingapi.com/v1/racecards/rac_32305293176"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:30.750212+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Ballygunner Castle",
+        "The Big Clubman",
+        "Chanceawetmorning"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Ballygunner Castle",
+          "evidence_and_limitations": "Kerry National winner, rated 146 versus 138, both 157 lb with no claim. The 8 lb rating gap is not offset by weight."
+        },
+        {
+          "rank": 2,
+          "horse": "The Big Clubman",
+          "evidence_and_limitations": "recent chase winner, with staying hurdle form supplying a specific step-up-in-trip route; still needs to improve in this grade."
+        },
+        {
+          "rank": 3,
+          "horse": "Chanceawetmorning",
+          "evidence_and_limitations": "two chase wins, but 160 lb includes a 3 lb penalty and today is stronger."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.583693+00:00",
+        "market_id": "1.265791419",
+        "selection_id": 96512196,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 17.3,
+        "displayed_liquidity_gbp": 17.3,
+        "liquidity_gbp": 17.3,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 17.3,
+      "market_position_note": "Bet365 screening 3.25 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "9/4",
+        "decimal": "3.25",
+        "ew_places": "2",
+        "ew_denom": "4",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 185.1851851851852,
+        "required_stake_decimal": "185.1851851851851851851851852",
+        "potential_net_profit_gbp": 175.92592592592592,
+        "potential_net_profit_decimal": "175.9259259259259259259259259",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.510636+00:00",
+          "price": 5.0,
+          "displayed_amount_gbp": 10.53,
+          "market_id": "1.265791419",
+          "selection_id": 96512196,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+          "price": 3.7,
+          "displayed_amount_gbp": 17.3,
+          "market_id": "1.265791419",
+          "selection_id": 96512196,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Pick at 3.70. A demonstrated major 3m chase winner at level weights and a second recent chase winner give sufficient opposition despite his potential. The shorter 3.70 quote raises conditional net return from £118.75 to £175.93; racing strength is unchanged.",
+          "conditions": "GOOD TO YIELDING, Yielding in places",
+          "whole_field_review": "King’s Bucks has chase-debut promise; Largy Star has transferable point/bumper ability; Lady Bluebird needs greater class and stamina. No principal rival is NR.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Pick",
+          "frozen_lay_odds": 3.7
+        }
+      ],
+      "result_history": []
+    },
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Cosmic Connection",
+      "course": "Haydock",
+      "off_time_uk": "13:15",
+      "race_id": "rac_32305074295",
+      "horse_id": "hrs_50666847",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T13:15:00+00:00",
+      "lay_odds": 4.6,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/haydock/racecard/949632/betfair-supports-safer-gambling-week-newton-novices-hurdle-grade-2-gbb-race",
+      "racecard_verified_at": "2026-11-21T08:40:11.746257+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 5,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "— Pick, price approval outstanding\n\nMain case: **North Shore**, ranked first, won at Cheltenham over hurdles after finishing ahead of Cosmic Connection in the Persian War. Both carry 156 lb, no claims; ratings are 139 and 138, a small comparison rather than a decisive advantage. North Shore may prefer a stamina test, so Haydock’s emphasis on speed is a real limitation. Second-ranked **Kingofthefrontier** has a Grade 2 hurdle win but carries 159 lb, a 3 lb penalty, and must avoid conceding too much position. Third-ranked **Spanish Darling** ran close to that rival at Cheltenham and has a more speed-oriented route under today’s conditions. He still needs progress. **Saint Jeannais**, **Hold The Throw** and **Wilde’s Legacy** are genuine improving hurdle winners but their rise to this grade is less demonstrated; **Kershaw** has a hurdle win but a stronger class demand. These alternatives are not eight equivalent threats.\n\nStrongest winning case: Cosmic Connection’s Sandown novice final win demonstrated speed at 2m; his seasonal return at a longer trip need not represent his ability. Fitness, trip and speed conditions can all improve his chance. The verdict survives because the opposition includes a recently demonstrated hurdle performer plus a Grade 2 winner and a specific speed alternative, rather than depending entirely on imagined newcomer improvement. Bet365 screening was 3.75, North Shore 4.50. Exact value is unproven.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 8,
+      "going": "GOOD, Good to soft in places",
+      "surface": "Turf",
+      "race_name": "Betfair Supports Safer Gambling Week Newton Novices' Hurdle Race (Grade 2) (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 North Shore: recent Cheltenham hurdle winner and finished ahead of Cosmic Connection in the Persian War; both 156 lb, ratings 139/138. He is not given a fictitious weight edge, and this speed test may suit him less. 2 Kingofthefrontier: Grade 2 hurdle winner, carrying a 3 lb penalty at 159 lb; position/tactical speed is a limitation. 3 Spanish Darling: specific speed route after a competitive Cheltenham hurdle effort, but still needs progress. The case rests on demonstrated hurdle competition plus credible alternative winning routes, not just his latest defeat. The drift to 4.60 reduces net return from £148.44 to £131.94. I still accept it for this paper proposal; value is unproven. He is now close to favouritism rather than the sole market leader: Bet365 4.00 versus North Shore 3.75 at 08:25:08 GMT.",
+        "counterargument": "Cosmic Connection’s Sandown novice final demonstrated speed at 2m. His return over further may not represent his ability; the shorter trip and fitness can help.",
+        "why_still_oppose": "The case rests on demonstrated hurdle competition plus credible alternative winning routes, not just his latest defeat. The drift to 4.60 reduces net return from £148.44 to £131.94. I still accept it for this paper proposal; value is unproven. He is now close to favouritism rather than the sole market leader: Bet365 4.00 versus North Shore 3.75 at 08:25:08 GMT.",
+        "rival_limitations": "1 North Shore: recent Cheltenham hurdle winner and finished ahead of Cosmic Connection in the Persian War; both 156 lb, ratings 139/138. He is not given a fictitious weight edge, and this speed test may suit him less. 2 Kingofthefrontier: Grade 2 hurdle winner, carrying a 3 lb penalty at 159 lb; position/tactical speed is a limitation. 3 Spanish Darling: specific speed route after a competitive Cheltenham hurdle effort, but still needs progress.",
+        "challengers": [
+          "North Shore",
+          "Kingofthefrontier",
+          "Spanish Darling"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "North Shore",
+            "evidence_and_limitations": "recent Cheltenham hurdle winner and finished ahead of Cosmic Connection in the Persian War; both 156 lb, ratings 139/138. He is not given a fictitious weight edge, and this speed test may suit him less."
+          },
+          {
+            "rank": 2,
+            "horse": "Kingofthefrontier",
+            "evidence_and_limitations": "Grade 2 hurdle winner, carrying a 3 lb penalty at 159 lb; position/tactical speed is a limitation."
+          },
+          {
+            "rank": 3,
+            "horse": "Spanish Darling",
+            "evidence_and_limitations": "specific speed route after a competitive Cheltenham hurdle effort, but still needs progress."
+          }
+        ],
+        "whole_field_review": "Saint Jeannais, Hold The Throw and Wilde’s Legacy are improving hurdle winners but their class progress is less demonstrated; Kershaw’s hurdles win faces a significant class demand. All eight remain active.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/haydock/racecard/949632/betfair-supports-safer-gambling-week-newton-novices-hurdle-grade-2-gbb-race",
+          "https://api.theracingapi.com/v1/racecards/rac_32305074295"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:26.769153+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "North Shore",
+        "Kingofthefrontier",
+        "Spanish Darling"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "North Shore",
+          "evidence_and_limitations": "recent Cheltenham hurdle winner and finished ahead of Cosmic Connection in the Persian War; both 156 lb, ratings 139/138. He is not given a fictitious weight edge, and this speed test may suit him less."
+        },
+        {
+          "rank": 2,
+          "horse": "Kingofthefrontier",
+          "evidence_and_limitations": "Grade 2 hurdle winner, carrying a 3 lb penalty at 159 lb; position/tactical speed is a limitation."
+        },
+        {
+          "rank": 3,
+          "horse": "Spanish Darling",
+          "evidence_and_limitations": "specific speed route after a competitive Cheltenham hurdle effort, but still needs progress."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.583693+00:00",
+        "market_id": "1.265791027",
+        "selection_id": 59070728,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 32.59,
+        "displayed_liquidity_gbp": 32.59,
+        "liquidity_gbp": 32.59,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 32.59,
+      "market_position_note": "Bet365 screening 4 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "3/1",
+        "decimal": "4",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 138.88888888888889,
+        "required_stake_decimal": "138.8888888888888888888888889",
+        "potential_net_profit_gbp": 131.94444444444446,
+        "potential_net_profit_decimal": "131.9444444444444444444444445",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.510636+00:00",
+          "price": 4.2,
+          "displayed_amount_gbp": 16.36,
+          "market_id": "1.265791027",
+          "selection_id": 59070728,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.583693+00:00",
+          "price": 4.6,
+          "displayed_amount_gbp": 32.59,
+          "market_id": "1.265791027",
+          "selection_id": 59070728,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Pick at 4.60. The case rests on demonstrated hurdle competition plus credible alternative winning routes, not just his latest defeat. The drift to 4.60 reduces net return from £148.44 to £131.94. I still accept it for this paper proposal; value is unproven. He is now close to favouritism rather than the sole market leader: Bet365 4.00 versus North Shore 3.75 at 08:25:08 GMT.",
+          "conditions": "GOOD, Good to soft in places",
+          "whole_field_review": "Saint Jeannais, Hold The Throw and Wilde’s Legacy are improving hurdle winners but their class progress is less demonstrated; Kershaw’s hurdles win faces a significant class demand. All eight remain active.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Pick",
+          "frozen_lay_odds": 4.6
+        }
+      ],
+      "result_history": []
+    },
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Giorgio M",
+      "course": "Lingfield (AW)",
+      "off_time_uk": "14:20",
+      "race_id": "rac_32305103350",
+      "horse_id": "hrs_37276246",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T14:20:00+00:00",
+      "lay_odds": 4.2,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/lingfield/racecard/949648/midnite-a-next-generation-betting-app-handicap",
+      "racecard_verified_at": "2026-11-21T08:40:11.604404+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 6,
+      "selected_at": "2026-11-21T08:34:00.836245+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-21T08:34:00.836245+00:00",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-21T08:34:00.836245+00:00",
+        "raw_reasoning": {
+          "decision": "New priced Pick proposal at 4.20; Friday racing case retained, Friday 1000 quote rejected.",
+          "opposition": "1 Fuseboard: proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness. 2 Macarone: five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations. 3 Phoenix Moon: recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb.",
+          "counter": "Giorgio M won convincingly over 7f five days ago after a break with cheekpieces restored. Billy Loughnane, current fitness and the drop from Class 5 to Class 6 support another win. He may be sharp enough for 6f; an unproven winning trip is not inability.",
+          "resolution": "All his wins have been at 7f; here a 5 lb penalty, a shorter trip and a plausible challenge for the lead from Fuseboard meet established 6f opposition. The concern survives the class drop because the rivals supply current relevant form, not just hoped-for improvement. At 4.20 the successful-lay return is £148.44; Friday 1000 offered only about £0.48. No universal odds cap is applied. Bet365 3.50 at 08:25:08 supports favourite/near-favourite screening.",
+          "whole_field": "Yachtsman offers a recent AW third and 6f winning route; Far Too Fizzy has C&D ability but inconsistent form. An Outlaw’s Grace has a 7 lb claim and class-drop revival route; do not dismiss solely on losing sequence. Way To Dubai, Elvetham, Midnight Call and Herculeus have more condition-dependent revival cases. Koffee And Kale is NR, not continuing opposition. Do not infer a quantified pace collapse."
+        },
+        "source_report": "https://chatgpt.com/library?file_id=libfile_eba02f2ab96481918b2e2151aa1eb5d6&account_id=personal",
+        "earlier_exploratory_review": {
+          "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+          "raw_reasoning": "| 14:20 Lingfield (AW) | Giorgio M | Supported racing candidate; price review outstanding | A quick 6f return under a penalty after winning at 7f meets Macarone’s repeated 6f wins and Fuseboard’s course-and-distance form. His own latest win remains strong. The captured Lay is 1000, so I reject publication at that price and retain the racing case for a fresh capture. |",
+          "price_rejected": {
+            "lay_odds": 1000.0,
+            "displayed_amount_gbp": 2.62,
+            "per_market_retrieved_at": "2026-11-20T08:19:47.612829+00:00",
+            "capture_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+            "status": "UNAPPROVED_ADVANCE_OBSERVATION"
+          }
+        }
+      },
+      "field_size": 11,
+      "going": "POLYTRACK: STANDARD",
+      "surface": "AW",
+      "race_name": "Midnite A Next Generation Betting App Handicap Stakes",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Fuseboard: proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness. 2 Macarone: five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations. 3 Phoenix Moon: recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb. All his wins have been at 7f; here a 5 lb penalty, a shorter trip and a plausible challenge for the lead from Fuseboard meet established 6f opposition. The concern survives the class drop because the rivals supply current relevant form, not just hoped-for improvement. At 4.20 the successful-lay return is £148.44; Friday 1000 offered only about £0.48. No universal odds cap is applied. Bet365 3.50 at 08:25:08 supports favourite/near-favourite screening.",
+        "counterargument": "Giorgio M won convincingly over 7f five days ago after a break with cheekpieces restored. Billy Loughnane, current fitness and the drop from Class 5 to Class 6 support another win. He may be sharp enough for 6f; an unproven winning trip is not inability.",
+        "why_still_oppose": "All his wins have been at 7f; here a 5 lb penalty, a shorter trip and a plausible challenge for the lead from Fuseboard meet established 6f opposition. The concern survives the class drop because the rivals supply current relevant form, not just hoped-for improvement. At 4.20 the successful-lay return is £148.44; Friday 1000 offered only about £0.48. No universal odds cap is applied. Bet365 3.50 at 08:25:08 supports favourite/near-favourite screening.",
+        "rival_limitations": "1 Fuseboard: proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness. 2 Macarone: five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations. 3 Phoenix Moon: recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb.",
+        "challengers": [
+          "Fuseboard",
+          "Macarone",
+          "Phoenix Moon"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Fuseboard",
+            "evidence_and_limitations": "proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness."
+          },
+          {
+            "rank": 2,
+            "horse": "Macarone",
+            "evidence_and_limitations": "five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations."
+          },
+          {
+            "rank": 3,
+            "horse": "Phoenix Moon",
+            "evidence_and_limitations": "recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb."
+          }
+        ],
+        "whole_field_review": "Yachtsman offers a recent AW third and 6f winning route; Far Too Fizzy has C&D ability but inconsistent form. An Outlaw’s Grace has a 7 lb claim and class-drop revival route; do not dismiss solely on losing sequence. Way To Dubai, Elvetham, Midnight Call and Herculeus have more condition-dependent revival cases. Koffee And Kale is NR, not continuing opposition. Do not infer a quantified pace collapse.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/lingfield/racecard/949648/midnite-a-next-generation-betting-app-handicap",
+          "https://api.theracingapi.com/v1/racecards/rac_32305103350"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:27.253096+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Fuseboard",
+        "Macarone",
+        "Phoenix Moon"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Fuseboard",
+          "evidence_and_limitations": "proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness."
+        },
+        {
+          "rank": 2,
+          "horse": "Macarone",
+          "evidence_and_limitations": "five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations."
+        },
+        {
+          "rank": 3,
+          "horse": "Phoenix Moon",
+          "evidence_and_limitations": "recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.758009+00:00",
+        "market_id": "1.265791162",
+        "selection_id": 60918634,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 15.12,
+        "displayed_liquidity_gbp": 15.12,
+        "liquidity_gbp": 15.12,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 15.12,
+      "market_position_note": "Bet365 screening 3.5 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "5/2",
+        "decimal": "3.5",
+        "ew_places": "4",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 156.25,
+        "required_stake_decimal": "156.25",
+        "potential_net_profit_gbp": 148.4375,
+        "potential_net_profit_decimal": "148.4375",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.612829+00:00",
+          "price": 1000.0,
+          "displayed_amount_gbp": 2.62,
+          "market_id": "1.265791162",
+          "selection_id": 60918634,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+          "price": 4.2,
+          "displayed_amount_gbp": 15.12,
+          "market_id": "1.265791162",
+          "selection_id": 60918634,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "New priced Pick proposal at 4.20; Friday racing case retained, Friday 1000 quote rejected. All his wins have been at 7f; here a 5 lb penalty, a shorter trip and a plausible challenge for the lead from Fuseboard meet established 6f opposition. The concern survives the class drop because the rivals supply current relevant form, not just hoped-for improvement. At 4.20 the successful-lay return is £148.44; Friday 1000 offered only about £0.48. No universal odds cap is applied. Bet365 3.50 at 08:25:08 supports favourite/near-favourite screening.",
+          "conditions": "POLYTRACK: STANDARD",
+          "whole_field_review": "Yachtsman offers a recent AW third and 6f winning route; Far Too Fizzy has C&D ability but inconsistent form. An Outlaw’s Grace has a 7 lb claim and class-drop revival route; do not dismiss solely on losing sequence. Way To Dubai, Elvetham, Midnight Call and Herculeus have more condition-dependent revival cases. Koffee And Kale is NR, not continuing opposition. Do not infer a quantified pace collapse.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Pick",
+          "frozen_lay_odds": 4.2
+        }
+      ],
+      "result_history": []
+    },
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Rock My Way",
+      "course": "Ascot",
+      "off_time_uk": "14:40",
+      "race_id": "rac_32305068484",
+      "horse_id": "hrs_29117291",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T14:40:00+00:00",
+      "lay_odds": 4.1,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/ascot/racecard/949621/restorations-uk-berkshire-national-handicap-chase-gbb-race",
+      "racecard_verified_at": "2026-11-21T08:40:11.894148+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 7,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "— Pick, price approval outstanding\n\nMain case: **Our Power**, ranked first, finished ahead of Rock My Way in the Sandown staying handicap in April and retains a mark below his last winning mark. Current effective weights are 168 versus 165 lb and ratings 140 versus 137: the nominal rating advantage is fully offset by weight. Our Power meets Rock My Way 4 lb worse than at Sandown, so that result is supportive evidence, not a free handicap advantage. He has also disappointed in this race and needs to reproduce his blinkered revival. Second-ranked **Brandt** has successive chase wins and carries 157 minus 7 = **150 lb**, but a 9 lb rise and longer trip demand more. Third-ranked **Mt Fugi Park**, 163 lb, has two recent chase wins on relevant ground; jumping is a genuine limitation. **Ballycamus** is a recent winner but needs further stamina; **Henry’s Friend**, 167 minus 7 = 160 lb, has course-class revival claims; **Hold Your Fort**, **Sound And Fury** and **My Gift To You** add weaker or condition-dependent routes.\n\nStrongest winning case: Rock My Way won this race easily last year, stays and has a credible fresh winning route. He is 6 lb above that winning mark and had a prep run last year, but absence alone is not evidence of unfitness. The verdict survives because the principal rival has demonstrated high-level staying handicap form, while two other contenders add established chase wins and different winning routes. Bet365 screening 3.00 established favouritism; Friday’s 4.30 Lay is an earlier separate capture. This is the most condition-sensitive of the four Picks; a material rival withdrawal must trigger a review, not an invented earlier warning.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 9,
+      "going": "GOOD TO FIRM, Good in places",
+      "surface": "Turf",
+      "race_name": "Restorations UK Berkshire National Handicap Steeple Chase (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Our Power: strong Sandown staying-handicap second ahead of Rock My Way; 168 versus 165 lb, OR 140 versus 137. Weight offsets that rating gap. Our Power meets him 4 lb worse than at Sandown and previously disappointed in this race, so no simplistic direct-form reversal is asserted. 2 Brandt: consecutive chase wins; 157 minus 7 = 150 lb, but another 9 lb rise and longer trip demand improvement. 3 Mt Fugi Park: recent chase wins on good ground, 163 lb; jumping is the limitation. The broader opposition remains sufficient, with an established staying rival plus recent chase winners. Firmer ground is a material observation, not a fabricated known inability for any runner. I retain the Pick at 4.10, improving net from £143.94 to £153.23. Principal challengers remain declared.",
+        "counterargument": "Rock My Way won this race impressively last year, stays and has a coherent fresh winning chance. The 6 lb higher mark and missing prep run do not prove he is unfit or badly treated.",
+        "why_still_oppose": "The broader opposition remains sufficient, with an established staying rival plus recent chase winners. Firmer ground is a material observation, not a fabricated known inability for any runner. I retain the Pick at 4.10, improving net from £143.94 to £153.23. Principal challengers remain declared.",
+        "rival_limitations": "1 Our Power: strong Sandown staying-handicap second ahead of Rock My Way; 168 versus 165 lb, OR 140 versus 137. Weight offsets that rating gap. Our Power meets him 4 lb worse than at Sandown and previously disappointed in this race, so no simplistic direct-form reversal is asserted. 2 Brandt: consecutive chase wins; 157 minus 7 = 150 lb, but another 9 lb rise and longer trip demand improvement. 3 Mt Fugi Park: recent chase wins on good ground, 163 lb; jumping is the limitation.",
+        "challengers": [
+          "Our Power",
+          "Brandt",
+          "Mt Fugi Park"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Our Power",
+            "evidence_and_limitations": "strong Sandown staying-handicap second ahead of Rock My Way; 168 versus 165 lb, OR 140 versus 137. Weight offsets that rating gap. Our Power meets him 4 lb worse than at Sandown and previously disappointed in this race, so no simplistic direct-form reversal is asserted."
+          },
+          {
+            "rank": 2,
+            "horse": "Brandt",
+            "evidence_and_limitations": "consecutive chase wins; 157 minus 7 = 150 lb, but another 9 lb rise and longer trip demand improvement."
+          },
+          {
+            "rank": 3,
+            "horse": "Mt Fugi Park",
+            "evidence_and_limitations": "recent chase wins on good ground, 163 lb; jumping is the limitation."
+          }
+        ],
+        "whole_field_review": "Ballycamus needs to show stamina at this trip; Henry’s Friend has course revival claims and a 7 lb claim (160 lb effective). Hold Your Fort, Sound And Fury and My Gift To You have weaker or condition-dependent routes. All nine remain active.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/ascot/racecard/949621/restorations-uk-berkshire-national-handicap-chase-gbb-race",
+          "https://api.theracingapi.com/v1/racecards/rac_32305068484"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:26.965571+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Our Power",
+        "Brandt",
+        "Mt Fugi Park"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Our Power",
+          "evidence_and_limitations": "strong Sandown staying-handicap second ahead of Rock My Way; 168 versus 165 lb, OR 140 versus 137. Weight offsets that rating gap. Our Power meets him 4 lb worse than at Sandown and previously disappointed in this race, so no simplistic direct-form reversal is asserted."
+        },
+        {
+          "rank": 2,
+          "horse": "Brandt",
+          "evidence_and_limitations": "consecutive chase wins; 157 minus 7 = 150 lb, but another 9 lb rise and longer trip demand improvement."
+        },
+        {
+          "rank": 3,
+          "horse": "Mt Fugi Park",
+          "evidence_and_limitations": "recent chase wins on good ground, 163 lb; jumping is the limitation."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.758009+00:00",
+        "market_id": "1.265790999",
+        "selection_id": 50294796,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 17.87,
+        "displayed_liquidity_gbp": 17.87,
+        "liquidity_gbp": 17.87,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 17.87,
+      "market_position_note": "Bet365 screening 3.5 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "5/2",
+        "decimal": "3.5",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 161.29032258064515,
+        "required_stake_decimal": "161.2903225806451612903225806",
+        "potential_net_profit_gbp": 153.2258064516129,
+        "potential_net_profit_decimal": "153.2258064516129032258064516",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.612829+00:00",
+          "price": 4.3,
+          "displayed_amount_gbp": 20.18,
+          "market_id": "1.265790999",
+          "selection_id": 50294796,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+          "price": 4.1,
+          "displayed_amount_gbp": 17.87,
+          "market_id": "1.265790999",
+          "selection_id": 50294796,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Pick at 4.10; retain explicit conditions sensitivity. The broader opposition remains sufficient, with an established staying rival plus recent chase winners. Firmer ground is a material observation, not a fabricated known inability for any runner. I retain the Pick at 4.10, improving net from £143.94 to £153.23. Principal challengers remain declared.",
+          "conditions": "GOOD TO FIRM, Good in places",
+          "whole_field_review": "Ballycamus needs to show stamina at this trip; Henry’s Friend has course revival claims and a 7 lb claim (160 lb effective). Hold Your Fort, Sound And Fury and My Gift To You have weaker or condition-dependent routes. All nine remain active.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Pick",
+          "frozen_lay_odds": 4.1
+        }
+      ],
+      "result_history": []
+    },
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence; probability not calibrated",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Vanderpoel",
+      "course": "Ascot",
+      "off_time_uk": "15:18",
+      "race_id": "rac_32304187149",
+      "horse_id": "hrs_40786599",
+      "race_date": "2026-11-21",
+      "scheduled_off_dt": "2026-11-21T15:18:00+00:00",
+      "lay_odds": 2.84,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-21/ascot/racecard/948034/vietti-barolo-hurst-park-handicap-chase-premier-handicap-gbb-race",
+      "racecard_verified_at": "2026-11-21T08:40:11.751324+00:00",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-21",
+      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "interest_rank": 8,
+      "selected_at": "2026-11-20T21:02:20.785967+00:00",
+      "selection_time_note": "Original proposal record timestamp retained; exact earlier conversational selection time is not reconstructed. Friday preliminary proposals were unapproved. New Giorgio M and Delamotte proposals were recorded in Saturday’s morning review.",
+      "added_at": "2026-11-21T08:40:26.069452+00:00",
+      "user_approved_at": "2026-11-21T08:35:30+00:00",
+      "user_approval_text": "Ok add all to the app please",
+      "user_approval_time_note": "Approval recorded at the first clock check in this publication turn; exact message arrival time unavailable. User approved the immediately preceding five Picks and three Watchlist entries at their exact Saturday prices.",
+      "price_approved_at": "2026-11-21T08:35:30+00:00",
+      "price_approval_text": "Ok add all to the app please",
+      "price_approval_time_note": "Same explicit roster/price approval; no second approval requested.",
+      "original_pre_race_review_at": "2026-11-20T21:02:20.785967+00:00",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-20T21:02:20.785967+00:00",
+        "raw_reasoning": "— Pick, price approval outstanding\n\nMain case: **Martator**, ranked first, finished two lengths behind Vanderpoel over this C&D on 31 October. He then carried 168 lb against 165; now 167 against 168, so he is **4 lb better off**. His Grand Annual win is additional demonstrated chase class. Second-ranked **Calico** won this race last year; 168 minus his verified 10 lb claim = **158 lb**, versus Vanderpoel’s 168. The claim matters, but a claim is not a guaranteed improvement in performance and recent form has been less convincing. Third-ranked **Ryan’s Rocket**, 159 lb, won the Red Rum; his 9 lb receipt offsets a 9 lb rating gap and he also returns from a break. **Shakeyatailfeather**, 143 minus 5 = 138 lb, has a route after being left too much to do in the same C&D race and an early unseat subsequently. **Sans Bruit**, 153 minus 5 = 148 lb, is a credible pace participant but has been less effective in this race; **Gabriel’s Getaway**, 142 lb, is 4 lb out of the handicap.\n\nStrongest winning case: Vanderpoel won decisively here after wind surgery, is still improving in his second chase season and may overcome a 7 lb rise. This is not a lay because he is progressive. The verdict survives because Martator’s exact direct comparison and Calico’s meaningful claim provide independent concrete opposition. This makes it a Pick on its own race evidence, not a promotion of an unvalidated Watchlist theory. Bet365 screening 2.75; later Sporting Life showed 6/4. Value remains unproven.",
+        "source_report": "https://chatgpt.com/library?file_id=libfile_f1a8f1eda1e48191921d4baccb70e234&account_id=personal"
+      },
+      "field_size": 7,
+      "going": "GOOD TO FIRM, Good in places",
+      "surface": "Turf",
+      "race_name": "Vietti Barolo Hurst Park Handicap Steeple Chase (Premier Handicap) (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PRE_RACE_ONLY",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "1 Martator: two lengths second to Vanderpoel over this C&D on 31 October; then 168 versus 165 lb, now 167 versus 168, a 4 lb swing in his favour. He is also a Grand Annual winner. 2 Calico: last year’s race winner, 168 minus verified 10 lb claim = 158 lb. The claim matters but does not guarantee a performance gain; recent form is less convincing. 3 Ryan’s Rocket: Red Rum winner, 159 lb. His 9 lb receipt offsets a 9 lb rating gap; fresh form is a route, not certain fitness. The exact Martator comparison and Calico’s effective weight give independent concrete opposition, so the Pick survives its own improvement argument at 2.84. This is an independent race decision, not promotion of an unvalidated theory. No named rival has withdrawn.",
+        "counterargument": "Vanderpoel won decisively after wind surgery, has a 7 lb rise and can continue improving in his second chase season. Today’s good-to-firm ground is an updated condition, not a proven weakness.",
+        "why_still_oppose": "The exact Martator comparison and Calico’s effective weight give independent concrete opposition, so the Pick survives its own improvement argument at 2.84. This is an independent race decision, not promotion of an unvalidated theory. No named rival has withdrawn.",
+        "rival_limitations": "1 Martator: two lengths second to Vanderpoel over this C&D on 31 October; then 168 versus 165 lb, now 167 versus 168, a 4 lb swing in his favour. He is also a Grand Annual winner. 2 Calico: last year’s race winner, 168 minus verified 10 lb claim = 158 lb. The claim matters but does not guarantee a performance gain; recent form is less convincing. 3 Ryan’s Rocket: Red Rum winner, 159 lb. His 9 lb receipt offsets a 9 lb rating gap; fresh form is a route, not certain fitness.",
+        "challengers": [
+          "Martator",
+          "Calico",
+          "Ryan’s Rocket"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Martator",
+            "evidence_and_limitations": "two lengths second to Vanderpoel over this C&D on 31 October; then 168 versus 165 lb, now 167 versus 168, a 4 lb swing in his favour. He is also a Grand Annual winner."
+          },
+          {
+            "rank": 2,
+            "horse": "Calico",
+            "evidence_and_limitations": "last year’s race winner, 168 minus verified 10 lb claim = 158 lb. The claim matters but does not guarantee a performance gain; recent form is less convincing."
+          },
+          {
+            "rank": 3,
+            "horse": "Ryan’s Rocket",
+            "evidence_and_limitations": "Red Rum winner, 159 lb. His 9 lb receipt offsets a 9 lb rating gap; fresh form is a route, not certain fitness."
+          }
+        ],
+        "whole_field_review": "Shakeyatailfeather carries 143 minus 5 = 138 lb and has a course route after an unlucky early unseat. Sans Bruit carries 153 minus 5 = 148 lb but has been less effective in this race. Gabriel’s Getaway is 4 lb out of the handicap.",
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-21/ascot/racecard/948034/vietti-barolo-hurst-park-handicap-chase-premier-handicap-gbb-race",
+          "https://api.theracingapi.com/v1/racecards/rac_32304187149"
+        ],
+        "checked_at": "2026-11-21T08:25:35+00:00",
+        "evidence_retrieval_note": "Pro card odds updated 2026-11-21 08:25:08 GMT; fresh full-field form briefs and historical supplements reviewed before the 08:34 report. Exact request completion times not recorded for each API call. Sporting Life meeting retrieval time recorded separately.",
+        "sporting_life_checked_at": "2026-11-21T08:26:26.965571+00:00",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "uncertainty": "Qualitative evidence, value unproven; delayed Lay quotes and full-stake matching unverified."
+      },
+      "identified_challengers": [
+        "Martator",
+        "Calico",
+        "Ryan’s Rocket"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Martator",
+          "evidence_and_limitations": "two lengths second to Vanderpoel over this C&D on 31 October; then 168 versus 165 lb, now 167 versus 168, a 4 lb swing in his favour. He is also a Grand Annual winner."
+        },
+        {
+          "rank": 2,
+          "horse": "Calico",
+          "evidence_and_limitations": "last year’s race winner, 168 minus verified 10 lb claim = 158 lb. The claim matters but does not guarantee a performance gain; recent form is less convincing."
+        },
+        {
+          "rank": 3,
+          "horse": "Ryan’s Rocket",
+          "evidence_and_limitations": "Red Rum winner, 159 lb. His 9 lb receipt offsets a 9 lb rating gap; fresh form is a route, not certain fitness."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+        "snapshot_blob_sha": "ef9f34fca881c64fc8996fe52f4f8d486fd4b94e",
+        "started_at_utc": "2026-11-21T08:24:21.181355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+        "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+        "retrieved_at": "2026-11-21T08:24:21.758009+00:00",
+        "market_id": "1.265791005",
+        "selection_id": 78481418,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 22.06,
+        "displayed_liquidity_gbp": 22.06,
+        "liquidity_gbp": 22.06,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven."
+      },
+      "source": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "available_stake_gbp": 22.06,
+      "market_position_note": "Bet365 screening 2.5 at 2026-11-21 08:25:08 GMT; bookmaker screening is distinct from the frozen Exchange Lay.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "6/4",
+        "decimal": "2.5",
+        "ew_places": "3",
+        "ew_denom": "5",
+        "updated": "2026-11-21 08:25:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 271.7391304347826,
+        "required_stake_decimal": "271.7391304347826086956521739",
+        "potential_net_profit_gbp": 258.1521739130435,
+        "potential_net_profit_decimal": "258.1521739130434782608695652",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_SATURDAY_BASELINE",
+      "price_quality_warning": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "e676bba9530c9d695cbbd8a7800dfd1d9cb0f10e",
+          "snapshot_retrieved_at_utc": "2026-11-20T08:19:47.706847+00:00",
+          "retrieved_at_utc": "2026-11-20T08:19:47.612829+00:00",
+          "price": 2.84,
+          "displayed_amount_gbp": 25.81,
+          "market_id": "1.265791005",
+          "selection_id": 78481418,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": false,
+          "stage": "FRIDAY_ADVANCE_UNAPPROVED_OBSERVATION"
+        },
+        {
+          "snapshot_commit": "d35cfd6f3a39e45abdb6324fbc6deff22c3cb972",
+          "snapshot_retrieved_at_utc": "2026-11-21T08:24:22.230683+00:00",
+          "retrieved_at_utc": "2026-11-21T08:24:21.758009+00:00",
+          "price": 2.84,
+          "displayed_amount_gbp": 22.06,
+          "market_id": "1.265791005",
+          "selection_id": 78481418,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "approved": true,
+          "approval_recorded_at": "2026-11-21T08:35:30+00:00",
+          "stage": "SATURDAY_APPROVED_BASELINE"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-21T08:34:00.836245+00:00",
+          "type": "SATURDAY_RACING_AND_PRICE_REVIEW",
+          "note": "Retain Pick at unchanged 2.84 after second early racing review. The exact Martator comparison and Calico’s effective weight give independent concrete opposition, so the Pick survives its own improvement argument at 2.84. This is an independent race decision, not promotion of an unvalidated theory. No named rival has withdrawn.",
+          "conditions": "GOOD TO FIRM, Good in places",
+          "whole_field_review": "Shakeyatailfeather carries 143 minus 5 = 138 lb and has a course route after an unlucky early unseat. Sans Bruit carries 153 minus 5 = 148 lb but has been less effective in this race. Gabriel’s Getaway is 4 lb out of the handicap.",
+          "original_group_retained": true
+        },
+        {
+          "observed_at": "2026-11-21T08:35:30+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Ok add all to the app please",
+          "group": "Pick",
+          "frozen_lay_odds": 2.84
+        }
+      ],
+      "result_history": [],
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "independent_pick_case": true
+        }
+      ]
+    }
+  ],
+  "simulation_note": "Saturday 21 November 08:24 GMT delayed Betfair Exchange Lay capture; full-stake matching unverified, exact quote time/delay unknown, value unproven. Five user-approved Picks only; Watchlist excluded.",
+  "published_simulations": {
+    "recorded_at": "2026-11-21T08:35:30+00:00",
+    "authorization": "Ok add all to the app please Exact five Picks from the 08:34 GMT review; Watchlist kept separate.",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32305293176",
+          "horse_id": "hrs_39678835",
+          "odds": 3.7,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32305074295",
+          "horse_id": "hrs_50666847",
+          "odds": 4.6,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32305103350",
+          "horse_id": "hrs_37276246",
+          "odds": 4.2,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32305068484",
+          "horse_id": "hrs_29117291",
+          "odds": 4.1,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32304187149",
+          "horse_id": "hrs_40786599",
+          "odds": 2.84,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  },
+  "published_simulation_history": []
+}
