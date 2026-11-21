@@ -41,10 +41,10 @@
  // This is a review, not a frozen selection or an unsettled wager.
  // Original proposal and quote are retained above and in the dated review record.
  const weekendReview = {
-  status: 'PENDING_REVIEW',
-  reviewedAt: '20 Nov 2026 · 19:56 GMT',
-  historyPath: 'data/football-review-2026-11-20-evening.json',
-  note: 'No confirmed paper selections. Middlesbrough v Bristol City remains on hold until fitness and attacking availability can be verified.'
+  status: 'SATURDAY_PASSED_SUNDAY_PENDING',
+  reviewedAt: '21 Nov 2026 · 14:56 GMT',
+  historyPath: 'data/football-review-2026-11-21-prematch.json',
+  note: 'No confirmed paper selections. Middlesbrough v Bristol City not selected: Lankshear and Twine are on the bench. Saturday review complete; Sunday review pending.'
  };
  function reviewNotice(){
   return '<p class="football-trial-note"><strong>' + esc(weekendReview.note) + '</strong></p>' +
