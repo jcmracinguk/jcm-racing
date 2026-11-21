@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-11-21T21:54:03.176553+00:00",
+  "corrections": [
+    {
+      "observed_at": "2026-11-21T21:54:03.176553+00:00",
+      "kind": "RESULT_DISPLAY_CORRECTION",
+      "horse": "Giorgio M",
+      "race_date": "2026-11-21",
+      "course": "Lingfield (AW)",
+      "off_time_uk": "14:20",
+      "race_id": "rac_32305103350",
+      "result_status": "LOSS",
+      "booked_profit_gbp": -500,
+      "explanation": "Stored official winner/LOSS and frozen price were already settled. Front-end Sporting Life URL course comparison failed to strip the AW suffix, leaving the confirmed result displayed as pending. Normalise the suffix consistently with racecard links; preserve stored outcome, original settlement times, prices and audit.",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/lingfield/949648/midnite-a-next-generation-betting-app-handicap",
+      "current_result_observation": "2026-11-21T21:51:41.063899+00:00"
+    }
+  ]
+}
