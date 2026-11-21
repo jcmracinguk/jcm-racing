@@ -112,7 +112,7 @@
       "result_course": "Wexford",
       "result_horse": "The Besty Woman",
       "result_off_dt": "2026-11-04T13:33:00+00:00",
-      "result_retrieved_at": "2026-11-04T16:31:28.617786Z",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
       "result_race_id": "rac_32303414286",
       "result_horse_id": "hrs_50667302",
       "result_website_race_id": "946898",
@@ -126,7 +126,7 @@
       "selected_beaten_lengths": null,
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/wexford/946898/botanica-international-rated-novice-hurdle",
-      "margin_retrieved_at": "2026-11-04T16:31:28.617786Z",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "finish_margins": [
@@ -171,10 +171,44 @@
           "horse": "Old Saxony",
           "margin_from_previous": "4 ½",
           "cumulative_beaten_lengths": "27.5"
+        },
+        {
+          "position": "PU",
+          "horse": "The Besty Woman",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
         }
       ],
       "result_recovery_note": "User-requested recovery: explicit PU in weighed-in Sporting Life full result, corroborated by The Racing API. No numbered placing or beaten distance assigned.",
-      "result_corroborating_url": "https://api.theracingapi.com/v1/results/rac_32303414286"
+      "result_corroborating_url": "https://api.theracingapi.com/v1/results/rac_32303414286",
+      "result_history": [
+        {
+          "result_status": "WIN",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_source": "SPORTING_LIFE",
+          "position": "PU",
+          "placing": "PU",
+          "result_date": "2026-11-04",
+          "result_off_time_uk": "13:33",
+          "result_course": "Wexford",
+          "result_horse": "The Besty Woman",
+          "result_off_dt": "2026-11-04T13:33:00+00:00",
+          "result_retrieved_at": "2026-11-04T16:31:28.617786Z",
+          "result_race_id": "rac_32303414286",
+          "result_horse_id": "hrs_50667302",
+          "result_website_race_id": "946898",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-04/wexford/946898/botanica-international-rated-novice-hurdle",
+          "result_non_runners": [
+            "Royal Belief"
+          ],
+          "result_website_horse_id": "1208597",
+          "result_stage": "WEIGHEDIN",
+          "result_recovery_note": "User-requested recovery: explicit PU in weighed-in Sporting Life full result, corroborated by The Racing API. No numbered placing or beaten distance assigned.",
+          "result_corroborating_url": "https://api.theracingapi.com/v1/results/rac_32303414286"
+        }
+      ],
+      "booked_profit_gbp": 263.8888888888889,
+      "booked_profit_decimal": "263.8888888888888888888888889"
     },
     {
       "race_date": "2026-11-04",

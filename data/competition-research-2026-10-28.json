@@ -204,7 +204,52 @@
       "result_stage": "FULL_RESULT",
       "result_non_runners": [],
       "result_source_reference": "The Racing API Pro get_result_by_id",
-      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302622053"
+      "result_source_url": "https://api.theracingapi.com/v1/results/rac_32302622053",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Nazare",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Scavengers Reign",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Cuban Court",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "8.75"
+        },
+        {
+          "position": "4",
+          "horse": "Clap Of Thunder",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "10"
+        },
+        {
+          "position": "5",
+          "horse": "Krak",
+          "margin_from_previous": "13",
+          "cumulative_beaten_lengths": "23"
+        },
+        {
+          "position": "PU",
+          "horse": "It's Top",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-10-28/huntingdon/945763/christmas-parties-2026-at-huntingdon-racecourse-handicap-chase-gbb-race",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z"
     }
   ],
   "competition_watchlist": []

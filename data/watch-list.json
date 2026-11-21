@@ -4356,12 +4356,12 @@
       "going": "GOOD TO YIELDING, Yielding in places",
       "surface": "Turf",
       "race_name": "Sebden Steel Maiden Hurdle",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 558.8235294117648,
+      "booked_profit_decimal": "558.8235294117647058823529412",
+      "winner": "Kingstonian",
+      "position": "7",
       "selection_reason": {
         "summary": "1 Kingstonian: demonstrated hurdle second at Cheltenham over 2m4f and earlier Killarney placing; proven Flat staying ability supports the trip. 2 Bacharach: actual Cork hurdle-debut second; beaten by the winner and still has to improve over further. 3 Brady Hartsfield: actual Gowran hurdle second, following useful bumper placings; needs progress. All four principal horses carry 161 lb without claims. Specific opponents already have hurdle evidence and appropriate trip routes. The favourite’s bumper promise remains substantial, so this is a Watchlist test, not a Pick. Friday’s 1000 quote was rejected; the actual 1.85 quote now permits a meaningful price review. This is a newly proposed observation, not a Friday-frozen entry.",
         "counterargument": "Delamotte impressed in an 18-runner festival bumper here and can be a substantially better hurdler. Townend and Mullins reinforce a credible winning route. Hurdle debut and 207-day absence are unknowns, not established defects.",
@@ -4473,7 +4473,7 @@
         "potential_net_profit_decimal": "558.8235294117647058823529412",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 558.8235294117648,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -4546,7 +4546,137 @@
           "definition_record": "data/watchlist-research-2026-11-21.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "11:53",
+      "result_course": "Punchestown",
+      "result_horse": "Delamotte",
+      "result_off_dt": "2026-11-21T11:53:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305289302",
+      "result_horse_id": "hrs_64135204",
+      "result_website_race_id": "949792",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949792/sebden-steel-maiden-hurdle",
+      "result_non_runners": [
+        "Clean As A Whistle",
+        "Hetty Parker",
+        "Robber Barron"
+      ],
+      "result_website_horse_id": "1222443",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ½",
+      "selected_beaten_lengths": "29.05",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Kingstonian",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Brady Hartsfield",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "1.5"
+        },
+        {
+          "position": "3",
+          "horse": "Menethil",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "5.5"
+        },
+        {
+          "position": "4",
+          "horse": "Gallows Hill",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "8"
+        },
+        {
+          "position": "5",
+          "horse": "Bacharach",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "8.3"
+        },
+        {
+          "position": "6",
+          "horse": "Banada Breeze",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "27.3"
+        },
+        {
+          "position": "7",
+          "horse": "Delamotte",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "29.05"
+        },
+        {
+          "position": "8",
+          "horse": "Striking Distance",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "30.05"
+        },
+        {
+          "position": "9",
+          "horse": "Way With Words",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "33.3"
+        },
+        {
+          "position": "10",
+          "horse": "Irragh",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "43.3"
+        },
+        {
+          "position": "11",
+          "horse": "Dooks",
+          "margin_from_previous": "4 ¼",
+          "cumulative_beaten_lengths": "47.55"
+        },
+        {
+          "position": "12",
+          "horse": "Blaze Of Honour",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "49.55"
+        },
+        {
+          "position": "13",
+          "horse": "Galantacht",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "50.05"
+        },
+        {
+          "position": "14",
+          "horse": "Smuggle The Tin",
+          "margin_from_previous": "9",
+          "cumulative_beaten_lengths": "59.05"
+        },
+        {
+          "position": "15",
+          "horse": "Calle Lorio",
+          "margin_from_previous": "16",
+          "cumulative_beaten_lengths": "75.05"
+        },
+        {
+          "position": "16",
+          "horse": "What About Max",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "86.05"
+        },
+        {
+          "position": "17",
+          "horse": "Kims Word",
+          "margin_from_previous": "41",
+          "cumulative_beaten_lengths": "127.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949792/sebden-steel-maiden-hurdle",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "7th"
     },
     {
       "tier": "watchlist",
@@ -4592,12 +4722,12 @@
       "going": "GOOD TO YIELDING, Yielding in places",
       "surface": "Turf",
       "race_name": "Conway Piling Beginners Steeplechase",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Mighty Park",
+      "position": "1",
       "selection_reason": {
         "summary": "1 Saint Baco: graded hurdle form with a clear chase-transfer route. 2 Heads Up: recent listed hurdle winner, fit but inconsistent. 3 Powerful: useful course handicap hurdler with a strong-travelling chase route. Each principal carries 166 lb, the same as Mighty Park; their ability must still transfer. Laurets D’Estruval and Road Exile add useful jumping potential. The opposition is credible but several rivals also have unproven transfers, so this stays exploratory. Shortening 2.94 to 2.64 improves conditional net from £244.85 to £289.63; it does not justify promotion.",
         "counterargument": "Mighty Park’s wide-margin hurdle win, chasing physique, pedigree and connections give a substantial route to improvement over fences.",
@@ -4709,7 +4839,7 @@
         "potential_net_profit_decimal": "289.6341463414634146341463415",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -4775,7 +4905,125 @@
           "definition_record": "data/watchlist-research-2026-11-21.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "12:28",
+      "result_course": "Punchestown",
+      "result_horse": "Mighty Park",
+      "result_off_dt": "2026-11-21T12:28:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305291239",
+      "result_horse_id": "hrs_52055465",
+      "result_website_race_id": "949793",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949793/conway-piling-beginners-chase",
+      "result_non_runners": [
+        "Powerful",
+        "He Can't Dance",
+        "Rock On Richie"
+      ],
+      "result_website_horse_id": "1209940",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "3 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Mighty Park",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Saint Baco",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "3.25"
+        },
+        {
+          "position": "3",
+          "horse": "Laurets D'estruval",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "5.25"
+        },
+        {
+          "position": "4",
+          "horse": "Heads Up",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "17.25"
+        },
+        {
+          "position": "5",
+          "horse": "Bertutea",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "17.75"
+        },
+        {
+          "position": "6",
+          "horse": "Avalo",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "18.25"
+        },
+        {
+          "position": "7",
+          "horse": "Bokamsin",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "29.25"
+        },
+        {
+          "position": "8",
+          "horse": "Fierce Handay",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "30.75"
+        },
+        {
+          "position": "9",
+          "horse": "County Final",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "34.75"
+        },
+        {
+          "position": "10",
+          "horse": "Saveforarainyday",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "36"
+        },
+        {
+          "position": "11",
+          "horse": "Raise You Up",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "42"
+        },
+        {
+          "position": "12",
+          "horse": "Road Exile",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "57"
+        },
+        {
+          "position": "13",
+          "horse": "Eternal Reward",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "76"
+        },
+        {
+          "position": "14",
+          "horse": "Goldinthemountains",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "79"
+        },
+        {
+          "position": "15",
+          "horse": "Tackletommywoowoo",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "80.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949793/conway-piling-beginners-chase",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "tier": "watchlist",
@@ -4821,12 +5069,12 @@
       "going": "GOOD, Good to soft in places",
       "surface": "Turf",
       "race_name": "Bet At Your Best With Betfair Handicap Steeple Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 215.9090909090909,
+      "booked_profit_decimal": "215.9090909090909090909090909",
+      "winner": "We're Red And Blue",
+      "position": "2",
       "selection_reason": {
         "summary": "1 Milan Tino: recent chase winner, 164 lb/OR123 versus Kykorock 166 lb/OR125—roughly level handicap terms. 2 We’re Red And Blue: promising chase-debut second, 168 lb/OR127; improvement is still needed. 3 Tigers Moon: another promising chase-debut second, 152 lb/OR111, not a demonstrated handicap edge. That counterargument keeps the selection in Watchlist. The drift 2.76 to 3.20 reduces net from £269.89 to £215.91; this remains an acceptable prospectively recorded paper experiment, with value unproven.",
         "counterargument": "Kykorock’s four chase wins from five starts, comfortable return and subsequent winners behind him provide a strong progressive winning case despite the 8 lb rise.",
@@ -4938,7 +5186,7 @@
         "potential_net_profit_decimal": "215.9090909090909090909090909",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 215.9090909090909,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -5004,7 +5252,55 @@
           "definition_record": "data/watchlist-research-2026-11-21.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "12:40",
+      "result_course": "Haydock",
+      "result_horse": "Kykorock",
+      "result_off_dt": "2026-11-21T12:40:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305072358",
+      "result_horse_id": "hrs_39940964",
+      "result_website_race_id": "949631",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/haydock/949631/bet-at-your-best-with-betfair-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1167013",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "2 ½",
+      "selected_beaten_lengths": "2.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "We're Red And Blue",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Kykorock",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "3",
+          "horse": "Bleu D'enfer",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "4",
+          "horse": "Sir Tivo",
+          "margin_from_previous": "18",
+          "cumulative_beaten_lengths": "24.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/haydock/949631/bet-at-your-best-with-betfair-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     }
   ]
 }

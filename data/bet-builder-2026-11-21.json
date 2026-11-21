@@ -63,12 +63,12 @@
       "going": "GOOD TO YIELDING, Yielding in places",
       "surface": "Turf",
       "race_name": "Boodles Florida Pearl Novice Steeplechase (Grade 2)",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
       "winner": null,
-      "position": null,
+      "position": "1",
       "selection_reason": {
         "summary": "1 Ballygunner Castle: Kerry National winner, rated 146 versus 138, both 157 lb with no claim. The 8 lb rating gap is not offset by weight. 2 The Big Clubman: recent chase winner, with staying hurdle form supplying a specific step-up-in-trip route; still needs to improve in this grade. 3 Chanceawetmorning: two chase wins, but 160 lb includes a 3 lb penalty and today is stronger. A demonstrated major 3m chase winner at level weights and a second recent chase winner give sufficient opposition despite his potential. The shorter 3.70 quote raises conditional net return from £118.75 to £175.93; racing strength is unchanged.",
         "counterargument": "Kiss Will has a close staying chase second and a credible Irish National effort before falling. Townend, trip and further progress are real positives; absence and chase-maiden status are not proven faults.",
@@ -180,7 +180,7 @@
         "potential_net_profit_decimal": "175.9259259259259259259259259",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -234,7 +234,73 @@
           "frozen_lay_odds": 3.7
         }
       ],
-      "result_history": []
+      "result_history": [],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "13:03",
+      "result_course": "Punchestown",
+      "result_horse": "Kiss Will",
+      "result_off_dt": "2026-11-21T13:03:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305293176",
+      "result_horse_id": "hrs_39678835",
+      "result_website_race_id": "949794",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949794/boodles-florida-pearl-novice-chase-grade-2",
+      "result_non_runners": [],
+      "result_website_horse_id": "1118556",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Kiss Will",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Lady Bluebird",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Chanceawetmorning",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "4",
+          "horse": "Largy Star",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "7"
+        },
+        {
+          "position": "5",
+          "horse": "Ballygunner Castle",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "8.25"
+        },
+        {
+          "position": "6",
+          "horse": "King's Bucks",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "14.75"
+        },
+        {
+          "position": "7",
+          "horse": "The Big Clubman",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "14.85"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/punchestown/949794/boodles-florida-pearl-novice-chase-grade-2",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "tier": "selection",
@@ -280,12 +346,12 @@
       "going": "GOOD, Good to soft in places",
       "surface": "Turf",
       "race_name": "Betfair Supports Safer Gambling Week Newton Novices' Hurdle Race (Grade 2) (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 131.94444444444446,
+      "booked_profit_decimal": "131.9444444444444444444444445",
       "winner": null,
-      "position": null,
+      "position": "3",
       "selection_reason": {
         "summary": "1 North Shore: recent Cheltenham hurdle winner and finished ahead of Cosmic Connection in the Persian War; both 156 lb, ratings 139/138. He is not given a fictitious weight edge, and this speed test may suit him less. 2 Kingofthefrontier: Grade 2 hurdle winner, carrying a 3 lb penalty at 159 lb; position/tactical speed is a limitation. 3 Spanish Darling: specific speed route after a competitive Cheltenham hurdle effort, but still needs progress. The case rests on demonstrated hurdle competition plus credible alternative winning routes, not just his latest defeat. The drift to 4.60 reduces net return from £148.44 to £131.94. I still accept it for this paper proposal; value is unproven. He is now close to favouritism rather than the sole market leader: Bet365 4.00 versus North Shore 3.75 at 08:25:08 GMT.",
         "counterargument": "Cosmic Connection’s Sandown novice final demonstrated speed at 2m. His return over further may not represent his ability; the shorter trip and fitness can help.",
@@ -397,7 +463,7 @@
         "potential_net_profit_decimal": "131.9444444444444444444444445",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 131.94444444444446,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -451,7 +517,79 @@
           "frozen_lay_odds": 4.6
         }
       ],
-      "result_history": []
+      "result_history": [],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "13:15",
+      "result_course": "Haydock",
+      "result_horse": "Cosmic Connection",
+      "result_off_dt": "2026-11-21T13:15:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305074295",
+      "result_horse_id": "hrs_50666847",
+      "result_website_race_id": "949632",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/haydock/949632/betfair-supports-safer-gambling-week-newton-novices-hurdle-grade-2-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1217199",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¾",
+      "selected_beaten_lengths": "7.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Kingofthefrontier",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Hold The Throw",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "3",
+          "horse": "Cosmic Connection",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "7.25"
+        },
+        {
+          "position": "4",
+          "horse": "Spanish Darling",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "8"
+        },
+        {
+          "position": "5",
+          "horse": "Saint Jeannais",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "6",
+          "horse": "Wilde's Legacy",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "15"
+        },
+        {
+          "position": "7",
+          "horse": "North Shore",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "21.5"
+        },
+        {
+          "position": "8",
+          "horse": "Kershaw",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "29.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/haydock/949632/betfair-supports-safer-gambling-week-newton-novices-hurdle-grade-2-gbb-race",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     },
     {
       "tier": "selection",
@@ -514,12 +652,12 @@
       "going": "POLYTRACK: STANDARD",
       "surface": "AW",
       "race_name": "Midnite A Next Generation Betting App Handicap Stakes",
-      "result_status": "PENDING",
-      "verification_status": "PRE_RACE_ONLY",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
       "winner": null,
-      "position": null,
+      "position": "1",
       "selection_reason": {
         "summary": "1 Fuseboard: proven Lingfield 6f winner, 132 lb versus Giorgio M 138; he is 6 lb higher than his August winning mark and must reproduce it after 93 days, but absence is not proof of unfitness. 2 Macarone: five consecutive wins, including recent 6f successes; 134 minus 5 lb claim = 129 lb, receiving 9 lb from Giorgio M. His 6 lb rise, wider draw and first Lingfield appearance are real limitations. 3 Phoenix Moon: recent 6f AW win and Kempton second, with course-and-distance success, but stall 12 is less helpful. She carries 133 lb. All his wins have been at 7f; here a 5 lb penalty, a shorter trip and a plausible challenge for the lead from Fuseboard meet established 6f opposition. The concern survives the class drop because the rivals supply current relevant form, not just hoped-for improvement. At 4.20 the successful-lay return is £148.44; Friday 1000 offered only about £0.48. No universal odds cap is applied. Bet365 3.50 at 08:25:08 supports favourite/near-favourite screening.",
         "counterargument": "Giorgio M won convincingly over 7f five days ago after a break with cheekpieces restored. Billy Loughnane, current fitness and the drop from Class 5 to Class 6 support another win. He may be sharp enough for 6f; an unproven winning trip is not inability.",
@@ -631,7 +769,7 @@
         "potential_net_profit_decimal": "148.4375",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -685,7 +823,93 @@
           "frozen_lay_odds": 4.2
         }
       ],
-      "result_history": []
+      "result_history": [],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-21",
+      "result_off_time_uk": "14:20",
+      "result_course": "Lingfield (AW)",
+      "result_horse": "Giorgio M",
+      "result_off_dt": "2026-11-21T14:20:00+00:00",
+      "result_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "result_race_id": "rac_32305103350",
+      "result_horse_id": "hrs_37276246",
+      "result_website_race_id": "949648",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/lingfield/949648/midnite-a-next-generation-betting-app-handicap",
+      "result_non_runners": [
+        "Koffee And Kale"
+      ],
+      "result_website_horse_id": "1119520",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Giorgio M",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Herculeus",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "An Outlaw's Grace",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.55"
+        },
+        {
+          "position": "4",
+          "horse": "Phoenix Moon",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "2.05"
+        },
+        {
+          "position": "5",
+          "horse": "Way To Dubai",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "2.8"
+        },
+        {
+          "position": "6",
+          "horse": "Macarone",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "3.1"
+        },
+        {
+          "position": "7",
+          "horse": "Yachtsman",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "4.6"
+        },
+        {
+          "position": "8",
+          "horse": "Elvetham",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "5.85"
+        },
+        {
+          "position": "9",
+          "horse": "Midnight Call",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "6.05"
+        },
+        {
+          "position": "10",
+          "horse": "Fuseboard",
+          "margin_from_previous": "8 ½",
+          "cumulative_beaten_lengths": "14.55"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-21/lingfield/949648/midnite-a-next-generation-betting-app-handicap",
+      "margin_retrieved_at": "2026-11-21T14:41:59.143765Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "tier": "selection",
