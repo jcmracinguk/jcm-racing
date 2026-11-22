@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-22",
+  "recorded_at": "2026-11-22T14:29:42.949284+00:00",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "source": "SPORTING_LIFE",
+  "corroboration": "Racing API Pro today results agreed with all four selected outcomes and winners at actual review.",
+  "price_basis": "Unchanged approved Saturday advance baseline: 2026-11-21T18:44:20.312566+00:00; morning replacement quotes and Some Song proposal remain unapproved.",
+  "entries": [
+    {
+      "result_race_id": "rac_32305130468",
+      "result_horse_id": "hrs_58412088",
+      "result_horse": "Mwabani",
+      "result_off_time_uk": "14:07",
+      "result_course": "Exeter",
+      "position": "1",
+      "result_status": "LOSS",
+      "winner": "Mwabani",
+      "result_stage": "WEIGHEDIN",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
+      "result_retrieved_at": "2026-11-22T14:28:12.461491Z",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": null,
+      "booked_profit_gbp": -500.0
+    },
+    {
+      "result_race_id": "rac_32305219570",
+      "result_horse_id": "hrs_51185946",
+      "result_horse": "Look Me",
+      "result_off_time_uk": "13:19",
+      "result_course": "Cork",
+      "position": "4",
+      "result_status": "WIN",
+      "winner": "Soul Asylum",
+      "result_stage": "WEIGHEDIN",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
+      "result_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "winning_margin_lengths": "12",
+      "selected_beaten_lengths": "19",
+      "booked_profit_gbp": 237.5
+    },
+    {
+      "result_race_id": "rac_32305128531",
+      "result_horse_id": "hrs_36970423",
+      "result_horse": "Torrent",
+      "result_off_time_uk": "13:37",
+      "result_course": "Exeter",
+      "position": "PU",
+      "result_status": "WIN",
+      "winner": "Silver Hill",
+      "result_stage": "WEIGHEDIN",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": null,
+      "booked_profit_gbp": 161.01694915254237
+    },
+    {
+      "result_race_id": "rac_32305221507",
+      "result_horse_id": "hrs_45445099",
+      "result_horse": "Place De La Nation",
+      "result_off_time_uk": "13:49",
+      "result_course": "Cork",
+      "position": "3",
+      "result_status": "WIN",
+      "winner": "Echoing Silence",
+      "result_stage": "WEIGHEDIN",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
+      "result_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": "5.5",
+      "booked_profit_gbp": 158.33333333333334
+    }
+  ],
+  "pending_note": "Karl Des Tourelles met scheduled T+10 at 14:29 GMT, but exact full-result link was unavailable when checked; retained PENDING. Lazzar, Zanoosh and In The Post not yet eligible at check.",
+  "picks": {
+    "successes": 0,
+    "failures": 1,
+    "pending": 2,
+    "booked_profit_gbp": -500
+  },
+  "watchlist": {
+    "successes": 3,
+    "failures": 0,
+    "pending": 2,
+    "booked_profit_gbp": 556.8502824858757
+  },
+  "no_real_bets": true
+}

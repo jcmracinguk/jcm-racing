@@ -5679,8 +5679,8 @@
       "lay_odds": 3,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/cork/racecard/949801/irish-stallion-farms-ebf-maiden-hurdle",
       "racecard_verified_at": "2026-11-21T20:20:55.853090+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -5702,12 +5702,12 @@
       "going": "YIELDING, Yielding to soft in places",
       "surface": "Turf",
       "race_name": "Irish Stallion Farms EBF Maiden Hurdle",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 237.5,
+      "booked_profit_decimal": "237.50",
+      "winner": "Soul Asylum",
+      "position": "4",
       "selection_reason": {
         "summary": "Useful hurdle experience supplies opposition to a bumper winner making his hurdling debut. Soul Asylum has a hurdle run behind him; Jessbers Wish has actual placed hurdle form, rather than another speculative bumper transfer. Keep the subsequent batch experimental: opponents have useful experience, but neither has demonstrated that it exceeds the favourite’s potential. At the short 3.00 Lay quote the second review still supports Watchlist only.",
         "counterargument": "Look Me won a bumper and was second in the Aintree Grade 2. That ability could transfer immediately and exceed the hurdle form on offer. His absence does not establish unfitness.",
@@ -5819,7 +5819,7 @@
         "potential_net_profit_decimal": "237.50",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 237.5,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -5852,7 +5852,18 @@
           "frozen_lay_odds": 3
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T14:28:12.625570+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_HURDLE_FORM_V_BUMPER_POTENTIAL",
@@ -5865,7 +5876,113 @@
       "reason": "Useful hurdle experience supplies opposition to a bumper winner making his hurdling debut. Soul Asylum has a hurdle run behind him; Jessbers Wish has actual placed hurdle form, rather than another speculative bumper transfer. Winning case: Look Me won a bumper and was second in the Aintree Grade 2. That ability could transfer immediately and exceed the hurdle form on offer. His absence does not establish unfitness. Verdict: Keep the subsequent batch experimental: opponents have useful experience, but neither has demonstrated that it exceeds the favourite’s potential. At the short 3.00 Lay quote the second review still supports Watchlist only.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.114606+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.114606+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "13:19",
+      "result_course": "Cork",
+      "result_horse": "Look Me",
+      "result_off_dt": "2026-11-22T13:19:00+00:00",
+      "result_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "result_race_id": "rac_32305219570",
+      "result_horse_id": "hrs_51185946",
+      "result_website_race_id": "949801",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
+      "result_non_runners": [
+        "Wilton Mills Trier",
+        "Anunnaki",
+        "Cracker's Diamond"
+      ],
+      "result_website_horse_id": "1182146",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "12",
+      "selected_beaten_lengths": "19",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Soul Asylum",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Moonverrin",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "3",
+          "horse": "Young Rebel",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": "13.5"
+        },
+        {
+          "position": "4",
+          "horse": "Look Me",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "19"
+        },
+        {
+          "position": "5",
+          "horse": "Nothingtodowithyou",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "29"
+        },
+        {
+          "position": "6",
+          "horse": "Kaspar Des Bordes",
+          "margin_from_previous": "16",
+          "cumulative_beaten_lengths": "45"
+        },
+        {
+          "position": "7",
+          "horse": "Tommie K",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "47"
+        },
+        {
+          "position": "8",
+          "horse": "Dusty Mills",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "50.75"
+        },
+        {
+          "position": "9",
+          "horse": "Cross Of Moanrue",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "51.05"
+        },
+        {
+          "position": "10",
+          "horse": "Moonquake",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "53.05"
+        },
+        {
+          "position": "11",
+          "horse": "Cascando",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "60.55"
+        },
+        {
+          "position": "12",
+          "horse": "Berkshire Echo",
+          "margin_from_previous": "16",
+          "cumulative_beaten_lengths": "76.55"
+        },
+        {
+          "position": "13",
+          "horse": "River Ore",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "83.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
+      "margin_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "4th"
     },
     {
       "tier": "watchlist",
@@ -5888,8 +6005,8 @@
       "lay_odds": 3.95,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/exeter/racecard/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-21T20:20:59.748179+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 2,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -5911,12 +6028,12 @@
       "going": "GOOD TO FIRM, Good in places (GoingStick: 7.3)",
       "surface": "Turf",
       "race_name": "Chris Down A Lifetime In Racing Novices' Limited Handicap Steeple Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 161.01694915254237,
+      "booked_profit_decimal": "161.0169491525423728813559322",
+      "winner": "Silver Hill",
+      "position": "PU",
       "selection_reason": {
         "summary": "A 9 lb higher mark and a move from Class 4 to Class 3 bring a recent chase debut winner against Rickety Bridge’s three demonstrated chase wins and Silver Hill’s actual chase experience. The rise is a condition of the experiment, not proof of vulnerability. Rickety Bridge has the clearest established chase route, but his latest jumping and 12.5-length defeat weaken the comparison. Watchlist, not an independent Pick.",
         "counterargument": "Torrent jumped well and won decisively on his first chase start. He can improve beyond the rise and still carries 7 lb less than Rickety Bridge. Earlier hurdle defeats do not prove a chase ceiling.",
@@ -6028,7 +6145,7 @@
         "potential_net_profit_decimal": "161.0169491525423728813559322",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 161.01694915254237,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -6061,7 +6178,18 @@
           "frozen_lay_odds": 3.95
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T14:28:12.712008+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -6074,7 +6202,63 @@
       "reason": "A 9 lb higher mark and a move from Class 4 to Class 3 bring a recent chase debut winner against Rickety Bridge’s three demonstrated chase wins and Silver Hill’s actual chase experience. Winning case: Torrent jumped well and won decisively on his first chase start. He can improve beyond the rise and still carries 7 lb less than Rickety Bridge. Earlier hurdle defeats do not prove a chase ceiling. Verdict: The rise is a condition of the experiment, not proof of vulnerability. Rickety Bridge has the clearest established chase route, but his latest jumping and 12.5-length defeat weaken the comparison. Watchlist, not an independent Pick.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.114606+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.114606+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "13:37",
+      "result_course": "Exeter",
+      "result_horse": "Torrent",
+      "result_off_dt": "2026-11-22T13:37:00+00:00",
+      "result_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "result_race_id": "rac_32305128531",
+      "result_horse_id": "hrs_36970423",
+      "result_website_race_id": "949625",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "Red Dirt Road"
+      ],
+      "result_website_horse_id": "1116381",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Silver Hill",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Champagne Chic",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Solar System",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "2.55"
+        },
+        {
+          "position": "4",
+          "horse": "Rickety Bridge",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "14.55"
+        },
+        {
+          "position": "PU",
+          "horse": "Torrent",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "PU"
     },
     {
       "tier": "watchlist",
@@ -6097,8 +6281,8 @@
       "lay_odds": 4,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/cork/racecard/949802/irish-stallion-farms-ebf-mares-beginners-chase",
       "racecard_verified_at": "2026-11-21T20:20:55.841187+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 3,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -6120,12 +6304,12 @@
       "going": "YIELDING, Yielding to soft in places",
       "surface": "Turf",
       "race_name": "Irish Stallion Farms EBF Mares Beginners Steeplechase",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 158.33333333333334,
+      "booked_profit_decimal": "158.3333333333333333333333334",
+      "winner": "Echoing Silence",
+      "position": "3",
       "selection_reason": {
         "summary": "A strong hurdle mare meets an opponent with actual chase experience in Echoing Silence, plus useful alternative recruits. The competition is real; the favourite’s first chase start alone is not a fault. The hurdle class is substantial. Several rivals also need to transfer, so this remains a chase-transfer experiment at 4.00 rather than a Pick.",
         "counterargument": "Her latest win was the Grade 1 mares hurdle at Punchestown, following a Fairyhouse second and Cheltenham third. She may simply have the highest ability and translate it to fences.",
@@ -6237,7 +6421,7 @@
         "potential_net_profit_decimal": "158.3333333333333333333333334",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 158.33333333333334,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -6270,7 +6454,18 @@
           "frozen_lay_odds": 4
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T14:28:12.617846+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -6283,7 +6478,85 @@
       "reason": "A strong hurdle mare meets an opponent with actual chase experience in Echoing Silence, plus useful alternative recruits. The competition is real; the favourite’s first chase start alone is not a fault. Winning case: Her latest win was the Grade 1 mares hurdle at Punchestown, following a Fairyhouse second and Cheltenham third. She may simply have the highest ability and translate it to fences. Verdict: The hurdle class is substantial. Several rivals also need to transfer, so this remains a chase-transfer experiment at 4.00 rather than a Pick.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.114606+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.114606+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "13:49",
+      "result_course": "Cork",
+      "result_horse": "Place De La Nation",
+      "result_off_dt": "2026-11-22T13:49:00+00:00",
+      "result_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "result_race_id": "rac_32305221507",
+      "result_horse_id": "hrs_45445099",
+      "result_website_race_id": "949802",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
+      "result_non_runners": [],
+      "result_website_horse_id": "1160289",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": "5.5",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Echoing Silence",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Carrigmoornaspruce",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "3",
+          "horse": "Place De La Nation",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "5.5"
+        },
+        {
+          "position": "4",
+          "horse": "Carry On Heidi",
+          "margin_from_previous": "16",
+          "cumulative_beaten_lengths": "21.5"
+        },
+        {
+          "position": "5",
+          "horse": "Bambino Fever",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "24.5"
+        },
+        {
+          "position": "6",
+          "horse": "Blue Velvet",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": "29"
+        },
+        {
+          "position": "7",
+          "horse": "Changeyourstars",
+          "margin_from_previous": "19",
+          "cumulative_beaten_lengths": "48"
+        },
+        {
+          "position": "8",
+          "horse": "Mongibello",
+          "margin_from_previous": "9 ½",
+          "cumulative_beaten_lengths": "57.5"
+        },
+        {
+          "position": "9",
+          "horse": "Miss Mini Bee",
+          "margin_from_previous": "25",
+          "cumulative_beaten_lengths": "82.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
+      "margin_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     },
     {
       "tier": "watchlist",

@@ -23,8 +23,8 @@
       "lay_odds": 5.1,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/exeter/racecard/949626/happy-70th-david-clements-handicap-hurdle",
       "racecard_verified_at": "2026-11-21T20:20:59.622887+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 4,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -45,13 +45,13 @@
       "field_size": 5,
       "going": "GOOD TO FIRM, Good in places (GoingStick: 7.3)",
       "surface": "Turf",
-      "race_name": "Happy 70th David Clements Handicap Hurdle Race",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "race_name": "Happy 70th David Clements Handicap Hurdle",
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Mwabani",
+      "position": "1",
       "selection_reason": {
         "summary": "The novice winner steps into a five-runner handicap against demonstrated handicap hurdle form around this trip. Washington has just beaten Handlethekettle by 3.5 lengths, and both provide a concrete alternative to simply projecting Mwabani’s next improvement. Recommend the strong-competition route at 5.10. The decision rests on established, relevant hurdle opposition, not a claim that 115 is necessarily harsh or that the favourite cannot stay. Washington’s rating edge is largely paid for in weight; there is no automatic pounds advantage.",
         "counterargument": "Mwabani won his Chepstow novice by 4.75 lengths, has three earlier seconds, and can progress from an opening handicap mark of 115. The longer trip may help. A new condition is not proven inability.",
@@ -163,7 +163,7 @@
         "potential_net_profit_decimal": "115.8536585365853658536585366",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -196,8 +196,73 @@
           "frozen_lay_odds": 5.1
         }
       ],
-      "result_history": [],
-      "date": "2026-11-22"
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T14:28:12.461491+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
+      "date": "2026-11-22",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:07",
+      "result_course": "Exeter",
+      "result_horse": "Mwabani",
+      "result_off_dt": "2026-11-22T14:07:00+00:00",
+      "result_retrieved_at": "2026-11-22T14:28:12.461491Z",
+      "result_race_id": "rac_32305130468",
+      "result_horse_id": "hrs_58412088",
+      "result_website_race_id": "949626",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
+      "result_non_runners": [],
+      "result_website_horse_id": "1205201",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Mwabani",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Handlethekettle",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "3",
+          "horse": "Son Of Hypnos",
+          "margin_from_previous": "9",
+          "cumulative_beaten_lengths": "14"
+        },
+        {
+          "position": "4",
+          "horse": "Treasure Planet",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "26"
+        },
+        {
+          "position": "5",
+          "horse": "Washington",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "29.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
+      "margin_retrieved_at": "2026-11-22T14:28:12.461491Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     },
     {
       "tier": "selection",
