@@ -98,7 +98,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 237.5,
-      "booked_profit_decimal": "237.50",
+      "booked_profit_decimal": "237.5",
       "winner": "Soul Asylum",
       "position": "4",
       "selection_reason": {
@@ -249,6 +249,10 @@
         {
           "observed_at": "2026-11-22T14:28:12.625570+00:00",
           "previous_result_status": "PENDING"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:20.444942+00:00",
+          "previous_result_status": "WIN"
         }
       ],
       "research_theory_tags": [
@@ -270,7 +274,7 @@
       "result_course": "Cork",
       "result_horse": "Look Me",
       "result_off_dt": "2026-11-22T13:19:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "result_retrieved_at": "2026-11-22T17:11:20.444942Z",
       "result_race_id": "rac_32305219570",
       "result_horse_id": "hrs_51185946",
       "result_website_race_id": "949801",
@@ -366,7 +370,7 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
-      "margin_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "margin_retrieved_at": "2026-11-22T17:11:20.444942Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "placing": "4th"
@@ -418,7 +422,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 161.01694915254237,
-      "booked_profit_decimal": "161.0169491525423728813559322",
+      "booked_profit_decimal": "161.01694915254237",
       "winner": "Silver Hill",
       "position": "PU",
       "selection_reason": {
@@ -569,6 +573,10 @@
         {
           "observed_at": "2026-11-22T14:28:12.712008+00:00",
           "previous_result_status": "PENDING"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:25.166112+00:00",
+          "previous_result_status": "WIN"
         }
       ],
       "research_theory_tags": [
@@ -590,7 +598,7 @@
       "result_course": "Exeter",
       "result_horse": "Torrent",
       "result_off_dt": "2026-11-22T13:37:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "result_retrieved_at": "2026-11-22T17:11:25.166112Z",
       "result_race_id": "rac_32305128531",
       "result_horse_id": "hrs_36970423",
       "result_website_race_id": "949625",
@@ -636,7 +644,7 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
-      "margin_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "margin_retrieved_at": "2026-11-22T17:11:25.166112Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "placing": "PU"
@@ -688,7 +696,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 158.33333333333334,
-      "booked_profit_decimal": "158.3333333333333333333333334",
+      "booked_profit_decimal": "158.33333333333334",
       "winner": "Echoing Silence",
       "position": "3",
       "selection_reason": {
@@ -839,6 +847,10 @@
         {
           "observed_at": "2026-11-22T14:28:12.617846+00:00",
           "previous_result_status": "PENDING"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:25.070661+00:00",
+          "previous_result_status": "WIN"
         }
       ],
       "research_theory_tags": [
@@ -860,7 +872,7 @@
       "result_course": "Cork",
       "result_horse": "Place De La Nation",
       "result_off_dt": "2026-11-22T13:49:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "result_retrieved_at": "2026-11-22T17:11:25.070661Z",
       "result_race_id": "rac_32305221507",
       "result_horse_id": "hrs_45445099",
       "result_website_race_id": "949802",
@@ -928,7 +940,7 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
-      "margin_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "margin_retrieved_at": "2026-11-22T17:11:25.070661Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
       "placing": "3rd"
@@ -954,8 +966,8 @@
       "lay_odds": 5.0,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/cork/racecard/949803/kevin-mcmanus-bookmaker-handicap-chase",
       "racecard_verified_at": "2026-11-21T20:20:55.827511+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 5,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -977,12 +989,12 @@
       "going": "YIELDING, Yielding to soft in places",
       "surface": "Turf",
       "race_name": "Kevin McManus Bookmaker Handicap Steeplechase",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 118.75,
+      "booked_profit_decimal": "118.75",
+      "winner": "Al Kalila",
+      "position": "5",
       "selection_reason": {
         "summary": "A recent chase winner returns to handicap company against Rockonliam’s two chase wins and Cheltenham second. Both leading horses are rated 132 and carry 161 lb after separate 5 lb claims, so the main contest is demonstrated chase ability rather than a manufactured weight edge. Watchlist only at 5.00. The v1 operational scope requires a handicap chase today, latest completed race a chase win, a higher burden and comparable named chase evidence. His latest win was a novice, not a handicap; retain that boundary explicitly rather than rewriting the definition or calling him a serial handicap winner.",
         "counterargument": "Karl has only gone up 2 lb, won after a previous chase second, and can improve again. His hurdle rating is not treated as a chase rating; his own 5 lb claim receives the same treatment as the rival’s.",
@@ -1088,13 +1100,13 @@
       "simulation": {
         "liability_gbp": 500,
         "commission_rate": 0.05,
-        "required_stake_gbp": 125.0,
+        "required_stake_gbp": 125,
         "required_stake_decimal": "125",
         "potential_net_profit_gbp": 118.75,
         "potential_net_profit_decimal": "118.75",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 118.75,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1127,7 +1139,12 @@
           "frozen_lay_odds": 5.0
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:25.499686+00:00",
+          "previous_result_status": "PENDING"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -1140,7 +1157,100 @@
       "reason": "A recent chase winner returns to handicap company against Rockonliam’s two chase wins and Cheltenham second. Both leading horses are rated 132 and carry 161 lb after separate 5 lb claims, so the main contest is demonstrated chase ability rather than a manufactured weight edge. Winning case: Karl has only gone up 2 lb, won after a previous chase second, and can improve again. His hurdle rating is not treated as a chase rating; his own 5 lb claim receives the same treatment as the rival’s. Verdict: Watchlist only at 5.00. The v1 operational scope requires a handicap chase today, latest completed race a chase win, a higher burden and comparable named chase evidence. His latest win was a novice, not a handicap; retain that boundary explicitly rather than rewriting the definition or calling him a serial handicap winner.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.305220+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.305220+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:19",
+      "result_course": "Cork",
+      "result_horse": "Karl Des Tourelles",
+      "result_off_dt": "2026-11-22T14:19:00+00:00",
+      "result_retrieved_at": "2026-11-22T17:11:25.499686Z",
+      "result_race_id": "rac_32305223444",
+      "result_horse_id": "hrs_39698883",
+      "result_website_race_id": "949803",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "result_non_runners": [
+        "Happy Dreams",
+        "Kobalt St Georges"
+      ],
+      "result_website_horse_id": "1135706",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "hd",
+      "selected_beaten_lengths": "8.95",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Al Kalila",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "El Champo",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.2"
+        },
+        {
+          "position": "3",
+          "horse": "Watch The Weather",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5.2"
+        },
+        {
+          "position": "4",
+          "horse": "Hermino AA",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "5.95"
+        },
+        {
+          "position": "5",
+          "horse": "Karl Des Tourelles",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "8.95"
+        },
+        {
+          "position": "6",
+          "horse": "Jupiter Du Gite",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "18.95"
+        },
+        {
+          "position": "7",
+          "horse": "Rockonliam",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "23.95"
+        },
+        {
+          "position": "8",
+          "horse": "I Am Lorenzo",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "24.95"
+        },
+        {
+          "position": "9",
+          "horse": "Harvard Guy",
+          "margin_from_previous": "4 ¼",
+          "cumulative_beaten_lengths": "29.2"
+        },
+        {
+          "position": "10",
+          "horse": "Meet And Greet",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "34.7"
+        },
+        {
+          "position": "11",
+          "horse": "On Your Way",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "38.7"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "margin_retrieved_at": "2026-11-22T17:11:25.499686Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "5th"
     },
     {
       "tier": "watchlist",
@@ -1163,8 +1273,8 @@
       "lay_odds": 3.35,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/punchestown/racecard/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
       "racecard_verified_at": "2026-11-21T20:21:29.635960+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 7,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -1186,12 +1296,12 @@
       "going": "GOOD TO YIELDING, Yielding in places",
       "surface": "Turf",
       "race_name": "Matchbook Betting Exchange Craddockstown Novice Steeplechase (Grade 2)",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 202.12765957446808,
+      "booked_profit_decimal": "202.1276595744680851063829787",
+      "winner": "Ocastle Des Mottes",
+      "position": "2",
       "selection_reason": {
         "summary": "The leading chase recruit faces actual graded chase experience: Lovely Hurling has three chase seconds; Frankie John has a Grade 3 chase win; Ocastle Des Mottes has two chase wins. These are established fence performances, unlike a list composed solely of alternative debutants. The early-price second review at 3.35 supports Watchlist only. Stronger established chase opposition makes the experiment worthwhile, but the favourite’s own class and allowance are consequential. Do not call the drop to about 2m proven non-suitability.",
         "counterargument": "Zanoosh won five consecutive hurdles including a Grade 1, then ran second against males at Punchestown. Her 7 lb mares allowance gives 151 lb versus 158 lb for Lovely Hurling and 161 lb for penalised Frankie John. She may be a still better chaser.",
@@ -1303,7 +1413,7 @@
         "potential_net_profit_decimal": "202.1276595744680851063829787",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 202.12765957446808,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -1336,7 +1446,12 @@
           "frozen_lay_odds": 3.35
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:25.250897+00:00",
+          "previous_result_status": "PENDING"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -1349,7 +1464,67 @@
       "reason": "The leading chase recruit faces actual graded chase experience: Lovely Hurling has three chase seconds; Frankie John has a Grade 3 chase win; Ocastle Des Mottes has two chase wins. These are established fence performances, unlike a list composed solely of alternative debutants. Winning case: Zanoosh won five consecutive hurdles including a Grade 1, then ran second against males at Punchestown. Her 7 lb mares allowance gives 151 lb versus 158 lb for Lovely Hurling and 161 lb for penalised Frankie John. She may be a still better chaser. Verdict: The early-price second review at 3.35 supports Watchlist only. Stronger established chase opposition makes the experiment worthwhile, but the favourite’s own class and allowance are consequential. Do not call the drop to about 2m proven non-suitability.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.305220+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.305220+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:30",
+      "result_course": "Punchestown",
+      "result_horse": "Zanoosh",
+      "result_off_dt": "2026-11-22T14:30:00+00:00",
+      "result_retrieved_at": "2026-11-22T17:11:25.250897Z",
+      "result_race_id": "rac_32305312546",
+      "result_horse_id": "hrs_40553877",
+      "result_website_race_id": "949790",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "result_non_runners": [],
+      "result_website_horse_id": "1140141",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": "1.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Ocastle Des Mottes",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Zanoosh",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Lovely Hurling",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "3.75"
+        },
+        {
+          "position": "4",
+          "horse": "Frankie John",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "8.5"
+        },
+        {
+          "position": "5",
+          "horse": "Kainsbourg",
+          "margin_from_previous": "7",
+          "cumulative_beaten_lengths": "15.5"
+        },
+        {
+          "position": "6",
+          "horse": "Soir De Garde",
+          "margin_from_previous": "48",
+          "cumulative_beaten_lengths": "63.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "margin_retrieved_at": "2026-11-22T17:11:25.250897Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     }
   ],
   "scope_review": {
@@ -1359,12 +1534,243 @@
   },
   "promotion_status": "NOT_PROMOTED",
   "current_counts": {
-    "successes": 3,
+    "successes": 5,
     "failures": 0,
     "nr": 0,
-    "pending": 2,
-    "settled_independent_races": 3
+    "pending": 0,
+    "settled_independent_races": 5
   },
-  "booked_profit_gbp": 556.8502824858757,
-  "last_result_reviewed_at": "2026-11-22T14:28:57.869954+00:00"
+  "booked_profit_gbp": 877.7279420603438,
+  "last_result_reviewed_at": "2026-11-22T17:11:25.563258+00:00",
+  "post_race_evaluations": [
+    {
+      "observed_at": "2026-11-22T17:14:23.873751+00:00",
+      "evaluations": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "evaluated_at": "2026-11-22T17:14:23.873751+00:00",
+          "definition_unchanged": true,
+          "promotion_status": "NOT_PROMOTED",
+          "sunday_batch": {
+            "unique_races": 2,
+            "successes": 2,
+            "failures": 0,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 100.0,
+            "booked_profit_decimal": "279.7669491525423728813559322",
+            "booked_profit_gbp": 279.7669491525424,
+            "app_penny_total_gbp": 279.77,
+            "prices": [
+              3.95,
+              5.0
+            ],
+            "minimum_price": 3.95,
+            "maximum_price": 5.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 0
+          },
+          "saturday_and_sunday_overlay": {
+            "unique_races": 4,
+            "successes": 3,
+            "failures": 1,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 75.0,
+            "booked_profit_decimal": "-4.3239599383667180277349769",
+            "booked_profit_gbp": -4.323959938366718,
+            "app_penny_total_gbp": -4.32,
+            "prices": [
+              3.2,
+              2.84,
+              3.95,
+              5.0
+            ],
+            "minimum_price": 2.84,
+            "maximum_price": 5.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 1
+          },
+          "observations": [
+            {
+              "horse": "Kykorock",
+              "race_id": "rac_32305072358",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 3.2,
+              "booked_profit_gbp": 215.9090909090909
+            },
+            {
+              "horse": "Vanderpoel",
+              "race_id": "rac_32304187149",
+              "group": "Pick",
+              "result_status": "LOSS",
+              "lay_odds": 2.84,
+              "booked_profit_gbp": -500.0
+            },
+            {
+              "horse": "Torrent",
+              "race_id": "rac_32305128531",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 3.95,
+              "booked_profit_gbp": 161.01694915254237
+            },
+            {
+              "horse": "Karl Des Tourelles",
+              "race_id": "rac_32305223444",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 5,
+              "booked_profit_gbp": 118.75
+            }
+          ],
+          "limitation": "Very small subsequent batch; retain Saturday failures and differing conditions. Overlay tags do not create independent extra races or move group accounts."
+        },
+        {
+          "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
+          "version": 1,
+          "evaluated_at": "2026-11-22T17:14:23.873751+00:00",
+          "definition_unchanged": true,
+          "promotion_status": "NOT_PROMOTED",
+          "sunday_batch": {
+            "unique_races": 2,
+            "successes": 2,
+            "failures": 0,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 100.0,
+            "booked_profit_decimal": "360.4609929078014184397163120",
+            "booked_profit_gbp": 360.4609929078014,
+            "app_penny_total_gbp": 360.46,
+            "prices": [
+              4.0,
+              3.35
+            ],
+            "minimum_price": 3.35,
+            "maximum_price": 4.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 0
+          },
+          "saturday_and_sunday_overlay": {
+            "unique_races": 3,
+            "successes": 2,
+            "failures": 1,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 66.66666666666667,
+            "booked_profit_decimal": "-139.5390070921985815602836880",
+            "booked_profit_gbp": -139.53900709219857,
+            "app_penny_total_gbp": -139.54,
+            "prices": [
+              2.64,
+              4.0,
+              3.35
+            ],
+            "minimum_price": 2.64,
+            "maximum_price": 4.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 1
+          },
+          "observations": [
+            {
+              "horse": "Mighty Park",
+              "race_id": "rac_32305291239",
+              "group": "Watchlist",
+              "result_status": "LOSS",
+              "lay_odds": 2.64,
+              "booked_profit_gbp": -500.0
+            },
+            {
+              "horse": "Place De La Nation",
+              "race_id": "rac_32305221507",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 4,
+              "booked_profit_gbp": 158.33333333333334
+            },
+            {
+              "horse": "Zanoosh",
+              "race_id": "rac_32305312546",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 3.35,
+              "booked_profit_gbp": 202.12765957446808
+            }
+          ],
+          "limitation": "Very small subsequent batch; retain Saturday failures and differing conditions. Overlay tags do not create independent extra races or move group accounts."
+        },
+        {
+          "theory_id": "JCM_HURDLE_FORM_V_BUMPER_POTENTIAL",
+          "version": 1,
+          "evaluated_at": "2026-11-22T17:14:23.873751+00:00",
+          "definition_unchanged": true,
+          "promotion_status": "NOT_PROMOTED",
+          "sunday_batch": {
+            "unique_races": 1,
+            "successes": 1,
+            "failures": 0,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 100.0,
+            "booked_profit_decimal": "237.5",
+            "booked_profit_gbp": 237.5,
+            "app_penny_total_gbp": 237.5,
+            "prices": [
+              3.0
+            ],
+            "minimum_price": 3.0,
+            "maximum_price": 3.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 0
+          },
+          "saturday_and_sunday_overlay": {
+            "unique_races": 2,
+            "successes": 2,
+            "failures": 0,
+            "nr": 0,
+            "pending": 0,
+            "success_rate_percent": 100.0,
+            "booked_profit_decimal": "796.3235294117647058823529412",
+            "booked_profit_gbp": 796.3235294117648,
+            "app_penny_total_gbp": 796.32,
+            "prices": [
+              1.85,
+              3.0
+            ],
+            "minimum_price": 1.85,
+            "maximum_price": 3.0,
+            "liability_per_race_gbp": 500,
+            "commission_rate": 0.05,
+            "longest_failed_lay_streak": 0
+          },
+          "observations": [
+            {
+              "horse": "Delamotte",
+              "race_id": "rac_32305289302",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 1.85,
+              "booked_profit_gbp": 558.8235294117648
+            },
+            {
+              "horse": "Look Me",
+              "race_id": "rac_32305219570",
+              "group": "Watchlist",
+              "result_status": "WIN",
+              "lay_odds": 3,
+              "booked_profit_gbp": 237.5
+            }
+          ],
+          "limitation": "Very small subsequent batch; retain Saturday failures and differing conditions. Overlay tags do not create independent extra races or move group accounts."
+        }
+      ]
+    }
+  ]
 }

@@ -5705,7 +5705,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 237.5,
-      "booked_profit_decimal": "237.50",
+      "booked_profit_decimal": "237.5",
       "winner": "Soul Asylum",
       "position": "4",
       "selection_reason": {
@@ -5862,6 +5862,35 @@
             "position": null
           },
           "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:20.444942+00:00",
+          "previous": {
+            "result_status": "WIN",
+            "booked_profit_gbp": 237.5,
+            "winner": "Soul Asylum",
+            "position": "4",
+            "result_source": "SPORTING_LIFE",
+            "result_date": "2026-11-22",
+            "result_off_time_uk": "13:19",
+            "result_course": "Cork",
+            "result_horse": "Look Me",
+            "result_off_dt": "2026-11-22T13:19:00+00:00",
+            "result_retrieved_at": "2026-11-22T14:28:12.625570Z",
+            "result_race_id": "rac_32305219570",
+            "result_horse_id": "hrs_51185946",
+            "result_website_race_id": "949801",
+            "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
+            "result_non_runners": [
+              "Wilton Mills Trier",
+              "Anunnaki",
+              "Cracker's Diamond"
+            ],
+            "result_website_horse_id": "1182146",
+            "result_stage": "WEIGHEDIN",
+            "placing": "4th"
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
         }
       ],
       "research_theory_tags": [
@@ -5883,7 +5912,7 @@
       "result_course": "Cork",
       "result_horse": "Look Me",
       "result_off_dt": "2026-11-22T13:19:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "result_retrieved_at": "2026-11-22T17:11:20.444942Z",
       "result_race_id": "rac_32305219570",
       "result_horse_id": "hrs_51185946",
       "result_website_race_id": "949801",
@@ -5979,10 +6008,19 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949801/irish-stallion-farms-ebf-maiden-hurdle",
-      "margin_retrieved_at": "2026-11-22T14:28:12.625570Z",
+      "margin_retrieved_at": "2026-11-22T17:11:20.444942Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "4th"
+      "placing": "4th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful Watchlist lay with strong mechanism support. Fourth, beaten 19 lengths after a slight error at the fifth and no extra before the last. Principal Soul Asylum made all and won easily by 12 lengths; rank 3 Young Rebel third, rank 2 Jessbers Wish pulled up. Demonstrated hurdle evidence supplied the anticipated route against high-class bumper potential at equal weights. Moonverrin, another bumper-transfer runner, finished second, so this is not evidence that bumper ability cannot transfer. Keep the successful case in its original Watchlist group.",
+          "winner": "Soul Asylum",
+          "winner_named_in_principal_list": true,
+          "original_winner_challenger_rank": 1
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -6031,7 +6069,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 161.01694915254237,
-      "booked_profit_decimal": "161.0169491525423728813559322",
+      "booked_profit_decimal": "161.01694915254237",
       "winner": "Silver Hill",
       "position": "PU",
       "selection_reason": {
@@ -6188,6 +6226,33 @@
             "position": null
           },
           "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:25.166112+00:00",
+          "previous": {
+            "result_status": "WIN",
+            "booked_profit_gbp": 161.01694915254237,
+            "winner": "Silver Hill",
+            "position": "PU",
+            "result_source": "SPORTING_LIFE",
+            "result_date": "2026-11-22",
+            "result_off_time_uk": "13:37",
+            "result_course": "Exeter",
+            "result_horse": "Torrent",
+            "result_off_dt": "2026-11-22T13:37:00+00:00",
+            "result_retrieved_at": "2026-11-22T14:28:12.712008Z",
+            "result_race_id": "rac_32305128531",
+            "result_horse_id": "hrs_36970423",
+            "result_website_race_id": "949625",
+            "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
+            "result_non_runners": [
+              "Red Dirt Road"
+            ],
+            "result_website_horse_id": "1116381",
+            "result_stage": "WEIGHEDIN",
+            "placing": "PU"
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
         }
       ],
       "research_theory_tags": [
@@ -6209,7 +6274,7 @@
       "result_course": "Exeter",
       "result_horse": "Torrent",
       "result_off_dt": "2026-11-22T13:37:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "result_retrieved_at": "2026-11-22T17:11:25.166112Z",
       "result_race_id": "rac_32305128531",
       "result_horse_id": "hrs_36970423",
       "result_website_race_id": "949625",
@@ -6255,10 +6320,19 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949625/chris-down-a-lifetime-in-racing-novices-limited-handicap-chase-gbb-race",
-      "margin_retrieved_at": "2026-11-22T14:28:12.712008Z",
+      "margin_retrieved_at": "2026-11-22T17:11:25.166112Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "PU"
+      "placing": "PU",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful Watchlist lay; second-ranked Silver Hill won by a neck from third-ranked Champagne Chic. Principal Rickety Bridge fourth. Torrent lost position after the fourteenth and was quickly beaten, pulled up after three out. This supports the existence of capable opposition, but does not isolate the 9 lb rise as the cause of failure. Silver Hill had limited actual chase evidence and Champagne Chic was a chase debutant, so avoid retrospectively calling both proven chase threats. Red Dirt Road was NR; the first direct result retrieval at 14:28:12 GMT showed that withdrawal, with exact withdrawal time unknown and no reconstructed pre-off warning.",
+          "winner": "Silver Hill",
+          "winner_named_in_principal_list": true,
+          "original_winner_challenger_rank": 2
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -6307,7 +6381,7 @@
       "result_status": "WIN",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 158.33333333333334,
-      "booked_profit_decimal": "158.3333333333333333333333334",
+      "booked_profit_decimal": "158.33333333333334",
       "winner": "Echoing Silence",
       "position": "3",
       "selection_reason": {
@@ -6464,6 +6538,31 @@
             "position": null
           },
           "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:25.070661+00:00",
+          "previous": {
+            "result_status": "WIN",
+            "booked_profit_gbp": 158.33333333333334,
+            "winner": "Echoing Silence",
+            "position": "3",
+            "result_source": "SPORTING_LIFE",
+            "result_date": "2026-11-22",
+            "result_off_time_uk": "13:49",
+            "result_course": "Cork",
+            "result_horse": "Place De La Nation",
+            "result_off_dt": "2026-11-22T13:49:00+00:00",
+            "result_retrieved_at": "2026-11-22T14:28:12.617846Z",
+            "result_race_id": "rac_32305221507",
+            "result_horse_id": "hrs_45445099",
+            "result_website_race_id": "949802",
+            "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
+            "result_non_runners": [],
+            "result_website_horse_id": "1160289",
+            "result_stage": "WEIGHEDIN",
+            "placing": "3rd"
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
         }
       ],
       "research_theory_tags": [
@@ -6485,7 +6584,7 @@
       "result_course": "Cork",
       "result_horse": "Place De La Nation",
       "result_off_dt": "2026-11-22T13:49:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "result_retrieved_at": "2026-11-22T17:11:25.070661Z",
       "result_race_id": "rac_32305221507",
       "result_horse_id": "hrs_45445099",
       "result_website_race_id": "949802",
@@ -6553,10 +6652,19 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949802/irish-stallion-farms-ebf-mares-beginners-chase",
-      "margin_retrieved_at": "2026-11-22T14:28:12.617846Z",
+      "margin_retrieved_at": "2026-11-22T17:11:25.070661Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "3rd"
+      "placing": "3rd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful Watchlist lay with a clear demonstrated-opposition route: principal Echoing Silence won by 5 lengths. Place De La Nation was third, beaten 5.5 lengths, having disputed after four out before a slight mistake at the next, then no impression on the winner. Rank 2 Bambino Fever fifth; rank 3 Sainte Lucie fell at the last when a moderate fourth. Carrigmoornaspruce, covered outside the principal list, was second. The favourite's Grade 1 hurdle class transferred to a competitive chase effort; the result does not prove a general failure of high-class hurdling ability to transfer.",
+          "winner": "Echoing Silence",
+          "winner_named_in_principal_list": true,
+          "original_winner_challenger_rank": 1
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -6579,8 +6687,8 @@
       "lay_odds": 5,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/cork/racecard/949803/kevin-mcmanus-bookmaker-handicap-chase",
       "racecard_verified_at": "2026-11-21T20:20:55.827511+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 5,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -6752,7 +6860,36 @@
           "frozen_lay_odds": 5
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:25.499686+00:00",
+          "previous": {
+            "result_status": "WIN",
+            "booked_profit_gbp": 118.75,
+            "winner": "Al Kalila",
+            "position": "5",
+            "result_source": "SPORTING_LIFE",
+            "result_date": "2026-11-22",
+            "result_off_time_uk": "14:19",
+            "result_course": "Cork",
+            "result_horse": "Karl Des Tourelles",
+            "result_off_dt": "2026-11-22T14:19:00+00:00",
+            "result_retrieved_at": "2026-11-22T14:37:32.869884Z",
+            "result_race_id": "rac_32305223444",
+            "result_horse_id": "hrs_39698883",
+            "result_website_race_id": "949803",
+            "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+            "result_non_runners": [
+              "Happy Dreams",
+              "Kobalt St Georges"
+            ],
+            "result_website_horse_id": "1135706",
+            "result_stage": "WEIGHEDIN",
+            "placing": "5th"
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -6772,7 +6909,7 @@
       "result_course": "Cork",
       "result_horse": "Karl Des Tourelles",
       "result_off_dt": "2026-11-22T14:19:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:37:32.869884Z",
+      "result_retrieved_at": "2026-11-22T17:11:25.499686Z",
       "result_race_id": "rac_32305223444",
       "result_horse_id": "hrs_39698883",
       "result_website_race_id": "949803",
@@ -6855,10 +6992,19 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
-      "margin_retrieved_at": "2026-11-22T14:37:32.869884Z",
+      "margin_retrieved_at": "2026-11-22T17:11:25.499686Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "5th"
+      "placing": "5th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful Watchlist lay, with mixed rival-ranking support. Fifth, beaten 8.95 lengths on Sporting Life cumulative margins, after tracking the leaders and finding no extra following a slight mistake two out. Third-ranked El Champo led until caught close home and was second, a head behind winner Al Kalila, outside the principal three but covered in the original whole-field appendix. Rank 2 Watch The Weather third; principal Rockonliam seventh. Broad opposition worked; the principal rival did not. Karl's latest win had been a NOVICE chase and the rise only 2 lb; this does not establish that the rise stopped him. Preserve this v1 boundary rather than rewriting its scope after success.",
+          "winner": "Al Kalila",
+          "winner_named_in_principal_list": false,
+          "original_winner_challenger_rank": null
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -6881,8 +7027,8 @@
       "lay_odds": 3.35,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/punchestown/racecard/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
       "racecard_verified_at": "2026-11-21T20:21:29.635960+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 7,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -6904,12 +7050,12 @@
       "going": "GOOD TO YIELDING, Yielding in places",
       "surface": "Turf",
       "race_name": "Matchbook Betting Exchange Craddockstown Novice Steeplechase (Grade 2)",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 202.12765957446808,
+      "booked_profit_decimal": "202.1276595744680851063829787",
+      "winner": "Ocastle Des Mottes",
+      "position": "2",
       "selection_reason": {
         "summary": "The leading chase recruit faces actual graded chase experience: Lovely Hurling has three chase seconds; Frankie John has a Grade 3 chase win; Ocastle Des Mottes has two chase wins. These are established fence performances, unlike a list composed solely of alternative debutants. The early-price second review at 3.35 supports Watchlist only. Stronger established chase opposition makes the experiment worthwhile, but the favourite’s own class and allowance are consequential. Do not call the drop to about 2m proven non-suitability.",
         "counterargument": "Zanoosh won five consecutive hurdles including a Grade 1, then ran second against males at Punchestown. Her 7 lb mares allowance gives 151 lb versus 158 lb for Lovely Hurling and 161 lb for penalised Frankie John. She may be a still better chaser.",
@@ -7021,7 +7167,7 @@
         "potential_net_profit_decimal": "202.1276595744680851063829787",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 202.12765957446808,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -7054,7 +7200,18 @@
           "frozen_lay_odds": 3.35
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:25.250897+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -7067,7 +7224,76 @@
       "reason": "The leading chase recruit faces actual graded chase experience: Lovely Hurling has three chase seconds; Frankie John has a Grade 3 chase win; Ocastle Des Mottes has two chase wins. These are established fence performances, unlike a list composed solely of alternative debutants. Winning case: Zanoosh won five consecutive hurdles including a Grade 1, then ran second against males at Punchestown. Her 7 lb mares allowance gives 151 lb versus 158 lb for Lovely Hurling and 161 lb for penalised Frankie John. She may be a still better chaser. Verdict: The early-price second review at 3.35 supports Watchlist only. Stronger established chase opposition makes the experiment worthwhile, but the favourite’s own class and allowance are consequential. Do not call the drop to about 2m proven non-suitability.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.305220+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.305220+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:30",
+      "result_course": "Punchestown",
+      "result_horse": "Zanoosh",
+      "result_off_dt": "2026-11-22T14:30:00+00:00",
+      "result_retrieved_at": "2026-11-22T17:11:25.250897Z",
+      "result_race_id": "rac_32305312546",
+      "result_horse_id": "hrs_40553877",
+      "result_website_race_id": "949790",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "result_non_runners": [],
+      "result_website_horse_id": "1140141",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": "1.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Ocastle Des Mottes",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Zanoosh",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.25"
+        },
+        {
+          "position": "3",
+          "horse": "Lovely Hurling",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "3.75"
+        },
+        {
+          "position": "4",
+          "horse": "Frankie John",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "8.5"
+        },
+        {
+          "position": "5",
+          "horse": "Kainsbourg",
+          "margin_from_previous": "7",
+          "cumulative_beaten_lengths": "15.5"
+        },
+        {
+          "position": "6",
+          "horse": "Soir De Garde",
+          "margin_from_previous": "48",
+          "cumulative_beaten_lengths": "63.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/punchestown/949790/matchbook-betting-exchange-craddockstown-novice-chase-grade-2",
+      "margin_retrieved_at": "2026-11-22T17:11:25.250897Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful Watchlist lay, narrowly, with a named third-ranked winner. Ocastle Des Mottes made all and beat Zanoosh by 1.25 lengths; she challenged two out and kept on. Principal Lovely Hurling third; rank 2 Frankie John fourth. This supports Ocastle's actual chase-win route, but the favourite's recognised Grade 1 hurdle ability and mares allowance transferred into a strong chase debut. Do not call her transfer a failure or treat this narrow defeat as proof she could not win. No promotion from this small experiment.",
+          "winner": "Ocastle Des Mottes",
+          "winner_named_in_principal_list": true,
+          "original_winner_challenger_rank": 3
+        }
+      ]
     }
   ]
 }

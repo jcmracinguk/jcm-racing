@@ -55,7 +55,7 @@
       "result_status": "LOSS",
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": -500.0,
-      "booked_profit_decimal": "-500",
+      "booked_profit_decimal": "-500.0",
       "winner": "Mwabani",
       "position": "1",
       "selection_reason": {
@@ -212,6 +212,31 @@
             "position": null
           },
           "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        },
+        {
+          "observed_at": "2026-11-22T17:11:20.362411+00:00",
+          "previous": {
+            "result_status": "LOSS",
+            "booked_profit_gbp": -500.0,
+            "winner": "Mwabani",
+            "position": "1",
+            "result_source": "SPORTING_LIFE",
+            "result_date": "2026-11-22",
+            "result_off_time_uk": "14:07",
+            "result_course": "Exeter",
+            "result_horse": "Mwabani",
+            "result_off_dt": "2026-11-22T14:07:00+00:00",
+            "result_retrieved_at": "2026-11-22T14:28:12.461491Z",
+            "result_race_id": "rac_32305130468",
+            "result_horse_id": "hrs_58412088",
+            "result_website_race_id": "949626",
+            "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
+            "result_non_runners": [],
+            "result_website_horse_id": "1205201",
+            "result_stage": "WEIGHEDIN",
+            "placing": "1st"
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
         }
       ],
       "result_source": "SPORTING_LIFE",
@@ -220,7 +245,7 @@
       "result_course": "Exeter",
       "result_horse": "Mwabani",
       "result_off_dt": "2026-11-22T14:07:00+00:00",
-      "result_retrieved_at": "2026-11-22T14:28:12.461491Z",
+      "result_retrieved_at": "2026-11-22T17:11:20.362411Z",
       "result_race_id": "rac_32305130468",
       "result_horse_id": "hrs_58412088",
       "result_website_race_id": "949626",
@@ -264,10 +289,19 @@
       ],
       "margin_source": "SPORTING_LIFE",
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/exeter/949626/happy-70th-david-clements-handicap-hurdle",
-      "margin_retrieved_at": "2026-11-22T14:28:12.461491Z",
+      "margin_retrieved_at": "2026-11-22T17:11:20.362411Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "1st"
+      "placing": "1st",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Failed lay and a decision-weighting concern. Won by 5 lengths despite being not fluent two out and making a mistake at the last. Handlethekettle, original rank 2, was second; rank 3 Treasure Planet fourth, 26 lengths behind; principal Washington last of five, 29.5 lengths behind. Washington's 5 lb rise did help reverse his previous order with Handlethekettle, but that comparison did not establish either would beat Mwabani. The recognised Chepstow win, opening mark of 115, course experience and scope for handicap improvement deserved more consequential weight. Good opposition was real, but the favourite's own progress proved stronger. Do not turn this into a blanket exclusion of progressive novice winners.",
+          "winner": "Mwabani",
+          "winner_named_in_principal_list": false,
+          "original_winner_challenger_rank": null
+        }
+      ]
     },
     {
       "tier": "selection",
@@ -290,8 +324,8 @@
       "lay_odds": 5.0,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/lingfield/racecard/949640/make-the-move-to-midnite-handicap",
       "racecard_verified_at": "2026-11-21T20:21:11.929340+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949640/make-the-move-to-midnite-handicap",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 6,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -313,12 +347,12 @@
       "going": "POLYTRACK: STANDARD",
       "surface": "AW",
       "race_name": "Make The Move To Midnite Handicap Stakes",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 118.75,
+      "booked_profit_decimal": "118.75",
+      "winner": "Nuevo Slovo",
+      "position": "6",
       "selection_reason": {
         "summary": "Recent 5f winning and placed evidence from One For Harvey gives a specific rival to Lazzar, whose latest current-yard runs have not restored his earlier level. La Belle Forest adds actual recent 5f form; this is more than several hypothetical revivals. Pick at 5.00. One For Harvey’s recent win and follow-up third on equal 134 lb today make the opposition persuasive despite Lazzar’s reduced mark. The decision does not assume an automatic draw or pace disadvantage, and the favourite’s revival could still win.",
         "counterargument": "Lazzar is a four-time AW winner and his mark is 16 lb below his last winning rating. He was only a length behind the winner at Southwell and 1.75 lengths behind at Kempton. A revival at this level is credible; those two runs are not heavy defeats.",
@@ -430,7 +464,7 @@
         "potential_net_profit_decimal": "118.75",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 118.75,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -463,7 +497,111 @@
           "frozen_lay_odds": 5.0
         }
       ],
-      "result_history": []
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:20.451294+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:25",
+      "result_course": "Lingfield (AW)",
+      "result_horse": "Lazzar",
+      "result_off_dt": "2026-11-22T14:25:00+00:00",
+      "result_retrieved_at": "2026-11-22T17:11:20.451294Z",
+      "result_race_id": "rac_32305159523",
+      "result_horse_id": "hrs_44816562",
+      "result_website_race_id": "949640",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949640/make-the-move-to-midnite-handicap",
+      "result_non_runners": [],
+      "result_website_horse_id": "1158371",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "hd",
+      "selected_beaten_lengths": "4.85",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Nuevo Slovo",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Little Jaybee",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.2"
+        },
+        {
+          "position": "3",
+          "horse": "Diamond Dreamer",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "2.2"
+        },
+        {
+          "position": "4",
+          "horse": "Sheik Yerbouti",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "2.5"
+        },
+        {
+          "position": "5",
+          "horse": "One For Harvey",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "4.75"
+        },
+        {
+          "position": "6",
+          "horse": "Lazzar",
+          "margin_from_previous": "sh",
+          "cumulative_beaten_lengths": "4.85"
+        },
+        {
+          "position": "7",
+          "horse": "La Belle Forest",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "5.35"
+        },
+        {
+          "position": "8",
+          "horse": "Express Train",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "6.1"
+        },
+        {
+          "position": "9",
+          "horse": "Davorge Nation",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "12.1"
+        },
+        {
+          "position": "10",
+          "horse": "Jane Of The Jungle",
+          "margin_from_previous": "3 ½",
+          "cumulative_beaten_lengths": "15.6"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949640/make-the-move-to-midnite-handicap",
+      "margin_retrieved_at": "2026-11-22T17:11:20.451294Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "6th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful lay; weaker support for the original rival ranking. Sixth, beaten 4.85 lengths on Sporting Life cumulative margins, after making headway but no impression inside the final furlong. Original principal One For Harvey fifth; La Belle Forest seventh; third-ranked Diamond Dreamer third. Winner Nuevo Slovo was reviewed in the whole-field appendix but was outside the principal three, and runner-up Little Jaybee was also outside them. This supports broad competition more than the claim that One For Harvey supplied the decisive route. A mark/course revival remained plausible before the race; defeat alone does not disprove it.",
+          "winner": "Nuevo Slovo",
+          "winner_named_in_principal_list": false,
+          "original_winner_challenger_rank": null
+        }
+      ]
     },
     {
       "tier": "selection",
@@ -486,8 +624,8 @@
       "lay_odds": 5.5,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-22/lingfield/racecard/949642/midnite-ain-t-your-grandad-s-bookie-handicap",
       "racecard_verified_at": "2026-11-21T20:21:11.845470+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22",
-      "results_link_type": "DATE_RESULTS_PENDING_EXACT_RESULT",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949642/midnite-aint-your-grandads-bookie-handicap",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 8,
       "selected_at": "2026-11-21T20:28:59.555081+00:00",
       "selection_time_note": "Original prospective selection record retained from the advance proposal; final report recorded at 2026-11-21T20:29:49.419573+00:00",
@@ -509,12 +647,12 @@
       "going": "POLYTRACK: STANDARD",
       "surface": "AW",
       "race_name": "Midnite Ain't Your Grandad's Bookie Handicap Stakes",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 105.55555555555556,
+      "booked_profit_decimal": "105.5555555555555555555555555",
+      "winner": "Notable Charm",
+      "position": "6",
       "selection_reason": {
         "summary": "There is actual late weakening over this course and distance on 27 April, when fourth beaten 6.75 lengths, together with staying opposition headed by Noble Grace. This is a trip-specific concern, not merely an untried trip or a poor form figure. Strongest of the three Picks at 5.50. Noble Grace’s proven staying route is enough to support opposition; Calshot Spit adds Flat stamina. Chilli King is explicitly an improvement possibility, not a third proven stayer. The lower-mark/fitness case does not erase the specific earlier run.",
         "counterargument": "In The Post returned with a Kempton third after a break and is now rated 57, 5 lb below the April course-and-distance attempt. He can be fitter and may stay better under different race conditions. The April run alone does not prove an absolute stamina limit.",
@@ -626,7 +764,7 @@
         "potential_net_profit_decimal": "105.5555555555555555555555555",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 105.55555555555556,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -659,7 +797,99 @@
           "frozen_lay_odds": 5.5
         }
       ],
-      "result_history": []
+      "result_history": [
+        {
+          "observed_at": "2026-11-22T17:11:20.693239+00:00",
+          "previous": {
+            "result_status": "PENDING",
+            "booked_profit_gbp": 0,
+            "winner": null,
+            "position": null
+          },
+          "reason": "User-requested confirmed Sporting Life full-result update at unchanged approved frozen price"
+        }
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "15:25",
+      "result_course": "Lingfield (AW)",
+      "result_horse": "In The Post",
+      "result_off_dt": "2026-11-22T15:25:00+00:00",
+      "result_retrieved_at": "2026-11-22T17:11:20.693239Z",
+      "result_race_id": "rac_32305163397",
+      "result_horse_id": "hrs_55454119",
+      "result_website_race_id": "949642",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949642/midnite-aint-your-grandads-bookie-handicap",
+      "result_non_runners": [],
+      "result_website_horse_id": "1194374",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "8",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Notable Charm",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Calshot Spit",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Little Peter",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": "2.25"
+        },
+        {
+          "position": "4",
+          "horse": "Chilli King",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.5"
+        },
+        {
+          "position": "5",
+          "horse": "Noble Grace",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "6"
+        },
+        {
+          "position": "6",
+          "horse": "In The Post",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "8"
+        },
+        {
+          "position": "7",
+          "horse": "Snapius",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "19"
+        },
+        {
+          "position": "8",
+          "horse": "State Express",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "24.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/lingfield/949642/midnite-aint-your-grandads-bookie-handicap",
+      "margin_retrieved_at": "2026-11-22T17:11:20.693239Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "6th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-22T17:14:23.873751+00:00",
+          "analysis": "Successful lay with some mechanism support, but incomplete winner ranking. Sixth, beaten 8 lengths; tracked the leader, lost second over a furlong out and weakened inside the final furlong. That is consistent with the anticipated late vulnerability at this course/trip, but one run does not establish permanent non-stamina. Winner Notable Charm was explicitly identified as a substantial whole-field staying alternative, outside the original principal three. Rank 2 Calshot Spit second, rank 3 Chilli King fourth, principal Noble Grace fifth. The broader staying-opposition case worked; the first-ranked rival did not.",
+          "winner": "Notable Charm",
+          "winner_named_in_principal_list": false,
+          "original_winner_challenger_rank": null
+        }
+      ]
     }
   ],
   "competition_watchlist": []
