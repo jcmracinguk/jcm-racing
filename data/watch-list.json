@@ -6602,12 +6602,12 @@
       "going": "YIELDING, Yielding to soft in places",
       "surface": "Turf",
       "race_name": "Kevin McManus Bookmaker Handicap Steeplechase",
-      "result_status": "PENDING",
-      "verification_status": "AWAITING_RESULT",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 118.75,
+      "booked_profit_decimal": "118.75",
+      "winner": "Al Kalila",
+      "position": "5",
       "selection_reason": {
         "summary": "A recent chase winner returns to handicap company against Rockonliam’s two chase wins and Cheltenham second. Both leading horses are rated 132 and carry 161 lb after separate 5 lb claims, so the main contest is demonstrated chase ability rather than a manufactured weight edge. Watchlist only at 5.00. The v1 operational scope requires a handicap chase today, latest completed race a chase win, a higher burden and comparable named chase evidence. His latest win was a novice, not a handicap; retain that boundary explicitly rather than rewriting the definition or calling him a serial handicap winner.",
         "counterargument": "Karl has only gone up 2 lb, won after a previous chase second, and can improve again. His hurdle rating is not treated as a chase rating; his own 5 lb claim receives the same treatment as the rival’s.",
@@ -6719,7 +6719,7 @@
         "potential_net_profit_decimal": "118.75",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 118.75,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -6765,7 +6765,100 @@
       "reason": "A recent chase winner returns to handicap company against Rockonliam’s two chase wins and Cheltenham second. Both leading horses are rated 132 and carry 161 lb after separate 5 lb claims, so the main contest is demonstrated chase ability rather than a manufactured weight edge. Winning case: Karl has only gone up 2 lb, won after a previous chase second, and can improve again. His hurdle rating is not treated as a chase rating; his own 5 lb claim receives the same treatment as the rival’s. Verdict: Watchlist only at 5.00. The v1 operational scope requires a handicap chase today, latest completed race a chase win, a higher burden and comparable named chase evidence. His latest win was a novice, not a handicap; retain that boundary explicitly rather than rewriting the definition or calling him a serial handicap winner.",
       "price_record": "Approved advance delayed Betfair Exchange Lay capture from Saturday 21 November 18:44:20 GMT for Sunday 22 November. GBP; exact quote time/delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-21T18:44:20.305220+00:00"
+      "price_observed_at": "2026-11-21T18:44:20.305220+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-22",
+      "result_off_time_uk": "14:19",
+      "result_course": "Cork",
+      "result_horse": "Karl Des Tourelles",
+      "result_off_dt": "2026-11-22T14:19:00+00:00",
+      "result_retrieved_at": "2026-11-22T14:37:32.869884Z",
+      "result_race_id": "rac_32305223444",
+      "result_horse_id": "hrs_39698883",
+      "result_website_race_id": "949803",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "result_non_runners": [
+        "Happy Dreams",
+        "Kobalt St Georges"
+      ],
+      "result_website_horse_id": "1135706",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "hd",
+      "selected_beaten_lengths": "8.95",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Al Kalila",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "El Champo",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.2"
+        },
+        {
+          "position": "3",
+          "horse": "Watch The Weather",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5.2"
+        },
+        {
+          "position": "4",
+          "horse": "Hermino AA",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "5.95"
+        },
+        {
+          "position": "5",
+          "horse": "Karl Des Tourelles",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "8.95"
+        },
+        {
+          "position": "6",
+          "horse": "Jupiter Du Gite",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "18.95"
+        },
+        {
+          "position": "7",
+          "horse": "Rockonliam",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "23.95"
+        },
+        {
+          "position": "8",
+          "horse": "I Am Lorenzo",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "24.95"
+        },
+        {
+          "position": "9",
+          "horse": "Harvard Guy",
+          "margin_from_previous": "4 ¼",
+          "cumulative_beaten_lengths": "29.2"
+        },
+        {
+          "position": "10",
+          "horse": "Meet And Greet",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "34.7"
+        },
+        {
+          "position": "11",
+          "horse": "On Your Way",
+          "margin_from_previous": "4",
+          "cumulative_beaten_lengths": "38.7"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-22/cork/949803/kevin-mcmanus-bookmaker-handicap-chase",
+      "margin_retrieved_at": "2026-11-22T14:37:32.869884Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "5th"
     },
     {
       "tier": "watchlist",
