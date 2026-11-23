@@ -29,8 +29,8 @@
       "lay_odds": 2.9,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/huntingdon/racecard/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.161288+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -52,12 +52,12 @@
       "going": "Good",
       "surface": "Turf",
       "race_name": "Book Hospitality At Huntingdon Handicap Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 250.0,
+      "booked_profit_decimal": "250.0000000000000000000000000",
+      "winner": "Sweeper System",
+      "position": "2",
       "selection_reason": {
         "summary": "His Worcester chase debut fourth was 6 lengths behind with early keenness and late jumping errors. Inside Man has a recent 4-length Chepstow second on good ground; Sweeper System won a 2m chase at Worcester after improving from his debut. Those are demonstrated chase routes against Jamada's still-needed improvement.",
         "counterargument": "Jamada was returning after five months, finished with promise, is down from OR108 to107 and has Olly Murphy/Sean Bowen. Experience can improve settling and jumping. His 155 lb is the lowest declared weight; that positive is genuine.",
@@ -168,7 +168,7 @@
         "potential_net_profit_decimal": "250.0000000000000000000000000",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 250.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -208,7 +208,75 @@
           "frozen_lay_odds": 2.9
         }
       ],
-      "result_history": []
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:00.238096+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "WIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "14:18",
+      "result_course": "Huntingdon",
+      "result_horse": "Jamada",
+      "result_off_dt": "2026-11-23T14:18:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:00.238096Z",
+      "result_race_id": "rac_32305237003",
+      "result_horse_id": "hrs_39996488",
+      "result_website_race_id": "949817",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1138214",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "0.3",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Sweeper System",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Jamada",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Granny Hawkins",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "12.3"
+        },
+        {
+          "position": "4",
+          "horse": "Homme D'Un Soir",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "24.3"
+        },
+        {
+          "position": "5",
+          "horse": "Inside Man",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "27.55"
+        },
+        {
+          "position": "6",
+          "horse": "Yes Indeed",
+          "margin_from_previous": "18",
+          "cumulative_beaten_lengths": "45.55"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:00.238096Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     },
     {
       "tier": "selection",
@@ -231,8 +299,8 @@
       "lay_odds": 2.66,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/kempton/racecard/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.445449+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 2,
       "selected_at": "2026-11-23T10:54:28.637Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -254,12 +322,12 @@
       "going": "Good",
       "surface": "Turf",
       "race_name": "CopyBet Follow Us On X Lilies Mares' Hurdle (Listed) (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 286.144578313253,
+      "booked_profit_decimal": "286.1445783132530120481927710",
+      "winner": "Hollygrove Cha Cha",
+      "position": "3",
       "selection_reason": {
         "summary": "Take No Chances OR146 at154 lb versus Jackie OR130 at154 is a 16 lb rating advantage at level weights in this non-handicap. Her recent Wetherby Grade2 third, beaten1.75 lengths, and Aintree Grade1 second provide established competition. Hollygrove Cha Cha OR140 at158 lb is a Listed winner at a similar trip, retaining a6 lb rating/weight comparison and a possible uncontested lead.",
         "counterargument": "Jackie won twice over hurdles and was a respectable Grade2 Dawn Run fifth, beaten5.75 lengths on Good, finishing strongly. Lightly raced at six, she can improve beyond OR130 for Derham/Burke. A232-day absence is not proof of unfitness.",
@@ -370,7 +438,7 @@
         "potential_net_profit_decimal": "286.1445783132530120481927710",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 286.144578313253,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -410,7 +478,63 @@
           "frozen_lay_odds": 2.66
         }
       ],
-      "result_history": []
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:04.453869+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "WIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "14:30",
+      "result_course": "Kempton",
+      "result_horse": "Jackie Hobbs",
+      "result_off_dt": "2026-11-23T14:30:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:04.453869Z",
+      "result_race_id": "rac_32305250562",
+      "result_horse_id": "hrs_40352494",
+      "result_website_race_id": "949840",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1167640",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "10",
+      "selected_beaten_lengths": "11",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Hollygrove Cha Cha",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Take No Chances",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "10"
+        },
+        {
+          "position": "3",
+          "horse": "Jackie Hobbs",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "11"
+        },
+        {
+          "position": "4",
+          "horse": "La Pinsonniere",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": "18.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:04.453869Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd"
     },
     {
       "tier": "selection",

@@ -7316,8 +7316,8 @@
       "lay_odds": 2.46,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/bangor-on-dee/racecard/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.531722+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -7339,12 +7339,12 @@
       "going": "Good to Soft",
       "surface": "Turf",
       "race_name": "Bangor-On-Dee 'Chasing Excellence' Beginners' Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 325.3424657534247,
+      "booked_profit_decimal": "325.3424657534246575342465754",
+      "winner": "Le Beau Madrik",
+      "position": "4",
       "selection_reason": {
         "summary": "A close market leader on chase debut faces Le Beau Madrik's two close chase efforts, Fiercely Proud's useful hurdle class and Count Of Vendome's promising chase second. All carry159 lb. Fiercely Proud OR136 against134 has a small unadjusted ratings edge at level weights; it remains hurdle-to-chase transfer.",
         "counterargument": "Starmount won twice with fluent front-running hurdle performances, was fourth in a Grade1 and has point experience. He may be an even better chaser. A February PU does not erase that case.",
@@ -7455,7 +7455,7 @@
         "potential_net_profit_decimal": "325.3424657534246575342465754",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 325.3424657534247,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -7495,7 +7495,15 @@
           "frozen_lay_odds": 2.46
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:08.244811+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "WIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -7508,7 +7516,55 @@
       "reason": "A close market leader on chase debut faces Le Beau Madrik's two close chase efforts, Fiercely Proud's useful hurdle class and Count Of Vendome's promising chase second. All carry159 lb. Fiercely Proud OR136 against134 has a small unadjusted ratings edge at level weights; it remains hurdle-to-chase transfer.\n\nWinning case: Starmount won twice with fluent front-running hurdle performances, was fourth in a Grade1 and has point experience. He may be an even better chaser. A February PU does not erase that case.\n\nWatchlist only: Watchlist theory observation only; two important rivals also need a successful transfer or improvement. Not an independently justified Pick. \n\nRival limitations: The market leaders differ by provider: API Bet365 makes Le Beau Madrik2.88, Starmount3.00; Sporting Life forecast makes Starmount favourite. Qualification uses the timestamped close-leader screen, not a forecast relabelled as an observed price.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
+      "price_observed_at": "2026-11-23T09:42:50.128318+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "12:05",
+      "result_course": "Bangor-on-Dee",
+      "result_horse": "Starmount",
+      "result_off_dt": "2026-11-23T12:05:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:08.244811Z",
+      "result_race_id": "rac_32305359034",
+      "result_horse_id": "hrs_46483073",
+      "result_website_race_id": "949979",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1179039",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "¾",
+      "selected_beaten_lengths": "19",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Le Beau Madrik",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Count Of Vendome",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "0.75"
+        },
+        {
+          "position": "3",
+          "horse": "Fiercely Proud",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Starmount",
+          "margin_from_previous": "16",
+          "cumulative_beaten_lengths": "19"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:08.244811Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "4th"
     },
     {
       "tier": "watchlist",
@@ -7531,8 +7587,8 @@
       "lay_odds": 5.1,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/bangor-on-dee/racecard/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.531722+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 2,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -7554,12 +7610,12 @@
       "going": "Good to Soft",
       "surface": "Turf",
       "race_name": "Bangor-On-Dee Memberships Now On Sale Novices' Handicap Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 115.85365853658537,
+      "booked_profit_decimal": "115.8536585365853658536585366",
+      "winner": "Dig Deep / They Want Me",
+      "position": "F",
       "selection_reason": {
         "summary": "Recent handicap chase winner carrying an explicit7 lb penalty meets two other recent chase winners. Berkenshtaaap163 lb/OR115 and They Want Me166/118 have specific 2m4f chase-winning routes. Dig Deep169/121 is a useful hurdle winner with a point background, ranked as speculative chase progress.",
         "counterargument": "Hard Dealt's fluent, easy Warwick debut win four days earlier is a substantial positive; the reported performance exceeded her hurdle level. The short turnaround does not prove fatigue. Her168 lb includes the penalty and may still be manageable.",
@@ -7670,7 +7726,7 @@
         "potential_net_profit_decimal": "115.8536585365853658536585366",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 115.85365853658537,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -7710,7 +7766,15 @@
           "frozen_lay_odds": 5.1
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:12.382566+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "WIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -7723,7 +7787,73 @@
       "reason": "Recent handicap chase winner carrying an explicit7 lb penalty meets two other recent chase winners. Berkenshtaaap163 lb/OR115 and They Want Me166/118 have specific 2m4f chase-winning routes. Dig Deep169/121 is a useful hurdle winner with a point background, ranked as speculative chase progress.\n\nWinning case: Hard Dealt's fluent, easy Warwick debut win four days earlier is a substantial positive; the reported performance exceeded her hurdle level. The short turnaround does not prove fatigue. Her168 lb includes the penalty and may still be manageable.\n\nWatchlist only: Subsequent v1 experiment only. Do not treat the penalty itself as a reason she must regress or promote the theory after Sunday's5/5. \n\nRival limitations: Her base OR113 plus7 penalty behaves roughly like120 for this race; rivals' lower weights largely reflect their ratings. They Want Me benefited from the leader's fall last time, and Berkenshtaaap made a major error before winning. Kingbel Du Lion and French Emperor remain wider transfer/revival routes; Roi Du Risk has chase experience.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
+      "price_observed_at": "2026-11-23T09:42:50.128318+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "13:05",
+      "result_course": "Bangor-on-Dee",
+      "result_horse": "Hard Dealt",
+      "result_off_dt": "2026-11-23T13:05:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:12.382566Z",
+      "result_race_id": "rac_32305362908",
+      "result_horse_id": "hrs_41052578",
+      "result_website_race_id": "949981",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1166351",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "dh",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Dig Deep",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "1",
+          "horse": "They Want Me",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "3",
+          "horse": "Roi Du Risk",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "4",
+          "horse": "Berkenshtaaap",
+          "margin_from_previous": "9",
+          "cumulative_beaten_lengths": "21"
+        },
+        {
+          "position": "5",
+          "horse": "Chasing Glance",
+          "margin_from_previous": "4 ¼",
+          "cumulative_beaten_lengths": "25.25"
+        },
+        {
+          "position": "6",
+          "horse": "The Burren Man",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "36.25"
+        },
+        {
+          "position": "F",
+          "horse": "Hard Dealt",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:12.382566Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "F"
     },
     {
       "tier": "watchlist",
@@ -7746,8 +7876,8 @@
       "lay_odds": 3.45,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/kempton/racecard/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.445449+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 3,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -7769,12 +7899,12 @@
       "going": "Good",
       "surface": "Turf",
       "race_name": "CopyBet Pay First Past The Post Novices' Limited Handicap Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 193.87755102040816,
+      "booked_profit_decimal": "193.8775510204081632653061225",
+      "winner": "Cinquenta",
+      "position": "2",
       "selection_reason": {
         "summary": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict.",
         "counterargument": "Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight.",
@@ -7873,7 +8003,7 @@
         "potential_net_profit_decimal": "193.8775510204081632653061225",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 193.87755102040816,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -7913,7 +8043,15 @@
           "frozen_lay_odds": 3.45
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:16.616741+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "WIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -7926,7 +8064,43 @@
       "reason": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict.\n\nWinning case: Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight.\n\nWatchlist only: Watchlist only, never a Pick on a rise-alone case.  \n\nRival limitations: Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
+      "price_observed_at": "2026-11-23T09:42:50.128318+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "13:25",
+      "result_course": "Kempton",
+      "result_horse": "Bond Broker",
+      "result_off_dt": "2026-11-23T13:25:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:16.616741Z",
+      "result_race_id": "rac_32305246688",
+      "result_horse_id": "hrs_34153315",
+      "result_website_race_id": "949838",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1121831",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "3 ¾",
+      "selected_beaten_lengths": "3.75",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Cinquenta",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Bond Broker",
+          "margin_from_previous": "3 ¾",
+          "cumulative_beaten_lengths": "3.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:16.616741Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     },
     {
       "tier": "watchlist",
@@ -7949,8 +8123,8 @@
       "lay_odds": 1.62,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/huntingdon/racecard/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
       "racecard_verified_at": "2026-11-23T10:52:20.161288+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 4,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -7972,12 +8146,12 @@
       "going": "Good",
       "surface": "Turf",
       "race_name": "Conferences At Huntingdon 'Chasing Excellence' Beginners' Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Crystal Island",
+      "position": "1",
       "selection_reason": {
         "summary": "An unbeaten point/hurdle recruit on chase debut faces a stablemate with OR134 against133 at equal159 lb and demonstrated staying novice wins. John Barbour's multiple handicap hurdle wins and recent run give a second specific transfer route.",
         "counterargument": "Crystal Island won both Rules starts, including a strong Ascot maiden and a Ffos Las novice, and was a winning pointer. No known ability defect is established. He may be the best chaser here by some margin.",
@@ -8088,7 +8262,7 @@
         "potential_net_profit_decimal": "766.1290322580645161290322580",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -8128,7 +8302,15 @@
           "frozen_lay_odds": 1.62
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T15:15:20.375296+00:00",
+          "previous_result_status": "PENDING",
+          "new_result_status": "LOSS",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
+          "event": "VERIFIED_RESULT_UPDATE"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
@@ -8141,7 +8323,55 @@
       "reason": "An unbeaten point/hurdle recruit on chase debut faces a stablemate with OR134 against133 at equal159 lb and demonstrated staying novice wins. John Barbour's multiple handicap hurdle wins and recent run give a second specific transfer route.\n\nWinning case: Crystal Island won both Rules starts, including a strong Ascot maiden and a Ffos Las novice, and was a winning pointer. No known ability defect is established. He may be the best chaser here by some margin.\n\nWatchlist only: Watchlist transfer experiment, not a main Pick. Opposition still needs to transfer and the favourite's improvement case remains too powerful for stronger promotion. \n\nRival limitations: Every runner is a chase newcomer. John Barbour's recent Cheltenham ninth was27.25 lengths behind, so fitness cannot be treated as proof of form. Stone's Throw is a secondary revival route below the top two; Huffin An A Puffin has poor recent form and first-time cheekpieces.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
-      "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
+      "price_observed_at": "2026-11-23T09:42:50.128318+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "13:45",
+      "result_course": "Huntingdon",
+      "result_horse": "Crystal Island",
+      "result_off_dt": "2026-11-23T13:45:00+00:00",
+      "result_retrieved_at": "2026-11-23T15:15:20.375296Z",
+      "result_race_id": "rac_32305235066",
+      "result_horse_id": "hrs_51558073",
+      "result_website_race_id": "949816",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1208982",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Crystal Island",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Reckless Spending",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "John Barbour",
+          "margin_from_previous": "37",
+          "cumulative_beaten_lengths": "37.3"
+        },
+        {
+          "position": "4",
+          "horse": "Huffin An A Puffin",
+          "margin_from_previous": "2 ½",
+          "cumulative_beaten_lengths": "39.8"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-23T15:15:20.375296Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     }
   ]
 }
