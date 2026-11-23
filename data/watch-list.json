@@ -7506,34 +7506,7 @@
         }
       ],
       "reason": "A close market leader on chase debut faces Le Beau Madrik's two close chase efforts, Fiercely Proud's useful hurdle class and Count Of Vendome's promising chase second. All carry159 lb. Fiercely Proud OR136 against134 has a small unadjusted ratings edge at level weights; it remains hurdle-to-chase transfer.\n\nWinning case: Starmount won twice with fluent front-running hurdle performances, was fourth in a Grade1 and has point experience. He may be an even better chaser. A February PU does not erase that case.\n\nWatchlist only: Watchlist theory observation only; two important rivals also need a successful transfer or improvement. Not an independently justified Pick. \n\nRival limitations: The market leaders differ by provider: API Bet365 makes Le Beau Madrik2.88, Starmount3.00; Sporting Life forecast makes Starmount favourite. Qualification uses the timestamped close-leader screen, not a forecast relabelled as an observed price.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
-      "price_record": {
-        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
-        "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "75f31236e550ef1d9127f47af78f8a76e151dbe1",
-        "snapshot_blob_sha": "a934655f4a7284831d70cbe720b87f73e78ed2a8",
-        "snapshot_retrieved_at_utc": "2026-11-23T09:42:50.641741+00:00",
-        "retrieved_at_utc": "2026-11-23T09:42:50.128318+00:00",
-        "retrieved_at": "2026-11-23T09:42:50.128318+00:00",
-        "market_id": "1.265873930",
-        "selection_id": 81825073,
-        "api_field": "ex.availableToLay",
-        "price_side": "LAY",
-        "original_price_side": "LAY",
-        "currency": "GBP",
-        "displayed_amount_gbp": 10,
-        "displayed_liquidity_gbp": 10,
-        "liquidity_gbp": 10,
-        "is_market_data_delayed": true,
-        "quote_timestamp": null,
-        "exact_delay_seconds": null,
-        "full_stake_match_verified": false,
-        "provider": "Betfair Exchange",
-        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
-        "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "RACE_DAY_APPROVED_BASELINE",
-        "race_day_capture": true,
-        "quote_quality_note": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven."
-      },
+      "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
       "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
     },
@@ -7748,34 +7721,7 @@
         }
       ],
       "reason": "Recent handicap chase winner carrying an explicit7 lb penalty meets two other recent chase winners. Berkenshtaaap163 lb/OR115 and They Want Me166/118 have specific 2m4f chase-winning routes. Dig Deep169/121 is a useful hurdle winner with a point background, ranked as speculative chase progress.\n\nWinning case: Hard Dealt's fluent, easy Warwick debut win four days earlier is a substantial positive; the reported performance exceeded her hurdle level. The short turnaround does not prove fatigue. Her168 lb includes the penalty and may still be manageable.\n\nWatchlist only: Subsequent v1 experiment only. Do not treat the penalty itself as a reason she must regress or promote the theory after Sunday's5/5. \n\nRival limitations: Her base OR113 plus7 penalty behaves roughly like120 for this race; rivals' lower weights largely reflect their ratings. They Want Me benefited from the leader's fall last time, and Berkenshtaaap made a major error before winning. Kingbel Du Lion and French Emperor remain wider transfer/revival routes; Roi Du Risk has chase experience.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
-      "price_record": {
-        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
-        "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "75f31236e550ef1d9127f47af78f8a76e151dbe1",
-        "snapshot_blob_sha": "a934655f4a7284831d70cbe720b87f73e78ed2a8",
-        "snapshot_retrieved_at_utc": "2026-11-23T09:42:50.641741+00:00",
-        "retrieved_at_utc": "2026-11-23T09:42:50.128318+00:00",
-        "retrieved_at": "2026-11-23T09:42:50.128318+00:00",
-        "market_id": "1.265873949",
-        "selection_id": 76590593,
-        "api_field": "ex.availableToLay",
-        "price_side": "LAY",
-        "original_price_side": "LAY",
-        "currency": "GBP",
-        "displayed_amount_gbp": 17.17,
-        "displayed_liquidity_gbp": 17.17,
-        "liquidity_gbp": 17.17,
-        "is_market_data_delayed": true,
-        "quote_timestamp": null,
-        "exact_delay_seconds": null,
-        "full_stake_match_verified": false,
-        "provider": "Betfair Exchange",
-        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
-        "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "RACE_DAY_APPROVED_BASELINE",
-        "race_day_capture": true,
-        "quote_quality_note": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven."
-      },
+      "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
       "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
     },
@@ -7833,7 +7779,7 @@
         "summary": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict.",
         "counterargument": "Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight.",
         "why_still_oppose": "Watchlist only, never a Pick on a rise-alone case.  ",
-        "rival_limitations": "Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap.",
+        "rival_limitations": "Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified.",
         "challengers": [
           "Dance And Glance",
           "Cinquenta"
@@ -7842,15 +7788,15 @@
           {
             "rank": 1,
             "horse": "Dance And Glance",
-            "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap."
+            "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified."
           },
           {
             "rank": 2,
             "horse": "Cinquenta",
-            "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap."
+            "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified."
           }
         ],
-        "whole_field_review": "Dance And Glance OR126 158 lb; Bond Broker OR126 158 lb; Cinquenta OR124 156 lb. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap.",
+        "whole_field_review": "Dance And Glance OR126 158 lb; Bond Broker OR126 158 lb; Cinquenta OR124 156 lb. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified.",
         "source": "The Racing API Pro and Sporting Life",
         "evidence_urls": [
           "https://www.sportinglife.com/racing/racecards/2026-11-23/kempton/racecard/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
@@ -7859,7 +7805,7 @@
         "checked_at": "2026-11-23T10:54:28.637Z",
         "sporting_life_checked_at": "2026-11-23T10:52:20.445449+00:00",
         "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
-        "uncertainty": "Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap.",
+        "uncertainty": "Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified.",
         "anticipated_mechanism": "Named supported opposition beats the subject; lay success alone does not validate transfer or handicap theory."
       },
       "identified_challengers": [
@@ -7870,12 +7816,12 @@
         {
           "rank": 1,
           "horse": "Dance And Glance",
-          "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap."
+          "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified."
         },
         {
           "rank": 2,
           "horse": "Cinquenta",
-          "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap."
+          "evidence_and_limitations": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict. Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified."
         }
       ],
       "lay_price_provenance": {
@@ -7977,35 +7923,8 @@
           "independent_pick_case": false
         }
       ],
-      "reason": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict.\n\nWinning case: Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight.\n\nWatchlist only: Watchlist only, never a Pick on a rise-alone case.  \n\nRival limitations: Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. One failure removes the equivalent of about9.47 successful returns at this quote. This limits price appeal without imposing a universal cap.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
-      "price_record": {
-        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
-        "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "75f31236e550ef1d9127f47af78f8a76e151dbe1",
-        "snapshot_blob_sha": "a934655f4a7284831d70cbe720b87f73e78ed2a8",
-        "snapshot_retrieved_at_utc": "2026-11-23T09:42:50.641741+00:00",
-        "retrieved_at_utc": "2026-11-23T09:42:50.128318+00:00",
-        "retrieved_at": "2026-11-23T09:42:50.128318+00:00",
-        "market_id": "1.265873912",
-        "selection_id": 62959883,
-        "api_field": "ex.availableToLay",
-        "price_side": "LAY",
-        "original_price_side": "LAY",
-        "currency": "GBP",
-        "displayed_amount_gbp": 20,
-        "displayed_liquidity_gbp": 20,
-        "liquidity_gbp": 20,
-        "is_market_data_delayed": true,
-        "quote_timestamp": null,
-        "exact_delay_seconds": null,
-        "full_stake_match_verified": false,
-        "provider": "Betfair Exchange",
-        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
-        "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "RACE_DAY_APPROVED_BASELINE",
-        "race_day_capture": true,
-        "quote_quality_note": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven."
-      },
+      "reason": "A recent handicap chase winner up5 lb meets Dance And Glance, whose first chase third was6.5 lengths behind in Class3 and can improve, plus dual hurdle winner Cinquenta. The latter was hampered and unseated at the first on chase debut, providing no negative chasing-ability verdict.\n\nWinning case: Bond Broker sets the demonstrated chase standard and retained a lead before being left clear at Plumpton. Jay Tidball's5 lb claim makes his158 lb declared weight an effective153, versus Dance158 and Cinquenta156. That advantage deserves consequential weight.\n\nWatchlist only: Watchlist only, never a Pick on a rise-alone case.  \n\nRival limitations: Only three runners, but field size is not an exclusion. Opponents' improvement is partly speculative. At the approved3.45 quote, potential net profit is £193.88 per £500 paper liability; full-stake matching remains unverified.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
+      "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
       "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
     },
@@ -8220,34 +8139,7 @@
         }
       ],
       "reason": "An unbeaten point/hurdle recruit on chase debut faces a stablemate with OR134 against133 at equal159 lb and demonstrated staying novice wins. John Barbour's multiple handicap hurdle wins and recent run give a second specific transfer route.\n\nWinning case: Crystal Island won both Rules starts, including a strong Ascot maiden and a Ffos Las novice, and was a winning pointer. No known ability defect is established. He may be the best chaser here by some margin.\n\nWatchlist only: Watchlist transfer experiment, not a main Pick. Opposition still needs to transfer and the favourite's improvement case remains too powerful for stronger promotion. \n\nRival limitations: Every runner is a chase newcomer. John Barbour's recent Cheltenham ninth was27.25 lengths behind, so fitness cannot be treated as proof of form. Stone's Throw is a secondary revival route below the top two; Huffin An A Puffin has poor recent form and first-time cheekpieces.\n\nApproved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
-      "price_record": {
-        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
-        "snapshot_path": "data/delayed-quotes-latest.json",
-        "snapshot_commit": "75f31236e550ef1d9127f47af78f8a76e151dbe1",
-        "snapshot_blob_sha": "a934655f4a7284831d70cbe720b87f73e78ed2a8",
-        "snapshot_retrieved_at_utc": "2026-11-23T09:42:50.641741+00:00",
-        "retrieved_at_utc": "2026-11-23T09:42:50.128318+00:00",
-        "retrieved_at": "2026-11-23T09:42:50.128318+00:00",
-        "market_id": "1.265874105",
-        "selection_id": 92754286,
-        "api_field": "ex.availableToLay",
-        "price_side": "LAY",
-        "original_price_side": "LAY",
-        "currency": "GBP",
-        "displayed_amount_gbp": 38.41,
-        "displayed_liquidity_gbp": 38.41,
-        "liquidity_gbp": 38.41,
-        "is_market_data_delayed": true,
-        "quote_timestamp": null,
-        "exact_delay_seconds": null,
-        "full_stake_match_verified": false,
-        "provider": "Betfair Exchange",
-        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
-        "verification_status": "VERIFIED_API_LAY",
-        "capture_type": "RACE_DAY_APPROVED_BASELINE",
-        "race_day_capture": true,
-        "quote_quality_note": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven."
-      },
+      "price_record": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven.",
       "historical": false,
       "price_observed_at": "2026-11-23T09:42:50.128318+00:00"
     }
