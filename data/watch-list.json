@@ -7564,7 +7564,23 @@
       "margin_retrieved_at": "2026-11-23T15:15:08.244811Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "4th"
+      "placing": "4th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "SUPPORTED_OPPOSITION_TRANSFER_LIMITED",
+          "analysis": "Fourth, 19 lengths behind original rank1 Le Beau Madrik, with rank3 Count Of Vendome second and rank2 Fiercely Proud third. Starmount jumped left, raced keenly and made a bad error two out before weakening. Actual chase experience supplied the winner. These observed jumping issues were not specifically predicted before racing; hurdle/point ability does not automatically transfer, but this one example proves no general rule.",
+          "winner": "Le Beau Madrik",
+          "original_challenger_ranks": [
+            "Le Beau Madrik",
+            "Fiercely Proud",
+            "Count of Vendome"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949979/bangor-on-dee-chasing-excellence-beginners-chase-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:03.094457+00:00",
+          "promotion": false
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -7853,7 +7869,23 @@
       "margin_retrieved_at": "2026-11-23T15:15:12.382566Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "F"
+      "placing": "F",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "CASUALTY_SUCCESS_NO_PENALTY_VALIDATION",
+          "analysis": "Fell four out after being slow at the ninth. Original ranks2 They Want Me and3 Dig Deep dead-heated for first; rank1 Berkenshtaaap was fourth. Book a successful lay, but the fall prevents a clean comparison of her finishing strength under the7 lb penalty. Neither penalty fatigue nor superiority of all the opponents is established. Retain this in the theory’s financial result while marking mechanism validation inconclusive.",
+          "winner": "Dig Deep / They Want Me",
+          "original_challenger_ranks": [
+            "Berkenshtaaap",
+            "They Want Me",
+            "Dig Deep"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/bangor-on-dee/949981/bangor-on-dee-memberships-now-on-sale-novices-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:03.000336+00:00",
+          "promotion": false
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -8100,7 +8132,22 @@
       "margin_retrieved_at": "2026-11-23T15:15:16.616741Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "2nd"
+      "placing": "2nd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "SUPPORTED_TRANSFER_NOT_RISE_CAUSATION",
+          "analysis": "Second, beaten3.75 lengths by original rank2 Cinquenta; rank1 Dance And Glance pulled up. Bond Broker led, was headed two out and had no answer on the run-in despite his genuine5 lb jockey claim. Cinquenta’s hurdle-to-chase route materialised. His earlier unseat at the first had not established poor chasing ability. This supports the rival comparison, not a causal claim that Bond’s5 lb rise alone caused defeat.",
+          "winner": "Cinquenta",
+          "original_challenger_ranks": [
+            "Dance And Glance",
+            "Cinquenta"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949838/copybet-pay-first-past-the-post-novices-limited-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:02.936996+00:00",
+          "promotion": false
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -8371,7 +8418,23 @@
       "margin_retrieved_at": "2026-11-23T15:15:20.375296Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "1st"
+      "placing": "1st",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "FAILED_LAY_FAVOURITE_PROGRESS_PREVAILED",
+          "analysis": "Won by a neck from original rank1 Reckless Spending. Original rank2 John Barbour was a further37 lengths back and rank3 Stone’s Throw pulled up. Crystal Island regained the lead three out and held on despite not being fluent two out. The favourite’s recognised winning-point/unbeaten-hurdle improvement case prevailed; a one-pound hurdle-rating comparison did not establish chase superiority for the rival. Opposition beyond Reckless Spending was weak on the day. Keep the full£500 loss and do not erase the failed experiment because the margin was narrow.",
+          "winner": "Crystal Island",
+          "original_challenger_ranks": [
+            "Reckless Spending",
+            "John Barbour",
+            "Stone's Throw"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949816/conferences-at-huntingdon-chasing-excellence-beginners-chase-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:02.929464+00:00",
+          "promotion": false
+        }
+      ]
     }
   ]
 }

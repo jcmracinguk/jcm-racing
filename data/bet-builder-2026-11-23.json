@@ -287,7 +287,23 @@
       "margin_retrieved_at": "2026-11-23T15:15:00.238096Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "2nd"
+      "placing": "2nd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "PARTIAL_MECHANISM_SUPPORT_NARROW_ESCAPE",
+          "analysis": "Second by a neck to original rank2 Sweeper System. Jamada led from the eighth, made a mistake and was headed two out, then challenged again. This is consistent with inexperience affecting execution, but the winner was also keen and not fluent at the last. It was a narrow successful lay, not an absolute no-win profile. Original rank1 Inside Man was fifth and rank3 Black Hawk Eagle unseated. Give Jamada’s recognised improvement meaningful credit; do not infer a permanent jumping defect.",
+          "winner": "Sweeper System",
+          "original_challenger_ranks": [
+            "Inside Man",
+            "Sweeper System",
+            "Black Hawk Eagle"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/huntingdon/949817/book-hospitality-at-huntingdon-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:03.136043+00:00",
+          "promotion": false
+        }
+      ]
     },
     {
       "tier": "selection",
@@ -545,7 +561,23 @@
       "margin_retrieved_at": "2026-11-23T15:15:04.453869Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "3rd"
+      "placing": "3rd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "SUPPORTED_NAMED_OPPOSITION",
+          "analysis": "Third, 11 lengths behind original rank2 Hollygrove Cha Cha; original rank1 Take No Chances was second, 10 lengths behind the winner. Jackie closed three out but could make no impression from two out. This supports the established-mare comparison. Hollygrove did not make all: La Pinsonniere led, and Hollygrove took over before two out. The ability route worked; an uncontested-lead scenario was not the actual mechanism. St Irene unseated and was the weaker third-ranked route. Jackie’s potential was real but did not bridge the demonstrated gap today.",
+          "winner": "Hollygrove Cha Cha",
+          "original_challenger_ranks": [
+            "Take No Chances",
+            "Hollygrove Cha Cha",
+            "St Irene"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/kempton/949840/copybet-follow-us-on-x-lilies-mares-hurdle-listed-gbb-race",
+          "source_retrieved_at": "2026-11-23T18:17:03.098824+00:00",
+          "promotion": false
+        }
+      ]
     },
     {
       "tier": "selection",
@@ -568,8 +600,8 @@
       "lay_odds": 5.2,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-23/newcastle/racecard/949832/midnite-it-s-actually-pretty-good-handicap-div-1",
       "racecard_verified_at": "2026-11-23T10:52:20.292774+00:00",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
-      "results_link_type": "DATE_RESULTS_PENDING",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-23/newcastle/949832/midnite-its-actually-pretty-good-handicap-div-1",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 3,
       "selected_at": "2026-11-22T17:50:52.047Z",
       "selection_time_note": "Original research timestamp retained; Monday morning exact roster/prices approved separately.",
@@ -595,7 +627,7 @@
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 113.0952380952381,
       "booked_profit_decimal": "113.0952380952380952380952380",
-      "winner": null,
+      "winner": "Storm Esme",
       "position": "9",
       "selection_reason": {
         "summary": "Opposition is established at this track and 6f. Wise Crack won over C&D on 6 November despite a stumbled start and traffic; Storm Esme won over C&D in September and was second, beaten 1 length, in a Class5 here on 30 October; Noelies Dream was half a length behind Wise Crack. These form lines provide multiple concrete routes.",
@@ -747,7 +779,15 @@
           "frozen_lay_odds": 5.2
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "event": "COMPLETE_AUTOMATED_SETTLEMENT_METADATA",
+          "previous_winner": null,
+          "previous_results_url": "https://www.sportinglife.com/racing/results/2026-11-23",
+          "outcome_unchanged": true
+        }
+      ],
       "result_source": "SPORTING_LIFE",
       "result_date": "2026-11-23",
       "result_off_time_uk": "17:45",
@@ -831,7 +871,23 @@
       "margin_retrieved_at": "2026-11-23T18:13:33.745059Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "9th"
+      "placing": "9th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-23T18:20:12.860460+00:00",
+          "classification": "SUPPORTED_NAMED_CD_COMPETITION",
+          "analysis": "Ninth; original rank2 Storm Esme won, rank1 Wise Crack sixth and rank3 Noelies Dream tenth. Encore was slowly away, keen, made an effort over two furlongs out and lost position over one furlong out. The named course-and-distance opposition supplied the winning route despite Encore’s plausible revival. This does not prove that her previous wide/no-cover excuse was false or that the class drop could never work. No cumulative beaten margin is asserted: the current stored parser leaves it unknown after the dead-heat for fourth.",
+          "winner": "Storm Esme",
+          "original_challenger_ranks": [
+            "Wise Crack",
+            "Storm Esme",
+            "Noelies Dream"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-23/newcastle/949832/midnite-its-actually-pretty-good-handicap-div-1",
+          "source_retrieved_at": "2026-11-23T18:17:03.010754+00:00",
+          "promotion": false
+        }
+      ]
     }
   ],
   "simulation_note": "Approved Monday 23 November 09:42:50 GMT delayed Betfair Exchange Lay capture. GBP; exact quote time and delay unknown; full-stake matching unverified; value unproven. Three approved Picks only; Watchlist excluded.",
