@@ -580,12 +580,12 @@
       "going": "Standard",
       "surface": "AW",
       "race_name": "Midnite It's Actually Pretty Good Handicap (Div 1)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 113.0952380952381,
+      "booked_profit_decimal": "113.0952380952380952380952380",
       "winner": null,
-      "position": null,
+      "position": "9",
       "selection_reason": {
         "summary": "Opposition is established at this track and 6f. Wise Crack won over C&D on 6 November despite a stumbled start and traffic; Storm Esme won over C&D in September and was second, beaten 1 length, in a Class5 here on 30 October; Noelies Dream was half a length behind Wise Crack. These form lines provide multiple concrete routes.",
         "counterargument": "Encore won a 6f Kempton novice and narrowly missed in a 7f Southwell handicap. The subsequent 6f seventh had a genuine wide/no-cover explanation and came in Class4, while today is Class5. She is on OR70, the same mark as her close second, and Haggas/Fallon is a credible revival combination. That run is not treated as a conclusive decline.",
@@ -696,7 +696,7 @@
         "potential_net_profit_decimal": "113.0952380952380952380952380",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 113.0952380952381,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -736,7 +736,91 @@
           "frozen_lay_odds": 5.2
         }
       ],
-      "result_history": []
+      "result_history": [],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-23",
+      "result_off_time_uk": "17:45",
+      "result_course": "Newcastle",
+      "result_horse": "Encore",
+      "result_off_dt": "2026-11-23T17:45:00+00:00",
+      "result_retrieved_at": "2026-11-23T18:13:33.745059Z",
+      "result_race_id": "rac_32305264121",
+      "result_horse_id": "hrs_56591094",
+      "result_website_race_id": "949832",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/newcastle/949832/midnite-its-actually-pretty-good-handicap-div-1",
+      "result_non_runners": [],
+      "result_website_horse_id": "1198728",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "hd",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Storm Esme",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Mythical Phoenix",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.2"
+        },
+        {
+          "position": "3",
+          "horse": "Lumenbourg",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "4",
+          "horse": "Moonstone Boy",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.8"
+        },
+        {
+          "position": "4",
+          "horse": "Spun To Gold",
+          "margin_from_previous": "dh",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "6",
+          "horse": "Wise Crack",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "7",
+          "horse": "The Green Man",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "8",
+          "horse": "Jersey Maverick",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "9",
+          "horse": "Encore",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "10",
+          "horse": "Noelies Dream",
+          "margin_from_previous": "7 ½",
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-23/newcastle/949832/midnite-its-actually-pretty-good-handicap-div-1",
+      "margin_retrieved_at": "2026-11-23T18:13:33.745059Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "9th"
     }
   ],
   "competition_watchlist": []
