@@ -8195,7 +8195,7 @@
       "race_name": "Conferences At Huntingdon 'Chasing Excellence' Beginners' Chase (GBB Race)",
       "result_status": "LOSS",
       "verification_status": "WEBSITE_CONFIRMED",
-      "booked_profit_gbp": -500.0,
+      "booked_profit_gbp": -500,
       "booked_profit_decimal": "-500",
       "winner": "Crystal Island",
       "position": "1",
@@ -8309,7 +8309,7 @@
         "potential_net_profit_decimal": "766.1290322580645161290322580",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": -500.0,
+        "booked_profit_gbp": -500,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -8435,6 +8435,244 @@
           "promotion": false
         }
       ]
+    },
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Sledgehammer",
+      "course": "Southwell",
+      "off_time_uk": "12:26",
+      "race_id": "rac_32305390026",
+      "horse_id": "hrs_58565304",
+      "race_date": "2026-11-24",
+      "scheduled_off_dt": "2026-11-24T12:26:00+00:00",
+      "lay_odds": 3.6,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-24/southwell/racecard/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "racecard_verified_at": "2026-11-24T06:00:53.978Z",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-23T19:45:15.291Z",
+      "added_at": "2026-11-24T06:09:30Z",
+      "user_approved_at": "2026-11-24T06:09:30Z",
+      "user_approval_text": "Add to the app please",
+      "price_approved_at": "2026-11-24T06:09:30Z",
+      "price_approval_text": "Add to the app please",
+      "user_approval_time_note": "First clock check in approval turn. Refers to the remaining Watchlist entry following the revised decision on the two Picks.",
+      "original_pre_race_review_at": "2026-11-23T19:45:15.291Z",
+      "original_pre_race_assessment": {
+        "group": "Watchlist",
+        "recorded_at": "2026-11-23T19:45:15.291Z",
+        "raw_reasoning": "Chase rise v1. Sledgehammer won Class 4 staying chases at Hexham and Wetherby and rises from 92 to 99, with 5 lb claimed for 162 lb effective. Wetherby form was franked and he overcame errors; stable improvement might persist. Could Be You won a small-field staying handicap chase at Plumpton and gets 13 lb on actual weights today, but is up 6 lb in mark and faces a stronger field. Bells Of Ufford was second at Ffos Las behind a subsequent winner, stays 3m and gets 6 lb effective. Peckforton Hills was second in a large-field Bangor chase and stays, but returns after 220 days and gets only 3 lb on effective weights. Kastellion's chase evidence was over shorter; Danger Nap's staying form is over hurdles."
+      },
+      "field_size": 9,
+      "going": "Good, good to soft in places",
+      "surface": "Turf",
+      "race_name": "Dance Through The Decades Christmas Parties Novices' Handicap Chase",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Sledgehammer rises 7 lb after two 3m chase wins. After his rider's 5 lb claim, Could Be You receives 13 lb and Bells Of Ufford receives 6 lb. Both bring demonstrated staying chase form.",
+        "counterargument": "Sledgehammer won both starts for his new yard and the Wetherby form was franked. He overcame mistakes there and can improve again.",
+        "why_still_oppose": "Prospective chase-rise Watchlist observation based on demonstrated opposition, changed weight terms and verified race-day quote.",
+        "rival_limitations": "Could Be You won in a small field. Bells Of Ufford needs to build on his Ffos Las second. Peckforton Hills returns from a long absence. Kastellion's chase evidence was at a shorter trip, and Danger Nap's staying form is over hurdles.",
+        "challengers": [
+          "Could Be You",
+          "Bells Of Ufford",
+          "Peckforton Hills",
+          "Kastellion",
+          "Danger Nap"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Could Be You",
+            "evidence_and_limitations": "Recent Plumpton staying chase winner with 13 lb advantage on effective weights, stepping out of a small field."
+          },
+          {
+            "rank": 2,
+            "horse": "Bells Of Ufford",
+            "evidence_and_limitations": "Second over 3m at Ffos Las behind a subsequent winner, receives 6 lb."
+          },
+          {
+            "rank": 3,
+            "horse": "Peckforton Hills",
+            "evidence_and_limitations": "Second in a big field at Bangor over a staying trip, receives 3 lb, off 220 days."
+          },
+          {
+            "rank": 4,
+            "horse": "Kastellion",
+            "evidence_and_limitations": "Fourth on chase debut at Worcester over shorter and can improve."
+          },
+          {
+            "rank": 5,
+            "horse": "Danger Nap",
+            "evidence_and_limitations": "Placed over staying trips over hurdles with chase transfer to prove."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-24/southwell/racecard/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+          "https://api.theracingapi.com/v1/racecards/rac_32305390026"
+        ],
+        "checked_at": "2026-11-24T06:00:53.887Z",
+        "sporting_life_checked_at": "2026-11-24T06:00:53.978Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "A named staying chaser beats Sledgehammer on today's effective terms. The result alone does not establish that the higher mark caused defeat."
+      },
+      "identified_challengers": [
+        "Could Be You",
+        "Bells Of Ufford",
+        "Peckforton Hills",
+        "Kastellion",
+        "Danger Nap"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Could Be You",
+          "evidence_and_limitations": "Recent Plumpton staying chase winner with 13 lb advantage on effective weights, stepping out of a small field."
+        },
+        {
+          "rank": 2,
+          "horse": "Bells Of Ufford",
+          "evidence_and_limitations": "Second over 3m at Ffos Las behind a subsequent winner, receives 6 lb."
+        },
+        {
+          "rank": 3,
+          "horse": "Peckforton Hills",
+          "evidence_and_limitations": "Second in a big field at Bangor over a staying trip, receives 3 lb, off 220 days."
+        },
+        {
+          "rank": 4,
+          "horse": "Kastellion",
+          "evidence_and_limitations": "Fourth on chase debut at Worcester over shorter and can improve."
+        },
+        {
+          "rank": 5,
+          "horse": "Danger Nap",
+          "evidence_and_limitations": "Placed over staying trips over hurdles with chase transfer to prove."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "2a30e7135d8de1cb66f1571a89426adeb43a672d",
+        "snapshot_blob_sha": "7277c4b8ef02c6ad3b7fdfdaf284824421cc7133",
+        "snapshot_retrieved_at_utc": "2026-11-24T05:59:39.493881+00:00",
+        "retrieved_at_utc": "2026-11-24T05:59:39.188358+00:00",
+        "market_id": "1.265921765",
+        "selection_id": 20639523,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 53.21,
+        "displayed_liquidity_gbp": 53.21,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified."
+      },
+      "source": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
+      "available_stake_gbp": 53.21,
+      "market_position_note": "Shortest on both captured sides at the morning check. Kastellion and Peckforton Hills were next on the Lay side.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 192.3076923076923,
+        "potential_net_profit_gbp": 182.69230769230768,
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_TUESDAY_MORNING_BASELINE",
+      "price_quality_warning": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "75f31236e550ef1d9127f47af78f8a76e151dbe1",
+          "price": 1000,
+          "approved": false
+        },
+        {
+          "snapshot_commit": "125aa5bdefd2851e3cbc0d6051f969fa4a829104",
+          "retrieved_at_utc": "2026-11-23T20:55:04.160339+00:00",
+          "price": 5.8,
+          "approved": false
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "2a30e7135d8de1cb66f1571a89426adeb43a672d",
+          "snapshot_blob_sha": "7277c4b8ef02c6ad3b7fdfdaf284824421cc7133",
+          "snapshot_retrieved_at_utc": "2026-11-24T05:59:39.493881+00:00",
+          "retrieved_at_utc": "2026-11-24T05:59:39.188358+00:00",
+          "market_id": "1.265921765",
+          "selection_id": 20639523,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 53.21,
+          "displayed_liquidity_gbp": 53.21,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
+          "price": 3.6,
+          "approved": true,
+          "approval_recorded_at": "2026-11-24T06:09:30Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-24T06:09:30Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Add to the app please",
+          "group": "Watchlist",
+          "frozen_lay_odds": 3.6
+        }
+      ],
+      "result_history": [],
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "prospective_batch_record": "data/watchlist-research-2026-11-24.json",
+          "independent_pick_case": false
+        }
+      ],
+      "reason": "Sledgehammer rises 7 lb after two 3m chase wins. After his rider's 5 lb claim, Could Be You receives 13 lb and Bells Of Ufford receives 6 lb. Both bring demonstrated staying chase form.\n\nSledgehammer won both starts for his new yard and the Wetherby form was franked. He overcame mistakes there and can improve again.\n\nCould Be You won in a small field. Bells Of Ufford needs to build on his Ffos Las second. Peckforton Hills returns from a long absence. Kastellion's chase evidence was at a shorter trip, and Danger Nap's staying form is over hurdles.\n\nApproved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
+      "price_record": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-24T05:59:39.188358+00:00"
     }
   ]
 }
