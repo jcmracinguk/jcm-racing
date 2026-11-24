@@ -40,8 +40,8 @@
       "lay_odds": 2.92,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-24/wolverhampton/racecard/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
       "racecard_verified_at": "2026-11-24T06:21:46.889Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-24T06:21:46.889Z",
       "selection_time_note": "First recorded independent Pick proposal after the earlier morning Pass.",
@@ -67,7 +67,7 @@
       "verification_status": "WEBSITE_CONFIRMED",
       "booked_profit_gbp": 247.39583333333334,
       "booked_profit_decimal": "247.3958333333333333333333334",
-      "winner": null,
+      "winner": "National Pride",
       "position": "2",
       "selection_reason": {
         "summary": "National Pride and High Calibre won their latest nurseries and receive 2 lb and 3 lb respectively. Capricious Star was second here yesterday and receives 6 lb. Happy Love makes his handicap and all-weather debut off 80.",
@@ -243,7 +243,19 @@
           "frozen_lay_odds": 2.92
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-24T20:55:36.070Z",
+          "source": "SPORTING_LIFE_WEIGHEDIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+          "source_retrieved_at": "2026-11-24T20:54:34.006199+00:00",
+          "result_status": "WIN",
+          "winner": "National Pride",
+          "position": "2",
+          "booked_profit_gbp": 247.39583333333334,
+          "frozen_lay_odds": 2.92
+        }
+      ],
       "result_source": "SPORTING_LIFE",
       "result_date": "2026-11-24",
       "result_off_time_uk": "18:30",
@@ -287,7 +299,26 @@
       "margin_retrieved_at": "2026-11-24T20:36:06.518121Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "2nd"
+      "placing": "2nd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-24T20:55:36.070Z",
+          "classification": "NAMED_WINNER_AND_NARROW_MECHANISM_SUPPORT",
+          "analysis": "Happy Love was second by a neck to original rank 1 National Pride. High Calibre, rank 2, led and was third, three quarters of a length behind Happy Love. National Pride challenged in the final furlong and led inside the final 110 yards. Happy Love remained competitive throughout on his handicap and all-weather debut. This supports the specific nursery-form and staying case for National Pride, with no isolated causal evidence for the 2 lb weight difference. Capricious Star, rank 3, was a non-runner, removing the course-form route. The three-runner race was decided narrowly.",
+          "winner": "National Pride",
+          "named_winner_original_rank": 1,
+          "mechanism_assessment": "SUPPORTED_BY_NAMED_NURSERY_WINNER_NARROW",
+          "original_challenger_ranks": [
+            "National Pride",
+            "High Calibre",
+            "Capricious Star"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+          "source_retrieved_at": "2026-11-24T20:54:34.006199+00:00",
+          "withdrawal_observation": "Capricious Star was an official non-runner. First verified in this audit from the settled result. No contemporaneous pre-off warning was established.",
+          "promotion": false
+        }
+      ]
     }
   ],
   "simulation_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified.",

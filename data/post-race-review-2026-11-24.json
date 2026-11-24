@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "observed_at": "2026-11-24T20:55:36.070Z",
+  "timezone": "Europe/London",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "paper_only": true,
+  "approved_price_baseline_unchanged": true,
+  "stats": {
+    "picks": {
+      "unique_races": 1,
+      "successes": 1,
+      "failures": 0,
+      "nr": 0,
+      "pending": 0,
+      "booked_profit_decimal": "247.3958333333333333333333334",
+      "booked_profit_gbp": 247.39583333333334,
+      "app_penny_total_gbp": 247.4,
+      "liability_per_race_gbp": 500,
+      "commission_rate": 0.05,
+      "prices": [
+        2.92
+      ]
+    },
+    "watchlist": {
+      "unique_races": 1,
+      "successes": 0,
+      "failures": 1,
+      "nr": 0,
+      "pending": 0,
+      "booked_profit_decimal": "-500",
+      "booked_profit_gbp": -500,
+      "app_penny_total_gbp": -500,
+      "liability_per_race_gbp": 500,
+      "commission_rate": 0.05,
+      "prices": [
+        3.6
+      ]
+    }
+  },
+  "supplementary_combined_paper_gbp": -252.6,
+  "week_to_date_app_penny_gbp": {
+    "picks": 896.64,
+    "watchlist": -364.93
+  },
+  "entries": [
+    {
+      "horse": "Happy Love",
+      "group": "Picks",
+      "race_id": "rac_32305419081",
+      "horse_id": "hrs_66399494",
+      "lay_odds": 2.92,
+      "result_status": "WIN",
+      "position": "2",
+      "booked_profit_gbp": 247.39583333333334,
+      "booked_profit_decimal": "247.3958333333333333333333334",
+      "observed_at": "2026-11-24T20:55:36.070Z",
+      "classification": "NAMED_WINNER_AND_NARROW_MECHANISM_SUPPORT",
+      "analysis": "Happy Love was second by a neck to original rank 1 National Pride. High Calibre, rank 2, led and was third, three quarters of a length behind Happy Love. National Pride challenged in the final furlong and led inside the final 110 yards. Happy Love remained competitive throughout on his handicap and all-weather debut. This supports the specific nursery-form and staying case for National Pride, with no isolated causal evidence for the 2 lb weight difference. Capricious Star, rank 3, was a non-runner, removing the course-form route. The three-runner race was decided narrowly.",
+      "winner": "National Pride",
+      "named_winner_original_rank": 1,
+      "mechanism_assessment": "SUPPORTED_BY_NAMED_NURSERY_WINNER_NARROW",
+      "original_challenger_ranks": [
+        "National Pride",
+        "High Calibre",
+        "Capricious Star"
+      ],
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+      "source_retrieved_at": "2026-11-24T20:54:34.006199+00:00",
+      "withdrawal_observation": "Capricious Star was an official non-runner. First verified in this audit from the settled result. No contemporaneous pre-off warning was established.",
+      "promotion": false
+    },
+    {
+      "horse": "Sledgehammer",
+      "group": "Watchlist",
+      "race_id": "rac_32305390026",
+      "horse_id": "hrs_58565304",
+      "lay_odds": 3.6,
+      "result_status": "LOSS",
+      "position": "1",
+      "booked_profit_gbp": -500,
+      "booked_profit_decimal": "-500",
+      "observed_at": "2026-11-24T20:55:36.070Z",
+      "classification": "FAILED_LAY_RECOGNISED_COUNTERARGUMENT_WON",
+      "analysis": "Sledgehammer came from the rear, took over despite a mistake three out and went clear before two out to win by 12 lengths. Original rank 3 Peckforton Hills was second. Rank 1 Could Be You led but made jumping mistakes and finished third, 20 lengths behind the winner. Rank 2 Bells Of Ufford was fourth, rank 4 Kastellion was pulled up and rank 5 Danger Nap was sixth. The lead from Could Be You materialised, but the proposed threat on effective weights did not. Sledgehammer's repeatable 3m chase form, class drop and improvement for Adrian Keatley were the stronger evidence.",
+      "winner": "Sledgehammer",
+      "named_winner_original_rank": null,
+      "mechanism_assessment": "OPPOSITION_MECHANISM_FAILED_FAVOURITE_PROGRESS_PREVAILED",
+      "original_challenger_ranks": [
+        "Could Be You",
+        "Bells Of Ufford",
+        "Peckforton Hills",
+        "Kastellion",
+        "Danger Nap"
+      ],
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "source_retrieved_at": "2026-11-24T20:54:33.997076+00:00",
+      "promotion": false
+    }
+  ],
+  "research_passes": [
+    {
+      "horse": "Trustintimes",
+      "original_disposition": "PASS",
+      "position": 3,
+      "winner": "Shangri La",
+      "beaten_lengths": 1.5,
+      "original_rivals": [
+        "Liam Mera Kai",
+        "Secret Squirrel",
+        "Sergei Breeze"
+      ],
+      "observed": "Liam Mera Kai was withdrawn, Secret Squirrel fifth and Sergei Breeze second. Trustintimes stayed on without threatening. Winner outside original top three. A defeated favourite with weakened proposed mechanism and zero booked P/L.",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/lingfield/950669/midnite-its-actually-pretty-good-maiden-stakes-gbbgbbplus-race",
+      "source_retrieved_at": "2026-11-24T20:54:33.848868+00:00"
+    },
+    {
+      "horse": "Orange Emperor",
+      "original_disposition": "HELD_OUT",
+      "position": 2,
+      "winner": "Real Gold",
+      "beaten_margin": "neck",
+      "original_rivals": [
+        "Rovinia",
+        "Imelda",
+        "Tam Lin"
+      ],
+      "observed": "Led until inside the last 110 yards. Rovinia third, Imelda thirteenth, Tam Lin fifth. Defeat came from outside original ranks. The close second supports the pre-race repeat form concern. Zero booked P/L.",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/lingfield/950672/arc-all-weather-bonus-is-back-handicap-div-2",
+      "source_retrieved_at": "2026-11-24T20:54:33.803432+00:00"
+    }
+  ],
+  "theories": [
+    {
+      "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+      "version": 1,
+      "tuesday": {
+        "unique_races": 1,
+        "successes": 0,
+        "failures": 1,
+        "nr": 0,
+        "pending": 0,
+        "booked_profit_decimal": "-500",
+        "booked_profit_gbp": -500,
+        "app_penny_total_gbp": -500,
+        "liability_per_race_gbp": 500,
+        "commission_rate": 0.05,
+        "prices": [
+          3.6
+        ]
+      },
+      "overlay_21_to_24_nov": {
+        "successes": 5,
+        "failures": 2,
+        "booked_profit_gbp": -194.59,
+        "rounded": true
+      },
+      "promotion": "NOT_PROMOTED"
+    }
+  ],
+  "all_trial_entries_settled": true,
+  "source_quality": "All four Sporting Life full results verified WEIGHEDIN. Racing API Pro corroborates identities and placings. Keep Sporting Life adjacent margins and running comments. No timing inferred for withdrawn challengers.",
+  "lessons": [
+    "When a named rival drops out, review the remaining winner routes and record the time it was actually observed.",
+    "A progressive chaser's demonstrated form in higher grade can outweigh a nominal rise; compare the quality of the opposition's wins under the new terms.",
+    "Separate outcome, named winner and mechanism. Record close finishes and avoid hindsight repricing or promotion."
+  ]
+}

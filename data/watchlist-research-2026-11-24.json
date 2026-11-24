@@ -72,8 +72,8 @@
       "lay_odds": 3.6,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-24/southwell/racecard/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
       "racecard_verified_at": "2026-11-24T06:00:53.978Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-23T19:45:15.291Z",
       "added_at": "2026-11-24T06:09:30Z",
@@ -92,12 +92,12 @@
       "going": "Good, good to soft in places",
       "surface": "Turf",
       "race_name": "Dance Through The Decades Christmas Parties Novices' Handicap Chase",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500,
+      "booked_profit_decimal": "-500",
+      "winner": "Sledgehammer",
+      "position": "1",
       "selection_reason": {
         "summary": "Sledgehammer rises 7 lb after two 3m chase wins. After his rider's 5 lb claim, Could Be You receives 13 lb and Bells Of Ufford receives 6 lb. Both bring demonstrated staying chase form.",
         "counterargument": "Sledgehammer won both starts for his new yard and the Wetherby form was franked. He overcame mistakes there and can improve again.",
@@ -216,7 +216,7 @@
         "potential_net_profit_gbp": 182.69230769230768,
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -274,7 +274,19 @@
           "frozen_lay_odds": 3.6
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-24T20:55:36.070Z",
+          "source": "SPORTING_LIFE_WEIGHEDIN",
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+          "source_retrieved_at": "2026-11-24T20:54:33.997076+00:00",
+          "result_status": "LOSS",
+          "winner": "Sledgehammer",
+          "position": "1",
+          "booked_profit_gbp": -500,
+          "frozen_lay_odds": 3.6
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -287,7 +299,93 @@
       "reason": "Sledgehammer rises 7 lb after two 3m chase wins. After his rider's 5 lb claim, Could Be You receives 13 lb and Bells Of Ufford receives 6 lb. Both bring demonstrated staying chase form.\n\nSledgehammer won both starts for his new yard and the Wetherby form was franked. He overcame mistakes there and can improve again.\n\nCould Be You won in a small field. Bells Of Ufford needs to build on his Ffos Las second. Peckforton Hills returns from a long absence. Kastellion's chase evidence was at a shorter trip, and Danger Nap's staying form is over hurdles.\n\nApproved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
       "price_record": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay. £53.21 displayed; full-stake matching unverified.",
       "historical": false,
-      "price_observed_at": "2026-11-24T05:59:39.188358+00:00"
+      "price_observed_at": "2026-11-24T05:59:39.188358+00:00",
+      "placing": "1st",
+      "winning_margin_lengths": "12",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Sledgehammer",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Peckforton Hills",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "12"
+        },
+        {
+          "position": "3",
+          "horse": "Could Be You",
+          "margin_from_previous": "8",
+          "cumulative_beaten_lengths": "20"
+        },
+        {
+          "position": "4",
+          "horse": "Bells Of Ufford",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "20.3"
+        },
+        {
+          "position": "5",
+          "horse": "Scoro",
+          "margin_from_previous": "14",
+          "cumulative_beaten_lengths": "34.3"
+        },
+        {
+          "position": "6",
+          "horse": "Danger Nap",
+          "margin_from_previous": "10",
+          "cumulative_beaten_lengths": "44.3"
+        },
+        {
+          "position": "7",
+          "horse": "Vicomte Le Brave",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "45.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "margin_retrieved_at": "2026-11-24T17:48:38.097106Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-24",
+      "result_off_time_uk": "12:26",
+      "result_course": "Southwell",
+      "result_horse": "Sledgehammer",
+      "result_off_dt": "2026-11-24T12:26:00+00:00",
+      "result_retrieved_at": "2026-11-24T17:48:38.097106Z",
+      "result_race_id": "rac_32305390026",
+      "result_horse_id": "hrs_58565304",
+      "result_website_race_id": "950658",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "result_non_runners": [],
+      "result_website_horse_id": "1215161",
+      "result_stage": "WEIGHEDIN",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-24T20:55:36.070Z",
+          "classification": "FAILED_LAY_RECOGNISED_COUNTERARGUMENT_WON",
+          "analysis": "Sledgehammer came from the rear, took over despite a mistake three out and went clear before two out to win by 12 lengths. Original rank 3 Peckforton Hills was second. Rank 1 Could Be You led but made jumping mistakes and finished third, 20 lengths behind the winner. Rank 2 Bells Of Ufford was fourth, rank 4 Kastellion was pulled up and rank 5 Danger Nap was sixth. The lead from Could Be You materialised, but the proposed threat on effective weights did not. Sledgehammer's repeatable 3m chase form, class drop and improvement for Adrian Keatley were the stronger evidence.",
+          "winner": "Sledgehammer",
+          "named_winner_original_rank": null,
+          "mechanism_assessment": "OPPOSITION_MECHANISM_FAILED_FAVOURITE_PROGRESS_PREVAILED",
+          "original_challenger_ranks": [
+            "Could Be You",
+            "Bells Of Ufford",
+            "Peckforton Hills",
+            "Kastellion",
+            "Danger Nap"
+          ],
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+          "source_retrieved_at": "2026-11-24T20:54:33.997076+00:00",
+          "promotion": false
+        }
+      ]
     }
   ],
   "scope_review": "One prospective chase-rise Watchlist observation after the morning recheck. No Pick accepted. Even Tho passed and Rebel Reba remained on hold.",
@@ -295,11 +393,42 @@
   "current_counts": {
     "entries": 1,
     "successes": 0,
-    "failures": 0,
+    "failures": 1,
     "nr": 0,
-    "pending": 1
+    "pending": 0
   },
-  "booked_profit_gbp": 0,
-  "post_race_evaluations": [],
-  "result_review_history": []
+  "booked_profit_gbp": -500,
+  "post_race_evaluations": [
+    {
+      "observed_at": "2026-11-24T20:55:36.070Z",
+      "classification": "FAILED_LAY_RECOGNISED_COUNTERARGUMENT_WON",
+      "analysis": "Sledgehammer came from the rear, took over despite a mistake three out and went clear before two out to win by 12 lengths. Original rank 3 Peckforton Hills was second. Rank 1 Could Be You led but made jumping mistakes and finished third, 20 lengths behind the winner. Rank 2 Bells Of Ufford was fourth, rank 4 Kastellion was pulled up and rank 5 Danger Nap was sixth. The lead from Could Be You materialised, but the proposed threat on effective weights did not. Sledgehammer's repeatable 3m chase form, class drop and improvement for Adrian Keatley were the stronger evidence.",
+      "winner": "Sledgehammer",
+      "named_winner_original_rank": null,
+      "mechanism_assessment": "OPPOSITION_MECHANISM_FAILED_FAVOURITE_PROGRESS_PREVAILED",
+      "original_challenger_ranks": [
+        "Could Be You",
+        "Bells Of Ufford",
+        "Peckforton Hills",
+        "Kastellion",
+        "Danger Nap"
+      ],
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-24/southwell/950658/dance-through-the-decades-christmas-parties-novices-handicap-chase",
+      "source_retrieved_at": "2026-11-24T20:54:33.997076+00:00",
+      "promotion": false
+    }
+  ],
+  "result_review_history": [
+    {
+      "observed_at": "2026-11-24T20:55:36.070Z",
+      "source": "SPORTING_LIFE_WEIGHEDIN",
+      "updated_race_ids": [
+        "rac_32305419081",
+        "rac_32305390026"
+      ],
+      "frozen_price_baseline_unchanged": true,
+      "all_trial_entries_settled": true
+    }
+  ],
+  "last_result_reviewed_at": "2026-11-24T20:55:36.070Z"
 }
