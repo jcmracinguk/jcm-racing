@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-24",
+  "mode": "research_only_not_official_picks",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "review_stage": "APPROVED_MORNING_REVIEW",
+  "approval_recorded_at": "2026-11-24T06:26:45+00:00",
+  "last_price_approval_recorded_at": "2026-11-24T06:26:45+00:00",
+  "price_capture_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified.",
+  "high_competition": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "recorded-review-time",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Happy Love",
+      "course": "Wolverhampton (AW)",
+      "off_time_uk": "18:30",
+      "race_id": "rac_32305419081",
+      "horse_id": "hrs_66399494",
+      "race_date": "2026-11-24",
+      "scheduled_off_dt": "2026-11-24T18:30:00+00:00",
+      "lay_odds": 2.92,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-24/wolverhampton/racecard/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+      "racecard_verified_at": "2026-11-24T06:21:46.889Z",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-24T06:21:46.889Z",
+      "selection_time_note": "First recorded independent Pick proposal after the earlier morning Pass.",
+      "added_at": "2026-11-24T06:26:45+00:00",
+      "user_approved_at": "2026-11-24T06:26:45+00:00",
+      "user_approval_text": "Yes",
+      "user_approval_time_note": "First clock check in the approval turn. James replied Yes to the sole proposed Pick and exact price.",
+      "price_approved_at": "2026-11-24T06:26:45+00:00",
+      "price_approval_text": "Yes",
+      "price_approval_time_note": "First clock check in the approval turn. James replied Yes to the sole proposed Pick and exact price.",
+      "original_pre_race_review_at": "2026-11-24T06:21:46.889Z",
+      "original_pre_race_assessment": {
+        "group": "Pick",
+        "recorded_at": "2026-11-24T06:21:46.889Z",
+        "raw_reasoning": "National Pride and High Calibre won their latest nurseries and receive 2 lb and 3 lb respectively. Capricious Star was second here yesterday and receives 6 lb. Happy Love makes his handicap and all-weather debut off 80.\n\nHappy Love was second by 0.75 and 1 length in two turf novices across 7f–1m, giving his opening mark and nursery progression a credible route. He could control a small field and improve again. National Pride and High Calibre have been raised after their wins.\n\nTwo rivals have demonstrated nursery-winning form on lower carried weights, and a third provides recent form at this track. Their cases are strong enough to oppose Happy Love even though his two close novice seconds give him a plausible winning chance.\n\nWon 7f Chelmsford Polytrack nursery by 1.25 lengths from 73, now 78 and receives 2 lb; extends to 1m142y on Tapeta. Won 9f Newmarket turf nursery by 3.5 lengths off 71 in a ten-runner field, now 77 and receives 3 lb; surface transfer and a 6 lb rise matter. Second by 1 length over 1m1½f here yesterday on handicap debut; receives 6 lb; overnight turnaround and stronger class temper it.",
+        "earlier_morning_verdict": "Pass"
+      },
+      "field_size": 4,
+      "going": "Standard",
+      "surface": "Tapeta",
+      "race_name": "AWC Finals Day At Newcastle 26th March Nursery Handicap Stakes (GBBPlus Race)",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "National Pride and High Calibre won their latest nurseries and receive 2 lb and 3 lb respectively. Capricious Star was second here yesterday and receives 6 lb. Happy Love makes his handicap and all-weather debut off 80.",
+        "counterargument": "Happy Love was second by 0.75 and 1 length in two turf novices across 7f–1m, giving his opening mark and nursery progression a credible route. He could control a small field and improve again. National Pride and High Calibre have been raised after their wins.",
+        "why_still_oppose": "Two rivals have demonstrated nursery-winning form on lower carried weights, and a third provides recent form at this track. Their cases are strong enough to oppose Happy Love even though his two close novice seconds give him a plausible winning chance.",
+        "rival_limitations": "Won 7f Chelmsford Polytrack nursery by 1.25 lengths from 73, now 78 and receives 2 lb; extends to 1m142y on Tapeta. Won 9f Newmarket turf nursery by 3.5 lengths off 71 in a ten-runner field, now 77 and receives 3 lb; surface transfer and a 6 lb rise matter. Second by 1 length over 1m1½f here yesterday on handicap debut; receives 6 lb; overnight turnaround and stronger class temper it.",
+        "challengers": [
+          "National Pride",
+          "High Calibre",
+          "Capricious Star"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "National Pride",
+            "evidence_and_limitations": "Won 7f Chelmsford Polytrack nursery by 1.25 lengths from 73, now 78 and receives 2 lb; extends to 1m142y on Tapeta."
+          },
+          {
+            "rank": 2,
+            "horse": "High Calibre",
+            "evidence_and_limitations": "Won 9f Newmarket turf nursery by 3.5 lengths off 71 in a ten-runner field, now 77 and receives 3 lb; surface transfer and a 6 lb rise matter."
+          },
+          {
+            "rank": 3,
+            "horse": "Capricious Star",
+            "evidence_and_limitations": "Second by 1 length over 1m1½f here yesterday on handicap debut; receives 6 lb; overnight turnaround and stronger class temper it."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-24/wolverhampton/racecard/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+          "https://www.sportinglife.com/racing/results/2026-11-23/wolverhampton/949820/all-weather-championship-is-back-nursery",
+          "https://api.theracingapi.com/v1/racecards/rac_32305419081"
+        ],
+        "checked_at": "2026-11-24T06:21:46.889Z",
+        "sporting_life_checked_at": "2026-11-24T06:21:46.889Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "One of the two proven nursery winners converts recent race form on lower carried weight. Capricious Star supplies the track-form route. The financial outcome, winning challenger and mechanism will be assessed individually."
+      },
+      "identified_challengers": [
+        "National Pride",
+        "High Calibre",
+        "Capricious Star"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "National Pride",
+          "evidence_and_limitations": "Won 7f Chelmsford Polytrack nursery by 1.25 lengths from 73, now 78 and receives 2 lb; extends to 1m142y on Tapeta."
+        },
+        {
+          "rank": 2,
+          "horse": "High Calibre",
+          "evidence_and_limitations": "Won 9f Newmarket turf nursery by 3.5 lengths off 71 in a ten-runner field, now 77 and receives 3 lb; surface transfer and a 6 lb rise matter."
+        },
+        {
+          "rank": 3,
+          "horse": "Capricious Star",
+          "evidence_and_limitations": "Second by 1 length over 1m1½f here yesterday on handicap debut; receives 6 lb; overnight turnaround and stronger class temper it."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "2a30e7135d8de1cb66f1571a89426adeb43a672d",
+        "snapshot_blob_sha": "7277c4b8ef02c6ad3b7fdfdaf284824421cc7133",
+        "snapshot_retrieved_at_utc": "2026-11-24T05:59:39.493881+00:00",
+        "retrieved_at_utc": "2026-11-24T05:59:39.297605+00:00",
+        "retrieved_at": "2026-11-24T05:59:39.297605+00:00",
+        "market_id": "1.265921712",
+        "selection_id": 1453279,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 17.55,
+        "displayed_liquidity_gbp": 17.55,
+        "liquidity_gbp": 17.55,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 17.55,
+      "market_position_note": "Shortest delayed Exchange Lay at 2.92; National Pride was shorter on the Back side and the two were joint shortest with several morning bookmakers.",
+      "bookmaker_screening": {
+        "bookmaker": "Bet365",
+        "fractional": "7/4",
+        "decimal": "2.75",
+        "ew_places": "",
+        "ew_denom": "",
+        "updated": "2026-11-24 06:20:08",
+        "history": []
+      },
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 260.4166666666667,
+        "required_stake_decimal": "260.4166666666666666666666667",
+        "potential_net_profit_gbp": 247.39583333333334,
+        "potential_net_profit_decimal": "247.3958333333333333333333333",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_TUESDAY_MORNING_BASELINE",
+      "price_quality_warning": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_commit": "125aa5bdefd2851e3cbc0d6051f969fa4a829104",
+          "snapshot_blob_sha": "bbf6b06d2c31b1f739080262f22a6c1e0bc50b36",
+          "snapshot_retrieved_at_utc": "2026-11-23T20:55:04.336288+00:00",
+          "retrieved_at_utc": "2026-11-23T20:55:04.334823+00:00",
+          "price": 2.92,
+          "displayed_amount_gbp": 27.66,
+          "market_id": "1.265921712",
+          "selection_id": 1453279,
+          "price_side": "LAY",
+          "currency": "GBP",
+          "stage": "MONDAY_UNAPPROVED_OBSERVATION",
+          "approved": false
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "2a30e7135d8de1cb66f1571a89426adeb43a672d",
+          "snapshot_blob_sha": "7277c4b8ef02c6ad3b7fdfdaf284824421cc7133",
+          "snapshot_retrieved_at_utc": "2026-11-24T05:59:39.493881+00:00",
+          "retrieved_at_utc": "2026-11-24T05:59:39.297605+00:00",
+          "retrieved_at": "2026-11-24T05:59:39.297605+00:00",
+          "market_id": "1.265921712",
+          "selection_id": 1453279,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 17.55,
+          "displayed_liquidity_gbp": 17.55,
+          "liquidity_gbp": 17.55,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved Tuesday 24 November 05:59:39 GMT delayed Betfair Exchange Lay capture. £17.55 displayed. Full-stake matching unverified.",
+          "price": 2.92,
+          "stage": "TUESDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-24T06:26:45+00:00"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-24T06:26:45+00:00",
+          "type": "USER_APPROVAL",
+          "authorization": "Yes",
+          "group": "Pick",
+          "frozen_lay_odds": 2.92
+        }
+      ],
+      "result_history": []
+    }
+  ],
+  "competition_watchlist": []
+}
