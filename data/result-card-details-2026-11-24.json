@@ -23,7 +23,7 @@
       "lay_odds": 2.92,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-24/wolverhampton/racecard/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
       "racecard_verified_at": "2026-11-24T06:21:46.889Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
       "results_link_type": "DATE_RESULTS_FALLBACK",
       "interest_rank": 1,
       "selected_at": "2026-11-24T06:21:46.889Z",
@@ -42,16 +42,16 @@
         "raw_reasoning": "National Pride and High Calibre won their latest nurseries and receive 2 lb and 3 lb respectively. Capricious Star was second here yesterday and receives 6 lb. Happy Love makes his handicap and all-weather debut off 80.\n\nHappy Love was second by 0.75 and 1 length in two turf novices across 7f–1m, giving his opening mark and nursery progression a credible route. He could control a small field and improve again. National Pride and High Calibre have been raised after their wins.\n\nTwo rivals have demonstrated nursery-winning form on lower carried weights, and a third provides recent form at this track. Their cases are strong enough to oppose Happy Love even though his two close novice seconds give him a plausible winning chance.\n\nWon 7f Chelmsford Polytrack nursery by 1.25 lengths from 73, now 78 and receives 2 lb; extends to 1m142y on Tapeta. Won 9f Newmarket turf nursery by 3.5 lengths off 71 in a ten-runner field, now 77 and receives 3 lb; surface transfer and a 6 lb rise matter. Second by 1 length over 1m1½f here yesterday on handicap debut; receives 6 lb; overnight turnaround and stronger class temper it.",
         "earlier_morning_verdict": "Pass"
       },
-      "field_size": 4,
+      "field_size": 3,
       "going": "Standard",
       "surface": "Tapeta",
-      "race_name": "AWC Finals Day At Newcastle 26th March Nursery Handicap Stakes (GBBPlus Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "race_name": "AWC Finals Day At Newcastle 26th March Nursery (GBBPlusRace)",
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 247.39583333333334,
+      "booked_profit_decimal": "247.3958333333333333333333334",
+      "winner": "National Pride",
+      "position": "2",
       "selection_reason": {
         "summary": "National Pride and High Calibre won their latest nurseries and receive 2 lb and 3 lb respectively. Capricious Star was second here yesterday and receives 6 lb. Happy Love makes his handicap and all-weather debut off 80.",
         "counterargument": "Happy Love was second by 0.75 and 1 length in two turf novices across 7f–1m, giving his opening mark and nursery progression a credible route. He could control a small field and improve again. National Pride and High Calibre have been raised after their wins.",
@@ -161,7 +161,7 @@
         "potential_net_profit_decimal": "247.3958333333333333333333333",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 247.39583333333334,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -227,7 +227,51 @@
         }
       ],
       "result_history": [],
-      "date": "2026-11-24"
+      "date": "2026-11-24",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-24",
+      "result_off_time_uk": "18:30",
+      "result_course": "Wolverhampton (AW)",
+      "result_horse": "Happy Love",
+      "result_off_dt": "2026-11-24T18:30:00+00:00",
+      "result_retrieved_at": "2026-11-24T20:36:06.518121Z",
+      "result_race_id": "rac_32305419081",
+      "result_horse_id": "hrs_66399494",
+      "result_website_race_id": "949997",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+      "result_non_runners": [
+        "Capricious Star"
+      ],
+      "result_website_horse_id": "1230115",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": "0.3",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "National Pride",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Happy Love",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "High Calibre",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.05"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-24/wolverhampton/949997/awc-finals-day-at-newcastle-26th-march-nursery-gbbplusrace",
+      "margin_retrieved_at": "2026-11-24T20:36:06.518121Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     }
   ]
 }
