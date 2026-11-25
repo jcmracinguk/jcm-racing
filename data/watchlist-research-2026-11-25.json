@@ -366,7 +366,18 @@
       "margin_retrieved_at": "2026-11-25T15:38:35.767940Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "NR"
+      "placing": "NR",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "VOID_NON_RUNNER",
+          "analysis": "An explicit non-runner, so this is a void and contributes no test of chase-rise v1. Original rank 4 Gaelic Rover won, rank 2 Caballo de Guerra was second, rank 1 Smart Decision fifth and rank 3 Ninna Collina fell. The withdrawal was verified in the full result, with no separately verified pre-off observation.",
+          "winner": "Gaelic Rover",
+          "named_winner_original_rank": 4,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-25T15:38:35.767940Z"
+        }
+      ]
     }
   ],
   "current_counts": {

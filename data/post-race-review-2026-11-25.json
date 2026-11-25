@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-25",
+  "observed_at": "2026-11-25T19:57:02.805529Z",
+  "timezone": "Europe/London",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "paper_only": true,
+  "approved_price_baseline_unchanged": true,
+  "result_source": "SPORTING_LIFE_WEIGHEDIN",
+  "stats": {
+    "picks": {
+      "unique_races": 2,
+      "successes": 2,
+      "failures": 0,
+      "nr": 0,
+      "pending": 0,
+      "booked_profit_decimal": "254.4642857142857142857142858",
+      "booked_profit_gbp": 254.46428571428572,
+      "app_penny_total_gbp": 254.46,
+      "liability_per_race_gbp": 500,
+      "commission_rate": 0.05
+    },
+    "watchlist": {
+      "unique_races": 3,
+      "successes": 1,
+      "failures": 0,
+      "nr": 2,
+      "pending": 0,
+      "booked_profit_decimal": "237.50",
+      "booked_profit_gbp": 237.5,
+      "app_penny_total_gbp": 237.5,
+      "liability_per_race_gbp": 500,
+      "commission_rate": 0.05
+    }
+  },
+  "supplementary_combined_paper_gbp": 491.96,
+  "week_to_date_app_penny_gbp": {
+    "picks": 1151.1,
+    "watchlist": -127.43
+  },
+  "entries": [
+    {
+      "horse": "In The Age",
+      "group": "Picks",
+      "race_id": "rac_32305539175",
+      "horse_id": "hrs_39959682",
+      "lay_odds": 5,
+      "result_status": "WIN",
+      "position": "2",
+      "selected_beaten_lengths": "1",
+      "booked_profit_gbp": 118.75,
+      "booked_profit_decimal": "118.75",
+      "original_challenger_ranks": [
+        "Slaney Opera",
+        "Dearkeithandkaty",
+        "Rockinastorm",
+        "Jeteye"
+      ],
+      "promotion": false,
+      "observed_at": "2026-11-25T19:57:02.805529Z",
+      "classification": "NAMED_WINNER_RANK_4_AND_CLOSE_LAY_SUCCESS",
+      "analysis": "Jeteye, original rank 4, rallied on the run-in after In The Age took over two out and jumped the last awkwardly. In The Age was beaten 1 length. Slaney Opera (rank 1) was third and Dearkeithandkaty (rank 2) fifth. The favourite handled 3m well enough to nearly win, while 3m chase form and recent hurdle fitness underestimated Jeteye. The finish does not isolate the last-fence error as the cause.",
+      "winner": "Jeteye",
+      "named_winner_original_rank": 4,
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race",
+      "source_retrieved_at": "2026-11-25T15:38:35.767940Z"
+    },
+    {
+      "horse": "Classical Allusion",
+      "group": "Picks",
+      "race_id": "rac_32305513994",
+      "horse_id": "hrs_45474807",
+      "lay_odds": 4.5,
+      "result_status": "WIN",
+      "position": "8",
+      "selected_beaten_lengths": "3.85",
+      "booked_profit_gbp": 135.71428571428572,
+      "booked_profit_decimal": "135.7142857142857142857142858",
+      "original_challenger_ranks": [
+        "Tryfan",
+        "War Hawk",
+        "Solarize",
+        "Cape Fear"
+      ],
+      "promotion": false,
+      "observed_at": "2026-11-25T19:57:02.805529Z",
+      "classification": "NAMED_WINNER_RANK_2_AND_MAIN_RIVALS_FIRST_TWO",
+      "analysis": "War Hawk (rank 2) beat Tryfan (rank 1) by 1¼ lengths. Cape Fear (rank 4) was fifth and Solarize (rank 3) seventh. Classical Allusion was eighth of 14, 3.85 lengths behind on Sporting Life cumulative margins. The recent course-and-distance form was the strongest part of the lay case. Tryfan’s improved weight terms did not reverse his previous defeat by War Hawk. Running comments were unavailable, so the proposed pace pressure and the effect of the 7 lb rise remain unverified.",
+      "winner": "War Hawk",
+      "named_winner_original_rank": 2,
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/kempton/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race",
+      "source_retrieved_at": "2026-11-25T19:52:35.321000Z"
+    },
+    {
+      "horse": "Albie Littlewood",
+      "group": "Watchlist",
+      "race_id": "rac_32305543049",
+      "horse_id": "hrs_37520980",
+      "lay_odds": 2.86,
+      "result_status": "NR",
+      "position": "NR",
+      "selected_beaten_lengths": null,
+      "booked_profit_gbp": 0.0,
+      "booked_profit_decimal": "0",
+      "original_challenger_ranks": [
+        "Smart Decision",
+        "Caballo de Guerra",
+        "Ninna Collina",
+        "Gaelic Rover"
+      ],
+      "promotion": false,
+      "observed_at": "2026-11-25T19:57:02.805529Z",
+      "classification": "VOID_NON_RUNNER",
+      "analysis": "An explicit non-runner, so this is a void and contributes no test of chase-rise v1. Original rank 4 Gaelic Rover won, rank 2 Caballo de Guerra was second, rank 1 Smart Decision fifth and rank 3 Ninna Collina fell. The withdrawal was verified in the full result, with no separately verified pre-off observation.",
+      "winner": "Gaelic Rover",
+      "named_winner_original_rank": 4,
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "source_retrieved_at": "2026-11-25T15:38:35.767940Z"
+    },
+    {
+      "horse": "Angelcatcher",
+      "group": "Watchlist",
+      "race_id": "rac_32305521742",
+      "horse_id": "hrs_17395449904",
+      "lay_odds": 2.96,
+      "result_status": "NR",
+      "position": "NR",
+      "selected_beaten_lengths": null,
+      "booked_profit_gbp": 0.0,
+      "booked_profit_decimal": "0",
+      "original_challenger_ranks": [
+        "Blowing Up A Storm",
+        "Beautiful Force",
+        "Persian Coast",
+        "Sweet Pea"
+      ],
+      "promotion": false,
+      "observed_at": "2026-11-25T19:57:02.805529Z",
+      "classification": "VOID_NON_RUNNER",
+      "analysis": "The pre-off withdrawal observed at 08:36:45 GMT was corroborated by the full result. Original rank 4 Sweet Pea won. The two-day turnaround and drop in trip were never tested.",
+      "winner": "Sweet Pea",
+      "named_winner_original_rank": 4,
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950224/all-weather-championship-is-back-ebf-fillies-novice-stakes-gbb-race",
+      "source_retrieved_at": "2026-11-25T15:39:58.926632Z"
+    },
+    {
+      "horse": "Lighting Thunder",
+      "group": "Watchlist",
+      "race_id": "rac_32305525616",
+      "horse_id": "hrs_56811419",
+      "lay_odds": 3,
+      "result_status": "WIN",
+      "position": "11",
+      "selected_beaten_lengths": "11.65",
+      "booked_profit_gbp": 237.5,
+      "booked_profit_decimal": "237.50",
+      "original_challenger_ranks": [
+        "Nepal",
+        "God of War",
+        "Canvas",
+        "Saytarr"
+      ],
+      "promotion": false,
+      "observed_at": "2026-11-25T19:57:02.805529Z",
+      "classification": "LAY_SUCCESS_WINNER_OUTSIDE_RANKED_CHALLENGERS",
+      "analysis": "Lost Signal won outside the original four. Canvas (rank 3) was second and God of War (rank 2) third. Nepal (rank 1) was ninth. Lighting Thunder was 11th of 12, 11.65 lengths behind on Sporting Life cumulative margins. Direct opposition form held up, but the winner was the missed handicap improver: the pre-race card identified his promising 1m handicap debut at Haydock and plausible Tapeta transfer after a break. The revised assessment after Rhoscolyn’s withdrawal remains part of the original record.",
+      "winner": "Lost Signal",
+      "named_winner_original_rank": null,
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950226/awc-season-14-has-begun-handicap",
+      "source_retrieved_at": "2026-11-25T17:15:32.757444Z"
+    }
+  ],
+  "unpublished_passes": [
+    {
+      "horse": "Moments Away",
+      "off_time_uk": "12:31",
+      "original_verdict": "PASS",
+      "original_pre_race_assessment": "North Gale has a live hurdle route up in trip, Teleleo must transfer bumper ability after regressing on second start. Moments Away's return to further gives him a credible route to recover his more relevant earlier hurdles form.",
+      "original_challenger_ranks": [
+        "North Gale",
+        "Teleleo"
+      ],
+      "position": "NR",
+      "winner": "North Gale",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/hereford/950202/octaga-security-systems-novices-hurdle-gbb-race",
+      "booked_profit_gbp": 0,
+      "analysis": "North Gale won. Moments Away was a non-runner, so its lay case was untested."
+    },
+    {
+      "horse": "Saint Argente",
+      "off_time_uk": "13:01",
+      "original_verdict": "PASS",
+      "original_pre_race_assessment": "Legend d’Airy has track form in a bumper and an educational hurdles start; Sharu has hurdle placings with temperament reservation; Criminal is a debut transfer. Saint Argente won twice in bumpers including under a penalty at Ascot. Two withdrawals already included. Novices’ hurdle, outside fixed maiden-hurdle v1.",
+      "original_challenger_ranks": [
+        "Legend d'Airy",
+        "Sharu",
+        "Criminal"
+      ],
+      "position": 2,
+      "winner": "Legend D'airy",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/hereford/950203/herefordshire-community-foundation-novices-hurdle-gbb-race",
+      "booked_profit_gbp": 0,
+      "analysis": "Legend D’Airy, our first-ranked challenger, won by 3¾ lengths. The case against the hurdle debutant was stronger than our Pass recognised."
+    },
+    {
+      "horse": "Young Churchill",
+      "off_time_uk": "14:31",
+      "original_verdict": "PASS",
+      "original_pre_race_assessment": "Young Churchill runs back five days after a 1m4f win under a 7 lb penalty with the same 7 lb claim as last time. He has already run at 2m on the Flat. Red Glory's latest Flat second was by 7 lengths at shorter; Duke Otto has a same-race fourth and a hurdle win. The case calls for more than the penalty.",
+      "original_challenger_ranks": [
+        "Red Glory",
+        "Duke Otto",
+        "Grey Fable"
+      ],
+      "position": 4,
+      "winner": "Chant D'or",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/dundalk/950188/dundalk-stadium-gift-vouchers-available-online-handicap-0-60",
+      "booked_profit_gbp": 0,
+      "analysis": "Fourth behind Chant D’Or. Red Glory, our first-ranked challenger, was second. The winner fell outside the ranked three."
+    },
+    {
+      "horse": "El Cordobes",
+      "off_time_uk": "19:00",
+      "original_verdict": "PASS",
+      "original_pre_race_assessment": "Amiloc has Group 1 staying form but questions at this trip/latest run, Royal Playwright brings recent form, Constitution Hill drops in class on the Flat and Lion’s Pride has a prior win in the race. El Cordobes has Grade 1 form and encountered trouble in the Breeders’ Cup Turf, making the Listed drop significant.",
+      "original_challenger_ranks": [
+        "Amiloc",
+        "Royal Playwright",
+        "Constitution Hill",
+        "Lion's Pride"
+      ],
+      "position": 2,
+      "winner": "Amiloc",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/kempton/950219/unibet-floodlit-stakes-listed",
+      "booked_profit_gbp": 0,
+      "analysis": "Second by a neck to first-ranked Amiloc. This was a narrow hypothetical lay success and the class-dropper nearly won."
+    }
+  ],
+  "theories": [
+    {
+      "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+      "version": 1,
+      "wednesday": {
+        "successes": 0,
+        "failures": 0,
+        "nr": 1,
+        "booked_profit_gbp": 0
+      },
+      "overlay_21_to_25_nov": {
+        "successes": 5,
+        "failures": 2,
+        "booked_profit_gbp": -194.59
+      },
+      "promotion": "NOT_PROMOTED"
+    }
+  ],
+  "follow_up": [
+    "Compare recent same-course-and-distance form before assuming a weight swing will reverse the result.",
+    "When considering a lightly raced favourite’s upside, compare similarly unexposed challengers on the same terms. Record the strongest alternative route even if a break or surface switch makes it uncertain.",
+    "Raise the weight given to recent fitness when a proven jumper switches back from hurdles, without treating the hurdle win as chase form. Record near misses on both sides.",
+    "Keep original ranks, material Passes and void examples. Separate lay success, named winner, and evidence for the mechanism."
+  ]
+}

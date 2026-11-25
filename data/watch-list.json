@@ -9087,7 +9087,18 @@
       "margin_retrieved_at": "2026-11-25T15:38:35.767940Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "NR"
+      "placing": "NR",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "VOID_NON_RUNNER",
+          "analysis": "An explicit non-runner, so this is a void and contributes no test of chase-rise v1. Original rank 4 Gaelic Rover won, rank 2 Caballo de Guerra was second, rank 1 Smart Decision fifth and rank 3 Ninna Collina fell. The withdrawal was verified in the full result, with no separately verified pre-off observation.",
+          "winner": "Gaelic Rover",
+          "named_winner_original_rank": 4,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-25T15:38:35.767940Z"
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -9432,7 +9443,18 @@
       "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950224/all-weather-championship-is-back-ebf-fillies-novice-stakes-gbb-race",
       "margin_retrieved_at": "2026-11-25T15:39:58.926632Z",
       "margin_stage": "WEIGHEDIN",
-      "margin_verification_status": "WEBSITE_CONFIRMED"
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "VOID_NON_RUNNER",
+          "analysis": "The pre-off withdrawal observed at 08:36:45 GMT was corroborated by the full result. Original rank 4 Sweet Pea won. The two-day turnaround and drop in trip were never tested.",
+          "winner": "Sweet Pea",
+          "named_winner_original_rank": 4,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950224/all-weather-championship-is-back-ebf-fillies-novice-stakes-gbb-race",
+          "source_retrieved_at": "2026-11-25T15:39:58.926632Z"
+        }
+      ]
     },
     {
       "tier": "watchlist",
@@ -9455,8 +9477,8 @@
       "lay_odds": 3,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/newcastle/racecard/950226/awc-season-14-has-begun-handicap",
       "racecard_verified_at": "2026-11-25T06:41:34+0000",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950226/awc-season-14-has-begun-handicap",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 3,
       "selected_at": "2026-11-25T06:41:34+0000",
       "added_at": "2026-11-25T08:35:17Z",
@@ -9678,7 +9700,15 @@
           "assessment": "The three principal challengers remain. Watchlist verdict retained."
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-25T17:15:32.757444Z",
+          "previous_status": "PENDING",
+          "status": "WIN",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950226/awc-season-14-has-begun-handicap"
+        }
+      ],
       "reason": "Nepal has the strongest recent trip/surface fit with a C&D win, up 5 lb. God of War beat Lighting Thunder by 2 lengths at level actual weights at Newmarket and is level today, but is also on Tapeta debut. Canvas brings two Wolverhampton wins over further, up 6 lb, and Saytarr reliable historical C&D form with a break. Lighting Thunder could improve second run after nearly six months off.",
       "price_record": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £48.63 displayed. Full-stake matching unverified.",
       "historical": false,
@@ -9781,7 +9811,18 @@
       "margin_retrieved_at": "2026-11-25T17:15:32.757444Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "11th"
+      "placing": "11th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "LAY_SUCCESS_WINNER_OUTSIDE_RANKED_CHALLENGERS",
+          "analysis": "Lost Signal won outside the original four. Canvas (rank 3) was second and God of War (rank 2) third. Nepal (rank 1) was ninth. Lighting Thunder was 11th of 12, 11.65 lengths behind on Sporting Life cumulative margins. Direct opposition form held up, but the winner was the missed handicap improver: the pre-race card identified his promising 1m handicap debut at Haydock and plausible Tapeta transfer after a break. The revised assessment after Rhoscolyn’s withdrawal remains part of the original record.",
+          "winner": "Lost Signal",
+          "named_winner_original_rank": null,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/newcastle/950226/awc-season-14-has-begun-handicap",
+          "source_retrieved_at": "2026-11-25T17:15:32.757444Z"
+        }
+      ]
     }
   ]
 }

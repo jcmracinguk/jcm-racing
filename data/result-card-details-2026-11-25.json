@@ -335,7 +335,18 @@
       "margin_retrieved_at": "2026-11-25T15:38:35.767940Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "2nd"
+      "placing": "2nd",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "NAMED_WINNER_RANK_4_AND_CLOSE_LAY_SUCCESS",
+          "analysis": "Jeteye, original rank 4, rallied on the run-in after In The Age took over two out and jumped the last awkwardly. In The Age was beaten 1 length. Slaney Opera (rank 1) was third and Dearkeithandkaty (rank 2) fifth. The favourite handled 3m well enough to nearly win, while 3m chase form and recent hurdle fitness underestimated Jeteye. The finish does not isolate the last-fence error as the cause.",
+          "winner": "Jeteye",
+          "named_winner_original_rank": 4,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race",
+          "source_retrieved_at": "2026-11-25T15:38:35.767940Z"
+        }
+      ]
     },
     {
       "tier": "selection",
@@ -359,7 +370,7 @@
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/kempton/racecard/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race",
       "racecard_verified_at": "2026-11-25T06:41:34+0000",
       "results_url": "https://www.sportinglife.com/racing/results/2026-11-25/kempton/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 2,
       "selected_at": "2026-11-25T06:41:34+0000",
       "added_at": "2026-11-25T08:35:17Z",
@@ -574,7 +585,15 @@
           "frozen_lay_odds": 4.5
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-25T19:52:35.321000Z",
+          "previous_status": "PENDING",
+          "status": "WIN",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-25/kempton/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race"
+        }
+      ],
       "date": "2026-11-25",
       "result_source": "SPORTING_LIFE",
       "result_date": "2026-11-25",
@@ -683,7 +702,18 @@
       "margin_retrieved_at": "2026-11-25T19:52:35.321000Z",
       "margin_stage": "WEIGHEDIN",
       "margin_verification_status": "WEBSITE_CONFIRMED",
-      "placing": "8th"
+      "placing": "8th",
+      "post_race_observations": [
+        {
+          "observed_at": "2026-11-25T19:57:02.805529Z",
+          "classification": "NAMED_WINNER_RANK_2_AND_MAIN_RIVALS_FIRST_TWO",
+          "analysis": "War Hawk (rank 2) beat Tryfan (rank 1) by 1¼ lengths. Cape Fear (rank 4) was fifth and Solarize (rank 3) seventh. Classical Allusion was eighth of 14, 3.85 lengths behind on Sporting Life cumulative margins. The recent course-and-distance form was the strongest part of the lay case. Tryfan’s improved weight terms did not reverse his previous defeat by War Hawk. Running comments were unavailable, so the proposed pace pressure and the effect of the 7 lb rise remain unverified.",
+          "winner": "War Hawk",
+          "named_winner_original_rank": 2,
+          "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/kempton/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race",
+          "source_retrieved_at": "2026-11-25T19:52:35.321000Z"
+        }
+      ]
     }
   ]
 }
