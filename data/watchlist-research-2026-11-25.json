@@ -72,8 +72,8 @@
       "lay_odds": 2.86,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-25T06:41:34+0000",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-25T06:41:34+0000",
       "added_at": "2026-11-25T08:35:17Z",
@@ -88,12 +88,12 @@
       "going": "GOOD, Good to soft in places (GoingStick: 5.0)",
       "surface": "Turf",
       "race_name": "Watch Racing TV In HD Novices' Handicap Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "NR",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 0.0,
       "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "winner": "Gaelic Rover",
+      "position": "NR",
       "selection_reason": {
         "summary": "Smart Decision was half a length second over C&D on his chase debut and receives 2 lb. Caballo has close handicap hurdle form but still needs to transfer; Ninna is three-for-three over hurdles and returns from 332 days. Albie comes off a strong-finishing Worcester chase debut win and could have more than 8 lb in hand. Qualifies chase-rise v1 only as prospective observation on approval.",
         "counterargument": "Already improving over hurdles, he finished strongly to win on chase debut and may have enough improvement to absorb an 8 lb rise.",
@@ -205,7 +205,7 @@
         "potential_net_profit_decimal": "255.3763440860215053763440860",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 0.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -288,7 +288,15 @@
           "frozen_lay_odds": 2.86
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-25T15:38:35.767940Z",
+          "previous_status": "PENDING",
+          "status": "NR",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race"
+        }
+      ],
       "reason": "Smart Decision was half a length second over C&D on his chase debut and receives 2 lb. Caballo has close handicap hurdle form but still needs to transfer; Ninna is three-for-three over hurdles and returns from 332 days. Albie comes off a strong-finishing Worcester chase debut win and could have more than 8 lb in hand. Qualifies chase-rise v1 only as prospective observation on approval.",
       "price_record": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £10.64 displayed. Full-stake matching unverified.",
       "historical": false,
@@ -301,18 +309,95 @@
           "prospective_batch_record": "data/watchlist-research-2026-11-25.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-25",
+      "result_off_time_uk": "14:46",
+      "result_course": "Wetherby",
+      "result_horse": "Albie Littlewood",
+      "result_off_dt": "2026-11-25T14:46:00+00:00",
+      "result_retrieved_at": "2026-11-25T15:38:35.767940Z",
+      "result_race_id": "rac_32305543049",
+      "result_horse_id": "hrs_37520980",
+      "result_website_race_id": "950213",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "Albie Littlewood",
+        "Halftheworldaway"
+      ],
+      "result_website_horse_id": "1121830",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "6 ½",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Gaelic Rover",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Caballo De Guerra",
+          "margin_from_previous": "6 ½",
+          "cumulative_beaten_lengths": "6.5"
+        },
+        {
+          "position": "3",
+          "horse": "Kazar Forez",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "7.25"
+        },
+        {
+          "position": "4",
+          "horse": "Anariza",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "22.25"
+        },
+        {
+          "position": "5",
+          "horse": "Smart Decision",
+          "margin_from_previous": "11",
+          "cumulative_beaten_lengths": "33.25"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-25T15:38:35.767940Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "NR"
     }
   ],
   "current_counts": {
     "entries": 1,
     "successes": 0,
     "failures": 0,
-    "nr": 0,
-    "pending": 1
+    "nr": 1,
+    "pending": 0
   },
   "booked_profit_gbp": 0,
-  "post_race_evaluations": [],
+  "post_race_evaluations": [
+    {
+      "observed_at": "2026-11-25T15:38:35.767940Z",
+      "classification": "VOID_NON_RUNNER",
+      "analysis": "Albie Littlewood was an explicit non-runner. The observation is void and supplies no test of the chase-rise hypothesis.",
+      "source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "promotion": "NOT_PROPOSED"
+    }
+  ],
   "promotion_status": "EXPLORATORY_NOT_PROMOTED",
-  "scope_review": "Albie Littlewood qualifies under chase-rise v1. His C&D rival has demonstrated chase form. Other Wednesday entries do not qualify for the fixed overlays."
+  "scope_review": "Albie Littlewood qualifies under chase-rise v1. His C&D rival has demonstrated chase form. Other Wednesday entries do not qualify for the fixed overlays.",
+  "result_review_history": [
+    {
+      "observed_at": "2026-11-25T15:38:35.767940Z",
+      "source": "SPORTING_LIFE_WEIGHEDIN",
+      "updated_race_ids": [
+        "rac_32305543049"
+      ],
+      "frozen_price_baseline_unchanged": true,
+      "all_trial_entries_settled": true
+    }
+  ],
+  "last_result_reviewed_at": "2026-11-25T15:38:35.767940Z"
 }

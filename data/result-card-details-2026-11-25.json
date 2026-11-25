@@ -23,8 +23,8 @@
       "lay_odds": 5,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950210/join-racing-tv-now-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-25T06:41:34+0000",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-25T06:41:34+0000",
       "added_at": "2026-11-25T08:35:17Z",
@@ -39,12 +39,12 @@
       "going": "GOOD, Good to soft in places (GoingStick: 5.0)",
       "surface": "Turf",
       "race_name": "Join Racing TV Now Handicap Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 118.75,
+      "booked_profit_decimal": "118.75",
+      "winner": "Jeteye",
+      "position": "2",
       "selection_reason": {
         "summary": "Slaney Opera won over this C&D 11 days ago and carries 156 lb after a verified 7 lb claim against 168 lb. Dearkeithandkaty won on his Carlisle chase debut and has won over 3m over hurdles, though he is 5 lb higher. Rockinastorm has course-winning form and a revival case after 272 days. Jeteye is thriving but his latest win was over hurdles. In The Age was 14.5 lengths fifth at Worcester at 2m4f; latest was encouraging, is 2 lb lower, first cheekpieces and 3m can unlock progress. Two verified withdrawals were excluded.",
         "counterargument": "First-time cheekpieces, a 2 lb drop and the return to 3m can unlock improvement after an encouraging 2m4f run at Worcester.",
@@ -156,7 +156,7 @@
         "potential_net_profit_decimal": "118.75",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 118.75,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -251,8 +251,91 @@
           "source": "https://www.sportinglife.com/racing/non-runners"
         }
       ],
-      "result_history": [],
-      "date": "2026-11-25"
+      "result_history": [
+        {
+          "observed_at": "2026-11-25T15:38:35.767940Z",
+          "previous_status": "PENDING",
+          "status": "WIN",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race"
+        }
+      ],
+      "date": "2026-11-25",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-25",
+      "result_off_time_uk": "13:16",
+      "result_course": "Wetherby",
+      "result_horse": "In The Age",
+      "result_off_dt": "2026-11-25T13:16:00+00:00",
+      "result_retrieved_at": "2026-11-25T15:38:35.767940Z",
+      "result_race_id": "rac_32305539175",
+      "result_horse_id": "hrs_39959682",
+      "result_website_race_id": "950210",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "The Big Breac",
+        "Dunworley"
+      ],
+      "result_website_horse_id": "1165311",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": "1",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Jeteye",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "In The Age",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "Slaney Opera",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "1.75"
+        },
+        {
+          "position": "4",
+          "horse": "One More Stroke",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "1.95"
+        },
+        {
+          "position": "5",
+          "horse": "Dearkeithandkaty",
+          "margin_from_previous": "8 ½",
+          "cumulative_beaten_lengths": "10.45"
+        },
+        {
+          "position": "6",
+          "horse": "Redeeming Love",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "15.2"
+        },
+        {
+          "position": "7",
+          "horse": "Rockinastorm",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "15.5"
+        },
+        {
+          "position": "8",
+          "horse": "Ski Lodge",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "30.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-25/wetherby/950210/join-racing-tv-now-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-25T15:38:35.767940Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     },
     {
       "tier": "selection",
