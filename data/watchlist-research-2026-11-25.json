@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "paper_only": true,
+  "date": "2026-11-25",
+  "definitions_source": "data/watchlist-research-2026-11-21.json",
+  "original_definitions": [
+    {
+      "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+      "version": 1,
+      "defined_at": "2026-11-20T21:02:20.785967+00:00",
+      "hypothesis": "A recent progressive handicap chase winner can be worth opposing where a rise meets specific comparable chase evidence in the opposition; the rise alone is insufficient.",
+      "mechanism": "Changed effective terms may narrow a demonstrated form margin, while an established rival or claimant supplies a concrete winning route.",
+      "scope": "All 46 Saturday UK/Irish races screened in this review; final active favourite/joint favourite or close market leader in a handicap chase, latest completed race a chase win, higher handicap burden, and a named rival with comparable demonstrated chase evidence. Fix current eligibility now and record exclusions.",
+      "scope_exclusions": "Rock My Way did not win his latest race; Realta Liath did not win latest; Chosen Hero’s latest win was a hurdle, not a chase; Steel Ally’s race is not a handicap. Flat and hurdle handicap winners are outside this version.",
+      "counterargument": "Both qualifiers can improve beyond their raised marks; reappearance form and course suitability can justify favouritism.",
+      "limitations": "Qualitative entry comparisons; no calibrated probabilities; jockey claims are not guaranteed ability gains; two differently selected groups must be shown separately.",
+      "weakening_evidence": "Repeated favourite wins despite favourable rival comparisons; failed direct-form reversals; net losses at the actual frozen prices; profit concentrated in few results or one condition.",
+      "revision_policy": "Retain v1 and prospectively date any changed definition; do not refit past results."
+    },
+    {
+      "theory_id": "JCM_CHASE_DEBUT_TRANSFER_COMPETITION",
+      "version": 1,
+      "defined_at": "2026-11-20T21:02:20.785967+00:00",
+      "hypothesis": "A leading chase debutant may be opposable when multiple rivals have credible useful jumping ability and specific routes to transferring it to fences, while the favourite’s own transfer case remains consequential.",
+      "mechanism": "Alternative useful jumpers may translate proven hurdle/point ability sufficiently to beat the market-leading recruit; chase inexperience itself is not the mechanism.",
+      "scope": "All 46 Saturday UK/Irish races screened; active market-leading novice/beginners chase horse with no prior Rules chase start, useful own hurdle/point case, and at least one rival with useful established jumping evidence plus another specific supported route.",
+      "scope_exclusions": "Koktail Divin and Kiss Will already have chase form; Lulamba is NR and already has chase form; Lastbutnotleased runs over hurdles and Mister Boum in a bumper, outside this theory.",
+      "counterargument": "Mighty Park may be a much better chaser; opposition also has uncertain transfers.",
+      "limitations": "Only one present candidate; no causal proof or calibrated probability; do not interpret every chase debut defeat as validation.",
+      "weakening_evidence": "Favourite’s superior jumping/class decides the race, rivals fail to transfer or none of the named rivals supplies the anticipated mechanism; negative price-based P/L.",
+      "revision_policy": "Version changes prospectively; keep old outcomes and definitions."
+    },
+    {
+      "theory_id": "JCM_HURDLE_FORM_V_BUMPER_POTENTIAL",
+      "version": 1,
+      "defined_at": "2026-11-21T08:34:00.836245+00:00",
+      "hypothesis": "In maiden hurdles, demonstrated useful hurdle competition may be sufficient to oppose a market-leading bumper winner on hurdling debut at an independently accepted Lay quote.",
+      "mechanism": "Prior hurdle performance may translate to a more reliable winning route than the favourite’s still-unproven hurdle transfer, while the favourite can improve substantially.",
+      "scope": "All 46 Saturday UK/Irish races screened: maiden hurdle, active favourite or joint favourite a bumper winner with no previous hurdle start, and at least one rival with demonstrated relevant hurdle placing plus another supported hurdle route.",
+      "exclusions": "Lastbutnotleased is a point recruit, not a recorded bumper winner; The Walk is already a hurdle winner; novice hurdle winners, chases, Flat novices and bumpers are outside v1.",
+      "counterargument": "A festival bumper winner can have materially more potential than exposed hurdle opponents; the new trip can suit him.",
+      "limitations": "One proposed case; race type and qualitative comparison restrict generalisation; no calibrated probability or profitable-edge claim.",
+      "weakening_evidence": "Favourite’s jumping/ability comfortably surpasses named established rivals; beaten favourite owes defeat to an unanticipated newcomer rather than the proposed mechanism; adverse actual-price P/L or profits concentrated in few circumstances.",
+      "revision_policy": "Any revision receives a new version before future races; earlier cases remain exploratory unless contemporaneously frozen under this version."
+    }
+  ],
+  "group_accounting": "Watchlist separate from Picks and Picks Bet Builder. Original membership frozen.",
+  "recorded_at": "2026-11-25T06:41:34+0000",
+  "approval_recorded_at": "2026-11-25T08:35:17Z",
+  "approval_text": "Approve",
+  "screened_races": 40,
+  "observations": [
+    {
+      "tier": "watchlist",
+      "original_status": "Watchlist",
+      "display_status": "Watchlist",
+      "original_assessment": "Secondary candidate",
+      "selection_status": "WATCHLIST",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "REVIEW_COMPLETED",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Albie Littlewood",
+      "course": "Wetherby",
+      "off_time_uk": "14:46",
+      "race_id": "rac_32305543049",
+      "horse_id": "hrs_37520980",
+      "race_date": "2026-11-25",
+      "scheduled_off_dt": "2026-11-25T14:46:00+00:00",
+      "lay_odds": 2.86,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race",
+      "racecard_verified_at": "2026-11-25T06:41:34+0000",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-25T06:41:34+0000",
+      "added_at": "2026-11-25T08:35:17Z",
+      "user_approved_at": "2026-11-25T08:35:17Z",
+      "user_approval_text": "Approve",
+      "user_approval_time_note": "Recorded from the first system time check following user approval.",
+      "price_approved_at": "2026-11-25T08:35:17Z",
+      "price_approval_text": "Approve",
+      "original_pre_race_review_at": "2026-11-25T06:41:34+0000",
+      "original_pre_race_assessment": "Smart Decision was half a length second over C&D on his chase debut and receives 2 lb. Caballo has close handicap hurdle form but still needs to transfer; Ninna is three-for-three over hurdles and returns from 332 days. Albie comes off a strong-finishing Worcester chase debut win and could have more than 8 lb in hand. Qualifies chase-rise v1 only as prospective observation on approval.",
+      "field_size": 8,
+      "going": "GOOD, Good to soft in places (GoingStick: 5.0)",
+      "surface": "Turf",
+      "race_name": "Watch Racing TV In HD Novices' Handicap Chase (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Smart Decision was half a length second over C&D on his chase debut and receives 2 lb. Caballo has close handicap hurdle form but still needs to transfer; Ninna is three-for-three over hurdles and returns from 332 days. Albie comes off a strong-finishing Worcester chase debut win and could have more than 8 lb in hand. Qualifies chase-rise v1 only as prospective observation on approval.",
+        "counterargument": "Already improving over hurdles, he finished strongly to win on chase debut and may have enough improvement to absorb an 8 lb rise.",
+        "why_still_oppose": "Smart Decision provides a direct, recent course-and-distance chase route. Most of the other attractive rivals are chase debutants.",
+        "rival_limitations": "Half-length second here on chase debut and receives 2 lb. Late jumping errors limited that effort. Close handicap hurdle second at Perth and third at Carlisle. Ability still has to transfer to fences. Three wins from three over hurdles. Returns after 332 days and makes chase debut. Newcastle hurdle winner with a credible jumping transition, but fell in both Irish points and returns from a break.",
+        "challengers": [
+          "Smart Decision",
+          "Caballo de Guerra",
+          "Ninna Collina",
+          "Gaelic Rover"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Smart Decision",
+            "evidence_and_limitations": "Half-length second here on chase debut and receives 2 lb. Late jumping errors limited that effort."
+          },
+          {
+            "rank": 2,
+            "horse": "Caballo de Guerra",
+            "evidence_and_limitations": "Close handicap hurdle second at Perth and third at Carlisle. Ability still has to transfer to fences."
+          },
+          {
+            "rank": 3,
+            "horse": "Ninna Collina",
+            "evidence_and_limitations": "Three wins from three over hurdles. Returns after 332 days and makes chase debut."
+          },
+          {
+            "rank": 4,
+            "horse": "Gaelic Rover",
+            "evidence_and_limitations": "Newcastle hurdle winner with a credible jumping transition, but fell in both Irish points and returns from a break."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950213/watch-racing-tv-in-hd-novices-handicap-chase-gbb-race"
+        ],
+        "checked_at": "2026-11-25T06:41:34+0000",
+        "sporting_life_checked_at": "2026-11-25T06:41:34+0000",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "Smart Decision provides a direct, recent course-and-distance chase route. Most of the other attractive rivals are chase debutants."
+      },
+      "identified_challengers": [
+        "Smart Decision",
+        "Caballo de Guerra",
+        "Ninna Collina",
+        "Gaelic Rover"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Smart Decision",
+          "evidence_and_limitations": "Half-length second here on chase debut and receives 2 lb. Late jumping errors limited that effort."
+        },
+        {
+          "rank": 2,
+          "horse": "Caballo de Guerra",
+          "evidence_and_limitations": "Close handicap hurdle second at Perth and third at Carlisle. Ability still has to transfer to fences."
+        },
+        {
+          "rank": 3,
+          "horse": "Ninna Collina",
+          "evidence_and_limitations": "Three wins from three over hurdles. Returns after 332 days and makes chase debut."
+        },
+        {
+          "rank": 4,
+          "horse": "Gaelic Rover",
+          "evidence_and_limitations": "Newcastle hurdle winner with a credible jumping transition, but fell in both Irish points and returns from a break."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+        "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+        "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+        "retrieved_at_utc": "2026-11-25T06:04:43.589955+00:00",
+        "retrieved_at": "2026-11-25T06:04:43.589955+00:00",
+        "market_id": "1.265971268",
+        "selection_id": 61638830,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 10.64,
+        "displayed_liquidity_gbp": 10.64,
+        "liquidity_gbp": 10.64,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £10.64 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £10.64 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 10.64,
+      "market_position_note": "Shortest verified delayed Exchange Lay quote in the race-day capture.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 268.81720430107526,
+        "required_stake_decimal": "268.8172043010752688172043011",
+        "potential_net_profit_gbp": 255.3763440860215,
+        "potential_net_profit_decimal": "255.3763440860215053763440860",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_WEDNESDAY_MORNING_BASELINE",
+      "price_quality_warning": "Indicative delayed quote. Full-stake matching, exact quote time and value remain unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "6cda8ef5b950c474611125801242813bbf2bdc76",
+          "snapshot_blob_sha": "5c54f4964eb418917ba7d4e96aa11d31896a18c2",
+          "started_at_utc": "2026-11-24T19:51:36.078181+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-24T19:51:36.707843+00:00",
+          "retrieved_at_utc": "2026-11-24T19:51:36.463950+00:00",
+          "retrieved_at": "2026-11-24T19:51:36.463950+00:00",
+          "market_id": "1.265971268",
+          "selection_id": 61638830,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 12.52,
+          "displayed_liquidity_gbp": 12.52,
+          "liquidity_gbp": 12.52,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "price": 2.9,
+          "capture_type": "ADVANCE_UNAPPROVED_OBSERVATION",
+          "race_day_capture": false,
+          "stage": "TUESDAY_ADVANCE_OBSERVATION",
+          "approved": false
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+          "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+          "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+          "retrieved_at_utc": "2026-11-25T06:04:43.589955+00:00",
+          "retrieved_at": "2026-11-25T06:04:43.589955+00:00",
+          "market_id": "1.265971268",
+          "selection_id": 61638830,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 10.64,
+          "displayed_liquidity_gbp": 10.64,
+          "liquidity_gbp": 10.64,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £10.64 displayed. Full-stake matching unverified.",
+          "price": 2.86,
+          "stage": "WEDNESDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-25T08:35:17Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-25T08:35:17Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Approve",
+          "group": "Watchlist",
+          "frozen_lay_odds": 2.86
+        }
+      ],
+      "result_history": [],
+      "reason": "Smart Decision was half a length second over C&D on his chase debut and receives 2 lb. Caballo has close handicap hurdle form but still needs to transfer; Ninna is three-for-three over hurdles and returns from 332 days. Albie comes off a strong-finishing Worcester chase debut win and could have more than 8 lb in hand. Qualifies chase-rise v1 only as prospective observation on approval.",
+      "price_record": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £10.64 displayed. Full-stake matching unverified.",
+      "historical": false,
+      "price_observed_at": "2026-11-25T06:04:43.589955+00:00",
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "prospective_batch_record": "data/watchlist-research-2026-11-25.json",
+          "independent_pick_case": false
+        }
+      ]
+    }
+  ],
+  "current_counts": {
+    "entries": 1,
+    "successes": 0,
+    "failures": 0,
+    "nr": 0,
+    "pending": 1
+  },
+  "booked_profit_gbp": 0,
+  "post_race_evaluations": [],
+  "promotion_status": "EXPLORATORY_NOT_PROMOTED",
+  "scope_review": "Albie Littlewood qualifies under chase-rise v1. His C&D rival has demonstrated chase form. Other Wednesday entries do not qualify for the fixed overlays."
+}

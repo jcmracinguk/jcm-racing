@@ -1,0 +1,535 @@
+{
+  "schema_version": 2,
+  "fictional_only": true,
+  "opening_balance_gbp": 0,
+  "commission_rate": 0.05,
+  "bank_trial": {
+    "start_date": "2026-10-23",
+    "accounting_model": "ZERO_START_UNLIMITED_SIMULATED_OVERDRAFT",
+    "initial_balance_gbp": 0,
+    "percentage_benchmark_gbp": 10000,
+    "automatic_deposits": false,
+    "deposits": [],
+    "withdrawals": [],
+    "results_publish_when": "ALL_DAILY_RACES_FINISHED_AND_RESULTS_VERIFIED",
+    "performance_formula": "cumulative net profit or loss / 10000 * 100",
+    "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
+  },
+  "preserve_device_choices": true,
+  "date": "2026-11-25",
+  "introduced_at": "2026-11-25T08:35:17Z",
+  "rows": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "REVIEW_COMPLETED",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "In The Age",
+      "course": "Wetherby",
+      "off_time_uk": "13:16",
+      "race_id": "rac_32305539175",
+      "horse_id": "hrs_39959682",
+      "race_date": "2026-11-25",
+      "scheduled_off_dt": "2026-11-25T13:16:00+00:00",
+      "lay_odds": 5,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950210/join-racing-tv-now-handicap-chase-gbb-race",
+      "racecard_verified_at": "2026-11-25T06:41:34+0000",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-25T06:41:34+0000",
+      "added_at": "2026-11-25T08:35:17Z",
+      "user_approved_at": "2026-11-25T08:35:17Z",
+      "user_approval_text": "Approve",
+      "user_approval_time_note": "Recorded from the first system time check following user approval.",
+      "price_approved_at": "2026-11-25T08:35:17Z",
+      "price_approval_text": "Approve",
+      "original_pre_race_review_at": "2026-11-25T06:41:34+0000",
+      "original_pre_race_assessment": "Slaney Opera won over this C&D 11 days ago and carries 156 lb after a verified 7 lb claim against 168 lb. Dearkeithandkaty won on his Carlisle chase debut and has won over 3m over hurdles, though he is 5 lb higher. Rockinastorm has course-winning form and a revival case after 272 days. Jeteye is thriving but his latest win was over hurdles. In The Age was 14.5 lengths fifth at Worcester at 2m4f; latest was encouraging, is 2 lb lower, first cheekpieces and 3m can unlock progress. Two verified withdrawals were excluded.",
+      "field_size": 10,
+      "going": "GOOD, Good to soft in places (GoingStick: 5.0)",
+      "surface": "Turf",
+      "race_name": "Join Racing TV Now Handicap Chase (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Slaney Opera won over this C&D 11 days ago and carries 156 lb after a verified 7 lb claim against 168 lb. Dearkeithandkaty won on his Carlisle chase debut and has won over 3m over hurdles, though he is 5 lb higher. Rockinastorm has course-winning form and a revival case after 272 days. Jeteye is thriving but his latest win was over hurdles. In The Age was 14.5 lengths fifth at Worcester at 2m4f; latest was encouraging, is 2 lb lower, first cheekpieces and 3m can unlock progress. Two verified withdrawals were excluded.",
+        "counterargument": "First-time cheekpieces, a 2 lb drop and the return to 3m can unlock improvement after an encouraging 2m4f run at Worcester.",
+        "why_still_oppose": "The top two have actually won over fences recently. The favourite was still 14½ lengths behind the winner at Worcester.",
+        "rival_limitations": "Won over this course and distance 11 days ago. Carries 156 lb after a 7 lb claim, 12 lb less than In The Age. This is a deeper race. Won his chase debut at Carlisle and won over 3m over hurdles. Up 5 lb after a four-runner chase. Previous course-and-distance chase winner. Well handicapped on best form, but returns from 272 days off. Thriving recent form. His latest win was over hurdles, so it carries less weight for this chase.",
+        "challengers": [
+          "Slaney Opera",
+          "Dearkeithandkaty",
+          "Rockinastorm",
+          "Jeteye"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Slaney Opera",
+            "evidence_and_limitations": "Won over this course and distance 11 days ago. Carries 156 lb after a 7 lb claim, 12 lb less than In The Age. This is a deeper race."
+          },
+          {
+            "rank": 2,
+            "horse": "Dearkeithandkaty",
+            "evidence_and_limitations": "Won his chase debut at Carlisle and won over 3m over hurdles. Up 5 lb after a four-runner chase."
+          },
+          {
+            "rank": 3,
+            "horse": "Rockinastorm",
+            "evidence_and_limitations": "Previous course-and-distance chase winner. Well handicapped on best form, but returns from 272 days off."
+          },
+          {
+            "rank": 4,
+            "horse": "Jeteye",
+            "evidence_and_limitations": "Thriving recent form. His latest win was over hurdles, so it carries less weight for this chase."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-25/wetherby/racecard/950210/join-racing-tv-now-handicap-chase-gbb-race"
+        ],
+        "checked_at": "2026-11-25T06:41:34+0000",
+        "sporting_life_checked_at": "2026-11-25T06:41:34+0000",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "The top two have actually won over fences recently. The favourite was still 14½ lengths behind the winner at Worcester."
+      },
+      "identified_challengers": [
+        "Slaney Opera",
+        "Dearkeithandkaty",
+        "Rockinastorm",
+        "Jeteye"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Slaney Opera",
+          "evidence_and_limitations": "Won over this course and distance 11 days ago. Carries 156 lb after a 7 lb claim, 12 lb less than In The Age. This is a deeper race."
+        },
+        {
+          "rank": 2,
+          "horse": "Dearkeithandkaty",
+          "evidence_and_limitations": "Won his chase debut at Carlisle and won over 3m over hurdles. Up 5 lb after a four-runner chase."
+        },
+        {
+          "rank": 3,
+          "horse": "Rockinastorm",
+          "evidence_and_limitations": "Previous course-and-distance chase winner. Well handicapped on best form, but returns from 272 days off."
+        },
+        {
+          "rank": 4,
+          "horse": "Jeteye",
+          "evidence_and_limitations": "Thriving recent form. His latest win was over hurdles, so it carries less weight for this chase."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+        "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+        "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+        "retrieved_at_utc": "2026-11-25T06:04:43.589955+00:00",
+        "retrieved_at": "2026-11-25T06:04:43.589955+00:00",
+        "market_id": "1.265971237",
+        "selection_id": 77850130,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 29.27,
+        "displayed_liquidity_gbp": 29.27,
+        "liquidity_gbp": 29.27,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £29.27 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £29.27 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 29.27,
+      "market_position_note": "Shortest verified delayed Exchange Lay quote in the race-day capture.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 125.0,
+        "required_stake_decimal": "125",
+        "potential_net_profit_gbp": 118.75,
+        "potential_net_profit_decimal": "118.75",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_WEDNESDAY_MORNING_BASELINE",
+      "price_quality_warning": "Indicative delayed quote. Full-stake matching, exact quote time and value remain unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "6cda8ef5b950c474611125801242813bbf2bdc76",
+          "snapshot_blob_sha": "5c54f4964eb418917ba7d4e96aa11d31896a18c2",
+          "started_at_utc": "2026-11-24T19:51:36.078181+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-24T19:51:36.707843+00:00",
+          "retrieved_at_utc": "2026-11-24T19:51:36.463950+00:00",
+          "retrieved_at": "2026-11-24T19:51:36.463950+00:00",
+          "market_id": "1.265971237",
+          "selection_id": 77850130,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 19.97,
+          "displayed_liquidity_gbp": 19.97,
+          "liquidity_gbp": 19.97,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "price": 5.2,
+          "capture_type": "ADVANCE_UNAPPROVED_OBSERVATION",
+          "race_day_capture": false,
+          "stage": "TUESDAY_ADVANCE_OBSERVATION",
+          "approved": false
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+          "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+          "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+          "retrieved_at_utc": "2026-11-25T06:04:43.589955+00:00",
+          "retrieved_at": "2026-11-25T06:04:43.589955+00:00",
+          "market_id": "1.265971237",
+          "selection_id": 77850130,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 29.27,
+          "displayed_liquidity_gbp": 29.27,
+          "liquidity_gbp": 29.27,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £29.27 displayed. Full-stake matching unverified.",
+          "price": 5,
+          "stage": "WEDNESDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-25T08:35:17Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-25T08:35:17Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Approve",
+          "group": "Pick",
+          "frozen_lay_odds": 5
+        },
+        {
+          "observed_at": "2026-11-25T06:41:34+0000",
+          "type": "PRE_RACE_WITHDRAWAL_OBSERVED",
+          "horse": "Dunworley",
+          "source": "https://www.sportinglife.com/racing/non-runners"
+        },
+        {
+          "observed_at": "2026-11-25T06:41:34+0000",
+          "type": "PRE_RACE_WITHDRAWAL_OBSERVED",
+          "horse": "The Big Breac",
+          "source": "https://www.sportinglife.com/racing/non-runners"
+        }
+      ],
+      "result_history": []
+    },
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "REVIEW_COMPLETED",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Classical Allusion",
+      "course": "Kempton (AW)",
+      "off_time_uk": "19:30",
+      "race_id": "rac_32305513994",
+      "horse_id": "hrs_45474807",
+      "race_date": "2026-11-25",
+      "scheduled_off_dt": "2026-11-25T19:30:00+00:00",
+      "lay_odds": 4.5,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-25/kempton/racecard/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race",
+      "racecard_verified_at": "2026-11-25T06:41:34+0000",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-25",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 2,
+      "selected_at": "2026-11-25T06:41:34+0000",
+      "added_at": "2026-11-25T08:35:17Z",
+      "user_approved_at": "2026-11-25T08:35:17Z",
+      "user_approval_text": "Approve",
+      "user_approval_time_note": "Recorded from the first system time check following user approval.",
+      "price_approved_at": "2026-11-25T08:35:17Z",
+      "price_approval_text": "Approve",
+      "original_pre_race_review_at": "2026-11-25T06:41:34+0000",
+      "original_pre_race_assessment": "Tryfan and War Hawk met over C&D at level carried weights: ¾ length between them. Tryfan now gets 9 lb from War Hawk after the 5 lb claim and 7 lb from Classical Allusion. War Hawk remains a proven winner of that race, Solarize brings stronger handicap form from Doncaster although 11f may be sharp. Classical Allusion made all over C&D last time and may improve again with Murphy, but moves into Class 2 off 7 lb higher and may be pressed by Sax Avoidance.",
+      "field_size": 14,
+      "going": "POLYTRACK: STANDARD TO SLOW",
+      "surface": "Polytrack",
+      "race_name": "Unibet London Middle Distance Series (Final) Handicap (GBBPlus Race)",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Tryfan and War Hawk met over C&D at level carried weights: ¾ length between them. Tryfan now gets 9 lb from War Hawk after the 5 lb claim and 7 lb from Classical Allusion. War Hawk remains a proven winner of that race, Solarize brings stronger handicap form from Doncaster although 11f may be sharp. Classical Allusion made all over C&D last time and may improve again with Murphy, but moves into Class 2 off 7 lb higher and may be pressed by Sax Avoidance.",
+        "counterargument": "Won over this course and distance when allowed to lead and can improve again under Oisin Murphy.",
+        "why_still_oppose": "He goes into Class 2 off 7 lb higher and faces recent course-and-distance rivals, with a potential challenge for the lead.",
+        "rival_limitations": "Three quarters of a length behind War Hawk at level weights over this course and distance. Gets 9 lb from him after the 5 lb claim and 7 lb from Classical Allusion. Won the 13-runner course-and-distance race in which Tryfan finished second. Meets Tryfan on less favourable terms today. Fourth of 23 in the November Handicap and progressive on all-weather too. This trip may be on the sharp side. Narrowly beaten over course and distance and carries 8 st 3 lb. Faces a deeper race.",
+        "challengers": [
+          "Tryfan",
+          "War Hawk",
+          "Solarize",
+          "Cape Fear"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Tryfan",
+            "evidence_and_limitations": "Three quarters of a length behind War Hawk at level weights over this course and distance. Gets 9 lb from him after the 5 lb claim and 7 lb from Classical Allusion."
+          },
+          {
+            "rank": 2,
+            "horse": "War Hawk",
+            "evidence_and_limitations": "Won the 13-runner course-and-distance race in which Tryfan finished second. Meets Tryfan on less favourable terms today."
+          },
+          {
+            "rank": 3,
+            "horse": "Solarize",
+            "evidence_and_limitations": "Fourth of 23 in the November Handicap and progressive on all-weather too. This trip may be on the sharp side."
+          },
+          {
+            "rank": 4,
+            "horse": "Cape Fear",
+            "evidence_and_limitations": "Narrowly beaten over course and distance and carries 8 st 3 lb. Faces a deeper race."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-25/kempton/racecard/950220/unibet-london-middle-distance-series-final-handicap-gbbplus-race"
+        ],
+        "checked_at": "2026-11-25T06:41:34+0000",
+        "sporting_life_checked_at": "2026-11-25T06:41:34+0000",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "He goes into Class 2 off 7 lb higher and faces recent course-and-distance rivals, with a potential challenge for the lead."
+      },
+      "identified_challengers": [
+        "Tryfan",
+        "War Hawk",
+        "Solarize",
+        "Cape Fear"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Tryfan",
+          "evidence_and_limitations": "Three quarters of a length behind War Hawk at level weights over this course and distance. Gets 9 lb from him after the 5 lb claim and 7 lb from Classical Allusion."
+        },
+        {
+          "rank": 2,
+          "horse": "War Hawk",
+          "evidence_and_limitations": "Won the 13-runner course-and-distance race in which Tryfan finished second. Meets Tryfan on less favourable terms today."
+        },
+        {
+          "rank": 3,
+          "horse": "Solarize",
+          "evidence_and_limitations": "Fourth of 23 in the November Handicap and progressive on all-weather too. This trip may be on the sharp side."
+        },
+        {
+          "rank": 4,
+          "horse": "Cape Fear",
+          "evidence_and_limitations": "Narrowly beaten over course and distance and carries 8 st 3 lb. Faces a deeper race."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+        "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+        "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+        "retrieved_at_utc": "2026-11-25T06:04:43.792229+00:00",
+        "retrieved_at": "2026-11-25T06:04:43.792229+00:00",
+        "market_id": "1.265969944",
+        "selection_id": 89075159,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 34.57,
+        "displayed_liquidity_gbp": 34.57,
+        "liquidity_gbp": 34.57,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £34.57 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £34.57 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 34.57,
+      "market_position_note": "Shortest verified delayed Exchange Lay quote in the race-day capture.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 142.85714285714286,
+        "required_stake_decimal": "142.8571428571428571428571429",
+        "potential_net_profit_gbp": 135.71428571428572,
+        "potential_net_profit_decimal": "135.7142857142857142857142858",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_WEDNESDAY_MORNING_BASELINE",
+      "price_quality_warning": "Indicative delayed quote. Full-stake matching, exact quote time and value remain unverified.",
+      "price_observation_history": [
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "6cda8ef5b950c474611125801242813bbf2bdc76",
+          "snapshot_blob_sha": "5c54f4964eb418917ba7d4e96aa11d31896a18c2",
+          "started_at_utc": "2026-11-24T19:51:36.078181+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-24T19:51:36.707843+00:00",
+          "retrieved_at_utc": "2026-11-24T19:51:36.605406+00:00",
+          "retrieved_at": "2026-11-24T19:51:36.605406+00:00",
+          "market_id": "1.265969944",
+          "selection_id": 89075159,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 16.4,
+          "displayed_liquidity_gbp": 16.4,
+          "liquidity_gbp": 16.4,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "price": 5.9,
+          "capture_type": "ADVANCE_UNAPPROVED_OBSERVATION",
+          "race_day_capture": false,
+          "stage": "TUESDAY_ADVANCE_OBSERVATION",
+          "approved": false
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "f00773ced3462edfd86b7f42e46313080fc2c5ad",
+          "snapshot_blob_sha": "114b1629d9b86f35bf82ad9bf8553808e889f249",
+          "started_at_utc": "2026-11-25T06:04:43.043079+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-25T06:04:44.084824+00:00",
+          "retrieved_at_utc": "2026-11-25T06:04:43.792229+00:00",
+          "retrieved_at": "2026-11-25T06:04:43.792229+00:00",
+          "market_id": "1.265969944",
+          "selection_id": 89075159,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 34.57,
+          "displayed_liquidity_gbp": 34.57,
+          "liquidity_gbp": 34.57,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Betfair Exchange Lay capture. £34.57 displayed. Full-stake matching unverified.",
+          "price": 4.5,
+          "stage": "WEDNESDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-25T08:35:17Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-25T08:35:17Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Approve",
+          "group": "Pick",
+          "frozen_lay_odds": 4.5
+        }
+      ],
+      "result_history": []
+    }
+  ],
+  "simulation_note": "Approved Wednesday 25 November 06:04:44 GMT delayed Exchange Lay prices. £500 liability per race, 5% commission, full matching unverified.",
+  "published_simulations": {
+    "recorded_at": "2026-11-25T08:35:17Z",
+    "authorization": "Approve",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32305539175",
+          "horse_id": "hrs_39959682",
+          "odds": 5,
+          "liability_cents": 50000
+        },
+        {
+          "race_id": "rac_32305513994",
+          "horse_id": "hrs_45474807",
+          "odds": 4.5,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  },
+  "published_simulation_history": []
+}
