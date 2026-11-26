@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "timezone": "Europe/London",
+  "observed_at": "2026-11-26T19:24:26.371220+00:00",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "paper_only": true,
+  "approved_price_baseline_unchanged": true,
+  "result_source": "SPORTING_LIFE_WEIGHEDIN",
+  "stats": {
+    "picks": {
+      "successes": 1,
+      "failures": 0,
+      "voids": 0,
+      "pending": 0,
+      "app_penny_total_gbp": 242.35
+    },
+    "watchlist": {
+      "successes": 2,
+      "failures": 2,
+      "voids": 0,
+      "pending": 0,
+      "app_penny_total_gbp": -544.79
+    },
+    "combined_app_penny_total_gbp": -302.44
+  },
+  "records": [
+    {
+      "horse": "Teorie",
+      "group": "Pick",
+      "race_id": "rac_32305593411",
+      "horse_id": "hrs_31660727",
+      "approved_lay": 2.96,
+      "status": "WIN",
+      "position": "2",
+      "winner": "Cooler Than Me",
+      "app_penny_pnl_gbp": 242.35,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
+      "result_retrieved_at": "2026-11-26T14:54:27.660751Z",
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Betty’s Tiara",
+          "evidence_and_limitations": "Won over this course and distance 16 days ago and carries the same effective weight after the claim. The winning margin was narrow."
+        },
+        {
+          "rank": 2,
+          "horse": "Cooler Than Me",
+          "evidence_and_limitations": "Won here over shorter and placed at 3m1f. Gets 9 lb after the claim; exact course-and-distance transfer is untested."
+        },
+        {
+          "rank": 3,
+          "horse": "Bright Legend",
+          "evidence_and_limitations": "Has placed around this trip, but recent class and distance form is mixed."
+        }
+      ],
+      "classification": "WIN_NAMED_RIVAL_WON",
+      "analysis": "Cooler Than Me, ranked second, won by 3¼ lengths and Betty’s Tiara was fourth. The named opposition case held up. Finishing second does not establish that Teorie failed to stay."
+    },
+    {
+      "horse": "Blue Carpet",
+      "group": "Watchlist",
+      "race_id": "rac_32305599222",
+      "horse_id": "hrs_45759602",
+      "approved_lay": 4.0,
+      "status": "WIN",
+      "position": "F",
+      "winner": "Fortune Timmy",
+      "app_penny_pnl_gbp": 158.33,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950407/follow-attheraces-on-x-novices-limited-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-26T14:54:27.660751Z",
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Laughing John",
+          "evidence_and_limitations": "Three lengths clear when falling at the last on chase debut. Receives 10 lb; jumping remains the concern."
+        },
+        {
+          "rank": 2,
+          "horse": "Fortune Timmy",
+          "evidence_and_limitations": "Grade 2 hurdle form at level weights; must transfer that to fences."
+        },
+        {
+          "rank": 3,
+          "horse": "Kasino des Mottes",
+          "evidence_and_limitations": "Chase experience and a 10 lb receipt, with limited recent form."
+        }
+      ],
+      "classification": "WIN_CASUALTY",
+      "analysis": "Blue Carpet fell. Fortune Timmy, ranked second, beat first-ranked Laughing John. The rivals proved competitive; a fall does not show how Blue Carpet would have finished after a clean round."
+    },
+    {
+      "horse": "Mahollia",
+      "group": "Watchlist",
+      "race_id": "rac_32305554671",
+      "horse_id": "hrs_17396009995",
+      "approved_lay": 2.18,
+      "status": "LOSS",
+      "position": "1",
+      "winner": "Mahollia",
+      "app_penny_pnl_gbp": -500.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/thurles/950185/irish-stallion-farms-ebf-mares-maiden-hurdle",
+      "result_retrieved_at": "2026-11-26T14:54:27.660751Z",
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Divaboriva",
+          "evidence_and_limitations": "Rated 115 and a head second over hurdles at Cork; the shorter trip may blunt her stamina."
+        },
+        {
+          "rank": 2,
+          "horse": "Coole Cafe",
+          "evidence_and_limitations": "Academy hurdle winner and graded bumper placed, returning for a new stable."
+        }
+      ],
+      "classification": "LOSS_NARROW",
+      "analysis": "Mahollia beat second-ranked Coole Cafe by a nose, with first-ranked Divaboriva third. Both threats were real, and Mahollia’s bumper ability transferred on debut."
+    },
+    {
+      "horse": "Calvino",
+      "group": "Watchlist",
+      "race_id": "rac_32305626340",
+      "horse_id": "hrs_46850909",
+      "approved_lay": 2.6,
+      "status": "WIN",
+      "position": "2",
+      "winner": "Tashan",
+      "app_penny_pnl_gbp": 296.88,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/taunton/950395/mike-trickey-and-geoff-white-memorial-handicap-hurdle",
+      "result_retrieved_at": "2026-11-26T14:56:52.895904Z",
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "D’Jo Dela Barriere",
+          "evidence_and_limitations": "Won a 3m1½f Hereford hurdle on good to firm; faded over 2m7f at Lingfield most recently."
+        },
+        {
+          "rank": 2,
+          "horse": "Lord Cauvelliere",
+          "evidence_and_limitations": "Recent 3m1½f Hereford win on good to firm. Only two completed there and he steps up in class."
+        }
+      ],
+      "classification": "WIN_NARROW_WINNER_OUTSIDE_RANKED_CHALLENGERS",
+      "analysis": "Calvino led by three lengths at the last, idled and was caught in the final stride by Tashan, outside the frozen ranked challengers. The named stayers finished third and fourth. The result gives little support to the stamina case. Kandor was an official non-runner; pre-off observation time unverified."
+    },
+    {
+      "horse": "Dowman",
+      "group": "Watchlist",
+      "race_id": "rac_32305634088",
+      "horse_id": "hrs_63323687",
+      "approved_lay": 2.76,
+      "status": "LOSS",
+      "position": "1",
+      "winner": "Dowman",
+      "app_penny_pnl_gbp": -500.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/chelmsford-city/950412/all-weather-championship-is-back-nursery",
+      "result_retrieved_at": "2026-11-26T19:24:26.371220Z",
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Roosike",
+          "evidence_and_limitations": "Second in a Chelmsford 7f nursery. Receives 11 lb; shortening to 6f must suit."
+        },
+        {
+          "rank": 2,
+          "horse": "Harry’s Pop",
+          "evidence_and_limitations": "Close second over 6f at Wolverhampton and third over 6f at Kempton. Receives 11 lb."
+        },
+        {
+          "rank": 3,
+          "horse": "By Jove Grace",
+          "evidence_and_limitations": "Recent 6f turf second and carries 125 lb after the claim; Polytrack transfer is unproven."
+        }
+      ],
+      "classification": "LOSS_NARROW",
+      "analysis": "Dowman gave 11 lb to the principal two named rivals, who finished third and fourth. He won by a neck, beating unranked Solar Mission. The morning quote improved the paper terms; his recent winning profile still transferred to 6f despite the extra weight."
+    }
+  ],
+  "lessons": [
+    "Grade the quality of the selection separately from the paper result. A nose either way or a fall can move the paper ledger sharply.",
+    "For improving favourites, compare how much their latest wins may still underrate them with what the rivals have already demonstrated. A shorter Lay quote changes break-even terms, not the underlying form case.",
+    "Maintain existing theory definitions and keep Picks and Watchlist accounting separate."
+  ]
+}

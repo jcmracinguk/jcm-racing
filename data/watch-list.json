@@ -10718,8 +10718,8 @@
       "lay_odds": 2.76,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-26/chelmsford-city/racecard/950412/all-weather-championship-is-back-nursery",
       "racecard_verified_at": "2026-11-26T10:15:54Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-26",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-26/chelmsford-city/950412/all-weather-championship-is-back-nursery",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 5,
       "selected_at": "2026-11-26T06:22:09Z",
       "added_at": "2026-11-26T10:14:18Z",
@@ -10734,12 +10734,12 @@
       "going": "POLYTRACK: STANDARD",
       "surface": "Polytrack",
       "race_name": "All-Weather Championship Is Back Nursery Handicap",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Dowman",
+      "position": "1",
       "selection_reason": {
         "summary": "The penalties mean he gives 11 lb to Roosike and Harry’s Pop despite being rated 1 lb lower. The shorter Lay quote supports paper Watchlist inclusion. Won two recent 5f AW races by 2½ lengths apiece and was previously a close third at 6f. He can improve again.",
         "counterargument": "Won two recent 5f AW races by 2½ lengths apiece and was previously a close third at 6f. He can improve again.",
@@ -10839,7 +10839,7 @@
         "potential_net_profit_decimal": "269.8863636363636363636363636",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -10900,12 +10900,87 @@
           "frozen_lay_odds": 2.76
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-26T19:24:26.371220Z",
+          "previous_status": "PENDING",
+          "status": "LOSS",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-26/chelmsford-city/950412/all-weather-championship-is-back-nursery"
+        }
+      ],
       "reason": "The penalties mean he gives 11 lb to Roosike and Harry’s Pop despite being rated 1 lb lower. The shorter Lay quote supports paper Watchlist inclusion. Won two recent 5f AW races by 2½ lengths apiece and was previously a close third at 6f. He can improve again.",
       "price_record": "Approved 26 November 06:17:53 GMT delayed Betfair Exchange Lay capture. £32.97 displayed. Full-stake matching unverified.",
       "historical": false,
       "price_observed_at": "2026-11-26T06:17:52.864620+00:00",
-      "research_theory_tags": []
+      "research_theory_tags": [],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-26",
+      "result_off_time_uk": "18:00",
+      "result_course": "Chelmsford (AW)",
+      "result_horse": "Dowman",
+      "result_off_dt": "2026-11-26T18:00:00+00:00",
+      "result_retrieved_at": "2026-11-26T19:24:26.371220Z",
+      "result_race_id": "rac_32305634088",
+      "result_horse_id": "hrs_63323687",
+      "result_website_race_id": "950412",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/chelmsford-city/950412/all-weather-championship-is-back-nursery",
+      "result_non_runners": [],
+      "result_website_horse_id": "1219744",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nk",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Dowman",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Solar Mission",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "0.3"
+        },
+        {
+          "position": "3",
+          "horse": "Roosike",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "1.55"
+        },
+        {
+          "position": "4",
+          "horse": "Harry's Pop",
+          "margin_from_previous": "nk",
+          "cumulative_beaten_lengths": "1.85"
+        },
+        {
+          "position": "5",
+          "horse": "Sioux Moon",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "3.1"
+        },
+        {
+          "position": "6",
+          "horse": "By Jove Grace",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "8.6"
+        },
+        {
+          "position": "7",
+          "horse": "Marhaba Ya Tayib",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "9.85"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/chelmsford-city/950412/all-weather-championship-is-back-nursery",
+      "margin_retrieved_at": "2026-11-26T19:24:26.371220Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st",
+      "result_website_course": "Chelmsford City"
     }
   ]
 }
