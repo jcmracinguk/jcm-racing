@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-26",
+  "mode": "research_only_not_official_picks",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "review_stage": "APPROVED_MORNING_REVIEW",
+  "approval_recorded_at": "2026-11-26T10:14:18Z",
+  "last_price_approval_recorded_at": "2026-11-26T10:14:18Z",
+  "price_capture_note": "Approved Thursday 26 November 06:17:53 GMT delayed Exchange Lay prices. £500 liability per race, 5% commission, full matching unverified.",
+  "high_competition": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "REVIEW_COMPLETED",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Teorie",
+      "course": "Lingfield",
+      "off_time_uk": "12:37",
+      "race_id": "rac_32305593411",
+      "horse_id": "hrs_31660727",
+      "race_date": "2026-11-26",
+      "scheduled_off_dt": "2026-11-26T12:37:00+00:00",
+      "lay_odds": 2.96,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-26/lingfield/racecard/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
+      "racecard_verified_at": "2026-11-26T10:15:54Z",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-26",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-26T06:22:09Z",
+      "added_at": "2026-11-26T10:14:18Z",
+      "user_approved_at": "2026-11-26T10:14:18Z",
+      "user_approval_text": "Approve and add to app",
+      "user_approval_time_note": "Recorded from the first system time check following user approval.",
+      "price_approved_at": "2026-11-26T10:14:18Z",
+      "price_approval_text": "Approve and add to app",
+      "original_pre_race_review_at": "2026-11-26T06:22:09Z",
+      "original_pre_race_assessment": "Two defeats by 15 lengths or more around 2m7f give the recent course-and-distance winner and a second course winner who gets 9 lb concrete routes. The 9½-length Huntingdon win over 2m4½f is a credible route to defying an 8 lb rise.",
+      "field_size": 7,
+      "going": "GOOD",
+      "surface": "Turf",
+      "race_name": "Sky Sports Racing Virgin 512 Conditional Jockeys Handicap Hurdle",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Two defeats by 15 lengths or more around 2m7f give the recent course-and-distance winner and a second course winner who gets 9 lb concrete routes. The 9½-length Huntingdon win over 2m4½f is a credible route to defying an 8 lb rise.",
+        "counterargument": "The 9½-length Huntingdon win over 2m4½f is a credible route to defying an 8 lb rise.",
+        "why_still_oppose": "Two defeats by 15 lengths or more around 2m7f give the recent course-and-distance winner and a second course winner who gets 9 lb concrete routes.",
+        "rival_limitations": "Won over this course and distance 16 days ago and carries the same effective weight after the claim. The winning margin was narrow. Won here over shorter and placed at 3m1f. Gets 9 lb after the claim; exact course-and-distance transfer is untested. Has placed around this trip, but recent class and distance form is mixed.",
+        "challengers": [
+          "Betty’s Tiara",
+          "Cooler Than Me",
+          "Bright Legend"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Betty’s Tiara",
+            "evidence_and_limitations": "Won over this course and distance 16 days ago and carries the same effective weight after the claim. The winning margin was narrow."
+          },
+          {
+            "rank": 2,
+            "horse": "Cooler Than Me",
+            "evidence_and_limitations": "Won here over shorter and placed at 3m1f. Gets 9 lb after the claim; exact course-and-distance transfer is untested."
+          },
+          {
+            "rank": 3,
+            "horse": "Bright Legend",
+            "evidence_and_limitations": "Has placed around this trip, but recent class and distance form is mixed."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-26/lingfield/racecard/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle"
+        ],
+        "checked_at": "2026-11-26T06:22:09Z",
+        "sporting_life_checked_at": "2026-11-26T10:15:54Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "Two defeats by 15 lengths or more around 2m7f give the recent course-and-distance winner and a second course winner who gets 9 lb concrete routes."
+      },
+      "identified_challengers": [
+        "Betty’s Tiara",
+        "Cooler Than Me",
+        "Bright Legend"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Betty’s Tiara",
+          "evidence_and_limitations": "Won over this course and distance 16 days ago and carries the same effective weight after the claim. The winning margin was narrow."
+        },
+        {
+          "rank": 2,
+          "horse": "Cooler Than Me",
+          "evidence_and_limitations": "Won here over shorter and placed at 3m1f. Gets 9 lb after the claim; exact course-and-distance transfer is untested."
+        },
+        {
+          "rank": 3,
+          "horse": "Bright Legend",
+          "evidence_and_limitations": "Has placed around this trip, but recent class and distance form is mixed."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "4ac98c37843de6a3570718a6a12093cbf86989e1",
+        "snapshot_blob_sha": "c58ec9c0fd1a32509b0b618d586b84fdc697f751",
+        "started_at_utc": "2026-11-26T06:17:52.465355+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-26T06:17:53.111149+00:00",
+        "retrieved_at_utc": "2026-11-26T06:17:52.761061+00:00",
+        "retrieved_at": "2026-11-26T06:17:52.761061+00:00",
+        "market_id": "1.266008089",
+        "selection_id": 55581585,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 12.26,
+        "displayed_liquidity_gbp": 12.26,
+        "liquidity_gbp": 12.26,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved 26 November 06:17:53 GMT delayed Betfair Exchange Lay capture. £12.26 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved 26 November 06:17:53 GMT delayed Betfair Exchange Lay capture. £12.26 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 12.26,
+      "market_position_note": "Shortest in the race-day Exchange Lay capture.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 255.10204081632654,
+        "required_stake_decimal": "255.1020408163265306122448980",
+        "potential_net_profit_gbp": 242.3469387755102,
+        "potential_net_profit_decimal": "242.3469387755102040816326531",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_THURSDAY_MORNING_BASELINE",
+      "price_quality_warning": "Indicative delayed quote. Full-stake matching and exact quote time remain unverified.",
+      "price_observation_history": [
+        {
+          "price": 3.2,
+          "stage": "WEDNESDAY_ADVANCE_OBSERVATION",
+          "approved": false,
+          "price_side": "LAY",
+          "snapshot_commit": "52d2c415934f73b063a4903c1b3c1069c98752a2",
+          "snapshot_blob_sha": "373997e13c63cd35fc64ea5818b6b857dd0c98d5",
+          "snapshot_retrieved_at_utc": "2026-11-25T20:28:58.940531+00:00"
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "4ac98c37843de6a3570718a6a12093cbf86989e1",
+          "snapshot_blob_sha": "c58ec9c0fd1a32509b0b618d586b84fdc697f751",
+          "started_at_utc": "2026-11-26T06:17:52.465355+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-26T06:17:53.111149+00:00",
+          "retrieved_at_utc": "2026-11-26T06:17:52.761061+00:00",
+          "retrieved_at": "2026-11-26T06:17:52.761061+00:00",
+          "market_id": "1.266008089",
+          "selection_id": 55581585,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 12.26,
+          "displayed_liquidity_gbp": 12.26,
+          "liquidity_gbp": 12.26,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved 26 November 06:17:53 GMT delayed Betfair Exchange Lay capture. £12.26 displayed. Full-stake matching unverified.",
+          "price": 2.96,
+          "stage": "THURSDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-26T10:14:18Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-26T10:14:18Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Approve and add to app",
+          "group": "Pick",
+          "frozen_lay_odds": 2.96
+        }
+      ],
+      "result_history": []
+    }
+  ],
+  "competition_watchlist": []
+}
