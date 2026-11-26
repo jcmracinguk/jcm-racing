@@ -29,8 +29,8 @@
       "lay_odds": 2.96,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-26/lingfield/racecard/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
       "racecard_verified_at": "2026-11-26T10:15:54Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-26",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-26T06:22:09Z",
       "added_at": "2026-11-26T10:14:18Z",
@@ -45,12 +45,12 @@
       "going": "GOOD",
       "surface": "Turf",
       "race_name": "Sky Sports Racing Virgin 512 Conditional Jockeys Handicap Hurdle",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 242.3469387755102,
+      "booked_profit_decimal": "242.3469387755102040816326531",
+      "winner": "Cooler Than Me",
+      "position": "2",
       "selection_reason": {
         "summary": "Two defeats by 15 lengths or more around 2m7f give the recent course-and-distance winner and a second course winner who gets 9 lb concrete routes. The 9½-length Huntingdon win over 2m4½f is a credible route to defying an 8 lb rise.",
         "counterargument": "The 9½-length Huntingdon win over 2m4½f is a credible route to defying an 8 lb rise.",
@@ -150,7 +150,7 @@
         "potential_net_profit_decimal": "242.3469387755102040816326531",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 242.3469387755102,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -211,7 +211,81 @@
           "frozen_lay_odds": 2.96
         }
       ],
-      "result_history": []
+      "result_history": [
+        {
+          "observed_at": "2026-11-26T14:54:27.660751Z",
+          "previous_status": "PENDING",
+          "status": "WIN",
+          "stage": "WEIGHEDIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle"
+        }
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-26",
+      "result_off_time_uk": "12:37",
+      "result_course": "Lingfield",
+      "result_horse": "Teorie",
+      "result_off_dt": "2026-11-26T12:37:00+00:00",
+      "result_retrieved_at": "2026-11-26T14:54:27.660751Z",
+      "result_race_id": "rac_32305593411",
+      "result_horse_id": "hrs_31660727",
+      "result_website_race_id": "950404",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
+      "result_non_runners": [],
+      "result_website_horse_id": "1073946",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "3 ¼",
+      "selected_beaten_lengths": "3.25",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Cooler Than Me",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Teorie",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "3.25"
+        },
+        {
+          "position": "3",
+          "horse": "West Orchard",
+          "margin_from_previous": "3",
+          "cumulative_beaten_lengths": "6.25"
+        },
+        {
+          "position": "4",
+          "horse": "Betty's Tiara",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "7.5"
+        },
+        {
+          "position": "5",
+          "horse": "Bright Legend",
+          "margin_from_previous": "8 ½",
+          "cumulative_beaten_lengths": "16"
+        },
+        {
+          "position": "6",
+          "horse": "Shengai Enki",
+          "margin_from_previous": "2 ¾",
+          "cumulative_beaten_lengths": "18.75"
+        },
+        {
+          "position": "7",
+          "horse": "Nancefordshore",
+          "margin_from_previous": "43",
+          "cumulative_beaten_lengths": "61.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-26/lingfield/950404/sky-sports-racing-virgin-512-conditional-jockeys-handicap-hurdle",
+      "margin_retrieved_at": "2026-11-26T14:54:27.660751Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd"
     }
   ],
   "competition_watchlist": []
