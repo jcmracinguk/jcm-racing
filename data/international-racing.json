@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "days": [
+    {
+      "date": "2026-11-28",
+      "picks": [],
+      "watchlist": [],
+      "research": [
+        {
+          "horse": "Sentosa",
+          "horse_id": "hrs_57160215",
+          "course": "Lyon-Parilly",
+          "country": "France",
+          "race_id": "rac_32306337219",
+          "scheduled_off_dt": "2026-11-28T12:52:00+00:00",
+          "observed_at": "2026-11-27T22:49:21.166Z",
+          "reason": "Counselor was a neck behind Sentosa at Marseille-Borély and gets 2 kg better terms relative to her here. Sentosa has won twice in a row and is drawn in stall four against Counselor in nine. Confirm the market leader and declarations on race day.",
+          "racecard_url": "https://www.zeturf.fr/fr/course-du-jour/2026-11-28/R2C7-lyon-parilly-prix-des-turfistes",
+          "form_url": "https://www.zeturf.nl/en/course-du-jour/2026-11-07/R3C4-marseille-borely-prix-de-la-major"
+        }
+      ]
+    }
+  ]
+}

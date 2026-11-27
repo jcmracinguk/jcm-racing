@@ -1,0 +1,14 @@
+a { color: var(--gold); }
+.international-intro { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 10px 14px; }
+.international-intro > div { flex: 1 1 210px; }
+.international-intro select { max-width: none; }
+.international-intro h1 { margin: 0; font-size: clamp(30px, 7vw, 42px); }
+.international-intro p, .international-meta, .international-empty, #international-status { color: var(--muted); }
+.international-intro p { margin: 5px 0 0; }
+#international-groups section { margin-top: 26px; }
+#international-groups h2 { margin: 0 0 10px; font-size: 20px; }
+.international-entry { background: var(--panel); border: 1px solid #43536a; border-radius: 13px; padding: 16px; margin-bottom: 10px; }
+.international-entry h3 { margin: 0 0 4px; }
+.international-entry p { margin: 8px 0; line-height: 1.5; }
+.international-meta, .international-empty { margin: 0; }
+.international-links { display: flex; gap: 12px; flex-wrap: wrap; }

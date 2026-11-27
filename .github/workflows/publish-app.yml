@@ -4,6 +4,9 @@ on:
   push:
     paths:
       - index.html
+      - international.html
+      - scripts/international.*
+      - data/international-racing.json
       - jcm-logo.svg
       - football.html
       - football.webmanifest

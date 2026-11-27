@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="theme-color" content="#121626">
+ <title>International · JCM Racing</title>
+ <link rel="stylesheet" href="scripts/jcm-shell.css">
+ <link rel="stylesheet" href="scripts/international.css">
+ <script src="scripts/international.js" defer></script>
+</head>
+<body>
+ <header>
+  <div class="head brand">
+   <div class="identity"><img src="jcm-logo.svg" alt=""><span class="brandname">JCM RACING</span></div>
+   <a href="./#hub">Back to racing hub</a>
+  </div>
+ </header>
+ <main>
+  <div class="international-intro">
+   <div><h1>International</h1><p>Paper trial · All times shown in UK time</p></div>
+   <label for="international-date" hidden>Race date</label>
+   <select id="international-date" hidden></select>
+  </div>
+  <p id="international-status" role="status">Loading international races…</p>
+  <div id="international-groups" hidden>
+   <section aria-labelledby="international-picks-title">
+    <h2 id="international-picks-title">Picks</h2>
+    <div id="international-picks"></div>
+   </section>
+   <section aria-labelledby="international-watchlist-title">
+    <h2 id="international-watchlist-title">Watchlist</h2>
+    <div id="international-watchlist"></div>
+   </section>
+   <section id="international-research-section" aria-labelledby="international-research-title" hidden>
+    <h2 id="international-research-title">Form to recheck</h2>
+    <div id="international-research"></div>
+   </section>
+  </div>
+ </main>
+</body>
+</html>
