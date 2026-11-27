@@ -23,7 +23,7 @@
       "lay_odds": 3.55,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-27T06:21:23.724Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
       "results_link_type": "DATE_RESULTS_FALLBACK",
       "interest_rank": 1,
       "selected_at": "2026-11-27T06:16:00Z",
@@ -35,16 +35,16 @@
       "price_approval_text": "Approve and publish",
       "original_pre_race_review_at": "2026-11-27T06:16:00Z",
       "original_pre_race_assessment": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off. He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
-      "field_size": 8,
+      "field_size": 5,
       "going": "GOOD",
       "surface": "Turf",
-      "race_name": "Coral \"Bet£10 Get£50 Sign Up Offer\" Handicap Steeple Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "race_name": "Coral 'Bet10 Get50 Sign Up Offer' Handicap Chase (GBB Race)",
+      "result_status": "NR",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 0.0,
       "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "winner": "Twinjets",
+      "position": "NR",
       "selection_reason": {
         "summary": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off. He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
         "counterargument": "He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
@@ -132,7 +132,7 @@
         "potential_net_profit_decimal": "186.2745098039215686274509803922",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 0.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -207,7 +207,59 @@
           "independent_pick_case": true
         }
       ],
-      "date": "2026-11-27"
+      "date": "2026-11-27",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "14:25",
+      "result_course": "Newbury",
+      "result_horse": "Kap Ouest",
+      "result_off_dt": "2026-11-27T14:25:00+00:00",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_race_id": "rac_32305734812",
+      "result_horse_id": "hrs_37807133",
+      "result_website_race_id": "950488",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "Gemirande",
+        "Bluey",
+        "Kap Ouest"
+      ],
+      "result_website_horse_id": "1124080",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Twinjets",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Etalon",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "3",
+          "horse": "Issar D'Airy",
+          "margin_from_previous": "24",
+          "cumulative_beaten_lengths": "29"
+        },
+        {
+          "position": "4",
+          "horse": "Le Patron",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "34.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "NR"
     }
   ]
 }
