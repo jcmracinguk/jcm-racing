@@ -3,25 +3,27 @@ const url='http://127.0.0.1:8765/';
 test.use({viewport:{width:390,height:844}});
 test('UK and International switch on mobile without changing UK results',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
- await page.goto(url+'#picks');
+ await page.clock.install({time:new Date('2026-11-28T12:00:00Z')});
+ await page.goto(url+'#results');
  await expect(page.locator('#date option')).not.toHaveCount(0);
  await expect(page.locator('.metrics .metric strong').first()).not.toHaveText('—');
+ await expect(page.locator('#jcm-watch-metrics .metric strong').first()).not.toHaveText('—');
  const racingMetrics = await page.locator('.metrics .metric strong').allTextContents();
  const racingDate = await page.locator('#date').inputValue();
  const slider=page.locator('header .jcm-sport-switch');
  await expect(slider.locator('.jcm-sport-label')).toHaveText(['UK','International']);
  await slider.click();
- await expect(page).toHaveURL(/index\.html\?region=international#picks$/);
- await expect(page.getByRole('heading',{name:'Daily picks',exact:true})).toBeVisible();
+ await expect(page).toHaveURL(/index\.html\?region=international#results$/);
+ await expect(page.getByRole('heading',{name:'Picks and Watchlist Results',exact:true})).toBeVisible();
  await expect(page.locator('#date')).toHaveValue('2026-11-28');
- await expect(page.locator('#jcm-official-panel')).toContainText('No Picks for this date.');
- await expect(page.locator('.metrics .metric strong')).toHaveText(['—','0','0','0','—','—','—','—']);
+ await expect(page.locator('#jcm-official-panel')).toContainText('No settled results for this date.');
+ await expect(page.locator('.metrics .metric strong')).toHaveText(['—','0','0','0','—','0','0','0']);
  await expect(slider.getByRole('switch',{name:'International view'})).toBeChecked();
  await expect(page.locator('body')).toHaveCSS('background-color','rgb(13, 48, 50)');
  await page.setViewportSize({width:320,height:780});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await slider.click();
- await expect(page).toHaveURL(/index\.html#picks$/);
+ await expect(page).toHaveURL(/index\.html#results$/);
  await expect(page.locator('#date')).toHaveValue(racingDate);
  await expect(page.locator('.metrics .metric strong')).toHaveText(racingMetrics);
  expect(errors).toEqual([]);
@@ -44,20 +46,21 @@ test('direct football page still displays its own results',async({page})=>{
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
 });
-test('UK and International hubs expose only Picks and Watch List tiles',async({page})=>{
+test('UK and International hubs put Today’s Bets first and Results second',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
  const tiles=page.locator('.jcm-hub-grid [data-page]');
  await expect(tiles).toHaveCount(2);
- expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['picks','watch-list']);
+ expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','results']);
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html\?region=international#hub$/);
  await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
- expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['picks','watch-list']);
+ expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','results']);
  await expect(page.locator('#jcm-profit-summary')).toContainText('£0');
  await expect(page.locator('#jcm-watch-profit-summary')).toContainText('£0');
- await page.locator('[data-page="watch-list"]').click();
- await expect(page.locator('#jcm-official-panel')).toContainText('No Watch List entries for this date');
+ await page.locator('[data-page="todays-bets"]').click();
+ await page.locator('#date').selectOption('2026-11-28');
+ await expect(page.locator('#jcm-official-panel')).toContainText('No bets for this date.');
  await page.getByRole('button',{name:/Sentosa/}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
  await expect(page.getByRole('link',{name:/Browse Sporting Life racecards/})).toHaveAttribute('href','https://www.sportinglife.com/racing/racecards');
@@ -69,7 +72,8 @@ test('UK and International hubs expose only Picks and Watch List tiles',async({p
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
 test('paper lay shows two figures at the approved price for settled horses',async({page})=>{
- await page.goto(url+'#picks');
+ await page.clock.install({time:new Date('2026-11-27T20:00:00Z')});
+ await page.goto(url+'#results');
  await page.locator('#date').selectOption('2026-11-27');
  await page.getByRole('button',{name:/Kap Ouest/}).click();
  const detail=page.locator('#jcm-detail-content');
@@ -78,9 +82,6 @@ test('paper lay shows two figures at the approved price for settled horses',asyn
  await expect(paper).not.toContainText('£10 lay stake');
  await expect(detail.getByRole('link',{name:/watch race|race video/i})).toHaveCount(0);
  await page.getByRole('button',{name:'Close details'}).click();
- await page.getByRole('button',{name:'Return to JCM Hub'}).click();
- await page.locator('[data-page="watch-list"]').click();
- await page.locator('#jcm-watch-date').selectOption('2026-11-27');
  await page.getByRole('button',{name:/Klub de Reve/i}).click();
  await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['2.88','£252.66']);
  await expect(paper).not.toContainText('Paper P/L');
@@ -136,6 +137,7 @@ test('settled International Picks feed their own P/L and never load UK records',
    result_off_dt:'2026-11-26T12:52:00Z',result_retrieved_at:'2026-11-26T13:04:00Z',official_accuracy_eligible:false}]
  }]}}));
  await page.goto(url+'international.html#picks');
+ await page.locator('#date').selectOption('2026-11-26');
  await expect(page.locator('#jcm-official-panel')).toContainText('International fixture horse');
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  const profit=page.locator('#jcm-profit-summary');
@@ -227,3 +229,59 @@ test('football profit date uses that accumulator even when another dashboard dat
  await expect(details.locator('tbody tr').filter({hasText:'Preston North End'})).toContainText('2–2');
 });
 
+
+test('bets stay in time order and public results receive only races with a settled outcome',async({page})=>{
+ await page.clock.install({time:new Date('2026-11-28T14:10:00Z')});
+ let watchResult='PENDING';
+ const day='2026-11-28';
+ const activePick={
+  horse:'Fixture Pick',course:'Lyon-Parilly',scheduled_off_dt:day+'T14:15:00Z',
+  result_status:'PENDING',lay_odds:3,
+ };
+ const watchRunner={
+  horse:'Fixture Watch',course:'Lyon-Parilly',scheduled_off_dt:day+'T14:00:00Z',lay_odds:4,
+ };
+ const earlyVoid={
+  horse:'Fixture Void',course:'Lyon-Parilly',scheduled_off_dt:day+'T14:25:00Z',lay_odds:3,result_status:'NR',
+ };
+ await page.route('**/data/international-racing.json',route=>route.fulfill({json:{
+  schema_version:1,days:[{
+   date:day,picks:[activePick],watchlist:[earlyVoid,{...watchRunner,result_status:watchResult}],research:[],
+  }],
+ }}));
+ await page.goto(url+'index.html?region=international#todays-bets');
+ const rows=page.locator('#jcm-official-panel .jcm-research-row');
+ await expect(rows.locator('.jcm-horse')).toHaveText(['Fixture WatchWatchlist','Fixture PickPick','Fixture VoidWatchlist']);
+ await expect(rows.locator('.jcm-status')).toHaveText(['Pending','Pending','Pending']);
+ const colour=async index=>rows.nth(index).locator('.jcm-entry-group').evaluate(node=>getComputedStyle(node).color);
+ expect(await colour(0)).not.toBe(await colour(1));
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('#jcm-watch-profit-summary summary').click();
+ await expect(page.locator('#jcm-watch-profit-summary')).not.toContainText('Fixture Watch');
+ await page.locator('[data-page="results"]').click();
+ await expect(page.locator('#jcm-official-panel')).toContainText('No settled results for this date.');
+ watchResult='WIN';
+ await page.clock.fastForward(31000);
+ await expect(rows).toHaveCount(1);
+ await expect(rows.first()).toContainText('Fixture Watch');
+ await expect(rows.first()).toContainText('Horse lost');
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('[data-page="todays-bets"]').click();
+ await expect(rows).toHaveCount(3);
+ await expect(rows.first()).toContainText('Horse lost');
+});
+
+test('UK Watchlist entries can be browsed by date in bets and stay out of results until settled',async({page})=>{
+ await page.clock.install({time:new Date('2026-11-28T12:00:00Z')});
+ await page.goto(url+'#todays-bets');
+ const panel=page.locator('#jcm-official-panel');
+ await expect(page.locator('#date')).toHaveValue('2026-11-28');
+ await expect(panel).toContainText('Mydaddypaddy');
+ await expect(panel).toContainText('Idaho Sun');
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('[data-page="results"]').click();
+ await expect(panel).toContainText('No settled results for this date.');
+ await page.locator('#date').selectOption('2026-11-27');
+ await expect(panel).toContainText('Kap Ouest');
+ await expect(panel).toContainText('Klub de Reve');
+});

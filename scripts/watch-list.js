@@ -4,18 +4,8 @@
   });
   const money = cents => currency.format(cents / 100);
   let request;
-  const dailyRate = document.getElementById('jcm-watch-daily-rate');
-
-  function updateDailyRate(entries) {
-    if (!dailyRate) return;
-    const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/London' }).format(new Date());
-    const rows = entries.filter(row => row.race_date === today);
-    const wins = rows.filter(row => row.result_status === 'WIN').length;
-    const settled = wins + rows.filter(row => row.result_status === 'LOSS').length;
-    const rate = settled ? Math.round(1000 * wins / settled) / 10 + '% success · ' + wins + '/' + settled + ' settled'
-      : rows.length ? 'No settled results' : 'No candidates today';
-    dailyRate.textContent = 'Today · ' + rate;
-  }
+  const isSettled = row => ['WIN', 'LOSS', 'NR'].includes(row.result_status) &&
+    Date.parse(row.scheduled_off_dt) <= Date.now();
 
   function netCents(ledger, row) {
     if (row.result_status === 'NR') return 0;
@@ -32,7 +22,6 @@
     request = (async () => {
       const ledger = await window.jcmReadRacingData('data/watch-list.json');
       if (ledger.schema_version !== 1 || !Array.isArray(ledger.entries)) throw new Error('Invalid Watch List');
-      updateDailyRate(ledger.entries);
       return ledger;
     })().finally(() => { request = null; });
     return request;
@@ -41,6 +30,7 @@
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   window.jcmWatchList = {
     read,
+    isSettled,
     netCents,
     dateLabel(value) {
       const [year, month, day] = value.split('-');
@@ -63,7 +53,4 @@
     }
   };
 
-  read().catch(() => {
-    if (dailyRate) dailyRate.textContent = 'Today · Results unavailable';
-  });
 })();

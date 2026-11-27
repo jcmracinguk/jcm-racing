@@ -201,12 +201,14 @@ header .head :is(#date,#jcm-watch-date){margin:0;flex:none}
 
 
 
-body:not([data-racing-view="watch-list"]) :is(#jcm-watch-date,#jcm-watch-metrics){display:none!important}
-body[data-racing-view="watch-list"] #jcm-watch-date{display:block}
-body[data-racing-view="watch-list"] #jcm-watch-metrics{display:grid}
-body[data-racing-view="watch-list"] #date,
-body[data-racing-view="watch-list"] .metrics:not(#jcm-watch-metrics),
-body[data-racing-view="watch-list"] main>*:not(#jcm-official-panel){display:none!important}
+body[data-racing-view] .jcm-home-link[hidden],
+body[data-racing-view="todays-bets"] header .head > .metrics,
+body[data-racing-view] main > :not(#jcm-official-panel){display:none!important}
+
+#jcm-official-panel .jcm-entry-group{display:block;margin-top:4px;font-size:11px;color:var(--gold);font-weight:800}
+#jcm-official-panel .jcm-watch-row{border-inline-start:4px solid var(--jcm-watch-accent,#62e7db)}
+#jcm-official-panel .jcm-watch-row .jcm-entry-group{color:var(--jcm-watch-accent,#62e7db)}
+body[data-sport="international"]{--jcm-watch-accent:#edbd57}
 
 .jcm-profit-card summary.jcm-profit-total{cursor:pointer;list-style:none}
 .jcm-profit-card summary.jcm-profit-total::-webkit-details-marker{display:none}

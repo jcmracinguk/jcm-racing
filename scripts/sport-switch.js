@@ -11,7 +11,7 @@
   const logo=host.querySelector('.jcm-logo-button')||host.querySelector('img');
   if(logo)logo.after(label);else host.prepend(label);
   label.querySelector('input').addEventListener('change',e=>{
-   const hash=['#picks','#watch-list'].includes(location.hash)?location.hash:'#hub';
+   const hash=['#todays-bets','#results','#picks','#watch-list'].includes(location.hash)?location.hash:'#hub';
    const destination=e.target.checked?'index.html?region=international':'index.html';
    location.assign(destination+hash);
   });

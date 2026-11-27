@@ -280,6 +280,7 @@ async function watchProfitSummary(){
  const ledger=await window.jcmWatchList.read(), weeks=new Map();
  let total=0,wins=0,losses=0;
  for(const row of ledger.entries){
+  if(!window.jcmWatchList.isSettled(row))continue;
   const date=row.race_date, week=weekCommencing(date);
   if(!weeks.has(week))weeks.set(week,{week,profit:0,days:new Set(),estimated:0,entries:[]});
   const group=weeks.get(week);
