@@ -6,7 +6,7 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
  document.documentElement.dataset.region = 'international';
  document.querySelector('meta[name="theme-color"]').content = '#0d3032';
 }
-</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261127-bets-results"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
+</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261127-separate-results"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
 <style>#jcm-official-panel .jcm-research-row.jcm-competition-watchlist{border-color:#edbd57}.jcm-competition-watchlist .jcm-confidence.low{background:#70521b;border-color:#edbd57}</style>
 <style>
 #jcm-field-test{max-width:900px;margin:18px auto;padding:0 16px}#jcm-field-test[hidden]{display:none!important}.jcm-ft-wrap{border:1px solid #77623a;background:#202b3e;border-radius:14px;padding:16px}.jcm-ft-wrap h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-ft-note{font-size:12px;line-height:1.6;color:#d4dce9}.jcm-ft-card{background:#182336;border:1px solid #42516b;border-radius:10px;margin:9px 0;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.jcm-ft-name{font-weight:800}.jcm-ft-where{color:#d0d9e6;font-size:12px;margin-top:4px}.jcm-ft-rating{white-space:nowrap;color:#fff;background:#42506a;padding:7px;border-radius:7px;font-size:12px;font-weight:800}.jcm-ft-hub{border:1px solid #77623a!important}
@@ -108,12 +108,12 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
 (function(){
  const logo=document.querySelector('.identity img');
  const hub=document.createElement('div');hub.id='jcm-hub';hub.setAttribute('aria-label','JCM Racing Hub');
- hub.innerHTML='<div class="jcm-hub-inner"><div class="jcm-hub-top">'+(logo?'<img class="jcm-hub-mark" alt="JCM" src="'+logo.getAttribute('src')+'">':'')+'<div><div class="jcm-hub-eyebrow">JCM RACING <span class="jcm-hub-tagline">Better, informed.</span></div><h1 class="jcm-hub-title">'+(window.jcmInternational?'International':'UK')+'</h1></div></div><div class="jcm-hub-grid"><button type="button" class="jcm-hub-tile" data-page="todays-bets"><span class="jcm-hub-icon" aria-hidden="true">🎯</span><strong>Today’s Bets</strong><span>Picks and Watchlist in race-time order</span></button><button type="button" class="jcm-hub-tile" data-page="results"><span class="jcm-hub-icon" aria-hidden="true">📋</span><strong>Picks and Watchlist Results</strong><span>Settled results by race date</span></button></div><section id="jcm-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading £500 race profit / loss…</p></section><section id="jcm-watch-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading Watch List profit / loss…</p></section><p class="jcm-hub-foot">Private research · simulations only</p></div>';
+ hub.innerHTML='<div class="jcm-hub-inner"><div class="jcm-hub-top">'+(logo?'<img class="jcm-hub-mark" alt="JCM" src="'+logo.getAttribute('src')+'">':'')+'<div><div class="jcm-hub-eyebrow">JCM RACING <span class="jcm-hub-tagline">Better, informed.</span></div><h1 class="jcm-hub-title">'+(window.jcmInternational?'International':'UK')+'</h1></div></div><div class="jcm-hub-grid"><button type="button" class="jcm-hub-tile" data-page="todays-bets"><span class="jcm-hub-icon" aria-hidden="true">🎯</span><strong>Today’s Bets</strong><span>Picks and Watchlist in race-time order</span></button><button type="button" class="jcm-hub-tile" data-page="picks-results"><span class="jcm-hub-icon" aria-hidden="true">📋</span><strong>Picks Results</strong><span>Settled Picks by race date</span></button><button type="button" class="jcm-hub-tile" data-page="watchlist-results"><span class="jcm-hub-icon" aria-hidden="true">👁️</span><strong>Watchlist Results</strong><span>Settled Watchlist horses by race date</span></button></div><section id="jcm-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading £500 race profit / loss…</p></section><section id="jcm-watch-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading Watch List profit / loss…</p></section><p class="jcm-hub-foot">Private research · simulations only</p></div>';
  document.body.append(hub);
  const head=document.querySelector('header .head');
  const home=document.createElement('button');home.type='button';home.className='jcm-home-link';home.innerHTML='<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-8h6v8"/></svg>';home.setAttribute('aria-label','Return to JCM Hub');
  if(head)head.querySelector('.brand').append(home);
- const pages=new Set(['todays-bets','results']);
+ const pages=new Set(['todays-bets','picks-results','watchlist-results']);
  function navigate(page,writeHistory){
   document.getElementById('jcm-detail-overlay').classList.remove('open');
   document.body.dataset.racingView=page;
@@ -131,7 +131,8 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
  home.addEventListener('click',()=>navigate('hub',true));
  const currentPage=()=>{
   const page=location.hash.slice(1);
-  if(page==='picks'||page==='watch-list')return 'results';
+  if(page==='picks'||page==='results')return 'picks-results';
+  if(page==='watch-list')return 'watchlist-results';
   return pages.has(page)?page:'hub';
  };
  window.addEventListener('popstate',()=>navigate(currentPage(),false));
@@ -196,9 +197,9 @@ if(!date||!panel)return;
 const watchMetrics=document.getElementById('jcm-watch-metrics');
 const londonDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London'});
 const today=()=>londonDate.format(new Date());
-const isResults=()=>document.body.dataset.racingView==='results';
+const viewTitles={'todays-bets':'Today’s Bets','picks-results':'Picks Results','watchlist-results':'Watchlist Results'};
 const originalDates=[...date.options].map(option=>option.value);
-let selectedDate,day,detailRows=[],researchRows=[],state='loading',cardDetails=[],loadVersion=0,watchTotals='';
+let selectedDate,day,activeView,detailRows=[],researchRows=[],state='loading',cardDetails=[],loadVersion=0,watchTotals='';
 function displayedLayOdds(r){
  const valid=price=>Number.isFinite(price)&&price>1;
  const recorded=valid(r.lay_odds)?r.lay_odds:null;
@@ -246,13 +247,13 @@ function entriesHtml(rows){
  }).join('');
 }
 function paint(){
- const results=isResults();
- const title=results?'Picks and Watchlist Results':'Today’s Bets';
+ const results=activeView!=='todays-bets';
+ const title=viewTitles[activeView];
  let content;
  if(state==='loading')content='<p role="status">Loading '+(results?'results':'bets')+'…</p>';
  else if(state==='error')content='<p role="status">Could not load this date. The app will retry automatically.</p>';
  else if(!detailRows.length)content='<p role="status">'+(results?'No settled results for this date.':'No bets for this date.')+'</p>';
- else content=entriesHtml(detailRows)+(results&&watchTotals?'<p class="jcm-ft-note">Watchlist · '+safe(watchTotals)+'</p>':'');
+ else content=entriesHtml(detailRows)+(activeView==='watchlist-results'&&watchTotals?'<p class="jcm-ft-note">Watchlist · '+safe(watchTotals)+'</p>':'');
  if(!results&&state==='ready'&&researchRows.length){
   content+='<h3>Form to recheck</h3>'+researchRows.map((r,i)=>
    '<button type="button" class="jcm-row jcm-research-row" data-form-index="'+i+'"><span><span class="jcm-time">'+
@@ -318,42 +319,46 @@ function displayWatchMetrics(ledger){
 }
 async function loadDay(){
  const version=++loadVersion;
- if(document.body.dataset.racingView==='hub')return;
+ const view=document.body.dataset.racingView;
+ if(view==='hub')return;
  const requested=selectedDate||today();
- if(day!==requested||state!=='ready'){
-  day=requested;detailRows=[];researchRows=[];cardDetails=[];state='loading';
- }else if(isResults()){
-  detailRows=detailRows.filter(r=>resultView(r).css!=='pending');
+ const showPicks=view!=='watchlist-results';
+ const showWatchlist=view!=='picks-results';
+ if(activeView!==view||day!==requested||state!=='ready'){
+  activeView=view;day=requested;detailRows=[];researchRows=[];cardDetails=[];state='loading';
  }
  paint();
  try{
   const international=window.jcmInternational;
   const [ledger,source]=await Promise.all([
-   window.jcmWatchList.read(),
-   international?window.jcmInternationalDays():readManifest(),
+   showWatchlist?window.jcmWatchList.read():null,
+   international?window.jcmInternationalDays():showPicks?readManifest():null,
   ]);
   if(version!==loadVersion)return;
-  const pickDates=international?source.map(r=>r.date):[...originalDates,...source.sources.map(path=>
-   /^data\/competition-research-(\d{4}-\d{2}-\d{2})\.json$/.exec(path)?.[1]).filter(Boolean)];
-  const dates=[...new Set([today(),...pickDates,...ledger.entries.map(r=>r.race_date)])].sort().reverse();
+  const pickDates=showPicks&&!international?[...originalDates,...source.sources.map(path=>
+   /^data\/competition-research-(\d{4}-\d{2}-\d{2})\.json$/.exec(path)?.[1]).filter(Boolean)]:[];
+  const watchDates=ledger?.entries.map(r=>r.race_date)??[];
+  const dates=[...new Set([today(),...pickDates,...watchDates,...(international?source.map(r=>r.date):[])])].sort().reverse();
   date.replaceChildren(...dates.map(value=>new Option(window.jcmWatchList.dateLabel(value),value)));
   day=dates.includes(requested)?requested:today();
   date.value=day;
   const internationalDay=international?source.find(record=>record.date===day):null;
   const [picks,metadata]=await Promise.all([
-   international?(internationalDay?.picks??[]):pickDates.includes(day)?readPicks(day):[],
-   pickDates.includes(day)?window.jcmReadRacingData('data/result-card-details-'+day+'.json').catch(()=>null):null,
+   showPicks&&international?(internationalDay?.picks??[]):pickDates.includes(day)?readPicks(day):[],
+   showPicks&&(internationalDay||pickDates.includes(day))?window.jcmReadRacingData('data/result-card-details-'+day+'.json').catch(()=>null):null,
   ]);
   if(version!==loadVersion)return;
-  const watchRows=ledger.entries.filter(r=>r.race_date===day).map(row=>({
+  const watchRows=(ledger?.entries??[]).filter(r=>r.race_date===day).map(row=>({
    ...row,watchList:true,paperNet:window.jcmWatchList.rowNet(ledger,row),
   }));
-  const settledLedger={...ledger,entries:ledger.entries.filter(window.jcmWatchList.isSettled)};
-  if(isResults())displayWatchMetrics(settledLedger);
-  watchTotals=window.jcmWatchList.summary(settledLedger,watchRows.filter(window.jcmWatchList.isSettled));
+  if(view==='watchlist-results'){
+   const settledLedger={...ledger,entries:ledger.entries.filter(window.jcmWatchList.isSettled)};
+   displayWatchMetrics(settledLedger);
+   watchTotals=window.jcmWatchList.summary(settledLedger,watchRows.filter(window.jcmWatchList.isSettled));
+  }
   researchRows=[...(internationalDay?.research??[])].sort(raceOrder);
   detailRows=[...picks,...watchRows].sort(raceOrder);
-  if(isResults())detailRows=detailRows.filter(r=>resultView(r).css!=='pending');
+  if(view!=='todays-bets')detailRows=detailRows.filter(r=>resultView(r).css!=='pending');
   const pickDetails=metadata?.schema_version===1&&metadata.date===day&&Array.isArray(metadata.details)?metadata.details:[];
   cardDetails=[...pickDetails,...watchRows.map(row=>({...row,date:row.race_date,results_url:row.result_source_url}))];
   state='ready';paint();
@@ -366,5 +371,5 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadDay();
 setInterval(()=>{if(!document.hidden)loadDay();},30000);
 loadDay();
 })();
-</script><script src="scripts/fresh-tracker.js?v=20261127-parity"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261127-bets-results"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-bets-results"></script></body></html>
+</script><script src="scripts/fresh-tracker.js?v=20261127-parity"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261127-bets-results"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-separate-results"></script></body></html>
 

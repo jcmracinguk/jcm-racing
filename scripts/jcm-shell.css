@@ -203,10 +203,13 @@ header .head :is(#date,#jcm-watch-date){margin:0;flex:none}
 
 body[data-racing-view] .jcm-home-link[hidden],
 body[data-racing-view="todays-bets"] header .head > .metrics,
+body[data-racing-view="picks-results"] #jcm-watch-metrics,
+body[data-racing-view="watchlist-results"] header .head > .metrics:not(#jcm-watch-metrics),
 body[data-racing-view] main > :not(#jcm-official-panel){display:none!important}
 
 #jcm-official-panel .jcm-entry-group{display:block;margin-top:4px;font-size:11px;color:var(--gold);font-weight:800}
-#jcm-official-panel .jcm-watch-row{border-inline-start:4px solid var(--jcm-watch-accent,#62e7db)}
+#jcm-official-panel .jcm-research-row[data-research-index]{border-inline-start:4px solid var(--gold)}
+#jcm-official-panel .jcm-watch-row[data-research-index]{border-inline-start-color:var(--jcm-watch-accent,#62e7db)}
 #jcm-official-panel .jcm-watch-row .jcm-entry-group{color:var(--jcm-watch-accent,#62e7db)}
 body[data-sport="international"]{--jcm-watch-accent:#edbd57}
 
