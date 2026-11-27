@@ -72,8 +72,8 @@
       "lay_odds": 2.98,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
       "racecard_verified_at": "2026-11-27T06:21:23.724Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 2,
       "selected_at": "2026-11-27T06:16:00Z",
       "added_at": "2026-11-27T06:19:05Z",
@@ -88,12 +88,12 @@
       "going": "GOOD, GOOD TO SOFT IN PLACES",
       "surface": "Turf",
       "race_name": "Coral \"Black Friday Price Boosts\" 'National Hunt' Maiden Hurdle Race (Div I) (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "WIN",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 239.8989898989899,
+      "booked_profit_decimal": "239.8989898989898989898989899",
+      "winner": "River Kwai",
+      "position": "3",
       "selection_reason": {
         "summary": "Oatsoeasy has already placed over hurdles at this trip and River Kwai has his own strong bumper-to-hurdle case. Prince Rupert won his Kempton bumper easily and can improve past the established hurdlers on debut.",
         "counterargument": "Prince Rupert won his Kempton bumper easily and can improve past the established hurdlers on debut.",
@@ -193,7 +193,7 @@
         "potential_net_profit_decimal": "239.8989898989898989898989898990",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 239.8989898989899,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -258,7 +258,14 @@
           "frozen_lay_odds": 2.98
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-27T16:42:29.791062Z",
+          "previous_status": "PENDING",
+          "status": "WIN",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1"
+        }
+      ],
       "reason": "Oatsoeasy has already placed over hurdles at this trip and River Kwai has his own strong bumper-to-hurdle case. Prince Rupert won his Kempton bumper easily and can improve past the established hurdlers on debut.",
       "price_record": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £12.00 displayed. Full-stake matching unverified.",
       "historical": false,
@@ -271,7 +278,107 @@
           "prospective_batch_record": "data/watchlist-research-2026-11-27.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "11:40",
+      "result_course": "Newbury",
+      "result_horse": "Prince Rupert",
+      "result_off_dt": "2026-11-27T11:40:00+00:00",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_race_id": "rac_32306093157",
+      "result_horse_id": "hrs_62549193",
+      "result_website_race_id": "951087",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "result_non_runners": [
+        "Oatsoeasy"
+      ],
+      "result_website_horse_id": "1217828",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "2",
+      "selected_beaten_lengths": "3",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "River Kwai",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Lover Desbois",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "2"
+        },
+        {
+          "position": "3",
+          "horse": "Prince Rupert",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "3"
+        },
+        {
+          "position": "4",
+          "horse": "Loughmourne",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "18"
+        },
+        {
+          "position": "5",
+          "horse": "Francisco Alvares",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "30"
+        },
+        {
+          "position": "6",
+          "horse": "Burk Flight",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "35"
+        },
+        {
+          "position": "7",
+          "horse": "Killarney",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "37"
+        },
+        {
+          "position": "8",
+          "horse": "Lady Kluck",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "39"
+        },
+        {
+          "position": "9",
+          "horse": "Soldier Poet",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "41"
+        },
+        {
+          "position": "10",
+          "horse": "Midnight Escape",
+          "margin_from_previous": "¾",
+          "cumulative_beaten_lengths": "41.75"
+        },
+        {
+          "position": "11",
+          "horse": "Island Getaway",
+          "margin_from_previous": "17",
+          "cumulative_beaten_lengths": "58.75"
+        },
+        {
+          "position": "12",
+          "horse": "Cool Million",
+          "margin_from_previous": "54",
+          "cumulative_beaten_lengths": "112.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "margin_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "3rd",
+      "post_race_classification": "WIN_NAMED_RIVAL_WON_LIMITED_THEORY_SUPPORT",
+      "post_race_analysis": "Third, three lengths behind River Kwai, originally rank 2. Number-one rival and proven hurdler Oatsoeasy was withdrawn for unsuitable ground. River Kwai was also transferring from a bumper, so this supports the named opposition and gives limited support to a proven-hurdle-experience mechanism."
     },
     {
       "tier": "watchlist",
@@ -294,8 +401,8 @@
       "lay_odds": 3.5,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/musselburgh/racecard/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
       "racecard_verified_at": "2026-11-27T06:21:23.724Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27/musselburgh/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 3,
       "selected_at": "2026-11-27T06:16:00Z",
       "added_at": "2026-11-27T06:19:05Z",
@@ -310,12 +417,12 @@
       "going": "GOOD TO SOFT",
       "surface": "Turf",
       "race_name": "Musselburgh Racecourse Premium Annual Membership Handicap Steeple Chase",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Nevershedatear",
+      "position": "1",
       "selection_reason": {
         "summary": "A narrow chase-debut win from 86 with some jumping errors is put to a stronger test from 92. The five-year-old can improve on her second chase start if her jumping sharpens.",
         "counterargument": "The five-year-old can improve on her second chase start if her jumping sharpens.",
@@ -403,7 +510,7 @@
         "potential_net_profit_decimal": "190.0000000000000000000000000000",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -468,7 +575,14 @@
           "frozen_lay_odds": 3.5
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-27T16:42:29.791062Z",
+          "previous_status": "PENDING",
+          "status": "LOSS",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-27/musselburgh/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase"
+        }
+      ],
       "reason": "A narrow chase-debut win from 86 with some jumping errors is put to a stronger test from 92. The five-year-old can improve on her second chase start if her jumping sharpens.",
       "price_record": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £18.75 displayed. Full-stake matching unverified.",
       "historical": false,
@@ -481,7 +595,63 @@
           "prospective_batch_record": "data/watchlist-research-2026-11-27.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "12:20",
+      "result_course": "Musselburgh",
+      "result_horse": "Nevershedatear",
+      "result_off_dt": "2026-11-27T12:20:00+00:00",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_race_id": "rac_32305758056",
+      "result_horse_id": "hrs_50412649",
+      "result_website_race_id": "950471",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/musselburgh/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
+      "result_non_runners": [],
+      "result_website_horse_id": "1207019",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "20",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Nevershedatear",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Flash Du Pistolet",
+          "margin_from_previous": "20",
+          "cumulative_beaten_lengths": "20"
+        },
+        {
+          "position": "3",
+          "horse": "Carcaci Castle",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "23.25"
+        },
+        {
+          "position": "4",
+          "horse": "Huit Reflets",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "28.75"
+        },
+        {
+          "position": "5",
+          "horse": "Humble Jumble",
+          "margin_from_previous": "12",
+          "cumulative_beaten_lengths": "40.75"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/musselburgh/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
+      "margin_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st",
+      "post_race_classification": "LOSS_FAVOURITE_IMPROVEMENT_OUTWEIGHED_RISE",
+      "post_race_analysis": "Made the running and beat original rank 1 Flash Du Pistolet by 20 lengths. Original rank 2 Humble Jumble finished fifth. The jump from 86 to 92 did little to stop the lightly raced mare on her second chase start. The specific chase-rise case failed despite the strongest rival finishing second."
     },
     {
       "tier": "watchlist",
@@ -504,8 +674,8 @@
       "lay_odds": 2.88,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-27T06:21:23.724Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 4,
       "selected_at": "2026-11-27T06:16:00Z",
       "added_at": "2026-11-27T06:19:05Z",
@@ -520,12 +690,12 @@
       "going": "GOOD",
       "surface": "Turf",
       "race_name": "Coral Racing Club Novices' Limited Handicap Steeple Chase (For The Fulke Walwyn Trophy) (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Klub De Reve",
+      "position": "1",
       "selection_reason": {
         "summary": "Country Mile has an established chase win and Masked Man is a plausible recruit with Grade 2 hurdle form. Klub De Reve won an Irish point and the Grade 2 Dovecote over hurdles. He may improve over fences and his main rivals have limitations.",
         "counterargument": "Klub De Reve won an Irish point and the Grade 2 Dovecote over hurdles. He may improve over fences and his main rivals have limitations.",
@@ -625,7 +795,7 @@
         "potential_net_profit_decimal": "252.6595744680851063829787234043",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -690,7 +860,14 @@
           "frozen_lay_odds": 2.88
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-27T16:42:29.791062Z",
+          "previous_status": "PENDING",
+          "status": "LOSS",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race"
+        }
+      ],
       "reason": "Country Mile has an established chase win and Masked Man is a plausible recruit with Grade 2 hurdle form. Klub De Reve won an Irish point and the Grade 2 Dovecote over hurdles. He may improve over fences and his main rivals have limitations.",
       "price_record": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £12.66 displayed. Full-stake matching unverified.",
       "historical": false,
@@ -703,7 +880,53 @@
           "prospective_batch_record": "data/watchlist-research-2026-11-27.json",
           "independent_pick_case": false
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "12:40",
+      "result_course": "Newbury",
+      "result_horse": "Klub de Reve",
+      "result_off_dt": "2026-11-27T12:40:00+00:00",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_race_id": "rac_32305729001",
+      "result_horse_id": "hrs_41189953",
+      "result_website_race_id": "950485",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "Hardly Surprising"
+      ],
+      "result_website_horse_id": "1171821",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "6",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Klub De Reve",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Country Mile",
+          "margin_from_previous": "6",
+          "cumulative_beaten_lengths": "6"
+        },
+        {
+          "position": "3",
+          "horse": "Masked Man",
+          "margin_from_previous": "54",
+          "cumulative_beaten_lengths": "60"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st",
+      "post_race_classification": "LOSS_FAVOURITE_CHASE_TRANSFER",
+      "post_race_analysis": "Won by six lengths from original rank 1 Country Mile, with original rank 2 Masked Man third. Original rank 3 Hardly Surprising was withdrawn, so the expected depth was reduced. The favourite’s point-winning and Grade 2 hurdle form transferred on Rules chase debut. Country Mile’s experience did not offset the favourite’s upside."
     },
     {
       "tier": "selection",
@@ -726,8 +949,8 @@
       "lay_odds": 3.55,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-27T06:21:23.724Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
-      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "results_link_type": "EXACT_VERIFIED_RESULT",
       "interest_rank": 1,
       "selected_at": "2026-11-27T06:16:00Z",
       "added_at": "2026-11-27T06:19:05Z",
@@ -742,12 +965,12 @@
       "going": "GOOD",
       "surface": "Turf",
       "race_name": "Coral \"Bet£10 Get£50 Sign Up Offer\" Handicap Steeple Chase (GBB Race)",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
+      "result_status": "NR",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": 0.0,
       "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "winner": "Twinjets",
+      "position": "NR",
       "selection_reason": {
         "summary": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off. He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
         "counterargument": "He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
@@ -835,7 +1058,7 @@
         "potential_net_profit_decimal": "186.2745098039215686274509803922",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 0.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -900,7 +1123,14 @@
           "frozen_lay_odds": 3.55
         }
       ],
-      "result_history": [],
+      "result_history": [
+        {
+          "observed_at": "2026-11-27T16:42:29.791062Z",
+          "previous_status": "PENDING",
+          "status": "NR",
+          "source": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race"
+        }
+      ],
       "research_theory_tags": [
         {
           "theory_id": "JCM_CHASE_RISE_OPPOSITION",
@@ -909,18 +1139,79 @@
           "prospective_batch_record": "data/watchlist-research-2026-11-27.json",
           "independent_pick_case": true
         }
-      ]
+      ],
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "14:25",
+      "result_course": "Newbury",
+      "result_horse": "Kap Ouest",
+      "result_off_dt": "2026-11-27T14:25:00+00:00",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_race_id": "rac_32305734812",
+      "result_horse_id": "hrs_37807133",
+      "result_website_race_id": "950488",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "result_non_runners": [
+        "Gemirande",
+        "Bluey",
+        "Kap Ouest"
+      ],
+      "result_website_horse_id": "1124080",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Twinjets",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Etalon",
+          "margin_from_previous": "5",
+          "cumulative_beaten_lengths": "5"
+        },
+        {
+          "position": "3",
+          "horse": "Issar D'Airy",
+          "margin_from_previous": "24",
+          "cumulative_beaten_lengths": "29"
+        },
+        {
+          "position": "4",
+          "horse": "Le Patron",
+          "margin_from_previous": "5 ½",
+          "cumulative_beaten_lengths": "34.5"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "NR",
+      "post_race_classification": "VOID_NON_RUNNER_RIVALS_FIRST_AND_SECOND",
+      "post_race_analysis": "Official non-runner. Original ranks 1 and 2, Twinjets and Etalon, finished first and second, five lengths apart. The finishing order confirms the rivals were competitive in the reduced field. The favourite’s prospects, 9 lb rise and return from a break could not be tested. Bluey and Gemirande also did not run."
     }
   ],
   "current_counts": {
     "entries": 4,
-    "successes": 0,
-    "failures": 0,
-    "nr": 0,
-    "pending": 4
+    "successes": 1,
+    "failures": 2,
+    "nr": 1,
+    "pending": 0
   },
-  "booked_profit_gbp": 0,
-  "post_race_evaluations": [],
+  "booked_profit_gbp": -760.1010101010102,
+  "post_race_evaluations": [
+    {
+      "observed_at": "2026-11-27T17:49:21.325950Z",
+      "audit_record": "data/post-race-review-2026-11-27.json",
+      "promotion": "NOT_PROPOSED",
+      "reason": "Two clear failures of the proposed opposition. One lay win via a bumper recruit after the strongest established hurdler was withdrawn. One void."
+    }
+  ],
   "promotion_status": "EXPLORATORY_NOT_PROMOTED",
   "scope_review": "Kap Ouest and Nevershedatear qualify under chase-rise v1. Klub De Reve qualifies under chase-debut v1. Prince Rupert qualifies under hurdle form versus bumper potential v1, with Oatsoeasy's hurdle second and Midnight Escape's hurdle-debut fourth. River Kwai remains an unproven hurdle recruit. Soldier’s Tree and Chicago Caray are outside these fixed jump-race theories. The Pick qualified independently. The overlays remain exploratory."
 }

@@ -1,0 +1,293 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-27",
+  "timezone": "Europe/London",
+  "observed_at": "2026-11-27T17:49:21.325950Z",
+  "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+  "paper_only": true,
+  "approved_price_baseline_unchanged": true,
+  "result_source": "SPORTING_LIFE_WEIGHEDIN",
+  "review_status": "COMPLETE",
+  "stats": {
+    "picks": {
+      "successes": 0,
+      "failures": 0,
+      "voids": 1,
+      "pending": 0,
+      "app_penny_total_gbp": 0.0
+    },
+    "watchlist": {
+      "successes": 2,
+      "failures": 3,
+      "voids": 0,
+      "pending": 0,
+      "app_penny_total_gbp": -1111.66
+    },
+    "combined_app_penny_total_gbp": -1111.66
+  },
+  "monday_to_friday": {
+    "picks": {
+      "successes": 7,
+      "failures": 0,
+      "voids": 1,
+      "app_penny_total_gbp": 1393.45
+    },
+    "watchlist": {
+      "successes": 8,
+      "failures": 7,
+      "voids": 2,
+      "pending": 0,
+      "app_penny_total_gbp": -1783.88
+    }
+  },
+  "records": [
+    {
+      "horse": "Prince Rupert",
+      "group": "Watchlist",
+      "course": "Newbury",
+      "off_time_uk": "11:40",
+      "race_id": "rac_32306093157",
+      "horse_id": "hrs_62549193",
+      "approved_lay": 2.98,
+      "status": "WIN",
+      "position": "3",
+      "winner": "River Kwai",
+      "winning_margin_lengths": "2",
+      "selected_beaten_lengths": "3",
+      "app_penny_pnl_gbp": 239.9,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/951087/coral-black-friday-price-boosts-national-hunt-maiden-hurdle-gbb-race-div-1",
+      "non_runners": [
+        "Oatsoeasy"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Oatsoeasy",
+          "evidence_and_limitations": "Second, beaten two lengths, on 2m hurdle debut at Ffos Las. Has jumping experience and scope to improve."
+        },
+        {
+          "rank": 2,
+          "horse": "River Kwai",
+          "evidence_and_limitations": "Won an Exeter bumper decisively. Still has to transfer to hurdles."
+        },
+        {
+          "rank": 3,
+          "horse": "Midnight Escape",
+          "evidence_and_limitations": "Fourth on hurdle debut over 2m at Worcester. Likely to improve with experience, though a longer trip may prove better."
+        }
+      ],
+      "classification": "WIN_NAMED_RIVAL_WON_LIMITED_THEORY_SUPPORT",
+      "analysis": "Third, three lengths behind River Kwai, originally rank 2. Number-one rival and proven hurdler Oatsoeasy was withdrawn for unsuitable ground. River Kwai was also transferring from a bumper, so this supports the named opposition and gives limited support to a proven-hurdle-experience mechanism."
+    },
+    {
+      "horse": "Nevershedatear",
+      "group": "Watchlist",
+      "course": "Musselburgh",
+      "off_time_uk": "12:20",
+      "race_id": "rac_32305758056",
+      "horse_id": "hrs_50412649",
+      "approved_lay": 3.5,
+      "status": "LOSS",
+      "position": "1",
+      "winner": "Nevershedatear",
+      "winning_margin_lengths": "20",
+      "selected_beaten_lengths": null,
+      "app_penny_pnl_gbp": -500.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/musselburgh/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/musselburgh/racecard/950471/musselburgh-racecourse-premium-annual-membership-handicap-chase",
+      "non_runners": [],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Flash Du Pistolet",
+          "evidence_and_limitations": "Dual chase winner back down to his last winning mark and into a 0–100 after a shorter-trip return at Hexham."
+        },
+        {
+          "rank": 2,
+          "horse": "Humble Jumble",
+          "evidence_and_limitations": "A point winner with scope to build on his Newcastle chasing debut. Improvement is still required."
+        }
+      ],
+      "classification": "LOSS_FAVOURITE_IMPROVEMENT_OUTWEIGHED_RISE",
+      "analysis": "Made the running and beat original rank 1 Flash Du Pistolet by 20 lengths. Original rank 2 Humble Jumble finished fifth. The jump from 86 to 92 did little to stop the lightly raced mare on her second chase start. The specific chase-rise case failed despite the strongest rival finishing second."
+    },
+    {
+      "horse": "Klub de Reve",
+      "group": "Watchlist",
+      "course": "Newbury",
+      "off_time_uk": "12:40",
+      "race_id": "rac_32305729001",
+      "horse_id": "hrs_41189953",
+      "approved_lay": 2.88,
+      "status": "LOSS",
+      "position": "1",
+      "winner": "Klub De Reve",
+      "winning_margin_lengths": "6",
+      "selected_beaten_lengths": null,
+      "app_penny_pnl_gbp": -500.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950485/coral-racing-club-novices-limited-handicap-chase-gbb-race",
+      "non_runners": [
+        "Hardly Surprising"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Country Mile",
+          "evidence_and_limitations": "Won at Uttoxeter and both rivals won next time. Fell on his subsequent start and gives Klub De Reve 5 lb."
+        },
+        {
+          "rank": 2,
+          "horse": "Masked Man",
+          "evidence_and_limitations": "Point winner and Grade 2 hurdle runner-up. Has his own chase transfer upside but lacks Rules chase evidence."
+        },
+        {
+          "rank": 3,
+          "horse": "Hardly Surprising",
+          "evidence_and_limitations": "Point winner receiving 14 lb from the favourite. Less accomplished over hurdles and also a Rules chase debutant."
+        }
+      ],
+      "classification": "LOSS_FAVOURITE_CHASE_TRANSFER",
+      "analysis": "Won by six lengths from original rank 1 Country Mile, with original rank 2 Masked Man third. Original rank 3 Hardly Surprising was withdrawn, so the expected depth was reduced. The favourite’s point-winning and Grade 2 hurdle form transferred on Rules chase debut. Country Mile’s experience did not offset the favourite’s upside."
+    },
+    {
+      "horse": "Kap Ouest",
+      "group": "Pick",
+      "course": "Newbury",
+      "off_time_uk": "14:25",
+      "race_id": "rac_32305734812",
+      "horse_id": "hrs_37807133",
+      "approved_lay": 3.55,
+      "status": "NR",
+      "position": "NR",
+      "winner": "Twinjets",
+      "winning_margin_lengths": "5",
+      "selected_beaten_lengths": null,
+      "app_penny_pnl_gbp": 0.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/newbury/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "non_runners": [
+        "Gemirande",
+        "Bluey",
+        "Kap Ouest"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Twinjets",
+          "evidence_and_limitations": "Last year's winner, second over the same course and distance in March. Effective 11 st 10 lb after Jay Tidball's 5 lb claim. Pulled up on his 3m reappearance."
+        },
+        {
+          "rank": 2,
+          "horse": "Etalon",
+          "evidence_and_limitations": "Course winner, back to his last winning mark after a recent Aintree run. Cheekpieces are refitted. The latest fourth was well beaten."
+        }
+      ],
+      "pre_off_withdrawal_observation": {
+        "observed_at": "2026-11-27T13:23:02Z",
+        "precision": "CHECK_WINDOW_START",
+        "horses": [
+          "Kap Ouest",
+          "Bluey"
+        ],
+        "source_url": "https://www.racingpost.com/non-runners/2026-11-27/"
+      },
+      "classification": "VOID_NON_RUNNER_RIVALS_FIRST_AND_SECOND",
+      "analysis": "Official non-runner. Original ranks 1 and 2, Twinjets and Etalon, finished first and second, five lengths apart. The finishing order confirms the rivals were competitive in the reduced field. The favourite’s prospects, 9 lb rise and return from a break could not be tested. Bluey and Gemirande also did not run."
+    },
+    {
+      "horse": "Soldier's Tree",
+      "group": "Watchlist",
+      "course": "Southwell",
+      "off_time_uk": "14:40",
+      "race_id": "rac_32305740623",
+      "horse_id": "hrs_41013959",
+      "approved_lay": 4.2,
+      "status": "WIN",
+      "position": "5",
+      "winner": "Beckford's Folly",
+      "winning_margin_lengths": "1 ¼",
+      "selected_beaten_lengths": "3.8",
+      "app_penny_pnl_gbp": 148.44,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/southwell/950501/midnite-golden-rose-stakes-listed",
+      "result_retrieved_at": "2026-11-27T16:42:29.791062Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/southwell/racecard/950501/midnite-golden-rose-stakes-listed",
+      "non_runners": [],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Crestofdistinction",
+          "evidence_and_limitations": "Won a 22-runner 6f Doncaster handicap and remains unbeaten in two all-weather starts."
+        },
+        {
+          "rank": 2,
+          "horse": "Ain't Nobody",
+          "evidence_and_limitations": "Narrow second in a Dundalk Group 3 on all-weather debut. Has not consistently reproduced his peak form."
+        }
+      ],
+      "classification": "WIN_WINNER_OUTSIDE_FROZEN_RANKS",
+      "analysis": "Fifth after leading and weakening late. Beckford’s Folly won on his first run in 209 days, with Montassib second. Neither was a frozen ranked challenger. Crestofdistinction and Ain’t Nobody were sixth and fourth. The result supports a broad opposition case only. It does not show the break or the Tapeta caused the defeat. Give proven class at equal weights a fuller assessment when a horse can run well fresh."
+    },
+    {
+      "horse": "Chicago Caray",
+      "group": "Watchlist",
+      "course": "Dundalk",
+      "off_time_uk": "17:30",
+      "race_id": "rac_32305843284",
+      "horse_id": "hrs_17391961069",
+      "approved_lay": 4.6,
+      "status": "LOSS",
+      "position": "1",
+      "winner": "Chicago Caray",
+      "winning_margin_lengths": null,
+      "selected_beaten_lengths": null,
+      "app_penny_pnl_gbp": -500.0,
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/dundalk/950751/bar-1-casino-claiming-race",
+      "result_retrieved_at": "2026-11-27T17:48:42.062677Z",
+      "result_stage": "WEIGHEDIN",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/dundalk/racecard/950751/bar-1-casino-claiming-race",
+      "amended_result": true,
+      "provisional_observation": {
+        "observed_during_gmt": "17:47–17:48",
+        "stage": "RESULT",
+        "winner": "Waysong",
+        "selected_position": "2",
+        "margin_from_winner": "nose",
+        "source_url": "https://www.sportinglife.com/racing/results/2026-11-27/dundalk/950751/bar-1-casino-claiming-race",
+        "used_for_settlement": false
+      },
+      "non_runners": [],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Rejoinder",
+          "evidence_and_limitations": "Second in a 6f Curragh maiden. Drops in grade and returns to a more suitable test after two 5f runs. First try at 7f."
+        },
+        {
+          "rank": 2,
+          "horse": "Let Me Free",
+          "evidence_and_limitations": "Improved on her second start when sixth over 6f here and receives 5 lb. Needs another step forward at 7f."
+        }
+      ],
+      "classification": "LOSS_AMENDED_OFFICIAL_WINNER",
+      "analysis": "Waysong passed the post first by a nose. The weighed-in result reversed the first two and placed Chicago Caray first. The paper lay therefore lost at the frozen 4.60. Original ranks 1 and 2 Rejoinder and Let Me Free were fourth and fifth. Chicago Caray's class drop nearly yielded a win on the track. The amendment determined settlement and gives limited evidence about the expected competition."
+    }
+  ],
+  "lessons": [
+    "Require concrete evidence that a rival can beat the favourite’s likely improvement. A handicap rise or debut over fences is a question, and the favourite’s prior point win or scope to improve on chase start two can answer it.",
+    "Treat race settlement, winner identification and mechanism as separate observations. River Kwai was named but used the same bumper-to-hurdle route as the horse opposed. Beckford’s Folly was outside the frozen ranks.",
+    "Keep the Kap Ouest void out of the win-rate denominator. The two ranked rivals finishing first and second provides no test of Kap Ouest’s chance.",
+    "Record first observation times and downgrade only the specific opposition weakened by withdrawals. Keep original ranks, approved prices and theory eligibility frozen."
+  ],
+  "review_history": []
+}

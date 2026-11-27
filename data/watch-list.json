@@ -12142,12 +12142,12 @@
       "going": "STANDARD",
       "surface": "AW",
       "race_name": "BAR 1 Casino Claiming Race",
-      "result_status": "PENDING",
-      "verification_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
-      "winner": null,
-      "position": null,
+      "result_status": "LOSS",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "booked_profit_gbp": -500.0,
+      "booked_profit_decimal": "-500",
+      "winner": "Chicago Caray",
+      "position": "1",
       "selection_reason": {
         "summary": "Three attempts over this course and distance have yielded a best finish of fourth. Rejoinder and Let Me Free both receive 5 lb. The drop to claiming company gives Chicago Caray a genuine chance on his best course form. Rejoinder still has to prove himself over 7f.",
         "counterargument": "The drop to claiming company gives Chicago Caray a genuine chance on his best course form. Rejoinder still has to prove himself over 7f.",
@@ -12235,7 +12235,7 @@
         "potential_net_profit_decimal": "131.9444444444444444444444444444",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": -500.0,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -12304,7 +12304,86 @@
       "reason": "Three attempts over this course and distance have yielded a best finish of fourth. Rejoinder and Let Me Free both receive 5 lb. The drop to claiming company gives Chicago Caray a genuine chance on his best course form. Rejoinder still has to prove himself over 7f.",
       "price_record": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £10.44 displayed. Full-stake matching unverified.",
       "historical": false,
-      "price_observed_at": "2026-11-27T06:05:31.710109+00:00"
+      "price_observed_at": "2026-11-27T06:05:31.710109+00:00",
+      "result_source": "SPORTING_LIFE",
+      "result_date": "2026-11-27",
+      "result_off_time_uk": "17:30",
+      "result_course": "Dundalk",
+      "result_horse": "Chicago Caray",
+      "result_off_dt": "2026-11-27T17:30:00+00:00",
+      "result_retrieved_at": "2026-11-27T17:48:42.062677Z",
+      "result_race_id": "rac_32305843284",
+      "result_horse_id": "hrs_17391961069",
+      "result_website_race_id": "950751",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/dundalk/950751/bar-1-casino-claiming-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1233927",
+      "result_stage": "WEIGHEDIN",
+      "result_amended": true,
+      "winning_margin_lengths": null,
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Chicago Caray",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Waysong",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "3",
+          "horse": "In Sequence",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "4",
+          "horse": "Rejoinder",
+          "margin_from_previous": "1 ¾",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "5",
+          "horse": "Let Me Free",
+          "margin_from_previous": "1 ½",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "6",
+          "horse": "Pal Of Mine",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "7",
+          "horse": "Chachaboo",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "8",
+          "horse": "Present Perfect",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": null
+        },
+        {
+          "position": "9",
+          "horse": "Victorious Star",
+          "margin_from_previous": "4 ½",
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-27/dundalk/950751/bar-1-casino-claiming-race",
+      "margin_retrieved_at": "2026-11-27T17:48:42.062677Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "1st"
     }
   ]
 }
