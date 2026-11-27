@@ -1,15 +1,31 @@
 const {test,expect}=require('@playwright/test');
 const url='http://127.0.0.1:8765/';
 test.use({viewport:{width:390,height:844}});
-test('fresh racing totals and mobile sport switch keep results separate',async({page})=>{
+test('UK and International switch on mobile without changing UK results',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(url+'#picks');
  await expect(page.locator('#date option')).not.toHaveCount(0);
  await expect(page.locator('.metrics .metric strong').first()).not.toHaveText('—');
  const racingMetrics = await page.locator('.metrics .metric strong').allTextContents();
  const racingDate = await page.locator('#date').inputValue();
- await page.locator('header .jcm-sport-switch').click();
- await expect(page).toHaveURL(/football\.html#picks$/);
+ const slider=page.locator('header .jcm-sport-switch');
+ await expect(slider.locator('.jcm-sport-label')).toHaveText(['UK','International']);
+ await slider.click();
+ await expect(page).toHaveURL(/international\.html#picks$/);
+ await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
+ await expect(slider.getByRole('switch',{name:'International view'})).toBeChecked();
+ await expect(page.locator('body')).toHaveCSS('background-color','rgb(255, 215, 0)');
+ await expect(page.locator('body')).toHaveCSS('color','rgb(18, 22, 38)');
+ await page.setViewportSize({width:320,height:780});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
+ await slider.click();
+ await expect(page).toHaveURL(/index\.html#picks$/);
+ await expect(page.locator('#date')).toHaveValue(racingDate);
+ await expect(page.locator('.metrics .metric strong')).toHaveText(racingMetrics);
+ expect(errors).toEqual([]);
+});
+test('direct football page still displays its own results',async({page})=>{
+ await page.goto(url+'football.html#picks');
  await expect(page.locator('.metrics .metric strong')).toHaveText(['80%','4','1','0']);
  await expect(page.locator('#date')).toHaveValue('2026-11-21');
  await expect(page.locator('#jcm-official-panel')).toContainText('Southampton v Derby');
@@ -25,17 +41,16 @@ test('fresh racing totals and mobile sport switch keep results separate',async({
  await expect(page.locator('#jcm-detail-content')).toContainText('Part of one £100 five-fold accumulator');
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
- await page.locator('header .jcm-sport-switch').click();
- await expect(page).toHaveURL(/index\.html#picks$/);
- await expect(page.locator('#date')).toHaveValue(racingDate);
- await expect(page.locator('.metrics .metric strong')).toHaveText(racingMetrics);
- expect(errors).toEqual([]);
 });
-test('both hubs switch sports and football accumulator stays separate',async({page})=>{
+test('UK hub opens International and football accumulator stays separate',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
- await expect(page).toHaveURL(/football\.html#hub$/);
+ await expect(page).toHaveURL(/international\.html#hub$/);
+ await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
+ await page.locator('header .jcm-sport-switch').click();
+ await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
+ await page.goto(url+'football.html#hub');
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
  await expect(page.locator('#jcm-profit-summary summary')).toContainText(/[-−]£100/);
  await expect(page.locator('#jcm-profit-summary .jcm-profit-week-head').first()).not.toBeVisible();
@@ -48,7 +63,7 @@ test('both hubs switch sports and football accumulator stays separate',async({pa
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
- await expect(page.getByRole('heading',{name:'Your racing hub'})).toBeVisible();
+ await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
 
 test('withdrawn football proposal stays out of stakes and results',async({page})=>{

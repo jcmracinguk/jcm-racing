@@ -1,4 +1,19 @@
-a { color: var(--gold); }
+body[data-sport="international"] {
+ --bg: #ffd700;
+ --panel: #121626;
+ --muted: #343954;
+ color: #121626;
+}
+body[data-sport="international"] header {
+ background: #ffdc32;
+ border-bottom-color: #121626;
+}
+body[data-sport="international"] .brandname { color: #121626; }
+body[data-sport="international"] .identity img { mix-blend-mode: normal; }
+body[data-sport="international"] .jcm-sport-switch { color: #121626; }
+body[data-sport="international"] .jcm-sport-switch input:checked ~ .jcm-sport-track { background: #121626; border-color: #121626; }
+body[data-sport="international"] .jcm-sport-switch:has(input:focus-visible) { outline-color: #121626; }
+body[data-sport="international"] select { background: #121626; border-color: #121626; color: #ffd700; }
 .international-intro { display: flex; align-items: flex-start; flex-wrap: wrap; gap: 10px 14px; }
 .international-intro > div { flex: 1 1 210px; }
 .international-intro select { max-width: none; }
@@ -7,8 +22,13 @@ a { color: var(--gold); }
 .international-intro p { margin: 5px 0 0; }
 #international-groups section { margin-top: 26px; }
 #international-groups h2 { margin: 0 0 10px; font-size: 20px; }
-.international-entry { background: var(--panel); border: 1px solid #43536a; border-radius: 13px; padding: 16px; margin-bottom: 10px; }
+.international-entry { background: var(--panel); color: #fff8d3; border: 1px solid #121626; border-radius: 13px; padding: 16px; margin-bottom: 10px; }
+.international-entry h3, .international-entry a { color: #ffd700; }
+.international-entry .international-meta { color: #eedf9e; }
 .international-entry h3 { margin: 0 0 4px; }
 .international-entry p { margin: 8px 0; line-height: 1.5; }
 .international-meta, .international-empty { margin: 0; }
 .international-links { display: flex; gap: 12px; flex-wrap: wrap; }
+@media (max-width: 420px) {
+ body[data-sport="international"] .brandname { display: none; }
+}
