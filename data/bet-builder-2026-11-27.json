@@ -1,0 +1,245 @@
+{
+  "schema_version": 2,
+  "fictional_only": true,
+  "opening_balance_gbp": 0,
+  "commission_rate": 0.05,
+  "bank_trial": {
+    "start_date": "2026-10-23",
+    "accounting_model": "ZERO_START_UNLIMITED_SIMULATED_OVERDRAFT",
+    "initial_balance_gbp": 0,
+    "percentage_benchmark_gbp": 10000,
+    "automatic_deposits": false,
+    "deposits": [],
+    "withdrawals": [],
+    "results_publish_when": "ALL_DAILY_RACES_FINISHED_AND_RESULTS_VERIFIED",
+    "performance_formula": "cumulative net profit or loss / 10000 * 100",
+    "authorization": "User replaced funded banks and top-ups with zero-start unlimited simulated overdraft; simplified results to the single £500-per-race view."
+  },
+  "preserve_device_choices": true,
+  "date": "2026-11-27",
+  "introduced_at": "2026-11-27T06:19:05Z",
+  "rows": [
+    {
+      "tier": "selection",
+      "original_status": "Selection",
+      "display_status": "Selection",
+      "original_assessment": "Strong candidate",
+      "selection_status": "SELECTION",
+      "competition_confidence_percent": null,
+      "qualitative_confidence": "Qualitative comparative racing evidence",
+      "selection_timestamp_precision": "REVIEW_COMPLETED_MINUTE",
+      "methodology_version": "evidence_and_price_review_v4_2026-11-05",
+      "official_accuracy_eligible": false,
+      "horse": "Kap Ouest",
+      "course": "Newbury",
+      "off_time_uk": "14:25",
+      "race_id": "rac_32305734812",
+      "horse_id": "hrs_37807133",
+      "race_date": "2026-11-27",
+      "scheduled_off_dt": "2026-11-27T14:25:00+00:00",
+      "lay_odds": 3.55,
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race",
+      "racecard_verified_at": "2026-11-27T06:21:23.724Z",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-27",
+      "results_link_type": "DATE_RESULTS_FALLBACK",
+      "interest_rank": 1,
+      "selected_at": "2026-11-27T06:16:00Z",
+      "added_at": "2026-11-27T06:19:05Z",
+      "user_approved_at": "2026-11-27T06:19:05Z",
+      "user_approval_text": "Approve and publish",
+      "user_approval_time_note": "First system clock check after the approval message.",
+      "price_approved_at": "2026-11-27T06:19:05Z",
+      "price_approval_text": "Approve and publish",
+      "original_pre_race_review_at": "2026-11-27T06:16:00Z",
+      "original_pre_race_assessment": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off. He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
+      "field_size": 8,
+      "going": "GOOD",
+      "surface": "Turf",
+      "race_name": "Coral \"Bet£10 Get£50 Sign Up Offer\" Handicap Steeple Chase (GBB Race)",
+      "result_status": "PENDING",
+      "verification_status": "PENDING",
+      "booked_profit_gbp": 0,
+      "booked_profit_decimal": "0",
+      "winner": null,
+      "position": null,
+      "selection_reason": {
+        "summary": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off. He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
+        "counterargument": "He won at Exeter by five lengths with something in hand, had already been second over 2m3f at Doncaster and carries 10 st 3 lb. He has scope to outrun 125.",
+        "why_still_oppose": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off.",
+        "rival_limitations": "Last year's winner, second over the same course and distance in March. Effective 11 st 10 lb after Jay Tidball's 5 lb claim. Pulled up on his 3m reappearance. Course winner, back to his last winning mark after a recent Aintree run. Cheekpieces are refitted. The latest fourth was well beaten.",
+        "challengers": [
+          "Twinjets",
+          "Etalon"
+        ],
+        "ranked_challengers": [
+          {
+            "rank": 1,
+            "horse": "Twinjets",
+            "evidence_and_limitations": "Last year's winner, second over the same course and distance in March. Effective 11 st 10 lb after Jay Tidball's 5 lb claim. Pulled up on his 3m reappearance."
+          },
+          {
+            "rank": 2,
+            "horse": "Etalon",
+            "evidence_and_limitations": "Course winner, back to his last winning mark after a recent Aintree run. Cheekpieces are refitted. The latest fourth was well beaten."
+          }
+        ],
+        "source": "The Racing API Pro and Sporting Life",
+        "evidence_urls": [
+          "https://www.sportinglife.com/racing/racecards/2026-11-27/newbury/racecard/950488/coral-bet10-get50-sign-up-offer-handicap-chase-gbb-race"
+        ],
+        "checked_at": "2026-11-27T06:16:00Z",
+        "sporting_life_checked_at": "2026-11-27T06:21:23.724Z",
+        "evidence_status": "RACING_API_PRO_AND_SPORTING_LIFE",
+        "anticipated_mechanism": "Twinjets has won this race and Etalon has course form and a recent run. Kap Ouest is up 9 lb, steps up a class and returns from 266 days off."
+      },
+      "identified_challengers": [
+        "Twinjets",
+        "Etalon"
+      ],
+      "ranked_challengers": [
+        {
+          "rank": 1,
+          "horse": "Twinjets",
+          "evidence_and_limitations": "Last year's winner, second over the same course and distance in March. Effective 11 st 10 lb after Jay Tidball's 5 lb claim. Pulled up on his 3m reappearance."
+        },
+        {
+          "rank": 2,
+          "horse": "Etalon",
+          "evidence_and_limitations": "Course winner, back to his last winning mark after a recent Aintree run. Cheekpieces are refitted. The latest fourth was well beaten."
+        }
+      ],
+      "lay_price_provenance": {
+        "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+        "snapshot_path": "data/delayed-quotes-latest.json",
+        "snapshot_commit": "a39f1ceb2ad485dd3dab0706eb3744723b23171c",
+        "snapshot_blob_sha": "2ca31cf745c6c7bcc043a4128206a9d0199cf9fa",
+        "started_at_utc": "2026-11-27T06:05:30.681351+00:00",
+        "snapshot_retrieved_at_utc": "2026-11-27T06:05:32.524624+00:00",
+        "retrieved_at_utc": "2026-11-27T06:05:31.412635+00:00",
+        "retrieved_at": "2026-11-27T06:05:31.412635+00:00",
+        "market_id": "1.266070971",
+        "selection_id": 62271599,
+        "api_field": "ex.availableToLay",
+        "price_side": "LAY",
+        "original_price_side": "LAY",
+        "currency": "GBP",
+        "displayed_amount_gbp": 21.2,
+        "displayed_liquidity_gbp": 21.2,
+        "liquidity_gbp": 21.2,
+        "is_market_data_delayed": true,
+        "quote_timestamp": null,
+        "exact_delay_seconds": null,
+        "full_stake_match_verified": false,
+        "provider": "Betfair Exchange",
+        "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+        "verification_status": "VERIFIED_API_LAY",
+        "capture_type": "RACE_DAY_APPROVED_BASELINE",
+        "race_day_capture": true,
+        "quote_quality_note": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £21.20 displayed. Full-stake matching unverified."
+      },
+      "source": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £21.20 displayed. Full-stake matching unverified.",
+      "available_stake_gbp": 21.2,
+      "market_position_note": "Shortest verified race-day Exchange Lay quote. Bluey remained declared at the card check after winning Thursday at Market Rasen and is shown with a 6 lb penalty if she runs. The opposition case rests on Twinjets and Etalon.",
+      "simulation": {
+        "liability_gbp": 500,
+        "commission_rate": 0.05,
+        "required_stake_gbp": 196.07843137254903,
+        "required_stake_decimal": "196.0784313725490196078431372549",
+        "potential_net_profit_gbp": 186.27450980392157,
+        "potential_net_profit_decimal": "186.2745098039215686274509803922",
+        "failure_gbp": -500,
+        "nr_gbp": 0,
+        "booked_profit_gbp": 0,
+        "full_stake_match_verified": false,
+        "value_status": "UNPROVEN",
+        "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
+      },
+      "group_membership_frozen": true,
+      "price_review_stage": "APPROVED_FRIDAY_MORNING_BASELINE",
+      "price_quality_warning": "Indicative delayed quote. Full-stake matching and exact quote time remain unverified.",
+      "price_observation_history": [
+        {
+          "price": 3.75,
+          "displayed_amount_gbp": 15,
+          "stage": "THURSDAY_ADVANCE_QUOTE",
+          "approved": false,
+          "price_side": "LAY",
+          "snapshot_commit": "7e7286b55710268427d939e591080cb09701bda6",
+          "snapshot_blob_sha": "c77ed69aa871ba4b8bbb069f6d08fed8c269e4c1",
+          "snapshot_retrieved_at_utc": "2026-11-26T11:05:23.176042+00:00",
+          "retrieved_at_utc": "2026-11-26T11:05:23.058241+00:00",
+          "market_id": "1.266070971",
+          "selection_id": 62271599
+        },
+        {
+          "snapshot_repository": "jcmracinguk/jcm-betfair-checker",
+          "snapshot_path": "data/delayed-quotes-latest.json",
+          "snapshot_commit": "a39f1ceb2ad485dd3dab0706eb3744723b23171c",
+          "snapshot_blob_sha": "2ca31cf745c6c7bcc043a4128206a9d0199cf9fa",
+          "started_at_utc": "2026-11-27T06:05:30.681351+00:00",
+          "snapshot_retrieved_at_utc": "2026-11-27T06:05:32.524624+00:00",
+          "retrieved_at_utc": "2026-11-27T06:05:31.412635+00:00",
+          "retrieved_at": "2026-11-27T06:05:31.412635+00:00",
+          "market_id": "1.266070971",
+          "selection_id": 62271599,
+          "api_field": "ex.availableToLay",
+          "price_side": "LAY",
+          "original_price_side": "LAY",
+          "currency": "GBP",
+          "displayed_amount_gbp": 21.2,
+          "displayed_liquidity_gbp": 21.2,
+          "liquidity_gbp": 21.2,
+          "is_market_data_delayed": true,
+          "quote_timestamp": null,
+          "exact_delay_seconds": null,
+          "full_stake_match_verified": false,
+          "provider": "Betfair Exchange",
+          "source_type": "BETFAIR_EXCHANGE_API_DELAYED",
+          "verification_status": "VERIFIED_API_LAY",
+          "capture_type": "RACE_DAY_APPROVED_BASELINE",
+          "race_day_capture": true,
+          "quote_quality_note": "Approved 27 November 06:05:32 GMT delayed Betfair Exchange Lay capture. £21.20 displayed. Full-stake matching unverified.",
+          "price": 3.55,
+          "stage": "FRIDAY_APPROVED_BASELINE",
+          "approved": true,
+          "approval_recorded_at": "2026-11-27T06:19:05Z"
+        }
+      ],
+      "material_developments": [
+        {
+          "observed_at": "2026-11-27T06:19:05Z",
+          "type": "USER_APPROVAL",
+          "authorization": "Approve and publish",
+          "group": "Pick",
+          "frozen_lay_odds": 3.55
+        }
+      ],
+      "result_history": [],
+      "research_theory_tags": [
+        {
+          "theory_id": "JCM_CHASE_RISE_OPPOSITION",
+          "version": 1,
+          "definition_record": "data/watchlist-research-2026-11-21.json",
+          "prospective_batch_record": "data/watchlist-research-2026-11-27.json",
+          "independent_pick_case": true
+        }
+      ]
+    }
+  ],
+  "simulation_note": "Approved Friday 27 November 06:05:32 GMT delayed Exchange Lay prices. £500 paper liability per race, 5% commission, full matching unverified.",
+  "published_simulations": {
+    "recorded_at": "2026-11-27T06:19:05Z",
+    "authorization": "Approve and publish",
+    "race": {
+      "entries": [
+        {
+          "race_id": "rac_32305734812",
+          "horse_id": "hrs_37807133",
+          "odds": 3.55,
+          "liability_cents": 50000
+        }
+      ]
+    }
+  },
+  "published_simulation_history": []
+}
