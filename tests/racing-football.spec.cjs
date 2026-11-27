@@ -44,20 +44,18 @@ test('direct football page still displays its own results',async({page})=>{
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
 });
-test('UK hub opens International and football accumulator stays separate',async({page})=>{
+test('UK and International hubs expose only Picks and Watch List tiles',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
  const tiles=page.locator('.jcm-hub-grid [data-page]');
- const order=await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page));
+ await expect(tiles).toHaveCount(2);
+ expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['picks','watch-list']);
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html\?region=international#hub$/);
  await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
- expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(order);
+ expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['picks','watch-list']);
  await expect(page.locator('#jcm-profit-summary')).toContainText('£0');
  await expect(page.locator('#jcm-watch-profit-summary')).toContainText('£0');
- await page.locator('[data-page="dummy-account"]').click();
- await expect(page.locator('#jcm-detail-content')).toContainText('No approved International Picks');
- await page.getByRole('button',{name:'Close details'}).click();
  await page.locator('[data-page="watch-list"]').click();
  await expect(page.locator('#jcm-official-panel')).toContainText('No Watch List entries for this date');
  await page.getByRole('button',{name:/Sentosa/}).click();
@@ -67,6 +65,8 @@ test('UK hub opens International and football accumulator stays separate',async(
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
+});
+test('football accumulator stays separate',async({page})=>{
  await page.goto(url+'football.html#hub');
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
  await expect(page.locator('#jcm-profit-summary summary')).toContainText(/[-−]£100/);
@@ -83,21 +83,28 @@ test('UK hub opens International and football accumulator stays separate',async(
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
 
-test('approved International Picks feed their own Bet Builder and never load UK records',async({page})=>{
+test('settled International Picks feed their own P/L and never load UK records',async({page})=>{
  const domesticRequests=[];
  page.on('request',request=>{
   if(/\/data\/(watch-list|rated-performance-sources|bet-builder|competition-research)/.test(request.url()))domesticRequests.push(request.url());
  });
  await page.route('**/data/international-racing.json',route=>route.fulfill({json:{schema_version:1,days:[{
-  date:'2026-11-28',watchlist:[],research:[],
+  date:'2026-11-26',watchlist:[],research:[],
   picks:[{horse:'International fixture horse',course:'Lyon-Parilly',race_id:'rac_1',horse_id:'hrs_1',
-   scheduled_off_dt:'2026-11-28T12:52:00Z',lay_odds:3,price_approved_at:'2026-11-27T22:00:00Z'}]
+   scheduled_off_dt:'2026-11-26T12:52:00Z',lay_odds:3,price_approved_at:'2026-11-26T08:00:00Z',
+   result_status:'WIN',position:'2',result_source:'THE_RACING_API',verification_status:'PROVIDER_ACCEPTED',
+   result_source_url:'https://api.theracingapi.com/v1/results/rac_1',result_race_id:'rac_1',result_horse_id:'hrs_1',
+   result_date:'2026-11-26',result_off_time_uk:'12:52',result_course:'Lyon-Parilly',result_horse:'International fixture horse',
+   result_off_dt:'2026-11-26T12:52:00Z',result_retrieved_at:'2026-11-26T13:04:00Z',official_accuracy_eligible:false}]
  }]}}));
  await page.goto(url+'international.html#picks');
  await expect(page.locator('#jcm-official-panel')).toContainText('International fixture horse');
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
- await page.locator('[data-page="dummy-account"]').click();
- await expect(page.locator('#jcm-detail-content')).toContainText('International fixture horse');
+ const profit=page.locator('#jcm-profit-summary');
+ await profit.locator('summary').click();
+ await profit.locator('.jcm-profit-week-head').click();
+ await expect(profit.locator('.jcm-profit-entry')).toContainText('International fixture horse');
+ await expect(profit.locator('.jcm-profit-entry')).toContainText('+£237.50');
  expect(domesticRequests).toEqual([]);
 });
 
