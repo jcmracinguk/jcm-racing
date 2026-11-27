@@ -60,12 +60,50 @@ test('UK and International hubs expose only Picks and Watch List tiles',async({p
  await expect(page.locator('#jcm-official-panel')).toContainText('No Watch List entries for this date');
  await page.getByRole('button',{name:/Sentosa/}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
- await expect(page.getByRole('link',{name:/View this racecard/})).toHaveAttribute('href',/zeturf/);
+ await expect(page.getByRole('link',{name:/Browse Sporting Life racecards/})).toHaveAttribute('href','https://www.sportinglife.com/racing/racecards');
+ await expect(page.getByRole('link',{name:/Browse Sporting Life results/})).toHaveAttribute('href',/sportinglife\.com\/racing\/results\//);
+ await expect(page.getByRole('link',{name:/watch race|race video/i})).toHaveCount(0);
  await page.getByRole('button',{name:'Close details'}).click();
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
+test('paper lay shows two figures at the approved price for settled horses',async({page})=>{
+ await page.goto(url+'#picks');
+ await page.locator('#date').selectOption('2026-11-27');
+ await page.getByRole('button',{name:/Kap Ouest/}).click();
+ const detail=page.locator('#jcm-detail-content');
+ const paper=detail.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Paper lay',exact:true})});
+ await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['3.55','£186.27']);
+ await expect(paper).not.toContainText('£10 lay stake');
+ await expect(detail.getByRole('link',{name:/watch race|race video/i})).toHaveCount(0);
+ await page.getByRole('button',{name:'Close details'}).click();
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('[data-page="watch-list"]').click();
+ await page.locator('#jcm-watch-date').selectOption('2026-11-27');
+ await page.getByRole('button',{name:/Klub de Reve/i}).click();
+ await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['2.88','£252.66']);
+ await expect(paper).not.toContainText('Paper P/L');
+});
+
+test('paper lay uses the newest verified pre-off snapshot for a pending horse',async({page})=>{
+ await page.clock.install({time:new Date('2026-11-27T11:30:00Z')});
+ await page.goto(url+'#picks');
+ await page.evaluate(()=>{
+  const quote={market_id:'1.123',selection_id:321,verification_status:'VERIFIED_API_LAY',price_side:'LAY'};
+  window.jcmShowResearchCard({horse:'Fixture',course:'Newbury',race_date:'2026-11-27',
+   off_time_uk:'12:00',scheduled_off_dt:'2026-11-27T12:00:00Z',result_status:'PENDING',
+   identified_challengers:[],lay_odds:3,lay_price_provenance:{...quote,retrieved_at_utc:'2026-11-27T10:00:00Z'},
+   price_observation_history:[
+    {...quote,price:2.9,retrieved_at_utc:'2026-11-27T11:00:00Z'},
+    {...quote,price:2.6,selection_id:555,retrieved_at_utc:'2026-11-27T11:10:00Z'},
+    {...quote,price:2.5,price_side:'BACK',retrieved_at_utc:'2026-11-27T11:15:00Z'}
+   ]});
+ });
+ const paper=page.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Paper lay',exact:true})});
+ await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['2.90','£250.00']);
+});
+
 test('football accumulator stays separate',async({page})=>{
  await page.goto(url+'football.html#hub');
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
