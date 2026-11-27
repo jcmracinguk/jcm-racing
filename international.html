@@ -3,41 +3,11 @@
 <head>
  <meta charset="utf-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="theme-color" content="#ffd700">
+ <meta name="theme-color" content="#0d3032">
  <title>International · JCM Racing</title>
- <link rel="stylesheet" href="scripts/jcm-shell.css">
- <link rel="stylesheet" href="scripts/sport-switch.css?v=20261127-international">
- <link rel="stylesheet" href="scripts/international.css?v=20261127-gold">
- <script src="scripts/sport-switch.js?v=20261127-international" defer></script>
- <script src="scripts/international.js" defer></script>
+ <script>location.replace('index.html?region=international' + location.hash);</script>
 </head>
-<body data-sport="international">
- <header>
-  <div class="head brand">
-   <div class="identity"><img src="jcm-logo.svg" alt=""><span class="brandname">JCM RACING</span></div>
-  </div>
- </header>
- <main>
-  <div class="international-intro">
-   <div><h1>International</h1><p>Paper trial · All times shown in UK time</p></div>
-   <label for="international-date" hidden>Race date</label>
-   <select id="international-date" hidden></select>
-  </div>
-  <p id="international-status" role="status">Loading international races…</p>
-  <div id="international-groups" hidden>
-   <section aria-labelledby="international-picks-title">
-    <h2 id="international-picks-title">Picks</h2>
-    <div id="international-picks"></div>
-   </section>
-   <section aria-labelledby="international-watchlist-title">
-    <h2 id="international-watchlist-title">Watchlist</h2>
-    <div id="international-watchlist"></div>
-   </section>
-   <section id="international-research-section" aria-labelledby="international-research-title" hidden>
-    <h2 id="international-research-title">Form to recheck</h2>
-    <div id="international-research"></div>
-   </section>
-  </div>
- </main>
+<body>
+ <a href="index.html?region=international">Open International Racing</a>
 </body>
 </html>

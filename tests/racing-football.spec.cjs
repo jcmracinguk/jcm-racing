@@ -11,11 +11,13 @@ test('UK and International switch on mobile without changing UK results',async({
  const slider=page.locator('header .jcm-sport-switch');
  await expect(slider.locator('.jcm-sport-label')).toHaveText(['UK','International']);
  await slider.click();
- await expect(page).toHaveURL(/international\.html#picks$/);
- await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
+ await expect(page).toHaveURL(/index\.html\?region=international#picks$/);
+ await expect(page.getByRole('heading',{name:'Daily picks',exact:true})).toBeVisible();
+ await expect(page.locator('#date')).toHaveValue('2026-11-28');
+ await expect(page.locator('#jcm-official-panel')).toContainText('No Picks for this date.');
+ await expect(page.locator('.metrics .metric strong')).toHaveText(['—','0','0','0','—','—','—','—']);
  await expect(slider.getByRole('switch',{name:'International view'})).toBeChecked();
- await expect(page.locator('body')).toHaveCSS('background-color','rgb(255, 215, 0)');
- await expect(page.locator('body')).toHaveCSS('color','rgb(18, 22, 38)');
+ await expect(page.locator('body')).toHaveCSS('background-color','rgb(13, 48, 50)');
  await page.setViewportSize({width:320,height:780});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await slider.click();
@@ -45,10 +47,25 @@ test('direct football page still displays its own results',async({page})=>{
 test('UK hub opens International and football accumulator stays separate',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
+ const tiles=page.locator('.jcm-hub-grid [data-page]');
+ const order=await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page));
  await page.locator('#jcm-hub .jcm-sport-switch').click();
- await expect(page).toHaveURL(/international\.html#hub$/);
+ await expect(page).toHaveURL(/index\.html\?region=international#hub$/);
  await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
- await page.locator('header .jcm-sport-switch').click();
+ expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(order);
+ await expect(page.locator('#jcm-profit-summary')).toContainText('£0');
+ await expect(page.locator('#jcm-watch-profit-summary')).toContainText('£0');
+ await page.locator('[data-page="dummy-account"]').click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('No approved International Picks');
+ await page.getByRole('button',{name:'Close details'}).click();
+ await page.locator('[data-page="watch-list"]').click();
+ await expect(page.locator('#jcm-official-panel')).toContainText('No Watch List entries for this date');
+ await page.getByRole('button',{name:/Sentosa/}).click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
+ await expect(page.getByRole('link',{name:/View this racecard/})).toHaveAttribute('href',/zeturf/);
+ await page.getByRole('button',{name:'Close details'}).click();
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
  await page.goto(url+'football.html#hub');
  await expect(page.getByRole('heading',{name:'Your football hub'})).toBeVisible();
@@ -64,6 +81,24 @@ test('UK hub opens International and football accumulator stays separate',async(
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
+});
+
+test('approved International Picks feed their own Bet Builder and never load UK records',async({page})=>{
+ const domesticRequests=[];
+ page.on('request',request=>{
+  if(/\/data\/(watch-list|rated-performance-sources|bet-builder|competition-research)/.test(request.url()))domesticRequests.push(request.url());
+ });
+ await page.route('**/data/international-racing.json',route=>route.fulfill({json:{schema_version:1,days:[{
+  date:'2026-11-28',watchlist:[],research:[],
+  picks:[{horse:'International fixture horse',course:'Lyon-Parilly',race_id:'rac_1',horse_id:'hrs_1',
+   scheduled_off_dt:'2026-11-28T12:52:00Z',lay_odds:3,price_approved_at:'2026-11-27T22:00:00Z'}]
+ }]}}));
+ await page.goto(url+'international.html#picks');
+ await expect(page.locator('#jcm-official-panel')).toContainText('International fixture horse');
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('[data-page="dummy-account"]').click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('International fixture horse');
+ expect(domesticRequests).toEqual([]);
 });
 
 test('withdrawn football proposal stays out of stakes and results',async({page})=>{

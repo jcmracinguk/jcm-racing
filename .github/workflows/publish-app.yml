@@ -6,6 +6,7 @@ on:
       - index.html
       - international.html
       - scripts/international.*
+      - scripts/racing-data.js
       - data/international-racing.json
       - jcm-logo.svg
       - football.html

@@ -11,9 +11,9 @@ const safe=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'
 const key=r=>[r.off_time_uk,r.course,r.horse].join('|');
 const labelDate=d=>new Date(d+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'});
 let mode='race',generation=0,lockTimer,refreshTimer,resultsDay=null,resultsMonth=null;
-const read=async path=>{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error('Unavailable');return r.json();};
+const read=window.jcmReadRacingData || (async path=>{const r=await fetch(path,{cache:'no-store'});if(!r.ok)throw Error('Unavailable');return r.json();});
 const day=()=>document.getElementById('date').value;
-const storage=(d,m)=>'jcm-builder-v3-'+d+'-'+m;
+const storage=(d,m)=>'jcm-builder-v3-'+(window.jcmInternational?'international-':'')+d+'-'+m;
 const cents=v=>{const raw=String(v).trim(),n=Number(raw),c=Math.round(n*100);return raw&&Number.isFinite(n)&&Number.isSafeInteger(c)&&c>0&&Math.abs(n*100-c)<1e-6?c:null;};
 const price=v=>{const raw=String(v??'').trim(),n=Number(raw);return raw&&Number.isFinite(n)&&n>=1.01&&n<=1000?n:null;};
 const off=r=>Date.parse(r.scheduled_off_dt);
@@ -27,7 +27,7 @@ window.jcmAddAccountSwitch=function(node){
 function validateConfig(c,d){
  if(c.schema_version!==2||c.fictional_only!==true||c.date!==d||![0,5000,10000].includes(c.opening_balance_gbp)||c.commission_rate!==.05||!Number.isFinite(Date.parse(c.introduced_at))||!Array.isArray(c.rows)||!c.rows.length)throw Error('Invalid card');
  if(new Set(c.rows.map(key)).size!==c.rows.length||new Set(c.rows.map(r=>r.race_id)).size!==c.rows.length)throw Error('Duplicate race');
- for(const r of c.rows)if(r.race_date!==d||!r.race_id||!r.horse_id||!r.horse||!r.course||!/^\d\d:\d\d$/.test(r.off_time_uk)||!Number.isFinite(off(r))||!r.scheduled_off_dt.startsWith(d+'T'+r.off_time_uk+':')||r.lay_odds!==null&&price(r.lay_odds)!==r.lay_odds)throw Error('Invalid identity');
+ for(const r of c.rows)if(r.race_date!==d||!r.race_id||!r.horse_id||!r.horse||!r.course||!/^\d\d:\d\d$/.test(r.off_time_uk)||!Number.isFinite(off(r))||(!window.jcmInternational&&!r.scheduled_off_dt.startsWith(d+'T'+r.off_time_uk+':'))||r.lay_odds!==null&&price(r.lay_odds)!==r.lay_odds)throw Error('Invalid identity');
  return c;
 }
 function mergeResults(c,p){
@@ -155,6 +155,12 @@ async function open(next='race'){
  overlay.querySelector('.jcm-modal')?.scrollTo(0,0);node.innerHTML='<h2>Bet Builder</h2><p role="status">Loading…</p>';window.jcmAddAccountSwitch(node,next);overlay.querySelector('.jcm-close').focus();
  try{
   const days=await read('data/bet-builder-days.json');if(token!==generation)return;
+  if(window.jcmInternational&&!days.days.includes(d)){
+   const options=Array.from(document.getElementById('date').options);
+   node.innerHTML='<h2>Bet Builder · '+names[next]+'</h2><label class="builder-date">Racing day <select id="builder-day">'+options.map(option=>'<option value="'+safe(option.value)+'" '+(option.value===d?'selected':'')+'>'+safe(option.textContent)+'</option>').join('')+'</select></label><p>No approved International Picks for this date.</p>';
+   node.querySelector('#builder-day').addEventListener('change',e=>{document.getElementById('date').value=e.target.value;open(next);});
+   return;
+  }
   if(!days.days.includes(d))throw Error('No account card for date');
   let c=await card(d),rows=c.rows;const carried=await carriedBank(d,next,days);c.account_opening_cents=d>=bankTrial.start?carried.bank:opening(c,next);c.carried_reserved_cents=carried.reserved;c.carried_deposits_cents=carried.deposits;c.carried_withdrawals_cents=carried.withdrawals;
   if(token!==generation)return;
@@ -172,7 +178,7 @@ async function open(next='race'){
   function draw(message=''){
    if(token!==generation||!overlay.classList.contains('open'))return;
    const t=totals(c,rows,s),amountLocked=s.published||Date.now()>=first,hasEstimate=rows.some(r=>selected(s,r)&&s.entries[key(r)]?.odds===null);
-   node.innerHTML='<h2>Bet Builder · '+names[next]+'</h2><label class="builder-date">Racing day <select id="builder-day">'+days.days.map(v=>'<option value="'+v+'" '+(v===d?'selected':'')+'>'+labelDate(v)+'</option>').join('')+'</select></label>'+
+   node.innerHTML='<h2>Bet Builder · '+names[next]+'</h2><label class="builder-date">Racing day <select id="builder-day">'+(window.jcmInternational?Array.from(document.getElementById('date').options,option=>option.value):days.days).map(v=>'<option value="'+v+'" '+(v===d?'selected':'')+'>'+labelDate(v)+'</option>').join('')+'</select></label>'+
     (c.research_summary?'<p class="builder-note" data-research-coverage>'+safe(c.research_summary)+'</p>':'')+
     '<section class="builder-tile builder-potential"><h3>'+(t.unresolved?'Profit / Loss Calculator':'Profit / Loss')+'</h3><strong data-builder-potential>'+ (t.potential===null?'Unavailable':signedMoney(t.potential)+(hasEstimate?'*':''))+'</strong><p class="builder-note">'+(t.unresolved?'Simulation · after 5% commission · assumes remaining horses are beaten.':'Settled total · after 5% commission.')+(hasEstimate?'<br>* Estimate: +£100 for a lay win or −£500 for a lay loss where no odds were recorded.':'')+'</p></section>'+
     '<p id="builder-message" role="status">'+safe(message)+'</p><p class="builder-note">'+(s.published?'Simulation booked · published record retained across devices.':'Simulation · liability at risk · saved on this device.')+'</p>'+

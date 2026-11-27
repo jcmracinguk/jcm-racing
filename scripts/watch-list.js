@@ -30,9 +30,7 @@
   async function read() {
     if (request) return request;
     request = (async () => {
-      const response = await fetch('data/watch-list.json', { cache: 'no-store' });
-      if (!response.ok) throw new Error('Watch List unavailable');
-      const ledger = await response.json();
+      const ledger = await window.jcmReadRacingData('data/watch-list.json');
       if (ledger.schema_version !== 1 || !Array.isArray(ledger.entries)) throw new Error('Invalid Watch List');
       updateDailyRate(ledger.entries);
       return ledger;
