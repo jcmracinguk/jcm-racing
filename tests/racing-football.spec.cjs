@@ -61,13 +61,27 @@ test('direct football page still displays its own results',async({page})=>{
 test('UK and International hubs put Today’s Bets above both results tiles',async({page})=>{
  await page.goto(url+'#hub');
  await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
- const tiles=page.locator('.jcm-hub-grid [data-page]');
+ const tiles=page.locator('#jcm-hub [data-page]');
  await expect(tiles).toHaveCount(3);
  expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','picks-results','watchlist-results']);
+ await expect(page.getByRole('heading',{name:'Results',exact:true})).toBeVisible();
+ await expect(page.getByRole('article',{name:'Picks',exact:true}).locator('#jcm-profit-summary summary')).toBeVisible();
+ await expect(page.getByRole('article',{name:'Watchlist',exact:true}).locator('#jcm-watch-profit-summary summary')).toBeVisible();
+ await page.setViewportSize({width:320,height:780});
+ const [pickBox,watchBox]=await Promise.all([tiles.nth(1).boundingBox(),tiles.nth(2).boundingBox()]);
+ expect(pickBox.y).toBe(watchBox.y);
+ expect(pickBox.x+pickBox.width).toBeLessThan(watchBox.x);
+ await page.locator('#jcm-watch-profit-summary summary').click();
+ await expect(page.locator('#jcm-watch-profit-summary details')).toHaveAttribute('open','');
+ await expect(page.locator('#jcm-profit-summary details')).not.toHaveAttribute('open','');
+ await expect(page).toHaveURL(/#hub$/);
+ await page.locator('#jcm-watch-profit-summary summary').click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html\?region=international#hub$/);
  await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
  expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','picks-results','watchlist-results']);
+ await expect(page.getByRole('article',{name:'Picks',exact:true}).locator('#jcm-profit-summary summary')).toBeVisible();
+ await expect(page.getByRole('article',{name:'Watchlist',exact:true}).locator('#jcm-watch-profit-summary summary')).toBeVisible();
  await expect(page.locator('#jcm-profit-summary')).toContainText('£0');
  await expect(page.locator('#jcm-watch-profit-summary')).toContainText('£0');
  await page.locator('[data-page="todays-bets"]').click();

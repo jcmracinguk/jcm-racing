@@ -296,8 +296,8 @@ async function watchProfitSummary(){
 }
 async function updateHubProfit(){
  const tiles=[
-  ['jcm-profit-summary','Picks Profit / Loss',100,async()=>raceProfitSummary(await read('data/bet-builder-days.json'))],
-  ['jcm-watch-profit-summary','Watch List Profit / Loss',150,watchProfitSummary]
+  ['jcm-profit-summary','Profit / loss',100,async()=>raceProfitSummary(await read('data/bet-builder-days.json'))],
+  ['jcm-watch-profit-summary','Profit / loss',150,watchProfitSummary]
  ];
  await Promise.all(tiles.map(async ([id,title,fallback,load])=>{
   const node=document.getElementById(id);if(!node)return;

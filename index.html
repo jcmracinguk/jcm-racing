@@ -6,7 +6,7 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
  document.documentElement.dataset.region = 'international';
  document.querySelector('meta[name="theme-color"]').content = '#0d3032';
 }
-</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261127-separate-results"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
+</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261128-results-hub"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
 <style>#jcm-official-panel .jcm-research-row.jcm-competition-watchlist{border-color:#edbd57}.jcm-competition-watchlist .jcm-confidence.low{background:#70521b;border-color:#edbd57}</style>
 <style>
 #jcm-field-test{max-width:900px;margin:18px auto;padding:0 16px}#jcm-field-test[hidden]{display:none!important}.jcm-ft-wrap{border:1px solid #77623a;background:#202b3e;border-radius:14px;padding:16px}.jcm-ft-wrap h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-ft-note{font-size:12px;line-height:1.6;color:#d4dce9}.jcm-ft-card{background:#182336;border:1px solid #42516b;border-radius:10px;margin:9px 0;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.jcm-ft-name{font-weight:800}.jcm-ft-where{color:#d0d9e6;font-size:12px;margin-top:4px}.jcm-ft-rating{white-space:nowrap;color:#fff;background:#42506a;padding:7px;border-radius:7px;font-size:12px;font-weight:800}.jcm-ft-hub{border:1px solid #77623a!important}
@@ -107,7 +107,28 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
 (function(){
  const logo=document.querySelector('.identity img');
  const hub=document.createElement('div');hub.id='jcm-hub';hub.setAttribute('aria-label','JCM Racing Hub');
- hub.innerHTML='<div class="jcm-hub-inner"><div class="jcm-hub-top">'+(logo?'<img class="jcm-hub-mark" alt="JCM" src="'+logo.getAttribute('src')+'">':'')+'<div><div class="jcm-hub-eyebrow">JCM RACING <span class="jcm-hub-tagline">Better, informed.</span></div><h1 class="jcm-hub-title">'+(window.jcmInternational?'International':'UK')+'</h1></div></div><div class="jcm-hub-grid"><button type="button" class="jcm-hub-tile" data-page="todays-bets"><span class="jcm-hub-icon" aria-hidden="true">🎯</span><strong>Today’s Bets</strong><span>Picks and Watchlist in race-time order</span></button><button type="button" class="jcm-hub-tile" data-page="picks-results"><span class="jcm-hub-icon" aria-hidden="true">📋</span><strong>Picks Results</strong><span>Settled Picks by race date</span></button><button type="button" class="jcm-hub-tile" data-page="watchlist-results"><span class="jcm-hub-icon" aria-hidden="true">👁️</span><strong>Watchlist Results</strong><span>Settled Watchlist horses by race date</span></button></div><section id="jcm-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading £500 race profit / loss…</p></section><section id="jcm-watch-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading Watch List profit / loss…</p></section><p class="jcm-hub-foot">Private research · simulations only</p></div>';
+ hub.classList.add('jcm-racing-hub');
+ hub.innerHTML=`<div class="jcm-hub-inner">
+  <div class="jcm-hub-top">
+   ${logo?'<img class="jcm-hub-mark" alt="JCM" src="'+logo.getAttribute('src')+'">':''}
+   <div><div class="jcm-hub-eyebrow">JCM Racing</div><h1 class="jcm-hub-title">${window.jcmInternational?'International':'UK'}</h1></div>
+  </div>
+  <button type="button" class="jcm-hub-tile jcm-today-link" data-page="todays-bets"><strong>Today’s Bets</strong><span aria-hidden="true">›</span></button>
+  <section class="jcm-hub-results" aria-labelledby="jcm-hub-results-heading">
+   <h2 id="jcm-hub-results-heading">Results</h2>
+   <div class="jcm-hub-grid">
+    <article class="jcm-results-tile" aria-labelledby="jcm-picks-link">
+     <button id="jcm-picks-link" type="button" class="jcm-results-link" data-page="picks-results">Picks <span aria-hidden="true">›</span></button>
+     <div id="jcm-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading profit / loss…</p></div>
+    </article>
+    <article class="jcm-results-tile jcm-watch-results-tile" aria-labelledby="jcm-watchlist-link">
+     <button id="jcm-watchlist-link" type="button" class="jcm-results-link" data-page="watchlist-results">Watchlist <span aria-hidden="true">›</span></button>
+     <div id="jcm-watch-profit-summary" class="jcm-profit-card" aria-live="polite"><p>Loading profit / loss…</p></div>
+    </article>
+   </div>
+  </section>
+  <p class="jcm-hub-foot">Paper trial</p>
+ </div>`;
  document.body.append(hub);
  const head=document.querySelector('header .head');
  const home=document.createElement('button');home.type='button';home.className='jcm-home-link';home.innerHTML='<svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9"/><path d="M9 21v-8h6v8"/></svg>';home.setAttribute('aria-label','Return to JCM Hub');
@@ -385,5 +406,5 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadDay();
 setInterval(()=>{if(!document.hidden)loadDay();},30000);
 loadDay();
 })();
-</script><script src="scripts/fresh-tracker.js?v=20261127-parity"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261127-bets-results"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-separate-results"></script></body></html>
+</script><script src="scripts/fresh-tracker.js?v=20261127-parity"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261128-results-hub"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-separate-results"></script></body></html>
 
