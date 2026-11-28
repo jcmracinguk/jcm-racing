@@ -12832,9 +12832,9 @@
       "going": "Yielding",
       "surface": "Turf",
       "race_name": "Mullinam Hurdle (Grade 3)",
-      "result_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "WIN",
+      "booked_profit_gbp": 279.4117647058824,
+      "booked_profit_decimal": "279.4117647058823529411764706",
       "selection_reason": {
         "summary": "The 13 lb concession and the layoff create credible routes for two rivals, but Saratoga remains a strong winning candidate. Saratoga was still progressing when last seen and has the strongest Grade 1 win.",
         "counterargument": "Saratoga was still progressing when last seen and has the strongest Grade 1 win.",
@@ -12921,7 +12921,7 @@
         "potential_net_profit_decimal": "279.4117647058823529411764705882",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 279.4117647058824,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -12966,7 +12966,58 @@
           "approval_text": "Can you publish to the app please?"
         }
       ],
-      "result_history": []
+      "result_history": [],
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_date": "2026-11-28",
+      "result_off_time_uk": "13:30",
+      "result_course": "Fairyhouse",
+      "result_horse": "Saratoga",
+      "result_off_dt": "2026-11-28T13:30:00+00:00",
+      "result_retrieved_at": "2026-11-28T13:44:39.671874Z",
+      "result_race_id": "rac_32305982748",
+      "result_horse_id": "hrs_42781095",
+      "result_website_race_id": "950955",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/fairyhouse/950955/mullinam-hurdle-grade-3",
+      "result_non_runners": [],
+      "result_website_horse_id": "1152131",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "½",
+      "selected_beaten_lengths": "3.95",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Huntin Boots",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Ole Ole",
+          "margin_from_previous": "½",
+          "cumulative_beaten_lengths": "0.5"
+        },
+        {
+          "position": "3",
+          "horse": "Bartholomew",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "3.75"
+        },
+        {
+          "position": "4",
+          "horse": "Saratoga",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "3.95"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/fairyhouse/950955/mullinam-hurdle-grade-3",
+      "margin_retrieved_at": "2026-11-28T13:44:39.671874Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "4th",
+      "winner": "Huntin Boots"
     },
     {
       "tier": "watchlist",
