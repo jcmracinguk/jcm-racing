@@ -4,8 +4,28 @@
     {
       "date": "2026-11-28",
       "picks": [],
-      "watchlist": [],
-      "research": [
+      "watchlist": [
+        {
+          "horse": "Cosmic Speed",
+          "course": "Turffontein",
+          "country": "South Africa",
+          "scheduled_off_dt": "2026-11-28T10:45:00+00:00",
+          "observed_at": "2026-11-28T10:16:28Z",
+          "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-28/turffontein/racecard/951120/konica-minolta-sa-pinnacle-stakes",
+          "sporting_life_race_id": "951120",
+          "identified_challengers": [
+            "Greaterix",
+            "Texas Red",
+            "Sunset Riot"
+          ],
+          "reason": "Greaterix is closely matched with Cosmic Speed on their recent Grade 2 form. Texas Red is suited by this course and distance, and Sunset Riot comes off a win. Cosmic Speed finished strongly for second over a mile last time. The case is worth following, with limited Exchange liquidity at the review.",
+          "researchOnly": true,
+          "result_status": "PENDING",
+          "lay_odds": null,
+          "selection_status": "FORM_REVIEW",
+          "official_accuracy_eligible": false,
+          "moved_to_watchlist_at": "2026-11-28T10:16:28Z"
+        },
         {
           "horse": "Sentosa",
           "horse_id": "hrs_57160215",
@@ -16,9 +36,20 @@
           "observed_at": "2026-11-27T22:49:21.166Z",
           "reason": "Counselor was a neck behind Sentosa at Marseille-Borély and gets 2 kg better terms relative to her here. Sentosa has won twice in a row and is drawn in stall four against Counselor in nine. Confirm the market leader and declarations on race day.",
           "racecard_url": "https://www.zeturf.fr/fr/course-du-jour/2026-11-28/R2C7-lyon-parilly-prix-des-turfistes",
-          "form_url": "https://www.zeturf.nl/en/course-du-jour/2026-11-07/R3C4-marseille-borely-prix-de-la-major"
+          "form_url": "https://www.zeturf.nl/en/course-du-jour/2026-11-07/R3C4-marseille-borely-prix-de-la-major",
+          "researchOnly": true,
+          "result_status": "PENDING",
+          "lay_odds": null,
+          "selection_status": "FORM_REVIEW",
+          "official_accuracy_eligible": false,
+          "moved_to_watchlist_at": "2026-11-28T10:16:28Z",
+          "identified_challengers": [
+            "Counselor",
+            "Valderrama"
+          ]
         }
-      ]
+      ],
+      "research": []
     }
   ]
 }
