@@ -28,6 +28,7 @@
   }
 
   const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const weekday = new Intl.DateTimeFormat('en-GB', { weekday: 'short', timeZone: 'UTC' });
   window.jcmWatchList = {
     read,
     isSettled,
@@ -36,7 +37,8 @@
       const [year, month, day] = value.split('-');
       const number = Number(day);
       const suffix = number >= 11 && number <= 13 ? 'th' : ({1:'st',2:'nd',3:'rd'}[number % 10] || 'th');
-      return number + suffix + ' ' + months[Number(month) - 1] + '-' + year.slice(-2);
+      return weekday.format(new Date(value + 'T00:00:00Z')) + ' ' + number + suffix + ' ' +
+        months[Number(month) - 1] + '-' + year.slice(-2);
     },
     counts(ledger) {
       const counts = { WIN: 0, LOSS: 0, NR: 0, PENDING: 0 };

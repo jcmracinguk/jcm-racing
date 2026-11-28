@@ -57,6 +57,7 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
 .jcm-race-action{width:100%;padding:14px;min-height:44px;border:1px solid currentColor;border-radius:10px;background:transparent;color:var(--gold);font:inherit;font-weight:800;cursor:pointer}
 #jcm-official-panel .jcm-status.win{color:#85efb8}#jcm-official-panel .jcm-status.loss{color:#ff849d}
 @media(max-width:380px){.jcm-result-card{padding:18px 12px}.jcm-result-grid strong{font-size:17px}}
+@media(min-width:601px){body[data-racing-view] header .brand > #date{min-width:145px}}
 </style><link rel="stylesheet" href="scripts/international.css?v=20261127-parity"></head><body data-sport="racing"><header><div class="head"><div class="brand"><div class="identity"><img alt="JCM logo" src="./jcm-logo.svg"><div class="jcm-tagline">Better, informed</div></div><select id="date" aria-label="Racing date"><option value="2026-11-27">27th Nov-26</option><option value="2026-11-26">26th Nov-26</option><option value="2026-11-25">25th Nov-26</option><option value="2026-11-24">24th Nov-26</option><option value="2026-11-23">23rd Nov-26</option><option value="2026-11-22">22nd Nov-26</option><option value="2026-11-21">21st Nov-26</option><option value="2026-11-20">20th Nov-26</option><option value="2026-11-19">19th Nov-26</option><option value="2026-11-18">18th Nov-26</option><option value="2026-11-17">17th Nov-26</option><option value="2026-11-16">16th Nov-26</option><option value="2026-11-14">14th Nov-26</option><option value="2026-11-13">13th Nov-26</option><option value="2026-11-12">12th Nov-26</option><option value="2026-11-11">11th Nov-26</option><option value="2026-11-10">10th Nov-26</option><option value="2026-11-09">9th Nov-26</option><option value="2026-11-07">7th Nov-26</option><option value="2026-11-06">6th Nov-26</option></select></div><div class="metrics"><div class="metric"><strong>—</strong><small>OVERALL RESEARCH RESULTS</small></div><div class="metric"><strong>—</strong><small>WINS</small></div><div class="metric"><strong>—</strong><small>LOSSES</small></div><div class="metric"><strong>—</strong><small>NR</small></div></div></div></header><main></main><script src="scripts/racing-data.js?v=20261127-parity"></script><script>
 /* Presentation-only redesign; original results and audit data are preserved. */
 (function(){
@@ -210,7 +211,7 @@ window.jcmIsSettledPick = row =>
  }catch(_){window.jcmOverallRows=[];cards.forEach(c=>c.querySelector('strong').textContent='—');cards[0].querySelector('small').textContent='RESULTS UNAVAILABLE';root.dataset.overallState='error';}}
  load();
 })();
-</script><script src="scripts/watch-list.js?v=20261127-bets-results"></script><script>
+</script><script src="scripts/watch-list.js?v=20261128-weekday"></script><script>
 (function(){
 const date=document.getElementById('date'),panel=document.getElementById('jcm-official-panel');
 if(!date||!panel)return;
@@ -219,6 +220,7 @@ const londonDate=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/London'});
 const today=()=>londonDate.format(new Date());
 const viewTitles={'todays-bets':'Today’s Bets','picks-results':'Picks Results','watchlist-results':'Watchlist Results'};
 const originalDates=[...date.options].map(option=>option.value);
+for(const option of date.options)option.textContent=window.jcmWatchList.dateLabel(option.value);
 let selectedDate,day,activeView,detailRows=[],researchRows=[],state='loading',cardDetails=[],loadVersion=0,watchTotals='';
 function displayedLayOdds(r){
  const valid=price=>Number.isFinite(price)&&price>1;

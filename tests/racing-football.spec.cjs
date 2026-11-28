@@ -18,6 +18,7 @@ test('UK and International switch on mobile without changing UK results',async({
  await page.clock.install({time:new Date('2026-11-28T12:00:00Z')});
  await page.goto(url+'#picks-results');
  await expect(page.locator('#date option')).not.toHaveCount(0);
+ await expect(page.locator('#date option[value="2026-11-27"]')).toHaveText('Fri 27th Nov-26');
  await expect(page.locator('.metrics:visible .metric strong').first()).not.toHaveText('—');
  await expect(page.locator('#jcm-watch-metrics')).toBeHidden();
  const racingMetrics = await page.locator('.metrics:visible .metric strong').allTextContents();
@@ -28,6 +29,7 @@ test('UK and International switch on mobile without changing UK results',async({
  await expect(page).toHaveURL(/index\.html\?region=international#picks-results$/);
  await expect(page.getByRole('heading',{name:'Picks Results',exact:true})).toBeVisible();
  await expect(page.locator('#date')).toHaveValue('2026-11-28');
+ await expect(page.locator('#date option:checked')).toHaveText('Sat 28th Nov-26');
  await expect(page.locator('#jcm-official-panel')).toContainText('No settled results for this date.');
  await expect(page.locator('.metrics:visible .metric strong')).toHaveText(['—','0','0','0']);
  await expect(slider.getByRole('switch',{name:'International view'})).toBeChecked();
