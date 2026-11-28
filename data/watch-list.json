@@ -12474,9 +12474,9 @@
           "evidence_and_limitations": "Last year’s course-and-distance winner receives 7 lb, but Alexei finished ahead of her at Cheltenham and Aintree."
         }
       ],
-      "result_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "WIN",
+      "booked_profit_gbp": 325.3424657534247,
+      "booked_profit_decimal": "325.3424657534246575342465754",
       "group_membership_frozen": true,
       "historical": false,
       "source": "Approved Saturday 28 November 09:04:12 GMT delayed Betfair Exchange Lay capture. £88.00 displayed. Full-stake matching unverified.",
@@ -12593,11 +12593,70 @@
         "potential_net_profit_decimal": "325.3424657534246575342465753",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 325.3424657534247,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "2",
+      "result_source": "SPORTING_LIFE",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_date": "2026-11-28",
+      "result_off_time_uk": "14:00",
+      "result_course": "Newcastle",
+      "result_horse": "Mydaddypaddy",
+      "result_off_dt": "2026-11-28T14:00:00+00:00",
+      "result_retrieved_at": "2026-11-28T14:14:39.293818Z",
+      "result_race_id": "rac_32304617163",
+      "result_horse_id": "hrs_50401701",
+      "result_website_race_id": "948727",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/newcastle/948727/bowmer-and-kirkland-we-build-as-one-fighting-fifth-hurdle-grade-1-gbb-race",
+      "result_non_runners": [
+        "Nemean Lion"
+      ],
+      "result_website_horse_id": "1176233",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "nse",
+      "selected_beaten_lengths": "0.05",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Alexei",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Mydaddypaddy",
+          "margin_from_previous": "nse",
+          "cumulative_beaten_lengths": "0.05"
+        },
+        {
+          "position": "3",
+          "horse": "Minella Study",
+          "margin_from_previous": "2",
+          "cumulative_beaten_lengths": "2.05"
+        },
+        {
+          "position": "4",
+          "horse": "Golden Ace",
+          "margin_from_previous": "2 ¼",
+          "cumulative_beaten_lengths": "4.3"
+        },
+        {
+          "position": "5",
+          "horse": "Indemnity",
+          "margin_from_previous": "24",
+          "cumulative_beaten_lengths": "28.3"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/newcastle/948727/bowmer-and-kirkland-we-build-as-one-fighting-fifth-hurdle-grade-1-gbb-race",
+      "margin_retrieved_at": "2026-11-28T14:14:39.293818Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "2nd",
+      "winner": "Alexei"
     },
     {
       "tier": "watchlist",
