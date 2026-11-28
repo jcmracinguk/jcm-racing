@@ -151,7 +151,7 @@
           "sporting_life_race_id": "951370",
           "form_url": "https://www.zeturf.nl/en/course-du-jour/2026-11-07/R3C4-marseille-borely-prix-de-la-major",
           "researchOnly": true,
-          "result_status": "PENDING",
+          "result_status": "WIN",
           "lay_odds": null,
           "selection_status": "FORM_REVIEW",
           "official_accuracy_eligible": false,
@@ -159,7 +159,87 @@
           "identified_challengers": [
             "Counselor",
             "Valderrama"
-          ]
+          ],
+          "position": "7",
+          "result_source": "SPORTING_LIFE",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_date": "2026-11-28",
+          "result_off_time_uk": "12:52",
+          "result_course": "Lyon-Parilly",
+          "result_horse": "Sentosa",
+          "result_off_dt": "2026-11-28T12:52:00+00:00",
+          "result_retrieved_at": "2026-11-28T13:08:39.534397Z",
+          "result_race_id": "rac_32306337219",
+          "result_horse_id": "hrs_57160215",
+          "result_website_race_id": "951370",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/lyon-parilly/951370/prix-des-turfistes-handicap",
+          "result_non_runners": [
+            "Pas De Vagues"
+          ],
+          "result_website_horse_id": "1199151",
+          "result_stage": "WEIGHEDIN",
+          "winning_margin_lengths": "3",
+          "selected_beaten_lengths": "9.4",
+          "finish_margins": [
+            {
+              "position": "1",
+              "horse": "Counselor",
+              "margin_from_previous": null,
+              "cumulative_beaten_lengths": "0"
+            },
+            {
+              "position": "2",
+              "horse": "Le Landin",
+              "margin_from_previous": "3",
+              "cumulative_beaten_lengths": "3"
+            },
+            {
+              "position": "3",
+              "horse": "Muhaaria",
+              "margin_from_previous": "½",
+              "cumulative_beaten_lengths": "3.5"
+            },
+            {
+              "position": "4",
+              "horse": "Westminster Coyote",
+              "margin_from_previous": "nse",
+              "cumulative_beaten_lengths": "3.55"
+            },
+            {
+              "position": "5",
+              "horse": "Valderrama",
+              "margin_from_previous": "¾",
+              "cumulative_beaten_lengths": "4.3"
+            },
+            {
+              "position": "6",
+              "horse": "Zodiaco",
+              "margin_from_previous": "sh",
+              "cumulative_beaten_lengths": "4.4"
+            },
+            {
+              "position": "7",
+              "horse": "Sentosa",
+              "margin_from_previous": "5",
+              "cumulative_beaten_lengths": "9.4"
+            },
+            {
+              "position": "8",
+              "horse": "Tasteful",
+              "margin_from_previous": "20",
+              "cumulative_beaten_lengths": "29.4"
+            }
+          ],
+          "margin_source": "SPORTING_LIFE",
+          "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/lyon-parilly/951370/prix-des-turfistes-handicap",
+          "margin_retrieved_at": "2026-11-28T13:08:39.534397Z",
+          "margin_stage": "WEIGHEDIN",
+          "margin_verification_status": "WEBSITE_CONFIRMED",
+          "placing": "7th",
+          "winner": "Counselor",
+          "field_size": 8,
+          "race_name": "Prix Des Turfistes Handicap",
+          "booked_profit_gbp": 0
         }
       ],
       "research": []
