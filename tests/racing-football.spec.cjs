@@ -61,6 +61,7 @@ test('direct football page still displays its own results',async({page})=>{
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
 });
 test('UK and International have full-width tiles and show profit only inside each results page',async({page})=>{
+ await page.clock.install({time:new Date('2026-11-28T11:00:00Z')});
  await page.goto(url+'#hub');
  const picksProfit=page.locator('#jcm-profit-summary');
  const watchProfit=page.locator('#jcm-watch-profit-summary');
@@ -107,14 +108,17 @@ test('UK and International have full-width tiles and show profit only inside eac
  await expect(page.getByRole('button',{name:/Cosmic Speed/}).getByRole('img',{name:'South Africa',exact:true})).toBeVisible();
  await page.getByRole('button',{name:/Sentosa/}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
- await expectRaceInformation(page,'https://www.zeturf.fr/fr/course-du-jour/2026-11-28/R2C7-lyon-parilly-prix-des-turfistes');
+ await expectRaceInformation(page,'https://www.attheraces.com/racecard/Lyon-Parilly/28-November-2026/1252');
+ await page.getByRole('button',{name:'Close details'}).click();
+ await page.getByRole('button',{name:/Cosmic Speed/}).click();
+ await expectRaceInformation(page,'https://www.betfair.com/exchange/plus/horse-racing/market/1.266096018');
  await page.getByRole('button',{name:'Close details'}).click();
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
 test('lay details show two figures at the approved price for settled horses',async({page})=>{
- await page.clock.install({time:new Date('2026-11-27T20:00:00Z')});
+ await page.clock.install({time:new Date('2026-11-28T08:00:00Z')});
  await page.goto(url+'#picks-results');
  await page.locator('#date').selectOption('2026-11-27');
  await expect(page.getByRole('button',{name:/Kap Ouest/}).getByRole('img',{name:'United Kingdom',exact:true})).toBeVisible();
@@ -328,6 +332,12 @@ test('UK Watchlist entries can be browsed by date in bets and stay out of result
  await expect(panel).toContainText('Mydaddypaddy');
  await expect(panel.getByRole('button',{name:/Saratoga/}).getByRole('img',{name:'Ireland',exact:true})).toBeVisible();
  await expect(panel).toContainText('Idaho Sun');
+ await panel.getByRole('button',{name:/Palamon/}).click();
+ await expectRaceInformation(page,'https://www.betfair.com/exchange/plus/horse-racing/market/1.266111589');
+ await page.getByRole('button',{name:'Close details'}).click();
+ await panel.getByRole('button',{name:/Saratoga/}).click();
+ await expectRaceInformation(page,'https://www.betfair.com/exchange/plus/horse-racing/market/1.266110933');
+ await page.getByRole('button',{name:'Close details'}).click();
  await expect(panel.getByRole('button',{name:/Mydaddypaddy/})).toHaveCSS('border-left-color','rgb(98, 231, 219)');
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('[data-page="watchlist-results"]').click();

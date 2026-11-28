@@ -255,10 +255,17 @@ function displayedLayOdds(r){
 function detailFor(r){const matches=cardDetails.filter(m=>Boolean(m.watchList)===Boolean(r.watchList)&&m.date===r.race_date&&m.horse===r.horse&&m.course===r.course&&m.off_time_uk===r.off_time_uk);return matches.length===1?matches[0]:null;}
 function ordinal(v){const n=Number(v);if(!Number.isInteger(n)||n<1)return String(v||'Not supplied');const a=n%100;return n+(a>=11&&a<=13?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th'));}
 function margin(v){if(typeof v!=='string'||!v.trim())return 'Not supplied';return /^[0-9]*[.]?[0-9]+$/.test(v)&&Number.isFinite(Number(v))?Number(v)+' lengths':v;}
-function racecardLink(metadata,row){
+function raceInformationLink(metadata,row){
+ const quote=row.lay_price_provenance;
+ const marketId=row.betfair_win_market_id??(quote?.source_type==='BETFAIR_EXCHANGE_API_DELAYED'&&
+  quote.verification_status==='VERIFIED_API_LAY'?quote.market_id:null);
+ const exchange=/^1\.\d+$/.test(marketId??'')?'https://www.betfair.com/exchange/plus/horse-racing/market/'+marketId:null;
+ if(exchange&&row.race_date>=today())return exchange;
  const course=row.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
  const courseSlugs=course==='chelmsford'||course==='chelmsford-city'?['chelmsford','chelmsford-city']:[course];
- let fallback=null;
+ const cardDate=new Date(row.race_date+'T12:00:00Z').toLocaleDateString('en-GB',{
+  day:'2-digit',month:'long',year:'numeric',timeZone:'Europe/London',
+ }).replaceAll(' ','-').toLowerCase();
  for(const value of [metadata?.racecard_url,row.racecard_url]){
   let url;
   try{url=new URL(value);}catch(_){continue;}
@@ -266,11 +273,11 @@ function racecardLink(metadata,row){
   const sportingLife=/^\/racing\/racecards\/(\d{4}-\d{2}-\d{2})\/([a-z0-9-]+)\/racecard\/\d+\/[a-z0-9-]+\/?$/.exec(url.pathname);
   if(url.hostname==='www.sportinglife.com'&&sportingLife?.[1]===row.race_date&&courseSlugs.includes(sportingLife[2])&&
      (!url.search||url.search==='?dcmp=SL_PLUS_CARDS'))return url.href;
-  const zeturf=/^\/(?:fr|en)\/course-du-jour\/(\d{4}-\d{2}-\d{2})\/R\d+C\d+-([a-z0-9-]+)\/?$/i.exec(url.pathname);
-  if(window.jcmInternational&&['www.zeturf.fr','www.zeturf.nl'].includes(url.hostname)&&zeturf?.[1]===row.race_date&&
-     zeturf[2].toLowerCase().startsWith(course+'-')&&!url.search)fallback??=url.href;
+  const atr=/^\/racecard\/([a-z0-9-]+)\/([a-z0-9-]+)\/(\d{4})\/?$/i.exec(url.pathname);
+  if(url.hostname==='www.attheraces.com'&&atr&&courseSlugs.includes(atr[1].toLowerCase())&&
+     atr[2].toLowerCase()===cardDate&&atr[3]===row.off_time_uk.replace(':','')&&!url.search)return url.href;
  }
- return fallback;
+ return exchange;
 }
 function safe(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function confidenceTier(r){
@@ -343,7 +350,7 @@ window.jcmShowResearchCard=(r,m=null)=>{
  const roundup=r.researchOnly||r.watchList?r.reason:hasReason?reason.summary:r.identified_challengers.length?'Chosen for review because '+r.identified_challengers.join(', ')+' were identified as competing threats.':'Selection reason not supplied.';
  const reasonContent='<p>'+safe(roundup)+'</p>'+(hasReason?'<p><strong>Counterargument</strong><br>'+safe(reason.counterargument||'Not supplied.')+'</p>'+(Array.isArray(reason.challengers)&&reason.challengers.length?'<p><strong>Main challengers</strong><br>'+safe(reason.challengers.join(', '))+'</p>':'')+'<small>'+safe(reason.evidence_status==='RACING_API_PRO_AND_SPORTING_LIFE'?'The Racing API Pro + Sporting Life pre-race assessment':reason.evidence_status==='RACING_API_AND_USER_ASSESSMENT'?'User-confirmed pre-race assessment':reason.evidence_status==='ORIGINAL_SCREENSHOT_ANALYSIS'?'Original pre-race assessment':'Recovered morning research · underlying source data not reverified.')+'</small>':'');
  const view=resultView(r),accepted=view.css!=='pending'&&m&&m.race_id===r.result_race_id&&m.horse_id===r.result_horse_id&&m.position===r.position&&((r.result_status==='LOSS'&&m.position==='1')||(r.result_status==='WIN'&&(Number(m.position)>1||(m.position==='PU'&&r.result_stage==='WEIGHEDIN'))))&&(!r.placing||r.placing===ordinal(m.position));
- const card=racecardLink(m,r);
+ const card=raceInformationLink(m,r);
  const finish=r.researchOnly?'Awaiting a verified Exchange Lay quote':view.css==='pending'?'Pending':accepted?(m.position==='PU'?'Pulled up':'Finished '+ordinal(m.position)+(m.dead_heat_place?' (joint)':'')+' of '+m.field_size):String(r.placing??r.position??'Not supplied');
  const stat=(label,value)=>'<div class="jcm-result-stat"><small>'+safe(label)+'</small><strong>'+safe(value)+'</strong></div>';
  const tile=(title,content)=>'<section class="jcm-result-tile"><h3>'+safe(title)+'</h3>'+content+'</section>';
