@@ -60,32 +60,41 @@ test('direct football page still displays its own results',async({page})=>{
  await page.getByRole('button',{name:'Close details'}).click();
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();
 });
-test('UK and International hubs put Today’s Bets above both results tiles',async({page})=>{
+test('UK and International have full-width tiles and show profit only inside each results page',async({page})=>{
  await page.goto(url+'#hub');
- await expect(page.locator('#jcm-profit-summary summary')).toBeVisible();
+ const picksProfit=page.locator('#jcm-profit-summary');
+ const watchProfit=page.locator('#jcm-watch-profit-summary');
  const tiles=page.locator('#jcm-hub [data-page]');
  await expect(tiles).toHaveCount(3);
  expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','picks-results','watchlist-results']);
  await expect(page.getByRole('heading',{name:'Results',exact:true})).toBeVisible();
- await expect(page.getByRole('article',{name:'Picks',exact:true}).locator('#jcm-profit-summary summary')).toBeVisible();
- await expect(page.getByRole('article',{name:'Watchlist',exact:true}).locator('#jcm-watch-profit-summary summary')).toBeVisible();
+ await expect(picksProfit).toBeHidden();
+ await expect(watchProfit).toBeHidden();
+ await expect(page.locator('#jcm-hub')).not.toContainText(/paper/i);
  await page.setViewportSize({width:320,height:780});
- const [pickBox,watchBox]=await Promise.all([tiles.nth(1).boundingBox(),tiles.nth(2).boundingBox()]);
- expect(pickBox.y).toBe(watchBox.y);
- expect(pickBox.x+pickBox.width).toBeLessThan(watchBox.x);
- await page.locator('#jcm-watch-profit-summary summary').click();
- await expect(page.locator('#jcm-watch-profit-summary details')).toHaveAttribute('open','');
- await expect(page.locator('#jcm-profit-summary details')).not.toHaveAttribute('open','');
- await expect(page).toHaveURL(/#hub$/);
- await page.locator('#jcm-watch-profit-summary summary').click();
+ const [todayBox,pickBox,watchBox]=await Promise.all([tiles.nth(0).boundingBox(),tiles.nth(1).boundingBox(),tiles.nth(2).boundingBox()]);
+ expect(pickBox.width).toBe(todayBox.width);
+ expect(watchBox.width).toBe(pickBox.width);
+ expect(watchBox.x).toBe(pickBox.x);
+ expect(watchBox.y).toBeGreaterThan(pickBox.y+pickBox.height);
+ await tiles.nth(1).click();
+ await expect(picksProfit.locator('summary')).toBeVisible();
+ await expect(watchProfit).toBeHidden();
+ expect(await picksProfit.evaluate(node=>node.parentElement.tagName==='MAIN'&&
+  Boolean(document.getElementById('jcm-official-panel').compareDocumentPosition(node)&Node.DOCUMENT_POSITION_FOLLOWING))).toBeTruthy();
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page).toHaveURL(/index\.html\?region=international#hub$/);
  await expect(page.getByRole('heading',{name:'International',exact:true})).toBeVisible();
- expect(await tiles.evaluateAll(nodes=>nodes.map(node=>node.dataset.page))).toEqual(['todays-bets','picks-results','watchlist-results']);
- await expect(page.getByRole('article',{name:'Picks',exact:true}).locator('#jcm-profit-summary summary')).toBeVisible();
- await expect(page.getByRole('article',{name:'Watchlist',exact:true}).locator('#jcm-watch-profit-summary summary')).toBeVisible();
- await expect(page.locator('#jcm-profit-summary')).toContainText('£0');
- await expect(page.locator('#jcm-watch-profit-summary')).toContainText('£0');
+ await expect(picksProfit).toBeHidden();
+ await expect(watchProfit).toBeHidden();
+ await tiles.nth(2).click();
+ await expect(watchProfit.locator('summary')).toContainText('£0');
+ await expect(watchProfit.locator('summary')).toBeVisible();
+ await expect(picksProfit).toBeHidden();
+ await watchProfit.locator('summary').click();
+ await expect(watchProfit.locator('details')).toHaveAttribute('open','');
+ await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('[data-page="todays-bets"]').click();
  await page.locator('#date').selectOption('2026-11-28');
  await expect(page.locator('#jcm-official-panel')).toContainText('No bets for this date.');
@@ -97,13 +106,13 @@ test('UK and International hubs put Today’s Bets above both results tiles',asy
  await page.locator('#jcm-hub .jcm-sport-switch').click();
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
-test('paper lay shows two figures at the approved price for settled horses',async({page})=>{
+test('lay details show two figures at the approved price for settled horses',async({page})=>{
  await page.clock.install({time:new Date('2026-11-27T20:00:00Z')});
  await page.goto(url+'#picks-results');
  await page.locator('#date').selectOption('2026-11-27');
  await page.getByRole('button',{name:/Kap Ouest/}).click();
  const detail=page.locator('#jcm-detail-content');
- const paper=detail.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Paper lay',exact:true})});
+ const paper=detail.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Lay',exact:true})});
  await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['3.55','£186.27']);
  await expect(paper).not.toContainText('£10 lay stake');
  await expectRaceInformation(page,/^https:\/\/www\.sportinglife\.com\/racing\/racecards\/2026-11-27\/newbury\/racecard\/\d+\//);
@@ -118,7 +127,7 @@ test('paper lay shows two figures at the approved price for settled horses',asyn
  await expect(paper).not.toContainText('Paper P/L');
 });
 
-test('paper lay uses the newest verified pre-off snapshot for a pending horse',async({page})=>{
+test('lay details use the newest verified pre-off snapshot for a pending horse',async({page})=>{
  await page.clock.install({time:new Date('2026-11-27T11:30:00Z')});
  await page.goto(url+'#picks');
  await page.evaluate(()=>{
@@ -132,7 +141,7 @@ test('paper lay uses the newest verified pre-off snapshot for a pending horse',a
     {...quote,price:2.5,price_side:'BACK',retrieved_at_utc:'2026-11-27T11:15:00Z'}
    ]});
  });
- const paper=page.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Paper lay',exact:true})});
+ const paper=page.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Lay',exact:true})});
  await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['2.90','£250.00']);
 });
 
@@ -170,7 +179,6 @@ test('settled International Picks feed their own P/L and never load UK records',
  await page.goto(url+'international.html#picks');
  await page.locator('#date').selectOption('2026-11-26');
  await expect(page.locator('#jcm-official-panel')).toContainText('International fixture horse');
- await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  const profit=page.locator('#jcm-profit-summary');
  await profit.locator('summary').click();
  await profit.locator('.jcm-profit-week-head').click();
@@ -289,9 +297,9 @@ test('bets stay in time order and public results receive only races with a settl
  await expect(rows.nth(0)).toHaveCSS('border-left-color','rgb(237, 189, 87)');
  await expect(rows.nth(1)).toHaveCSS('border-left-color','rgb(98, 231, 219)');
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
+ await page.locator('[data-page="watchlist-results"]').click();
  await page.locator('#jcm-watch-profit-summary summary').click();
  await expect(page.locator('#jcm-watch-profit-summary')).not.toContainText('Fixture Watch');
- await page.locator('[data-page="watchlist-results"]').click();
  await expect(page.locator('#jcm-official-panel')).toContainText('No settled results for this date.');
  watchResult='WIN';
  await page.clock.fastForward(31000);

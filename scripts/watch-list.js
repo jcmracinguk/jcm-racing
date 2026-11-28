@@ -1,8 +1,4 @@
 (() => {
-  const currency = new Intl.NumberFormat('en-GB', {
-    style: 'currency', currency: 'GBP', signDisplay: 'exceptZero'
-  });
-  const money = cents => currency.format(cents / 100);
   let request;
   const isSettled = row => ['WIN', 'LOSS', 'NR'].includes(row.result_status) &&
     Date.parse(row.scheduled_off_dt) <= Date.now();
@@ -14,8 +10,6 @@
     if (!Number.isFinite(row.lay_odds) || row.lay_odds <= 1) return 15000;
     return Math.round(ledger.liability_gbp * (1 - ledger.commission_rate) * 100 / (row.lay_odds - 1));
   }
-
-  const net = (ledger, rows) => rows.reduce((total, row) => total + (netCents(ledger, row) ?? 0), 0);
 
   async function read() {
     if (request) return request;
@@ -45,14 +39,6 @@
       for (const row of ledger.entries) counts[row.result_status]++;
       return counts;
     },
-    rowNet(ledger, row) {
-      const cents = netCents(ledger, row);
-      return money(cents) + (!row.lay_odds && ['WIN','LOSS'].includes(row.result_status) ? ' (simulated)' : '');
-    },
-    summary(ledger, rows) {
-      return 'Day paper P/L ' + money(net(ledger, rows)) +
-        ' · Total paper P/L ' + money(net(ledger, ledger.entries));
-    }
   };
 
 })();

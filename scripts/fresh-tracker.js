@@ -4,7 +4,7 @@
 const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const date=document.getElementById('date');
 const menu=document.getElementById('jcm-menu-content');
-if(menu)menu.innerHTML=window.jcmInternational?'<p>International paper trial. £0 starting tally. Racing and paper results are shown in UK time.</p>':'<p>Current racing run from Friday 6 November 2026. £0 starting tally; unlimited simulated overdraft. Results checked with Sporting Life or The Racing API. Earlier records are retained in history.</p>';
+if(menu)menu.innerHTML=window.jcmInternational?'<p>International race times and results are shown in UK time.</p>':'<p>Current racing run from Friday 6 November 2026. Results checked with Sporting Life or The Racing API. Earlier records are retained in history.</p>';
 const cards=document.querySelectorAll('.metrics .metric');
 if(cards[1])cards[1].querySelector('small').textContent='SUCCESSES';
 if(cards[2])cards[2].querySelector('small').textContent='FAILURES';
