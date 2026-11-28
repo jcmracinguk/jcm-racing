@@ -12730,9 +12730,9 @@
           "evidence_and_limitations": "Course-and-distance winner receives 11 lb and can improve as a second-season hurdler, but is also returning from a break."
         }
       ],
-      "result_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "result_status": "WIN",
+      "booked_profit_gbp": 263.8888888888889,
+      "booked_profit_decimal": "263.8888888888888888888888889",
       "group_membership_frozen": true,
       "historical": false,
       "source": "Approved Saturday 28 November 09:04:12 GMT delayed Betfair Exchange Lay capture. £56.96 displayed. Full-stake matching unverified.",
@@ -12849,11 +12849,82 @@
         "potential_net_profit_decimal": "263.8888888888888888888888889",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 263.8888888888889,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
-      }
+      },
+      "position": "PU",
+      "result_source": "SPORTING_LIFE",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_date": "2026-11-28",
+      "result_off_time_uk": "14:20",
+      "result_course": "Newbury",
+      "result_horse": "Idaho Sun",
+      "result_off_dt": "2026-11-28T14:20:00+00:00",
+      "result_retrieved_at": "2026-11-28T14:36:39.736804Z",
+      "result_race_id": "rac_32304613289",
+      "result_horse_id": "hrs_41228957",
+      "result_website_race_id": "948728",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/newbury/948728/coral-racing-club-intermediate-handicap-hurdle-reg-as-the-gerry-feilden-premier-handicap-gbb-race",
+      "result_non_runners": [
+        "The Mighty Celt"
+      ],
+      "result_website_horse_id": "1143921",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "1",
+      "selected_beaten_lengths": null,
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Mondo Man",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "White Noise",
+          "margin_from_previous": "1",
+          "cumulative_beaten_lengths": "1"
+        },
+        {
+          "position": "3",
+          "horse": "La Conquiere",
+          "margin_from_previous": "13",
+          "cumulative_beaten_lengths": "14"
+        },
+        {
+          "position": "4",
+          "horse": "Our Boy Stan",
+          "margin_from_previous": "1 ¼",
+          "cumulative_beaten_lengths": "15.25"
+        },
+        {
+          "position": "5",
+          "horse": "Klycot",
+          "margin_from_previous": "15",
+          "cumulative_beaten_lengths": "30.25"
+        },
+        {
+          "position": "6",
+          "horse": "Mossy Fen Road",
+          "margin_from_previous": "18",
+          "cumulative_beaten_lengths": "48.25"
+        },
+        {
+          "position": "PU",
+          "horse": "Idaho Sun",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": null
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/newbury/948728/coral-racing-club-intermediate-handicap-hurdle-reg-as-the-gerry-feilden-premier-handicap-gbb-race",
+      "margin_retrieved_at": "2026-11-28T14:36:39.736804Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "PU",
+      "winner": "Mondo Man"
     },
     {
       "tier": "watchlist",
