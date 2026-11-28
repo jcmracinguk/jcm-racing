@@ -54,8 +54,7 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
 .jcm-result-outcome.win{background:#14543b;color:#85efb8}.jcm-result-outcome.loss{background:#70263a;color:#ffb3c1}.jcm-result-outcome.pending{background:#364156;color:#fff}
 .jcm-result-body{display:grid;gap:12px}.jcm-result-tile{border:1px solid #52647b;border-radius:12px;background:#142237;padding:16px}.jcm-result-tile h3{margin:0 0 12px;font-size:17px;color:#ffd700}.jcm-result-tile p{margin:8px 0;overflow-wrap:anywhere}.jcm-result-stat + .jcm-result-stat{margin-top:12px}.jcm-result-stat strong{display:block;font-size:19px;overflow-wrap:anywhere}.jcm-result-body h2{font-size:clamp(25px,7vw,34px);line-height:1.2;margin:12px 0}
 .jcm-result-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px;border-top:1px solid #52647b;padding:18px 0;margin:20px 0}.jcm-result-grid strong{display:block;font-size:19px;overflow-wrap:anywhere}
-.jcm-race-action{display:block;padding:14px;border:1px solid #65748a;border-radius:10px;font-weight:800}
-.jcm-link-unavailable{font-size:13px;color:#c6d0de}
+.jcm-race-action{width:100%;padding:14px;min-height:44px;border:1px solid currentColor;border-radius:10px;background:transparent;color:var(--gold);font:inherit;font-weight:800;cursor:pointer}
 #jcm-official-panel .jcm-status.win{color:#85efb8}#jcm-official-panel .jcm-status.loss{color:#ff849d}
 @media(max-width:380px){.jcm-result-card{padding:18px 12px}.jcm-result-grid strong{font-size:17px}}
 </style><link rel="stylesheet" href="scripts/international.css?v=20261127-parity"></head><body data-sport="racing"><header><div class="head"><div class="brand"><div class="identity"><img alt="JCM logo" src="./jcm-logo.svg"><div class="jcm-tagline">Better, informed</div></div><select id="date" aria-label="Racing date"><option value="2026-11-27">27th Nov-26</option><option value="2026-11-26">26th Nov-26</option><option value="2026-11-25">25th Nov-26</option><option value="2026-11-24">24th Nov-26</option><option value="2026-11-23">23rd Nov-26</option><option value="2026-11-22">22nd Nov-26</option><option value="2026-11-21">21st Nov-26</option><option value="2026-11-20">20th Nov-26</option><option value="2026-11-19">19th Nov-26</option><option value="2026-11-18">18th Nov-26</option><option value="2026-11-17">17th Nov-26</option><option value="2026-11-16">16th Nov-26</option><option value="2026-11-14">14th Nov-26</option><option value="2026-11-13">13th Nov-26</option><option value="2026-11-12">12th Nov-26</option><option value="2026-11-11">11th Nov-26</option><option value="2026-11-10">10th Nov-26</option><option value="2026-11-09">9th Nov-26</option><option value="2026-11-07">7th Nov-26</option><option value="2026-11-06">6th Nov-26</option></select></div><div class="metrics"><div class="metric"><strong>—</strong><small>OVERALL RESEARCH RESULTS</small></div><div class="metric"><strong>—</strong><small>WINS</small></div><div class="metric"><strong>—</strong><small>LOSSES</small></div><div class="metric"><strong>—</strong><small>NR</small></div></div></div></header><main></main><script src="scripts/racing-data.js?v=20261127-parity"></script><script>
@@ -218,11 +217,26 @@ function displayedLayOdds(r){
  }
  return price;
 }
-function raceResultsLink(m,r){try{const u=new URL(m?.results_url);const course=r.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');return u.protocol==='https:'&&u.hostname==='www.sportinglife.com'&&new RegExp('^/racing/results/'+r.race_date+'/'+course+'/[0-9]+/[a-z0-9-]+/?$').test(u.pathname)&&!u.search&&!u.hash?u.href:null;}catch(_){return null;}}
 function detailFor(r){const matches=cardDetails.filter(m=>Boolean(m.watchList)===Boolean(r.watchList)&&m.date===r.race_date&&m.horse===r.horse&&m.course===r.course&&m.off_time_uk===r.off_time_uk);return matches.length===1?matches[0]:null;}
 function ordinal(v){const n=Number(v);if(!Number.isInteger(n)||n<1)return String(v||'Not supplied');const a=n%100;return n+(a>=11&&a<=13?'th':({1:'st',2:'nd',3:'rd'}[n%10]||'th'));}
 function margin(v){if(typeof v!=='string'||!v.trim())return 'Not supplied';return /^[0-9]*[.]?[0-9]+$/.test(v)&&Number.isFinite(Number(v))?Number(v)+' lengths':v;}
-function racecardLink(m,r){try{const u=new URL(m?.racecard_url);const course=r.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');return u.protocol==='https:'&&u.hostname==='www.sportinglife.com'&&new RegExp('^/racing/racecards/'+r.race_date+'/'+course+'/racecard/[0-9]+/[a-z0-9-]+/?$').test(u.pathname)&&(!u.search||u.search==='?dcmp=SL_PLUS_CARDS')&&!u.hash?u.href:null;}catch(_){return null;}}
+function racecardLink(metadata,row){
+ const course=row.course.toLowerCase().replace(/\s*\(aw\)/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+ const courseSlugs=course==='chelmsford'||course==='chelmsford-city'?['chelmsford','chelmsford-city']:[course];
+ let fallback=null;
+ for(const value of [metadata?.racecard_url,row.racecard_url]){
+  let url;
+  try{url=new URL(value);}catch(_){continue;}
+  if(url.protocol!=='https:'||url.port||url.username||url.password||url.hash)continue;
+  const sportingLife=/^\/racing\/racecards\/(\d{4}-\d{2}-\d{2})\/([a-z0-9-]+)\/racecard\/\d+\/[a-z0-9-]+\/?$/.exec(url.pathname);
+  if(url.hostname==='www.sportinglife.com'&&sportingLife?.[1]===row.race_date&&courseSlugs.includes(sportingLife[2])&&
+     (!url.search||url.search==='?dcmp=SL_PLUS_CARDS'))return url.href;
+  const zeturf=/^\/(?:fr|en)\/course-du-jour\/(\d{4}-\d{2}-\d{2})\/R\d+C\d+-([a-z0-9-]+)\/?$/i.exec(url.pathname);
+  if(window.jcmInternational&&['www.zeturf.fr','www.zeturf.nl'].includes(url.hostname)&&zeturf?.[1]===row.race_date&&
+     zeturf[2].toLowerCase().startsWith(course+'-')&&!url.search)fallback??=url.href;
+ }
+ return fallback;
+}
 function safe(v){return String(v==null?'':v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
 function confidenceTier(r){
  const p=r.competition_confidence_percent;
@@ -272,7 +286,7 @@ window.jcmShowResearchCard=(r,m=null)=>{
  const roundup=r.researchOnly||r.watchList?r.reason:hasReason?reason.summary:r.identified_challengers.length?'Chosen for review because '+r.identified_challengers.join(', ')+' were identified as competing threats.':'Selection reason not supplied.';
  const reasonContent='<p>'+safe(roundup)+'</p>'+(hasReason?'<p><strong>Counterargument</strong><br>'+safe(reason.counterargument||'Not supplied.')+'</p>'+(Array.isArray(reason.challengers)&&reason.challengers.length?'<p><strong>Main challengers</strong><br>'+safe(reason.challengers.join(', '))+'</p>':'')+'<small>'+safe(reason.evidence_status==='RACING_API_PRO_AND_SPORTING_LIFE'?'The Racing API Pro + Sporting Life pre-race assessment':reason.evidence_status==='RACING_API_AND_USER_ASSESSMENT'?'User-confirmed pre-race assessment':reason.evidence_status==='ORIGINAL_SCREENSHOT_ANALYSIS'?'Original pre-race assessment':'Recovered morning research · underlying source data not reverified.')+'</small>':'');
  const view=resultView(r),accepted=view.css!=='pending'&&m&&m.race_id===r.result_race_id&&m.horse_id===r.result_horse_id&&m.position===r.position&&((r.result_status==='LOSS'&&m.position==='1')||(r.result_status==='WIN'&&(Number(m.position)>1||(m.position==='PU'&&r.result_stage==='WEIGHEDIN'))))&&(!r.placing||r.placing===ordinal(m.position));
- const card=racecardLink(m,r),results=raceResultsLink(m,r);
+ const card=racecardLink(m,r);
  const finish=r.researchOnly?'Awaiting a verified Exchange Lay quote':view.css==='pending'?'Pending':accepted?(m.position==='PU'?'Pulled up':'Finished '+ordinal(m.position)+(m.dead_heat_place?' (joint)':'')+' of '+m.field_size):String(r.placing??r.position??'Not supplied');
  const stat=(label,value)=>'<div class="jcm-result-stat"><small>'+safe(label)+'</small><strong>'+safe(value)+'</strong></div>';
  const tile=(title,content)=>'<section class="jcm-result-tile"><h3>'+safe(title)+'</h3>'+content+'</section>';
@@ -280,9 +294,9 @@ window.jcmShowResearchCard=(r,m=null)=>{
  const odds=displayedLayOdds(r);
  const priceTile=tile('Paper lay',stat('Lay odds',odds===null?'Unavailable':odds.toFixed(2))+
   stat('Net if beaten (£500 liability)',odds===null?'—':new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP'}).format(475/(odds-1))));
- const cardTile=tile('Racecard',card?'<a class="jcm-race-action" href="'+safe(card)+'" target="_blank" rel="noopener">View this racecard ↗</a>':window.jcmInternational?'<a class="jcm-race-action" href="https://www.sportinglife.com/racing/racecards" target="_blank" rel="noopener">Browse Sporting Life racecards ↗</a>':'<p class="jcm-link-unavailable">Exact racecard link not verified.</p><a class="jcm-race-action" href="https://www.sportinglife.com/racing/racecards/'+safe(day)+'" target="_blank" rel="noopener">Browse racecards for this day ↗</a>');
- const resultsTile=tile('Race results',results?'<a class="jcm-race-action" href="'+safe(results)+'" target="_blank" rel="noopener">View this race result ↗</a>':window.jcmInternational?'<a class="jcm-race-action" href="https://www.sportinglife.com/racing/results/'+safe(day)+'" target="_blank" rel="noopener">Browse Sporting Life results ↗</a>':'<p class="jcm-link-unavailable">Exact race result link not yet verified.</p><a class="jcm-race-action" href="https://www.sportinglife.com/racing/results/'+safe(day)+'" target="_blank" rel="noopener">Browse results for this day ↗</a>');
- overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong>'+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile(r.researchOnly?'Reason for review':r.watchList?'Reason for watching':'Reason for selection',reasonContent)+priceTile+cardTile+resultsTile+'</div></article>';
+ const raceAction=card?'<button type="button" class="jcm-race-action">Race information</button>':'';
+ overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong>'+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile(r.researchOnly?'Reason for review':r.watchList?'Reason for watching':'Reason for selection',reasonContent)+priceTile+raceAction+'</div></article>';
+ if(card)overlay.querySelector('.jcm-race-action').addEventListener('click',()=>window.open(card,'_blank','noopener'));
  overlay.classList.add('open');overlay.querySelector('.jcm-close').focus();
 };
 panel.addEventListener('click',e=>{

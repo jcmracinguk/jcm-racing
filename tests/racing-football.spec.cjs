@@ -1,6 +1,18 @@
 const {test,expect}=require('@playwright/test');
 const url='http://127.0.0.1:8765/';
 test.use({viewport:{width:390,height:844}});
+async function expectRaceInformation(page,expected){
+ const details=page.locator('#jcm-detail-content');
+ const button=details.getByRole('button',{name:'Race information',exact:true});
+ await expect(button).toHaveCount(1);
+ await expect(details.getByRole('link')).toHaveCount(0);
+ await expect(details.getByRole('heading',{name:/^(Racecard|Race results)$/i})).toHaveCount(0);
+ await page.evaluate(()=>{window.open=url=>{window.raceInformationDestination=url;};});
+ await button.click();
+ const destination=await page.evaluate(()=>window.raceInformationDestination);
+ if(expected instanceof RegExp)expect(destination).toMatch(expected);
+ else expect(destination).toBe(expected);
+}
 test('UK and International switch on mobile without changing UK results',async({page})=>{
  const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.clock.install({time:new Date('2026-11-28T12:00:00Z')});
@@ -63,9 +75,7 @@ test('UK and International hubs put Today’s Bets above both results tiles',asy
  await expect(page.locator('#jcm-official-panel')).toContainText('No bets for this date.');
  await page.getByRole('button',{name:/Sentosa/}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
- await expect(page.getByRole('link',{name:/Browse Sporting Life racecards/})).toHaveAttribute('href','https://www.sportinglife.com/racing/racecards');
- await expect(page.getByRole('link',{name:/Browse Sporting Life results/})).toHaveAttribute('href',/sportinglife\.com\/racing\/results\//);
- await expect(page.getByRole('link',{name:/watch race|race video/i})).toHaveCount(0);
+ await expectRaceInformation(page,'https://www.zeturf.fr/fr/course-du-jour/2026-11-28/R2C7-lyon-parilly-prix-des-turfistes');
  await page.getByRole('button',{name:'Close details'}).click();
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('#jcm-hub .jcm-sport-switch').click();
@@ -80,6 +90,7 @@ test('paper lay shows two figures at the approved price for settled horses',asyn
  const paper=detail.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Paper lay',exact:true})});
  await expect(paper.locator('.jcm-result-stat strong')).toHaveText(['3.55','£186.27']);
  await expect(paper).not.toContainText('£10 lay stake');
+ await expectRaceInformation(page,/^https:\/\/www\.sportinglife\.com\/racing\/racecards\/2026-11-27\/newbury\/racecard\/\d+\//);
  await expect(detail.getByRole('link',{name:/watch race|race video/i})).toHaveCount(0);
  await page.getByRole('button',{name:'Close details'}).click();
  await expect(page.getByRole('button',{name:/Klub de Reve/i})).toHaveCount(0);
@@ -297,4 +308,11 @@ test('UK Watchlist entries can be browsed by date in bets and stay out of result
  await expect(panel).toContainText('Kap Ouest');
  await expect(panel).not.toContainText('Klub de Reve');
  await expect(panel.getByRole('button',{name:/Kap Ouest/})).toHaveCSS('border-left-color','rgb(255, 215, 0)');
+});
+
+test('archived Watchlist runner opens its exact Sporting Life racecard',async({page})=>{
+ await page.goto(url+'#watchlist-results');
+ await page.locator('#date').selectOption('2026-10-21');
+ await page.getByRole('button',{name:/Diamond White/}).click();
+ await expectRaceInformation(page,'https://www.sportinglife.com/racing/racecards/2026-10-21/fontwell/racecard/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle');
 });

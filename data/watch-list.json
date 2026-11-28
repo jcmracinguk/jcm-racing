@@ -5,6 +5,7 @@
   "entries": [
     {
       "horse": "Diamond White",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/fontwell/racecard/944571/bettingbet-play-champion-tipster-mares-handicap-hurdle",
       "course": "Fontwell",
       "off_time_uk": "15:07",
       "race_date": "2026-10-21",
@@ -19,6 +20,7 @@
     },
     {
       "horse": "Farasan",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/kempton/racecard/944584/try-unibets-improved-acca-boosts-nursery",
       "course": "Kempton",
       "off_time_uk": "18:30",
       "race_date": "2026-10-21",
@@ -33,6 +35,7 @@
     },
     {
       "horse": "Lady Mariko",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-21/kempton/racecard/944587/try-unibets-improved-acca-boosts-fillies-handicap?dcmp=SL_PLUS_CARDS",
       "course": "Kempton",
       "off_time_uk": "20:00",
       "race_date": "2026-10-21",
@@ -47,6 +50,7 @@
     },
     {
       "horse": "Detroit Maverick",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-22/clonmel/racecard/944589/crottys-lake-maiden-hurdle",
       "course": "Clonmel",
       "off_time_uk": "13:35",
       "race_date": "2026-10-22",
@@ -61,6 +65,7 @@
     },
     {
       "horse": "Dare To Shout",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-22/carlisle/racecard/944802/magnet-better-by-design-handicap-chase-gbb-race",
       "course": "Carlisle",
       "off_time_uk": "14:27",
       "race_date": "2026-10-22",
@@ -75,6 +80,7 @@
     },
     {
       "horse": "Doctors Hill",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-22/ffos-las/racecard/944785/bettingsitescouk-fast-withdrawal-handicap-chase-gbb-race",
       "course": "Ffos Las",
       "off_time_uk": "16:53",
       "race_date": "2026-10-22",
@@ -89,6 +95,7 @@
     },
     {
       "horse": "Blue Tulip",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-22/southwell/racecard/944786/midnite-built-for-2027-not-2007-handicap",
       "course": "Southwell",
       "off_time_uk": "17:00",
       "race_date": "2026-10-22",
@@ -103,6 +110,7 @@
     },
     {
       "horse": "Weffaag",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-26/kempton/racecard/945405/unibet-40000-live-streamed-events-handicap",
       "course": "Kempton",
       "off_time_uk": "17:45",
       "race_date": "2026-10-26",
@@ -120,6 +128,7 @@
     },
     {
       "horse": "Breathe Easy",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-26/kempton/racecard/945407/try-unibets-new-racing-bet-builder-handicap",
       "course": "Kempton",
       "off_time_uk": "18:45",
       "race_date": "2026-10-26",
@@ -135,6 +144,7 @@
     },
     {
       "horse": "Silver Hill",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-10-27/newcastle/racecard/945555/sunday-lunch-at-the-border-minstrel-novices-limited-handicap-chase-gbb-race",
       "course": "Newcastle",
       "off_time_uk": "14:31",
       "race_date": "2026-10-27",
@@ -166,6 +176,7 @@
     },
     {
       "horse": "Jericoacoara",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-14/wetherby/racecard/948526/boyle-sports-back-yourself-handicap-hurdle",
       "course": "Wetherby",
       "off_time_uk": "12:48",
       "race_date": "2026-11-14",
@@ -186,11 +197,12 @@
       "scheduled_off_dt": "2026-11-15T13:25:00+00:00",
       "result_status": "NR",
       "reason": "Withdrawn because of the ground.",
-      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/cheltenham/live-show/948559/wkd-novices-limited-handicap-chase-gbb-race?dcmp=SL_PLUS_CARDS",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/cheltenham/racecard/948559/wkd-novices-limited-handicap-chase-gbb-race?dcmp=SL_PLUS_CARDS",
       "historical": true
     },
     {
       "horse": "Highlands Legacy",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/cheltenham/racecard/948560/weatherite-air-conditioning-handicap-chase-gbb-race",
       "course": "Cheltenham",
       "off_time_uk": "14:00",
       "race_date": "2026-11-15",
@@ -206,6 +218,7 @@
     },
     {
       "horse": "Silver State",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/fontwell/racecard/948555/stonex-payments-juvenile-hurdle-gbb-race",
       "course": "Fontwell",
       "off_time_uk": "14:20",
       "race_date": "2026-11-15",
@@ -221,6 +234,7 @@
     },
     {
       "horse": "Harry Lowes",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/cheltenham/racecard/946553/unibet-greatwood-handicap-hurdle",
       "course": "Cheltenham",
       "off_time_uk": "15:10",
       "race_date": "2026-11-15",
@@ -236,6 +250,7 @@
     },
     {
       "horse": "Asta La Vista",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/fontwell/racecard/948557/marias-and-aidies-25th-wedding-anniversary-novices-limited-handicap-hurdle",
       "course": "Fontwell",
       "off_time_uk": "15:25",
       "race_date": "2026-11-15",
@@ -251,6 +266,7 @@
     },
     {
       "horse": "Sarahs Lawn",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/navan/racecard/948725/coolmore-nh-sires-hurricane-lane-irish-ebf-mares-flat-race-listed",
       "course": "Navan",
       "off_time_uk": "15:35",
       "race_date": "2026-11-15",
@@ -266,6 +282,7 @@
     },
     {
       "horse": "New Grange",
+      "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-15/cheltenham/racecard/948561/three-counties-christmas-open-nh-flat-race-listed-registered-as-the-william-kidd-gbb-race",
       "course": "Cheltenham",
       "off_time_uk": "15:45",
       "race_date": "2026-11-15",
