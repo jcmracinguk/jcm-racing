@@ -21,7 +21,7 @@
       "lay_odds": 2.74,
       "racecard_url": "https://www.sportinglife.com/racing/racecards/2026-11-28/doncaster/racecard/950767/winter-family-raceday-29th-december-novices-limited-handicap-chase-gbb-race",
       "racecard_verified_at": "2026-11-28T10:36:31Z",
-      "results_url": "https://www.sportinglife.com/racing/results/2026-11-28",
+      "results_url": "https://www.sportinglife.com/racing/results/2026-11-28/doncaster/950767/winter-family-raceday-29th-december-novices-limited-handicap-chase-gbb-race",
       "results_link_type": "DATE_RESULTS_FALLBACK",
       "interest_rank": 1,
       "selected_at": "2026-11-28T10:33:00Z",
@@ -37,10 +37,10 @@
       "field_size": 4,
       "going": "Good",
       "surface": "Turf",
-      "race_name": "Winter Family Raceday 29th December Novices' Limited Handicap Steeple Chase (GBB Race)",
-      "result_status": "PENDING",
-      "booked_profit_gbp": 0,
-      "booked_profit_decimal": "0",
+      "race_name": "Winter Family Raceday 29th December Novices' Limited Handicap Chase (GBB Race)",
+      "result_status": "WIN",
+      "booked_profit_gbp": 272.98850574712645,
+      "booked_profit_decimal": "272.9885057471264367816091954",
       "selection_reason": {
         "summary": "The 7 lb penalty and overnight turnaround bring him against two fit, progressive chase winners on materially better terms. Palamon won by 21 lengths over 3m here on Friday and may still be improving. He controlled a three-runner race from the front and one opponent bled.",
         "counterargument": "Palamon won by 21 lengths over 3m here on Friday and may still be improving. He controlled a three-runner race from the front and one opponent bled.",
@@ -128,7 +128,7 @@
         "potential_net_profit_decimal": "272.9885057471264367816091954022",
         "failure_gbp": -500,
         "nr_gbp": 0,
-        "booked_profit_gbp": 0,
+        "booked_profit_gbp": 272.98850574712645,
         "full_stake_match_verified": false,
         "value_status": "UNPROVEN",
         "accounting_basis": "ACTUAL_DELAYED_API_QUOTE_PAPER_TRIAL_ASSUMED_FULL_STAKE_NOT_VERIFIED_FILL"
@@ -174,7 +174,58 @@
         }
       ],
       "result_history": [],
-      "date": "2026-11-28"
+      "date": "2026-11-28",
+      "position": "4",
+      "result_source": "SPORTING_LIFE",
+      "verification_status": "WEBSITE_CONFIRMED",
+      "result_date": "2026-11-28",
+      "result_off_time_uk": "12:43",
+      "result_course": "Doncaster",
+      "result_horse": "Palamon",
+      "result_off_dt": "2026-11-28T12:43:00+00:00",
+      "result_retrieved_at": "2026-11-28T12:58:39.310890Z",
+      "result_race_id": "rac_32305858780",
+      "result_horse_id": "hrs_31479336",
+      "result_website_race_id": "950767",
+      "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/doncaster/950767/winter-family-raceday-29th-december-novices-limited-handicap-chase-gbb-race",
+      "result_non_runners": [],
+      "result_website_horse_id": "1072491",
+      "result_stage": "WEIGHEDIN",
+      "winning_margin_lengths": "hd",
+      "selected_beaten_lengths": "8.2",
+      "finish_margins": [
+        {
+          "position": "1",
+          "horse": "Fairlawn Skipper",
+          "margin_from_previous": null,
+          "cumulative_beaten_lengths": "0"
+        },
+        {
+          "position": "2",
+          "horse": "Nazare",
+          "margin_from_previous": "hd",
+          "cumulative_beaten_lengths": "0.2"
+        },
+        {
+          "position": "3",
+          "horse": "Nardaran",
+          "margin_from_previous": "4 ¾",
+          "cumulative_beaten_lengths": "4.95"
+        },
+        {
+          "position": "4",
+          "horse": "Palamon",
+          "margin_from_previous": "3 ¼",
+          "cumulative_beaten_lengths": "8.2"
+        }
+      ],
+      "margin_source": "SPORTING_LIFE",
+      "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/doncaster/950767/winter-family-raceday-29th-december-novices-limited-handicap-chase-gbb-race",
+      "margin_retrieved_at": "2026-11-28T12:58:39.310890Z",
+      "margin_stage": "WEIGHEDIN",
+      "margin_verification_status": "WEBSITE_CONFIRMED",
+      "placing": "4th",
+      "winner": "Fairlawn Skipper"
     }
   ]
 }
