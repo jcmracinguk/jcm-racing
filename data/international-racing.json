@@ -21,11 +21,121 @@
           ],
           "reason": "Greaterix is closely matched with Cosmic Speed on their recent Grade 2 form. Texas Red is suited by this course and distance, and Sunset Riot comes off a win. Cosmic Speed finished strongly for second over a mile last time. The case is worth following, with limited Exchange liquidity at the review.",
           "researchOnly": true,
-          "result_status": "PENDING",
+          "result_status": "WIN",
           "lay_odds": null,
           "selection_status": "FORM_REVIEW",
           "official_accuracy_eligible": false,
-          "moved_to_watchlist_at": "2026-11-28T10:16:28Z"
+          "moved_to_watchlist_at": "2026-11-28T10:16:28Z",
+          "position": "13",
+          "result_source": "SPORTING_LIFE",
+          "verification_status": "WEBSITE_CONFIRMED",
+          "result_date": "2026-11-28",
+          "result_off_time_uk": "10:45",
+          "result_course": "Turffontein",
+          "result_horse": "Cosmic Speed",
+          "result_off_dt": "2026-11-28T10:45:00+00:00",
+          "result_retrieved_at": "2026-11-28T11:50:40.146779Z",
+          "result_race_id": null,
+          "result_horse_id": null,
+          "result_website_race_id": "951120",
+          "result_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/turffontein/951120/konica-minolta-sa-pinnacle-stakes",
+          "result_non_runners": [
+            "Tin Pan Alley"
+          ],
+          "result_website_horse_id": "1134384",
+          "result_stage": "WEIGHEDIN",
+          "winning_margin_lengths": "hd",
+          "selected_beaten_lengths": "11.75",
+          "finish_margins": [
+            {
+              "position": "1",
+              "horse": "King Harald",
+              "margin_from_previous": null,
+              "cumulative_beaten_lengths": "0"
+            },
+            {
+              "position": "2",
+              "horse": "Main Defender",
+              "margin_from_previous": "hd",
+              "cumulative_beaten_lengths": "0.2"
+            },
+            {
+              "position": "3",
+              "horse": "Cats Pajamas",
+              "margin_from_previous": "hd",
+              "cumulative_beaten_lengths": "0.4"
+            },
+            {
+              "position": "4",
+              "horse": "Sunset Riot",
+              "margin_from_previous": "hd",
+              "cumulative_beaten_lengths": "0.6"
+            },
+            {
+              "position": "5",
+              "horse": "Greaterix",
+              "margin_from_previous": "hd",
+              "cumulative_beaten_lengths": "0.8"
+            },
+            {
+              "position": "6",
+              "horse": "Mastership",
+              "margin_from_previous": "sh",
+              "cumulative_beaten_lengths": "0.9"
+            },
+            {
+              "position": "7",
+              "horse": "Secret Chord",
+              "margin_from_previous": "nk",
+              "cumulative_beaten_lengths": "1.2"
+            },
+            {
+              "position": "8",
+              "horse": "Texas Red",
+              "margin_from_previous": "¾",
+              "cumulative_beaten_lengths": "1.95"
+            },
+            {
+              "position": "9",
+              "horse": "Imposing",
+              "margin_from_previous": "1 ¼",
+              "cumulative_beaten_lengths": "3.2"
+            },
+            {
+              "position": "10",
+              "horse": "Calla Lagoon",
+              "margin_from_previous": "nk",
+              "cumulative_beaten_lengths": "3.5"
+            },
+            {
+              "position": "11",
+              "horse": "I'm A Fireball",
+              "margin_from_previous": "1 ¼",
+              "cumulative_beaten_lengths": "4.75"
+            },
+            {
+              "position": "12",
+              "horse": "Jimmy Don",
+              "margin_from_previous": "6 ¼",
+              "cumulative_beaten_lengths": "11"
+            },
+            {
+              "position": "13",
+              "horse": "Cosmic Speed",
+              "margin_from_previous": "¾",
+              "cumulative_beaten_lengths": "11.75"
+            }
+          ],
+          "margin_source": "SPORTING_LIFE",
+          "margin_source_url": "https://www.sportinglife.com/racing/results/2026-11-28/turffontein/951120/konica-minolta-sa-pinnacle-stakes",
+          "margin_retrieved_at": "2026-11-28T11:50:40.146779Z",
+          "margin_stage": "WEIGHEDIN",
+          "margin_verification_status": "WEBSITE_CONFIRMED",
+          "placing": "13th",
+          "winner": "King Harald",
+          "field_size": 13,
+          "race_name": "Konica Minolta SA Pinnacle Stakes",
+          "booked_profit_gbp": 0
         },
         {
           "horse": "Sentosa",
