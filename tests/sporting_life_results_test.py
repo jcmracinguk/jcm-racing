@@ -36,6 +36,20 @@ class Results(unittest.TestCase):
         self.page = {'race': {'race_summary': dict(date='2026-10-27', time='14:31', course_name='Newcastle', race_stage='WEIGHEDIN', race_summary_reference={'id':945555}, ride_count=4, name='Test'), 'rides': [dict(horse={'name':'Winner', 'horse_reference':{'id':1}},finish_position=1,ride_status='RUNNER'),dict(horse={'name':'Second', 'horse_reference':{'id':3}},finish_position=2,finish_distance='sh',ride_status='RUNNER'),dict(horse={'name':'Third', 'horse_reference':{'id':4}},finish_position=3,finish_distance='1 ¼',ride_status='RUNNER'),dict(horse={'name':'Silver Hill', 'horse_reference':{'id':2}},finish_position=4,finish_distance='nk',ride_status='RUNNER')]}}
     def parse(self):
         return m.result(self.row,self.page,self.url,datetime.now(timezone.utc))[0]
+    def test_waits_ten_minutes_after_actual_finish(self):
+        self.page['race']['race_summary'].update(off_time='14:32:00', winning_time='6m 12.25s')
+        for stamp in ('2026-10-27T14:41:00Z', '2026-10-27T14:48:12Z'):
+            with self.assertRaisesRegex(ValueError, 'ten minutes after the finish'):
+                m.result(self.row, self.page, self.url, datetime.fromisoformat(stamp))
+        update, _ = m.result(self.row, self.page, self.url, datetime.fromisoformat('2026-10-27T14:48:12.250Z'))
+        self.assertEqual(update['result_status'], 'WIN')
+
+    def test_uses_scheduled_off_when_actual_finish_is_unavailable(self):
+        with self.assertRaisesRegex(ValueError, 'ten minutes after the finish'):
+            m.result(self.row, self.page, self.url, datetime.fromisoformat('2026-10-27T14:40:59Z'))
+        update, _ = m.result(self.row, self.page, self.url, datetime.fromisoformat('2026-10-27T14:41:00Z'))
+        self.assertEqual(update['result_status'], 'WIN')
+
     def test_loss_success_and_nr(self):
         self.assertEqual(self.parse()['result_status'],'WIN')
         self.page['race']['rides'][3]['finish_position']=1

@@ -27,6 +27,25 @@ def normal(value):
     return re.sub(r'[^a-z0-9]', '', value.lower())
 
 
+def course_key(value):
+    key = normal(value)
+    return 'chelmsford' if key == 'chelmsfordcity' else key
+
+
+def publication_time(summary, scheduled):
+    # Sporting Life records UTC actual off and elapsed winning time.
+    actual = re.fullmatch(r'(\d{2}:\d{2}:\d{2})', summary.get('off_time') or '')
+    duration = re.fullmatch(r'(?:(\d+)m\s*)?(\d+(?:\.\d+)?)s', summary.get('winning_time') or '')
+    if actual and duration:
+        start = datetime.fromisoformat(summary['date'] + 'T' + actual[1]).replace(tzinfo=timezone.utc)
+        # An actual off shortly after midnight belongs to the next UTC date.
+        if start < scheduled - timedelta(hours=12):
+            start += timedelta(days=1)
+        elapsed = timedelta(minutes=int(duration[1] or 0), seconds=float(duration[2]))
+        return start + elapsed + timedelta(minutes=10)
+    return scheduled + timedelta(minutes=10)
+
+
 def fetch(url):
     parsed = urlsplit(url)
     if parsed.scheme != 'https' or parsed.hostname != 'www.sportinglife.com':
@@ -195,10 +214,14 @@ def result(row, page, url, now):
     if (local.date().isoformat() != row['race_date']
             or local.strftime('%H:%M') != row['off_time_uk']
             or source_off != scheduled.astimezone(timezone.utc)
-            or normal(summary['course_name']) != normal(row['course'])):
+            or course_key(summary['course_name']) != course_key(row['course'])):
         raise ValueError('Result race identity mismatch')
     if summary['race_stage'] != 'WEIGHEDIN':
         raise ValueError('Awaiting weighed-in full result')
+    if row.get('sporting_life_race_id') and ref != str(row['sporting_life_race_id']):
+        raise ValueError('Sporting Life race ID mismatch')
+    if now < publication_time(summary, scheduled):
+        raise ValueError('Awaiting ten minutes after the finish')
     rides = race['rides']
     matches = [r for r in rides if normal(r['horse']['name']) == normal(row['horse'])]
     if len(matches) != 1:
@@ -236,7 +259,7 @@ def result(row, page, url, now):
     )
     update = dict(position=position, result_status=status, result_source='SPORTING_LIFE', verification_status='WEBSITE_CONFIRMED', official_accuracy_eligible=False,
                   result_date=row['race_date'], result_off_time_uk=row['off_time_uk'], result_course=row['course'], result_horse=row['horse'],
-                  result_off_dt=row['scheduled_off_dt'], result_retrieved_at=stamp, result_race_id=row['race_id'], result_horse_id=row['horse_id'],
+                  result_off_dt=row['scheduled_off_dt'], result_retrieved_at=stamp, result_race_id=row.get('race_id'), result_horse_id=row.get('horse_id'),
                   result_website_race_id=ref, result_source_url=url, result_non_runners=non_runners,
                   result_website_horse_id=str(ride['horse']['horse_reference']['id']), result_stage='WEIGHEDIN')
     amended_result = any(
@@ -260,15 +283,23 @@ def result(row, page, url, now):
 
 
 def find_full_result(day, card_url, links_by_day):
-    if day not in links_by_day:
-        _, html = fetch(HOST + '/racing/results/' + day)
-        links_by_day[day] = sorted(set(re.findall(
-            r'href="(/racing/results/' + day + r'/[a-z0-9-]+/\d+/[a-z0-9-]+)"', html)))
     card = urlsplit(card_url or '')
     match = re.fullmatch(r'/racing/racecards/' + day + r'/([a-z0-9-]+)/racecard/(\d+)/[a-z0-9-]+', card.path)
     if card.scheme != 'https' or card.hostname != 'www.sportinglife.com' or not match:
         raise ValueError('Exact Sporting Life racecard not recorded')
-    candidates = [link for link in links_by_day[day] if link.split('/')[4:6] == list(match.groups())]
+    pattern = r'href="(/racing/results/' + day + r'/[a-z0-9-]+/\d+/[a-z0-9-]+)"'
+
+    def exact_links(links):
+        return sorted({link for link in links
+                       if course_key(link.split('/')[4]) == course_key(match[1]) and link.split('/')[5] == match[2]})
+
+    if day not in links_by_day:
+        _, html = fetch(HOST + '/racing/results/' + day)
+        links_by_day[day] = re.findall(pattern, html)
+    candidates = exact_links(links_by_day[day])
+    if not candidates:
+        _, html = fetch(HOST + card.path)
+        candidates = exact_links(re.findall(pattern, html))
     if len(candidates) != 1:
         raise ValueError('Full result link not available or ambiguous')
     return HOST + candidates[0]
@@ -314,6 +345,43 @@ def settle_watch_list(now, write, links_by_day):
     return changes, pending
 
 
+def settle_international(now, today, write, links_by_day):
+    path = ROOT / 'data' / 'international-racing.json'
+    if not path.exists():
+        return 0, []
+    feed = json.loads(path.read_text())
+    changes, pending = 0, []
+    for day in feed['days']:
+        if not str(today - timedelta(days=3)) <= day['date'] <= str(today):
+            continue
+        for row in day['picks'] + day['watchlist']:
+            if row.get('result_status', 'PENDING') != 'PENDING':
+                continue
+            off = datetime.fromisoformat(row['scheduled_off_dt'])
+            if now < off + timedelta(minutes=10):
+                continue
+            local = off.astimezone(ZoneInfo('Europe/London'))
+            if local.date().isoformat() != day['date']:
+                pending.append(day['date'] + ' ' + row['horse'] + ': date mismatch')
+                continue
+            entry = dict(row, race_date=day['date'], off_time_uk=local.strftime('%H:%M'))
+            try:
+                url = find_full_result(day['date'], row.get('sporting_life_racecard_url') or row.get('racecard_url'), links_by_day)
+                page, _ = fetch(url)
+                update, detail = result(entry, page, url, now)
+            except (ValueError, KeyError, OSError) as error:
+                pending.append(day['date'] + ' ' + row['horse'] + ': ' + str(error))
+                continue
+            row.update(update, winner=detail['winner'], field_size=detail['field_size'], race_name=detail['race_name'])
+            if row.get('researchOnly'):
+                row['booked_profit_gbp'] = 0
+            changes += 1
+            print(day['date'], row['horse'], 'International', row['result_status'])
+    if write and changes:
+        path.write_text(json.dumps(feed, indent=2, ensure_ascii=False) + '\n')
+    return changes, pending
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--write', action='store_true')
@@ -351,7 +419,7 @@ def main():
         dirty = False
         for row in research['high_competition'] + research['competition_watchlist']:
             off = datetime.fromisoformat(row['scheduled_off_dt'])
-            if now < off + timedelta(minutes=10):
+            if now < off + timedelta(minutes=10) or (not args.reconcile and row.get('result_status') != 'PENDING'):
                 continue
             # The daily sweep may enrich a settled fallback result, but never rewrites its outcome.
             fallback_settled = row.get('result_status') in ('WIN', 'LOSS', 'NR') and row.get('result_source') != 'SPORTING_LIFE'
@@ -406,6 +474,7 @@ def main():
                 expected_waits = (
                     'Full result link not available or ambiguous',
                     'Awaiting weighed-in full result',
+                    'Awaiting ten minutes after the finish',
                     'Non-numeric finish needs manual review; left pending',
                     'Winner not explicit',
                 )
@@ -418,8 +487,9 @@ def main():
             for target, data in ((path, research), (details_path, details), (builder_path, builder)):
                 target.write_text(json.dumps(data, indent=2, ensure_ascii=False) + '\n')
     watch_changes, watch_pending = settle_watch_list(now, args.write, links_by_day)
-    changes += watch_changes
-    pending.extend(watch_pending)
+    international_changes, international_pending = settle_international(now, today, args.write, links_by_day)
+    changes += watch_changes + international_changes
+    pending.extend(watch_pending + international_pending)
     print(f'{changes} supported changes; write={args.write}')
     for item in pending:
         print('PENDING:', item)

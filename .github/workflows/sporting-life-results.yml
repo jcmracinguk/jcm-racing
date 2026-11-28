@@ -7,19 +7,19 @@ on:
       - tests/sporting_life_results_test.py
       - .github/workflows/sporting-life-results.yml
   schedule:
-    # Two long-running watchers avoid the large queue gaps GitHub can apply
-    # to high-frequency scheduled workflows. Each watcher polls for 5h 45m.
-    - cron: '7 10,16 * * *'
-    # One short early-morning sweep reconciles settled margins for the full
-    # fresh project after the previous day's results have stabilised.
+    # Independent, overlapping watchers cover the day's cards even if GitHub
+    # starts one slot late. A short sweep provides another route to publication.
+    - cron: '7 7 * * *'
+    - cron: '11 12 * * *'
+    - cron: '17 17 * * *'
+    - cron: '23,53 8-23 * * *'
     - cron: '15 6 * * *'
 permissions:
   contents: write
   pages: write
 concurrency:
-  # A heavily delayed morning sweep must not cancel a daytime watcher.
-  group: ${{ github.event.schedule == '15 6 * * *' && 'sporting-life-results-reconcile' || 'sporting-life-results-watch' }}
-  cancel-in-progress: true
+  group: sporting-life-results-${{ github.event.schedule || 'on-demand' }}
+  cancel-in-progress: false
 jobs:
   results:
     runs-on: ubuntu-latest
@@ -29,10 +29,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Test identity and outcome safeguards
+      - name: Test identity, timing and outcome safeguards
         run: python tests/sporting_life_results_test.py
-      - name: Verify Sporting Life access from GitHub
-        run: python scripts/update_sporting_life_results.py --probe
       - name: Poll, validate and publish due full results
         env:
           GH_TOKEN: ${{ github.token }}
@@ -40,26 +38,37 @@ jobs:
         run: |
           git config user.name 'JCM Results Updater'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          attempts=70
-          mode='--write'
-          if [ "$WORKFLOW_SCHEDULE" = '15 6 * * *' ]; then
-            attempts=1
-            mode='--write --reconcile'
-          fi
-          for attempt in $(seq 1 "$attempts"); do
-            git fetch origin main
-            git reset --hard origin/main
-            python scripts/update_sporting_life_results.py $mode
-            node tests/bankroll.cjs
-            if ! git diff --quiet -- data; then
-              git add data/competition-research-*.json data/result-card-details-*.json data/bet-builder-*.json data/watch-list.json
-              git commit -m 'Update verified Sporting Life race results'
-              if git push origin HEAD:main; then
-                gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+          deadline=$((SECONDS + 330 * 60))
+          reconcile=()
+          case "$WORKFLOW_SCHEDULE" in
+            '15 6 * * *') deadline=0; reconcile=(--reconcile) ;;
+            '23,53 8-23 * * *') deadline=0 ;;
+          esac
+          while true; do
+            next_poll=$((SECONDS + 120))
+            if git fetch origin main && git reset --hard origin/main &&
+                python scripts/update_sporting_life_results.py --write "${reconcile[@]}" &&
+                node tests/bankroll.cjs; then
+              if git diff --quiet -- data; then
+                published=true
               else
-                echo 'Concurrent update detected; the next poll will re-read main and retry.'
+                git add data/competition-research-*.json data/result-card-details-*.json data/bet-builder-*.json data/watch-list.json data/international-racing.json
+                git commit -m 'Update verified Sporting Life race results'
+                if git push origin HEAD:main; then
+                  gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
+                  published=true
+                else
+                  echo 'Concurrent update detected. A later poll will re-read main.'
+                  published=false
+                fi
               fi
+            else
+              echo 'Result pass failed. See the errors above.'
+              published=false
             fi
-            if [ "$attempt" -lt "$attempts" ]; then sleep 300; fi
+            if [ "$SECONDS" -ge "$deadline" ]; then
+              if [ "$published" = true ]; then break; fi
+              exit 1
+            fi
+            if [ "$SECONDS" -lt "$next_poll" ]; then sleep "$((next_poll - SECONDS))"; fi
           done
-

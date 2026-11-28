@@ -181,11 +181,11 @@ window.jcmAcceptedResult = function(r) {
   const course=(r.course||'').toLowerCase().replace(/\s*\(aw\)\s*$/,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
   const path=u.pathname.match(/^\/racing\/results\/(\d{4}-\d{2}-\d{2})\/([a-z0-9-]+)\/(\d+)\/[a-z0-9-]+\/?$/);
   const t=Date.parse(r.result_retrieved_at),off=Date.parse(r.result_off_dt);
-  return !!path&&!u.search&&!u.hash&&path[1]===r.race_date&&path[2]===course&&path[3]===r.result_website_race_id
+  return !!path&&!u.search&&!u.hash&&path[1]===r.race_date&&(path[2]===course||(['chelmsford','chelmsford-city'].includes(course)&&['chelmsford','chelmsford-city'].includes(path[2])))&&path[3]===r.result_website_race_id
    &&r.result_source==='SPORTING_LIFE'&&r.verification_status==='WEBSITE_CONFIRMED'
    &&r.result_date===r.race_date&&r.result_off_time_uk===r.off_time_uk&&r.result_horse===r.horse&&r.result_course===r.course
    &&Number.isFinite(t)&&Number.isFinite(off)&&t>=off&&t<=Date.now()&&r.official_accuracy_eligible===false
-   &&((r.result_status==='LOSS'&&r.position==='1')||(r.result_status==='WIN'&&(/^[2-9]\d*$|^1\d+$/.test(r.position)||(r.position==='PU'&&r.result_stage==='WEIGHEDIN')))||(r.result_status==='NR'&&r.position==='NR'));
+   &&((r.result_status==='LOSS'&&r.position==='1')||(r.result_status==='WIN'&&(/^[2-9]\d*$|^1\d+$/.test(r.position)||(['PU','F','UR'].includes(r.position)&&r.result_stage==='WEIGHEDIN')))||(r.result_status==='NR'&&r.position==='NR'));
  }
  if(u.hostname!=='api.theracingapi.com')return false;
  const dated=u.pathname==='/v1/results'&&u.searchParams.get('start_date')===r.race_date&&u.searchParams.get('end_date')===r.race_date;
@@ -223,7 +223,7 @@ window.jcmIsSettledPick = row =>
  }catch(_){window.jcmOverallRows=[];cards.forEach(c=>c.querySelector('strong').textContent='—');cards[0].querySelector('small').textContent='RESULTS UNAVAILABLE';root.dataset.overallState='error';}}
  load();
 })();
-</script><script src="scripts/watch-list.js?v=20261128-full-width"></script><script>
+</script><script src="scripts/watch-list.js?v=20261128-auto-results"></script><script>
 (function(){
 const date=document.getElementById('date'),panel=document.getElementById('jcm-official-panel');
 if(!date||!panel)return;
@@ -286,11 +286,10 @@ function confidenceTier(r){
 }
 function confidenceBox(){return '';}
 function resultView(r){
- if(r.researchOnly)return {label:'Form review',css:'pending'};
  const settled=r.watchList?window.jcmWatchList.isSettled(r):window.jcmIsSettledPick(r);
  const labels={WIN:['Horse lost','win'],LOSS:['Horse won','loss'],NR:['NR','nr']};
  const value=settled?labels[r.result_status]:null;
- return value?{label:value[0],css:value[1]}:{label:'Pending',css:'pending'};
+ return value?{label:value[0],css:value[1]}:{label:r.researchOnly?'Form review':'Pending',css:'pending'};
 }
 const flagCountries={gb:'United Kingdom',ie:'Ireland',fr:'France',za:'South Africa',ae:'United Arab Emirates',
  sa:'Saudi Arabia',us:'United States',ca:'Canada',hk:'Hong Kong',jp:'Japan',au:'Australia',nz:'New Zealand'};
@@ -351,7 +350,7 @@ window.jcmShowResearchCard=(r,m=null)=>{
  const reasonContent='<p>'+safe(roundup)+'</p>'+(hasReason?'<p><strong>Counterargument</strong><br>'+safe(reason.counterargument||'Not supplied.')+'</p>'+(Array.isArray(reason.challengers)&&reason.challengers.length?'<p><strong>Main challengers</strong><br>'+safe(reason.challengers.join(', '))+'</p>':'')+'<small>'+safe(reason.evidence_status==='RACING_API_PRO_AND_SPORTING_LIFE'?'The Racing API Pro + Sporting Life pre-race assessment':reason.evidence_status==='RACING_API_AND_USER_ASSESSMENT'?'User-confirmed pre-race assessment':reason.evidence_status==='ORIGINAL_SCREENSHOT_ANALYSIS'?'Original pre-race assessment':'Recovered morning research · underlying source data not reverified.')+'</small>':'');
  const view=resultView(r),accepted=view.css!=='pending'&&m&&m.race_id===r.result_race_id&&m.horse_id===r.result_horse_id&&m.position===r.position&&((r.result_status==='LOSS'&&m.position==='1')||(r.result_status==='WIN'&&(Number(m.position)>1||(m.position==='PU'&&r.result_stage==='WEIGHEDIN'))))&&(!r.placing||r.placing===ordinal(m.position));
  const card=raceInformationLink(m,r);
- const finish=r.researchOnly?'Awaiting a verified Exchange Lay quote':view.css==='pending'?'Pending':accepted?(m.position==='PU'?'Pulled up':'Finished '+ordinal(m.position)+(m.dead_heat_place?' (joint)':'')+' of '+m.field_size):String(r.placing??r.position??'Not supplied');
+ const finish=view.css==='pending'?(r.researchOnly?'Awaiting a verified Exchange Lay quote':'Pending'):accepted?(m.position==='PU'?'Pulled up':'Finished '+ordinal(m.position)+(m.dead_heat_place?' (joint)':'')+' of '+m.field_size):String(r.placing??r.position??'Not supplied');
  const stat=(label,value)=>'<div class="jcm-result-stat"><small>'+safe(label)+'</small><strong>'+safe(value)+'</strong></div>';
  const tile=(title,content)=>'<section class="jcm-result-tile"><h3>'+safe(title)+'</h3>'+content+'</section>';
  const winner=stat('Winner',accepted||r.watchList&&m?.winner?m.winner:'Not yet available')+stat('Winning margin',accepted?margin(m.winning_margin_lengths):'Not yet available')+(view.css==='loss'?'':stat('Selected horse beaten by',accepted?(m.position==='PU'?'Not applicable — pulled up':margin(m.selected_beaten_lengths)):'Not yet available'));
@@ -448,5 +447,5 @@ document.addEventListener('visibilitychange',()=>{if(!document.hidden)loadDay();
 setInterval(()=>{if(!document.hidden)loadDay();},30000);
 loadDay();
 })();
-</script><script src="scripts/fresh-tracker.js?v=20261128-full-width"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261128-full-width"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-separate-results"></script></body></html>
+</script><script src="scripts/fresh-tracker.js?v=20261128-full-width"></script><link rel="stylesheet" href="scripts/bet-builder.css?v=results-refresh-20261024"><script src="scripts/bet-builder.js?v=20261128-auto-results"></script><link rel="stylesheet" href="scripts/roundup.css?v=1"><script src="scripts/roundup.js?v=1"></script><script src="scripts/sport-switch.js?v=20261127-separate-results"></script></body></html>
 

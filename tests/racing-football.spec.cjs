@@ -174,6 +174,27 @@ test('football accumulator stays separate',async({page})=>{
  await expect(page.getByRole('heading',{name:'UK',exact:true})).toBeVisible();
 });
 
+test('verified international form results appear without booking Watchlist profit',async({page})=>{
+ await page.clock.install({time:new Date('2026-11-28T12:00:00Z')});
+ const raceDate='2026-11-28',off='2026-11-28T10:45:00Z';
+ const row={horse:'Form runner',course:'Turffontein',country:'South Africa',scheduled_off_dt:off,
+  researchOnly:true,result_status:'WIN',position:'13',placing:'13th',reason:'Form review',
+  result_source:'SPORTING_LIFE',verification_status:'WEBSITE_CONFIRMED',result_stage:'WEIGHEDIN',
+  result_source_url:'https://www.sportinglife.com/racing/results/2026-11-28/turffontein/951120/konica-minolta-sa-pinnacle-stakes',
+  result_date:raceDate,result_off_time_uk:'10:45',result_course:'Turffontein',result_horse:'Form runner',
+  result_off_dt:off,result_retrieved_at:'2026-11-28T10:58:00Z',result_website_race_id:'951120',
+  official_accuracy_eligible:false,winner:'King Harald'};
+ await page.route('**/data/international-racing.json',route=>route.fulfill({
+  json:{schema_version:1,days:[{date:raceDate,picks:[],watchlist:[row]}]},
+ }));
+ await page.goto(url+'?region=international#watchlist-results');
+ const entry=page.getByRole('button',{name:/Form runner/});
+ await expect(entry).toContainText('Horse lost');
+ await expect(page.locator('#jcm-watch-profit-summary summary')).toContainText('£0');
+ await entry.click();
+ await expect(page.locator('#jcm-detail-content')).toContainText('13th');
+});
+
 test('settled International Picks feed their own P/L and never load UK records',async({page})=>{
  const domesticRequests=[];
  page.on('request',request=>{

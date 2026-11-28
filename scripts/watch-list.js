@@ -1,10 +1,11 @@
 (() => {
   let request;
   const isSettled = row => ['WIN', 'LOSS', 'NR'].includes(row.result_status) &&
-    Date.parse(row.scheduled_off_dt) <= Date.now();
+    Date.parse(row.scheduled_off_dt) <= Date.now() &&
+    (!row.researchOnly || window.jcmAcceptedResult(row));
 
   function netCents(ledger, row) {
-    if (row.result_status === 'NR') return 0;
+    if (row.researchOnly || row.result_status === 'NR') return 0;
     if (row.result_status === 'LOSS') return -ledger.liability_gbp * 100;
     if (row.result_status !== 'WIN') return 0;
     if (!Number.isFinite(row.lay_odds) || row.lay_odds <= 1) return 15000;
