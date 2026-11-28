@@ -6,7 +6,7 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
  document.documentElement.dataset.region = 'international';
  document.querySelector('meta[name="theme-color"]').content = '#0d3032';
 }
-</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261128-full-width"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
+</script><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="JCM Racing"><link rel="stylesheet" href="scripts/jcm-shell.css?v=20261128-home-flags"><link rel="stylesheet" href="scripts/sport-switch.css?v=20261116-weekly-profit-switch-fix">
 <style>#jcm-official-panel .jcm-research-row.jcm-competition-watchlist{border-color:#edbd57}.jcm-competition-watchlist .jcm-confidence.low{background:#70521b;border-color:#edbd57}</style>
 <style>
 #jcm-field-test{max-width:900px;margin:18px auto;padding:0 16px}#jcm-field-test[hidden]{display:none!important}.jcm-ft-wrap{border:1px solid #77623a;background:#202b3e;border-radius:14px;padding:16px}.jcm-ft-wrap h2{margin:0 0 7px;color:#ffd700;font-size:18px}.jcm-ft-note{font-size:12px;line-height:1.6;color:#d4dce9}.jcm-ft-card{background:#182336;border:1px solid #42516b;border-radius:10px;margin:9px 0;padding:12px;display:flex;align-items:center;justify-content:space-between;gap:10px}.jcm-ft-name{font-weight:800}.jcm-ft-where{color:#d0d9e6;font-size:12px;margin-top:4px}.jcm-ft-rating{white-space:nowrap;color:#fff;background:#42506a;padding:7px;border-radius:7px;font-size:12px;font-weight:800}.jcm-ft-hub{border:1px solid #77623a!important}
@@ -114,12 +114,16 @@ if (new URLSearchParams(location.search).get('region') === 'international') {
    ${logo?'<img class="jcm-hub-mark" alt="JCM" src="'+logo.getAttribute('src')+'">':''}
    <div><div class="jcm-hub-eyebrow">JCM Racing</div><h1 class="jcm-hub-title">${window.jcmInternational?'International':'UK'}</h1></div>
   </div>
-  <button type="button" class="jcm-hub-tile jcm-today-link" data-page="todays-bets"><strong>Today’s Bets</strong><span aria-hidden="true">›</span></button>
+  <button type="button" class="jcm-hub-tile jcm-today-link" data-page="todays-bets" aria-labelledby="jcm-bets-heading" aria-describedby="jcm-bets-subtitle">
+   <span class="jcm-tile-copy"><strong id="jcm-bets-heading">Today’s Bets</strong><span id="jcm-bets-subtitle" class="jcm-tile-subtitle"><span aria-hidden="true">🔒</span> Subscribe to unlock</span></span>
+   <span class="jcm-tile-arrow" aria-hidden="true">›</span>
+  </button>
   <section class="jcm-hub-results" aria-labelledby="jcm-hub-results-heading">
-   <h2 id="jcm-hub-results-heading">Results</h2>
+   <h2 id="jcm-hub-results-heading"><span aria-hidden="true">📊</span> Results</h2>
+   <p class="jcm-results-subtitle">Historical results tracking with profit / loss indicators</p>
    <div class="jcm-hub-grid">
-    <button type="button" class="jcm-hub-tile jcm-results-link" data-page="picks-results"><strong>Picks</strong><span aria-hidden="true">›</span></button>
-    <button type="button" class="jcm-hub-tile jcm-results-link jcm-watch-link" data-page="watchlist-results"><strong>Watchlist</strong><span aria-hidden="true">›</span></button>
+    <button type="button" class="jcm-hub-tile jcm-results-link" data-page="picks-results"><strong><span aria-hidden="true">🏆</span> Picks</strong><span class="jcm-tile-arrow" aria-hidden="true">›</span></button>
+    <button type="button" class="jcm-hub-tile jcm-results-link jcm-watch-link" data-page="watchlist-results"><strong><span aria-hidden="true">📋</span> Watchlist</strong><span class="jcm-tile-arrow" aria-hidden="true">›</span></button>
    </div>
   </section>
  </div>`;
@@ -281,12 +285,35 @@ function resultView(r){
  const value=settled?labels[r.result_status]:null;
  return value?{label:value[0],css:value[1]}:{label:'Pending',css:'pending'};
 }
+const flagCountries={gb:'United Kingdom',ie:'Ireland',fr:'France',za:'South Africa',ae:'United Arab Emirates',
+ sa:'Saudi Arabia',us:'United States',ca:'Canada',hk:'Hong Kong',jp:'Japan',au:'Australia',nz:'New Zealand'};
+const flagAliases={gbr:'gb',uk:'gb',greatbritain:'gb',ire:'ie',fra:'fr',rsa:'za',saf:'za',zaf:'za',
+ uae:'ae',are:'ae',ksa:'sa',sau:'sa',usa:'us',unitedstatesofamerica:'us',can:'ca',hkg:'hk',jpn:'jp',aus:'au',nzl:'nz'};
+const irelandVenues=new Set(['ballinrobe','bellewstown','clonmel','cork','curragh','dundalk','fairyhouse','galway',
+ 'gowranpark','kilbeggan','killarney','laytown','leopardstown','limerick','limerickjunction','listowel','mallow',
+ 'naas','navan','phoenixpark','punchestown','roscommon','sligo','thurles','tipperary','tralee','tramore','wexford']);
+const overseasVenues={deauville:'fr',lyonparilly:'fr',pau:'fr',turffontein:'za',jebelali:'ae',riyadh:'sa',
+ churchilldowns:'us',delmar:'us',gulfstream:'us',woodbine:'ca',shatin:'hk',happyvalley:'hk'};
+const flagKey=value=>String(value??'').toLowerCase().replace(/[^a-z0-9]/g,'');
+function raceFlag(row){
+ const venue=flagKey(String(row.course??'').replace(/\s*\(aw\)|-AW$|-RH$/gi,''));
+ const country=flagKey(row.country_code||row.country||row.region_code||row.region);
+ const explicit=flagAliases[country]??(Object.hasOwn(flagCountries,country)?country:
+  Object.keys(flagCountries).find(code=>flagKey(flagCountries[code])===country));
+ // The Irish racing jurisdiction includes two courses physically in the UK.
+ const code=venue==='downroyal'||venue==='downpatrick'?'gb':explicit??overseasVenues[venue]??
+  (irelandVenues.has(venue)?'ie':window.jcmInternational?null:'gb');
+ return Object.hasOwn(flagCountries,code)?'<img class="jcm-race-flag" src="images/flags/'+code+'.png" alt="'+flagCountries[code]+'" width="15" height="15">':'';
+}
+function raceLocationHtml(row){
+ return '<span><span class="jcm-race-off">'+raceFlag(row)+'<span class="jcm-time">'+safe(row.off_time_uk)+
+  '</span></span><span class="jcm-ground">'+safe(row.course)+'</span></span>';
+}
 function entriesHtml(rows){
  return rows.map((r,i)=>{
   const status=resultView(r);
   return '<button type="button" class="jcm-row jcm-research-row jcm-rating-'+confidenceTier(r)+
-   (r.watchList?' jcm-watch-row':'')+'" data-research-index="'+i+'"><span><span class="jcm-time">'+safe(r.off_time_uk)+
-   '</span><span class="jcm-ground">'+safe(r.course)+'</span></span><span class="jcm-horse">'+safe(r.horse)+
+   (r.watchList?' jcm-watch-row':'')+'" data-research-index="'+i+'">'+raceLocationHtml(r)+'<span class="jcm-horse">'+safe(r.horse)+
    '<small class="jcm-entry-group">'+(r.watchList?'Watchlist':'Pick')+'</small></span><span class="jcm-status '+status.css+'">'+
    safe(status.label)+'</span></button>';
  }).join('');
@@ -301,8 +328,7 @@ function paint(){
  else content=entriesHtml(detailRows);
  if(!results&&state==='ready'&&researchRows.length){
   content+='<h3>Form to recheck</h3>'+researchRows.map((r,i)=>
-   '<button type="button" class="jcm-row jcm-research-row" data-form-index="'+i+'"><span><span class="jcm-time">'+
-   safe(r.off_time_uk)+'</span><span class="jcm-ground">'+safe(r.course)+'</span></span><span class="jcm-horse">'+
+   '<button type="button" class="jcm-row jcm-research-row" data-form-index="'+i+'">'+raceLocationHtml(r)+'<span class="jcm-horse">'+
    safe(r.horse)+'</span><span class="jcm-status pending">Form review</span></button>'
   ).join('');
  }
@@ -326,7 +352,7 @@ window.jcmShowResearchCard=(r,m=null)=>{
  const priceTile=tile('Lay',stat('Lay odds',odds===null?'Unavailable':odds.toFixed(2))+
   stat('Net if beaten (£500 liability)',odds===null?'—':new Intl.NumberFormat('en-GB',{style:'currency',currency:'GBP'}).format(475/(odds-1))));
  const raceAction=card?'<button type="button" class="jcm-race-action">Race information</button>':'';
- overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong>'+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile(r.researchOnly?'Reason for review':r.watchList?'Reason for watching':'Reason for selection',reasonContent)+priceTile+raceAction+'</div></article>';
+ overlay.querySelector('#jcm-detail-content').innerHTML='<article class="jcm-result-card"><div class="jcm-result-top"><span class="jcm-result-time">'+safe(r.off_time_uk)+'</span><div class="jcm-result-course"><strong class="jcm-race-off">'+raceFlag(r)+safe(r.course)+'</strong><small>'+safe(new Date(day+'T12:00:00Z').toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'Europe/London'}))+' · UK time</small></div>'+confidenceBox(r,true)+'</div><div class="jcm-result-summary"><span class="jcm-result-outcome '+view.css+'">'+safe(view.label)+'</span><strong class="jcm-result-finish">'+safe(finish)+'</strong></div><div class="jcm-result-body">'+tile('Selected horse','<h2>'+safe(r.horse)+'</h2><p>'+safe(m?.race_name||'Race details not supplied')+'</p>')+tile('Race winner',winner)+tile(r.researchOnly?'Reason for review':r.watchList?'Reason for watching':'Reason for selection',reasonContent)+priceTile+raceAction+'</div></article>';
  if(card)overlay.querySelector('.jcm-race-action').addEventListener('click',()=>window.open(card,'_blank','noopener'));
  overlay.classList.add('open');overlay.querySelector('.jcm-close').focus();
 };

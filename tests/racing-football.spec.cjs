@@ -72,7 +72,11 @@ test('UK and International have full-width tiles and show profit only inside eac
  await expect(watchProfit).toBeHidden();
  await expect(page.locator('#jcm-hub')).not.toContainText(/paper/i);
  await page.setViewportSize({width:320,height:780});
+ await expect(page.getByText('Subscribe to unlock')).toBeVisible();
+ await expect(page.getByText('Historical results tracking with profit / loss indicators')).toBeVisible();
+ expect((await page.getByRole('img',{name:'JCM',exact:true}).boundingBox()).width).toBeGreaterThanOrEqual(76);
  const [todayBox,pickBox,watchBox]=await Promise.all([tiles.nth(0).boundingBox(),tiles.nth(1).boundingBox(),tiles.nth(2).boundingBox()]);
+ expect(Math.min(todayBox.height,pickBox.height,watchBox.height)).toBeGreaterThanOrEqual(110);
  expect(pickBox.width).toBe(todayBox.width);
  expect(watchBox.width).toBe(pickBox.width);
  expect(watchBox.x).toBe(pickBox.x);
@@ -97,7 +101,10 @@ test('UK and International have full-width tiles and show profit only inside eac
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
  await page.locator('[data-page="todays-bets"]').click();
  await page.locator('#date').selectOption('2026-11-28');
- await expect(page.locator('#jcm-official-panel')).toContainText('No bets for this date.');
+ const sentosa=page.getByRole('button',{name:/Sentosa/});
+ await expect(sentosa).toContainText('Form review');
+ await expect(sentosa.getByRole('img',{name:'France',exact:true})).toHaveAttribute('src','images/flags/fr.png');
+ await expect(page.getByRole('button',{name:/Cosmic Speed/}).getByRole('img',{name:'South Africa',exact:true})).toBeVisible();
  await page.getByRole('button',{name:/Sentosa/}).click();
  await expect(page.locator('#jcm-detail-content')).toContainText('Awaiting a verified Exchange Lay quote');
  await expectRaceInformation(page,'https://www.zeturf.fr/fr/course-du-jour/2026-11-28/R2C7-lyon-parilly-prix-des-turfistes');
@@ -110,6 +117,7 @@ test('lay details show two figures at the approved price for settled horses',asy
  await page.clock.install({time:new Date('2026-11-27T20:00:00Z')});
  await page.goto(url+'#picks-results');
  await page.locator('#date').selectOption('2026-11-27');
+ await expect(page.getByRole('button',{name:/Kap Ouest/}).getByRole('img',{name:'United Kingdom',exact:true})).toBeVisible();
  await page.getByRole('button',{name:/Kap Ouest/}).click();
  const detail=page.locator('#jcm-detail-content');
  const paper=detail.locator('.jcm-result-tile').filter({has:page.getByRole('heading',{name:'Lay',exact:true})});
@@ -318,6 +326,7 @@ test('UK Watchlist entries can be browsed by date in bets and stay out of result
  const panel=page.locator('#jcm-official-panel');
  await expect(page.locator('#date')).toHaveValue('2026-11-28');
  await expect(panel).toContainText('Mydaddypaddy');
+ await expect(panel.getByRole('button',{name:/Saratoga/}).getByRole('img',{name:'Ireland',exact:true})).toBeVisible();
  await expect(panel).toContainText('Idaho Sun');
  await expect(panel.getByRole('button',{name:/Mydaddypaddy/})).toHaveCSS('border-left-color','rgb(98, 231, 219)');
  await page.getByRole('button',{name:'Return to JCM Hub'}).click();
